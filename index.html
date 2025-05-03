@@ -5,47 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Più Mosso</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      nav {
-  background-color: #f7f4ea;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-}
-nav li {
-  display: inline;
-}
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  font-size: 1em;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-  transition: border 0.2s;
-}
-nav a:hover {
-  border-bottom: 2px solid #999;
-}
-html {
-  scroll-behavior: smooth;
-}
       font-family: "Georgia", serif;
       background-color: #fcf9f3;
       color: #222222;
       margin: 0;
       padding: 40px 20px;
       line-height: 1.6;
+    }
+    nav {
+      background-color: #f7f4ea;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: fadeIn 1s ease-out;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      font-size: 1em;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+      transition: border 0.2s;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #999;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      scroll-margin-top: 100px;
+      animation: fadeInUp 0.6s ease-in;
     }
     .container {
       max-width: 900px;
@@ -58,17 +66,13 @@ html {
     header img {
       max-width: 300px;
       height: auto;
+      animation: fadeIn 2s ease-in-out;
     }
     .tagline {
       font-style: italic;
       font-size: 1.2em;
       margin-top: 10px;
       color: #555;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
     }
     p {
       margin-bottom: 1em;
@@ -89,25 +93,58 @@ html {
       border-bottom: 1px solid #444;
     }
     .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-.gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-.gallery img:hover {
-  transform: scale(1.02);
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #333;
+    }
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
+
 <nav>
   <ul>
     <li><a href="#kim">Kim jesteśmy</a></li>
@@ -117,49 +154,50 @@ html {
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
 </nav>
-  <div class="container">
-    <header>
-      <img src="PiuMosso_logo_transparent_clean.png" alt="Più Mosso logo">
-      <p class="tagline">Kunszt. Styl. Pasja.</p>
-    </header>
 
-    <h2>Kim jesteśmy</h2>
-    <p><strong>Zofia Andersz – skrzypce</strong><br>
-    Skrzypaczka o wyjątkowym wyczuciu stylu i emocji. Jej gra łączy precyzję techniczną z naturalną muzykalnością, tworząc pełne ekspresji i subtelności interpretacje. Występuje solowo i kameralnie, odnajdując się zarówno w klasycznym repertuarze, jak i muzyce filmowej.</p>
+<div class="container">
+  <header>
+    <img src="PiuMosso_logo_transparent_clean.png" alt="Più Mosso logo">
+    <p class="tagline">Kunszt. Styl. Pasja.</p>
+  </header>
 
-    <p><strong>Piotr Górski – organy i fortepian</strong><br>
-    Organista i pianista z bogatym doświadczeniem scenicznym. Występuje w roli solisty i kameralisty w całym kraju, specjalizując się w repertuarze klasycznym i sakralnym. W jego grze słychać dbałość o detal, formę i przekaz – zawsze podporządkowane temu, by poruszyć słuchacza.</p>
+  <h2 id="kim">Kim jesteśmy</h2>
+  <p><strong>Zofia Andersz – skrzypce</strong><br>
+  Skrzypaczka o wyjątkowym wyczuciu stylu i emocji. Jej gra łączy precyzję techniczną z naturalną muzykalnością, tworząc pełne ekspresji i subtelności interpretacje.</p>
 
-    <h2>Co robimy</h2>
-    <p><strong>Più Mosso</strong> to duet instrumentalny, który tworzy koncerty z myślą o odbiorcy. Nasz repertuar obejmuje muzykę klasyczną, filmową i okazjonalną – od utworów sakralnych po taneczne miniatury i nastrojowe transkrypcje.</p>
+  <p><strong>Piotr Górski – organy i fortepian</strong><br>
+  Organista i pianista z bogatym doświadczeniem scenicznym. Występuje jako solista i kameralista w całej Polsce, specjalizując się w repertuarze klasycznym i sakralnym.</p>
 
-    <p>Występujemy w salach koncertowych, świątyniach, domach kultury, sanatoriach i plenerach. Program każdorazowo dopasowujemy do przestrzeni, charakteru wydarzenia i profilu publiczności. Zależy nam na tym, by nasza muzyka nie tylko wybrzmiała, ale została z odbiorcą na długo.</p>
+  <h2 id="co">Co robimy</h2>
+  <p><strong>Più Mosso</strong> to duet instrumentalny, który tworzy koncerty z myślą o odbiorcy. Nasz repertuar obejmuje muzykę klasyczną, filmową i okazjonalną – od utworów sakralnych po taneczne miniatury i nastrojowe transkrypcje.</p>
 
-    <p style="text-align: center; margin-top: 2em;">
-  <a href="Oferta%20Koncertowa.pdf" style="display: inline-block; padding: 10px 20px; background-color: #111; color: #fff; text-decoration: none; border-radius: 4px;">
-    Pobierz ofertę koncertową
-  </a>
-</p>
+  <p>Występujemy w salach koncertowych, świątyniach, domach kultury, sanatoriach i plenerach. Program każdorazowo dopasowujemy do przestrzeni, charakteru wydarzenia i profilu publiczności.</p>
 
-    <h2>Kontakt</h2>
-    <p>Chcesz nas zaprosić lub po prostu o coś zapytać?<br>
-    Napisz na <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a><br>
-    Działamy w całej Polsce.</p>
-    
-    <h2>Galeria</h2>
-<div class="gallery">
-  <img src="2.jpg" alt="Koncert 2">
-  <img src="3.JPEG" alt="Koncert 3">
-  <img src="1.jpg" alt="Koncert 1">
+  <h2 id="oferta">Oferta koncertowa</h2>
+  <p style="text-align: center;">
+    <a class="button-link" href="Oferta Koncertowa.pdf" target="_blank">Pobierz ofertę koncertową</a>
+  </p>
+
+  <h2 id="kontakt">Kontakt</h2>
+  <p>Chcesz nas zaprosić lub o coś zapytać?<br>
+  Napisz na <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a><br>
+  Działamy w całej Polsce.</p>
+
+  <h2 id="galeria">Galeria</h2>
+  <div class="gallery">
+    <img src="2.jpg" alt="Koncert 2">
+    <img src="3.JPEG" alt="Koncert 3">
+    <img src="1.jpg" alt="Koncert 1">
+  </div>
+
+  <footer>
+    &copy; 2025 Più Mosso — Zofia Andersz &amp; Piotr Górski
+    <div class="social-links">
+      <a href="https://www.facebook.com/piumossoart" target="_blank">Facebook</a> |
+      <a href="https://www.youtube.com/watch?v=zUReBhFwYuc" target="_blank">YouTube</a>
+    </div>
+  </footer>
 </div>
 
-    <footer>
-      &copy; 2025 Più Mosso — Zofia Andersz &amp; Piotr Górski
-      <div class="social-links">
-        <a href="https://www.facebook.com/piumossoart" target="_blank">Facebook</a> |
-        <a href="https://www.youtube.com/watch?v=zUReBhFwYuc" target="_blank">YouTube</a>
-      </div>
-    </footer>
-  </div>
 </body>
 </html>
