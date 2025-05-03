@@ -15,6 +15,7 @@
       margin: 0;
       padding: 40px 20px;
       line-height: 1.6;
+      overflow-x: hidden;
     }
     nav {
       background-color: #f7f4ea;
@@ -24,19 +25,15 @@
       top: 0;
       z-index: 100;
       animation: fadeIn 1s ease-out;
-      @media (max-width: 600px) {
-  nav a {
-    font-size: 0.9em;
     }
     nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  padding: 0 10px;
-  margin: 0;
-}
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0 10px;
+      margin: 0;
     }
     nav li {
       display: inline;
@@ -53,6 +50,13 @@
     nav a:hover {
       border-bottom: 2px solid #999;
     }
+
+    @media (max-width: 600px) {
+      nav a {
+        font-size: 0.9em;
+      }
+    }
+
     h2 {
       font-size: 1.8rem;
       margin-top: 2em;
