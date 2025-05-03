@@ -6,6 +6,40 @@
   <title>Più Mosso</title>
   <style>
     body {
+      nav {
+  background-color: #f7f4ea;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+nav a:hover {
+  border-bottom: 2px solid #999;
+}
+html {
+  scroll-behavior: smooth;
+}
       font-family: "Georgia", serif;
       background-color: #fcf9f3;
       color: #222222;
