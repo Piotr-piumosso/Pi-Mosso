@@ -5,19 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- ——— SEO / social ——— -->
   <title>Più Mosso — Skrzypce &amp; Organy / Fortepian</title>
   <meta name="description"
-        content="Duet skrzypce & fortepian / organy. Più Mosso – koncerty, oprawa ślubna, wydarzenia kulturalne. Muzyka, która zostaje na długo po wybrzmieniu ostatniego akordu." />
-  <meta property="og:title" content="Più Mosso — Muzyka, która przemienia chwilę w sztukę" />
-  <meta property="og:description" content="Zaproś duet na koncert lub ceremonię ślubną. Elegancja, ekspresja, profesjonalizm." />
-  <meta property="og:image" content="https://piumosso.pl/og_image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+        content="Duet skrzypce & fortepian / organy. Più Mosso – koncerty, oprawa ślubna, wydarzenia kulturalne. Muzyka, która zostaje na długo po wybrzmieniu ostatniego akordu." />
 
-  <!-- ——— preloads ——— -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/inter/v12/UcCO3Fwr3YJb9Ua_dk0raHhW.woff2" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght:400;600&display=swap" rel="stylesheet" />
 
   <style>
@@ -28,19 +20,24 @@
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:"Inter",sans-serif;font-size:17px;line-height:1.7;background:var(--navy);color:var(--text);-webkit-font-smoothing:antialiased}
+
   h1,h2,h3{font-family:"Playfair Display",serif;margin:0 0 .55em;color:var(--cream)}
   h1{font-size:clamp(2.3rem,4.5vw,3.8rem);line-height:1.15}
   h2{font-size:2.1rem}
   h3{font-size:1.55rem;color:var(--gold);display:flex;align-items:center;gap:10px}
+
   p{margin:.8em 0}
   a{color:var(--gold);text-underline-offset:2px;text-decoration-color:rgba(197,165,87,.4)}
   img,video{max-width:100%;height:auto;border:none}
+
   .role{background:var(--surface);color:var(--cream);font-size:.78rem;font-weight:600;letter-spacing:.5px;padding:3px 8px;border-radius:4px;text-transform:uppercase}
 
   /* —— Nawigacja —— */
-  nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:8px 20px;background:linear-gradient(90deg,rgba(11,33,52,.85),rgba(18,51,82,.85));backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,.4)}
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:8px 20px;
+      background:linear-gradient(90deg,rgba(11,33,52,.85),rgba(18,51,82,.85));
+      backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,.4)}
   .nav-wrap{max-width:1150px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-  .brand img{height:42px;width:auto;display:block}
+  .brand img{height:42px}
   nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0}
   nav a{font-weight:600;font-size:.95rem;text-decoration:none;color:var(--cream);position:relative;padding-bottom:4px}
   nav a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .3s}
@@ -56,18 +53,20 @@
   .cta{display:inline-block;margin-top:34px;padding:16px 42px;border-radius:34px;text-decoration:none;font-weight:600;font-size:1rem;background:var(--gold);color:var(--navy);transition:transform .25s,box-shadow .25s}
   .cta:hover,.cta:focus-visible{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.4)}
 
-  /* —— Sekcje —— */
+  /* —— Sekcje / karty —— */
   section{padding:90px 20px}
   .container{max-width:1000px;margin:0 auto}
   .card{background:var(--surface);border-radius:8px;padding:28px 30px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
-  .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;margin-top:42px}
-  .media-grid iframe{width:100%;border:0;border-radius:8px;background:#000}
+
+  /* —— Responsywny YouTube —— */
+  .video-wrapper{position:relative;max-width:720px;margin:0 auto}
+  .video-wrapper::before{content:"";display:block;padding-top:56.25%}          /* 16 × 9 */
+  .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:8px}
 
   /* —— Sticky CTA —— */
   .sticky-cta{position:fixed;right:24px;bottom:24px;z-index:210;padding:15px 26px;border-radius:50px;font-weight:700;text-decoration:none;background:var(--gold);color:var(--navy);box-shadow:0 6px 20px rgba(0,0,0,.45);transform:translateY(120px);transition:transform .4s}
   .sticky-cta.show{transform:translateY(0)}
 
-  /* —— Stopka —— */
   footer{background:var(--surface);padding:46px 20px;text-align:center;color:#bdc6d2;font-size:.9rem}
 
   @media(max-width:600px){
@@ -91,7 +90,7 @@
     </div>
   </nav>
 
-  <!-- ——— Hero wideo ——— -->
+  <!-- ——— Hero ——— -->
   <header class="hero" id="hero">
     <video src="IMG_3283.webm" poster="1.jpg" autoplay muted loop playsinline></video>
     <div class="inner">
@@ -107,17 +106,17 @@
       <div class="container card">
         <h2 style="text-align:center;margin-bottom:1.8rem">O nas</h2>
 
-        <article class="person">
+        <article>
           <h3>Zofia Andersz <span class="role">skrzypce</span></h3>
           <p>Skrzypaczka, której smyczek maluje opowieści pełne światła i cienia. Grała na festiwalach kameralnych i koncertach solowych, łącząc klarowną klasykę z wrażliwością współczesnych brzmień.</p>
         </article>
 
-        <article class="person">
+        <article>
           <h3>Piotr Górski <span class="role">organy&nbsp;i&nbsp;fortepian</span></h3>
           <p>Organista Kościoła Świętej Trójcy w Nowym Mieście nad Wartą. Występował podczas koncertów organowych w całej Polsce; jego interpretacje niosą energię i precyzyjnie budowaną dramaturgię.</p>
         </article>
 
-        <p style="margin-top:2rem">Jako duet dopasowujemy program do przestrzeni i publiczności – od sal koncertowych, przez sceny festiwalowe, po kameralne świątynie.</p>
+        <p style="margin-top:2rem">Jako duet dopasowujemy program do przestrzeni i publiczności – od sal koncertowych, przez sceny festiwalowe, po kameralne świątynie.</p>
       </div>
     </section>
 
@@ -125,8 +124,8 @@
     <section id="multimedia" style="background:var(--surface)">
       <div class="container">
         <h2 style="text-align:center">Multimedia</h2>
-        <div class="media-grid">
-          <iframe title="Più Mosso – Bach&nbsp;/&nbsp;Gounod 'Ave Maria'"
+        <div class="video-wrapper">
+          <iframe title="Più Mosso – Bach / Gounod 'Ave Maria'"
                   src="https://www.youtube.com/embed/zUReBhFwYuc"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
@@ -139,7 +138,7 @@
     <section id="sluby">
       <div class="container card" style="text-align:center">
         <h2>Oprawa ślubna</h2>
-        <p>Muzyka dodaje ceremonii blasku i głębi – od pierwszych kroków w nawie po ostatni podpis. Przygotujemy repertuar dopasowany do Waszej liturgii lub uroczystości cywilnej, aby każda chwila brzmiała wyjątkowo.</p>
+        <p>Muzyka dodaje ceremonii blasku i głębi – od pierwszych kroków w nawie po ostatni podpis. Przygotujemy repertuar dopasowany do Waszej liturgii lub uroczystości cywilnej, aby każda chwila brzmiała wyjątkowo.</p>
 
         <p style="margin-top:32px">
           <a class="cta" href="Oferta%20ślubna%20Più%20Mosso%20.pdf" target="_blank" rel="noopener">Pobierz ofertę ślubną PDF</a>
@@ -166,10 +165,8 @@
     &copy; 2025 Più Mosso — Wszelkie prawa zastrzeżone
   </footer>
 
-  <!-- ——— Sticky CTA ——— -->
-  <a href="#kontakt" class="sticky-cta" id="stickyCta" aria-label="Zaproś duet">Zaproś duet</a>
+  <a href="#kontakt" class="sticky-cta" id="stickyCta">Zaproś duet</a>
 
-  <!-- ——— JS micro‑interaction ——— -->
   <script>
     const hero = document.querySelector('#hero');
     const cta  = document.querySelector('#stickyCta');
