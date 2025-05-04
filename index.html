@@ -9,60 +9,55 @@
   <meta name="description"
         content="Duet skrzypce & fortepian / organy. Più Mosso – koncerty, oprawa ślubna, działalność pedagogiczna. Muzyka, która przemienia chwilę w sztukę." />
 
-  <!-- ====== FAVICONS ====== -->
+  <!-- ===== FAVICONS ===== -->
   <link rel="icon" type="image/png" sizes="32x32" href="IMG_0552.PNG">
   <link rel="icon" type="image/png" sizes="16x16" href="IMG_0551.PNG">
   <link rel="apple-touch-icon" href="IMG_0553.PNG">
   <meta name="theme-color" content="#0B2134">
 
-  <!-- ====== OPEN GRAPH / TWITTER ====== -->
+  <!-- ===== Open Graph / Twitter ===== -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://piumosso.pl">
-  <meta property="og:title"       content="Più Mosso — Muzyka, która przemienia chwilę w sztukę">
-  <meta property="og:description" content="Duet skrzypce & organy/fortepian. Koncerty, śluby, edukacja.">
+  <meta property="og:title"       content="Più Mosso — Muzyka, która przemienia chwilę w sztukę">
+  <meta property="og:description" content="Duet skrzypce & organy / fortepian. Koncerty, śluby, edukacja.">
   <meta property="og:image"       content="https://piumosso.pl/IMG_0554.JPG">
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Più Mosso — Muzyka, która przemienia chwilę w sztukę">
-  <meta name="twitter:description" content="Duet skrzypce & organy/fortepian. Koncerty, śluby, edukacja.">
+  <meta name="twitter:title"       content="Più Mosso — Muzyka, która przemienia chwilę w sztukę">
+  <meta name="twitter:description" content="Duet skrzypce & organy / fortepian. Koncerty, śluby, edukacja.">
   <meta name="twitter:image"       content="https://piumosso.pl/IMG_0554.JPG">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght:400;600&display=swap" rel="stylesheet" />
 
   <style>
-  /* ========= PALETTE ========= */
-  :root{
-    --navy:#0B2134; --navy-light:#123352;
-    --gold:#C5A557; --cream:#F9F7F1;
-    --text:#F9F7F1; --surface:#102941;
-  }
+  /* ===== PALETTE ===== */
+  :root{--navy:#0B2134;--navy-light:#123352;--gold:#C5A557;--cream:#F9F7F1;--text:#F9F7F1;--surface:#102941;}
 
-  /* ========= BASE ========= */
+  /* ===== BASE ===== */
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:"Inter",sans-serif;font-size:17px;line-height:1.7;background:var(--navy);color:var(--text);-webkit-font-smoothing:antialiased}
   img,video{max-width:100%;height:auto;border:0}
 
-  /* ========= TYPOGRAPHY ========= */
+  /* ===== TYPOGRAPHY ===== */
   h1,h2,h3{font-family:"Playfair Display",serif;color:var(--cream);margin:0 0 .55em}
   h1{font-size:clamp(2.3rem,4.5vw,3.8rem);line-height:1.15}
   h2{font-size:2.1rem}
   h3{font-size:1.55rem;color:var(--gold);display:flex;align-items:center;gap:10px}
-  p{margin:.8em 0}
-  a{color:var(--gold);text-underline-offset:2px;text-decoration-color:rgba(197,165,87,.4)}
+  p{margin:.8em 0}a{color:var(--gold);text-underline-offset:2px;text-decoration-color:rgba(197,165,87,.4)}
   .role{background:var(--surface);color:var(--cream);font-size:.78rem;font-weight:600;letter-spacing:.5px;padding:3px 8px;border-radius:4px;text-transform:uppercase}
 
-  /* ========= NAV ========= */
+  /* ===== NAV ===== */
   nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:8px 20px;background:linear-gradient(90deg,rgba(11,33,52,.9),rgba(18,51,82,.9));backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,.4)}
   .nav-wrap{max-width:1150px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-  .brand img{height:34px;width:auto;filter:drop-shadow(0 0 2px rgba(0,0,0,.4))}
+  .brand img{height:42px;width:auto;filter:drop-shadow(0 0 2px rgba(0,0,0,.4))}
   nav ul{list-style:none;display:flex;gap:26px;flex-wrap:wrap;margin-left:auto}
   nav a{font-weight:600;font-size:.95rem;text-decoration:none;color:var(--cream);position:relative;padding-bottom:4px}
   nav a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .3s}
   nav a:hover::after,nav a:focus-visible::after{width:100%}
-  @media(max-width:600px){nav ul{gap:18px}.brand img{height:30px}}
+  @media(max-width:600px){nav ul{gap:18px}.brand img{height:36px}}
 
-  /* ========= HERO ========= */
+  /* ===== HERO ===== */
   .hero{position:relative;height:92vh;min-height:620px;display:flex;align-items:center;justify-content:center;overflow:hidden}
   .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .hero::after{content:"";position:absolute;inset:0;background:rgba(11,33,52,.55)}
@@ -72,7 +67,7 @@
   .cta{display:inline-block;margin-top:34px;padding:16px 42px;border-radius:34px;font-weight:600;font-size:1rem;background:var(--gold);color:var(--navy);text-decoration:none;transition:transform .25s,box-shadow .25s}
   .cta:hover,.cta:focus-visible{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.4)}
 
-  /* ========= SECTIONS ========= */
+  /* ===== SECTIONS ===== */
   section{padding:90px 20px}
   .container{max-width:1000px;margin:0 auto}
   .card{background:var(--surface);border-radius:8px;padding:28px 30px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
@@ -100,7 +95,7 @@
 </head>
 
 <body>
-  <!-- ========= NAV ========= -->
+  <!-- ===== NAV ===== -->
   <nav aria-label="Główne">
     <div class="nav-wrap">
       <a href="#hero" class="brand"><img src="PiuMosso_logo_transparent_clean.png" alt="Più Mosso – logo"></a>
@@ -114,7 +109,7 @@
     </div>
   </nav>
 
-  <!-- ========= HERO ========= -->
+  <!-- ===== HERO ===== -->
   <header class="hero" id="hero">
     <video src="IMG_3283.webm" autoplay muted loop playsinline></video>
     <div class="inner">
@@ -125,14 +120,14 @@
   </header>
 
   <main>
-    <!-- ========= KIM JESTEŚMY ========= -->
+    <!-- ===== KIM JESTEŚMY ===== -->
     <section id="kim">
       <div class="container card">
         <h2 style="text-align:center;margin-bottom:1.8rem">O nas</h2>
 
         <article>
           <h3>Zofia Andersz <span class="role">skrzypce</span></h3>
-          <p>Skrzypaczka, której smyczek maluje opowieści pełne światła i cienia. Występowała na festiwalach kameralnych i koncertach solowych, łącząc klasykę z wrażliwością współczesnych brzmień. Obecna także po drugiej stronie pulpitu – w działalności pedagogicznej.</p>
+          <p>Skrzypaczka, której smyczek maluje opowieści pełne światła i cienia. Występowała na festiwalach kameralnych i koncertach solowych, łącząc klasykę z wrażliwością współczesnych brzmień. Obecna także po drugiej stronie pulpitu – w działalności pedagogicznej.</p>
         </article>
 
         <article>
@@ -142,7 +137,7 @@
       </div>
     </section>
 
-    <!-- ========= MULTIMEDIA ========= -->
+    <!-- ===== MULTIMEDIA ===== -->
     <section id="multimedia" style="background:var(--surface)">
       <div class="container">
         <h2 style="text-align:center">Multimedia</h2>
@@ -156,25 +151,29 @@
       </div>
     </section>
 
-    <!-- ========= KONCERTY ========= -->
+    <!-- ===== KONCERTY ===== -->
     <section id="koncerty">
       <div class="container card" style="text-align:center">
         <h2>Koncerty</h2>
         <p>Od muzyki dawnych mistrzów po świeże aranżacje współczesnych tematów filmowych – nasze programy szyjemy na miarę sali i publiczności. Realizujemy <strong>recitale solowe</strong>, kameralne wieczory duetowe oraz koncerty <strong>festiwalowe</strong>.</p>
-        <p style="margin-top:30px"><a class="cta" href="oferta_koncertowa.pdf" target="_blank" rel="noopener">Pobierz ofertę koncertową PDF</a></p>
+        <p style="margin-top:30px">
+          <a class="cta" href="Oferta%20Koncertowa.pdf" target="_blank" rel="noopener">Pobierz ofertę koncertową PDF</a>
+        </p>
       </div>
     </section>
 
-    <!-- ========= ŚLUBY ========= -->
+    <!-- ===== ŚLUBY ===== -->
     <section id="sluby">
       <div class="container card" style="text-align:center">
         <h2>Oprawa ślubna</h2>
         <p>Muzyka dodaje ceremonii blasku i głębi – od pierwszych kroków w nawie po ostatni podpis. Przygotujemy repertuar dopasowany do Waszej liturgii lub uroczystości cywilnej, aby każda chwila brzmiała wyjątkowo.</p>
-        <p style="margin-top:32px"><a class="cta" href="oferta_slubna.pdf" target="_blank" rel="noopener">Pobierz ofertę ślubną PDF</a></p>
+        <p style="margin-top:32px">
+          <a class="cta" href="Oferta%20%C5%9Blubna%20Pi%C3%B9%20Mosso%20.pdf" target="_blank" rel="noopener">Pobierz ofertę ślubną PDF</a>
+        </p>
       </div>
     </section>
 
-    <!-- ========= KONTAKT ========= -->
+    <!-- ===== KONTAKT ===== -->
     <section id="kontakt">
       <div class="container card" style="text-align:center">
         <h2>Skontaktuj się</h2>
@@ -222,6 +221,10 @@
   <a href="#kontakt" class="sticky-cta" id="stickyCta">Zaproś duet</a>
 
   <script>
+  /* zapobiegaj automatycznemu przewijaniu po refreshu */
+  history.scrollRestoration='manual';
+  window.addEventListener('DOMContentLoaded',()=>{ if(!location.hash) scrollTo(0,0); });
+
   /* sticky cta */
   new IntersectionObserver(([e])=>{
     document.querySelector('#stickyCta').classList.toggle('show',!e.isIntersecting);
@@ -230,8 +233,9 @@
   /* formularz → mailto */
   document.querySelector('#contact-form').addEventListener('submit',ev=>{
     ev.preventDefault();
-    const fd=new FormData(ev.target);
-    const name=fd.get('name')?.trim(), phone=fd.get('phone')?.trim();
+    const fd=new FormData(ev.target),
+          name=fd.get('name')?.trim(),
+          phone=fd.get('phone')?.trim();
     if(!name||!phone){alert('Podaj imię i nazwisko oraz numer telefonu.');return;}
     const body=encodeURIComponent(
 `Imię i nazwisko: ${name}
