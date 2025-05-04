@@ -20,7 +20,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght:400;600&display=swap" rel="stylesheet" />
 
   <style>
-  /* —— Paleta —— */
   :root{
     --navy:#0B2134;
     --navy-light:#123352;
@@ -99,15 +98,9 @@
     display:flex;align-items:center;justify-content:center;
     overflow:hidden
   }
-  .hero video{
-    position:absolute;inset:0;
-    width:100%;height:100%;
-    object-fit:cover
-  }
+  .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .hero::after{
-    content:"";
-    position:absolute;inset:0;
-    background:rgba(11,33,52,.55)
+    content:"";position:absolute;inset:0;background:rgba(11,33,52,.55)
   }
   .hero .inner{
     position:relative;z-index:2;text-align:center;padding:0 22px;
@@ -131,7 +124,12 @@
   /* —— Sekcje —— */
   section{padding:90px 20px}
   .container{max-width:1000px;margin:0 auto}
-  .card{background:var(--surface);border-radius:8px;padding:28px 30px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+  .card{
+    background:var(--surface);
+    border-radius:8px;
+    padding:28px 30px;
+    box-shadow:0 6px 16px rgba(0,0,0,.25)
+  }
   .media-grid{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:42px
   }
@@ -193,12 +191,12 @@
 
         <article class="person">
           <h3>Zofia Andersz <span class="role">skrzypce</span></h3>
-          <p>Skrzypaczka, której smyczek snuje opowieści pełne światła i cienia. Występowała na festiwalach kameralnych oraz autorskich koncertach, łącząc elegancję klasyki z oddechem współczesnej wrażliwości.</p>
+          <p>Skrzypaczka, której smyczek snuje opowieści pełne światła i cienia. Występowała podczas festiwali kameralnych i koncertów solowych, łącząc elegancję klasyki z oddechem współczesnej wrażliwości.</p>
         </article>
 
         <article class="person">
           <h3>Piotr Górski <span class="role">organy&nbsp;i&nbsp;fortepian</span></h3>
-          <p>Organista Kościoła Świętej Trójcy w Nowym Mieście nad Wartą. Koncertował na festiwalach organowych; jego interpretacje wyróżnia dynamiczna energia i wyrazista dramaturgia od pierwszego akordu po ostatnie wybrzmienie.</p>
+          <p>Organista Kościoła Świętej Trójcy w Nowym Mieście nad Wartą. Występował podczas licznych koncertów organowych w kraju; jego interpretacje wyróżnia dynamiczna energia i wyrazista dramaturgia od pierwszego akordu po ostatnie wybrzmienie.</p>
         </article>
 
         <p style="margin-top:2rem">Jako duet tworzymy występy skrojone do przestrzeni i słuchacza – od sal koncertowych, przez festiwalowe sceny, po kameralne świątynie. Proponujemy również oprawę muzyczną ceremonii ślubnych: kościelnych, cywilnych i plenerowych – w tonacji Waszego dnia.</p>
