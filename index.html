@@ -2,231 +2,190 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Più Mosso</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO / Social ===== -->
+  <title>Duet Più Mosso – Kunszt, Styl i Pasja w muzyce</title>
+  <meta name="description" content="Duet Più Mosso (skrzypce i fortepian/organy). Koncerty i oprawa muzyczna ślubów oraz wydarzeń w całej Polsce. Zofia Andersz & Piotr Górski." />
+  <meta property="og:title" content="Duet Più Mosso – Kunszt. Styl. Pasja." />
+  <meta property="og:description" content="Profesjonalna oprawa muzyczna koncertów, ślubów i wydarzeń. Skrzypce &amp; fortepian/organy." />
+  <meta property="og:image" content="https://piumosso.pl/og_image.jpg" />
+  <meta property="og:url" content="https://piumosso.pl" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ===== Performance ===== -->
+  <link rel="preload" href="PiuMosso_logo_transparent_clean.png" as="image" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- ===== Styles ===== -->
   <style>
-    html {
-      scroll-behavior: smooth;
+    :root {
+      --accent: #007b44;
+      --accent-dark: #005c32;
+      --bg: #fcf9f3;
+      --surface: #f7f4ea;
+      --text: #222;
     }
+    html { scroll-behavior:smooth; }
     body {
-      font-family: "Georgia", serif;
-      background-color: #fcf9f3;
-      color: #222222;
-      margin: 0;
-      padding: 40px 20px;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-family: "Playfair Display", Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      margin:0;
+      padding:0 20px 80px;
+      line-height:1.6;
     }
     nav {
-      background-color: #f7f4ea;
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      animation: fadeIn 1s ease-out;
+      background: var(--surface);
+      padding:12px 0;
+      border-bottom:1px solid #ddd;
+      position:sticky;top:0;z-index:100;
     }
     nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 0 10px;
-      margin: 0;
-    }
-    nav li {
-      display: inline;
+      list-style:none;
+      display:flex;flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;margin:0;padding:0 10px;
     }
     nav a {
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
-      font-size: 1em;
-      padding-bottom: 3px;
-      border-bottom: 2px solid transparent;
-      transition: border 0.2s;
+      font-weight:600;font-size:1rem;
+      color:var(--text);text-decoration:none;
+      padding-bottom:4px;border-bottom:2px solid transparent;
+      transition:border .2s;
     }
-    nav a:hover {
-      border-bottom: 2px solid #999;
-    }
+    nav a:hover,nav a:focus-visible { border-color:#999; }
+    @media(max-width:600px){ nav a{font-size:.9rem;} }
 
-    @media (max-width: 600px) {
-      nav a {
-        font-size: 0.9em;
-      }
-    }
+    .container { max-width:900px;margin:0 auto;padding-top:40px; }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      scroll-margin-top: 100px;
-      animation: fadeInUp 0.6s ease-in;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    header img {
-      max-width: 300px;
-      height: auto;
-      animation: fadeIn 2s ease-in-out;
-    }
-    .tagline {
-      font-style: italic;
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #555;
-    }
-    p {
-      margin-bottom: 1em;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 4em;
-    }
-    a {
-      color: #000;
-      text-decoration: none;
-      border-bottom: 1px solid #ccc;
-    }
-    a:hover {
-      color: #444;
-      border-bottom: 1px solid #444;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 6px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    .button-link {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #111;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 30px;
-      transition: background-color 0.3s ease;
-    }
-    .button-link:hover {
-      background-color: #333;
-    }
-    .phone-button {
-  display: inline-block;
-  margin: 8px 0;
-  padding: 10px 20px;
-  background-color: #007b44;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.phone-button:hover {
-  background-color: #005c32;
-}
-    .social-links a {
-      margin: 0 10px;
-    }
+    header{text-align:center;margin-bottom:48px;}
+    header img{max-width:340px;height:auto;}
+    h1{font-size:2rem;margin:.5rem 0 0;font-weight:700;line-height:1.3;}
+    .tagline{font-style:italic;font-size:1.2rem;color:#555;margin-top:6px;}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+    section{margin-bottom:3rem;}
+    section h2{font-size:1.75rem;margin-bottom:.6rem;}
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .button-link,.phone-button{
+      display:inline-block;padding:12px 24px;border-radius:4px;
+      font-weight:600;text-decoration:none;
+      transition:background-color .25s ease-in-out;
     }
+    .button-link{background:var(--text);color:#fff;margin-top:24px;}
+    .button-link:hover,.button-link:focus-visible{background:#333;}
+    .phone-button{background:var(--accent);color:#fff;margin:8px 4px;}
+    .phone-button:hover,.phone-button:focus-visible{background:var(--accent-dark);}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+    .gallery img{
+      width:100%;aspect-ratio:4/3;object-fit:cover;
+      border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.08);
+      transition:transform .35s ease;
+    }
+    .gallery img:hover{transform:scale(1.04);}
+
+    footer{text-align:center;font-size:.9rem;color:#666;margin-top:4rem;}
+    .social-links a{margin:0 10px;color:var(--text);text-decoration:none;}
+    .social-links a:hover{color:#444;}
+
+    /* Visually‑hidden helper */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
   </style>
+
+  <!-- ===== Structured Data ===== -->
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"MusicGroup",
+      "name":"Duet Più Mosso",
+      "member":[
+        {"@type":"Person","name":"Zofia Andersz","jobTitle":"Skrzypaczka"},
+        {"@type":"Person","name":"Piotr Górski","jobTitle":"Pianista / Organista"}
+      ],
+      "url":"https://piumosso.pl",
+      "image":"https://piumosso.pl/og_image.jpg",
+      "sameAs":[
+        "https://www.facebook.com/piumossoart",
+        "https://www.youtube.com/watch?v=zUReBhFwYuc"
+      ],
+      "contactPoint":[{
+        "@type":"ContactPoint",
+        "telephone":"+48-781-010-229",
+        "contactType":"customer support",
+        "areaServed":"PL"
+      }]
+    }
+  </script>
 </head>
+
 <body>
+  <nav aria-label="Główne">
+    <ul>
+      <li><a href="#kim">Kim jesteśmy</a></li>
+      <li><a href="#co">Co robimy</a></li>
+      <li><a href="#oferta">Oferta koncertowa</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <ul>
-    <li><a href="#kim">Kim jesteśmy</a></li>
-    <li><a href="#co">Co robimy</a></li>
-    <li><a href="#oferta">Oferta koncertowa</a></li>
-    <li><a href="#galeria">Galeria</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
-</nav>
+  <main class="container">
+    <header>
+      <img src="PiuMosso_logo_transparent_clean.png" alt="Logo duetu Più Mosso" width="340" height="210" />
+      <h1 class="sr-only">Duet Più Mosso – skrzypce &amp; fortepian / organy</h1>
+      <p class="tagline">Kunszt. Styl. Pasja.</p>
+    </header>
 
-<div class="container">
-  <header>
-    <img src="PiuMosso_logo_transparent_clean.png" alt="Più Mosso logo">
-    <p class="tagline">Kunszt. Styl. Pasja.</p>
-  </header>
+    <section id="kim">
+      <h2>Kim jesteśmy</h2>
+      <p><strong>Zofia Andersz – skrzypce</strong><br>
+         Skrzypaczka o wyjątkowym wyczuciu stylu i emocji. Jej gra łączy precyzję techniczną z naturalną muzykalnością, tworząc pełne ekspresji i subtelności interpretacje.</p>
+      <p><strong>Piotr Górski – organy i fortepian</strong><br>
+         Organista i pianista z bogatym doświadczeniem scenicznym. Występuje jako solista i kameralista w całej Polsce, specjalizując się w repertuarze klasycznym i sakralnym.</p>
+    </section>
 
-  <h2 id="kim">Kim jesteśmy</h2>
-  <p><strong>Zofia Andersz – skrzypce</strong><br>
-  Skrzypaczka o wyjątkowym wyczuciu stylu i emocji. Jej gra łączy precyzję techniczną z naturalną muzykalnością, tworząc pełne ekspresji i subtelności interpretacje.</p>
+    <section id="co">
+      <h2>Co robimy</h2>
+      <p><strong>Più Mosso</strong> to duet, który tworzy koncerty z myślą o odbiorcy. Nasz repertuar obejmuje muzykę klasyczną, filmową i okazjonalną – od utworów sakralnych po taneczne miniatury i nastrojowe transkrypcje.</p>
+      <p>Występujemy w salach koncertowych, świątyniach, domach kultury, sanatoriach i plenerach. Program każdorazowo dopasowujemy do przestrzeni, charakteru wydarzenia i profilu publiczności.</p>
+    </section>
 
-  <p><strong>Piotr Górski – organy i fortepian</strong><br>
-  Organista i pianista z bogatym doświadczeniem scenicznym. Występuje jako solista i kameralista w całej Polsce, specjalizując się w repertuarze klasycznym i sakralnym.</p>
+    <section id="oferta">
+      <h2>Oferta koncertowa</h2>
+      <p style="text-align:center">
+        <a class="button-link" href="Oferta Koncertowa.pdf" target="_blank" rel="noopener">Pobierz ofertę koncertową</a>
+      </p>
+    </section>
 
-  <h2 id="co">Co robimy</h2>
-  <p><strong>Più Mosso</strong> to duet, który tworzy koncerty z myślą o odbiorcy. Nasz repertuar obejmuje muzykę klasyczną, filmową i okazjonalną – od utworów sakralnych po taneczne miniatury i nastrojowe transkrypcje.</p>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Chcesz nas zaprosić lub o coś zapytać?<br>
+         Napisz na <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a></p>
+      <p>
+        <a class="phone-button" href="tel:+48781010229" aria-label="Zadzwoń do Piotra, numer 781 010 229">Piotr: 781&nbsp;010&nbsp;229</a>
+        <a class="phone-button" href="tel:+48721521594" aria-label="Zadzwoń do Zofii, numer 721 521 594">Zofia: 721&nbsp;521&nbsp;594</a>
+      </p>
+      <p>Działamy w całej Polsce.</p>
+    </section>
 
-  <p>Występujemy w salach koncertowych, świątyniach, domach kultury, sanatoriach i plenerach. Program każdorazowo dopasowujemy do przestrzeni, charakteru wydarzenia i profilu publiczności.</p>
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <img src="2.jpg"     alt="Duet Più Mosso – koncert na scenie"      loading="lazy">
+        <img src="3.JPEG"   alt="Piotr Górski przy fortepianie"            loading="lazy">
+        <img src="1.jpg"     alt="Skrzypaczka Zofia Andersz podczas występu" loading="lazy">
+      </div>
+    </section>
 
-  <h2 id="oferta">Oferta koncertowa</h2>
-  <p style="text-align: center;">
-    <a class="button-link" href="Oferta Koncertowa.pdf" target="_blank">Pobierz ofertę koncertową</a>
-  </p>
-
-  <h2 id="kontakt">Kontakt</h2>
-  <p>Chcesz nas zaprosić lub o coś zapytać?<br>
-  Napisz na <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a><br>
-    <p>
-  <a class="phone-button" href="tel:+48781010229">Piotr: 781 010 229</a>
-</p>
-<p>
-  <a class="phone-button" href="tel:+48721521594">Zofia: 721 521 594</a>
-</p>
-  Działamy w całej Polsce.</p>
-
-  <h2 id="galeria">Galeria</h2>
-  <div class="gallery">
-    <img src="2.jpg" alt="Koncert 2">
-    <img src="3.JPEG" alt="Koncert 3">
-    <img src="1.jpg" alt="Koncert 1">
-  </div>
-
-  <footer>
-    &copy; 2025 Più Mosso — Zofia Andersz &amp; Piotr Górski
-    <div class="social-links">
-      <a href="https://www.facebook.com/piumossoart" target="_blank">Facebook</a> |
-      <a href="https://www.youtube.com/watch?v=zUReBhFwYuc" target="_blank">YouTube</a>
-    </div>
-  </footer>
-</div>
-
+    <footer>
+      &copy; 2025 Più Mosso — Zofia Andersz &amp; Piotr Górski
+      <div class="social-links" aria-label="Media społecznościowe">
+        <a href="https://www.facebook.com/piumossoart" target="_blank" rel="noopener">Facebook</a> | 
+        <a href="https://www.youtube.com/watch?v=zUReBhFwYuc" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
