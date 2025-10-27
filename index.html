@@ -240,5 +240,17 @@ ${f.get('message')?.trim()||'–'}`);
     location.href=`mailto:kontakt@piumosso.pl?subject=Zapytanie%20z%20formularza&body=${body}`;
   });
   </script>
+<script>
+/* Usuwanie wdów i sierot w tekstach (Più Mosso, elegancka typografia) */
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('p, h1, h2, h3, li');
+  elements.forEach(el => {
+    // Pomijamy bardzo krótkie akapity
+    if (el.textContent.trim().split(' ').length < 3) return;
+
+    el.innerHTML = el.innerHTML.replace(/\s+([^\s<>]{1,8})\s*$/,'&nbsp;$1');
+  });
+});
+</script>
 </body>
 </html>
