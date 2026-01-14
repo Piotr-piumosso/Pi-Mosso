@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="IMG_0552.PNG">
 <link rel="icon" type="image/png" sizes="16x16" href="IMG_0551.PNG">
 <link rel="apple-touch-icon" href="IMG_0553.PNG">
-<meta name="theme-color" content="#0B2134">
+<meta name="theme-color" content="#0C0A08">
 
 <!-- ========= Open Graph / Twitter ========= -->
 <meta property="og:type"        content="website">
@@ -26,26 +26,26 @@
 <meta name="twitter:description" content="Duet skrzypce & organy / fortepian. Koncerty, śluby, edukacja.">
 <meta name="twitter:image"       content="https://piumosso.pl/IMG_0554.JPG">
 
-<!-- Fonts (bardziej "ofertowo": Playfair + Inter) -->
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
 /* =========================
-   PIÙ MOSSO — "LOOK OFERTY"
+   PIÙ MOSSO — LOOK "OFERTY"
+   Ciemne, ciepłe tony (espresso/charcoal) + złoto + krem
    ========================= */
 
-/* Palette: ciemny granat + złoto + krem + powierzchnie jak w PDF */
 :root{
-  --bg:#0B2134;
-  --bg-2:#081a2a;
-  --surface:#0F2A43;
-  --surface-2:#102F4A;
-  --ink:#F7F3EA;
-  --muted:#C8D0DB;
+  --bg:#0C0A08;          /* prawie czarny, ciepły */
+  --bg-2:#080605;        /* jeszcze głębiej */
+  --surface:#14100D;     /* ciepła powierzchnia */
+  --surface-2:#1A1410;   /* jaśniejsza powierzchnia */
+  --ink:#F6F0E4;         /* krem */
+  --muted:rgba(246,240,228,.74);
   --gold:#C5A557;
-  --gold-2:#B99645;
-  --line:rgba(197,165,87,.26);
-  --shadow:0 18px 44px rgba(0,0,0,.35);
+  --gold-2:#B7903E;
+  --line:rgba(197,165,87,.22);
+  --shadow:0 18px 44px rgba(0,0,0,.55);
   --radius:14px;
   --radius-sm:10px;
   --max:1100px;
@@ -57,8 +57,9 @@ body{
   font-family:"Inter",sans-serif;
   font-size:17px;
   line-height:1.75;
-  background:radial-gradient(1200px 600px at 50% -10%, rgba(197,165,87,.10), transparent 55%),
-             linear-gradient(180deg, var(--bg), var(--bg-2));
+  background:
+    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
   color:var(--ink);
   -webkit-font-smoothing:antialiased;
 }
@@ -67,7 +68,6 @@ img,video{max-width:100%;height:auto;border:0}
 a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
 a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
 
-/* Typografia jak "broszura" */
 h1,h2,h3{
   font-family:"Playfair Display",serif;
   color:var(--ink);
@@ -77,7 +77,7 @@ h1,h2,h3{
 h1{
   font-size:clamp(2.6rem,5vw,4.1rem);
   line-height:1.08;
-  letter-spacing:.6px;
+  letter-spacing:.8px;
 }
 h2{
   font-size:clamp(1.7rem,2.5vw,2.15rem);
@@ -97,13 +97,13 @@ strong{font-weight:600}
   font-size:.78rem;
   letter-spacing:.16em;
   text-transform:uppercase;
-  color:rgba(247,243,234,.85);
+  color:rgba(246,240,228,.84);
 }
 
 .role{
-  background:rgba(247,243,234,.08);
+  background:rgba(246,240,228,.06);
   border:1px solid rgba(197,165,87,.22);
-  color:rgba(247,243,234,.92);
+  color:rgba(246,240,228,.90);
   font-size:.74rem;
   font-weight:600;
   letter-spacing:.06em;
@@ -116,9 +116,9 @@ strong{font-weight:600}
 nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
   padding:10px 20px;
-  background:linear-gradient(180deg, rgba(11,33,52,.92), rgba(11,33,52,.78));
+  background:linear-gradient(180deg, rgba(12,10,8,.92), rgba(12,10,8,.74));
   backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(197,165,87,.18);
+  border-bottom:1px solid rgba(197,165,87,.16);
 }
 .nav-wrap{
   max-width:var(--max);
@@ -131,7 +131,7 @@ nav{
 }
 .brand img{
   height:42px;width:auto;
-  filter:drop-shadow(0 0 2px rgba(0,0,0,.35));
+  filter:drop-shadow(0 0 2px rgba(0,0,0,.45));
 }
 nav ul{
   list-style:none;
@@ -144,7 +144,7 @@ nav a{
   font-weight:600;
   font-size:.92rem;
   text-decoration:none;
-  color:rgba(247,243,234,.92);
+  color:rgba(246,240,228,.90);
   position:relative;
   padding-bottom:6px;
 }
@@ -153,7 +153,7 @@ nav a::after{
   position:absolute;
   bottom:0;left:0;
   width:0;height:2px;
-  background:linear-gradient(90deg,var(--gold),rgba(197,165,87,.35));
+  background:linear-gradient(90deg,var(--gold),rgba(197,165,87,.30));
   transition:width .28s ease;
 }
 nav a:hover::after, nav a:focus-visible::after{width:100%}
@@ -175,24 +175,19 @@ section{padding:92px 20px}
 
 /* Cards (jak "strony" oferty) */
 .card{
-  background:linear-gradient(180deg, rgba(16,47,74,.96), rgba(15,42,67,.92));
-  border:1px solid rgba(197,165,87,.20);
+  background:
+    radial-gradient(900px 260px at 50% 0, rgba(197,165,87,.08), transparent 60%),
+    linear-gradient(180deg, rgba(26,20,16,.96), rgba(20,16,13,.92));
+  border:1px solid rgba(197,165,87,.18);
   border-radius:var(--radius);
   padding:34px 34px;
   box-shadow:var(--shadow);
   position:relative;
   overflow:hidden;
 }
-.card::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  background:radial-gradient(900px 240px at 50% 0, rgba(197,165,87,.10), transparent 60%);
-  pointer-events:none;
-}
 .card > *{position:relative}
 
-/* HERO — bardziej "okładkowo" */
+/* HERO — okładkowo, ciepło */
 .hero{
   position:relative;
   min-height:92vh;
@@ -204,41 +199,29 @@ section{padding:92px 20px}
 .hero video{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;
-  filter:saturate(.9) contrast(1.05);
+  filter:saturate(.92) contrast(1.08);
 }
 .hero::after{
   content:"";
   position:absolute;inset:0;
   background:
-    linear-gradient(180deg, rgba(11,33,52,.65), rgba(11,33,52,.86)),
-    radial-gradient(900px 500px at 50% 25%, rgba(197,165,87,.12), transparent 60%);
+    radial-gradient(900px 520px at 50% 22%, rgba(197,165,87,.14), transparent 60%),
+    linear-gradient(180deg, rgba(12,10,8,.62), rgba(8,6,5,.90));
 }
 .hero .inner{
   position:relative;z-index:2;
   text-align:center;
-  padding:110px 22px 70px;
+  padding:120px 22px 70px;
   max-width:920px;
-  animation:fadeInUp .9s ease-out both .15s;
+  animation:fadeInUp .9s ease-out both .12s;
 }
 @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-.hero .kicker{
-  display:inline-flex;
-  gap:10px;
-  align-items:center;
-  justify-content:center;
-  padding:10px 16px;
-  border-radius:999px;
-  border:1px solid rgba(197,165,87,.26);
-  background:rgba(15,42,67,.40);
-  margin-bottom:18px;
-}
-.hero .kicker span{color:rgba(247,243,234,.92);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
 .subtitle{
   font-family:"Playfair Display",serif;
   font-size:clamp(1.2rem,2.1vw,1.5rem);
   font-style:italic;
-  color:rgba(247,243,234,.90);
+  color:rgba(246,240,228,.88);
 }
 .hero .btn-row{
   margin-top:32px;
@@ -248,7 +231,7 @@ section{padding:92px 20px}
   flex-wrap:wrap;
 }
 
-/* Buttons — bardziej "ofertowe" */
+/* Buttons — spokojne, premium */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -264,23 +247,23 @@ section{padding:92px 20px}
 }
 .btn-primary{
   background:linear-gradient(180deg, var(--gold), var(--gold-2));
-  color:#081a2a;
-  box-shadow:0 10px 22px rgba(0,0,0,.35);
-  border:1px solid rgba(0,0,0,.14);
+  color:#120d0a;
+  box-shadow:0 12px 28px rgba(0,0,0,.45);
+  border:1px solid rgba(0,0,0,.18);
 }
 .btn-primary:hover,.btn-primary:focus-visible{
   transform:translateY(-2px);
-  box-shadow:0 14px 28px rgba(0,0,0,.42);
+  box-shadow:0 16px 34px rgba(0,0,0,.55);
 }
 .btn-outline{
   background:transparent;
-  color:rgba(247,243,234,.95);
-  border:1px solid rgba(197,165,87,.36);
+  color:rgba(246,240,228,.92);
+  border:1px solid rgba(197,165,87,.34);
 }
 .btn-outline:hover,.btn-outline:focus-visible{
   transform:translateY(-2px);
   border-color:rgba(224,195,122,.75);
-  box-shadow:0 10px 24px rgba(0,0,0,.25);
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
 }
 
 /* About layout */
@@ -289,12 +272,12 @@ section{padding:92px 20px}
 .about img{
   width:100%;
   border-radius:var(--radius-sm);
-  box-shadow:0 14px 34px rgba(0,0,0,.40);
+  box-shadow:0 14px 34px rgba(0,0,0,.52);
   border:1px solid rgba(197,165,87,.14);
 }
 .about .credit{
   font-size:.78rem;
-  color:rgba(247,243,234,.68);
+  color:rgba(246,240,228,.64);
   margin-top:10px;
   text-align:center
 }
@@ -302,11 +285,11 @@ section{padding:92px 20px}
   .about{grid-template-columns:minmax(0,380px) 1fr}
 }
 
-/* Multimedia */
+/* Multimedia band */
 .band{
-  background:linear-gradient(180deg, rgba(15,42,67,.40), rgba(15,42,67,.12));
-  border-top:1px solid rgba(197,165,87,.16);
-  border-bottom:1px solid rgba(197,165,87,.16);
+  background:linear-gradient(180deg, rgba(26,20,16,.55), rgba(26,20,16,.18));
+  border-top:1px solid rgba(197,165,87,.14);
+  border-bottom:1px solid rgba(197,165,87,.14);
 }
 .video-wrapper{position:relative;max-width:820px;margin:0 auto}
 .video-wrapper::before{content:"";display:block;padding-top:56.25%}
@@ -314,7 +297,7 @@ section{padding:92px 20px}
   position:absolute;top:0;left:0;width:100%;height:100%;
   border:0;border-radius:var(--radius);
   box-shadow:var(--shadow);
-  border:1px solid rgba(197,165,87,.18);
+  border:1px solid rgba(197,165,87,.16);
 }
 
 /* Contact form */
@@ -326,8 +309,8 @@ input,textarea{
   padding:.75em .95em;
   border-radius:12px;
   border:1px solid rgba(197,165,87,.22);
-  background:rgba(247,243,234,.96);
-  color:#091c2d;
+  background:rgba(246,240,228,.96);
+  color:#120d0a;
 }
 input:focus,textarea:focus{
   outline:none;
@@ -335,14 +318,14 @@ input:focus,textarea:focus{
   box-shadow:0 0 0 4px rgba(197,165,87,.12);
 }
 textarea{resize:vertical;min-height:140px}
-.form-note{font-size:.82rem;color:rgba(247,243,234,.65);margin-top:-6px}
+.form-note{font-size:.82rem;color:rgba(246,240,228,.62);margin-top:-6px}
 
 button[type="submit"]{all:unset;cursor:pointer}
 
 /* Contact direct lines */
 .direct{
   margin-top:26px;
-  color:rgba(247,243,234,.78);
+  color:rgba(246,240,228,.76);
   font-size:.92rem;
 }
 .contact-row{
@@ -360,9 +343,9 @@ button[type="submit"]{all:unset;cursor:pointer}
   padding:14px 22px;border-radius:999px;
   font-weight:700;
   background:linear-gradient(180deg,var(--gold),var(--gold-2));
-  color:#081a2a;
+  color:#120d0a;
   text-decoration:none;
-  box-shadow:0 10px 28px rgba(0,0,0,.45);
+  box-shadow:0 12px 32px rgba(0,0,0,.55);
   transform:translateY(130px);
   transition:transform .42s ease;
 }
@@ -375,10 +358,10 @@ button[type="submit"]{all:unset;cursor:pointer}
 footer{
   padding:52px 20px;
   text-align:center;
-  color:rgba(247,243,234,.62);
+  color:rgba(246,240,228,.58);
   font-size:.88rem;
-  border-top:1px solid rgba(197,165,87,.14);
-  background:rgba(8,26,42,.55);
+  border-top:1px solid rgba(197,165,87,.12);
+  background:rgba(8,6,5,.62);
 }
 </style>
 </head>
@@ -403,10 +386,6 @@ footer{
   <header class="hero" id="hero">
     <video src="IMG_3283.webm" autoplay muted loop playsinline></video>
     <div class="inner">
-      <div class="kicker">
-        <span>Kunszt. Styl. Pasja.</span>
-      </div>
-
       <h1>Più Mosso</h1>
       <p class="subtitle">Muzyka, która przemienia chwilę w sztukę</p>
 
@@ -513,7 +492,7 @@ footer{
         <h2 style="margin-top:.35rem">Skontaktuj się</h2>
         <div class="rule"></div>
 
-        <p style="font-size:1.12rem;margin-top:14px;color:rgba(247,243,234,.90)">
+        <p style="font-size:1.12rem;margin-top:14px;color:rgba(246,240,228,.88)">
           Zarezerwuj termin lub zapytaj o szczegóły — odpowiadamy tego samego dnia.
         </p>
 
@@ -588,7 +567,7 @@ ${f.get('message')?.trim()||'–'}`);
   </script>
 
   <script>
-  /* Usuwanie wdów i sierot w tekstach (Più Mosso, elegancka typografia) */
+  /* Usuwanie wdów i sierot */
   document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('p, h1, h2, h3, li');
     elements.forEach(el => {
