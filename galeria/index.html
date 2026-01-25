@@ -1,1 +1,196 @@
-galeria/index.html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Galeria — Più Mosso</title>
+<meta name="description" content="Galeria zdjęć Più Mosso — wybrane kadry z koncertów." />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --bg:#0C0A08; --bg-2:#080605;
+  --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
+  --gold:#C5A557; --gold-2:#B7903E;
+  --line:rgba(197,165,87,.22);
+  --shadow:0 18px 44px rgba(0,0,0,.55);
+  --radius:14px; --max:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Inter",sans-serif;
+  font-size:17px; line-height:1.75;
+  background:
+    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
+a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
+h1,h2{font-family:"Playfair Display",serif}
+h1{font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.1}
+.container{max-width:var(--max);margin:0 auto;padding:92px 20px 60px}
+.top{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  border-bottom:1px solid rgba(197,165,87,.18);
+  padding-bottom:18px;margin-bottom:22px;
+}
+.smallcaps{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,240,228,.84)}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 14px;border-radius:999px;
+  font-weight:600;font-size:.9rem;text-decoration:none;
+  border:1px solid rgba(197,165,87,.26);
+  color:rgba(246,240,228,.90);
+  background:rgba(246,240,228,.05);
+}
+.btn.active{background:linear-gradient(180deg,var(--gold),var(--gold-2));color:#120d0a;border-color:rgba(0,0,0,.18)}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.item{
+  grid-column:span 4;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(197,165,87,.14);
+  background:rgba(246,240,228,.03);
+  box-shadow:var(--shadow);
+}
+.item img{width:100%;height:360px;object-fit:cover;display:block}
+.caption{padding:12px 12px 14px;color:rgba(246,240,228,.82);font-size:.92rem}
+.meta{color:rgba(246,240,228,.62);font-size:.82rem;margin-top:4px}
+@media(max-width:980px){.item{grid-column:span 6}.item img{height:320px}}
+@media(max-width:560px){.item{grid-column:span 12}.item img{height:320px}}
+.footer{margin-top:26px;color:rgba(246,240,228,.58);font-size:.9rem}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <div>
+        <div class="smallcaps">Più Mosso</div>
+        <h1>Galeria</h1>
+        <p style="color:rgba(246,240,228,.84);margin-top:8px">
+          Wybrane kadry z koncertów. Selekcja kuratorska — bez przypadkowych zdjęć.
+        </p>
+      </div>
+      <div class="controls" aria-label="Filtry">
+        <a class="btn" href="/" aria-label="Powrót na stronę główną">Powrót</a>
+        <button class="btn active" data-filter="ALL" type="button">Wszystko</button>
+        <button class="btn" data-filter="PM" type="button">Duet</button>
+        <button class="btn" data-filter="P" type="button">Piotr</button>
+        <button class="btn" data-filter="Z" type="button">Zofia</button>
+        <button class="btn" data-filter="D" type="button">Detale</button>
+        <button class="btn" data-filter="PL" type="button">Plakaty</button>
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="footer">
+      Kalendarium koncertów: <a href="/kalendarium/">zobacz</a> • Kontakt: <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+    </div>
+  </div>
+
+<script>
+/*
+  Uzupełnisz to później opisami – na razie pokazuję mechanikę.
+  src: jeśli przeniesiesz zdjęcia do folderu, zmień `src: file` na `src: "/assets/gallery/"+file`
+*/
+const PHOTOS = [
+  // 10.08.2025 (Nowa Ruda) – przykłady z Twoich nazw
+  { file:"100825-PM5.JPG", type:"PM", date:"2025-08-10", caption:"Più Mosso — koncert festiwalowy (IX Festiwal Ziemi Kłodzkiej)" },
+  { file:"100825-PM4.JPG", type:"PM", date:"2025-08-10", caption:"Più Mosso — recital" },
+  { file:"100825-PM3.JPG", type:"PM", date:"2025-08-10", caption:"Più Mosso — scena" },
+  { file:"100825-PM2.JPG", type:"PM", date:"2025-08-10", caption:"Più Mosso — kadr koncertowy" },
+  { file:"100825-PM1.JPG", type:"PM", date:"2025-08-10", caption:"Più Mosso — atmosfera wieczoru" },
+  { file:"100825-Z2.JPG",  type:"Z",  date:"2025-08-10", caption:"Zofia Andersz — skrzypce" },
+  { file:"100825-Z1.JPG",  type:"Z",  date:"2025-08-10", caption:"Zofia Andersz — kadr sceniczny" },
+  { file:"100825-P4.JPG",  type:"P",  date:"2025-08-10", caption:"Piotr Górski — organy / fortepian" },
+  { file:"100825-P3.JPG",  type:"P",  date:"2025-08-10", caption:"Piotr Górski — interpretacja" },
+  { file:"100825-P2.JPG",  type:"P",  date:"2025-08-10", caption:"Piotr Górski — scena" },
+  { file:"100825-P1.JPG",  type:"P",  date:"2025-08-10", caption:"Piotr Górski — kadr koncertowy" },
+  { file:"100825-PM.JPG",  type:"PM", date:"2025-08-10", caption:"Più Mosso — duet" },
+  { file:"100825-Z.JPG",   type:"Z",  date:"2025-08-10", caption:"Zofia Andersz — portret" },
+  { file:"100825-P.JPG",   type:"P",  date:"2025-08-10", caption:"Piotr Górski — portret" },
+
+  // 27.07.2025 (św. Marcin – okolice Radwanic)
+  { file:"270725-PM.JPG",  type:"PM", date:"2025-07-27", caption:"Più Mosso — koncert w kościele św. Marcina" },
+  { file:"270725-D1.JPG",  type:"D",  date:"2025-07-27", caption:"Detal — moment przed koncertem" },
+  { file:"270725-D.JPG",   type:"D",  date:"2025-07-27", caption:"Detal — przestrzeń i instrument" },
+
+  // 08.03.2025 (Gola)
+  { file:"080325-PM2.JPG", type:"PM", date:"2025-03-08", caption:"Più Mosso — Dzień Kobiet (Gola)" },
+  { file:"080325-PM.JPG",  type:"PM", date:"2025-03-08", caption:"Più Mosso — recital okolicznościowy" },
+
+  // 17.11.2024 (Koźmin)
+  { file:"171124-PL.JPG",  type:"PL", date:"2024-11-17", caption:"Plakat — Koźmin Wielkopolski" },
+
+  // 11.11.2024
+  { file:"111124.JPG",     type:"D",  date:"2024-11-11", caption:"Dzień Niepodległości — Nowe Miasto nad Wartą" },
+
+  // 19.10.2024 (Busko)
+  { file:"191024-PM.JPG",  type:"PM", date:"2024-10-19", caption:"Più Mosso — Busko-Zdrój (Festiwal im. Feliksa Rączkowskiego)" },
+  { file:"191024-Z.JPG",   type:"Z",  date:"2024-10-19", caption:"Zofia Andersz — Busko-Zdrój" },
+  { file:"191024-D.JPG",   type:"D",  date:"2024-10-19", caption:"Detal — koncert festiwalowy" },
+
+  // 25.09.2024 (Miejska Górka)
+  { file:"250924-PM.JPG",  type:"PM", date:"2024-09-25", caption:"Più Mosso — Organy Wielkopolski (Miejska Górka)" },
+  { file:"250924-Z.JPG",   type:"Z",  date:"2024-09-25", caption:"Zofia Andersz — kadr koncertowy" },
+  { file:"250924-P.JPG",   type:"P",  date:"2024-09-25", caption:"Piotr Górski — kadr koncertowy" },
+  { file:"250924-D.JPG",   type:"D",  date:"2024-09-25", caption:"Detal — instrument / przestrzeń" },
+
+  // 24.03.2024 (Nowe Miasto — pasyjny)
+  { file:"240324.JPG",     type:"D",  date:"2024-03-24", caption:"Koncert pasyjny — Nowe Miasto nad Wartą (św. Trójcy)" },
+
+  // 20.10.2024 (z Twojej listy plików)
+  { file:"201024-PM.JPG",  type:"PM", date:"2024-10-20", caption:"Più Mosso — kadr koncertowy" },
+  { file:"201024-D.JPG",   type:"D",  date:"2024-10-20", caption:"Detal — scena" },
+  { file:"201024-D1.JPG",  type:"D",  date:"2024-10-20", caption:"Detal — backstage" },
+  { file:"201024-D2.JPG",  type:"D",  date:"2024-10-20", caption:"Detal — instrument" }
+];
+
+function render(filter="ALL"){
+  const grid=document.getElementById("grid");
+  grid.innerHTML="";
+  PHOTOS
+    .filter(p=>filter==="ALL" ? true : p.type===filter)
+    .sort((a,b)=>b.date.localeCompare(a.date))
+    .forEach(p=>{
+      const item=document.createElement("div");
+      item.className="item";
+      item.innerHTML=`
+        <img src="${p.file}" alt="${escapeHtml(p.caption)}" loading="lazy" decoding="async">
+        <div class="caption">
+          ${escapeHtml(p.caption)}
+          <div class="meta">${p.date} • ${p.type} • ${p.file}</div>
+        </div>
+      `;
+      grid.appendChild(item);
+    });
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+render("ALL");
+
+document.querySelectorAll("[data-filter]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll("[data-filter]").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    render(btn.getAttribute("data-filter"));
+  });
+});
+</script>
+</body>
+</html>
+
