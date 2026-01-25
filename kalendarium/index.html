@@ -122,7 +122,7 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 <script>
 /*
   Kalendarium: od najnowszych do najstarszych.
-  Zdjęcia podpinamy po dacie (nazwy plików wg Twojego schematu).
+  Zdjęcia: wstawiamy jako nazwy plików znajdujących się w tym samym folderze co kalendarium (albo podaj ścieżkę).
 */
 const EVENTS = [
   {
@@ -131,7 +131,18 @@ const EVENTS = [
     city: "Konarzewo",
     venue: "—",
     note: "Koncert festiwalowy",
-    photos: []
+    photos: [
+      "IMG_0764.jpeg",
+      "IMG_0769.jpeg",
+      "IMG_0771.jpeg",
+      "IMG_0775.jpeg",
+      "IMG_0781.jpeg",
+      "IMG_0785.jpeg",
+      "IMG_0787.jpeg",
+      "IMG_0583.jpeg",
+      "IMG_0588.jpeg",
+      "IMG_0582.jpeg"
+    ]
   },
   {
     date: "2025-11-09",
@@ -139,10 +150,13 @@ const EVENTS = [
     city: "Skórzewo",
     venue: "—",
     note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek",
-    photos: []
+    photos: [
+      /* Wklej tutaj dokładne nazwy plików dla Skórzewa, np.:
+      "091125-PM.JPG",
+      "091125-D1.JPG"
+      */
+    ]
   },
-
-  /* 19.10.2025 — Surzyński (Twoje pliki IMG_...) */
   {
     date: "2025-10-19",
     title: "Festiwal im. Józefa Surzyńskiego",
@@ -155,8 +169,6 @@ const EVENTS = [
       "IMG_1452.jpeg"
     ]
   },
-
-  /* 27.09.2025 — Nowina (Twoje pliki att....jpeg) */
   {
     date: "2025-09-27",
     title: "Koncerty Muzyczne na Nowinie",
@@ -171,7 +183,6 @@ const EVENTS = [
       "att.mJdj4JpJ2sA3XWorLKQTbqkXdBpyMzsB4KYfM-uAlzE.jpeg"
     ]
   },
-
   {
     date: "2025-08-10",
     title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
@@ -228,8 +239,10 @@ const EVENTS = [
       "171124-PL.JPG"
     ]
   },
+
+  /* PRZENIESIONE: Dzień Niepodległości był w 2023 */
   {
-    date: "2024-11-11",
+    date: "2023-11-11",
     title: "Dzień Niepodległości",
     city: "Nowe Miasto nad Wartą",
     venue: "—",
@@ -238,6 +251,7 @@ const EVENTS = [
       "111124.JPG"
     ]
   },
+
   {
     date: "2024-10-19",
     title: "Festiwal w Busku-Zdroju im. Feliksa Rączkowskiego",
@@ -294,10 +308,11 @@ function esc(s){
 }
 
 function photosHTML(arr, altBase){
-  if(!arr || !arr.length) return "";
+  const a=(arr||[]).filter(Boolean);
+  if(!a.length) return "";
   return `
     <div class="photos" aria-label="Galeria zdjęć">
-      ${arr.map(fn => `
+      ${a.map(fn => `
         <a class="photo" href="${esc(fn)}" target="_blank" rel="noopener" aria-label="Otwórz zdjęcie ${esc(fn)}">
           <img src="${esc(fn)}" alt="${esc(altBase)} — ${esc(fn)}" loading="lazy" decoding="async">
         </a>
