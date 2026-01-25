@@ -1,1 +1,188 @@
-kalendarium/index.html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Kalendarium — Più Mosso</title>
+<meta name="description" content="Kalendarium koncertów Più Mosso — wybrane wydarzenia i nadchodzące terminy." />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* Wersja skrócona: spójna estetyka (ta sama paleta) */
+:root{
+  --bg:#0C0A08; --bg-2:#080605;
+  --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
+  --gold:#C5A557; --gold-2:#B7903E;
+  --line:rgba(197,165,87,.22);
+  --shadow:0 18px 44px rgba(0,0,0,.55);
+  --radius:14px; --max:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Inter",sans-serif;
+  font-size:17px; line-height:1.75;
+  background:
+    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
+a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
+h1,h2{font-family:"Playfair Display",serif}
+h1{font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.1}
+h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
+.container{max-width:var(--max);margin:0 auto;padding:92px 20px 60px}
+.top{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  border-bottom:1px solid rgba(197,165,87,.18);
+  padding-bottom:18px;margin-bottom:22px;
+}
+.smallcaps{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,240,228,.84)}
+.card{
+  background:linear-gradient(180deg, rgba(26,20,16,.96), rgba(20,16,13,.92));
+  border:1px solid rgba(197,165,87,.18);
+  border-radius:var(--radius);
+  padding:20px 22px;
+  box-shadow:var(--shadow);
+}
+.event{display:grid;gap:10px}
+.event .meta{display:flex;gap:10px;flex-wrap:wrap;color:rgba(246,240,228,.82);font-size:.95rem}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(197,165,87,.22);
+  background:rgba(246,240,228,.05);
+  padding:4px 10px;border-radius:999px;
+  font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+}
+.list{display:grid;gap:14px;margin-top:14px}
+.footer{margin-top:32px;color:rgba(246,240,228,.58);font-size:.9rem}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <div>
+        <div class="smallcaps">Più Mosso</div>
+        <h1>Kalendarium</h1>
+      </div>
+      <div>
+        <a href="/" aria-label="Powrót na stronę główną">Powrót</a>
+      </div>
+    </div>
+
+    <p style="color:rgba(246,240,228,.84)">
+      Wybrane wydarzenia. Pełna dokumentacja dostępna na życzenie.
+    </p>
+
+    <h2>Wydarzenia</h2>
+    <div class="list" id="events"></div>
+
+    <div class="footer">
+      Kontakt: <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+    </div>
+  </div>
+
+<script>
+/* Baza – na podstawie tego, co podałeś (możemy ją potem rozbudować) */
+const EVENTS = [
+  {
+    date: "2025-08-10",
+    title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
+    city: "Nowa Ruda",
+    venue: "—",
+    note: "Koncert festiwalowy",
+    tags: ["Festiwal","Kameralnie","Organy"]
+  },
+  {
+    date: "2025-07-27",
+    title: "Koncert Più Mosso",
+    city: "okolice Radwanic",
+    venue: "Kościół św. Marcina",
+    note: "Recital letni",
+    tags: ["Kościół","Recital"]
+  },
+  {
+    date: "2025-03-08",
+    title: "Dzień Kobiet",
+    city: "Gola",
+    venue: "—",
+    note: "Wydarzenie okolicznościowe",
+    tags: ["Recital"]
+  },
+  {
+    date: "2024-11-17",
+    title: "Koncert muzyki organowej i kameralnej",
+    city: "Koźmin Wielkopolski",
+    venue: "Kościół pw. św. Stanisława Biskupa i Męczennika",
+    note: "Koncert wieczorny",
+    tags: ["Organy","Kameralnie"]
+  },
+  {
+    date: "2024-11-11",
+    title: "Dzień Niepodległości",
+    city: "Nowe Miasto nad Wartą",
+    venue: "—",
+    note: "Koncert okolicznościowy",
+    tags: ["Święto"]
+  },
+  {
+    date: "2024-10-19",
+    title: "Festiwal w Busku-Zdroju im. Feliksa Rączkowskiego",
+    city: "Busko-Zdrój",
+    venue: "—",
+    note: "Występ festiwalowy",
+    tags: ["Festiwal"]
+  },
+  {
+    date: "2024-09-25",
+    title: "Festiwal Organy Wielkopolski",
+    city: "Miejska Górka",
+    venue: "—",
+    note: "Koncert festiwalowy",
+    tags: ["Organy"]
+  },
+  {
+    date: "2024-03-24",
+    title: "Koncert pasyjny",
+    city: "Nowe Miasto nad Wartą",
+    venue: "Kościół św. Trójcy",
+    note: "Program pasyjny",
+    tags: ["Pasyjne"]
+  }
+];
+
+function formatPL(iso){
+  const [y,m,d]=iso.split("-").map(Number);
+  const dt=new Date(y,m-1,d);
+  return dt.toLocaleDateString("pl-PL",{day:"2-digit",month:"long",year:"numeric"});
+}
+
+const wrap=document.getElementById("events");
+EVENTS
+  .slice()
+  .sort((a,b)=>b.date.localeCompare(a.date))
+  .forEach(e=>{
+    const el=document.createElement("div");
+    el.className="card event";
+    el.innerHTML=`
+      <div class="meta">
+        <span class="badge">${formatPL(e.date)}</span>
+        <span>${e.city}${e.venue && e.venue!=="—" ? " • "+e.venue : ""}</span>
+      </div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.25">
+        ${e.title}
+      </div>
+      <div style="color:rgba(246,240,228,.82)">${e.note || ""}</div>
+      <div class="meta">
+        ${(e.tags||[]).map(t=>`<span class="badge">${t}</span>`).join("")}
+      </div>
+    `;
+    wrap.appendChild(el);
+  });
+</script>
+</body>
+</html>
+
