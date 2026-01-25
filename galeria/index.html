@@ -6,201 +6,166 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <title>Galeria — Più Mosso</title>
-<meta name="description" content="Galeria zdjęć Più Mosso — wybrane kadry z koncertów i wydarzeń." />
+<meta name="description" content="Galeria zdjęć Più Mosso." />
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
 :root{
   --bg:#0C0A08; --bg-2:#080605;
-  --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
-  --gold:#C5A557; --gold-2:#B7903E;
+  --ink:#F6F0E4; --muted:rgba(246,240,228,.68);
+  --gold:#C5A557;
   --line:rgba(197,165,87,.22);
   --shadow:0 18px 44px rgba(0,0,0,.55);
-  --radius:14px; --radius-sm:12px;
-  --max:1100px;
+  --radius:14px;
+  --max:1200px;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
+
 body{
   font-family:"Inter",sans-serif;
-  font-size:17px; line-height:1.75;
+  font-size:17px; line-height:1.7;
   background:
     radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
     linear-gradient(180deg, var(--bg), var(--bg-2));
   color:var(--ink);
-  -webkit-font-smoothing:antialiased;
 }
-a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
-a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
-h1,h2{font-family:"Playfair Display",serif}
-h1{font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.1}
-h2{font-size:clamp(1.35rem,2vw,1.8rem);margin-top:28px}
-.container{max-width:var(--max);margin:0 auto;padding:92px 20px 66px}
-.top{
-  display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;
-  border-bottom:1px solid rgba(197,165,87,.18);
-  padding-bottom:18px;margin-bottom:18px;
-}
-.smallcaps{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,240,228,.84)}
-.rule{
-  width:100%;height:1px;
-  background:linear-gradient(90deg, transparent, var(--line), transparent);
-  margin:18px 0 0;
-}
-.section-head{
-  display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;
-  margin-top:18px;
-}
-.credit{
-  font-size:.9rem;color:rgba(246,240,228,.68);
-}
-.card{
-  background:linear-gradient(180deg, rgba(26,20,16,.96), rgba(20,16,13,.92));
-  border:1px solid rgba(197,165,87,.18);
-  border-radius:var(--radius);
-  padding:18px 18px 20px;
-  box-shadow:var(--shadow);
-  margin-top:14px;
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:12px;
-  margin-top:12px;
-}
-@media(max-width:900px){ .grid{grid-template-columns:repeat(2, minmax(0,1fr));} }
-@media(max-width:520px){ .grid{grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px;} }
 
-.item{
-  display:block;
-  border-radius:var(--radius-sm);
-  overflow:hidden;
-  border:1px solid rgba(197,165,87,.16);
-  background:rgba(246,240,228,.03);
-  box-shadow:0 10px 26px rgba(0,0,0,.35);
-  transform:translateY(0);
-  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+a{color:var(--gold);text-decoration:none}
+
+h1{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(2.3rem,4.5vw,3.3rem);
+  line-height:1.1;
 }
-.item:hover{
-  transform:translateY(-2px);
-  border-color:rgba(224,195,122,.45);
-  box-shadow:0 14px 34px rgba(0,0,0,.45);
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:92px 20px 70px;
 }
-.item img{
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  border-bottom:1px solid var(--line);
+  padding-bottom:18px;
+  margin-bottom:34px;
+}
+
+.smallcaps{
+  font-size:.75rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ===== GALERIA ===== */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
+}
+
+@media(max-width:900px){
+  .gallery{grid-template-columns:1fr}
+}
+
+.photo{
+  position:relative;
+}
+
+.photo img{
   width:100%;
-  height:190px;
+  height:420px;
   object-fit:cover;
-  display:block;
-  filter:saturate(.96) contrast(1.06);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 }
-@media(max-width:520px){ .item img{height:150px;} }
+
+@media(max-width:600px){
+  .photo img{height:300px}
+}
 
 .caption{
-  padding:10px 10px 11px;
-  font-size:.9rem;
-  color:rgba(246,240,228,.78);
-  display:flex;justify-content:space-between;gap:10px;
+  margin-top:10px;
+  font-size:.95rem;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
 }
-.caption span:last-child{color:rgba(246,240,228,.58)}
+
+.caption span:last-child{
+  font-style:italic;
+  color:rgba(246,240,228,.55);
+}
+
 .footer{
-  margin-top:34px;
-  color:rgba(246,240,228,.58);
-  font-size:.9rem;
-  border-top:1px solid rgba(197,165,87,.12);
+  margin-top:60px;
   padding-top:18px;
+  border-top:1px solid var(--line);
+  font-size:.9rem;
+  color:var(--muted);
 }
-.pnote{color:rgba(246,240,228,.84); margin-top:10px}
 </style>
 </head>
 
 <body>
   <div class="container">
+
     <div class="top">
       <div>
         <div class="smallcaps">Più Mosso</div>
         <h1>Galeria</h1>
       </div>
-      <div>
-        <a href="/" aria-label="Powrót na stronę główną">Powrót</a>
-      </div>
+      <a href="/">Powrót</a>
     </div>
 
-    <p class="pnote">Wybrane kadry z koncertów i wydarzeń.</p>
-
-    <div class="section-head">
-      <h2>05 — sesja</h2>
-      <div class="credit">fot. N. Zhang</div>
-    </div>
-    <div class="rule"></div>
-    <div class="card">
-      <div class="grid" id="grid-zhang"></div>
-    </div>
-
-    <div class="section-head">
-      <h2>07 — koncert</h2>
-      <div class="credit">fot. R. Szwarc</div>
-    </div>
-    <div class="rule"></div>
-    <div class="card">
-      <div class="grid" id="grid-szwarc"></div>
-    </div>
+    <div class="gallery" id="gallery"></div>
 
     <div class="footer">
-      Kontakt: <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+      kontakt@piumosso.pl
     </div>
+
   </div>
 
 <script>
 /*
-  WAŻNE:
-  - Ten plik jest w /galeria/index.html
-  - Twoje zdjęcia są też w /galeria/ (jak na screenie)
-  - Więc w src/href dajemy tylko nazwę pliku (bez ścieżki).
+  Zdjęcia są w /galeria/
+  Każde zdjęcie = osobny obiekt z autorem
 */
 
-const ZHANG = [
-  "IMG_0531.jpeg",
-  "IMG_0532.jpeg"
-  // dopisz kolejne IMG_05xx.jpeg jeśli wrzucisz
+const PHOTOS = [
+  { file:"IMG_0531.jpeg", author:"fot. N. Zhang" },
+  { file:"IMG_0532.jpeg", author:"fot. N. Zhang" },
+
+  { file:"IMG_0764.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0769.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0771.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0775.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0781.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0785.jpeg", author:"fot. R. Szwarc" },
+  { file:"IMG_0787.jpeg", author:"fot. R. Szwarc" }
 ];
 
-const SZWARC = [
-  "IMG_0764.jpeg",
-  "IMG_0769.jpeg",
-  "IMG_0771.jpeg",
-  "IMG_0775.jpeg",
-  "IMG_0781.jpeg",
-  "IMG_0785.jpeg",
-  "IMG_0787.jpeg"
-];
+const wrap=document.getElementById("gallery");
 
-function esc(s){
-  return String(s ?? "").replace(/[&<>"']/g, m => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
-  }[m]));
-}
-
-function mount(gridId, list, authorLabel){
-  const grid=document.getElementById(gridId);
-  list.forEach((fn, idx)=>{
-    const a=document.createElement("a");
-    a.className="item";
-    a.href=fn;
-    a.target="_blank";
-    a.rel="noopener";
-    a.innerHTML=`
-      <img src="${esc(fn)}" alt="Più Mosso — ${esc(authorLabel)} — ${esc(fn)}" loading="lazy" decoding="async">
-      <div class="caption">
-        <span>${esc(fn)}</span>
-        <span>${String(idx+1).padStart(2,"0")}</span>
-      </div>
-    `;
-    grid.appendChild(a);
-  });
-}
-
-mount("grid-zhang", ZHANG, "fot. N. Zhang");
-mount("grid-szwarc", SZWARC, "fot. R. Szwarc");
+PHOTOS.forEach(p=>{
+  const el=document.createElement("figure");
+  el.className="photo";
+  el.innerHTML=`
+    <img src="${p.file}" alt="Più Mosso — ${p.author}" loading="lazy">
+    <figcaption class="caption">
+      <span>Più Mosso</span>
+      <span>${p.author}</span>
+    </figcaption>
+  `;
+  wrap.appendChild(el);
+});
 </script>
 </body>
 </html>
