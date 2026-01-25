@@ -57,6 +57,44 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 }
 .list{display:grid;gap:14px;margin-top:14px}
 .footer{margin-top:32px;color:rgba(246,240,228,.58);font-size:.9rem}
+
+/* Galeria w kartach */
+.photos{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:10px;
+  margin-top:10px;
+}
+@media(max-width:860px){ .photos{grid-template-columns:repeat(2, minmax(0,1fr));} }
+@media(max-width:480px){ .photos{grid-template-columns:repeat(2, minmax(0,1fr));gap:8px;} }
+
+.photo{
+  display:block;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid rgba(197,165,87,.16);
+  box-shadow:0 10px 26px rgba(0,0,0,.35);
+  background:rgba(246,240,228,.03);
+  transform:translateY(0);
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.photo:hover{
+  transform:translateY(-2px);
+  border-color:rgba(224,195,122,.45);
+  box-shadow:0 14px 34px rgba(0,0,0,.45);
+}
+.photo img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  display:block;
+  filter:saturate(.96) contrast(1.06);
+}
+@media(max-width:480px){ .photo img{height:140px;} }
+
+.note{
+  color:rgba(246,240,228,.82);
+}
 </style>
 </head>
 
@@ -86,8 +124,8 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 
 <script>
 /*
-  Kalendarium: na stronie pokazujemy od najnowszych do najstarszych.
-  TAGÓW nie używamy — zostaje czysty, elegancki układ.
+  Kalendarium: od najnowszych do najstarszych.
+  Zdjęcia podpinamy po dacie (nazwy plików wg Twojego schematu).
 */
 const EVENTS = [
   {
@@ -95,84 +133,155 @@ const EVENTS = [
     title: "Świętomarciński Festiwal Muzyki Organowej i Kameralnej",
     city: "Konarzewo",
     venue: "—",
-    note: "Koncert festiwalowy"
+    note: "Koncert festiwalowy",
+    photos: [] // brak plików na screenie
   },
   {
     date: "2025-11-09",
     title: "Wieczór Muzyki Klasycznej",
     city: "Skórzewo",
     venue: "—",
-    note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek"
+    note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek",
+    photos: [] // brak plików na screenie
   },
   {
     date: "2025-10-19",
     title: "Festiwal im. Józefa Surzyńskiego",
     city: "Buk",
     venue: "Sanktuarium w Buku",
-    note: "Koncert festiwalowy"
+    note: "Koncert festiwalowy",
+    photos: [] // brak plików na screenie
   },
   {
     date: "2025-09-27",
     title: "Koncerty Muzyczne na Nowinie",
     city: "Poznań",
     venue: "Kościół Chrystusa Dobrego Pasterza",
-    note: "Koncert cyklu"
+    note: "Koncert cyklu",
+    photos: [] // brak plików na screenie
   },
+
+  /* 10.08.2025 — pliki 100825-* */
   {
     date: "2025-08-10",
     title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
     city: "Nowa Ruda",
     venue: "—",
-    note: "Koncert festiwalowy"
+    note: "Koncert festiwalowy",
+    photos: [
+      "100825-PM5.JPG",
+      "100825-Z2.JPG",
+      "100825-P4.JPG",
+      "100825-PM4.JPG",
+      "100825-PM3.JPG",
+      "100825-PM2.JPG",
+      "100825-PM1.JPG",
+      "100825-Z1.JPG",
+      "100825-P3.JPG",
+      "100825-P2.JPG",
+      "100825-P1.JPG",
+      "100825-PM.JPG",
+      "100825-Z.JPG",
+      "100825-P.JPG"
+    ]
   },
+
+  /* 27.07.2025 — pliki 270725-* */
   {
     date: "2025-07-27",
     title: "Koncert Più Mosso",
     city: "Jakubów",
     venue: "Sanktuarium św. Jakuba",
-    note: "Koncert okolicznościowy"
+    note: "Koncert okolicznościowy",
+    photos: [
+      "270725-D1.JPG",
+      "270725-D.JPG",
+      "270725-PM.JPG"
+    ]
   },
+
+  /* 08.03.2025 — pliki 080325-* */
   {
     date: "2025-03-08",
     title: "Dzień Kobiet",
     city: "Gola",
     venue: "—",
-    note: "Koncert okolicznościowy"
+    note: "Koncert okolicznościowy",
+    photos: [
+      "080325-PM2.JPG",
+      "080325-PM.JPG"
+    ]
   },
+
+  /* 17.11.2024 — plik 171124-PL.JPG */
   {
     date: "2024-11-17",
     title: "Koncert muzyki organowej i kameralnej",
     city: "Koźmin Wielkopolski",
     venue: "Kościół pw. św. Stanisława Biskupa i Męczennika",
-    note: "Koncert okolicznościowy"
+    note: "Koncert okolicznościowy",
+    photos: [
+      "171124-PL.JPG"
+    ]
   },
+
+  /* 11.11.2024 — plik 111124.JPG */
   {
     date: "2024-11-11",
     title: "Dzień Niepodległości",
     city: "Nowe Miasto nad Wartą",
     venue: "—",
-    note: "Koncert okolicznościowy"
+    note: "Koncert okolicznościowy",
+    photos: [
+      "111124.JPG"
+    ]
   },
+
+  /* 19.10.2024 — pliki 191024-* + (jeśli chcesz) 201024-* jako „ciąg dalszy” wydarzenia */
   {
     date: "2024-10-19",
     title: "Festiwal w Busku-Zdroju im. Feliksa Rączkowskiego",
     city: "Busko-Zdrój",
     venue: "—",
-    note: "Koncert festiwalowy"
+    note: "Koncert festiwalowy",
+    photos: [
+      "191024-D.JPG",
+      "191024-Z.JPG",
+      "191024-PM.JPG",
+      "201024-PM.JPG",
+      "201024-D2.JPG",
+      "201024-D1.JPG",
+      "201024-D.JPG"
+    ]
   },
+
+  /* 25.09.2024 — pliki 250924-* */
   {
     date: "2024-09-25",
     title: "Festiwal Organy Wielkopolski",
     city: "Miejska Górka",
     venue: "—",
-    note: "Koncert festiwalowy"
+    note: "Koncert festiwalowy",
+    photos: [
+      "250924-D2.JPG",
+      "250924-D1.JPG",
+      "250924-PM.JPG",
+      "250924-Z.JPG",
+      "250924-D.JPG",
+      "250924-P.JPG"
+    ]
   },
+
+  /* 24.03.2024 — plik 240324.JPG */
   {
     date: "2024-03-24",
     title: "Koncert pasyjny",
     city: "Nowe Miasto nad Wartą",
     venue: "Kościół św. Trójcy",
-    note: "Koncert okolicznościowy"
+    note: "Koncert okolicznościowy",
+    photos: [
+      "240324.JPG"
+    ]
   }
 ];
 
@@ -180,6 +289,25 @@ function formatPL(iso){
   const [y,m,d]=iso.split("-").map(Number);
   const dt=new Date(y,m-1,d);
   return dt.toLocaleDateString("pl-PL",{day:"2-digit",month:"long",year:"numeric"});
+}
+
+function esc(s){
+  return String(s ?? "").replace(/[&<>"']/g, m => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+  }[m]));
+}
+
+function photosHTML(arr, altBase){
+  if(!arr || !arr.length) return "";
+  return `
+    <div class="photos" aria-label="Galeria zdjęć">
+      ${arr.map(fn => `
+        <a class="photo" href="${esc(fn)}" target="_blank" rel="noopener" aria-label="Otwórz zdjęcie ${esc(fn)}">
+          <img src="${esc(fn)}" alt="${esc(altBase)} — ${esc(fn)}" loading="lazy" decoding="async">
+        </a>
+      `).join("")}
+    </div>
+  `;
 }
 
 const wrap=document.getElementById("events");
@@ -193,12 +321,13 @@ EVENTS
     el.innerHTML=`
       <div class="meta">
         <span class="badge">${formatPL(e.date)}</span>
-        <span>${place}</span>
+        <span>${esc(place)}</span>
       </div>
       <div style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.25">
-        ${e.title}
+        ${esc(e.title)}
       </div>
-      ${e.note ? `<div style="color:rgba(246,240,228,.82)">${e.note}</div>` : ``}
+      ${e.note ? `<div class="note">${esc(e.note)}</div>` : ``}
+      ${photosHTML(e.photos, `${e.title} (${formatPL(e.date)})`)}
     `;
     wrap.appendChild(el);
   });
