@@ -28,6 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
+/* Twoje style bez zmian */
 :root{
   --bg:#0C0A08; --bg-2:#080605;
   --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
@@ -200,6 +201,15 @@ footer{
   font-size:.88rem;border-top:1px solid rgba(197,165,87,.12);
   background:rgba(8,6,5,.62);
 }
+
+/* Dodatek: dyskretny link-row pod CTA w hero */
+.quicklinks{
+  margin-top:18px;
+  display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
+  font-size:.95rem;color:rgba(246,240,228,.82);
+}
+.quicklinks a{color:rgba(246,240,228,.88);text-decoration:none;border-bottom:1px solid rgba(197,165,87,.28)}
+.quicklinks a:hover{color:#fff;border-bottom-color:rgba(224,195,122,.75)}
 </style>
 </head>
 
@@ -209,9 +219,7 @@ footer{
       <a href="#hero" class="brand"><img src="piumosso_bialy.png" alt="Più Mosso – logo"></a>
       <ul>
         <li><a href="#kim">O nas</a></li>
-        <li><a href="#multimedia">Multimedia</a></li>
-        <li><a href="#koncerty">Koncerty</a></li>
-        <li><a href="#sluby">Śluby</a></li>
+        <li><a href="#koncerty">Oferta</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="/en/">EN</a></li>
       </ul>
@@ -225,9 +233,15 @@ footer{
       <p class="subtitle">Muzyka, która przemienia chwilę w sztukę</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="#kontakt">Zaproś duet</a>
-        <a class="btn btn-outline" href="#koncerty">Koncerty</a>
-        <a class="btn btn-outline" href="#sluby">Śluby</a>
+        <a class="btn btn-outline" href="/kalendarium/">Kalendarium</a>
+        <a class="btn btn-outline" href="/galeria/">Galeria</a>
       </div>
+
+      <div class="quicklinks" aria-label="Skróty">
+        <a href="#multimedia">Wideo</a>
+        <a href="#sluby">Śluby</a>
+      </div>
+
       <div class="rule"></div>
     </div>
   </header>
@@ -281,11 +295,17 @@ footer{
     <section id="koncerty">
       <div class="container card center">
         <div class="smallcaps">Dla instytucji kultury • festiwali • kościołów</div>
-        <h2 style="margin-top:.35rem">Koncerty</h2>
+        <h2 style="margin-top:.35rem">Oferta koncertowa</h2>
         <div class="rule"></div>
         <p style="margin-top:18px">Od muzyki dawnych mistrzów po świeże aranżacje współczesnych tematów filmowych – nasze programy szyjemy na miarę sali i publiczności. Realizujemy <strong>recitale solowe</strong>, kameralne wieczory duetowe oraz koncerty <strong>festiwalowe</strong>.</p>
+
+        <p style="margin-top:22px;color:rgba(246,240,228,.86)">
+          Zobacz także: <a href="/kalendarium/">kalendarium koncertów</a> i <a href="/galeria/">galerię zdjęć</a>.
+        </p>
+
         <p style="margin-top:26px">
-          <a class="btn btn-primary" href="Oferta nowa (skompresowany).pdf" target="_blank" rel="noopener">Pobierz ofertę koncertową PDF</a>
+          <!-- Uwaga: nazwa z odstępami bywa problematyczna w URL; najlepiej zmienić nazwę pliku na bez spacji -->
+          <a class="btn btn-primary" href="Oferta%20nowa%20(skompresowany).pdf" target="_blank" rel="noopener">Pobierz ofertę koncertową PDF</a>
         </p>
       </div>
     </section>
@@ -321,7 +341,7 @@ footer{
         </div>
 
         <p style="margin-top:22px">
-          <a class="btn btn-primary" href="oferta ślubna _compressed.pdf" target="_blank" rel="noopener">Pobierz ofertę ślubną PDF</a>
+          <a class="btn btn-primary" href="oferta%20s%CC%81lubna%20_compressed.pdf" target="_blank" rel="noopener">Pobierz ofertę ślubną PDF</a>
         </p>
       </div>
     </section>
