@@ -57,6 +57,7 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 }
 .list{display:grid;gap:14px;margin-top:14px}
 .footer{margin-top:32px;color:rgba(246,240,228,.58);font-size:.9rem}
+.note{color:rgba(246,240,228,.82)}
 
 /* Galeria w kartach */
 .photos{
@@ -91,10 +92,6 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
   filter:saturate(.96) contrast(1.06);
 }
 @media(max-width:480px){ .photo img{height:140px;} }
-
-.note{
-  color:rgba(246,240,228,.82);
-}
 </style>
 </head>
 
@@ -134,7 +131,7 @@ const EVENTS = [
     city: "Konarzewo",
     venue: "—",
     note: "Koncert festiwalowy",
-    photos: [] // brak plików na screenie
+    photos: []
   },
   {
     date: "2025-11-09",
@@ -142,26 +139,39 @@ const EVENTS = [
     city: "Skórzewo",
     venue: "—",
     note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek",
-    photos: [] // brak plików na screenie
+    photos: []
   },
+
+  /* 19.10.2025 — Surzyński (Twoje pliki IMG_...) */
   {
     date: "2025-10-19",
     title: "Festiwal im. Józefa Surzyńskiego",
     city: "Buk",
     venue: "Sanktuarium w Buku",
     note: "Koncert festiwalowy",
-    photos: [] // brak plików na screenie
+    photos: [
+      "IMG_1510.jpeg",
+      "IMG_1505.jpeg",
+      "IMG_1452.jpeg"
+    ]
   },
+
+  /* 27.09.2025 — Nowina (Twoje pliki att....jpeg) */
   {
     date: "2025-09-27",
     title: "Koncerty Muzyczne na Nowinie",
     city: "Poznań",
     venue: "Kościół Chrystusa Dobrego Pasterza",
     note: "Koncert cyklu",
-    photos: [] // brak plików na screenie
+    photos: [
+      "att.b5I97sVvTExqAAVecDAbJD41gshbO2Jv-o7YIZ01-Cs.jpeg",
+      "att.kdqT9tb9oBRNVL2LA55cEKCzRd7CQBmrTl_QXowcHMA.jpeg",
+      "att.61qb0nNdgno1nOSes5W5t8yP3fFsHdi4ZNDQfdnIPKs.jpeg",
+      "att.8pnp4-kzOAnP_WfwaJ7nCjz4XTp2_-4K-zEOOGYb6uU.jpeg",
+      "att.mJdj4JpJ2sA3XWorLKQTbqkXdBpyMzsB4KYfM-uAlzE.jpeg"
+    ]
   },
 
-  /* 10.08.2025 — pliki 100825-* */
   {
     date: "2025-08-10",
     title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
@@ -185,8 +195,6 @@ const EVENTS = [
       "100825-P.JPG"
     ]
   },
-
-  /* 27.07.2025 — pliki 270725-* */
   {
     date: "2025-07-27",
     title: "Koncert Più Mosso",
@@ -199,8 +207,6 @@ const EVENTS = [
       "270725-PM.JPG"
     ]
   },
-
-  /* 08.03.2025 — pliki 080325-* */
   {
     date: "2025-03-08",
     title: "Dzień Kobiet",
@@ -212,8 +218,6 @@ const EVENTS = [
       "080325-PM.JPG"
     ]
   },
-
-  /* 17.11.2024 — plik 171124-PL.JPG */
   {
     date: "2024-11-17",
     title: "Koncert muzyki organowej i kameralnej",
@@ -224,8 +228,6 @@ const EVENTS = [
       "171124-PL.JPG"
     ]
   },
-
-  /* 11.11.2024 — plik 111124.JPG */
   {
     date: "2024-11-11",
     title: "Dzień Niepodległości",
@@ -236,8 +238,6 @@ const EVENTS = [
       "111124.JPG"
     ]
   },
-
-  /* 19.10.2024 — pliki 191024-* + (jeśli chcesz) 201024-* jako „ciąg dalszy” wydarzenia */
   {
     date: "2024-10-19",
     title: "Festiwal w Busku-Zdroju im. Feliksa Rączkowskiego",
@@ -254,8 +254,6 @@ const EVENTS = [
       "201024-D.JPG"
     ]
   },
-
-  /* 25.09.2024 — pliki 250924-* */
   {
     date: "2024-09-25",
     title: "Festiwal Organy Wielkopolski",
@@ -271,8 +269,6 @@ const EVENTS = [
       "250924-P.JPG"
     ]
   },
-
-  /* 24.03.2024 — plik 240324.JPG */
   {
     date: "2024-03-24",
     title: "Koncert pasyjny",
