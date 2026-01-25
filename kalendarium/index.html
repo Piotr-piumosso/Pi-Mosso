@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
-/* Wersja skrócona: spójna estetyka (ta sama paleta) */
 :root{
   --bg:#0C0A08; --bg-2:#080605;
   --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
@@ -86,8 +85,43 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
   </div>
 
 <script>
-/* Baza – na podstawie tego, co podałeś (możemy ją potem rozbudować) */
+/*
+  Kalendarium (chronologia: od najnowszych do najstarszych na stronie).
+  Jeśli w przyszłości dodasz kolejne wydarzenia — dopisujesz tylko obiekt w EVENTS.
+*/
 const EVENTS = [
+  {
+    date: "2025-11-16",
+    title: "Świętomarciński Festiwal Muzyki Organowej i Kameralnej",
+    city: "Konarzewo",
+    venue: "—",
+    note: "Koncert festiwalowy",
+    tags: ["Festiwal","Organy","Kameralnie"]
+  },
+  {
+    date: "2025-11-09",
+    title: "Wieczór Muzyki Klasycznej",
+    city: "Skórzewo",
+    venue: "—",
+    note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek",
+    tags: ["Muzyka klasyczna","Koncert"]
+  },
+  {
+    date: "2025-10-19",
+    title: "Festiwal im. Józefa Surzyńskiego",
+    city: "Buk",
+    venue: "Sanktuarium w Buku",
+    note: "Koncert festiwalowy",
+    tags: ["Festiwal","Organy"]
+  },
+  {
+    date: "2025-09-27",
+    title: "Koncerty Muzyczne na Nowinie",
+    city: "Poznań",
+    venue: "Kościół Chrystusa Dobrego Pasterza",
+    note: "Koncert cyklu",
+    tags: ["Poznań","Cykl koncertów"]
+  },
   {
     date: "2025-08-10",
     title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
@@ -102,7 +136,7 @@ const EVENTS = [
     city: "Jakubów",
     venue: "Sanktuarium św. Jakuba",
     note: "Koncert okolicznościowy",
-    tags: ["Kościół","Recital"]
+    tags: ["Sanktuarium","Recital"]
   },
   {
     date: "2025-03-08",
@@ -165,12 +199,13 @@ EVENTS
   .slice()
   .sort((a,b)=>b.date.localeCompare(a.date))
   .forEach(e=>{
+    const place = `${e.city}${e.venue && e.venue!=="—" ? " • "+e.venue : ""}`;
     const el=document.createElement("div");
     el.className="card event";
     el.innerHTML=`
       <div class="meta">
         <span class="badge">${formatPL(e.date)}</span>
-        <span>${e.city}${e.venue && e.venue!=="—" ? " • "+e.venue : ""}</span>
+        <span>${place}</span>
       </div>
       <div style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.25">
         ${e.title}
@@ -185,4 +220,3 @@ EVENTS
 </script>
 </body>
 </html>
-
