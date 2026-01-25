@@ -73,7 +73,7 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
     </div>
 
     <p style="color:rgba(246,240,228,.84)">
-      wybrane koncerty Più Mosso
+      Wybrane koncerty Più Mosso
     </p>
 
     <h2>Wydarzenia</h2>
@@ -86,8 +86,8 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 
 <script>
 /*
-  Kalendarium (chronologia: od najnowszych do najstarszych na stronie).
-  Jeśli w przyszłości dodasz kolejne wydarzenia — dopisujesz tylko obiekt w EVENTS.
+  Kalendarium: na stronie pokazujemy od najnowszych do najstarszych.
+  TAGÓW nie używamy — zostaje czysty, elegancki układ.
 */
 const EVENTS = [
   {
@@ -95,96 +95,84 @@ const EVENTS = [
     title: "Świętomarciński Festiwal Muzyki Organowej i Kameralnej",
     city: "Konarzewo",
     venue: "—",
-    note: "Koncert festiwalowy",
-    tags: ["Festiwal","Organy","Kameralnie"]
+    note: "Koncert festiwalowy"
   },
   {
     date: "2025-11-09",
     title: "Wieczór Muzyki Klasycznej",
     city: "Skórzewo",
     venue: "—",
-    note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek",
-    tags: ["Muzyka klasyczna","Koncert"]
+    note: "Wspólnie z: Zhanna Rudaya, Hubert Trojanek"
   },
   {
     date: "2025-10-19",
     title: "Festiwal im. Józefa Surzyńskiego",
     city: "Buk",
     venue: "Sanktuarium w Buku",
-    note: "Koncert festiwalowy",
-    tags: ["Festiwal","Organy"]
+    note: "Koncert festiwalowy"
   },
   {
     date: "2025-09-27",
     title: "Koncerty Muzyczne na Nowinie",
     city: "Poznań",
     venue: "Kościół Chrystusa Dobrego Pasterza",
-    note: "Koncert cyklu",
-    tags: ["Poznań","Cykl koncertów"]
+    note: "Koncert cyklu"
   },
   {
     date: "2025-08-10",
     title: "IX Międzynarodowy Festiwal Muzyki Kameralnej i Organowej Ziemi Kłodzkiej",
     city: "Nowa Ruda",
     venue: "—",
-    note: "Koncert festiwalowy",
-    tags: ["Festiwal","Kameralnie","Organy"]
+    note: "Koncert festiwalowy"
   },
   {
     date: "2025-07-27",
     title: "Koncert Più Mosso",
     city: "Jakubów",
     venue: "Sanktuarium św. Jakuba",
-    note: "Koncert okolicznościowy",
-    tags: ["Sanktuarium","Recital"]
+    note: "Koncert okolicznościowy"
   },
   {
     date: "2025-03-08",
     title: "Dzień Kobiet",
     city: "Gola",
     venue: "—",
-    note: "Koncert okolicznościowy",
-    tags: ["Recital"]
+    note: "Koncert okolicznościowy"
   },
   {
     date: "2024-11-17",
     title: "Koncert muzyki organowej i kameralnej",
     city: "Koźmin Wielkopolski",
     venue: "Kościół pw. św. Stanisława Biskupa i Męczennika",
-    note: "Koncert okolicznościowy",
-    tags: ["Organy","Kameralnie"]
+    note: "Koncert okolicznościowy"
   },
   {
     date: "2024-11-11",
     title: "Dzień Niepodległości",
     city: "Nowe Miasto nad Wartą",
     venue: "—",
-    note: "Koncert okolicznościowy",
-    tags: ["Święto"]
+    note: "Koncert okolicznościowy"
   },
   {
     date: "2024-10-19",
     title: "Festiwal w Busku-Zdroju im. Feliksa Rączkowskiego",
     city: "Busko-Zdrój",
     venue: "—",
-    note: "Koncert festiwalowy",
-    tags: ["Festiwal"]
+    note: "Koncert festiwalowy"
   },
   {
     date: "2024-09-25",
     title: "Festiwal Organy Wielkopolski",
     city: "Miejska Górka",
     venue: "—",
-    note: "Koncert festiwalowy",
-    tags: ["Organy"]
+    note: "Koncert festiwalowy"
   },
   {
     date: "2024-03-24",
     title: "Koncert pasyjny",
     city: "Nowe Miasto nad Wartą",
     venue: "Kościół św. Trójcy",
-    note: "Koncert okolicznościowy",
-    tags: ["Pasyjne"]
+    note: "Koncert okolicznościowy"
   }
 ];
 
@@ -210,10 +198,7 @@ EVENTS
       <div style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.25">
         ${e.title}
       </div>
-      <div style="color:rgba(246,240,228,.82)">${e.note || ""}</div>
-      <div class="meta">
-        ${(e.tags||[]).map(t=>`<span class="badge">${t}</span>`).join("")}
-      </div>
+      ${e.note ? `<div style="color:rgba(246,240,228,.82)">${e.note}</div>` : ``}
     `;
     wrap.appendChild(el);
   });
