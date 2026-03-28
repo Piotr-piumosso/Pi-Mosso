@@ -331,6 +331,45 @@ input:focus,select:focus,textarea:focus{
   color:var(--muted);
   font-size:.86rem;
 }
+.datahub-grid{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:18px;
+  margin-top:18px;
+}
+.datahub-list{
+  display:grid;
+  gap:10px;
+  max-height:620px;
+  overflow:auto;
+  padding-right:4px;
+}
+.datahub-card{
+  padding:14px 15px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.datahub-card h4{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.datahub-card p{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.58;
+  margin-bottom:10px;
+}
+.datahub-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.import-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
 .template-card{
   padding:16px;
   border-radius:18px;
@@ -397,13 +436,14 @@ input:focus,select:focus,textarea:focus{
   .grid{grid-template-columns:1fr}
   .partner-grid{grid-template-columns:1fr}
   .calendar-shell{grid-template-columns:1fr}
+  .datahub-grid{grid-template-columns:1fr}
 }
 @media (max-width:880px){
-  .metrics,.templates,.partner-metrics,.calendar-days{grid-template-columns:1fr 1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   h1{font-size:2.4rem}
-  .metrics,.templates,.partner-metrics,.calendar-days{grid-template-columns:1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -683,6 +723,52 @@ Più Mosso</p>
               <div class="calendar-list" id="calendarList" style="margin-top:12px"></div>
             </section>
           </div>
+
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+            <h2>Lead Data Hub</h2>
+          </div>
+          <p class="helper">Tutaj podepniesz eksporty z `lead-machine` i `piumosso-engine`, zobaczysz jak rośnie baza i zaznaczysz instytucje, których nie chcesz już widzieć. Blocklista zapisuje się lokalnie i przy kolejnych importach te rekordy będą automatycznie filtrowane.</p>
+
+          <div class="datahub-grid">
+            <section class="template-card">
+              <h4>Import danych</h4>
+              <div class="import-grid" style="margin-top:12px">
+                <label>Baza główna `baza_glowna.csv`
+                  <input type="file" id="bazaFile" accept=".csv,text/csv">
+                </label>
+                <label>Nowe rekordy `nowe_rekordy.csv`
+                  <input type="file" id="noweFile" accept=".csv,text/csv">
+                </label>
+                <label>Engine leads `leads.csv`
+                  <input type="file" id="engineFile" accept=".csv,text/csv">
+                </label>
+                <label>Wysyłki `sent_log.csv`
+                  <input type="file" id="sentFile" accept=".csv,text/csv">
+                </label>
+              </div>
+              <div class="btn-row" style="margin-top:14px">
+                <button class="btn btn-primary" type="button" id="importDataHubButton">Importuj CSV</button>
+                <button class="btn btn-secondary" type="button" id="exportBlacklistButton">Eksport blocklisty</button>
+                <button class="btn btn-secondary" type="button" id="clearDataHubButton">Wyczyść dane hubu</button>
+              </div>
+
+              <div class="partner-metrics">
+                <div class="metric"><strong id="hubMainCount">0</strong><span>Baza główna</span></div>
+                <div class="metric"><strong id="hubNewCount">0</strong><span>Nowe rekordy</span></div>
+                <div class="metric"><strong id="hubEngineCount">0</strong><span>Engine leads</span></div>
+                <div class="metric"><strong id="hubBlockedCount">0</strong><span>Zablokowane</span></div>
+              </div>
+
+              <label style="margin-top:14px">Szukaj po nazwie, mailu, regionie, kategorii
+                <input id="hubSearch" placeholder="Np. centrum kultury, Poznań, planner">
+              </label>
+            </section>
+
+            <section class="template-card">
+              <h4>Widok bazy po filtrze</h4>
+              <div class="datahub-list" id="dataHubList" style="margin-top:12px"></div>
+            </section>
+          </div>
         </div>
       </section>
     </div>
@@ -710,6 +796,7 @@ const PIN_CODE = "2137";
 const STORAGE_KEY = "pm_studio_os_v1";
 const PARTNER_KEY = "pm_partner_machine_v1";
 const CALENDAR_KEY = "pm_calendar_machine_v1";
+const DATAHUB_KEY = "pm_lead_data_hub_v1";
 const STAGES = [
   { id: "new", name: "Nowe", subtitle: "świeże kontakty" },
   { id: "contacted", name: "Kontakt", subtitle: "pierwsza wiadomość wysłana" },
@@ -722,6 +809,7 @@ const STAGES = [
 const state = loadState();
 const partnerState = loadPartnerState();
 const calendarState = loadCalendarState();
+const dataHubState = loadDataHubState();
 
 function loadState() {
   const saved = localStorage.getItem(STORAGE_KEY);
@@ -771,6 +859,34 @@ function saveCalendarState() {
   localStorage.setItem(CALENDAR_KEY, JSON.stringify(calendarState));
 }
 
+function loadDataHubState() {
+  const saved = localStorage.getItem(DATAHUB_KEY);
+  if (!saved) {
+    return {
+      baza: [],
+      nowe: [],
+      engine: [],
+      sent: [],
+      blocked: { names: [], emails: [], websites: [] }
+    };
+  }
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return {
+      baza: [],
+      nowe: [],
+      engine: [],
+      sent: [],
+      blocked: { names: [], emails: [], websites: [] }
+    };
+  }
+}
+
+function saveDataHubState() {
+  localStorage.setItem(DATAHUB_KEY, JSON.stringify(dataHubState));
+}
+
 function createLead(data) {
   return {
     id: crypto.randomUUID(),
@@ -816,6 +932,7 @@ function render() {
   renderBoard();
   renderPartners();
   renderCalendar();
+  renderDataHub();
 }
 
 function renderMetrics() {
@@ -991,6 +1108,169 @@ function renderCalendar() {
     `;
     list.appendChild(item);
   });
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let current = "";
+  let row = [];
+  let insideQuotes = false;
+  const normalized = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+
+  for (let i = 0; i < normalized.length; i += 1) {
+    const char = normalized[i];
+    const next = normalized[i + 1];
+
+    if (char === "\"") {
+      if (insideQuotes && next === "\"") {
+        current += "\"";
+        i += 1;
+      } else {
+        insideQuotes = !insideQuotes;
+      }
+      continue;
+    }
+
+    if (char === "," && !insideQuotes) {
+      row.push(current);
+      current = "";
+      continue;
+    }
+
+    if (char === "\n" && !insideQuotes) {
+      row.push(current);
+      rows.push(row);
+      row = [];
+      current = "";
+      continue;
+    }
+
+    current += char;
+  }
+
+  if (current.length || row.length) {
+    row.push(current);
+    rows.push(row);
+  }
+
+  if (!rows.length) return [];
+  const headers = rows[0].map((header) => header.trim());
+  return rows.slice(1).filter((entry) => entry.some((cell) => cell.trim())).map((entry) => {
+    const obj = {};
+    headers.forEach((header, index) => {
+      obj[header] = (entry[index] || "").trim();
+    });
+    return obj;
+  });
+}
+
+function normalizeKey(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function uniq(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function isBlockedRecord(record) {
+  const name = normalizeKey(record.name);
+  const email = normalizeKey(record.email);
+  const website = normalizeKey(record.website);
+  return (
+    dataHubState.blocked.names.includes(name) ||
+    dataHubState.blocked.emails.includes(email) ||
+    dataHubState.blocked.websites.includes(website)
+  );
+}
+
+function mergeHubRecords() {
+  const sourceTagged = [
+    ...dataHubState.baza.map((item) => ({ ...item, _source: "baza" })),
+    ...dataHubState.nowe.map((item) => ({ ...item, _source: "nowe" })),
+    ...dataHubState.engine.map((item) => ({ ...item, _source: "engine" }))
+  ];
+
+  const seen = new Map();
+  sourceTagged.forEach((item) => {
+    const key = normalizeKey(item.email) || `${normalizeKey(item.name)}|${normalizeKey(item.website)}`;
+    if (!key) return;
+    if (!seen.has(key)) {
+      seen.set(key, item);
+    } else {
+      const current = seen.get(key);
+      current._source = `${current._source}, ${item._source}`;
+      seen.set(key, current);
+    }
+  });
+
+  return [...seen.values()];
+}
+
+function renderDataHub() {
+  document.getElementById("hubMainCount").textContent = dataHubState.baza.length;
+  document.getElementById("hubNewCount").textContent = dataHubState.nowe.length;
+  document.getElementById("hubEngineCount").textContent = dataHubState.engine.length;
+  document.getElementById("hubBlockedCount").textContent = uniq([
+    ...dataHubState.blocked.names,
+    ...dataHubState.blocked.emails,
+    ...dataHubState.blocked.websites
+  ]).length;
+
+  const query = normalizeKey(document.getElementById("hubSearch")?.value || "");
+  const list = document.getElementById("dataHubList");
+  list.innerHTML = "";
+
+  let records = mergeHubRecords().filter((record) => !isBlockedRecord(record));
+  if (query) {
+    records = records.filter((record) => {
+      const haystack = [
+        record.name,
+        record.email,
+        record.region,
+        record.category,
+        record.website,
+        record.address
+      ].join(" ").toLowerCase();
+      return haystack.includes(query);
+    });
+  }
+
+  records.slice(0, 120).forEach((record) => {
+    const item = document.createElement("article");
+    item.className = "datahub-card";
+    item.innerHTML = `
+      <h4>${escapeHtml(record.name || "Bez nazwy")}</h4>
+      <p>Email: ${escapeHtml(record.email || "—")}<br>Kategoria: ${escapeHtml(record.category || "—")}<br>Region: ${escapeHtml(record.region || "—")}<br>WWW: ${escapeHtml(record.website || "—")}<br>Źródło: ${escapeHtml(record._source || "—")}</p>
+      <div class="datahub-actions"></div>
+    `;
+
+    const actions = item.querySelector(".datahub-actions");
+    actions.appendChild(actionButton("Zablokuj", () => blockInstitution(record), "bad"));
+    if (record.email) {
+      actions.appendChild(actionButton("Kopiuj email", async () => {
+        await navigator.clipboard.writeText(record.email);
+      }));
+    }
+    list.appendChild(item);
+  });
+
+  if (!records.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Brak rekordów do pokazania. Zaimportuj CSV albo zmień filtr.";
+    list.appendChild(empty);
+  }
+}
+
+function blockInstitution(record) {
+  const name = normalizeKey(record.name);
+  const email = normalizeKey(record.email);
+  const website = normalizeKey(record.website);
+  dataHubState.blocked.names = uniq([...dataHubState.blocked.names, name]);
+  dataHubState.blocked.emails = uniq([...dataHubState.blocked.emails, email]);
+  dataHubState.blocked.websites = uniq([...dataHubState.blocked.websites, website]);
+  saveDataHubState();
+  render();
 }
 
 function renderBoard() {
@@ -1375,6 +1655,73 @@ document.getElementById("clearCalendarButton").addEventListener("click", () => {
   if (!ok) return;
   calendarState.events = [];
   saveCalendarState();
+  render();
+});
+
+document.getElementById("hubSearch").addEventListener("input", () => {
+  renderDataHub();
+});
+
+document.getElementById("importDataHubButton").addEventListener("click", async () => {
+  const readCsv = async (id) => {
+    const file = document.getElementById(id).files?.[0];
+    if (!file) return null;
+    return parseCsv(await file.text());
+  };
+
+  const readSent = async () => {
+    const file = document.getElementById("sentFile").files?.[0];
+    if (!file) return null;
+    const text = await file.text();
+    const parsed = parseCsv(text);
+    if (parsed.length) return parsed;
+    const lines = text.split(/\r?\n/).filter(Boolean);
+    return lines.slice(1).map((line) => ({ raw: line }));
+  };
+
+  const baza = await readCsv("bazaFile");
+  const nowe = await readCsv("noweFile");
+  const engine = await readCsv("engineFile");
+  const sent = await readSent();
+
+  if (!baza && !nowe && !engine && !sent) {
+    alert("Najpierw wybierz przynajmniej jeden plik CSV.");
+    return;
+  }
+
+  if (baza) dataHubState.baza = baza;
+  if (nowe) dataHubState.nowe = nowe;
+  if (engine) dataHubState.engine = engine;
+  if (sent) dataHubState.sent = sent;
+
+  saveDataHubState();
+  render();
+});
+
+document.getElementById("exportBlacklistButton").addEventListener("click", () => {
+  const lines = [
+    ...dataHubState.blocked.names.map((item) => `name:${item}`),
+    ...dataHubState.blocked.emails.map((item) => `email:${item}`),
+    ...dataHubState.blocked.websites.map((item) => `website:${item}`)
+  ];
+  const blob = new Blob([lines.join("\n")], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "studio-blacklist.txt";
+  link.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("clearDataHubButton").addEventListener("click", () => {
+  const ok = confirm("Usunąć zaimportowane dane Data Hub i lokalną blocklistę?");
+  if (!ok) return;
+  dataHubState.baza = [];
+  dataHubState.nowe = [];
+  dataHubState.engine = [];
+  dataHubState.sent = [];
+  dataHubState.blocked = { names: [], emails: [], websites: [] };
+  saveDataHubState();
   render();
 });
 
