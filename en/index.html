@@ -5,581 +5,1000 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>Più Mosso — Violin & Organ / Piano</title>
-<meta name="description"
-      content="A violin & piano / organ duo. Più Mosso — concerts, wedding music, education. Music that turns a moment into art." />
+<title>Più Mosso — premium concert and ceremony music</title>
+<meta name="description" content="Più Mosso is a violin, organ and piano duo creating refined concert programs and elegant music for weddings and special events." />
 
-<!-- ========= FAVICONS ========= -->
 <link rel="icon" href="../favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<meta name="theme-color" content="#0C0A08">
+<meta name="theme-color" content="#0b0908">
 
-<!-- ========= Open Graph / Twitter ========= -->
-<meta property="og:type"        content="website">
-<meta property="og:url"         content="https://piumosso.pl/en/">
-<meta property="og:title"       content="Più Mosso — Music that turns a moment into art">
-<meta property="og:description" content="A violin & organ / piano duo. Concerts, weddings, education.">
-<meta property="og:image"       content="https://piumosso.pl/IMG_0554.JPG">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://piumosso.pl/en/">
+<meta property="og:title" content="Più Mosso — music in a premium frame">
+<meta property="og:description" content="Refined music for concerts, weddings and elegant events." />
+<meta property="og:image" content="https://piumosso.pl/IMG_0554.JPG">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Più Mosso — music in a premium frame">
+<meta name="twitter:description" content="Concerts, ceremonies and bespoke musical experiences." />
+<meta name="twitter:image" content="https://piumosso.pl/IMG_0554.JPG">
 
-<meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="Più Mosso — Music that turns a moment into art">
-<meta name="twitter:description" content="A violin & organ / piano duo. Concerts, weddings, education.">
-<meta name="twitter:image"       content="https://piumosso.pl/IMG_0554.JPG">
-
-<!-- ========= i18n alternates ========= -->
 <link rel="alternate" hreflang="en" href="https://piumosso.pl/en/">
 <link rel="alternate" hreflang="pl" href="https://piumosso.pl/">
 <link rel="alternate" hreflang="x-default" href="https://piumosso.pl/">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* =========================
-   PIÙ MOSSO — LOOK "OFERTY"
-   Ciemne, ciepłe tony (espresso/charcoal) + złoto + krem
-   ========================= */
-
 :root{
-  --bg:#0C0A08;          /* almost black, warm */
-  --bg-2:#080605;        /* deeper */
-  --surface:#14100D;     /* warm surface */
-  --surface-2:#1A1410;   /* lighter surface */
-  --ink:#F6F0E4;         /* cream */
-  --muted:rgba(246,240,228,.74);
-  --gold:#C5A557;
-  --gold-2:#B7903E;
-  --line:rgba(197,165,87,.22);
-  --shadow:0 18px 44px rgba(0,0,0,.55);
-  --radius:14px;
-  --radius-sm:10px;
-  --max:1100px;
+  --bg:#0b0908;
+  --bg-soft:#15110f;
+  --panel:#191411;
+  --panel-strong:#221b17;
+  --panel-glass:rgba(28,21,18,.72);
+  --text:#f4ecdf;
+  --muted:rgba(244,236,223,.72);
+  --muted-strong:rgba(244,236,223,.84);
+  --gold:#d4b06a;
+  --gold-soft:#a68243;
+  --gold-line:rgba(212,176,106,.28);
+  --white-line:rgba(255,255,255,.08);
+  --shadow:0 28px 80px rgba(0,0,0,.42);
+  --radius-xl:30px;
+  --radius-lg:22px;
+  --radius-md:16px;
+  --max:1200px;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Inter",sans-serif;
+  font-family:"Manrope",sans-serif;
   font-size:17px;
   line-height:1.75;
+  color:var(--text);
   background:
-    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
-    linear-gradient(180deg, var(--bg), var(--bg-2));
-  color:var(--ink);
+    radial-gradient(900px 500px at 10% 0%, rgba(212,176,106,.15), transparent 60%),
+    radial-gradient(1000px 640px at 90% 10%, rgba(212,176,106,.08), transparent 55%),
+    linear-gradient(180deg, #090706 0%, #0d0a09 30%, #110d0b 100%);
   -webkit-font-smoothing:antialiased;
 }
-
-img,video{max-width:100%;height:auto;border:0}
-a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
-a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
-
-h1,h2,h3{
-  font-family:"Playfair Display",serif;
-  color:var(--ink);
-  letter-spacing:.2px;
-  margin:0 0 .55em;
-}
-h1{
-  font-size:clamp(2.6rem,5vw,4.1rem);
-  line-height:1.08;
-  letter-spacing:.8px;
-}
-h2{
-  font-size:clamp(1.7rem,2.5vw,2.15rem);
-  line-height:1.2;
-}
-h3{
-  font-size:1.35rem;
+img,video{max-width:100%;height:auto;display:block}
+a{
   color:var(--gold);
-  display:flex;
+  text-decoration:none;
+  transition:color .25s ease, border-color .25s ease, opacity .25s ease, transform .25s ease;
+}
+a:hover{color:#ecd2a0}
+button,input,textarea{font:inherit}
+h1,h2,h3,h4{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+  line-height:1.02;
+  letter-spacing:.01em;
+}
+h1{font-size:clamp(3.5rem,9vw,6.9rem)}
+h2{font-size:clamp(2.3rem,4vw,4rem)}
+h3{font-size:clamp(1.55rem,2.4vw,2.05rem)}
+p{margin:.9em 0;color:var(--muted)}
+strong{color:var(--text);font-weight:700}
+section{padding:110px 20px;position:relative}
+.container{max-width:var(--max);margin:0 auto}
+.eyebrow{
+  display:inline-flex;
   align-items:center;
   gap:12px;
-}
-p{margin:.85em 0}
-strong{font-weight:600}
-
-.smallcaps{
   font-size:.78rem;
-  letter-spacing:.16em;
+  letter-spacing:.24em;
   text-transform:uppercase;
-  color:rgba(246,240,228,.84);
+  color:var(--muted-strong);
+}
+.eyebrow::before{
+  content:"";
+  width:42px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.section-head{max-width:760px;margin:0 auto 28px;text-align:center}
+.section-head p{font-size:1.05rem}
+.grid{display:grid;gap:24px}
+.panel{
+  position:relative;
+  border:1px solid var(--white-line);
+  border-radius:var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)),
+    rgba(17,13,11,.78);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(135deg, rgba(212,176,106,.28), rgba(255,255,255,0) 35%, rgba(212,176,106,.14));
+  -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
 }
 
-.role{
-  background:rgba(246,240,228,.06);
-  border:1px solid rgba(197,165,87,.22);
-  color:rgba(246,240,228,.90);
-  font-size:.74rem;
-  font-weight:600;
-  letter-spacing:.06em;
-  padding:3px 10px;
-  border-radius:999px;
-  text-transform:uppercase;
-}
-
-/* NAV */
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  padding:10px 20px;
-  background:linear-gradient(180deg, rgba(12,10,8,.92), rgba(12,10,8,.74));
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(197,165,87,.16);
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:50;
+  padding:16px 20px;
+  background:linear-gradient(180deg, rgba(8,6,5,.84), rgba(8,6,5,.35));
+  backdrop-filter:blur(16px);
 }
-.nav-wrap{
+.nav-shell{
   max-width:var(--max);
   margin:0 auto;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:14px;
-  flex-wrap:wrap;
+  gap:18px;
+  padding:10px 16px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(14,10,9,.55);
 }
-.brand img{
-  height:42px;width:auto;
-  filter:drop-shadow(0 0 2px rgba(0,0,0,.45));
+.brand{display:flex;align-items:center;gap:14px;color:var(--text)}
+.brand img{height:36px;width:auto}
+.brand-mark{display:flex;flex-direction:column;line-height:1}
+.brand-mark strong{
+  font-size:1rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:800;
 }
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  margin-left:auto;
+.brand-mark span{
+  font-size:.7rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:6px;
 }
-nav a{
-  font-weight:600;
+.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.nav-links a{
+  color:var(--muted-strong);
   font-size:.92rem;
-  text-decoration:none;
-  color:rgba(246,240,228,.90);
-  position:relative;
-  padding-bottom:6px;
+  font-weight:600;
 }
-nav a::after{
+.nav-links a.cta{
+  padding:11px 18px;
+  border-radius:999px;
+  color:#1b140f;
+  background:linear-gradient(180deg, #e0c184, var(--gold));
+}
+
+.hero{
+  min-height:100svh;
+  padding:138px 20px 70px;
+  overflow:hidden;
+}
+.hero-media{
+  position:absolute;
+  inset:0;
+}
+.hero-media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:saturate(.9) brightness(.56) contrast(1.03);
+}
+.hero-media::after{
   content:"";
   position:absolute;
-  bottom:0;left:0;
-  width:0;height:2px;
-  background:linear-gradient(90deg,var(--gold),rgba(197,165,87,.30));
-  transition:width .28s ease;
-}
-nav a:hover::after, nav a:focus-visible::after{width:100%}
-@media(max-width:600px){
-  nav ul{gap:16px}
-  .brand img{height:36px}
-}
-
-/* Layout helpers */
-section{padding:92px 20px}
-.container{max-width:var(--max);margin:0 auto}
-.center{text-align:center}
-.rule{
-  width:min(520px,90%);
-  height:1px;
-  background:linear-gradient(90deg, transparent, var(--line), transparent);
-  margin:18px auto 0;
-}
-
-/* Cards */
-.card{
+  inset:0;
   background:
-    radial-gradient(900px 260px at 50% 0, rgba(197,165,87,.08), transparent 60%),
-    linear-gradient(180deg, rgba(26,20,16,.96), rgba(20,16,13,.92));
-  border:1px solid rgba(197,165,87,.18);
-  border-radius:var(--radius);
-  padding:34px 34px;
-  box-shadow:var(--shadow);
+    linear-gradient(180deg, rgba(8,6,5,.55), rgba(8,6,5,.72)),
+    radial-gradient(900px 520px at 50% 20%, rgba(212,176,106,.12), transparent 60%);
+}
+.hero-shell{
   position:relative;
-  overflow:hidden;
+  z-index:1;
+  max-width:var(--max);
+  margin:0 auto;
+  display:grid;
+  gap:28px;
+  align-items:end;
 }
-.card > *{position:relative}
-
-/* HERO */
-.hero{
-  position:relative;
-  min-height:92vh;
+.hero-card{
+  padding:44px;
+  max-width:760px;
+  background:linear-gradient(180deg, rgba(17,13,11,.76), rgba(17,13,11,.54));
+  backdrop-filter:blur(10px);
+}
+.hero-copy .eyebrow{margin-bottom:20px}
+.hero-copy p{
+  max-width:640px;
+  font-size:1.08rem;
+  color:rgba(244,236,223,.82);
+}
+.hero-actions{
   display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-}
-.hero video{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;
-  filter:saturate(.92) contrast(1.08);
-}
-.hero::after{
-  content:"";
-  position:absolute;inset:0;
-  background:
-    radial-gradient(900px 520px at 50% 22%, rgba(197,165,87,.14), transparent 60%),
-    linear-gradient(180deg, rgba(12,10,8,.62), rgba(8,6,5,.90));
-}
-.hero .inner{
-  position:relative;z-index:2;
-  text-align:center;
-  padding:120px 22px 70px;
-  max-width:920px;
-  animation:fadeInUp .9s ease-out both .12s;
-}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-
-.subtitle{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(1.2rem,2.1vw,1.5rem);
-  font-style:italic;
-  color:rgba(246,240,228,.88);
-}
-.hero .btn-row{
-  margin-top:32px;
-  display:flex;
-  gap:14px;
-  justify-content:center;
   flex-wrap:wrap;
+  gap:14px;
+  margin-top:28px;
 }
-
-/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:10px;
-  padding:14px 30px;
+  min-height:54px;
+  padding:0 26px;
   border-radius:999px;
-  font-weight:600;
-  font-size:.98rem;
-  text-decoration:none;
-  transition:transform .22s ease, box-shadow .22s ease, background .22s ease, color .22s ease, border-color .22s ease;
-  will-change:transform;
+  border:1px solid transparent;
+  font-weight:700;
+  letter-spacing:.02em;
 }
 .btn-primary{
-  background:linear-gradient(180deg, var(--gold), var(--gold-2));
-  color:#120d0a;
-  box-shadow:0 12px 28px rgba(0,0,0,.45);
-  border:1px solid rgba(0,0,0,.18);
+  color:#1a130e;
+  background:linear-gradient(180deg, #e7c98b, var(--gold));
+  box-shadow:0 14px 34px rgba(0,0,0,.28);
 }
-.btn-primary:hover,.btn-primary:focus-visible{
-  transform:translateY(-2px);
-  box-shadow:0 16px 34px rgba(0,0,0,.55);
+.btn-secondary{
+  color:var(--text);
+  background:rgba(255,255,255,.02);
+  border-color:rgba(255,255,255,.14);
 }
-.btn-outline{
-  background:transparent;
-  color:rgba(246,240,228,.92);
-  border:1px solid rgba(197,165,87,.34);
+.hero-meta{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:32px;
 }
-.btn-outline:hover,.btn-outline:focus-visible{
-  transform:translateY(-2px);
-  border-color:rgba(224,195,122,.75);
-  box-shadow:0 10px 24px rgba(0,0,0,.35);
+.meta-box{
+  padding:18px 18px 16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+}
+.meta-box strong{
+  display:block;
+  font-size:1.4rem;
+  font-family:"Cormorant Garamond",serif;
+  margin-bottom:2px;
+}
+.meta-box span{
+  font-size:.88rem;
+  color:var(--muted);
+}
+.hero-note{
+  justify-self:end;
+  width:min(100%,340px);
+  padding:24px;
+  margin-bottom:8px;
+}
+.hero-note h3{
+  font-size:1.55rem;
+  margin-bottom:12px;
+}
+.hero-note ul{
+  list-style:none;
+  display:grid;
+  gap:12px;
+}
+.hero-note li{
+  padding-left:18px;
+  position:relative;
+  color:var(--muted);
+}
+.hero-note li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.82em;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:linear-gradient(180deg, #e8cb90, var(--gold-soft));
+  box-shadow:0 0 18px rgba(212,176,106,.45);
 }
 
-/* About */
-.about{display:grid;gap:26px;align-items:start}
-.about figure{margin:0}
-.about img{
+.story-grid{
+  grid-template-columns:1.15fr .85fr;
+  align-items:stretch;
+}
+.story-copy,
+.story-image{
+  padding:38px;
+}
+.story-copy p{font-size:1.02rem}
+.signature-list{
+  margin-top:26px;
+  display:grid;
+  gap:14px;
+}
+.signature-item{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding:16px 18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+}
+.signature-item strong{
+  font-size:1.05rem;
+  display:block;
+  margin-bottom:4px;
+}
+.signature-index{
+  min-width:38px;
+  height:38px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:rgba(212,176,106,.12);
+  border:1px solid rgba(212,176,106,.28);
+  color:var(--gold);
+  font-weight:800;
+}
+.portrait{
+  height:100%;
+  min-height:560px;
+  position:relative;
+}
+.portrait img{
   width:100%;
-  border-radius:var(--radius-sm);
-  box-shadow:0 14px 34px rgba(0,0,0,.52);
-  border:1px solid rgba(197,165,87,.14);
+  height:100%;
+  object-fit:cover;
+  border-radius:24px;
 }
-.about .credit{
+.portrait figcaption{
+  position:absolute;
+  left:22px;
+  bottom:22px;
+  padding:12px 16px;
+  border-radius:16px;
+  background:rgba(10,7,6,.6);
+  border:1px solid rgba(255,255,255,.08);
+  color:rgba(244,236,223,.84);
+  font-size:.84rem;
+}
+
+.profiles{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.profile-card{
+  padding:34px;
+}
+.role-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(212,176,106,.10);
+  border:1px solid rgba(212,176,106,.22);
+  color:var(--muted-strong);
   font-size:.78rem;
-  color:rgba(246,240,228,.64);
-  margin-top:10px;
-  text-align:center
-}
-@media(min-width:900px){
-  .about{grid-template-columns:minmax(0,380px) 1fr}
+  letter-spacing:.18em;
+  text-transform:uppercase;
 }
 
-/* Multimedia band */
-.band{
-  background:linear-gradient(180deg, rgba(26,20,16,.55), rgba(26,20,16,.18));
-  border-top:1px solid rgba(197,165,87,.14);
-  border-bottom:1px solid rgba(197,165,87,.14);
+.offer-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
 }
-.video-wrapper{position:relative;max-width:820px;margin:0 auto}
-.video-wrapper::before{content:"";display:block;padding-top:56.25%}
-.video-wrapper iframe{
-  position:absolute;top:0;left:0;width:100%;height:100%;
-  border:0;border-radius:var(--radius);
+.offer-card{
+  padding:32px;
+}
+.offer-card p{margin-bottom:0}
+.offer-card .label{
+  display:inline-block;
+  margin-bottom:18px;
+  font-size:.75rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.offer-card ul{
+  list-style:none;
+  margin-top:18px;
+  display:grid;
+  gap:12px;
+}
+.offer-card li{
+  position:relative;
+  padding-left:18px;
+  color:var(--muted);
+}
+.offer-card li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.82em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+.media-layout{
+  grid-template-columns:1.2fr .8fr;
+  align-items:start;
+}
+.video-frame{
+  position:relative;
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid rgba(255,255,255,.08);
   box-shadow:var(--shadow);
-  border:1px solid rgba(197,165,87,.16);
+}
+.video-frame::before{
+  content:"";
+  display:block;
+  padding-top:56.25%;
+}
+.video-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+.media-copy{
+  padding:30px;
+}
+.media-copy .quote{
+  margin:20px 0;
+  padding:18px 20px;
+  border-left:2px solid rgba(212,176,106,.5);
+  color:var(--muted-strong);
+  background:rgba(255,255,255,.025);
+  border-radius:0 16px 16px 0;
+}
+.repertoire{
+  display:grid;
+  gap:12px;
+  margin-top:22px;
+}
+.repertoire div{
+  padding:16px 18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+}
+.repertoire strong{
+  display:block;
+  font-size:1rem;
+  margin-bottom:3px;
 }
 
-/* Contact form */
-form{display:grid;gap:18px;margin-top:26px;text-align:left;max-width:720px;margin-left:auto;margin-right:auto}
-label{display:flex;flex-direction:column;font-weight:600;font-size:.92rem;gap:8px}
-input,textarea{
-  font-family:inherit;
-  font-size:1rem;
-  padding:.75em .95em;
-  border-radius:12px;
-  border:1px solid rgba(197,165,87,.22);
-  background:rgba(246,240,228,.96);
-  color:#120d0a;
+.steps{
+  grid-template-columns:repeat(4,minmax(0,1fr));
 }
+.step-card{
+  padding:28px;
+}
+.step-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  margin-bottom:18px;
+  border-radius:50%;
+  border:1px solid rgba(212,176,106,.28);
+  background:rgba(212,176,106,.10);
+  color:var(--gold);
+  font-weight:800;
+}
+
+.cta-wrap{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:24px;
+  align-items:stretch;
+}
+.cta-copy,
+.contact-card{
+  padding:38px;
+}
+.cta-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:26px;
+}
+.cta-links a{
+  padding:14px 18px;
+  border-radius:16px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  color:var(--text);
+}
+form{
+  display:grid;
+  gap:16px;
+  margin-top:10px;
+}
+label{
+  display:grid;
+  gap:8px;
+  font-size:.92rem;
+  color:var(--muted-strong);
+}
+input,textarea{
+  width:100%;
+  padding:15px 16px;
+  color:var(--text);
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+}
+input::placeholder,textarea::placeholder{color:rgba(244,236,223,.46)}
 input:focus,textarea:focus{
   outline:none;
-  border-color:rgba(197,165,87,.68);
-  box-shadow:0 0 0 4px rgba(197,165,87,.12);
+  border-color:rgba(212,176,106,.45);
+  box-shadow:0 0 0 4px rgba(212,176,106,.10);
 }
 textarea{resize:vertical;min-height:140px}
-.form-note{font-size:.82rem;color:rgba(246,240,228,.62);margin-top:-6px}
-
-button[type="submit"]{all:unset;cursor:pointer}
-
-/* Contact lines */
-.direct{
-  margin-top:26px;
-  color:rgba(246,240,228,.76);
-  font-size:.92rem;
+button[type="submit"]{
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  text-align:center;
 }
-.contact-row{
-  margin-top:18px;
-  display:flex;
-  justify-content:center;
+.contact-meta{
+  display:grid;
   gap:12px;
-  flex-wrap:wrap;
+  margin-top:22px;
 }
-.contact-row a{white-space:nowrap}
-
-/* Sticky CTA */
+.contact-meta a{
+  color:var(--text);
+  border-bottom:1px solid rgba(212,176,106,.25);
+  width:fit-content;
+}
 .sticky-cta{
-  position:fixed;right:22px;bottom:22px;z-index:210;
-  padding:14px 22px;border-radius:999px;
-  font-weight:700;
-  background:linear-gradient(180deg,var(--gold),var(--gold-2));
-  color:#120d0a;
-  text-decoration:none;
-  box-shadow:0 12px 32px rgba(0,0,0,.55);
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:55;
+  padding:15px 22px;
+  border-radius:999px;
+  color:#19120d;
+  font-weight:800;
+  background:linear-gradient(180deg, #e7c98b, var(--gold));
+  box-shadow:0 18px 40px rgba(0,0,0,.3);
   transform:translateY(130px);
-  transition:transform .42s ease;
+  transition:transform .35s ease;
 }
 .sticky-cta.show{transform:translateY(0)}
-@media(max-width:520px){
-  .sticky-cta{right:14px;bottom:14px;padding:13px 18px}
+footer{
+  padding:36px 20px 52px;
+  color:rgba(244,236,223,.52);
+  text-align:center;
+  font-size:.88rem;
+}
+[data-reveal]{
+  opacity:0;
+  transform:translateY(34px);
+  transition:opacity .75s ease, transform .75s ease;
+}
+[data-reveal].is-visible{
+  opacity:1;
+  transform:translateY(0);
 }
 
-/* Footer */
-footer{
-  padding:52px 20px;
-  text-align:center;
-  color:rgba(246,240,228,.58);
-  font-size:.88rem;
-  border-top:1px solid rgba(197,165,87,.12);
-  background:rgba(8,6,5,.62);
+@media (max-width:1080px){
+  .hero-shell,
+  .story-grid,
+  .media-layout,
+  .cta-wrap{
+    grid-template-columns:1fr;
+  }
+  .offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-note{justify-self:start}
+}
+
+@media (max-width:760px){
+  nav{padding:14px 14px}
+  .nav-shell{
+    border-radius:24px;
+    align-items:flex-start;
+  }
+  .nav-links{
+    width:100%;
+    justify-content:flex-start;
+    gap:16px;
+  }
+  .hero-card,
+  .story-copy,
+  .story-image,
+  .profile-card,
+  .offer-card,
+  .media-copy,
+  .step-card,
+  .cta-copy,
+  .contact-card{
+    padding:26px;
+  }
+  .hero{padding-top:122px}
+  .hero-meta,
+  .profiles,
+  .offer-grid,
+  .steps{
+    grid-template-columns:1fr;
+  }
+  .portrait{min-height:420px}
+}
+
+@media (max-width:520px){
+  body{font-size:16px}
+  h1{font-size:clamp(3rem,17vw,4.1rem)}
+  .hero-actions,
+  .cta-links{
+    flex-direction:column;
+  }
+  .btn,
+  .cta-links a{
+    width:100%;
+  }
+  .sticky-cta{
+    right:14px;
+    left:14px;
+    bottom:14px;
+    text-align:center;
+  }
 }
 </style>
 </head>
-
 <body>
-  <!-- ===== NAV ===== -->
   <nav aria-label="Main">
-    <div class="nav-wrap">
-      <a href="#hero" class="brand"><img src="../piumosso_bialy.png" alt="Più Mosso — logo"></a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#concerts">Concerts</a></li>
-        <li><a href="#weddings">Weddings</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/" hreflang="pl" lang="pl" aria-label="Polish version">PL</a></li>
-      </ul>
+    <div class="nav-shell">
+      <a href="#start" class="brand" aria-label="Più Mosso">
+        <img src="../piumosso_bialy.png" alt="Più Mosso logo">
+        <span class="brand-mark">
+          <strong>Più Mosso</strong>
+          <span>artistic duo</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#offer">Offer</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+        <a href="/">PL</a>
+        <a href="#contact" class="cta">Book the duo</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
-  <header class="hero" id="hero">
-    <video src="../IMG_3283.webm" autoplay muted loop playsinline aria-hidden="true"></video>
-    <div class="inner">
-      <h1>Più Mosso</h1>
-      <p class="subtitle">Music that turns a moment into&nbsp;art</p>
+  <header class="hero" id="start">
+    <div class="hero-media" aria-hidden="true">
+      <video src="../IMG_3283.webm" autoplay muted loop playsinline></video>
+    </div>
 
-      <div class="btn-row">
-        <a class="btn btn-primary" href="#contact">Book the duo</a>
-        <a class="btn btn-outline" href="#concerts">Concerts</a>
-        <a class="btn btn-outline" href="#weddings">Weddings</a>
+    <div class="hero-shell">
+      <div class="hero-card panel hero-copy" data-reveal>
+        <div class="eyebrow">Violin • organ • piano</div>
+        <h1>A memorable event begins with the first note.</h1>
+        <p>Più Mosso creates musical settings that bring elegance, calm and a clear artistic identity. We perform for couples, cultural institutions and venues that want their occasion to feel refined from the very beginning.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Check availability</a>
+          <a class="btn btn-secondary" href="../oferta_black_en_v5.pdf" target="_blank" rel="noopener">Concert offer PDF</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-box">
+            <strong>Concerts</strong>
+            <span>recitals, festivals, churches and bespoke cultural events</span>
+          </div>
+          <div class="meta-box">
+            <strong>Weddings</strong>
+            <span>music shaped around the ceremony from entrance to final moment</span>
+          </div>
+          <div class="meta-box">
+            <strong>Presence</strong>
+            <span>stage elegance and repertoire tailored to the atmosphere</span>
+          </div>
+        </div>
       </div>
 
-      <div class="rule"></div>
+      <aside class="hero-note panel" data-reveal>
+        <h3>What defines us</h3>
+        <ul>
+          <li>refined musical direction with visual restraint,</li>
+          <li>direct communication and thoughtful planning,</li>
+          <li>programs adapted to the venue, ceremony and audience.</li>
+        </ul>
+      </aside>
     </div>
   </header>
 
   <main>
-    <!-- ===== ABOUT ===== -->
     <section id="about">
-      <div class="container card">
-        <div class="center">
-          <div class="smallcaps">Violin &amp; organ / piano duo</div>
-          <h2 style="margin-top:.35rem">About</h2>
-          <div class="rule"></div>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="eyebrow">About the duo</div>
+          <h2>Music that does more than accompany a moment. It shapes the atmosphere around it.</h2>
+          <p>We combine classical craft with a contemporary sense of form. Our performances are elegant, expressive and built with the acoustic space, occasion and emotional arc in mind.</p>
         </div>
 
-        <div class="about" style="margin-top:26px">
-          <figure>
-            <img
-              src="../DSCF3970.jpeg"
-              alt="Più Mosso duo — Zofia Andersz and Piotr Górski"
-              width="1074" height="1554"
-              loading="lazy" decoding="async">
-            <figcaption class="credit">photo: N.&nbsp;Zhang</figcaption>
+        <div class="grid story-grid">
+          <div class="panel story-copy" data-reveal>
+            <h3>Più Mosso is built around musical quality and artistic clarity.</h3>
+            <p>We focus on sound culture, dramaturgy and a refined stage presence. This allows our performances to work naturally in weddings, representative ceremonies, recitals and concert programs alike.</p>
+
+            <div class="signature-list">
+              <div class="signature-item">
+                <div class="signature-index">01</div>
+                <div>
+                  <strong>Bespoke repertoire choices</strong>
+                  <p>From sacred and classical works to selected film themes, always arranged with taste and coherence.</p>
+                </div>
+              </div>
+              <div class="signature-item">
+                <div class="signature-index">02</div>
+                <div>
+                  <strong>Presence that elevates the room</strong>
+                  <p>We care about the entire impression of the event, not only the performance itself.</p>
+                </div>
+              </div>
+              <div class="signature-item">
+                <div class="signature-index">03</div>
+                <div>
+                  <strong>Clear and calm collaboration</strong>
+                  <p>Fast communication and a structured process make planning easy for organisers and couples.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <figure class="panel story-image portrait" data-reveal>
+            <img src="../DSCF3970.jpeg" alt="Più Mosso duo — Zofia Andersz and Piotr Górski" width="1074" height="1554" loading="lazy" decoding="async">
+            <figcaption>photo: N. Zhang</figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
 
-          <div>
-            <article>
-              <h3>Zofia Andersz <span class="role">violin</span></h3>
-              <p>A violinist whose bow paints stories in light and&nbsp;shadow. She holds a bachelor’s degree in the violin class of Prof.&nbsp;Dorota Kwiecińska and is currently pursuing her master’s studies with the same professor. She has appeared at chamber festivals and as a soloist, blending classical tradition with a contemporary sense of colour. Zofia has taken part in a wide range of orchestral projects — from classical and film music to popular repertoire — and is also active on the pedagogical side of the stand.</p>
-            </article>
+    <section>
+      <div class="container">
+        <div class="grid profiles">
+          <article class="panel profile-card" data-reveal>
+            <div class="role-pill">Zofia Andersz • violin</div>
+            <h3>Sound shaped with lightness, nuance and natural stage freedom.</h3>
+            <p>A violinist currently continuing her studies under Prof. Dorota Kwiecińska. She performs in chamber festivals, solo concerts and orchestral projects spanning classical, film and popular repertoire. Her playing brings lyricism, precision and a strong sense of storytelling.</p>
+          </article>
 
-            <div class="rule" style="margin:22px 0 12px; width:100%"></div>
+          <article class="panel profile-card" data-reveal>
+            <div class="role-pill">Piotr Górski • organ and piano</div>
+            <h3>Interpretation grounded in virtuosity, dramaturgy and concert experience.</h3>
+            <p>An award-winning organist and pianist, graduate of the Poznań Academy of Music with honours. He performs regularly, teaches, and develops projects where classical tradition meets a modern sense of form, pacing and architectural space.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <article>
-              <h3>Piotr Górski <span class="role">organ&nbsp;&amp;&nbsp;piano</span></h3>
-              <p>A concert organist and pianist, regularly invited to perform on Polish stages and at festivals. Prizewinner of organ competitions: First Prize – Giżycko 2022, Distinction – Kraków 2023, Third Prize – Rumia 2024, First Prize – Castellana Grotte 2025. Graduate of the Academy of Music in Poznań (with honours). He completed his master’s studies in the class of Prof. Dr. habil. Sławomir Kamiński and Dr. Jakub Pankowiak, and his bachelor’s studies in the class of Prof. Dr. habil. Elżbieta Karolak and Dr. Jarosław Tarnawski. He has also taken part in masterclasses with organists such as Wolfgang Zerer, Wolfgang Seifen, Sylvain Pluyaut, Karol Mossakowski, Tomasz Orlow, and Krzysztof Lukas. His interpretations combine virtuosity with a strong sense of dramatic expression. He serves as organist of the Holy Trinity Church in Nowe Miasto nad Wartą and devotes part of his activity to teaching.</p>
-            </article>
+    <section id="offer">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="eyebrow">Offer</div>
+          <h2>A format shaped around the venue, the audience and the tone of the occasion.</h2>
+          <p>We work with both private clients and institutions. Each performance is designed so the music genuinely enhances the event.</p>
+        </div>
+
+        <div class="grid offer-grid">
+          <article class="panel offer-card" data-reveal>
+            <span class="label">Concerts</span>
+            <h3>Recitals and artistic events</h3>
+            <p>Our concert programs are prepared with the venue acoustics, audience profile and dramatic arc of the evening in mind.</p>
+            <ul>
+              <li>churches, concert halls, festivals and cultural venues,</li>
+              <li>solo and duo formats,</li>
+              <li>tailored repertoire proposals.</li>
+            </ul>
+            <p style="margin-top:22px"><a class="btn btn-secondary" href="../oferta_black_en_v5.pdf" target="_blank" rel="noopener">Download offer</a></p>
+          </article>
+
+          <article class="panel offer-card" data-reveal>
+            <span class="label">Weddings</span>
+            <h3>Ceremony music with elegance and calm</h3>
+            <p>We create musical settings that support the ceremony with timing, emotion and refined taste rather than overwhelming it.</p>
+            <ul>
+              <li>church and civil ceremonies,</li>
+              <li>guidance in selecting music,</li>
+              <li>clear structure and polished execution.</li>
+            </ul>
+            <p style="margin-top:22px"><a class="btn btn-secondary" href="../oferta%20s%CC%81lubna%20_compressed.pdf" target="_blank" rel="noopener">Wedding offer PDF</a></p>
+          </article>
+
+          <article class="panel offer-card" data-reveal>
+            <span class="label">Extended format</span>
+            <h3>Guest vocalist option</h3>
+            <p>For couples and organisers who want an even more concert-like atmosphere, we also offer a version with vocalist Karolina Styszyńska.</p>
+            <ul>
+              <li>a broader dramatic palette for the ceremony,</li>
+              <li>expanded repertoire possibilities,</li>
+              <li>a cohesive and elevated final result.</li>
+            </ul>
+            <p style="margin-top:22px"><a class="btn btn-secondary" href="../999.pdf" target="_blank" rel="noopener">View PDF</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="container">
+        <div class="grid media-layout">
+          <div data-reveal>
+            <div class="video-frame">
+              <iframe title="Più Mosso – Bach / Gounod 'Ave Maria'" src="https://www.youtube.com/embed/zUReBhFwYuc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="panel media-copy" data-reveal>
+            <div class="eyebrow">Media</div>
+            <h2>See how our musical language comes to life.</h2>
+            <p class="quote">We value performances with clarity, breath and emotional weight. Even a short recording should feel like a carefully shaped whole.</p>
+
+            <div class="repertoire">
+              <div>
+                <strong>Classical repertoire</strong>
+                <span>sacred, recital and chamber works performed with elegance and precision.</span>
+              </div>
+              <div>
+                <strong>Selected film themes</strong>
+                <span>arrangements that remain tasteful and artistically coherent.</span>
+              </div>
+              <div>
+                <strong>Tailored event programs</strong>
+                <span>we help match the music to the ceremony, space and overall tone.</span>
+              </div>
+            </div>
+
+            <p style="margin-top:22px"><a href="/en/gallery/">Browse the gallery</a> or <a href="/en/calendar/">see upcoming dates</a>.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== MEDIA ===== -->
-    <section id="media" class="band">
+    <section>
       <div class="container">
-        <div class="center">
-          <div class="smallcaps">Video</div>
-          <h2 style="margin-top:.35rem">Media</h2>
-          <div class="rule"></div>
+        <div class="section-head" data-reveal>
+          <div class="eyebrow">Process</div>
+          <h2>A simple collaboration flow that leaves room for clarity and peace of mind.</h2>
         </div>
 
-        <div class="video-wrapper" style="margin-top:26px">
-          <iframe title="Più Mosso – Bach / Gounod 'Ave Maria'"
-                  src="https://www.youtube.com/embed/zUReBhFwYuc"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen></iframe>
+        <div class="grid steps">
+          <article class="panel step-card" data-reveal>
+            <div class="step-number">1</div>
+            <h3>Initial message</h3>
+            <p>Send us the date, venue and type of event. We come back quickly with availability.</p>
+          </article>
+          <article class="panel step-card" data-reveal>
+            <div class="step-number">2</div>
+            <h3>Choosing the format</h3>
+            <p>We suggest the most suitable line-up, repertoire and level of musical presence for your event.</p>
+          </article>
+          <article class="panel step-card" data-reveal>
+            <div class="step-number">3</div>
+            <h3>Refining the details</h3>
+            <p>We confirm the order of moments, musical cues, practical matters and any special requests.</p>
+          </article>
+          <article class="panel step-card" data-reveal>
+            <div class="step-number">4</div>
+            <h3>Performance day</h3>
+            <p>We bring readiness, calm and artistic polish so the music naturally supports the event.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONCERTS ===== -->
-    <section id="concerts">
-      <div class="container card center">
-        <div class="smallcaps">Cultural institutions • festivals • churches</div>
-        <h2 style="margin-top:.35rem">Concerts</h2>
-        <div class="rule"></div>
-
-        <p style="margin-top:18px">From early masters to fresh arrangements of contemporary film themes — our programmes are tailored to the venue and the audience. We perform <strong>solo recitals</strong>, intimate <strong>duo evenings</strong> and full-scale <strong>festival concerts</strong>.</p>
-
-        <p style="margin-top:26px">
-          <a class="btn btn-primary" href="../Oferta nowa (skompresowany).pdf" target="_blank" rel="noopener">Download the concert offer PDF</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== WEDDINGS ===== -->
-    <section id="weddings">
-      <div class="container card center">
-        <div class="smallcaps">Church ceremony • civil ceremony • event music</div>
-        <h2 style="margin-top:.35rem">Wedding music</h2>
-        <div class="rule"></div>
-
-        <p style="margin-top:18px">Music adds radiance and depth to the ceremony — from the first step down the aisle to the final signature. We prepare a bespoke programme for your liturgy or civil ceremony, so every moment sounds truly special.</p>
-
-        <p style="margin-top:26px">
-          <a class="btn btn-primary" href="../oferta ślubna _compressed.pdf" target="_blank" rel="noopener">Download the wedding offer PDF</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
     <section id="contact">
-      <div class="container card center">
-        <div class="smallcaps">Direct contact</div>
-        <h2 style="margin-top:.35rem">Get in touch</h2>
-        <div class="rule"></div>
+      <div class="container">
+        <div class="grid cta-wrap">
+          <div class="panel cta-copy" data-reveal>
+            <div class="eyebrow">Contact</div>
+            <h2>If you want the occasion to feel truly refined, let’s begin with a conversation.</h2>
+            <p>We handle bookings directly. The most helpful first message includes the date, city, type of event and the general scope you have in mind.</p>
+            <div class="cta-links">
+              <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+              <a href="tel:+48781010229">+48 781 010 229</a>
+              <a href="tel:+48721521594">+48 721 521 594</a>
+            </div>
+          </div>
 
-        <p style="font-size:1.12rem;margin-top:14px;color:rgba(246,240,228,.88)">
-          Book a date or ask a question — we reply the same day.
-        </p>
+          <div class="panel contact-card" data-reveal>
+            <h3>Send us a message</h3>
+            <form id="contact-form" novalidate>
+              <label>Full name *
+                <input type="text" name="name" required>
+              </label>
+              <label>Email
+                <input type="email" name="email" placeholder="optional">
+              </label>
+              <label>Phone *
+                <input type="tel" name="phone" required pattern="[0-9+\s-]{6,}" placeholder="+48 000 000 000">
+              </label>
+              <label>Message
+                <textarea name="message" placeholder="Tell us about the date, venue and type of event"></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send enquiry</button>
+            </form>
 
-        <form id="contact-form" novalidate>
-          <label>Full name *
-            <input type="text" name="name" required />
-          </label>
-
-          <label>Email address
-            <input type="email" name="email" placeholder="optional" />
-          </label>
-
-          <label>Phone *
-            <input type="tel" name="phone" required pattern="[0-9+\s-]{6,}" />
-            <span class="form-note">Digits, spaces or “+” only.</span>
-          </label>
-
-          <label>Message
-            <textarea name="message" placeholder="Your enquiry"></textarea>
-          </label>
-
-          <button type="submit"><span class="btn btn-primary" style="width:100%;max-width:340px;margin:6px auto 0">Send</span></button>
-        </form>
-
-        <div class="direct">
-          <p style="margin-top:26px">
-            or email us directly:
-            <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
-          </p>
-        </div>
-
-        <div class="contact-row">
-          <a class="btn btn-outline" href="tel:+48781010229">+48 781 010 229</a>
-          <a class="btn btn-outline" href="tel:+48721521594">+48 721 521 594</a>
+            <div class="contact-meta">
+              <p>We usually reply the same day.</p>
+              <a href="/en/calendar/">See upcoming events</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>&copy; 2026 Più Mosso — All rights reserved</footer>
+  <footer>&copy; 2026 Più Mosso. All rights reserved.</footer>
 
   <a href="#contact" class="sticky-cta" id="stickyCta">Book the duo</a>
 
   <script>
-  history.scrollRestoration='manual';
-  window.addEventListener('DOMContentLoaded',()=>{
-    setTimeout(()=>{ document.activeElement.blur(); scrollTo(0,0); },60);
-  });
+  history.scrollRestoration = "manual";
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
+      scrollTo(0, 0);
+    }, 60);
 
-  new IntersectionObserver(([e])=>{
-    document.querySelector('#stickyCta').classList.toggle('show',!e.isIntersecting);
-  }).observe(document.querySelector('#hero'));
+    const stickyCta = document.querySelector("#stickyCta");
+    const hero = document.querySelector("#start");
+    if (stickyCta && hero) {
+      new IntersectionObserver(([entry]) => {
+        stickyCta.classList.toggle("show", !entry.isIntersecting);
+      }).observe(hero);
+    }
 
-  document.querySelector('#contact-form').addEventListener('submit',ev=>{
-    ev.preventDefault();
-    const f=new FormData(ev.target),
-          name=f.get('name')?.trim(),
-          phone=f.get('phone')?.trim();
-    if(!name||!phone){alert('Please enter your full name and phone number.');return;}
-    const body=encodeURIComponent(
+    const revealItems = document.querySelectorAll("[data-reveal]");
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.16 });
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    const contactForm = document.querySelector("#contact-form");
+    if (contactForm) {
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        const name = formData.get("name")?.toString().trim();
+        const phone = formData.get("phone")?.toString().trim();
+
+        if (!name || !phone) {
+          alert("Please provide your full name and phone number.");
+          return;
+        }
+
+        const body = encodeURIComponent(
 `Full name: ${name}
 Phone: ${phone}
-Email: ${f.get('email')?.trim()||'–'}
+Email: ${formData.get("email")?.toString().trim() || "–"}
 
 Message:
-${f.get('message')?.trim()||'–'}`);
-    location.href=`mailto:kontakt@piumosso.pl?subject=Enquiry%20from%20the%20website&body=${body}`;
-  });
-  </script>
+${formData.get("message")?.toString().trim() || "–"}`
+        );
 
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('p, h1, h2, h3, li');
-    elements.forEach(el => {
-      if (el.textContent.trim().split(' ').length < 3) return;
-      el.innerHTML = el.innerHTML.replace(/\s+([^\s<>]{1,8})\s*$/,'&nbsp;$1');
-    });
+        location.href = `mailto:kontakt@piumosso.pl?subject=Website%20enquiry&body=${body}`;
+      });
+    }
   });
   </script>
 </body>
