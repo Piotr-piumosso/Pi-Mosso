@@ -1,1 +1,1176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<title>Più Mosso — Studio OS</title>
+<style>
+:root{
+  --bg:#0b0908;
+  --bg-2:#15110f;
+  --panel:#171210;
+  --panel-2:#201915;
+  --text:#f5ede0;
+  --muted:rgba(245,237,224,.68);
+  --line:rgba(212,176,106,.18);
+  --gold:#d4b06a;
+  --gold-2:#b88c43;
+  --green:#5ea36d;
+  --red:#c56f6f;
+  --shadow:0 24px 60px rgba(0,0,0,.35);
+  --radius-xl:26px;
+  --radius-lg:18px;
+  --radius-md:14px;
+  --max:1380px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:
+    radial-gradient(900px 500px at 12% 0%, rgba(212,176,106,.14), transparent 60%),
+    linear-gradient(180deg, #090706 0%, #0d0a09 36%, #110d0b 100%);
+  color:var(--text);
+  min-height:100vh;
+}
+a{color:var(--gold)}
+button,input,select,textarea{font:inherit}
+.shell{max-width:var(--max);margin:0 auto;padding:26px 18px 42px}
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-size:.74rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+h1{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:3.1rem;
+  line-height:.96;
+  font-weight:600;
+}
+.sub{
+  margin-top:10px;
+  color:var(--muted);
+  max-width:760px;
+  line-height:1.65;
+}
+.badge-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.badge{
+  padding:10px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.02);
+  color:var(--muted);
+  font-size:.84rem;
+}
+.grid{
+  display:grid;
+  grid-template-columns:360px 1fr;
+  gap:18px;
+}
+.panel{
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)), var(--panel);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.panel-head{
+  padding:18px 20px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.panel-head h2{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:2rem;
+  font-weight:600;
+}
+.panel-body{padding:18px 20px}
+.stack{display:grid;gap:14px}
+label{
+  display:grid;
+  gap:8px;
+  color:var(--muted);
+  font-size:.92rem;
+}
+input,select,textarea{
+  width:100%;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+  padding:12px 14px;
+  border-radius:14px;
+}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{
+  outline:none;
+  border-color:rgba(212,176,106,.4);
+  box-shadow:0 0 0 4px rgba(212,176,106,.08);
+}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px}
+.btn{
+  appearance:none;
+  border:1px solid transparent;
+  cursor:pointer;
+  border-radius:999px;
+  min-height:46px;
+  padding:0 18px;
+  font-weight:700;
+}
+.btn-primary{
+  color:#1b140f;
+  background:linear-gradient(180deg, #e5c78c, var(--gold));
+}
+.btn-secondary{
+  color:var(--text);
+  background:rgba(255,255,255,.03);
+  border-color:rgba(255,255,255,.1);
+}
+.btn-danger{
+  color:#fff;
+  background:rgba(197,111,111,.14);
+  border-color:rgba(197,111,111,.28);
+}
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:18px;
+}
+.metric{
+  padding:16px 18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(255,255,255,.06);
+}
+.metric strong{
+  display:block;
+  font-size:1.8rem;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  color:var(--text);
+}
+.metric span{color:var(--muted);font-size:.9rem}
+.board{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(210px,1fr));
+  gap:12px;
+  overflow:auto;
+  padding-bottom:4px;
+}
+.column{
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:20px;
+  min-height:360px;
+  padding:14px;
+}
+.column h3{
+  font-size:1rem;
+  font-weight:800;
+  margin-bottom:12px;
+  letter-spacing:.03em;
+}
+.column small{display:block;color:var(--muted);margin-top:4px}
+.lead-list{
+  display:grid;
+  gap:10px;
+}
+.lead-card{
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.07);
+  background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+  padding:14px;
+}
+.lead-card h4{font-size:1rem;margin-bottom:6px}
+.lead-meta{
+  display:grid;
+  gap:6px;
+  color:var(--muted);
+  font-size:.87rem;
+  margin-bottom:12px;
+}
+.lead-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.mini{
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.09);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+  min-height:34px;
+  padding:0 12px;
+  cursor:pointer;
+  font-size:.82rem;
+}
+.mini.good{
+  border-color:rgba(94,163,109,.25);
+  background:rgba(94,163,109,.12);
+}
+.mini.bad{
+  border-color:rgba(197,111,111,.25);
+  background:rgba(197,111,111,.1);
+}
+.templates{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.partner-metrics{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.partner-grid{
+  display:grid;
+  grid-template-columns:1.02fr .98fr;
+  gap:18px;
+  margin-top:18px;
+}
+.partner-list{
+  display:grid;
+  gap:10px;
+}
+.partner-card{
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.partner-card h4{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.partner-card p{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+.partner-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:12px;
+}
+.partner-tag{
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:.76rem;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  color:var(--muted);
+}
+.partner-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.template-card{
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.template-card h4{
+  font-size:1rem;
+  margin-bottom:8px;
+}
+.template-card p{
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.6;
+  white-space:pre-wrap;
+}
+.todo{
+  display:grid;
+  gap:10px;
+}
+.todo-item{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.todo-item input{width:18px;height:18px;margin-top:2px}
+.todo-item div{color:var(--muted);line-height:1.55}
+.todo-item strong{display:block;color:var(--text);margin-bottom:2px}
+.helper{
+  color:var(--muted);
+  font-size:.84rem;
+  line-height:1.55;
+}
+.lock{
+  position:fixed;
+  inset:0;
+  background:rgba(8,6,5,.74);
+  backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.lock-box{
+  width:min(100%,460px);
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)), var(--panel-2);
+  box-shadow:var(--shadow);
+  padding:24px;
+}
+.lock-box h2{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:2.3rem;
+  margin-bottom:10px;
+}
+.lock-box p{color:var(--muted);line-height:1.65;margin-bottom:16px}
+.hidden{display:none}
+@media (max-width:1180px){
+  .grid{grid-template-columns:1fr}
+  .partner-grid{grid-template-columns:1fr}
+}
+@media (max-width:880px){
+  .metrics,.templates,.partner-metrics{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  h1{font-size:2.4rem}
+  .metrics,.templates,.partner-metrics{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">Più Mosso • Studio OS</div>
+        <h1>Lead machine i follow-up machine w jednym miejscu.</h1>
+        <p class="sub">Prywatny panel do trzymania zapytań, partnerów, follow-upów i gotowych wiadomości. Wszystko zapisuje się lokalnie w tej przeglądarce, więc możesz zacząć działać od razu bez CRM-a.</p>
+      </div>
+      <div class="badge-row">
+        <div class="badge">Prywatne zaplecze</div>
+        <div class="badge">Działa offline</div>
+        <div class="badge">Leady + follow-up</div>
+      </div>
+    </div>
 
+    <div class="grid">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Nowy lead</h2>
+        </div>
+        <div class="panel-body">
+          <form id="leadForm" class="stack">
+            <label>Imię / firma / miejsce
+              <input name="title" required placeholder="Np. Dom Kultury Września / Anna i Marek">
+            </label>
+            <label>Typ
+              <select name="kind">
+                <option value="koncert">Koncert</option>
+                <option value="slub">Ślub</option>
+                <option value="partner">Partner</option>
+                <option value="instytucja">Instytucja</option>
+              </select>
+            </label>
+            <label>Miasto / lokalizacja
+              <input name="city" placeholder="Poznań">
+            </label>
+            <label>Data wydarzenia / kontaktu
+              <input type="date" name="eventDate">
+            </label>
+            <label>Budżet / potencjał
+              <input name="budget" placeholder="Np. 2500-4000 zł / premium">
+            </label>
+            <label>Źródło
+              <select name="source">
+                <option value="strona">Strona</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="polecenie">Polecenie</option>
+                <option value="outreach">Outreach</option>
+                <option value="partner">Partner</option>
+                <option value="inne">Inne</option>
+              </select>
+            </label>
+            <label>Email / telefon / link
+              <input name="contact" placeholder="kontakt@..., +48..., instagram.com/...">
+            </label>
+            <label>Następny ruch
+              <input type="date" name="nextAction">
+            </label>
+            <label>Notatki
+              <textarea name="notes" placeholder="Co ich interesuje, co wysłać, jaki follow-up zrobić"></textarea>
+            </label>
+            <div class="btn-row">
+              <button class="btn btn-primary" type="submit">Dodaj do pipeline</button>
+              <button class="btn btn-secondary" type="button" id="seedButton">Dodaj przykłady</button>
+            </div>
+          </form>
+          <p class="helper" style="margin-top:14px">Rada: wpisuj partnerów tak samo jak klientów. Dzięki temu w jednym panelu widać zarówno sprzedaż bezpośrednią, jak i kanały poleceń.</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Pipeline</h2>
+          <div class="btn-row">
+            <button class="btn btn-secondary" type="button" id="exportButton">Eksport JSON</button>
+            <button class="btn btn-secondary" type="button" id="importButton">Import JSON</button>
+            <button class="btn btn-danger" type="button" id="clearButton">Wyczyść</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="metrics">
+            <div class="metric"><strong id="metricAll">0</strong><span>Wszystkie leady</span></div>
+            <div class="metric"><strong id="metricOpen">0</strong><span>Otwarte sprawy</span></div>
+            <div class="metric"><strong id="metricWon">0</strong><span>Wygrane</span></div>
+            <div class="metric"><strong id="metricToday">0</strong><span>Follow-up dziś</span></div>
+          </div>
+
+          <div class="board" id="board"></div>
+
+          <div class="templates">
+            <article class="template-card">
+              <h4>Outreach do instytucji</h4>
+              <p id="tplInstitution">Dzień dobry,
+
+reprezentuję duet Più Mosso. Tworzymy eleganckie programy koncertowe na skrzypce, organy i fortepian, przygotowane z myślą o salach koncertowych, kościołach i wydarzeniach kulturalnych.
+
+Jeśli planują Państwo sezon artystyczny lub koncert specjalny, chętnie prześlę krótką ofertę oraz propozycje programu dopasowane do miejsca i publiczności.
+
+Z wyrazami szacunku,
+Più Mosso</p>
+              <div class="btn-row" style="margin-top:10px">
+                <button class="mini" type="button" data-copy="tplInstitution">Kopiuj</button>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <h4>Follow-up po ofercie</h4>
+              <p id="tplFollowUp">Dzień dobry,
+
+wracam z krótkim przypomnieniem w sprawie oferty Più Mosso. Jeśli termin jest nadal aktualny, możemy od razu doprecyzować repertuar, przebieg wydarzenia i najlepszy wariant oprawy.
+
+Jeśli potrzebują Państwo krótszej wersji oferty lub konkretnej rekomendacji repertuarowej, chętnie przygotuję ją od razu.
+
+Pozdrawiam serdecznie,
+Più Mosso</p>
+              <div class="btn-row" style="margin-top:10px">
+                <button class="mini" type="button" data-copy="tplFollowUp">Kopiuj</button>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <h4>Prośba o polecenie</h4>
+              <p id="tplReferral">Dzień dobry,
+
+dziękujemy za zaufanie i możliwość współtworzenia wydarzenia. Jeśli znają Państwo osobę lub miejsce, które mogłyby szukać podobnej oprawy muzycznej, będziemy bardzo wdzięczni za polecenie lub przekazanie kontaktu.
+
+To dla nas najcenniejsza forma rozwoju.
+
+Serdecznie,
+Più Mosso</p>
+              <div class="btn-row" style="margin-top:10px">
+                <button class="mini" type="button" data-copy="tplReferral">Kopiuj</button>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <h4>Plan dzienny</h4>
+              <div class="todo">
+                <label class="todo-item"><input type="checkbox"><div><strong>5 nowych kontaktów</strong>dodaj dziś minimum 5 miejsc lub partnerów do pipeline.</div></label>
+                <label class="todo-item"><input type="checkbox"><div><strong>3 follow-upy</strong>wróć do starych leadów, gdzie oferta już poszła.</div></label>
+                <label class="todo-item"><input type="checkbox"><div><strong>1 materiał contentowy</strong>wrzuć short, rolkę albo backstage z CTA na stronę.</div></label>
+                <label class="todo-item"><input type="checkbox"><div><strong>1 prośba o polecenie</strong>po każdym zagranym wydarzeniu uruchamiaj referral machine.</div></label>
+              </div>
+            </article>
+          </div>
+
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+            <h2>Partner Machine</h2>
+          </div>
+          <p class="helper">Ta maszyna ma budować przewagę, której prawie nikt nie domyka dobrze: wedding plannerzy, sale, fotografowie, filmowcy i instytucje mają sprzedawać Più Mosso dalej.</p>
+
+          <div class="partner-metrics">
+            <div class="metric"><strong id="partnerAll">0</strong><span>Wszyscy partnerzy</span></div>
+            <div class="metric"><strong id="partnerWarm">0</strong><span>Rozgrzani</span></div>
+            <div class="metric"><strong id="partnerActive">0</strong><span>Aktywni</span></div>
+            <div class="metric"><strong id="partnerLeads">0</strong><span>Lead source</span></div>
+          </div>
+
+          <div class="partner-grid">
+            <section class="template-card">
+              <h4>Nowy partner</h4>
+              <form id="partnerForm" class="stack" style="margin-top:12px">
+                <label>Nazwa / osoba
+                  <input name="name" required placeholder="Np. Planner Atelier / Sala Pałacowa">
+                </label>
+                <label>Kategoria
+                  <select name="category">
+                    <option value="wedding planner">Wedding planner</option>
+                    <option value="sala">Sala / hotel</option>
+                    <option value="foto-video">Foto / video</option>
+                    <option value="parafia">Parafia / organista</option>
+                    <option value="instytucja">Instytucja kultury</option>
+                    <option value="inne">Inne</option>
+                  </select>
+                </label>
+                <label>Miasto
+                  <input name="city" placeholder="Poznań">
+                </label>
+                <label>Kontakt
+                  <input name="contact" placeholder="mail / telefon / IG">
+                </label>
+                <label>Status
+                  <select name="status">
+                    <option value="research">Research</option>
+                    <option value="to-contact">Do kontaktu</option>
+                    <option value="contacted">Odezwałem się</option>
+                    <option value="warm">Rozgrzany</option>
+                    <option value="active">Aktywny partner</option>
+                  </select>
+                </label>
+                <label>Potencjał leadów miesięcznie
+                  <input name="potential" placeholder="Np. 2-5 / premium">
+                </label>
+                <label>Następny ruch
+                  <input type="date" name="nextAction">
+                </label>
+                <label>Notatki
+                  <textarea name="notes" placeholder="Jak wejść we współpracę, co wysłać, co obiecał"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj partnera</button>
+                  <button class="btn btn-secondary" type="button" id="seedPartners">Dodaj przykłady</button>
+                </div>
+              </form>
+            </section>
+
+            <section class="template-card">
+              <h4>Lista partnerów</h4>
+              <div class="partner-list" id="partnerList" style="margin-top:12px"></div>
+            </section>
+          </div>
+
+          <div class="templates" style="margin-top:18px">
+            <article class="template-card">
+              <h4>Wejście do wedding plannera</h4>
+              <p id="tplPlanner">Dzień dobry,
+
+prowadzimy duet Più Mosso i specjalizujemy się w eleganckiej oprawie muzycznej ceremonii oraz wydarzeń premium. Pracujemy w formule, która dobrze wpisuje się w realizacje dopracowane estetycznie i organizacyjnie.
+
+Jeśli mają Państwo pary, które szukają muzyki klasycznej z wyraźnym poziomem artystycznym i spokojną współpracą organizacyjną, chętnie podeślemy krótki pakiet materiałów i poznamy się bliżej.
+
+Serdecznie,
+Più Mosso</p>
+              <div class="btn-row" style="margin-top:10px">
+                <button class="mini" type="button" data-copy="tplPlanner">Kopiuj</button>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <h4>Wejście do sali / hotelu</h4>
+              <p id="tplVenue">Dzień dobry,
+
+reprezentujemy duet Più Mosso. Tworzymy oprawę muzyczną ślubów, ceremonii i wydarzeń o eleganckim charakterze. Szukamy miejsc, z którymi można budować stałą, jakościową współpracę i które chcą polecać sprawdzone rozwiązania muzyczne swoim klientom.
+
+Jeśli to dla Państwa interesujące, z przyjemnością prześlemy materiały i ustalimy krótki kontakt.
+
+Pozdrawiamy,
+Più Mosso</p>
+              <div class="btn-row" style="margin-top:10px">
+                <button class="mini" type="button" data-copy="tplVenue">Kopiuj</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="lock" id="lockScreen">
+    <div class="lock-box">
+      <div class="eyebrow">Prywatny panel</div>
+      <h2>Studio OS</h2>
+      <p>Wpisz PIN, żeby wejść do panelu operacyjnego Più Mosso. Jeśli chcesz później zmienić PIN, zrób to w pliku `studio/index.html` przy stałej `PIN_CODE`.</p>
+      <div class="stack">
+        <label>PIN
+          <input id="pinInput" type="password" placeholder="PIN">
+        </label>
+        <div class="btn-row">
+          <button class="btn btn-primary" type="button" id="unlockButton">Wejdź</button>
+        </div>
+        <p class="helper" id="pinError" style="color:#f1b4b4"></p>
+      </div>
+    </div>
+  </div>
+
+<script>
+const PIN_CODE = "2137";
+const STORAGE_KEY = "pm_studio_os_v1";
+const PARTNER_KEY = "pm_partner_machine_v1";
+const STAGES = [
+  { id: "new", name: "Nowe", subtitle: "świeże kontakty" },
+  { id: "contacted", name: "Kontakt", subtitle: "pierwsza wiadomość wysłana" },
+  { id: "offer", name: "Oferta", subtitle: "oferta już poszła" },
+  { id: "followup", name: "Follow-up", subtitle: "trzeba wrócić" },
+  { id: "won", name: "Wygrane", subtitle: "zamknięte na tak" },
+  { id: "lost", name: "Przegrane", subtitle: "zamknięte na nie" }
+];
+
+const state = loadState();
+const partnerState = loadPartnerState();
+
+function loadState() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (!saved) {
+    return { leads: [] };
+  }
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return { leads: [] };
+  }
+}
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+function loadPartnerState() {
+  const saved = localStorage.getItem(PARTNER_KEY);
+  if (!saved) {
+    return { partners: [] };
+  }
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return { partners: [] };
+  }
+}
+
+function savePartnerState() {
+  localStorage.setItem(PARTNER_KEY, JSON.stringify(partnerState));
+}
+
+function createLead(data) {
+  return {
+    id: crypto.randomUUID(),
+    title: data.title || "",
+    kind: data.kind || "koncert",
+    city: data.city || "",
+    eventDate: data.eventDate || "",
+    budget: data.budget || "",
+    source: data.source || "strona",
+    contact: data.contact || "",
+    nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    stage: data.stage || "new",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function stageIndex(stageId) {
+  return STAGES.findIndex((stage) => stage.id === stageId);
+}
+
+function formatDate(value) {
+  if (!value) {
+    return "—";
+  }
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+  return date.toLocaleDateString("pl-PL");
+}
+
+function isToday(value) {
+  if (!value) {
+    return false;
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  return value === today;
+}
+
+function render() {
+  renderMetrics();
+  renderBoard();
+  renderPartners();
+}
+
+function renderMetrics() {
+  const all = state.leads.length;
+  const open = state.leads.filter((lead) => !["won", "lost"].includes(lead.stage)).length;
+  const won = state.leads.filter((lead) => lead.stage === "won").length;
+  const followToday = state.leads.filter((lead) => isToday(lead.nextAction)).length;
+
+  document.getElementById("metricAll").textContent = all;
+  document.getElementById("metricOpen").textContent = open;
+  document.getElementById("metricWon").textContent = won;
+  document.getElementById("metricToday").textContent = followToday;
+}
+
+function createPartner(data) {
+  return {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    category: data.category || "wedding planner",
+    city: data.city || "",
+    contact: data.contact || "",
+    status: data.status || "research",
+    potential: data.potential || "",
+    nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function renderPartners() {
+  const all = partnerState.partners.length;
+  const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
+  const active = partnerState.partners.filter((partner) => partner.status === "active").length;
+  const leads = partnerState.partners.filter((partner) => ["warm", "active"].includes(partner.status)).length;
+
+  document.getElementById("partnerAll").textContent = all;
+  document.getElementById("partnerWarm").textContent = warm;
+  document.getElementById("partnerActive").textContent = active;
+  document.getElementById("partnerLeads").textContent = leads;
+
+  const list = document.getElementById("partnerList");
+  list.innerHTML = "";
+
+  const sorted = [...partnerState.partners].sort((a, b) => {
+    if (!a.nextAction && !b.nextAction) return 0;
+    if (!a.nextAction) return 1;
+    if (!b.nextAction) return -1;
+    return a.nextAction.localeCompare(b.nextAction);
+  });
+
+  if (!sorted.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Jeszcze nie ma partnerów. Zacznij od wedding plannerów, sal i fotografów z Twojego regionu.";
+    list.appendChild(empty);
+    return;
+  }
+
+  sorted.forEach((partner) => {
+    const card = document.createElement("article");
+    card.className = "partner-card";
+    card.innerHTML = `
+      <h4>${escapeHtml(partner.name)}</h4>
+      <div class="partner-tags">
+        <span class="partner-tag">${escapeHtml(partner.category)}</span>
+        <span class="partner-tag">${escapeHtml(partner.status)}</span>
+        <span class="partner-tag">${escapeHtml(partner.city || "—")}</span>
+      </div>
+      <p>Kontakt: ${escapeHtml(partner.contact || "—")}<br>Potencjał: ${escapeHtml(partner.potential || "—")}<br>Następny ruch: ${escapeHtml(formatDate(partner.nextAction))}<br>Notatki: ${escapeHtml(partner.notes || "—")}</p>
+      <div class="partner-actions"></div>
+    `;
+
+    const actions = card.querySelector(".partner-actions");
+    actions.appendChild(actionButton("Status +", () => advancePartner(partner.id), "good"));
+    actions.appendChild(actionButton("Edytuj", () => editPartner(partner.id)));
+    actions.appendChild(actionButton("Usuń", () => removePartner(partner.id), "bad"));
+    list.appendChild(card);
+  });
+}
+
+function renderBoard() {
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+
+  STAGES.forEach((stage) => {
+    const leads = state.leads
+      .filter((lead) => lead.stage === stage.id)
+      .sort((a, b) => {
+        if (!a.nextAction && !b.nextAction) return 0;
+        if (!a.nextAction) return 1;
+        if (!b.nextAction) return -1;
+        return a.nextAction.localeCompare(b.nextAction);
+      });
+
+    const column = document.createElement("section");
+    column.className = "column";
+    column.innerHTML = `
+      <h3>${stage.name}<small>${stage.subtitle} • ${leads.length}</small></h3>
+      <div class="lead-list"></div>
+    `;
+
+    const list = column.querySelector(".lead-list");
+    if (!leads.length) {
+      const empty = document.createElement("div");
+      empty.className = "helper";
+      empty.textContent = "Brak leadów w tej kolumnie.";
+      list.appendChild(empty);
+    }
+
+    leads.forEach((lead) => {
+      const card = document.createElement("article");
+      card.className = "lead-card";
+      card.innerHTML = `
+        <h4>${escapeHtml(lead.title)}</h4>
+        <div class="lead-meta">
+          <span>Typ: ${escapeHtml(lead.kind)}</span>
+          <span>Miasto: ${escapeHtml(lead.city || "—")}</span>
+          <span>Źródło: ${escapeHtml(lead.source)}</span>
+          <span>Termin: ${escapeHtml(formatDate(lead.eventDate))}</span>
+          <span>Następny ruch: ${escapeHtml(formatDate(lead.nextAction))}</span>
+          <span>Kontakt: ${escapeHtml(lead.contact || "—")}</span>
+          <span>Notatki: ${escapeHtml(lead.notes || "—")}</span>
+        </div>
+        <div class="lead-actions"></div>
+      `;
+
+      const actions = card.querySelector(".lead-actions");
+      const index = stageIndex(lead.stage);
+
+      if (index > 0) {
+        actions.appendChild(actionButton("Wstecz", () => moveLead(lead.id, STAGES[index - 1].id)));
+      }
+      if (index < STAGES.length - 1) {
+        actions.appendChild(actionButton("Dalej", () => moveLead(lead.id, STAGES[index + 1].id), "good"));
+      }
+      actions.appendChild(actionButton("Edytuj", () => editLead(lead.id)));
+      actions.appendChild(actionButton("Usuń", () => removeLead(lead.id), "bad"));
+
+      list.appendChild(card);
+    });
+
+    board.appendChild(column);
+  });
+}
+
+function actionButton(label, handler, variant = "") {
+  const button = document.createElement("button");
+  button.className = `mini ${variant}`.trim();
+  button.type = "button";
+  button.textContent = label;
+  button.addEventListener("click", handler);
+  return button;
+}
+
+function moveLead(id, stage) {
+  const lead = state.leads.find((item) => item.id === id);
+  if (!lead) return;
+  lead.stage = stage;
+  saveState();
+  render();
+}
+
+function removeLead(id) {
+  const sure = confirm("Usunąć ten lead z panelu?");
+  if (!sure) return;
+  state.leads = state.leads.filter((lead) => lead.id !== id);
+  saveState();
+  render();
+}
+
+function editLead(id) {
+  const lead = state.leads.find((item) => item.id === id);
+  if (!lead) return;
+
+  document.querySelector("[name='title']").value = lead.title;
+  document.querySelector("[name='kind']").value = lead.kind;
+  document.querySelector("[name='city']").value = lead.city;
+  document.querySelector("[name='eventDate']").value = lead.eventDate;
+  document.querySelector("[name='budget']").value = lead.budget;
+  document.querySelector("[name='source']").value = lead.source;
+  document.querySelector("[name='contact']").value = lead.contact;
+  document.querySelector("[name='nextAction']").value = lead.nextAction;
+  document.querySelector("[name='notes']").value = lead.notes;
+
+  const form = document.getElementById("leadForm");
+  form.dataset.editId = id;
+  form.querySelector("button[type='submit']").textContent = "Zapisz zmiany";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function advancePartner(id) {
+  const order = ["research", "to-contact", "contacted", "warm", "active"];
+  const partner = partnerState.partners.find((item) => item.id === id);
+  if (!partner) return;
+  const current = order.indexOf(partner.status);
+  partner.status = order[Math.min(current + 1, order.length - 1)];
+  savePartnerState();
+  render();
+}
+
+function removePartner(id) {
+  const ok = confirm("Usunąć partnera?");
+  if (!ok) return;
+  partnerState.partners = partnerState.partners.filter((partner) => partner.id !== id);
+  savePartnerState();
+  render();
+}
+
+function editPartner(id) {
+  const partner = partnerState.partners.find((item) => item.id === id);
+  if (!partner) return;
+
+  document.querySelector("#partnerForm [name='name']").value = partner.name;
+  document.querySelector("#partnerForm [name='category']").value = partner.category;
+  document.querySelector("#partnerForm [name='city']").value = partner.city;
+  document.querySelector("#partnerForm [name='contact']").value = partner.contact;
+  document.querySelector("#partnerForm [name='status']").value = partner.status;
+  document.querySelector("#partnerForm [name='potential']").value = partner.potential;
+  document.querySelector("#partnerForm [name='nextAction']").value = partner.nextAction;
+  document.querySelector("#partnerForm [name='notes']").value = partner.notes;
+
+  const form = document.getElementById("partnerForm");
+  form.dataset.editId = id;
+  form.querySelector("button[type='submit']").textContent = "Zapisz partnera";
+  window.scrollTo({ top: document.body.scrollHeight * 0.45, behavior: "smooth" });
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#039;"
+  })[character]);
+}
+
+document.getElementById("leadForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const formData = new FormData(form);
+  const payload = Object.fromEntries(formData.entries());
+
+  if (!payload.title.trim()) {
+    return;
+  }
+
+  const editId = form.dataset.editId;
+  if (editId) {
+    const lead = state.leads.find((item) => item.id === editId);
+    if (lead) {
+      Object.assign(lead, payload);
+    }
+    delete form.dataset.editId;
+    form.querySelector("button[type='submit']").textContent = "Dodaj do pipeline";
+  } else {
+    state.leads.unshift(createLead(payload));
+  }
+
+  form.reset();
+  saveState();
+  render();
+});
+
+document.getElementById("seedButton").addEventListener("click", () => {
+  if (state.leads.length) {
+    const ok = confirm("Masz już leady. Dodać przykładowe obok obecnych?");
+    if (!ok) return;
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  state.leads.unshift(
+    createLead({
+      title: "Dom Kultury Września",
+      kind: "instytucja",
+      city: "Września",
+      source: "outreach",
+      contact: "sekretariat@...",
+      nextAction: today,
+      notes: "Wysłać krótką ofertę koncertową i link do wideo",
+      stage: "new"
+    }),
+    createLead({
+      title: "Wedding planner premium",
+      kind: "partner",
+      city: "Poznań",
+      source: "partner",
+      contact: "Instagram / email",
+      nextAction: today,
+      notes: "Zaproponować rozmowę i współpracę poleceniową",
+      stage: "contacted"
+    }),
+    createLead({
+      title: "Anna i Marek",
+      kind: "slub",
+      city: "Gniezno",
+      eventDate: today,
+      budget: "premium",
+      source: "strona",
+      contact: "+48 ...",
+      nextAction: today,
+      notes: "Oferta wysłana, wrócić za 2 dni",
+      stage: "offer"
+    })
+  );
+
+  saveState();
+  render();
+});
+
+document.querySelectorAll("[data-copy]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const target = document.getElementById(button.dataset.copy);
+    if (!target) return;
+    try {
+      await navigator.clipboard.writeText(target.textContent.trim());
+      button.textContent = "Skopiowano";
+      setTimeout(() => {
+        button.textContent = "Kopiuj";
+      }, 1400);
+    } catch {
+      button.textContent = "Nie udało się";
+    }
+  });
+});
+
+document.getElementById("exportButton").addEventListener("click", () => {
+  const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "piumosso-studio-os.json";
+  link.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("importButton").addEventListener("click", () => {
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "application/json";
+  input.addEventListener("change", async () => {
+    const file = input.files?.[0];
+    if (!file) return;
+    const text = await file.text();
+    try {
+      const parsed = JSON.parse(text);
+      if (!Array.isArray(parsed.leads)) {
+        throw new Error("Bad file");
+      }
+      state.leads = parsed.leads;
+      saveState();
+      render();
+    } catch {
+      alert("To nie wygląda jak poprawny eksport Studio OS.");
+    }
+  });
+  input.click();
+});
+
+document.getElementById("clearButton").addEventListener("click", () => {
+  const ok = confirm("Usunąć wszystkie leady z tej przeglądarki?");
+  if (!ok) return;
+  state.leads = [];
+  saveState();
+  render();
+});
+
+document.getElementById("partnerForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const formData = new FormData(form);
+  const payload = Object.fromEntries(formData.entries());
+
+  if (!payload.name.trim()) {
+    return;
+  }
+
+  const editId = form.dataset.editId;
+  if (editId) {
+    const partner = partnerState.partners.find((item) => item.id === editId);
+    if (partner) {
+      Object.assign(partner, payload);
+    }
+    delete form.dataset.editId;
+    form.querySelector("button[type='submit']").textContent = "Dodaj partnera";
+  } else {
+    partnerState.partners.unshift(createPartner(payload));
+  }
+
+  form.reset();
+  savePartnerState();
+  render();
+});
+
+document.getElementById("seedPartners").addEventListener("click", () => {
+  if (partnerState.partners.length) {
+    const ok = confirm("Masz już partnerów. Dodać przykłady obok obecnych?");
+    if (!ok) return;
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  partnerState.partners.unshift(
+    createPartner({
+      name: "Planner Atelier",
+      category: "wedding planner",
+      city: "Poznań",
+      contact: "hello@...",
+      status: "warm",
+      potential: "2-4 premium leady / miesiąc",
+      nextAction: today,
+      notes: "Wysłać mini-pakiet: strona + PDF + video"
+    }),
+    createPartner({
+      name: "Sala Pałacowa",
+      category: "sala",
+      city: "Wielkopolska",
+      contact: "manager / telefon",
+      status: "to-contact",
+      potential: "1-3 leady / miesiąc",
+      nextAction: today,
+      notes: "Wejść z propozycją stałego polecania"
+    }),
+    createPartner({
+      name: "Studio foto-video premium",
+      category: "foto-video",
+      city: "Poznań",
+      contact: "Instagram",
+      status: "contacted",
+      potential: "polecenia jakościowe",
+      nextAction: today,
+      notes: "Dopytać o wspólne realizacje i rekomendacje"
+    })
+  );
+  savePartnerState();
+  render();
+});
+
+document.getElementById("unlockButton").addEventListener("click", () => {
+  const pin = document.getElementById("pinInput").value.trim();
+  const error = document.getElementById("pinError");
+  if (pin !== PIN_CODE) {
+    error.textContent = "Nieprawidłowy PIN.";
+    return;
+  }
+  document.getElementById("lockScreen").classList.add("hidden");
+});
+
+document.getElementById("pinInput").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    document.getElementById("unlockButton").click();
+  }
+});
+
+render();
+</script>
+</body>
+</html>
