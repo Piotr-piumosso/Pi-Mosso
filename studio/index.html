@@ -284,6 +284,53 @@ input:focus,select:focus,textarea:focus{
   flex-wrap:wrap;
   gap:8px;
 }
+.calendar-shell{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:18px;
+  margin-top:18px;
+}
+.calendar-list{
+  display:grid;
+  gap:10px;
+}
+.calendar-card{
+  padding:15px 16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.calendar-card h4{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.calendar-card p{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.58;
+}
+.calendar-days{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin-top:14px;
+}
+.day-box{
+  padding:14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.day-box strong{
+  display:block;
+  font-size:1.2rem;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  margin-bottom:4px;
+}
+.day-box span{
+  color:var(--muted);
+  font-size:.86rem;
+}
 .template-card{
   padding:16px;
   border-radius:18px;
@@ -349,13 +396,14 @@ input:focus,select:focus,textarea:focus{
 @media (max-width:1180px){
   .grid{grid-template-columns:1fr}
   .partner-grid{grid-template-columns:1fr}
+  .calendar-shell{grid-template-columns:1fr}
 }
 @media (max-width:880px){
-  .metrics,.templates,.partner-metrics{grid-template-columns:1fr 1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   h1{font-size:2.4rem}
-  .metrics,.templates,.partner-metrics{grid-template-columns:1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -603,6 +651,38 @@ Più Mosso</p>
               </div>
             </article>
           </div>
+
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+            <h2>Calendar Machine</h2>
+          </div>
+          <p class="helper">Najprostsza wersja pod iPhone: eksportujesz albo udostępniasz kalendarz Apple jako plik `.ics`, a tutaj wrzucasz go do panelu. Studio pokaże wtedy najbliższe zajęte terminy i szybki podgląd obłożenia.</p>
+
+          <div class="calendar-shell">
+            <section class="template-card">
+              <h4>Import kalendarza Apple</h4>
+              <div class="stack" style="margin-top:12px">
+                <label>Plik `.ics`
+                  <input type="file" id="icsInput" accept=".ics,text/calendar">
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button" id="importIcsButton">Importuj terminy</button>
+                  <button class="btn btn-secondary" type="button" id="clearCalendarButton">Wyczyść kalendarz</button>
+                </div>
+                <p class="helper">Najlepiej trzymaj osobny kalendarz typu `Più Mosso Bookings` w Apple Calendar i eksportuj tylko jego. Dzięki temu nie mieszasz prywatnych wpisów z terminami biznesowymi.</p>
+              </div>
+
+              <div class="calendar-days" id="calendarDays">
+                <div class="day-box"><strong id="calendarEventsCount">0</strong><span>Wszystkie wydarzenia</span></div>
+                <div class="day-box"><strong id="calendarUpcomingCount">0</strong><span>Nadchodzące</span></div>
+                <div class="day-box"><strong id="calendarBusyDays">0</strong><span>Zajęte dni</span></div>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Najbliższe terminy</h4>
+              <div class="calendar-list" id="calendarList" style="margin-top:12px"></div>
+            </section>
+          </div>
         </div>
       </section>
     </div>
@@ -629,6 +709,7 @@ Più Mosso</p>
 const PIN_CODE = "2137";
 const STORAGE_KEY = "pm_studio_os_v1";
 const PARTNER_KEY = "pm_partner_machine_v1";
+const CALENDAR_KEY = "pm_calendar_machine_v1";
 const STAGES = [
   { id: "new", name: "Nowe", subtitle: "świeże kontakty" },
   { id: "contacted", name: "Kontakt", subtitle: "pierwsza wiadomość wysłana" },
@@ -640,6 +721,7 @@ const STAGES = [
 
 const state = loadState();
 const partnerState = loadPartnerState();
+const calendarState = loadCalendarState();
 
 function loadState() {
   const saved = localStorage.getItem(STORAGE_KEY);
@@ -671,6 +753,22 @@ function loadPartnerState() {
 
 function savePartnerState() {
   localStorage.setItem(PARTNER_KEY, JSON.stringify(partnerState));
+}
+
+function loadCalendarState() {
+  const saved = localStorage.getItem(CALENDAR_KEY);
+  if (!saved) {
+    return { events: [] };
+  }
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return { events: [] };
+  }
+}
+
+function saveCalendarState() {
+  localStorage.setItem(CALENDAR_KEY, JSON.stringify(calendarState));
 }
 
 function createLead(data) {
@@ -717,6 +815,7 @@ function render() {
   renderMetrics();
   renderBoard();
   renderPartners();
+  renderCalendar();
 }
 
 function renderMetrics() {
@@ -794,6 +893,103 @@ function renderPartners() {
     actions.appendChild(actionButton("Edytuj", () => editPartner(partner.id)));
     actions.appendChild(actionButton("Usuń", () => removePartner(partner.id), "bad"));
     list.appendChild(card);
+  });
+}
+
+function parseIcsDate(value) {
+  if (!value) return "";
+  const clean = value.replace("Z", "");
+  if (/^\d{8}$/.test(clean)) {
+    return `${clean.slice(0, 4)}-${clean.slice(4, 6)}-${clean.slice(6, 8)}T00:00:00`;
+  }
+  if (/^\d{8}T\d{6}$/.test(clean)) {
+    return `${clean.slice(0, 4)}-${clean.slice(4, 6)}-${clean.slice(6, 8)}T${clean.slice(9, 11)}:${clean.slice(11, 13)}:${clean.slice(13, 15)}`;
+  }
+  return value;
+}
+
+function unfoldIcs(text) {
+  return text.replace(/\r?\n[ \t]/g, "");
+}
+
+function parseIcs(text) {
+  const unfolded = unfoldIcs(text);
+  const blocks = unfolded.split("BEGIN:VEVENT").slice(1);
+  const events = [];
+
+  blocks.forEach((block) => {
+    const endIndex = block.indexOf("END:VEVENT");
+    const body = endIndex >= 0 ? block.slice(0, endIndex) : block;
+    const lines = body.split(/\r?\n/);
+    const event = {
+      summary: "",
+      start: "",
+      end: "",
+      location: "",
+      description: ""
+    };
+
+    lines.forEach((line) => {
+      const separatorIndex = line.indexOf(":");
+      if (separatorIndex === -1) return;
+      const rawKey = line.slice(0, separatorIndex);
+      const value = line.slice(separatorIndex + 1).trim();
+      const key = rawKey.split(";")[0];
+
+      if (key === "SUMMARY") event.summary = value;
+      if (key === "DTSTART") event.start = parseIcsDate(value);
+      if (key === "DTEND") event.end = parseIcsDate(value);
+      if (key === "LOCATION") event.location = value;
+      if (key === "DESCRIPTION") event.description = value.replace(/\\n/g, "\n");
+    });
+
+    if (event.start) {
+      events.push({
+        id: crypto.randomUUID(),
+        summary: event.summary || "Wydarzenie",
+        start: event.start,
+        end: event.end || event.start,
+        location: event.location || "",
+        description: event.description || ""
+      });
+    }
+  });
+
+  return events.sort((a, b) => a.start.localeCompare(b.start));
+}
+
+function renderCalendar() {
+  const all = calendarState.events.length;
+  const now = new Date();
+  const upcoming = calendarState.events.filter((event) => {
+    const date = new Date(event.start);
+    return !Number.isNaN(date.getTime()) && date >= now;
+  });
+  const busyDays = new Set(upcoming.map((event) => event.start.slice(0, 10))).size;
+
+  document.getElementById("calendarEventsCount").textContent = all;
+  document.getElementById("calendarUpcomingCount").textContent = upcoming.length;
+  document.getElementById("calendarBusyDays").textContent = busyDays;
+
+  const list = document.getElementById("calendarList");
+  list.innerHTML = "";
+
+  if (!upcoming.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Brak zaimportowanych przyszłych terminów. Wrzuć plik .ics z Apple Calendar.";
+    list.appendChild(empty);
+    return;
+  }
+
+  upcoming.slice(0, 12).forEach((event) => {
+    const item = document.createElement("article");
+    item.className = "calendar-card";
+    item.innerHTML = `
+      <h4>${escapeHtml(event.summary)}</h4>
+      <p>Data: ${escapeHtml(formatDate(event.start))}<br>Lokalizacja: ${escapeHtml(event.location || "—")}<br>Opis: ${escapeHtml(event.description || "—")}</p>
+    `;
+    list.appendChild(item);
   });
 }
 
@@ -1151,6 +1347,34 @@ document.getElementById("seedPartners").addEventListener("click", () => {
     })
   );
   savePartnerState();
+  render();
+});
+
+document.getElementById("importIcsButton").addEventListener("click", async () => {
+  const input = document.getElementById("icsInput");
+  const file = input.files?.[0];
+  if (!file) {
+    alert("Najpierw wybierz plik .ics.");
+    return;
+  }
+
+  const text = await file.text();
+  const events = parseIcs(text);
+  if (!events.length) {
+    alert("Nie znalazłem wydarzeń w tym pliku .ics.");
+    return;
+  }
+
+  calendarState.events = events;
+  saveCalendarState();
+  render();
+});
+
+document.getElementById("clearCalendarButton").addEventListener("click", () => {
+  const ok = confirm("Usunąć wszystkie zaimportowane terminy z Calendar Machine?");
+  if (!ok) return;
+  calendarState.events = [];
+  saveCalendarState();
   render();
 });
 
