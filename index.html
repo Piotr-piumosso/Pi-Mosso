@@ -1000,6 +1000,23 @@ footer{
               <label>Imię i nazwisko *
                 <input type="text" name="name" required>
               </label>
+              <label>Typ wydarzenia *
+                <select name="eventType" required>
+                  <option value="slub">Ślub / ceremonia</option>
+                  <option value="koncert">Koncert / recital</option>
+                  <option value="instytucja">Instytucja / wydarzenie kulturalne</option>
+                  <option value="event">Event prywatny</option>
+                </select>
+              </label>
+              <label>Miasto / miejsce
+                <input type="text" name="city" placeholder="Np. Poznań / Września">
+              </label>
+              <label>Data wydarzenia
+                <input type="date" name="eventDate">
+              </label>
+              <label>Budżet / zakres
+                <input type="text" name="budget" placeholder="Np. 2500-4000 zł / wariant premium">
+              </label>
               <label>Adres e-mail
                 <input type="email" name="email" placeholder="opcjonalnie">
               </label>
@@ -1030,7 +1047,8 @@ footer{
   history.scrollRestoration = "manual";
   window.addEventListener("DOMContentLoaded", () => {
     const STUDIO_STORAGE_KEY = "pm_studio_os_v1";
-    const inferLeadKind = (message) => {
+    const inferLeadKind = (message, eventType) => {
+      if (eventType) return eventType;
       const text = String(message || "").toLowerCase();
       if (text.includes("ślub") || text.includes("slub") || text.includes("ceremon")) return "slub";
       if (text.includes("koncert") || text.includes("recital") || text.includes("wydarzen")) return "koncert";
@@ -1046,14 +1064,19 @@ footer{
         safeState.leads.unshift({
           id: crypto.randomUUID(),
           title: payload.name,
-          kind: inferLeadKind(payload.message),
-          city: "",
-          eventDate: "",
-          budget: "",
+          kind: inferLeadKind(payload.message, payload.eventType),
+          city: payload.city || "",
+          eventDate: payload.eventDate || "",
+          budget: payload.budget || "",
           source: "strona",
           contact: [payload.phone, payload.email].filter(Boolean).join(" • "),
           nextAction: new Date().toISOString().slice(0, 10),
-          notes: payload.message || `Zapytanie ze strony od ${payload.name}`,
+          notes: [
+            payload.message || `Zapytanie ze strony od ${payload.name}`,
+            payload.city ? `Miasto / miejsce: ${payload.city}` : "",
+            payload.eventDate ? `Data wydarzenia: ${payload.eventDate}` : "",
+            payload.budget ? `Budżet / zakres: ${payload.budget}` : ""
+          ].filter(Boolean).join("\n"),
           stage: "new",
           createdAt: new Date().toISOString()
         });
@@ -1113,18 +1136,26 @@ footer{
         const formData = new FormData(contactForm);
         const name = formData.get("name")?.toString().trim();
         const phone = formData.get("phone")?.toString().trim();
+        const eventType = formData.get("eventType")?.toString().trim();
 
-        if (!name || !phone) {
-          alert("Podaj imię i nazwisko oraz numer telefonu.");
+        if (!name || !phone || !eventType) {
+          alert("Podaj imię i nazwisko, typ wydarzenia oraz numer telefonu.");
           return;
         }
 
         const email = formData.get("email")?.toString().trim() || "";
         const message = formData.get("message")?.toString().trim() || "";
-        saveLeadToStudio({ name, phone, email, message });
+        const city = formData.get("city")?.toString().trim() || "";
+        const eventDate = formData.get("eventDate")?.toString().trim() || "";
+        const budget = formData.get("budget")?.toString().trim() || "";
+        saveLeadToStudio({ name, phone, email, message, city, eventDate, budget, eventType });
 
         const body = encodeURIComponent(
 `Imię i nazwisko: ${name}
+Typ wydarzenia: ${eventType}
+Miasto / miejsce: ${city || "–"}
+Data wydarzenia: ${eventDate || "–"}
+Budżet / zakres: ${budget || "–"}
 Telefon: ${phone}
 E-mail: ${email || "–"}
 
