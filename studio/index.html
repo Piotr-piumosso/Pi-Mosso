@@ -337,6 +337,48 @@ input:focus,select:focus,textarea:focus{
   gap:18px;
   margin-top:18px;
 }
+.sales-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:18px;
+}
+.sales-list{
+  display:grid;
+  gap:10px;
+  margin-top:12px;
+}
+.sales-card{
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.sales-card h4{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.sales-card p{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.58;
+}
+.sales-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+.sales-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.sales-note{
+  border-left:2px solid rgba(212,176,106,.35);
+  padding-left:14px;
+}
 .datahub-list{
   display:grid;
   gap:10px;
@@ -437,13 +479,14 @@ input:focus,select:focus,textarea:focus{
   .partner-grid{grid-template-columns:1fr}
   .calendar-shell{grid-template-columns:1fr}
   .datahub-grid{grid-template-columns:1fr}
+  .sales-grid{grid-template-columns:1fr}
 }
 @media (max-width:880px){
-  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid{grid-template-columns:1fr 1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   h1{font-size:2.4rem}
-  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid{grid-template-columns:1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -769,6 +812,196 @@ Più Mosso</p>
               <div class="datahub-list" id="dataHubList" style="margin-top:12px"></div>
             </section>
           </div>
+
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+            <h2>Sales Engine</h2>
+          </div>
+          <p class="helper">Tutaj domykasz pieniądz. Cztery maszyny pracują razem: outreach dowozi nowe szanse, booking zamyka sprzedaż, referral buduje polecenia, a content wzmacnia zaufanie i ruch na stronę.</p>
+
+          <div class="sales-strip">
+            <div class="metric"><strong id="salesOutreachOpen">0</strong><span>Outreach otwarty</span></div>
+            <div class="metric"><strong id="salesBookingOpen">0</strong><span>Bookingi otwarte</span></div>
+            <div class="metric"><strong id="salesReferralActive">0</strong><span>Referral aktywny</span></div>
+            <div class="metric"><strong id="salesContentReady">0</strong><span>Content w toku</span></div>
+          </div>
+
+          <div class="sales-grid">
+            <section class="template-card">
+              <h4>Outreach Board</h4>
+              <p class="helper sales-note">Każdy kontakt B2B ma mieć następny ruch. Tu prowadzisz sale, plannerów, instytucje, parafie i partnerów, do których aktywnie wychodzisz.</p>
+              <form id="outreachForm" class="stack" style="margin-top:12px">
+                <label>Nazwa kontaktu / miejsca
+                  <input name="name" required placeholder="Np. Centrum Kultury / Planner Atelier">
+                </label>
+                <label>Typ
+                  <select name="type">
+                    <option value="instytucja">Instytucja</option>
+                    <option value="planner">Wedding planner</option>
+                    <option value="sala">Sala / hotel</option>
+                    <option value="foto-video">Foto / video</option>
+                    <option value="parafia">Parafia / organista</option>
+                    <option value="inne">Inne</option>
+                  </select>
+                </label>
+                <label>Kanał
+                  <select name="channel">
+                    <option value="email">Email</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="telefon">Telefon</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="na-zywo">Na żywo</option>
+                  </select>
+                </label>
+                <label>Status
+                  <select name="status">
+                    <option value="research">Research</option>
+                    <option value="ready">Do kontaktu</option>
+                    <option value="sent">Wysłane</option>
+                    <option value="followup">Follow-up</option>
+                    <option value="warm">Rozgrzany</option>
+                    <option value="won">Współpraca</option>
+                    <option value="lost">Brak fitu</option>
+                  </select>
+                </label>
+                <label>Następny ruch
+                  <input type="date" name="nextAction">
+                </label>
+                <label>Notatka
+                  <textarea name="notes" placeholder="Co wysłać, co obiecali, kiedy wrócić"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj kontakt</button>
+                  <button class="btn btn-secondary" type="button" id="seedOutreach">Dodaj przykłady</button>
+                </div>
+              </form>
+              <div class="sales-list" id="outreachList"></div>
+            </section>
+
+            <section class="template-card">
+              <h4>Booking Tracker</h4>
+              <p class="helper sales-note">Każde zapytanie ma dojść do decyzji. Tu trzymasz oferty, czekające odpowiedzi, zaliczki i zabookowane terminy.</p>
+              <form id="bookingForm" class="stack" style="margin-top:12px">
+                <label>Klient / wydarzenie
+                  <input name="name" required placeholder="Np. Anna i Marek / Koncert Fara Poznań">
+                </label>
+                <label>Typ wydarzenia
+                  <select name="kind">
+                    <option value="slub">Ślub</option>
+                    <option value="koncert">Koncert</option>
+                    <option value="event">Event prywatny</option>
+                    <option value="instytucja">Instytucja</option>
+                  </select>
+                </label>
+                <label>Status
+                  <select name="status">
+                    <option value="new">Nowe zapytanie</option>
+                    <option value="offer">Oferta wysłana</option>
+                    <option value="decision">Czeka na decyzję</option>
+                    <option value="deposit">Po zaliczce</option>
+                    <option value="booked">Zabookowane</option>
+                    <option value="lost">Utracone</option>
+                  </select>
+                </label>
+                <label>Data wydarzenia
+                  <input type="date" name="eventDate">
+                </label>
+                <label>Kwota / pakiet
+                  <input name="value" placeholder="Np. Signature / 3500 PLN">
+                </label>
+                <label>Następny ruch
+                  <input type="date" name="nextAction">
+                </label>
+                <label>Notatka
+                  <textarea name="notes" placeholder="Co wysłane, jaka obiekcja, co trzeba domknąć"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj booking</button>
+                  <button class="btn btn-secondary" type="button" id="seedBookings">Dodaj przykłady</button>
+                </div>
+              </form>
+              <div class="sales-list" id="bookingList"></div>
+            </section>
+
+            <section class="template-card">
+              <h4>Referral Tracker</h4>
+              <p class="helper sales-note">Po każdym wydarzeniu uruchamiasz prośbę o opinię i polecenie. To ma być stały system, nie jednorazowy gest.</p>
+              <form id="referralForm" class="stack" style="margin-top:12px">
+                <label>Osoba / źródło polecenia
+                  <input name="name" required placeholder="Np. Para młoda / fotograf / planner">
+                </label>
+                <label>Typ relacji
+                  <select name="type">
+                    <option value="klient">Klient</option>
+                    <option value="partner">Partner</option>
+                    <option value="instytucja">Instytucja</option>
+                    <option value="znajomy">Znajomy</option>
+                  </select>
+                </label>
+                <label>Status
+                  <select name="status">
+                    <option value="to-ask">Poprosić</option>
+                    <option value="asked">Prośba wysłana</option>
+                    <option value="warm">Obiecał polecić</option>
+                    <option value="active">Poleca aktywnie</option>
+                    <option value="done">Polecenie przyszło</option>
+                  </select>
+                </label>
+                <label>Następny ruch
+                  <input type="date" name="nextAction">
+                </label>
+                <label>Notatka
+                  <textarea name="notes" placeholder="Kiedy grałeś, co wysłać, czy przyszła opinia"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj referral</button>
+                  <button class="btn btn-secondary" type="button" id="seedReferrals">Dodaj przykłady</button>
+                </div>
+              </form>
+              <div class="sales-list" id="referralList"></div>
+            </section>
+
+            <section class="template-card">
+              <h4>Content Machine</h4>
+              <p class="helper sales-note">Każdy materiał ma sprzedawać premium pozycję marki. Tu planujesz co publikujesz, kiedy i z jakim CTA.</p>
+              <form id="contentForm" class="stack" style="margin-top:12px">
+                <label>Tytuł materiału
+                  <input name="title" required placeholder="Np. Wejście panny młodej / recital teaser">
+                </label>
+                <label>Format
+                  <select name="format">
+                    <option value="reel">Reel</option>
+                    <option value="story">Stories</option>
+                    <option value="post">Post</option>
+                    <option value="video">Video</option>
+                    <option value="email">Mailing</option>
+                  </select>
+                </label>
+                <label>Status
+                  <select name="status">
+                    <option value="idea">Pomysł</option>
+                    <option value="recording">Do nagrania</option>
+                    <option value="editing">W montażu</option>
+                    <option value="ready">Gotowe</option>
+                    <option value="published">Opublikowane</option>
+                  </select>
+                </label>
+                <label>Publikacja / termin
+                  <input type="date" name="publishDate">
+                </label>
+                <label>CTA
+                  <input name="cta" placeholder="Np. zapytaj o termin / pobierz ofertę">
+                </label>
+                <label>Notatka
+                  <textarea name="notes" placeholder="Hook, kadr, utwór, gdzie publikujemy"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj materiał</button>
+                  <button class="btn btn-secondary" type="button" id="seedContent">Dodaj przykłady</button>
+                </div>
+              </form>
+              <div class="sales-list" id="contentList"></div>
+            </section>
+          </div>
         </div>
       </section>
     </div>
@@ -797,6 +1030,7 @@ const STORAGE_KEY = "pm_studio_os_v1";
 const PARTNER_KEY = "pm_partner_machine_v1";
 const CALENDAR_KEY = "pm_calendar_machine_v1";
 const DATAHUB_KEY = "pm_lead_data_hub_v1";
+const SALES_KEY = "pm_sales_engine_v1";
 const STAGES = [
   { id: "new", name: "Nowe", subtitle: "świeże kontakty" },
   { id: "contacted", name: "Kontakt", subtitle: "pierwsza wiadomość wysłana" },
@@ -810,6 +1044,7 @@ const state = loadState();
 const partnerState = loadPartnerState();
 const calendarState = loadCalendarState();
 const dataHubState = loadDataHubState();
+const salesState = loadSalesState();
 
 function loadState() {
   const saved = localStorage.getItem(STORAGE_KEY);
@@ -887,6 +1122,22 @@ function saveDataHubState() {
   localStorage.setItem(DATAHUB_KEY, JSON.stringify(dataHubState));
 }
 
+function loadSalesState() {
+  const saved = localStorage.getItem(SALES_KEY);
+  if (!saved) {
+    return { outreach: [], bookings: [], referrals: [], content: [] };
+  }
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return { outreach: [], bookings: [], referrals: [], content: [] };
+  }
+}
+
+function saveSalesState() {
+  localStorage.setItem(SALES_KEY, JSON.stringify(salesState));
+}
+
 function createLead(data) {
   return {
     id: crypto.randomUUID(),
@@ -933,6 +1184,7 @@ function render() {
   renderPartners();
   renderCalendar();
   renderDataHub();
+  renderSalesEngine();
 }
 
 function renderMetrics() {
@@ -957,6 +1209,58 @@ function createPartner(data) {
     status: data.status || "research",
     potential: data.potential || "",
     nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function createOutreach(data) {
+  return {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    type: data.type || "instytucja",
+    channel: data.channel || "email",
+    status: data.status || "research",
+    nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function createBooking(data) {
+  return {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    kind: data.kind || "koncert",
+    status: data.status || "new",
+    eventDate: data.eventDate || "",
+    value: data.value || "",
+    nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function createReferral(data) {
+  return {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    type: data.type || "klient",
+    status: data.status || "to-ask",
+    nextAction: data.nextAction || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function createContent(data) {
+  return {
+    id: crypto.randomUUID(),
+    title: data.title || "",
+    format: data.format || "reel",
+    status: data.status || "idea",
+    publishDate: data.publishDate || "",
+    cta: data.cta || "",
     notes: data.notes || "",
     createdAt: new Date().toISOString()
   };
@@ -1011,6 +1315,123 @@ function renderPartners() {
     actions.appendChild(actionButton("Usuń", () => removePartner(partner.id), "bad"));
     list.appendChild(card);
   });
+}
+
+function renderSalesEngine() {
+  const outreachOpen = salesState.outreach.filter((item) => !["won", "lost"].includes(item.status)).length;
+  const bookingOpen = salesState.bookings.filter((item) => !["booked", "lost"].includes(item.status)).length;
+  const referralActive = salesState.referrals.filter((item) => ["warm", "active", "done"].includes(item.status)).length;
+  const contentReady = salesState.content.filter((item) => ["recording", "editing", "ready"].includes(item.status)).length;
+
+  document.getElementById("salesOutreachOpen").textContent = outreachOpen;
+  document.getElementById("salesBookingOpen").textContent = bookingOpen;
+  document.getElementById("salesReferralActive").textContent = referralActive;
+  document.getElementById("salesContentReady").textContent = contentReady;
+
+  renderSalesList("outreachList", salesState.outreach, {
+    empty: "Brak kontaktów outreach. Zacznij od 10-20 instytucji i partnerów tygodniowo.",
+    label: (item) => item.name,
+    summary: (item) => `Typ: ${escapeHtml(item.type)} • Kanał: ${escapeHtml(item.channel)} • Status: ${escapeHtml(item.status)}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    advance: (id) => advanceSalesStatus("outreach", id, ["research", "ready", "sent", "followup", "warm", "won", "lost"]),
+    edit: (id) => editSalesItem("outreachForm", salesState.outreach, id, "Zapisz kontakt"),
+    remove: (id) => removeSalesItem("outreach", id, "Usunąć ten kontakt outreach?")
+  });
+
+  renderSalesList("bookingList", salesState.bookings, {
+    empty: "Brak bookingów. Tutaj powinny wpadać wszystkie realne rozmowy sprzedażowe.",
+    label: (item) => item.name,
+    summary: (item) => `Typ: ${escapeHtml(item.kind)} • Status: ${escapeHtml(item.status)} • Data: ${escapeHtml(formatDate(item.eventDate))}<br>Kwota / pakiet: ${escapeHtml(item.value || "—")}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    advance: (id) => advanceSalesStatus("bookings", id, ["new", "offer", "decision", "deposit", "booked", "lost"]),
+    edit: (id) => editSalesItem("bookingForm", salesState.bookings, id, "Zapisz booking"),
+    remove: (id) => removeSalesItem("bookings", id, "Usunąć ten booking?")
+  });
+
+  renderSalesList("referralList", salesState.referrals, {
+    empty: "Brak referral sources. Dodaj ludzi i miejsca, które mogą Was polecać dalej.",
+    label: (item) => item.name,
+    summary: (item) => `Relacja: ${escapeHtml(item.type)} • Status: ${escapeHtml(item.status)}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    advance: (id) => advanceSalesStatus("referrals", id, ["to-ask", "asked", "warm", "active", "done"]),
+    edit: (id) => editSalesItem("referralForm", salesState.referrals, id, "Zapisz referral"),
+    remove: (id) => removeSalesItem("referrals", id, "Usunąć ten referral?")
+  });
+
+  renderSalesList("contentList", salesState.content, {
+    empty: "Brak contentu. Zaplanuj minimum 2 materiały tygodniowo z jasnym CTA.",
+    label: (item) => item.title,
+    summary: (item) => `Format: ${escapeHtml(item.format)} • Status: ${escapeHtml(item.status)} • Publikacja: ${escapeHtml(formatDate(item.publishDate))}<br>CTA: ${escapeHtml(item.cta || "—")}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    advance: (id) => advanceSalesStatus("content", id, ["idea", "recording", "editing", "ready", "published"]),
+    edit: (id) => editSalesItem("contentForm", salesState.content, id, "Zapisz materiał"),
+    remove: (id) => removeSalesItem("content", id, "Usunąć ten materiał?")
+  });
+}
+
+function renderSalesList(targetId, items, config) {
+  const list = document.getElementById(targetId);
+  list.innerHTML = "";
+
+  const sorted = [...items].sort((a, b) => {
+    const aDate = a.nextAction || a.publishDate || a.eventDate || "";
+    const bDate = b.nextAction || b.publishDate || b.eventDate || "";
+    if (!aDate && !bDate) return 0;
+    if (!aDate) return 1;
+    if (!bDate) return -1;
+    return aDate.localeCompare(bDate);
+  });
+
+  if (!sorted.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = config.empty;
+    list.appendChild(empty);
+    return;
+  }
+
+  sorted.slice(0, 10).forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "sales-card";
+    card.innerHTML = `
+      <h4>${escapeHtml(config.label(item))}</h4>
+      <p>${config.summary(item)}</p>
+      <div class="sales-actions"></div>
+    `;
+    const actions = card.querySelector(".sales-actions");
+    actions.appendChild(actionButton("Status +", () => config.advance(item.id), "good"));
+    actions.appendChild(actionButton("Edytuj", () => config.edit(item.id)));
+    actions.appendChild(actionButton("Usuń", () => config.remove(item.id), "bad"));
+    list.appendChild(card);
+  });
+}
+
+function advanceSalesStatus(bucket, id, order) {
+  const item = salesState[bucket].find((entry) => entry.id === id);
+  if (!item) return;
+  const current = order.indexOf(item.status);
+  item.status = order[Math.min(current + 1, order.length - 1)];
+  saveSalesState();
+  render();
+}
+
+function removeSalesItem(bucket, id, message) {
+  const ok = confirm(message);
+  if (!ok) return;
+  salesState[bucket] = salesState[bucket].filter((entry) => entry.id !== id);
+  saveSalesState();
+  render();
+}
+
+function editSalesItem(formId, collection, id, submitLabel) {
+  const item = collection.find((entry) => entry.id === id);
+  if (!item) return;
+  const form = document.getElementById(formId);
+  Object.entries(item).forEach(([key, value]) => {
+    const field = form.querySelector(`[name='${key}']`);
+    if (field) {
+      field.value = value;
+    }
+  });
+  form.dataset.editId = id;
+  form.querySelector("button[type='submit']").textContent = submitLabel;
+  window.scrollTo({ top: document.body.scrollHeight * 0.6, behavior: "smooth" });
 }
 
 function parseIcsDate(value) {
@@ -1722,6 +2143,133 @@ document.getElementById("clearDataHubButton").addEventListener("click", () => {
   dataHubState.sent = [];
   dataHubState.blocked = { names: [], emails: [], websites: [] };
   saveDataHubState();
+  render();
+});
+
+function handleSalesForm(formId, bucket, createFn, submitLabel) {
+  document.getElementById(formId).addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+    const requiredField = payload.name !== undefined ? "name" : "title";
+    if (!payload[requiredField].trim()) return;
+
+    const editId = form.dataset.editId;
+    if (editId) {
+      const item = salesState[bucket].find((entry) => entry.id === editId);
+      if (item) {
+        Object.assign(item, payload);
+      }
+      delete form.dataset.editId;
+      form.querySelector("button[type='submit']").textContent = submitLabel;
+    } else {
+      salesState[bucket].unshift(createFn(payload));
+    }
+
+    form.reset();
+    saveSalesState();
+    render();
+  });
+}
+
+handleSalesForm("outreachForm", "outreach", createOutreach, "Dodaj kontakt");
+handleSalesForm("bookingForm", "bookings", createBooking, "Dodaj booking");
+handleSalesForm("referralForm", "referrals", createReferral, "Dodaj referral");
+handleSalesForm("contentForm", "content", createContent, "Dodaj materiał");
+
+document.getElementById("seedOutreach").addEventListener("click", () => {
+  const today = new Date().toISOString().slice(0, 10);
+  salesState.outreach.unshift(
+    createOutreach({
+      name: "Centrum Kultury Września",
+      type: "instytucja",
+      channel: "email",
+      status: "ready",
+      nextAction: today,
+      notes: "Wysłać elegancki outreach z krótką ofertą koncertową"
+    }),
+    createOutreach({
+      name: "Planner Atelier Poznań",
+      type: "planner",
+      channel: "instagram",
+      status: "followup",
+      nextAction: today,
+      notes: "Wrócić po DM i zaproponować 15-min rozmowę"
+    })
+  );
+  saveSalesState();
+  render();
+});
+
+document.getElementById("seedBookings").addEventListener("click", () => {
+  const today = new Date().toISOString().slice(0, 10);
+  salesState.bookings.unshift(
+    createBooking({
+      name: "Anna i Marek",
+      kind: "slub",
+      status: "decision",
+      eventDate: today,
+      value: "Signature / 3500 PLN",
+      nextAction: today,
+      notes: "Wrócić po 48h z rekomendacją repertuaru"
+    }),
+    createBooking({
+      name: "Koncert Fara Poznań",
+      kind: "koncert",
+      status: "offer",
+      eventDate: today,
+      value: "Oferta instytucjonalna",
+      nextAction: today,
+      notes: "Dopytać o budżet i termin decyzji"
+    })
+  );
+  saveSalesState();
+  render();
+});
+
+document.getElementById("seedReferrals").addEventListener("click", () => {
+  const today = new Date().toISOString().slice(0, 10);
+  salesState.referrals.unshift(
+    createReferral({
+      name: "Para młoda z Gniezna",
+      type: "klient",
+      status: "to-ask",
+      nextAction: today,
+      notes: "Wysłać prośbę o opinię i polecenie po realizacji"
+    }),
+    createReferral({
+      name: "Fotograf premium Poznań",
+      type: "partner",
+      status: "warm",
+      nextAction: today,
+      notes: "Obiecał polecić duet 2 parom w sezonie"
+    })
+  );
+  saveSalesState();
+  render();
+});
+
+document.getElementById("seedContent").addEventListener("click", () => {
+  const today = new Date().toISOString().slice(0, 10);
+  salesState.content.unshift(
+    createContent({
+      title: "Wejście panny młodej - reel",
+      format: "reel",
+      status: "editing",
+      publishDate: today,
+      cta: "Zapytaj o termin na stronie",
+      notes: "Hook w 2 sekundy + skrzypce"
+    }),
+    createContent({
+      title: "Recital teaser dla instytucji",
+      format: "video",
+      status: "ready",
+      publishDate: today,
+      cta: "Napisz po ofertę koncertową",
+      notes: "Publikacja na IG + wysyłka do partnerów"
+    })
+  );
+  saveSalesState();
   render();
 });
 
