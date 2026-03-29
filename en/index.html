@@ -166,6 +166,26 @@ nav{
   color:var(--muted);
   margin-top:6px;
 }
+.nav-toggle{
+  display:none;
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  cursor:pointer;
+}
+.nav-toggle span{
+  display:block;
+  width:18px;
+  height:1.5px;
+  border-radius:999px;
+  background:currentColor;
+}
 .nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .nav-links a{
   color:var(--muted-strong);
@@ -609,15 +629,17 @@ footer{
   nav{padding:12px 12px}
   .nav-shell{
     border-radius:26px;
-    align-items:stretch;
-    flex-direction:column;
-    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
     padding:14px;
   }
   .brand{
-    width:100%;
-    justify-content:center;
+    flex:1;
+    min-width:0;
+    justify-content:flex-start;
   }
+  .nav-toggle{display:inline-flex}
   .brand img{height:32px}
   .brand-mark strong{font-size:.9rem}
   .brand-mark span{
@@ -626,10 +648,13 @@ footer{
   }
   .nav-links{
     width:100%;
-    justify-content:flex-start;
+    display:none;
     gap:10px;
-    display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
+    padding-top:6px;
+  }
+  .nav-shell.menu-open .nav-links{
+    display:grid;
   }
   .nav-links a{
     display:flex;
@@ -658,7 +683,7 @@ footer{
   }
   .hero{
     min-height:auto;
-    padding-top:204px;
+    padding-top:132px;
     padding-bottom:48px;
   }
   .hero-shell{gap:18px}
@@ -694,7 +719,7 @@ footer{
   .cta-links a{
     width:100%;
   }
-  .hero{padding-top:248px}
+  .hero{padding-top:120px}
   .hero-card,
   .story-copy,
   .story-image,
@@ -726,7 +751,10 @@ footer{
           <span>artistic duo</span>
         </span>
       </a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#offer">Offer</a>
         <a href="#media">Media</a>
@@ -1007,6 +1035,24 @@ footer{
   <script>
   history.scrollRestoration = "manual";
   window.addEventListener("DOMContentLoaded", () => {
+    const navShell = document.querySelector(".nav-shell");
+    const navToggle = document.querySelector("#navToggle");
+    const navLinks = document.querySelector("#navLinks");
+
+    if (navShell && navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        const open = navShell.classList.toggle("menu-open");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navShell.classList.remove("menu-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
     setTimeout(() => {
       if (document.activeElement instanceof HTMLElement) {
         document.activeElement.blur();
