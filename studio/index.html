@@ -969,6 +969,79 @@ Più Mosso</p>
             </article>
           </div>
 
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Command Center</h4>
+              <p class="helper">Jedno miejsce, z którego prowadzisz dzień. Panel wybiera najważniejsze ruchy, pokazuje ryzyka i liczy pieniądze w pipeline.</p>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="commandTopMoves">0</strong>
+                  <span>Top ruchy dziś</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="commandRiskCount">0</strong>
+                  <span>Ryzyka</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="commandPipelineValue">0 PLN</strong>
+                  <span>Pipeline</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="commandBookedRevenue">0 PLN</strong>
+                  <span>Domknięte</span>
+                </div>
+              </div>
+              <div class="kpi-notes" style="margin-top:12px">
+                <article class="kpi-card">
+                  <span>Jeden ruch na teraz</span>
+                  <strong id="commandPrimeMove">—</strong>
+                  <p id="commandPrimeMoveText">System podpowie tutaj pierwszy ruch, który daje dziś największy efekt.</p>
+                </article>
+                <article class="kpi-card">
+                  <span>Focus tygodnia</span>
+                  <strong id="commandWeekFocus">—</strong>
+                  <p id="commandWeekFocusText">Tu zobaczysz, co najbardziej spina cały układ sprzedaży.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Daily Command Brief</h4>
+              <div class="sales-list" id="commandCenterList" style="margin-top:12px"></div>
+            </section>
+          </div>
+
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Risk Radar</h4>
+              <p class="helper">Tu wpadają bookingi i leady, które mogą wypaść z lejka albo zrobić Ci chaos tuż przed wydarzeniem.</p>
+              <div class="sales-list" id="riskRadarList" style="margin-top:12px"></div>
+            </section>
+
+            <section class="template-card">
+              <h4>Revenue View</h4>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="revenueOpenBookings">0</strong>
+                  <span>Otwarte bookingi</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="revenueHotLeads">0</strong>
+                  <span>Hot leady</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="revenuePotentialValue">0 PLN</strong>
+                  <span>Potencjał</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="revenueBookedCount">0</strong>
+                  <span>Domknięte eventy</span>
+                </div>
+              </div>
+              <p class="helper" id="revenueViewText" style="margin-top:12px">Panel podsumuje tutaj, ile pieniędzy i szans masz już w ruchu.</p>
+            </section>
+          </div>
+
           <div class="desk-grid">
             <section class="template-card">
               <h4>Today Desk</h4>
@@ -1771,6 +1844,223 @@ function suggestBookingMessage(booking) {
   return `Dzień dobry,\n\nwracam w sprawie ${name}. Jeśli termin jest nadal aktualny, mogę od razu przygotować najlepszy wariant współpracy i przejść do kolejnych ustaleń.\n\nSerdecznie,\nPiù Mosso`;
 }
 
+function estimateValue(rawValue) {
+  const text = String(rawValue || "").toLowerCase();
+  if (!text) return 0;
+  const compact = text.replace(/\s/g, "");
+  const match = compact.match(/(\d{3,6})/);
+  if (match) {
+    return Number(match[1]);
+  }
+  if (text.includes("premium")) return 5500;
+  if (text.includes("signature")) return 3500;
+  if (text.includes("essential")) return 2200;
+  if (text.includes("oferta instytucjonalna")) return 4000;
+  return 0;
+}
+
+function formatCurrency(value) {
+  const amount = Number(value || 0);
+  if (!amount) return "0 PLN";
+  return `${amount.toLocaleString("pl-PL")} PLN`;
+}
+
+function buildRiskRadarItems() {
+  const items = [];
+
+  salesState.bookings.forEach((booking) => {
+    const days = daysUntil(booking.eventDate);
+    if (!["booked", "lost"].includes(booking.status) && dateBucket(booking.nextAction) === "overdue") {
+      items.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        severity: "wysokie",
+        reason: "Booking ma zaległy follow-up i może wypaść z lejka.",
+        action: suggestBookingMessage(booking)
+      });
+    }
+    if (booking.status === "booked" && days !== null && days <= 14 && booking.contractStatus !== "signed") {
+      items.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        severity: "wysokie",
+        reason: "Event jest blisko, a umowa nadal nie jest podpisana.",
+        action: "Dziś dopnij podpis umowy i potwierdź finalne ustalenia."
+      });
+    }
+    if (booking.status === "booked" && days !== null && days <= 14 && booking.depositStatus !== "paid") {
+      items.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        severity: "średnie",
+        reason: "Termin jest blisko, a zaliczka nie jest jeszcze domknięta.",
+        action: "Wyślij krótkie przypomnienie o zaliczce i domknij płatność."
+      });
+    }
+    if (booking.status === "booked" && days !== null && days <= 7 && booking.musicStatus !== "ready") {
+      items.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        severity: "średnie",
+        reason: "Wydarzenie jest tuż przed Tobą, a repertuar nie jest gotowy.",
+        action: "Dziś zamknij repertuar i brief dnia wydarzenia."
+      });
+    }
+  });
+
+  state.leads.forEach((lead) => {
+    const score = scoreLead(lead);
+    if (!["won", "lost"].includes(lead.stage) && dateBucket(lead.nextAction) === "overdue" && score >= 55) {
+      items.push({
+        id: lead.id,
+        source: "lead",
+        title: lead.title,
+        severity: "wysokie",
+        reason: "Cenny lead czeka zbyt długo bez ruchu.",
+        action: suggestNextMoveForLead(lead)
+      });
+    }
+  });
+
+  partnerState.partners.forEach((partner) => {
+    if (["warm", "active"].includes(partner.status) && dateBucket(partner.nextAction) === "overdue") {
+      items.push({
+        id: partner.id,
+        source: "partner",
+        title: partner.name,
+        severity: "średnie",
+        reason: "Ciepły partner został bez follow-upu.",
+        action: "Wróć dziś z krótką wiadomością i podtrzymaj relację poleceniową."
+      });
+    }
+  });
+
+  return items.slice(0, 8);
+}
+
+function buildCommandCenterData() {
+  const todayItems = buildTodayDeskItems().slice(0, 5);
+  const riskItems = buildRiskRadarItems();
+  const openBookings = salesState.bookings.filter((item) => !["booked", "lost"].includes(item.status));
+  const bookedBookings = salesState.bookings.filter((item) => item.status === "booked");
+  const hotLeads = state.leads.filter((lead) => leadPriorityLabel(scoreLead(lead)) === "hot");
+  const pipelineValue = openBookings.reduce((sum, item) => sum + estimateValue(item.value), 0)
+    + hotLeads.reduce((sum, item) => sum + estimateValue(item.budget || suggestPackageForLead(item)), 0);
+  const bookedRevenue = bookedBookings.reduce((sum, item) => sum + estimateValue(item.value), 0);
+
+  let weekFocus = "Domknij follow-upy";
+  let weekFocusText = "Najwięcej pieniędzy leży teraz w rozmowach, które już są otwarte.";
+  if (riskItems.length >= 4) {
+    weekFocus = "Gaszenie ryzyk";
+    weekFocusText = "Masz kilka spraw, które mogą wypaść z lejka albo zrobić chaos przed wydarzeniem.";
+  } else if (openBookings.length >= 4) {
+    weekFocus = "Decyzje i zaliczki";
+    weekFocusText = "Masz już wystarczająco dużo bookingów, żeby skupić się na ich domknięciu.";
+  } else if (hotLeads.length >= 3) {
+    weekFocus = "Konwersja hot leadów";
+    weekFocusText = "Największy skok zrobi teraz szybkie przerzucenie top leadów do bookingów.";
+  }
+
+  return {
+    topMoves: todayItems,
+    risks: riskItems,
+    pipelineValue,
+    bookedRevenue,
+    openBookingsCount: openBookings.length,
+    hotLeadsCount: hotLeads.length,
+    bookedCount: bookedBookings.length,
+    primeMove: todayItems[0] || null,
+    weekFocus,
+    weekFocusText
+  };
+}
+
+function renderCommandCenter() {
+  const command = buildCommandCenterData();
+  document.getElementById("commandTopMoves").textContent = command.topMoves.length;
+  document.getElementById("commandRiskCount").textContent = command.risks.length;
+  document.getElementById("commandPipelineValue").textContent = formatCurrency(command.pipelineValue);
+  document.getElementById("commandBookedRevenue").textContent = formatCurrency(command.bookedRevenue);
+  document.getElementById("commandPrimeMove").textContent = command.primeMove ? command.primeMove.title : "Spokojnie";
+  document.getElementById("commandPrimeMoveText").textContent = command.primeMove
+    ? command.primeMove.notes || "Otwórz pierwszy ruch i domknij go od razu."
+    : "Dziś nie ma palących ruchów. To dobry moment na outreach albo content.";
+  document.getElementById("commandWeekFocus").textContent = command.weekFocus;
+  document.getElementById("commandWeekFocusText").textContent = command.weekFocusText;
+
+  document.getElementById("revenueOpenBookings").textContent = command.openBookingsCount;
+  document.getElementById("revenueHotLeads").textContent = command.hotLeadsCount;
+  document.getElementById("revenuePotentialValue").textContent = formatCurrency(command.pipelineValue);
+  document.getElementById("revenueBookedCount").textContent = command.bookedCount;
+  document.getElementById("revenueViewText").textContent = command.pipelineValue
+    ? `Masz teraz w ruchu około ${formatCurrency(command.pipelineValue)} potencjału oraz ${formatCurrency(command.bookedRevenue)} już domkniętych bookingów.`
+    : "Panel podsumuje tutaj, ile pieniędzy i szans masz już w ruchu.";
+
+  const brief = document.getElementById("commandCenterList");
+  brief.innerHTML = "";
+  if (!command.topMoves.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Brak pilnych ruchów. To dobry moment, żeby dołożyć nowe leady albo partnerów.";
+    brief.appendChild(empty);
+  } else {
+    command.topMoves.forEach((item, index) => {
+      const card = document.createElement("article");
+      card.className = "desk-item";
+      card.innerHTML = `
+        <h4>${index + 1}. ${escapeHtml(item.title)}</h4>
+        <p>${escapeHtml(item.subtitle)} • ${escapeHtml(formatDate(item.nextAction))}<br>${escapeHtml(item.details || "—")}<br>${escapeHtml(item.notes || "—")}</p>
+        <div class="desk-actions"></div>
+      `;
+      const actions = card.querySelector(".desk-actions");
+      actions.appendChild(actionButton("Otwórz", () => openDeskItem(item), "good"));
+      actions.appendChild(actionButton("Kopiuj ruch", async () => {
+        try {
+          await navigator.clipboard.writeText(item.notes || "");
+        } catch {}
+      }));
+      brief.appendChild(card);
+    });
+  }
+
+  const riskList = document.getElementById("riskRadarList");
+  riskList.innerHTML = "";
+  if (!command.risks.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Na ten moment radar jest czysty. To bardzo dobry znak.";
+    riskList.appendChild(empty);
+  } else {
+    command.risks.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "desk-item";
+      card.innerHTML = `
+        <h4>${escapeHtml(item.title)}</h4>
+        <p>${escapeHtml(item.source)} • ryzyko ${escapeHtml(item.severity)}<br>${escapeHtml(item.reason)}<br>${escapeHtml(item.action)}</p>
+        <div class="desk-actions"></div>
+      `;
+      const actions = card.querySelector(".desk-actions");
+      if (item.source === "lead") {
+        actions.appendChild(actionButton("Otwórz", () => editLead(item.id), "good"));
+      } else if (item.source === "booking") {
+        actions.appendChild(actionButton("Otwórz", () => editSalesItem("bookingForm", salesState.bookings, item.id, "Zapisz booking"), "good"));
+      } else if (item.source === "partner") {
+        actions.appendChild(actionButton("Otwórz", () => editPartner(item.id), "good"));
+      }
+      actions.appendChild(actionButton("Kopiuj ruch", async () => {
+        try {
+          await navigator.clipboard.writeText(item.action || "");
+        } catch {}
+      }));
+      riskList.appendChild(card);
+    });
+  }
+}
+
 function renderPartners() {
   const all = partnerState.partners.length;
   const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
@@ -1895,6 +2185,7 @@ function renderSalesEngine() {
   document.getElementById("kpiMomentum").textContent = momentum;
   document.getElementById("kpiMomentumText").textContent = momentumText;
 
+  renderCommandCenter();
   renderTodayDesk();
   renderPreEventDesk();
 
