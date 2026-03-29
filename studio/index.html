@@ -1098,6 +1098,7 @@ Più Mosso</p>
             <div class="metric"><strong id="salesBookingOpen">0</strong><span>Bookingi otwarte</span></div>
             <div class="metric"><strong id="salesReferralActive">0</strong><span>Referral aktywny</span></div>
             <div class="metric"><strong id="salesContentReady">0</strong><span>Content w toku</span></div>
+            <div class="metric"><strong id="salesPremiumHints">0</strong><span>Sugestie Premium</span></div>
           </div>
 
           <div class="sales-grid">
@@ -1575,6 +1576,23 @@ function createContent(data) {
   };
 }
 
+function suggestPackageForLead(lead) {
+  const kind = String(lead.kind || "").toLowerCase();
+  const budget = String(lead.budget || "").toLowerCase();
+  const notes = String(lead.notes || "").toLowerCase();
+  const title = String(lead.title || "").toLowerCase();
+  const merged = `${budget} ${notes} ${title}`;
+
+  const premiumHints = ["premium", "ekskluzy", "exclusive", "lux", "pałac", "palac", "hotel", "wokal", "rozszerzon", "signature"];
+  const essentialHints = ["kameral", "skrom", "prosto", "basic", "minimal", "mały", "maly"];
+
+  if (premiumHints.some((hint) => merged.includes(hint))) return "Premium";
+  if (essentialHints.some((hint) => merged.includes(hint))) return "Essential";
+  if (kind === "instytucja") return "Premium";
+  if (kind === "slub") return "Signature";
+  return "Signature";
+}
+
 function renderPartners() {
   const all = partnerState.partners.length;
   const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
@@ -1631,6 +1649,7 @@ function renderSalesEngine() {
   const bookingOpen = salesState.bookings.filter((item) => !["booked", "lost"].includes(item.status)).length;
   const referralActive = salesState.referrals.filter((item) => ["warm", "active", "done"].includes(item.status)).length;
   const contentReady = salesState.content.filter((item) => ["recording", "editing", "ready"].includes(item.status)).length;
+  const premiumHints = state.leads.filter((lead) => suggestPackageForLead(lead) === "Premium").length;
   const leadCount = state.leads.length;
   const bookingCount = salesState.bookings.length;
   const bookedCount = salesState.bookings.filter((item) => item.status === "booked").length;
@@ -1685,6 +1704,7 @@ function renderSalesEngine() {
   document.getElementById("salesBookingOpen").textContent = bookingOpen;
   document.getElementById("salesReferralActive").textContent = referralActive;
   document.getElementById("salesContentReady").textContent = contentReady;
+  document.getElementById("salesPremiumHints").textContent = premiumHints;
   document.getElementById("kpiLeadToBooking").textContent = `${leadToBooking}%`;
   document.getElementById("kpiBookingWin").textContent = `${bookingWin}%`;
   document.getElementById("kpiFollowupsToday").textContent = followupsToday;
@@ -2257,6 +2277,7 @@ function renderBoard() {
           <span>Miasto: ${escapeHtml(lead.city || "—")}</span>
           <span>Źródło: ${escapeHtml(lead.source)}</span>
           <span>Termin: ${escapeHtml(formatDate(lead.eventDate))}</span>
+          <span>Sugerowany pakiet: ${escapeHtml(suggestPackageForLead(lead))}</span>
           <span>Następny ruch: ${escapeHtml(formatDate(lead.nextAction))}</span>
           <span>Kontakt: ${escapeHtml(lead.contact || "—")}</span>
           <span>Notatki: ${escapeHtml(lead.notes || "—")}</span>
@@ -2348,7 +2369,7 @@ function convertLeadToBooking(id) {
     eventDate: lead.eventDate,
     venue: lead.city,
     contact: lead.contact,
-    value: lead.budget,
+    value: lead.budget || suggestPackageForLead(lead),
     nextAction: lead.nextAction,
     notes: lead.notes,
     contractStatus: "not-started",
