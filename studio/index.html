@@ -375,6 +375,41 @@ input:focus,select:focus,textarea:focus{
   gap:12px;
   margin-top:18px;
 }
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.kpi-notes{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.kpi-card{
+  padding:18px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.kpi-card strong{
+  display:block;
+  font-size:1.8rem;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  margin-bottom:4px;
+}
+.kpi-card span{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.kpi-card p{
+  margin:.45em 0 0;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.55;
+}
 .sales-note{
   border-left:2px solid rgba(212,176,106,.35);
   padding-left:14px;
@@ -482,11 +517,11 @@ input:focus,select:focus,textarea:focus{
   .sales-grid{grid-template-columns:1fr}
 }
 @media (max-width:880px){
-  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip{grid-template-columns:1fr 1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip,.kpi-grid,.kpi-notes{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   h1{font-size:2.4rem}
-  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip{grid-template-columns:1fr}
+  .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip,.kpi-grid,.kpi-notes{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -817,6 +852,47 @@ Più Mosso</p>
             <h2>Sales Engine</h2>
           </div>
           <p class="helper">Tutaj domykasz pieniądz. Cztery maszyny pracują razem: outreach dowozi nowe szanse, booking zamyka sprzedaż, referral buduje polecenia, a content wzmacnia zaufanie i ruch na stronę.</p>
+
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <strong id="kpiLeadToBooking">0%</strong>
+              <span>Lead → booking</span>
+              <p>Ile leadów przechodzi do realnych rozmów sprzedażowych.</p>
+            </div>
+            <div class="kpi-card">
+              <strong id="kpiBookingWin">0%</strong>
+              <span>Win rate bookingów</span>
+              <p>Jaki procent bookingów kończy się potwierdzonym terminem.</p>
+            </div>
+            <div class="kpi-card">
+              <strong id="kpiFollowupsToday">0</strong>
+              <span>Follow-up dziś</span>
+              <p>Ile otwartych spraw wymaga dziś ruchu z Twojej strony.</p>
+            </div>
+            <div class="kpi-card">
+              <strong id="kpiBookedValue">0</strong>
+              <span>Zabookowane wartości</span>
+              <p>Ile bookingów masz już domkniętych w systemie.</p>
+            </div>
+          </div>
+
+          <div class="kpi-notes">
+            <article class="kpi-card">
+              <span>Wąskie gardło</span>
+              <strong id="kpiBottleneck">—</strong>
+              <p id="kpiBottleneckText">Dodaj dane, żeby zobaczyć, gdzie najczęściej przecieka sprzedaż.</p>
+            </article>
+            <article class="kpi-card">
+              <span>Priorytet na dziś</span>
+              <strong id="kpiPriority">—</strong>
+              <p id="kpiPriorityText">Panel pokaże Ci, co daje teraz najszybszy efekt finansowy.</p>
+            </article>
+            <article class="kpi-card">
+              <span>Tempo maszyny</span>
+              <strong id="kpiMomentum">—</strong>
+              <p id="kpiMomentumText">Tu zobaczysz, czy system się rozpędza, czy stoi w miejscu.</p>
+            </article>
+          </div>
 
           <div class="sales-strip">
             <div class="metric"><strong id="salesOutreachOpen">0</strong><span>Outreach otwarty</span></div>
@@ -1355,11 +1431,70 @@ function renderSalesEngine() {
   const bookingOpen = salesState.bookings.filter((item) => !["booked", "lost"].includes(item.status)).length;
   const referralActive = salesState.referrals.filter((item) => ["warm", "active", "done"].includes(item.status)).length;
   const contentReady = salesState.content.filter((item) => ["recording", "editing", "ready"].includes(item.status)).length;
+  const leadCount = state.leads.length;
+  const bookingCount = salesState.bookings.length;
+  const bookedCount = salesState.bookings.filter((item) => item.status === "booked").length;
+  const followupsToday = state.leads.filter((lead) => isToday(lead.nextAction)).length
+    + salesState.outreach.filter((item) => isToday(item.nextAction)).length
+    + salesState.bookings.filter((item) => isToday(item.nextAction)).length
+    + salesState.referrals.filter((item) => isToday(item.nextAction)).length;
+  const leadToBooking = leadCount ? Math.round((bookingCount / leadCount) * 100) : 0;
+  const bookingWin = bookingCount ? Math.round((bookedCount / bookingCount) * 100) : 0;
+
+  let bottleneck = "Brak danych";
+  let bottleneckText = "Dodaj więcej leadów i bookingów, żeby system wskazał realny problem.";
+  if (leadCount >= 3 && bookingCount === 0) {
+    bottleneck = "Konwersja leadów";
+    bottleneckText = "Masz leady, ale nie przerzucasz ich do bookingów. Zacznij używać przycisku 'Do bookingu' i nie trzymaj rozmów zbyt długo w pipeline.";
+  } else if (bookingCount > 0 && bookedCount === 0) {
+    bottleneck = "Domykanie decyzji";
+    bottleneckText = "Bookingi dochodzą do oferty, ale nie zamykasz terminu. Dociśnij follow-up, zaliczkę i konkretną rekomendację pakietu.";
+  } else if (outreachOpen > bookingOpen && outreachOpen >= 8) {
+    bottleneck = "Za dużo otwartego outreachu";
+    bottleneckText = "Masz dużo kontaktów w toku. Zatrzymaj dokładanie nowych i domknij te, które już są rozgrzane.";
+  } else if (contentReady === 0) {
+    bottleneck = "Brak contentu";
+    bottleneckText = "Maszyna sprzedaży działa słabiej bez świeżych materiałów. Zaplanuj minimum 2 publikacje z CTA tygodniowo.";
+  }
+
+  let priority = "Rozpędź outreach";
+  let priorityText = "Najłatwiejszy wzrost to więcej nowych, sensownych kontaktów i partnerów.";
+  if (followupsToday >= 3) {
+    priority = "Follow-upy";
+    priorityText = "Masz dziś kilka otwartych spraw. Najszybsze pieniądze są w domknięciu tych rozmów, nie w szukaniu nowych.";
+  } else if (bookingOpen >= 3) {
+    priority = "Domknij bookingi";
+    priorityText = "Masz już zainteresowanie. Skup się na decyzji, zaliczce i podpisaniu ustaleń.";
+  } else if (referralActive < 2) {
+    priority = "Uruchom referral";
+    priorityText = "Po każdym wydarzeniu proś o opinię i polecenie. To najtańszy kanał wzrostu dla Più Mosso.";
+  }
+
+  let momentum = "Start";
+  let momentumText = "System dopiero się buduje. Każdy ruch dokłada dane i porządek.";
+  if (leadCount >= 10 || bookingCount >= 5) {
+    momentum = "W ruchu";
+    momentumText = "Masz już realny lejek. Teraz przewaga będzie rosła przez regularność i follow-up.";
+  }
+  if (bookedCount >= 3 && bookingWin >= 35) {
+    momentum = "Mocne";
+    momentumText = "Masz już działający silnik sprzedaży. Teraz skaluj partnerstwa i podnoś średnią wartość bookingów.";
+  }
 
   document.getElementById("salesOutreachOpen").textContent = outreachOpen;
   document.getElementById("salesBookingOpen").textContent = bookingOpen;
   document.getElementById("salesReferralActive").textContent = referralActive;
   document.getElementById("salesContentReady").textContent = contentReady;
+  document.getElementById("kpiLeadToBooking").textContent = `${leadToBooking}%`;
+  document.getElementById("kpiBookingWin").textContent = `${bookingWin}%`;
+  document.getElementById("kpiFollowupsToday").textContent = followupsToday;
+  document.getElementById("kpiBookedValue").textContent = bookedCount;
+  document.getElementById("kpiBottleneck").textContent = bottleneck;
+  document.getElementById("kpiBottleneckText").textContent = bottleneckText;
+  document.getElementById("kpiPriority").textContent = priority;
+  document.getElementById("kpiPriorityText").textContent = priorityText;
+  document.getElementById("kpiMomentum").textContent = momentum;
+  document.getElementById("kpiMomentumText").textContent = momentumText;
 
   renderSalesList("outreachList", salesState.outreach, {
     empty: "Brak kontaktów outreach. Zacznij od 10-20 instytucji i partnerów tygodniowo.",
