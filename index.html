@@ -1029,6 +1029,38 @@ footer{
   <script>
   history.scrollRestoration = "manual";
   window.addEventListener("DOMContentLoaded", () => {
+    const STUDIO_STORAGE_KEY = "pm_studio_os_v1";
+    const inferLeadKind = (message) => {
+      const text = String(message || "").toLowerCase();
+      if (text.includes("ślub") || text.includes("slub") || text.includes("ceremon")) return "slub";
+      if (text.includes("koncert") || text.includes("recital") || text.includes("wydarzen")) return "koncert";
+      if (text.includes("instytuc") || text.includes("dom kultury") || text.includes("filharmon")) return "instytucja";
+      return "koncert";
+    };
+
+    const saveLeadToStudio = (payload) => {
+      try {
+        const saved = localStorage.getItem(STUDIO_STORAGE_KEY);
+        const parsed = saved ? JSON.parse(saved) : { leads: [] };
+        const safeState = Array.isArray(parsed.leads) ? parsed : { leads: [] };
+        safeState.leads.unshift({
+          id: crypto.randomUUID(),
+          title: payload.name,
+          kind: inferLeadKind(payload.message),
+          city: "",
+          eventDate: "",
+          budget: "",
+          source: "strona",
+          contact: [payload.phone, payload.email].filter(Boolean).join(" • "),
+          nextAction: new Date().toISOString().slice(0, 10),
+          notes: payload.message || `Zapytanie ze strony od ${payload.name}`,
+          stage: "new",
+          createdAt: new Date().toISOString()
+        });
+        localStorage.setItem(STUDIO_STORAGE_KEY, JSON.stringify(safeState));
+      } catch {}
+    };
+
     const navShell = document.querySelector(".nav-shell");
     const navToggle = document.querySelector("#navToggle");
     const navLinks = document.querySelector("#navLinks");
@@ -1087,13 +1119,17 @@ footer{
           return;
         }
 
+        const email = formData.get("email")?.toString().trim() || "";
+        const message = formData.get("message")?.toString().trim() || "";
+        saveLeadToStudio({ name, phone, email, message });
+
         const body = encodeURIComponent(
 `Imię i nazwisko: ${name}
 Telefon: ${phone}
-E-mail: ${formData.get("email")?.toString().trim() || "–"}
+E-mail: ${email || "–"}
 
 Wiadomość:
-${formData.get("message")?.toString().trim() || "–"}`
+${message || "–"}`
         );
 
         location.href = `mailto:kontakt@piumosso.pl?subject=Zapytanie%20z%20formularza&body=${body}`;
