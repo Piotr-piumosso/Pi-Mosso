@@ -1665,6 +1665,29 @@ function suggestNextMoveForLead(lead) {
   return `Wykonaj pierwszy kontakt do ${title}, zbierz brakujące dane i ustaw sprawę pod wariant ${pkg}.`;
 }
 
+function suggestBookingMessage(booking) {
+  const name = booking.name || "tego wydarzenia";
+  const pkg = booking.value || "naszego rekomendowanego wariantu";
+
+  if (booking.status === "offer") {
+    return `Dzień dobry,\n\nwracam z krótkim follow-upem w sprawie oferty dla ${name}. Jeśli termin jest nadal aktualny, rekomenduję wariant ${pkg} i mogę od razu domknąć dalsze ustalenia.\n\nSerdecznie,\nPiù Mosso`;
+  }
+
+  if (booking.status === "decision") {
+    return `Dzień dobry,\n\nchciałbym delikatnie wrócić do rozmowy o ${name} i zapytać, czy mogą już Państwo podjąć decyzję. Jeśli chcą Państwo, mogę wstępnie przytrzymać termin i od razu zamknąć temat wybranego wariantu ${pkg}.\n\nPozdrawiam serdecznie,\nPiù Mosso`;
+  }
+
+  if (booking.status === "deposit") {
+    return `Dzień dobry,\n\nbardzo dziękujemy za decyzję dotyczącą ${name}. Żeby ostatecznie potwierdzić termin, potrzebujemy jeszcze domknąć zaliczkę oraz kwestie organizacyjne. Gdy tylko to będzie gotowe, przejdziemy od razu do repertuaru i szczegółów dnia wydarzenia.\n\nSerdecznie,\nPiù Mosso`;
+  }
+
+  if (booking.status === "booked") {
+    return `Dzień dobry,\n\ncieszymy się, że możemy współtworzyć ${name}. W kolejnym kroku dopracujmy repertuar, logistykę i wszystkie muzyczne szczegóły, tak aby całość była spokojna i dopięta z wyprzedzeniem.\n\nSerdecznie,\nPiù Mosso`;
+  }
+
+  return `Dzień dobry,\n\nwracam w sprawie ${name}. Jeśli termin jest nadal aktualny, mogę od razu przygotować najlepszy wariant współpracy i przejść do kolejnych ustaleń.\n\nSerdecznie,\nPiù Mosso`;
+}
+
 function renderPartners() {
   const all = partnerState.partners.length;
   const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
@@ -1806,7 +1829,8 @@ function renderSalesEngine() {
     summary: (item) => `Typ: ${escapeHtml(item.kind)} • Status: ${escapeHtml(item.status)} • Data: ${escapeHtml(formatDate(item.eventDate))}<br>Miejsce: ${escapeHtml(item.venue || "—")} • Kontakt: ${escapeHtml(item.contact || "—")}<br>Kwota / pakiet: ${escapeHtml(item.value || "—")}<br>Umowa: ${escapeHtml(item.contractStatus || "—")} • Zaliczka: ${escapeHtml(item.depositStatus || "—")} • Repertuar: ${escapeHtml(item.musicStatus || "—")}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
     advance: (id) => advanceSalesStatus("bookings", id, ["new", "offer", "decision", "deposit", "booked", "lost"]),
     edit: (id) => editSalesItem("bookingForm", salesState.bookings, id, "Zapisz booking"),
-    remove: (id) => removeSalesItem("bookings", id, "Usunąć ten booking?")
+    remove: (id) => removeSalesItem("bookings", id, "Usunąć ten booking?"),
+    copyMove: (id) => copyBookingMessage(id)
   });
 
   renderSalesList("referralList", salesState.referrals, {
@@ -1874,7 +1898,7 @@ function buildTodayDeskItems() {
         subtitle: `Booking • ${item.status}`,
         nextAction: item.nextAction,
         details: `${item.venue || "—"} • ${item.contact || "—"}`,
-        notes: item.notes || "",
+        notes: suggestBookingMessage(item),
         bucket: dateBucket(item.nextAction)
       })),
     ...salesState.referrals
@@ -1991,6 +2015,9 @@ function renderSalesList(targetId, items, config) {
     `;
     const actions = card.querySelector(".sales-actions");
     actions.appendChild(actionButton("Status +", () => config.advance(item.id), "good"));
+    if (config.copyMove) {
+      actions.appendChild(actionButton("Kopiuj ruch", () => config.copyMove(item.id)));
+    }
     actions.appendChild(actionButton("Edytuj", () => config.edit(item.id)));
     actions.appendChild(actionButton("Usuń", () => config.remove(item.id), "bad"));
     list.appendChild(card);
@@ -2012,6 +2039,14 @@ function removeSalesItem(bucket, id, message) {
   salesState[bucket] = salesState[bucket].filter((entry) => entry.id !== id);
   saveSalesState();
   render();
+}
+
+async function copyBookingMessage(id) {
+  const booking = salesState.bookings.find((entry) => entry.id === id);
+  if (!booking) return;
+  try {
+    await navigator.clipboard.writeText(suggestBookingMessage(booking));
+  } catch {}
 }
 
 function editSalesItem(formId, collection, id, submitLabel) {
