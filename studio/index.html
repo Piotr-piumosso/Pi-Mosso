@@ -1102,6 +1102,36 @@ Più Mosso</p>
             </section>
           </div>
 
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Reminder Engine</h4>
+              <p class="helper">Ten moduł pilnuje follow-upów, decyzji, zaliczek, umów i briefów. Czyli wszystkiego, co najczęściej wypada z głowy mimo dobrego systemu.</p>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="reminderDueNow">0</strong>
+                  <span>Do ruszenia</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="reminderCashGuard">0</strong>
+                  <span>Cash Guard</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="reminderOverdue">0</strong>
+                  <span>Overdue</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="reminderPrep">0</strong>
+                  <span>Briefy / prep</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Kolejka przypomnień</h4>
+              <div class="sales-list" id="reminderList" style="margin-top:12px"></div>
+            </section>
+          </div>
+
           <div class="templates" style="margin-top:18px">
             <article class="template-card">
               <h4>Pakiet Essential</h4>
@@ -1979,6 +2009,128 @@ function buildCommandCenterData() {
   };
 }
 
+function buildReminderItems() {
+  const reminders = [];
+
+  state.leads.forEach((lead) => {
+    const bucket = dateBucket(lead.nextAction);
+    if (!["won", "lost"].includes(lead.stage) && ["overdue", "today", "next"].includes(bucket)) {
+      reminders.push({
+        id: lead.id,
+        source: "lead",
+        title: lead.title,
+        lane: bucket === "overdue" ? "overdue" : "follow-up",
+        subtitle: `Lead • ${lead.stage} • ${formatDate(lead.nextAction)}`,
+        message: suggestNextMoveForLead(lead),
+        priority: scoreLead(lead)
+      });
+    }
+  });
+
+  salesState.bookings.forEach((booking) => {
+    const days = daysUntil(booking.eventDate);
+    const bucket = dateBucket(booking.nextAction);
+
+    if (!["booked", "lost"].includes(booking.status) && ["overdue", "today", "next"].includes(bucket)) {
+      reminders.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        lane: bucket === "overdue" ? "overdue" : "follow-up",
+        subtitle: `Booking • ${booking.status} • ${formatDate(booking.nextAction)}`,
+        message: suggestBookingMessage(booking),
+        priority: estimateValue(booking.value) || 40
+      });
+    }
+
+    if (["decision", "deposit", "booked"].includes(booking.status) && booking.depositStatus !== "paid") {
+      reminders.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        lane: "cash",
+        subtitle: `Zaliczka • ${booking.depositStatus || "brak"} • ${formatDate(booking.eventDate)}`,
+        message: "Wyślij dziś przypomnienie o zaliczce i domknij płatność, żeby termin był naprawdę bezpieczny.",
+        priority: (estimateValue(booking.value) || 40) + 10
+      });
+    }
+
+    if (["decision", "deposit", "booked"].includes(booking.status) && booking.contractStatus !== "signed") {
+      reminders.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        lane: "cash",
+        subtitle: `Umowa • ${booking.contractStatus || "brak"} • ${formatDate(booking.eventDate)}`,
+        message: "Dziś dopnij podpis umowy albo przynajmniej potwierdź termin jej finalizacji.",
+        priority: (estimateValue(booking.value) || 40) + 8
+      });
+    }
+
+    if (booking.status === "booked" && days !== null && days <= 10 && booking.musicStatus !== "ready") {
+      reminders.push({
+        id: booking.id,
+        source: "booking",
+        title: booking.name,
+        lane: "prep",
+        subtitle: `Brief • ${days} dni do eventu`,
+        message: "Zamknij repertuar, logistykę i krótki brief dnia wydarzenia.",
+        priority: (estimateValue(booking.value) || 40) + 6
+      });
+    }
+  });
+
+  return reminders
+    .sort((a, b) => (b.priority || 0) - (a.priority || 0))
+    .slice(0, 12);
+}
+
+function renderReminderEngine() {
+  const reminders = buildReminderItems();
+  const dueNow = reminders.filter((item) => ["follow-up", "cash"].includes(item.lane)).length;
+  const cashGuard = reminders.filter((item) => item.lane === "cash").length;
+  const overdue = reminders.filter((item) => item.lane === "overdue").length;
+  const prep = reminders.filter((item) => item.lane === "prep").length;
+
+  document.getElementById("reminderDueNow").textContent = dueNow;
+  document.getElementById("reminderCashGuard").textContent = cashGuard;
+  document.getElementById("reminderOverdue").textContent = overdue;
+  document.getElementById("reminderPrep").textContent = prep;
+
+  const list = document.getElementById("reminderList");
+  list.innerHTML = "";
+
+  if (!reminders.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Na teraz nic nie wymaga przypomnienia. System jest czysty.";
+    list.appendChild(empty);
+    return;
+  }
+
+  reminders.forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "desk-item";
+    card.innerHTML = `
+      <h4>${escapeHtml(item.title)}</h4>
+      <p>${escapeHtml(item.lane)} • ${escapeHtml(item.subtitle)}<br>${escapeHtml(item.message)}</p>
+      <div class="desk-actions"></div>
+    `;
+    const actions = card.querySelector(".desk-actions");
+    if (item.source === "lead") {
+      actions.appendChild(actionButton("Otwórz", () => editLead(item.id), "good"));
+    } else {
+      actions.appendChild(actionButton("Otwórz", () => editSalesItem("bookingForm", salesState.bookings, item.id, "Zapisz booking"), "good"));
+    }
+    actions.appendChild(actionButton("Kopiuj ruch", async () => {
+      try {
+        await navigator.clipboard.writeText(item.message || "");
+      } catch {}
+    }));
+    list.appendChild(card);
+  });
+}
+
 function renderCommandCenter() {
   const command = buildCommandCenterData();
   document.getElementById("commandTopMoves").textContent = command.topMoves.length;
@@ -2188,6 +2340,7 @@ function renderSalesEngine() {
   renderCommandCenter();
   renderTodayDesk();
   renderPreEventDesk();
+  renderReminderEngine();
 
   renderSalesList("outreachList", salesState.outreach, {
     empty: "Brak kontaktów outreach. Zacznij od 10-20 instytucji i partnerów tygodniowo.",
