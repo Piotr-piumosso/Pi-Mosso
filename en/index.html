@@ -1006,6 +1006,23 @@ footer{
               <label>Full name *
                 <input type="text" name="name" required>
               </label>
+              <label>Event type *
+                <select name="eventType" required>
+                  <option value="slub">Wedding / ceremony</option>
+                  <option value="koncert">Concert / recital</option>
+                  <option value="instytucja">Institution / cultural event</option>
+                  <option value="event">Private event</option>
+                </select>
+              </label>
+              <label>City / venue
+                <input type="text" name="city" placeholder="e.g. Poznan / Wrzesnia">
+              </label>
+              <label>Event date
+                <input type="date" name="eventDate">
+              </label>
+              <label>Budget / scope
+                <input type="text" name="budget" placeholder="e.g. premium package / target range">
+              </label>
               <label>Email
                 <input type="email" name="email" placeholder="optional">
               </label>
@@ -1036,7 +1053,8 @@ footer{
   history.scrollRestoration = "manual";
   window.addEventListener("DOMContentLoaded", () => {
     const STUDIO_STORAGE_KEY = "pm_studio_os_v1";
-    const inferLeadKind = (message) => {
+    const inferLeadKind = (message, eventType) => {
+      if (eventType) return eventType;
       const text = String(message || "").toLowerCase();
       if (text.includes("wedding") || text.includes("ceremon")) return "slub";
       if (text.includes("concert") || text.includes("recital") || text.includes("event")) return "koncert";
@@ -1052,14 +1070,19 @@ footer{
         safeState.leads.unshift({
           id: crypto.randomUUID(),
           title: payload.name,
-          kind: inferLeadKind(payload.message),
-          city: "",
-          eventDate: "",
-          budget: "",
+          kind: inferLeadKind(payload.message, payload.eventType),
+          city: payload.city || "",
+          eventDate: payload.eventDate || "",
+          budget: payload.budget || "",
           source: "strona",
           contact: [payload.phone, payload.email].filter(Boolean).join(" • "),
           nextAction: new Date().toISOString().slice(0, 10),
-          notes: payload.message || `Website enquiry from ${payload.name}`,
+          notes: [
+            payload.message || `Website enquiry from ${payload.name}`,
+            payload.city ? `City / venue: ${payload.city}` : "",
+            payload.eventDate ? `Event date: ${payload.eventDate}` : "",
+            payload.budget ? `Budget / scope: ${payload.budget}` : ""
+          ].filter(Boolean).join("\n"),
           stage: "new",
           createdAt: new Date().toISOString()
         });
@@ -1119,18 +1142,26 @@ footer{
         const formData = new FormData(contactForm);
         const name = formData.get("name")?.toString().trim();
         const phone = formData.get("phone")?.toString().trim();
+        const eventType = formData.get("eventType")?.toString().trim();
 
-        if (!name || !phone) {
-          alert("Please provide your full name and phone number.");
+        if (!name || !phone || !eventType) {
+          alert("Please provide your full name, event type and phone number.");
           return;
         }
 
         const email = formData.get("email")?.toString().trim() || "";
         const message = formData.get("message")?.toString().trim() || "";
-        saveLeadToStudio({ name, phone, email, message });
+        const city = formData.get("city")?.toString().trim() || "";
+        const eventDate = formData.get("eventDate")?.toString().trim() || "";
+        const budget = formData.get("budget")?.toString().trim() || "";
+        saveLeadToStudio({ name, phone, email, message, city, eventDate, budget, eventType });
 
         const body = encodeURIComponent(
 `Full name: ${name}
+Event type: ${eventType}
+City / venue: ${city || "–"}
+Event date: ${eventDate || "–"}
+Budget / scope: ${budget || "–"}
 Phone: ${phone}
 Email: ${email || "–"}
 
