@@ -343,6 +343,12 @@ input:focus,select:focus,textarea:focus{
   gap:18px;
   margin-top:18px;
 }
+.desk-grid{
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:18px;
+  margin-top:18px;
+}
 .sales-list{
   display:grid;
   gap:10px;
@@ -409,6 +415,28 @@ input:focus,select:focus,textarea:focus{
   color:var(--muted);
   font-size:.9rem;
   line-height:1.55;
+}
+.desk-item{
+  padding:15px 16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.desk-item h4{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.desk-item p{
+  margin:0;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.55;
+}
+.desk-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
 }
 .sales-note{
   border-left:2px solid rgba(212,176,106,.35);
@@ -535,6 +563,7 @@ input:focus,select:focus,textarea:focus{
   .calendar-shell{grid-template-columns:1fr}
   .datahub-grid{grid-template-columns:1fr}
   .sales-grid{grid-template-columns:1fr}
+  .desk-grid{grid-template-columns:1fr}
 }
 @media (max-width:880px){
   .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip,.kpi-grid,.kpi-notes{grid-template-columns:1fr 1fr}
@@ -925,6 +954,36 @@ Più Mosso</p>
               <strong id="kpiMomentum">—</strong>
               <p id="kpiMomentumText">Tu zobaczysz, czy system się rozpędza, czy stoi w miejscu.</p>
             </article>
+          </div>
+
+          <div class="desk-grid">
+            <section class="template-card">
+              <h4>Today Desk</h4>
+              <p class="helper">To jest Twój pulpit dnia. Zbiera wszystko, co dziś lub już wcześniej powinno zostać ruszone: leady, outreach, bookingi i referral.</p>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="deskOverdue">0</strong>
+                  <span>Zaległe</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="deskToday">0</strong>
+                  <span>Na dziś</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="deskNext">0</strong>
+                  <span>Następne 7 dni</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="deskBookedReady">0</strong>
+                  <span>Bookingi gotowe</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Kolejka działań</h4>
+              <div class="sales-list" id="todayDeskList" style="margin-top:12px"></div>
+            </section>
           </div>
 
           <div class="sales-strip">
@@ -1529,6 +1588,8 @@ function renderSalesEngine() {
   document.getElementById("kpiMomentum").textContent = momentum;
   document.getElementById("kpiMomentumText").textContent = momentumText;
 
+  renderTodayDesk();
+
   renderSalesList("outreachList", salesState.outreach, {
     empty: "Brak kontaktów outreach. Zacznij od 10-20 instytucji i partnerów tygodniowo.",
     label: (item) => item.name,
@@ -1563,6 +1624,127 @@ function renderSalesEngine() {
     advance: (id) => advanceSalesStatus("content", id, ["idea", "recording", "editing", "ready", "published"]),
     edit: (id) => editSalesItem("contentForm", salesState.content, id, "Zapisz materiał"),
     remove: (id) => removeSalesItem("content", id, "Usunąć ten materiał?")
+  });
+}
+
+function dateBucket(value) {
+  if (!value) return "none";
+  const today = new Date().toISOString().slice(0, 10);
+  const inSevenDays = new Date(Date.now() + 7 * 86400000).toISOString().slice(0, 10);
+  if (value < today) return "overdue";
+  if (value === today) return "today";
+  if (value <= inSevenDays) return "next";
+  return "later";
+}
+
+function buildTodayDeskItems() {
+  return [
+    ...state.leads
+      .filter((item) => item.nextAction && !["won", "lost"].includes(item.stage))
+      .map((item) => ({
+        id: item.id,
+        source: "lead",
+        title: item.title,
+        subtitle: `Lead • ${item.stage}`,
+        nextAction: item.nextAction,
+        details: `${item.city || "—"} • ${item.contact || "—"}`,
+        notes: item.notes || "",
+        bucket: dateBucket(item.nextAction)
+      })),
+    ...salesState.outreach
+      .filter((item) => item.nextAction && !["won", "lost"].includes(item.status))
+      .map((item) => ({
+        id: item.id,
+        source: "outreach",
+        title: item.name,
+        subtitle: `Outreach • ${item.status}`,
+        nextAction: item.nextAction,
+        details: `${item.type} • ${item.channel}`,
+        notes: item.notes || "",
+        bucket: dateBucket(item.nextAction)
+      })),
+    ...salesState.bookings
+      .filter((item) => item.nextAction && !["booked", "lost"].includes(item.status))
+      .map((item) => ({
+        id: item.id,
+        source: "booking",
+        title: item.name,
+        subtitle: `Booking • ${item.status}`,
+        nextAction: item.nextAction,
+        details: `${item.venue || "—"} • ${item.contact || "—"}`,
+        notes: item.notes || "",
+        bucket: dateBucket(item.nextAction)
+      })),
+    ...salesState.referrals
+      .filter((item) => item.nextAction && item.status !== "done")
+      .map((item) => ({
+        id: item.id,
+        source: "referral",
+        title: item.name,
+        subtitle: `Referral • ${item.status}`,
+        nextAction: item.nextAction,
+        details: item.type,
+        notes: item.notes || "",
+        bucket: dateBucket(item.nextAction)
+      }))
+  ].sort((a, b) => a.nextAction.localeCompare(b.nextAction));
+}
+
+function openDeskItem(item) {
+  if (item.source === "lead") {
+    editLead(item.id);
+    return;
+  }
+  if (item.source === "outreach") {
+    editSalesItem("outreachForm", salesState.outreach, item.id, "Zapisz kontakt");
+    return;
+  }
+  if (item.source === "booking") {
+    editSalesItem("bookingForm", salesState.bookings, item.id, "Zapisz booking");
+    return;
+  }
+  if (item.source === "referral") {
+    editSalesItem("referralForm", salesState.referrals, item.id, "Zapisz referral");
+  }
+}
+
+function renderTodayDesk() {
+  const items = buildTodayDeskItems();
+  const overdue = items.filter((item) => item.bucket === "overdue");
+  const today = items.filter((item) => item.bucket === "today");
+  const next = items.filter((item) => item.bucket === "next");
+  const bookedReady = salesState.bookings.filter((item) =>
+    item.status === "booked" && item.contractStatus === "signed" && item.depositStatus === "paid"
+  ).length;
+
+  document.getElementById("deskOverdue").textContent = overdue.length;
+  document.getElementById("deskToday").textContent = today.length;
+  document.getElementById("deskNext").textContent = next.length;
+  document.getElementById("deskBookedReady").textContent = bookedReady;
+
+  const list = document.getElementById("todayDeskList");
+  list.innerHTML = "";
+
+  const queue = [...overdue, ...today, ...next].slice(0, 10);
+  if (!queue.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Brak ruchów do wykonania. To dobry moment, żeby dołożyć outreach albo content.";
+    list.appendChild(empty);
+    return;
+  }
+
+  queue.forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "desk-item";
+    card.innerHTML = `
+      <h4>${escapeHtml(item.title)}</h4>
+      <p>${escapeHtml(item.subtitle)} • ${escapeHtml(formatDate(item.nextAction))}<br>${escapeHtml(item.details || "—")}<br>${escapeHtml(item.notes || "—")}</p>
+      <div class="desk-actions"></div>
+    `;
+    const actions = card.querySelector(".desk-actions");
+    actions.appendChild(actionButton("Otwórz", () => openDeskItem(item), "good"));
+    list.appendChild(card);
   });
 }
 
