@@ -787,6 +787,63 @@ Più Mosso</p>
             </section>
           </div>
 
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Organizer CRM</h4>
+              <p class="helper">Tutaj trzymasz realnych ludzi po drugiej stronie: organizatorów, managerów, dyrektorów i osoby decyzyjne. Każdy kontakt ma swój kontekst, temperaturę i następny ruch.</p>
+              <form id="organizerForm" class="stack" style="margin-top:12px">
+                <label>Imię i nazwisko / kontakt główny
+                  <input name="name" required placeholder="Np. Anna Kowalska">
+                </label>
+                <label>Organizacja / miejsce
+                  <input name="organization" placeholder="Np. Centrum Kultury / Planner Atelier">
+                </label>
+                <label>Rola
+                  <input name="role" placeholder="Np. Dyrektorka / plannerka / manager">
+                </label>
+                <label>Temperatura relacji
+                  <select name="status">
+                    <option value="new">Nowy</option>
+                    <option value="warm">Ciepły</option>
+                    <option value="core">Core kontakt</option>
+                    <option value="vip">VIP / kluczowy</option>
+                    <option value="dormant">Uśpiony</option>
+                  </select>
+                </label>
+                <label>Miasto / region
+                  <input name="city" placeholder="Np. Poznań / Wielkopolska">
+                </label>
+                <label>Kontakt
+                  <input name="contact" placeholder="mail / telefon / IG">
+                </label>
+                <label>Potencjał
+                  <input name="valuePotential" placeholder="Np. 2 koncerty rocznie / premium śluby">
+                </label>
+                <label>Ostatni kontakt
+                  <input type="date" name="lastContact">
+                </label>
+                <label>Następny ruch
+                  <input type="date" name="nextAction">
+                </label>
+                <label>Preferencje / styl
+                  <textarea name="preferences" placeholder="Co lubi, jaki repertuar działa, jak najlepiej pisać"></textarea>
+                </label>
+                <label>Notatka
+                  <textarea name="notes" placeholder="Historia relacji, wspólne tematy, co obiecał"></textarea>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="submit">Dodaj organizatora</button>
+                  <button class="btn btn-secondary" type="button" id="seedOrganizers">Dodaj przykłady</button>
+                </div>
+              </form>
+            </section>
+
+            <section class="template-card">
+              <h4>Mapa relacji</h4>
+              <div class="sales-list" id="organizerList" style="margin-top:12px"></div>
+            </section>
+          </div>
+
           <div class="templates" style="margin-top:18px">
             <article class="template-card">
               <h4>Wejście do wedding plannera</h4>
@@ -1599,12 +1656,19 @@ function saveDataHubState() {
 function loadSalesState() {
   const saved = localStorage.getItem(SALES_KEY);
   if (!saved) {
-    return { outreach: [], bookings: [], referrals: [], content: [] };
+    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [] };
   }
   try {
-    return JSON.parse(saved);
+    const parsed = JSON.parse(saved);
+    return {
+      outreach: parsed.outreach || [],
+      bookings: parsed.bookings || [],
+      referrals: parsed.referrals || [],
+      content: parsed.content || [],
+      organizers: parsed.organizers || []
+    };
   } catch {
-    return { outreach: [], bookings: [], referrals: [], content: [] };
+    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [] };
   }
 }
 
@@ -1757,6 +1821,24 @@ function createContent(data) {
     status: data.status || "idea",
     publishDate: data.publishDate || "",
     cta: data.cta || "",
+    notes: data.notes || "",
+    createdAt: new Date().toISOString()
+  };
+}
+
+function createOrganizer(data) {
+  return {
+    id: crypto.randomUUID(),
+    name: data.name || "",
+    organization: data.organization || "",
+    role: data.role || "",
+    status: data.status || "new",
+    city: data.city || "",
+    contact: data.contact || "",
+    valuePotential: data.valuePotential || "",
+    lastContact: data.lastContact || "",
+    nextAction: data.nextAction || "",
+    preferences: data.preferences || "",
     notes: data.notes || "",
     createdAt: new Date().toISOString()
   };
@@ -1965,6 +2047,19 @@ function buildRiskRadarItems() {
         severity: "średnie",
         reason: "Ciepły partner został bez follow-upu.",
         action: "Wróć dziś z krótką wiadomością i podtrzymaj relację poleceniową."
+      });
+    }
+  });
+
+  salesState.organizers.forEach((organizer) => {
+    if (["core", "vip"].includes(organizer.status) && dateBucket(organizer.nextAction) === "overdue") {
+      items.push({
+        id: organizer.id,
+        source: "organizer",
+        title: organizer.name,
+        severity: "średnie",
+        reason: "Kluczowy organizator nie dostał follow-upu na czas.",
+        action: "Wróć dziś z krótką, osobistą wiadomością i podtrzymaj relację."
       });
     }
   });
@@ -2202,6 +2297,8 @@ function renderCommandCenter() {
         actions.appendChild(actionButton("Otwórz", () => editSalesItem("bookingForm", salesState.bookings, item.id, "Zapisz booking"), "good"));
       } else if (item.source === "partner") {
         actions.appendChild(actionButton("Otwórz", () => editPartner(item.id), "good"));
+      } else if (item.source === "organizer") {
+        actions.appendChild(actionButton("Otwórz", () => editSalesItem("organizerForm", salesState.organizers, item.id, "Zapisz organizatora"), "good"));
       }
       actions.appendChild(actionButton("Kopiuj ruch", async () => {
         try {
@@ -2277,7 +2374,8 @@ function renderSalesEngine() {
   const followupsToday = state.leads.filter((lead) => isToday(lead.nextAction)).length
     + salesState.outreach.filter((item) => isToday(item.nextAction)).length
     + salesState.bookings.filter((item) => isToday(item.nextAction)).length
-    + salesState.referrals.filter((item) => isToday(item.nextAction)).length;
+    + salesState.referrals.filter((item) => isToday(item.nextAction)).length
+    + salesState.organizers.filter((item) => isToday(item.nextAction)).length;
   const leadToBooking = leadCount ? Math.round((bookingCount / leadCount) * 100) : 0;
   const bookingWin = bookingCount ? Math.round((bookedCount / bookingCount) * 100) : 0;
 
@@ -2378,6 +2476,15 @@ function renderSalesEngine() {
     edit: (id) => editSalesItem("contentForm", salesState.content, id, "Zapisz materiał"),
     remove: (id) => removeSalesItem("content", id, "Usunąć ten materiał?")
   });
+
+  renderSalesList("organizerList", salesState.organizers, {
+    empty: "Brak organizatorów. Dodaj osoby, które realnie otwierają Ci drzwi do koncertów i poleceń.",
+    label: (item) => item.name,
+    summary: (item) => `Organizacja: ${escapeHtml(item.organization || "—")} • Rola: ${escapeHtml(item.role || "—")} • Status: ${escapeHtml(item.status)}<br>Miasto: ${escapeHtml(item.city || "—")} • Kontakt: ${escapeHtml(item.contact || "—")}<br>Potencjał: ${escapeHtml(item.valuePotential || "—")}<br>Ostatni kontakt: ${escapeHtml(formatDate(item.lastContact))} • Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Preferencje: ${escapeHtml(item.preferences || "—")}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    advance: (id) => advanceSalesStatus("organizers", id, ["new", "warm", "core", "vip", "dormant"]),
+    edit: (id) => editSalesItem("organizerForm", salesState.organizers, id, "Zapisz organizatora"),
+    remove: (id) => removeSalesItem("organizers", id, "Usunąć tego organizatora?")
+  });
 }
 
 function dateBucket(value) {
@@ -2440,6 +2547,19 @@ function buildTodayDeskItems() {
         details: item.type,
         notes: item.notes || "",
         bucket: dateBucket(item.nextAction)
+      })),
+    ...salesState.organizers
+      .filter((item) => item.nextAction && item.status !== "dormant")
+      .map((item) => ({
+        id: item.id,
+        source: "organizer",
+        title: item.name,
+        subtitle: `Organizer • ${item.status}`,
+        nextAction: item.nextAction,
+        details: `${item.organization || "—"} • ${item.role || "—"}`,
+        notes: item.preferences || item.notes || "",
+        bucket: dateBucket(item.nextAction),
+        priorityScore: ["vip", "core"].includes(item.status) ? 90 : item.status === "warm" ? 60 : 30
       }))
   ].sort((a, b) => {
     if ((b.priorityScore || 0) !== (a.priorityScore || 0)) {
@@ -2464,6 +2584,10 @@ function openDeskItem(item) {
   }
   if (item.source === "referral") {
     editSalesItem("referralForm", salesState.referrals, item.id, "Zapisz referral");
+    return;
+  }
+  if (item.source === "organizer") {
+    editSalesItem("organizerForm", salesState.organizers, item.id, "Zapisz organizatora");
   }
 }
 
@@ -3580,6 +3704,7 @@ handleSalesForm("outreachForm", "outreach", createOutreach, "Dodaj kontakt");
 handleSalesForm("bookingForm", "bookings", createBooking, "Dodaj booking");
 handleSalesForm("referralForm", "referrals", createReferral, "Dodaj referral");
 handleSalesForm("contentForm", "content", createContent, "Dodaj materiał");
+handleSalesForm("organizerForm", "organizers", createOrganizer, "Dodaj organizatora");
 
 document.getElementById("seedOutreach").addEventListener("click", () => {
   const today = new Date().toISOString().slice(0, 10);
@@ -3681,6 +3806,40 @@ document.getElementById("seedContent").addEventListener("click", () => {
       publishDate: today,
       cta: "Napisz po ofertę koncertową",
       notes: "Publikacja na IG + wysyłka do partnerów"
+    })
+  );
+  saveSalesState();
+  render();
+});
+
+document.getElementById("seedOrganizers").addEventListener("click", () => {
+  const today = new Date().toISOString().slice(0, 10);
+  salesState.organizers.unshift(
+    createOrganizer({
+      name: "Anna Kowalska",
+      organization: "Planner Atelier",
+      role: "Wedding planner",
+      status: "vip",
+      city: "Poznań",
+      contact: "anna@... / IG",
+      valuePotential: "3-5 premium ślubów rocznie",
+      lastContact: today,
+      nextAction: today,
+      preferences: "Lubi krótkie, konkretne wiadomości i piękne wideo zamiast długich PDF-ów.",
+      notes: "To kontakt, o który warto dbać regularnie, nawet bez natychmiastowej sprzedaży."
+    }),
+    createOrganizer({
+      name: "Marek Nowak",
+      organization: "Centrum Kultury Września",
+      role: "Koordynator programu",
+      status: "core",
+      city: "Września",
+      contact: "marek@...",
+      valuePotential: "Koncert instytucjonalny / sezon",
+      lastContact: today,
+      nextAction: today,
+      preferences: "Ceni gotowe propozycje programu i spokojną logistykę.",
+      notes: "Wrócić z nowym programem recitalowym na jesień."
     })
   );
   saveSalesState();
