@@ -1632,6 +1632,39 @@ function leadPriorityLabel(score) {
   return "low";
 }
 
+function suggestNextMoveForLead(lead) {
+  const pkg = suggestPackageForLead(lead);
+  const priority = leadPriorityLabel(scoreLead(lead));
+  const title = lead.title || "to wydarzenie";
+  const contact = lead.contact || "klienta";
+
+  if (lead.stage === "offer") {
+    return `Wracam z krótkim follow-upem w sprawie oferty dla ${title}. Jeśli termin jest nadal aktualny, rekomenduję wariant ${pkg} i mogę od razu domknąć kolejne ustalenia.`;
+  }
+
+  if (lead.stage === "followup") {
+    return `Dziś priorytet to powrót do ${contact} w sprawie ${title}. Dopytaj o decyzję i zaproponuj konkretny wariant ${pkg}.`;
+  }
+
+  if (priority === "hot") {
+    return `To lead wysokiej wartości. Skontaktuj się jeszcze dziś, zaproponuj wariant ${pkg} i przerzuć sprawę do Booking Tracker.`;
+  }
+
+  if (lead.source === "polecenie" || lead.source === "partner") {
+    return `To lead z polecenia. Odpowiedz szybko, podkreśl dostępność i od razu zasugeruj wariant ${pkg}.`;
+  }
+
+  if (lead.kind === "instytucja") {
+    return `Wyślij krótką ofertę koncertową dla ${title}, najlepiej z rekomendacją programu i wariantem ${pkg}.`;
+  }
+
+  if (lead.kind === "slub") {
+    return `Dopytaj o przebieg ceremonii, zaproponuj wariant ${pkg} i zarezerwuj termin wstępnie na czas decyzji.`;
+  }
+
+  return `Wykonaj pierwszy kontakt do ${title}, zbierz brakujące dane i ustaw sprawę pod wariant ${pkg}.`;
+}
+
 function renderPartners() {
   const all = partnerState.partners.length;
   const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
@@ -1816,7 +1849,7 @@ function buildTodayDeskItems() {
         subtitle: `Lead • ${item.stage}`,
         nextAction: item.nextAction,
         details: `${item.city || "—"} • ${item.contact || "—"}`,
-        notes: item.notes || "",
+        notes: suggestNextMoveForLead(item),
         bucket: dateBucket(item.nextAction),
         priorityScore: scoreLead(item)
       })),
@@ -1918,6 +1951,11 @@ function renderTodayDesk() {
     `;
     const actions = card.querySelector(".desk-actions");
     actions.appendChild(actionButton("Otwórz", () => openDeskItem(item), "good"));
+    actions.appendChild(actionButton("Kopiuj ruch", async () => {
+      try {
+        await navigator.clipboard.writeText(item.notes || "");
+      } catch {}
+    }));
     list.appendChild(card);
   });
 }
@@ -2328,6 +2366,7 @@ function renderBoard() {
           <span>Sugerowany pakiet: ${escapeHtml(suggestPackageForLead(lead))}</span>
           <span>Priorytet: ${escapeHtml(priority)} • score ${score}</span>
           <span>Następny ruch: ${escapeHtml(formatDate(lead.nextAction))}</span>
+          <span>Rekomendacja: ${escapeHtml(suggestNextMoveForLead(lead))}</span>
           <span>Kontakt: ${escapeHtml(lead.contact || "—")}</span>
           <span>Notatki: ${escapeHtml(lead.notes || "—")}</span>
         </div>
@@ -2346,6 +2385,11 @@ function renderBoard() {
       if (!["lost"].includes(lead.stage)) {
         actions.appendChild(actionButton("Do bookingu", () => convertLeadToBooking(lead.id)));
       }
+      actions.appendChild(actionButton("Kopiuj ruch", async () => {
+        try {
+          await navigator.clipboard.writeText(suggestNextMoveForLead(lead));
+        } catch {}
+      }));
       actions.appendChild(actionButton("Edytuj", () => editLead(lead.id)));
       actions.appendChild(actionButton("Usuń", () => removeLead(lead.id), "bad"));
 
