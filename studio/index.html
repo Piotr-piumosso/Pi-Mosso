@@ -875,6 +875,7 @@ Più Mosso</p>
               </div>
               <div class="btn-row" style="margin-top:14px">
                 <button class="btn btn-primary" type="button" id="importDataHubButton">Importuj CSV</button>
+                <button class="btn btn-primary" type="button" id="refreshDataHubSyncButton">Odśwież snapshot</button>
                 <button class="btn btn-secondary" type="button" id="exportBlacklistButton">Eksport blocklisty</button>
                 <button class="btn btn-secondary" type="button" id="exportLeadMachineBlacklistButton">Eksport do lead-machine</button>
                 <button class="btn btn-secondary" type="button" id="clearDataHubButton">Wyczyść dane hubu</button>
@@ -890,6 +891,18 @@ Più Mosso</p>
               <label style="margin-top:14px">Szukaj po nazwie, mailu, regionie, kategorii
                 <input id="hubSearch" placeholder="Np. centrum kultury, Poznań, planner">
               </label>
+
+              <div class="sync-box">
+                <h4>Auto Sync</h4>
+                <p class="helper">Studio może samo pobierać snapshot danych z pliku `studio/data/studio-sync.json`. Dzięki temu Twoja baza odświeża się przy wejściu do panelu i cyklicznie podczas pracy.</p>
+                <div class="partner-metrics" style="margin-top:12px">
+                  <div class="metric"><strong id="hubAutoSyncStatus">offline</strong><span>Status</span></div>
+                  <div class="metric"><strong id="hubAutoSyncGenerated">—</strong><span>Snapshot</span></div>
+                  <div class="metric"><strong id="hubAutoSyncFetched">—</strong><span>Ostatni import</span></div>
+                  <div class="metric"><strong id="hubAutoSyncRecords">0</strong><span>Rekordy z syncu</span></div>
+                </div>
+                <p class="helper" id="hubAutoSyncNote">Snapshot nie był jeszcze pobrany.</p>
+              </div>
 
               <div class="sync-box">
                 <h4>Blocklist Sync</h4>
@@ -983,6 +996,36 @@ Più Mosso</p>
             <section class="template-card">
               <h4>Kolejka działań</h4>
               <div class="sales-list" id="todayDeskList" style="margin-top:12px"></div>
+            </section>
+          </div>
+
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Pre-Event Machine</h4>
+              <p class="helper">Tutaj wpadają bookingi zbliżające się do realizacji. Panel wyłapuje je automatycznie i pokazuje, co jeszcze trzeba dopiąć przed dniem wydarzenia.</p>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="eventWeekCount">0</strong>
+                  <span>W ciągu 7 dni</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="eventMissingContract">0</strong>
+                  <span>Brak podpisu</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="eventMissingDeposit">0</strong>
+                  <span>Brak zaliczki</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="eventMissingMusic">0</strong>
+                  <span>Repertuar niegotowy</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Brief przed wydarzeniem</h4>
+              <div class="sales-list" id="preEventList" style="margin-top:12px"></div>
             </section>
           </div>
 
@@ -1336,6 +1379,8 @@ const PARTNER_KEY = "pm_partner_machine_v1";
 const CALENDAR_KEY = "pm_calendar_machine_v1";
 const DATAHUB_KEY = "pm_lead_data_hub_v1";
 const SALES_KEY = "pm_sales_engine_v1";
+const STUDIO_SYNC_URL = "./data/studio-sync.json";
+const AUTO_SYNC_INTERVAL_MS = 5 * 60 * 1000;
 const STAGES = [
   { id: "new", name: "Nowe", subtitle: "świeże kontakty" },
   { id: "contacted", name: "Kontakt", subtitle: "pierwsza wiadomość wysłana" },
@@ -1350,6 +1395,26 @@ const partnerState = loadPartnerState();
 const calendarState = loadCalendarState();
 const dataHubState = loadDataHubState();
 const salesState = loadSalesState();
+
+function dataHubDefaults() {
+  return {
+    baza: [],
+    nowe: [],
+    engine: [],
+    sent: [],
+    blocked: { names: [], emails: [], websites: [] },
+    sync: {
+      status: "manual",
+      generatedAt: "",
+      lastFetchedAt: "",
+      lastTriedAt: "",
+      totalRecords: 0,
+      source: STUDIO_SYNC_URL,
+      error: "",
+      sourceStats: {}
+    }
+  };
+}
 
 function loadState() {
   const saved = localStorage.getItem(STORAGE_KEY);
@@ -1402,24 +1467,25 @@ function saveCalendarState() {
 function loadDataHubState() {
   const saved = localStorage.getItem(DATAHUB_KEY);
   if (!saved) {
-    return {
-      baza: [],
-      nowe: [],
-      engine: [],
-      sent: [],
-      blocked: { names: [], emails: [], websites: [] }
-    };
+    return dataHubDefaults();
   }
   try {
-    return JSON.parse(saved);
-  } catch {
+    const parsed = JSON.parse(saved);
+    const defaults = dataHubDefaults();
     return {
-      baza: [],
-      nowe: [],
-      engine: [],
-      sent: [],
-      blocked: { names: [], emails: [], websites: [] }
+      ...defaults,
+      ...parsed,
+      blocked: {
+        ...defaults.blocked,
+        ...(parsed.blocked || {})
+      },
+      sync: {
+        ...defaults.sync,
+        ...(parsed.sync || {})
+      }
     };
+  } catch {
+    return dataHubDefaults();
   }
 }
 
@@ -1473,6 +1539,23 @@ function formatDate(value) {
     return value;
   }
   return date.toLocaleDateString("pl-PL");
+}
+
+function formatDateTime(value) {
+  if (!value) {
+    return "—";
+  }
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+  return date.toLocaleString("pl-PL", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
 }
 
 function isToday(value) {
@@ -1813,6 +1896,7 @@ function renderSalesEngine() {
   document.getElementById("kpiMomentumText").textContent = momentumText;
 
   renderTodayDesk();
+  renderPreEventDesk();
 
   renderSalesList("outreachList", salesState.outreach, {
     empty: "Brak kontaktów outreach. Zacznij od 10-20 instytucji i partnerów tygodniowo.",
@@ -1978,6 +2062,82 @@ function renderTodayDesk() {
     actions.appendChild(actionButton("Kopiuj ruch", async () => {
       try {
         await navigator.clipboard.writeText(item.notes || "");
+      } catch {}
+    }));
+    list.appendChild(card);
+  });
+}
+
+function daysUntil(dateValue) {
+  if (!dateValue) return Infinity;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const target = new Date(dateValue);
+  if (Number.isNaN(target.getTime())) return Infinity;
+  target.setHours(0, 0, 0, 0);
+  return Math.round((target - today) / 86400000);
+}
+
+function buildPreEventItems() {
+  return salesState.bookings
+    .filter((item) => item.status === "booked" && item.eventDate)
+    .map((item) => ({ ...item, daysLeft: daysUntil(item.eventDate) }))
+    .filter((item) => item.daysLeft >= 0 && item.daysLeft <= 7)
+    .sort((a, b) => a.daysLeft - b.daysLeft);
+}
+
+function renderPreEventDesk() {
+  const items = buildPreEventItems();
+  const missingContract = items.filter((item) => item.contractStatus !== "signed").length;
+  const missingDeposit = items.filter((item) => item.depositStatus !== "paid").length;
+  const missingMusic = items.filter((item) => item.musicStatus !== "ready").length;
+
+  document.getElementById("eventWeekCount").textContent = items.length;
+  document.getElementById("eventMissingContract").textContent = missingContract;
+  document.getElementById("eventMissingDeposit").textContent = missingDeposit;
+  document.getElementById("eventMissingMusic").textContent = missingMusic;
+
+  const list = document.getElementById("preEventList");
+  list.innerHTML = "";
+
+  if (!items.length) {
+    const empty = document.createElement("p");
+    empty.className = "helper";
+    empty.textContent = "Brak bookingów wymagających briefu w ciągu 7 dni.";
+    list.appendChild(empty);
+    return;
+  }
+
+  items.forEach((item) => {
+    const checks = [
+      item.contractStatus === "signed" ? "umowa OK" : "podpisz umowę",
+      item.depositStatus === "paid" ? "zaliczka OK" : "domknij zaliczkę",
+      item.musicStatus === "ready" ? "repertuar OK" : "ustal repertuar",
+      item.contact ? "kontakt OK" : "uzupełnij kontakt"
+    ];
+
+    const card = document.createElement("article");
+    card.className = "desk-item";
+    card.innerHTML = `
+      <h4>${escapeHtml(item.name)}</h4>
+      <p>${escapeHtml(item.venue || "—")} • za ${item.daysLeft} dni<br>${escapeHtml(checks.join(" • "))}<br>${escapeHtml(item.notes || "—")}</p>
+      <div class="desk-actions"></div>
+    `;
+    const actions = card.querySelector(".desk-actions");
+    actions.appendChild(actionButton("Otwórz booking", () => editSalesItem("bookingForm", salesState.bookings, item.id, "Zapisz booking"), "good"));
+    actions.appendChild(actionButton("Kopiuj brief", async () => {
+      const brief = [
+        `${item.name}`,
+        `Data: ${formatDate(item.eventDate)}`,
+        `Miejsce: ${item.venue || "—"}`,
+        `Kontakt: ${item.contact || "—"}`,
+        `Umowa: ${item.contractStatus}`,
+        `Zaliczka: ${item.depositStatus}`,
+        `Repertuar: ${item.musicStatus}`,
+        `Notatki: ${item.notes || "—"}`
+      ].join("\n");
+      try {
+        await navigator.clipboard.writeText(brief);
       } catch {}
     }));
     list.appendChild(card);
@@ -2299,6 +2459,7 @@ function renderDataHub() {
   document.getElementById("syncPreview").textContent = syncDomains.length
     ? syncDomains.join("\n")
     : "Brak danych do synchronizacji.";
+  renderDataHubSyncStatus();
 
   const query = normalizeKey(document.getElementById("hubSearch")?.value || "");
   const list = document.getElementById("dataHubList");
@@ -2355,6 +2516,85 @@ function blockInstitution(record) {
   dataHubState.blocked.websites = uniq([...dataHubState.blocked.websites, website]);
   saveDataHubState();
   render();
+}
+
+function renderDataHubSyncStatus() {
+  const sync = dataHubState.sync || dataHubDefaults().sync;
+  document.getElementById("hubAutoSyncStatus").textContent = sync.status || "manual";
+  document.getElementById("hubAutoSyncGenerated").textContent = formatDateTime(sync.generatedAt);
+  document.getElementById("hubAutoSyncFetched").textContent = formatDateTime(sync.lastFetchedAt);
+  document.getElementById("hubAutoSyncRecords").textContent = String(sync.totalRecords || 0);
+
+  const stats = sync.sourceStats || {};
+  const statsLine = [
+    stats.baza ? `baza ${stats.baza}` : "",
+    stats.nowe ? `nowe ${stats.nowe}` : "",
+    stats.engine ? `engine ${stats.engine}` : "",
+    stats.sent ? `wysyłki ${stats.sent}` : ""
+  ].filter(Boolean).join(" • ");
+
+  const note = sync.error
+    ? `Auto Sync nie doszedł: ${sync.error}`
+    : sync.lastFetchedAt
+      ? `Snapshot pobrany z ${sync.source || STUDIO_SYNC_URL}. ${statsLine || "Brak statystyk źródeł."}`
+      : "Snapshot nie był jeszcze pobrany.";
+  document.getElementById("hubAutoSyncNote").textContent = note;
+}
+
+function readSyncPayload(snapshot) {
+  if (!snapshot || typeof snapshot !== "object") {
+    throw new Error("Plik snapshotu jest pusty albo uszkodzony.");
+  }
+  const payload = snapshot.dataHub || snapshot;
+  return {
+    baza: Array.isArray(payload.baza) ? payload.baza : [],
+    nowe: Array.isArray(payload.nowe) ? payload.nowe : [],
+    engine: Array.isArray(payload.engine) ? payload.engine : [],
+    sent: Array.isArray(payload.sent) ? payload.sent : [],
+    generatedAt: snapshot.generatedAt || payload.generatedAt || "",
+    sourceStats: snapshot.sourceStats || payload.sourceStats || {}
+  };
+}
+
+async function refreshStudioSync(options = {}) {
+  const { silent = false } = options;
+  try {
+    const response = await fetch(`${STUDIO_SYNC_URL}?ts=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    const snapshot = readSyncPayload(await response.json());
+    dataHubState.baza = snapshot.baza;
+    dataHubState.nowe = snapshot.nowe;
+    dataHubState.engine = snapshot.engine;
+    dataHubState.sent = snapshot.sent;
+    dataHubState.sync = {
+      ...(dataHubState.sync || {}),
+      status: "online",
+      generatedAt: snapshot.generatedAt || "",
+      lastFetchedAt: new Date().toISOString(),
+      lastTriedAt: new Date().toISOString(),
+      totalRecords: snapshot.baza.length + snapshot.nowe.length + snapshot.engine.length,
+      source: STUDIO_SYNC_URL,
+      error: "",
+      sourceStats: snapshot.sourceStats || {}
+    };
+    saveDataHubState();
+    render();
+  } catch (error) {
+    dataHubState.sync = {
+      ...(dataHubState.sync || {}),
+      status: "offline",
+      lastTriedAt: new Date().toISOString(),
+      source: STUDIO_SYNC_URL,
+      error: error.message || "Nie udało się pobrać snapshotu."
+    };
+    saveDataHubState();
+    renderDataHubSyncStatus();
+    if (!silent) {
+      alert("Nie udało się pobrać snapshotu Studio.");
+    }
+  }
 }
 
 function renderBoard() {
@@ -2824,6 +3064,10 @@ document.getElementById("importDataHubButton").addEventListener("click", async (
   render();
 });
 
+document.getElementById("refreshDataHubSyncButton").addEventListener("click", async () => {
+  await refreshStudioSync();
+});
+
 document.getElementById("exportBlacklistButton").addEventListener("click", () => {
   const lines = [
     ...dataHubState.blocked.names.map((item) => `name:${item}`),
@@ -3007,6 +3251,7 @@ document.getElementById("unlockButton").addEventListener("click", () => {
     return;
   }
   document.getElementById("lockScreen").classList.add("hidden");
+  refreshStudioSync({ silent: true });
 });
 
 document.getElementById("pinInput").addEventListener("keydown", (event) => {
@@ -3016,6 +3261,13 @@ document.getElementById("pinInput").addEventListener("keydown", (event) => {
 });
 
 render();
+refreshStudioSync({ silent: true });
+setInterval(() => {
+  refreshStudioSync({ silent: true });
+}, AUTO_SYNC_INTERVAL_MS);
+window.addEventListener("focus", () => {
+  refreshStudioSync({ silent: true });
+});
 </script>
 </body>
 </html>
