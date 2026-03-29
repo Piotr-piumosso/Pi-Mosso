@@ -442,6 +442,26 @@ input:focus,select:focus,textarea:focus{
   flex-wrap:wrap;
   gap:8px;
 }
+.sync-box{
+  margin-top:18px;
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.sync-preview{
+  margin-top:12px;
+  max-height:180px;
+  overflow:auto;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(8,6,5,.36);
+  color:var(--muted-strong);
+  font-size:.88rem;
+  line-height:1.6;
+  white-space:pre-wrap;
+}
 .import-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -827,6 +847,7 @@ Più Mosso</p>
               <div class="btn-row" style="margin-top:14px">
                 <button class="btn btn-primary" type="button" id="importDataHubButton">Importuj CSV</button>
                 <button class="btn btn-secondary" type="button" id="exportBlacklistButton">Eksport blocklisty</button>
+                <button class="btn btn-secondary" type="button" id="exportLeadMachineBlacklistButton">Eksport do lead-machine</button>
                 <button class="btn btn-secondary" type="button" id="clearDataHubButton">Wyczyść dane hubu</button>
               </div>
 
@@ -840,6 +861,18 @@ Più Mosso</p>
               <label style="margin-top:14px">Szukaj po nazwie, mailu, regionie, kategorii
                 <input id="hubSearch" placeholder="Np. centrum kultury, Poznań, planner">
               </label>
+
+              <div class="sync-box">
+                <h4>Blocklist Sync</h4>
+                <p class="helper">Ten eksport przygotowuje czyste domeny i adresy do podmiany w `lead-machine/config/blacklist.txt`. System bierze domeny z blokowanych stron WWW i domeny mailowe z blokowanych adresów.</p>
+                <div class="partner-metrics" style="margin-top:12px">
+                  <div class="metric"><strong id="hubSyncDomains">0</strong><span>Domeny do syncu</span></div>
+                  <div class="metric"><strong id="hubSyncEmails">0</strong><span>Zablokowane maile</span></div>
+                  <div class="metric"><strong id="hubSyncWebsites">0</strong><span>Zablokowane WWW</span></div>
+                  <div class="metric"><strong id="hubSyncNames">0</strong><span>Zablokowane nazwy</span></div>
+                </div>
+                <div class="sync-preview" id="syncPreview">Brak danych do synchronizacji.</div>
+              </div>
             </section>
 
             <section class="template-card">
@@ -1761,6 +1794,31 @@ function uniq(values) {
   return [...new Set(values.filter(Boolean))];
 }
 
+function normalizeDomain(value) {
+  const raw = String(value || "").trim().toLowerCase();
+  if (!raw) return "";
+  const candidate = raw.includes("://") ? raw : `https://${raw}`;
+  try {
+    const url = new URL(candidate);
+    return url.hostname.replace(/^www\./, "");
+  } catch {
+    return raw
+      .replace(/^https?:\/\//, "")
+      .replace(/^www\./, "")
+      .split("/")[0]
+      .trim();
+  }
+}
+
+function buildLeadMachineBlacklist() {
+  const websiteDomains = dataHubState.blocked.websites.map((item) => normalizeDomain(item));
+  const emailDomains = dataHubState.blocked.emails.map((item) => {
+    const [, domain = ""] = String(item).split("@");
+    return normalizeDomain(domain);
+  });
+  return uniq([...websiteDomains, ...emailDomains]).sort();
+}
+
 function isBlockedRecord(record) {
   const name = normalizeKey(record.name);
   const email = normalizeKey(record.email);
@@ -1804,6 +1862,14 @@ function renderDataHub() {
     ...dataHubState.blocked.emails,
     ...dataHubState.blocked.websites
   ]).length;
+  const syncDomains = buildLeadMachineBlacklist();
+  document.getElementById("hubSyncDomains").textContent = syncDomains.length;
+  document.getElementById("hubSyncEmails").textContent = dataHubState.blocked.emails.filter(Boolean).length;
+  document.getElementById("hubSyncWebsites").textContent = dataHubState.blocked.websites.filter(Boolean).length;
+  document.getElementById("hubSyncNames").textContent = dataHubState.blocked.names.filter(Boolean).length;
+  document.getElementById("syncPreview").textContent = syncDomains.length
+    ? syncDomains.join("\n")
+    : "Brak danych do synchronizacji.";
 
   const query = normalizeKey(document.getElementById("hubSearch")?.value || "");
   const list = document.getElementById("dataHubList");
@@ -2330,6 +2396,17 @@ document.getElementById("exportBlacklistButton").addEventListener("click", () =>
   const link = document.createElement("a");
   link.href = url;
   link.download = "studio-blacklist.txt";
+  link.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("exportLeadMachineBlacklistButton").addEventListener("click", () => {
+  const lines = buildLeadMachineBlacklist();
+  const blob = new Blob([lines.join("\n")], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "lead-machine-blacklist.txt";
   link.click();
   URL.revokeObjectURL(url);
 });
