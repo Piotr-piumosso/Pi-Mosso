@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex, nofollow, noarchive" />
 <title>Più Mosso — Studio OS</title>
 <style>
+html{scroll-behavior:smooth}
 :root{
   --bg:#0b0908;
   --bg-2:#15110f;
@@ -79,6 +80,96 @@ h1{
   display:grid;
   grid-template-columns:360px 1fr;
   gap:18px;
+}
+.quick-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:0 0 18px;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:18px;
+  background:rgba(255,255,255,.025);
+  position:sticky;
+  top:10px;
+  z-index:5;
+  backdrop-filter:blur(10px);
+}
+.quick-nav a{
+  text-decoration:none;
+}
+.quick-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.09);
+  color:var(--text);
+  background:rgba(255,255,255,.03);
+  font-size:.84rem;
+}
+.guide-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr .9fr;
+  gap:12px;
+  margin-bottom:18px;
+}
+.guide-card{
+  padding:18px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.07);
+  background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
+}
+.guide-card h3{
+  font-size:1.02rem;
+  margin-bottom:10px;
+}
+.guide-card p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:.92rem;
+}
+.guide-list{
+  display:grid;
+  gap:10px;
+  margin-top:12px;
+}
+.guide-step{
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+}
+.guide-step strong{
+  display:block;
+  margin-bottom:4px;
+}
+.guide-step span{
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.55;
+}
+.mindset-grid{
+  display:grid;
+  gap:10px;
+  margin-top:12px;
+}
+.mindset-item{
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.02);
+}
+.mindset-item strong{
+  display:block;
+  font-size:.9rem;
+  margin-bottom:4px;
+}
+.mindset-item span{
+  color:var(--muted);
+  font-size:.86rem;
+  line-height:1.5;
 }
 .panel{
   background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)), var(--panel);
@@ -559,6 +650,7 @@ input:focus,select:focus,textarea:focus{
 .hidden{display:none}
 @media (max-width:1180px){
   .grid{grid-template-columns:1fr}
+  .guide-grid{grid-template-columns:1fr}
   .partner-grid{grid-template-columns:1fr}
   .calendar-shell{grid-template-columns:1fr}
   .datahub-grid{grid-template-columns:1fr}
@@ -570,6 +662,7 @@ input:focus,select:focus,textarea:focus{
 }
 @media (max-width:640px){
   h1{font-size:2.4rem}
+  .quick-nav{position:static}
   .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip,.kpi-grid,.kpi-notes{grid-template-columns:1fr}
 }
 </style>
@@ -589,8 +682,51 @@ input:focus,select:focus,textarea:focus{
       </div>
     </div>
 
+    <div class="quick-nav">
+      <a href="#pipelineSection" class="quick-link">Pipeline</a>
+      <a href="#partnerSection" class="quick-link">Partnerzy</a>
+      <a href="#organizerSection" class="quick-link">Organizatorzy</a>
+      <a href="#calendarSection" class="quick-link">Kalendarz</a>
+      <a href="#datahubSection" class="quick-link">Baza i sync</a>
+      <a href="#salesSection" class="quick-link">Command Center</a>
+    </div>
+
+    <div class="guide-grid">
+      <section class="guide-card">
+        <div class="eyebrow">Podręcznik</div>
+        <h3>Instrukcja dla człowieka, nie dla CRM-owca</h3>
+        <p>Nie musisz ogarniać całego panelu naraz. W praktyce masz robić tylko kilka rzeczy: wrzucać nowe szanse, wracać do ciepłych rozmów, domykać bookingi i pilnować relacji z ludźmi, którzy otwierają Ci drzwi.</p>
+        <div class="guide-list">
+          <div class="guide-step"><strong>1. Lead to szansa</strong><span>Każde zapytanie albo ciekawy kontakt wrzucasz do pipeline.</span></div>
+          <div class="guide-step"><strong>2. Booking to pieniądz</strong><span>Kiedy rozmowa robi się realna, przerzucasz ją do Booking Tracker.</span></div>
+          <div class="guide-step"><strong>3. Organizer to dźwignia</strong><span>Kluczowe osoby wpisujesz do Organizer CRM, bo one robią kolejne koncerty.</span></div>
+          <div class="guide-step"><strong>4. Reminder pilnuje chaosu</strong><span>Każdego dnia patrzysz, co jest overdue, co wymaga zaliczki i co trzeba dopiąć.</span></div>
+        </div>
+      </section>
+
+      <section class="guide-card">
+        <div class="eyebrow">Jak Myśleć</div>
+        <h3>Model intelektualny</h3>
+        <div class="mindset-grid">
+          <div class="mindset-item"><strong>Nie sprzedajesz muzyki. Sprzedajesz spokój, klasę i efekt.</strong><span>Klient płaci za doświadczenie i pewność, nie za same nuty.</span></div>
+          <div class="mindset-item"><strong>Nie każdy lead jest równy.</strong><span>Najpierw hot leady, potem bookingi bez zaliczki, potem partnerzy i organizerzy.</span></div>
+          <div class="mindset-item"><strong>Największe pieniądze leżą w follow-upie.</strong><span>Większość rynku odpada, bo nie wraca na czas.</span></div>
+        </div>
+      </section>
+
+      <section class="guide-card">
+        <div class="eyebrow">Tryb Dnia</div>
+        <h3>Co robić codziennie</h3>
+        <div class="mindset-grid">
+          <div class="mindset-item"><strong>Rano</strong><span>Otwórz `Command Center` i zrób 3 najważniejsze ruchy.</span></div>
+          <div class="mindset-item"><strong>Po południu</strong><span>Domknij jedną rzecz z `Cash Guard` albo `Pre-Event Machine`.</span></div>
+          <div class="mindset-item"><strong>Wieczorem</strong><span>Dodaj 1 nowego organizatora albo partnera, żeby system rósł.</span></div>
+        </div>
+      </section>
+    </div>
+
     <div class="grid">
-      <section class="panel">
+      <section class="panel" id="pipelineSection">
         <div class="panel-head">
           <h2>Nowy lead</h2>
         </div>
@@ -721,7 +857,7 @@ Più Mosso</p>
             </article>
           </div>
 
-          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="panel-head" id="partnerSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
             <h2>Partner Machine</h2>
           </div>
           <p class="helper">Ta maszyna ma budować przewagę, której prawie nikt nie domyka dobrze: wedding plannerzy, sale, fotografowie, filmowcy i instytucje mają sprzedawać Più Mosso dalej.</p>
@@ -787,7 +923,7 @@ Più Mosso</p>
             </section>
           </div>
 
-          <div class="desk-grid" style="margin-top:18px">
+          <div class="desk-grid" id="organizerSection" style="margin-top:18px">
             <section class="template-card">
               <h4>Organizer CRM</h4>
               <p class="helper">Tutaj trzymasz realnych ludzi po drugiej stronie: organizatorów, managerów, dyrektorów i osoby decyzyjne. Każdy kontakt ma swój kontekst, temperaturę i następny ruch.</p>
@@ -876,7 +1012,7 @@ Più Mosso</p>
             </article>
           </div>
 
-          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="panel-head" id="calendarSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
             <h2>Calendar Machine</h2>
           </div>
           <p class="helper">Najprostsza wersja pod iPhone: eksportujesz albo udostępniasz kalendarz Apple jako plik `.ics`, a tutaj wrzucasz go do panelu. Studio pokaże wtedy najbliższe zajęte terminy i szybki podgląd obłożenia.</p>
@@ -908,7 +1044,7 @@ Più Mosso</p>
             </section>
           </div>
 
-          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="panel-head" id="datahubSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
             <h2>Lead Data Hub</h2>
           </div>
           <p class="helper">Tutaj podepniesz eksporty z `lead-machine` i `piumosso-engine`, zobaczysz jak rośnie baza i zaznaczysz instytucje, których nie chcesz już widzieć. Blocklista zapisuje się lokalnie i przy kolejnych importach te rekordy będą automatycznie filtrowane.</p>
@@ -980,7 +1116,7 @@ Più Mosso</p>
             </section>
           </div>
 
-          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="panel-head" id="salesSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
             <h2>Sales Engine</h2>
           </div>
           <p class="helper">Tutaj domykasz pieniądz. Cztery maszyny pracują razem: outreach dowozi nowe szanse, booking zamyka sprzedaż, referral buduje polecenia, a content wzmacnia zaufanie i ruch na stronę.</p>
