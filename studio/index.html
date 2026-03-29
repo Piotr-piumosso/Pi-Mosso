@@ -1593,6 +1593,45 @@ function suggestPackageForLead(lead) {
   return "Signature";
 }
 
+function scoreLead(lead) {
+  let score = 0;
+  const kind = String(lead.kind || "").toLowerCase();
+  const source = String(lead.source || "").toLowerCase();
+  const budget = String(lead.budget || "").toLowerCase();
+  const packageHint = suggestPackageForLead(lead);
+  const nextActionBucket = dateBucket(lead.nextAction);
+
+  if (packageHint === "Premium") score += 35;
+  if (packageHint === "Signature") score += 22;
+  if (packageHint === "Essential") score += 10;
+
+  if (kind === "slub") score += 18;
+  if (kind === "instytucja") score += 22;
+  if (kind === "koncert") score += 14;
+
+  if (["polecenie", "partner"].includes(source)) score += 18;
+  if (source === "strona") score += 10;
+
+  if (budget.includes("premium")) score += 18;
+  if (/\b([4-9]\d{3}|\d{2,}\s?000)\b/.test(budget)) score += 12;
+
+  if (nextActionBucket === "overdue") score += 20;
+  if (nextActionBucket === "today") score += 16;
+  if (nextActionBucket === "next") score += 8;
+
+  if (lead.eventDate) score += 8;
+  if (lead.contact) score += 6;
+
+  return score;
+}
+
+function leadPriorityLabel(score) {
+  if (score >= 85) return "hot";
+  if (score >= 55) return "high";
+  if (score >= 30) return "medium";
+  return "low";
+}
+
 function renderPartners() {
   const all = partnerState.partners.length;
   const warm = partnerState.partners.filter((partner) => ["contacted", "warm"].includes(partner.status)).length;
@@ -1650,6 +1689,7 @@ function renderSalesEngine() {
   const referralActive = salesState.referrals.filter((item) => ["warm", "active", "done"].includes(item.status)).length;
   const contentReady = salesState.content.filter((item) => ["recording", "editing", "ready"].includes(item.status)).length;
   const premiumHints = state.leads.filter((lead) => suggestPackageForLead(lead) === "Premium").length;
+  const hotLeads = state.leads.filter((lead) => leadPriorityLabel(scoreLead(lead)) === "hot").length;
   const leadCount = state.leads.length;
   const bookingCount = salesState.bookings.length;
   const bookedCount = salesState.bookings.filter((item) => item.status === "booked").length;
@@ -1708,7 +1748,7 @@ function renderSalesEngine() {
   document.getElementById("kpiLeadToBooking").textContent = `${leadToBooking}%`;
   document.getElementById("kpiBookingWin").textContent = `${bookingWin}%`;
   document.getElementById("kpiFollowupsToday").textContent = followupsToday;
-  document.getElementById("kpiBookedValue").textContent = bookedCount;
+  document.getElementById("kpiBookedValue").textContent = `${bookedCount} / hot ${hotLeads}`;
   document.getElementById("kpiBottleneck").textContent = bottleneck;
   document.getElementById("kpiBottleneckText").textContent = bottleneckText;
   document.getElementById("kpiPriority").textContent = priority;
@@ -1777,7 +1817,8 @@ function buildTodayDeskItems() {
         nextAction: item.nextAction,
         details: `${item.city || "—"} • ${item.contact || "—"}`,
         notes: item.notes || "",
-        bucket: dateBucket(item.nextAction)
+        bucket: dateBucket(item.nextAction),
+        priorityScore: scoreLead(item)
       })),
     ...salesState.outreach
       .filter((item) => item.nextAction && !["won", "lost"].includes(item.status))
@@ -1815,7 +1856,12 @@ function buildTodayDeskItems() {
         notes: item.notes || "",
         bucket: dateBucket(item.nextAction)
       }))
-  ].sort((a, b) => a.nextAction.localeCompare(b.nextAction));
+  ].sort((a, b) => {
+    if ((b.priorityScore || 0) !== (a.priorityScore || 0)) {
+      return (b.priorityScore || 0) - (a.priorityScore || 0);
+    }
+    return a.nextAction.localeCompare(b.nextAction);
+  });
 }
 
 function openDeskItem(item) {
@@ -1867,7 +1913,7 @@ function renderTodayDesk() {
     card.className = "desk-item";
     card.innerHTML = `
       <h4>${escapeHtml(item.title)}</h4>
-      <p>${escapeHtml(item.subtitle)} • ${escapeHtml(formatDate(item.nextAction))}<br>${escapeHtml(item.details || "—")}<br>${escapeHtml(item.notes || "—")}</p>
+      <p>${escapeHtml(item.subtitle)} • ${escapeHtml(formatDate(item.nextAction))}${item.priorityScore ? ` • score ${item.priorityScore}` : ""}<br>${escapeHtml(item.details || "—")}<br>${escapeHtml(item.notes || "—")}</p>
       <div class="desk-actions"></div>
     `;
     const actions = card.querySelector(".desk-actions");
@@ -2268,6 +2314,8 @@ function renderBoard() {
     }
 
     leads.forEach((lead) => {
+      const score = scoreLead(lead);
+      const priority = leadPriorityLabel(score);
       const card = document.createElement("article");
       card.className = "lead-card";
       card.innerHTML = `
@@ -2278,6 +2326,7 @@ function renderBoard() {
           <span>Źródło: ${escapeHtml(lead.source)}</span>
           <span>Termin: ${escapeHtml(formatDate(lead.eventDate))}</span>
           <span>Sugerowany pakiet: ${escapeHtml(suggestPackageForLead(lead))}</span>
+          <span>Priorytet: ${escapeHtml(priority)} • score ${score}</span>
           <span>Następny ruch: ${escapeHtml(formatDate(lead.nextAction))}</span>
           <span>Kontakt: ${escapeHtml(lead.contact || "—")}</span>
           <span>Notatki: ${escapeHtml(lead.notes || "—")}</span>
