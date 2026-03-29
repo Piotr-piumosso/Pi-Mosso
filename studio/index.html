@@ -1325,6 +1325,42 @@ Più Mosso</p>
             </section>
           </div>
 
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Offer Generator</h4>
+              <p class="helper">Wybierz lead i opcjonalnie organizatora, a panel złoży gotową propozycję koncertu lub wiadomość handlową. To ma skracać drogę od myślenia do wysłania.</p>
+              <div class="stack" style="margin-top:12px">
+                <label>Lead / booking
+                  <select id="offerLeadSelect">
+                    <option value="">Wybierz lead albo booking</option>
+                  </select>
+                </label>
+                <label>Organizer / osoba decyzyjna
+                  <select id="offerOrganizerSelect">
+                    <option value="">Bez organizatora</option>
+                  </select>
+                </label>
+                <label>Tryb
+                  <select id="offerModeSelect">
+                    <option value="institution">Propozycja do instytucji</option>
+                    <option value="direct">Wiadomość do klienta</option>
+                    <option value="followup">Follow-up po ofercie</option>
+                    <option value="partner">Wejście do partnera / organizatora</option>
+                  </select>
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button" id="generateOfferButton">Generuj szkic</button>
+                  <button class="btn btn-secondary" type="button" id="copyOfferButton">Kopiuj szkic</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="template-card">
+              <h4>Gotowy szkic</h4>
+              <textarea id="offerOutput" style="min-height:320px" placeholder="Tutaj pojawi się gotowa wiadomość albo szkic propozycji."></textarea>
+            </section>
+          </div>
+
           <div class="templates" style="margin-top:18px">
             <article class="template-card">
               <h4>Pakiet Essential</h4>
@@ -1876,6 +1912,7 @@ function render() {
   renderCalendar();
   renderDataHub();
   renderSalesEngine();
+  renderOfferGenerator();
 }
 
 function renderMetrics() {
@@ -1978,6 +2015,41 @@ function createOrganizer(data) {
     notes: data.notes || "",
     createdAt: new Date().toISOString()
   };
+}
+
+function getLeadLikeOptions() {
+  const leadOptions = state.leads.map((item) => ({
+    id: `lead:${item.id}`,
+    label: `${item.title} • lead • ${item.kind}`,
+    record: item,
+    source: "lead"
+  }));
+  const bookingOptions = salesState.bookings.map((item) => ({
+    id: `booking:${item.id}`,
+    label: `${item.name} • booking • ${item.status}`,
+    record: item,
+    source: "booking"
+  }));
+  return [...leadOptions, ...bookingOptions];
+}
+
+function getLeadLikeById(value) {
+  if (!value) return null;
+  const [source, id] = value.split(":");
+  if (source === "lead") {
+    const record = state.leads.find((item) => item.id === id);
+    return record ? { source, record } : null;
+  }
+  if (source === "booking") {
+    const record = salesState.bookings.find((item) => item.id === id);
+    return record ? { source, record } : null;
+  }
+  return null;
+}
+
+function getOrganizerById(id) {
+  if (!id) return null;
+  return salesState.organizers.find((item) => item.id === id) || null;
 }
 
 function suggestPackageForLead(lead) {
@@ -2090,6 +2162,65 @@ function suggestBookingMessage(booking) {
   }
 
   return `Dzień dobry,\n\nwracam w sprawie ${name}. Jeśli termin jest nadal aktualny, mogę od razu przygotować najlepszy wariant współpracy i przejść do kolejnych ustaleń.\n\nSerdecznie,\nPiù Mosso`;
+}
+
+function buildOfferDraft(mode, leadLike, organizer) {
+  const record = leadLike?.record || {};
+  const source = leadLike?.source || "lead";
+  const name = record.title || record.name || "Państwa wydarzenie";
+  const city = record.city || record.venue || organizer?.city || "Państwa miejsce";
+  const contactName = organizer?.name || "Dzień dobry";
+  const role = organizer?.role ? ` (${organizer.role})` : "";
+  const packageHint = source === "lead" ? suggestPackageForLead(record) : (record.value || "Signature");
+  const eventKind = record.kind || "wydarzenie";
+  const preferences = organizer?.preferences ? `\nUwzględniam też to, że ${organizer.preferences}` : "";
+  const eventDate = formatDate(record.eventDate);
+
+  if (mode === "followup") {
+    return `${contactName}${role},\n\nwracam z krótkim follow-upem w sprawie ${name}. Jeśli termin ${eventDate !== "—" ? `(${eventDate}) ` : ""}jest nadal aktualny, rekomenduję wariant ${packageHint} i mogę od razu dopiąć dalsze ustalenia organizacyjne oraz repertuarowe.\n\nJeśli wygodniej, mogę też przygotować krótszą, konkretną rekomendację pod ${city}.${preferences}\n\nSerdecznie,\nPiù Mosso`;
+  }
+
+  if (mode === "partner") {
+    return `${contactName}${role},\n\nprowadzimy Più Mosso i specjalizujemy się w eleganckiej oprawie muzycznej koncertów, ceremonii i wydarzeń premium. Myślę, że przy organizacjach takich jak ${organizer?.organization || city} możemy dobrze dowozić nie tylko poziom artystyczny, ale też spokój współpracy.\n\nJeśli to dla Pani/Pana ciekawe, chętnie podeślę krótki pakiet materiałów i 2-3 propozycje formatów, które mogą dobrze pracować u Państwa.${preferences}\n\nSerdecznie,\nPiù Mosso`;
+  }
+
+  if (mode === "institution") {
+    return `${contactName}${role},\n\npiszę w sprawie ${name}. W Più Mosso tworzymy dopracowane programy na skrzypce, organy i fortepian, które dobrze pracują w przestrzeniach takich jak ${city}. Na podstawie tego briefu rekomendowałbym wariant ${packageHint}, bo daje najlepszy balans między poziomem artystycznym, spokojną organizacją i efektem dla publiczności.\n\nJeśli chcą Państwo, przygotuję od razu zwartą propozycję programu koncertowego dopasowaną do charakteru miejsca i wydarzenia.${preferences}\n\nZ wyrazami szacunku,\nPiù Mosso`;
+  }
+
+  return `${contactName}${role},\n\nbardzo dziękujemy za wiadomość w sprawie ${name}. Na ten moment rekomendowałbym wariant ${packageHint}, bo przy wydarzeniu typu ${eventKind} daje on najbardziej elegancki i spokojny przebieg współpracy. Możemy od razu doprecyzować repertuar, przebieg oraz wszystkie kwestie organizacyjne pod ${city}.\n\nJeśli potrzebują Państwo, mogę przygotować też krótszą rekomendację z jednym najlepiej dopasowanym wariantem.${preferences}\n\nSerdecznie,\nPiù Mosso`;
+}
+
+function renderOfferGenerator() {
+  const leadSelect = document.getElementById("offerLeadSelect");
+  const organizerSelect = document.getElementById("offerOrganizerSelect");
+  if (!leadSelect || !organizerSelect) return;
+
+  const currentLead = leadSelect.value;
+  const currentOrganizer = organizerSelect.value;
+
+  leadSelect.innerHTML = `<option value="">Wybierz lead albo booking</option>`;
+  getLeadLikeOptions().forEach((item) => {
+    const option = document.createElement("option");
+    option.value = item.id;
+    option.textContent = item.label;
+    leadSelect.appendChild(option);
+  });
+
+  organizerSelect.innerHTML = `<option value="">Bez organizatora</option>`;
+  salesState.organizers.forEach((item) => {
+    const option = document.createElement("option");
+    option.value = item.id;
+    option.textContent = `${item.name} • ${item.organization || item.city || "kontakt"}`;
+    organizerSelect.appendChild(option);
+  });
+
+  if ([...leadSelect.options].some((item) => item.value === currentLead)) {
+    leadSelect.value = currentLead;
+  }
+  if ([...organizerSelect.options].some((item) => item.value === currentOrganizer)) {
+    organizerSelect.value = currentOrganizer;
+  }
 }
 
 function estimateValue(rawValue) {
@@ -3841,6 +3972,30 @@ handleSalesForm("bookingForm", "bookings", createBooking, "Dodaj booking");
 handleSalesForm("referralForm", "referrals", createReferral, "Dodaj referral");
 handleSalesForm("contentForm", "content", createContent, "Dodaj materiał");
 handleSalesForm("organizerForm", "organizers", createOrganizer, "Dodaj organizatora");
+
+document.getElementById("generateOfferButton").addEventListener("click", () => {
+  const leadValue = document.getElementById("offerLeadSelect").value;
+  const organizerValue = document.getElementById("offerOrganizerSelect").value;
+  const mode = document.getElementById("offerModeSelect").value;
+  const leadLike = getLeadLikeById(leadValue);
+  if (!leadLike) {
+    alert("Najpierw wybierz lead albo booking.");
+    return;
+  }
+  const organizer = getOrganizerById(organizerValue);
+  document.getElementById("offerOutput").value = buildOfferDraft(mode, leadLike, organizer);
+});
+
+document.getElementById("copyOfferButton").addEventListener("click", async () => {
+  const output = document.getElementById("offerOutput").value.trim();
+  if (!output) {
+    alert("Najpierw wygeneruj szkic.");
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(output);
+  } catch {}
+});
 
 document.getElementById("seedOutreach").addEventListener("click", () => {
   const today = new Date().toISOString().slice(0, 10);
