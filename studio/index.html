@@ -115,6 +115,57 @@ h1{
   gap:12px;
   margin-bottom:18px;
 }
+.simple-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin:0 0 18px;
+}
+.simple-card{
+  padding:16px 18px;
+  border-radius:20px;
+  border:1px solid rgba(212,176,106,.16);
+  background:linear-gradient(180deg, rgba(212,176,106,.08), rgba(255,255,255,.02));
+}
+.simple-card strong{
+  display:block;
+  font-size:1rem;
+  margin-bottom:6px;
+}
+.simple-card span{
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.55;
+}
+.section-marker{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin:22px 0 12px;
+  padding:14px 16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.02);
+}
+.section-marker strong{
+  display:block;
+  font-size:1rem;
+}
+.section-marker span{
+  color:var(--muted);
+  font-size:.88rem;
+}
+.soft-note{
+  margin-top:10px;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid rgba(212,176,106,.14);
+  background:rgba(212,176,106,.05);
+  color:var(--muted);
+  font-size:.86rem;
+  line-height:1.55;
+}
 .guide-card{
   padding:18px;
   border-radius:20px;
@@ -651,6 +702,7 @@ input:focus,select:focus,textarea:focus{
 @media (max-width:1180px){
   .grid{grid-template-columns:1fr}
   .guide-grid{grid-template-columns:1fr}
+  .simple-strip{grid-template-columns:1fr 1fr}
   .partner-grid{grid-template-columns:1fr}
   .calendar-shell{grid-template-columns:1fr}
   .datahub-grid{grid-template-columns:1fr}
@@ -663,6 +715,7 @@ input:focus,select:focus,textarea:focus{
 @media (max-width:640px){
   h1{font-size:2.4rem}
   .quick-nav{position:static}
+  .simple-strip{grid-template-columns:1fr}
   .metrics,.templates,.partner-metrics,.calendar-days,.import-grid,.sales-strip,.kpi-grid,.kpi-notes{grid-template-columns:1fr}
 }
 </style>
@@ -683,12 +736,11 @@ input:focus,select:focus,textarea:focus{
     </div>
 
     <div class="quick-nav">
-      <a href="#pipelineSection" class="quick-link">Pipeline</a>
-      <a href="#partnerSection" class="quick-link">Partnerzy</a>
-      <a href="#organizerSection" class="quick-link">Organizatorzy</a>
-      <a href="#calendarSection" class="quick-link">Kalendarz</a>
-      <a href="#datahubSection" class="quick-link">Baza i sync</a>
-      <a href="#salesSection" class="quick-link">Command Center</a>
+      <a href="#pipelineSection" class="quick-link">1. Szanse</a>
+      <a href="#partnerSection" class="quick-link">2. Relacje</a>
+      <a href="#calendarSection" class="quick-link">3. Terminy</a>
+      <a href="#datahubSection" class="quick-link">4. Baza</a>
+      <a href="#salesSection" class="quick-link">5. Dowodzenie</a>
     </div>
 
     <div class="guide-grid">
@@ -725,12 +777,32 @@ input:focus,select:focus,textarea:focus{
       </section>
     </div>
 
+    <div class="simple-strip">
+      <div class="simple-card">
+        <strong>Zaczynasz dzień?</strong>
+        <span>Idź prosto do `Command Center`, zrób 3 ruchy i dopiero potem schodź niżej.</span>
+      </div>
+      <div class="simple-card">
+        <strong>Masz nowe zapytanie?</strong>
+        <span>Wrzuć je do `Nowy lead`, a gdy robi się konkret, przerzuć do bookingu.</span>
+      </div>
+      <div class="simple-card">
+        <strong>Masz ważną osobę?</strong>
+        <span>Dodaj ją do `Organizer CRM`, bo ludzie robią kolejne koncerty, nie same leady.</span>
+      </div>
+      <div class="simple-card">
+        <strong>Nie wiesz co teraz?</strong>
+        <span>Patrz w `Reminder Engine` i rób najpierw to, co jest overdue albo dotyczy zaliczki.</span>
+      </div>
+    </div>
+
     <div class="grid">
       <section class="panel" id="pipelineSection">
         <div class="panel-head">
-          <h2>Nowy lead</h2>
+          <h2>Dodaj Nową Szansę</h2>
         </div>
         <div class="panel-body">
+          <div class="soft-note">To jest lewa strona pracy. Wrzucasz tutaj każde nowe zapytanie, kontakt lub trop. Nie zastanawiaj się za długo: lepiej dodać za dużo niż zgubić dobrą szansę.</div>
           <form id="leadForm" class="stack">
             <label>Imię / firma / miejsce
               <input name="title" required placeholder="Np. Dom Kultury Września / Anna i Marek">
@@ -783,7 +855,7 @@ input:focus,select:focus,textarea:focus{
 
       <section class="panel">
         <div class="panel-head">
-          <h2>Pipeline</h2>
+          <h2>Tablica Szans i Sprzedaży</h2>
           <div class="btn-row">
             <button class="btn btn-secondary" type="button" id="exportButton">Eksport JSON</button>
             <button class="btn btn-secondary" type="button" id="importButton">Import JSON</button>
@@ -791,6 +863,7 @@ input:focus,select:focus,textarea:focus{
           </div>
         </div>
         <div class="panel-body">
+          <div class="soft-note">To jest prawa strona pracy. Najpierw patrz na `Wygrane`, `Follow-up` i `Oferta`, bo tam są pieniądze najbliżej końca.</div>
           <div class="metrics">
             <div class="metric"><strong id="metricAll">0</strong><span>Wszystkie leady</span></div>
             <div class="metric"><strong id="metricOpen">0</strong><span>Otwarte sprawy</span></div>
@@ -857,7 +930,13 @@ Più Mosso</p>
             </article>
           </div>
 
-          <div class="panel-head" id="partnerSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="section-marker" id="partnerSection">
+            <div>
+              <strong>Relacje i Ludzie</strong>
+              <span>Partnerzy, organizatorzy i osoby, które mogą otwierać kolejne drzwi.</span>
+            </div>
+          </div>
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:8px">
             <h2>Partner Machine</h2>
           </div>
           <p class="helper">Ta maszyna ma budować przewagę, której prawie nikt nie domyka dobrze: wedding plannerzy, sale, fotografowie, filmowcy i instytucje mają sprzedawać Più Mosso dalej.</p>
@@ -1012,7 +1091,13 @@ Più Mosso</p>
             </article>
           </div>
 
-          <div class="panel-head" id="calendarSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="section-marker" id="calendarSection">
+            <div>
+              <strong>Terminy i Obłożenie</strong>
+              <span>Kalendarz ma Ci pokazywać wolne i zajęte miesiące, a nie tylko daty.</span>
+            </div>
+          </div>
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:8px">
             <h2>Calendar Machine</h2>
           </div>
           <p class="helper">Najprostsza wersja pod iPhone: eksportujesz albo udostępniasz kalendarz Apple jako plik `.ics`, a tutaj wrzucasz go do panelu. Studio pokaże wtedy najbliższe zajęte terminy i szybki podgląd obłożenia.</p>
@@ -1044,7 +1129,13 @@ Più Mosso</p>
             </section>
           </div>
 
-          <div class="panel-head" id="datahubSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="section-marker" id="datahubSection">
+            <div>
+              <strong>Baza i Synchronizacja</strong>
+              <span>To jest zaplecze techniczne. Tu zaglądasz, gdy chcesz odświeżyć dane albo bloklistę.</span>
+            </div>
+          </div>
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:8px">
             <h2>Lead Data Hub</h2>
           </div>
           <p class="helper">Tutaj podepniesz eksporty z `lead-machine` i `piumosso-engine`, zobaczysz jak rośnie baza i zaznaczysz instytucje, których nie chcesz już widzieć. Blocklista zapisuje się lokalnie i przy kolejnych importach te rekordy będą automatycznie filtrowane.</p>
@@ -1116,7 +1207,13 @@ Più Mosso</p>
             </section>
           </div>
 
-          <div class="panel-head" id="salesSection" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:24px">
+          <div class="section-marker" id="salesSection">
+            <div>
+              <strong>Dowodzenie i Domykanie Kasy</strong>
+              <span>To jest główny pulpit. Jeśli nie wiesz, gdzie wejść, to zacznij właśnie tutaj.</span>
+            </div>
+          </div>
+          <div class="panel-head" style="padding-left:0;padding-right:0;border-bottom:none;margin-top:8px">
             <h2>Sales Engine</h2>
           </div>
           <p class="helper">Tutaj domykasz pieniądz. Cztery maszyny pracują razem: outreach dowozi nowe szanse, booking zamyka sprzedaż, referral buduje polecenia, a content wzmacnia zaufanie i ruch na stronę.</p>
@@ -1232,6 +1329,45 @@ Più Mosso</p>
                 </div>
               </div>
               <p class="helper" id="revenueViewText" style="margin-top:12px">Panel podsumuje tutaj, ile pieniędzy i szans masz już w ruchu.</p>
+            </section>
+          </div>
+
+          <div class="desk-grid" style="margin-top:18px">
+            <section class="template-card">
+              <h4>Season Planner</h4>
+              <p class="helper">Tutaj patrzysz na miesiąc i sezon jak na biznes: ile już domknięte, ile jeszcze w pipeline i jaka luka została do targetu.</p>
+              <div class="stack" style="margin-top:12px">
+                <label>Miesięczny target
+                  <input id="seasonTargetInput" type="number" min="0" step="1000" placeholder="Np. 100000">
+                </label>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button" id="saveSeasonTargetButton">Zapisz target</button>
+                </div>
+              </div>
+              <div class="kpi-grid" style="margin-top:12px">
+                <div class="kpi-card">
+                  <strong id="seasonTargetValue">0 PLN</strong>
+                  <span>Target</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="seasonBookedValue">0 PLN</strong>
+                  <span>Domknięte w miesiącu</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="seasonPipelineValue">0 PLN</strong>
+                  <span>Pipeline miesiąca</span>
+                </div>
+                <div class="kpi-card">
+                  <strong id="seasonGapValue">0 PLN</strong>
+                  <span>Luka do targetu</span>
+                </div>
+              </div>
+              <p class="helper" id="seasonPlannerNote" style="margin-top:12px">Panel pokaże, jak wygląda droga do miesięcznego celu.</p>
+            </section>
+
+            <section class="template-card">
+              <h4>Najbliższe miesiące</h4>
+              <div class="sales-list" id="seasonPlannerList" style="margin-top:12px"></div>
             </section>
           </div>
 
@@ -1828,7 +1964,7 @@ function saveDataHubState() {
 function loadSalesState() {
   const saved = localStorage.getItem(SALES_KEY);
   if (!saved) {
-    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [] };
+    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [], settings: { monthlyTarget: 100000 } };
   }
   try {
     const parsed = JSON.parse(saved);
@@ -1837,10 +1973,13 @@ function loadSalesState() {
       bookings: parsed.bookings || [],
       referrals: parsed.referrals || [],
       content: parsed.content || [],
-      organizers: parsed.organizers || []
+      organizers: parsed.organizers || [],
+      settings: {
+        monthlyTarget: Number(parsed.settings?.monthlyTarget || 100000)
+      }
     };
   } catch {
-    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [] };
+    return { outreach: [], bookings: [], referrals: [], content: [], organizers: [], settings: { monthlyTarget: 100000 } };
   }
 }
 
@@ -2242,6 +2381,84 @@ function formatCurrency(value) {
   const amount = Number(value || 0);
   if (!amount) return "0 PLN";
   return `${amount.toLocaleString("pl-PL")} PLN`;
+}
+
+function monthKey(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function monthLabel(key) {
+  if (!key) return "Bez daty";
+  const [year, month] = key.split("-").map(Number);
+  const date = new Date(year, (month || 1) - 1, 1);
+  return date.toLocaleDateString("pl-PL", { month: "long", year: "numeric" });
+}
+
+function buildSeasonPlannerData() {
+  const now = new Date();
+  const currentKey = monthKey(now.toISOString());
+  const target = Number(salesState.settings?.monthlyTarget || 100000);
+  const bookedThisMonth = salesState.bookings
+    .filter((item) => item.status === "booked" && monthKey(item.eventDate) === currentKey)
+    .reduce((sum, item) => sum + estimateValue(item.value), 0);
+  const pipelineThisMonth = salesState.bookings
+    .filter((item) => item.status !== "lost" && monthKey(item.eventDate) === currentKey)
+    .reduce((sum, item) => sum + estimateValue(item.value), 0);
+  const gap = Math.max(target - bookedThisMonth, 0);
+
+  const months = [];
+  for (let offset = 0; offset < 4; offset += 1) {
+    const date = new Date(now.getFullYear(), now.getMonth() + offset, 1);
+    const key = monthKey(date.toISOString());
+    const booked = salesState.bookings
+      .filter((item) => item.status === "booked" && monthKey(item.eventDate) === key)
+      .reduce((sum, item) => sum + estimateValue(item.value), 0);
+    const open = salesState.bookings
+      .filter((item) => !["booked", "lost"].includes(item.status) && monthKey(item.eventDate) === key)
+      .reduce((sum, item) => sum + estimateValue(item.value), 0);
+    const leads = state.leads
+      .filter((item) => !["won", "lost"].includes(item.stage) && monthKey(item.eventDate) === key)
+      .reduce((sum, item) => sum + estimateValue(item.budget || suggestPackageForLead(item)), 0);
+    months.push({
+      key,
+      label: monthLabel(key),
+      booked,
+      pipeline: open + leads,
+      gap: Math.max(target - booked, 0)
+    });
+  }
+
+  return { target, bookedThisMonth, pipelineThisMonth, gap, months };
+}
+
+function renderSeasonPlanner() {
+  const data = buildSeasonPlannerData();
+  const targetInput = document.getElementById("seasonTargetInput");
+  if (targetInput && !targetInput.matches(":focus")) {
+    targetInput.value = String(data.target);
+  }
+  document.getElementById("seasonTargetValue").textContent = formatCurrency(data.target);
+  document.getElementById("seasonBookedValue").textContent = formatCurrency(data.bookedThisMonth);
+  document.getElementById("seasonPipelineValue").textContent = formatCurrency(data.pipelineThisMonth);
+  document.getElementById("seasonGapValue").textContent = formatCurrency(data.gap);
+  document.getElementById("seasonPlannerNote").textContent = data.gap > 0
+    ? `Do miesięcznego targetu brakuje jeszcze około ${formatCurrency(data.gap)}.`
+    : "Target na ten miesiąc jest już domknięty albo przekroczony.";
+
+  const list = document.getElementById("seasonPlannerList");
+  list.innerHTML = "";
+  data.months.forEach((month) => {
+    const card = document.createElement("article");
+    card.className = "desk-item";
+    card.innerHTML = `
+      <h4>${escapeHtml(month.label)}</h4>
+      <p>Domknięte: ${escapeHtml(formatCurrency(month.booked))}<br>Pipeline: ${escapeHtml(formatCurrency(month.pipeline))}<br>Luka: ${escapeHtml(formatCurrency(month.gap))}</p>
+    `;
+    list.appendChild(card);
+  });
 }
 
 function buildRiskRadarItems() {
@@ -2703,6 +2920,7 @@ function renderSalesEngine() {
   document.getElementById("kpiMomentumText").textContent = momentumText;
 
   renderCommandCenter();
+  renderSeasonPlanner();
   renderTodayDesk();
   renderPreEventDesk();
   renderReminderEngine();
@@ -3995,6 +4213,17 @@ document.getElementById("copyOfferButton").addEventListener("click", async () =>
   try {
     await navigator.clipboard.writeText(output);
   } catch {}
+});
+
+document.getElementById("saveSeasonTargetButton").addEventListener("click", () => {
+  const value = Number(document.getElementById("seasonTargetInput").value || 0);
+  if (!value) {
+    alert("Wpisz sensowny target miesięczny.");
+    return;
+  }
+  salesState.settings.monthlyTarget = value;
+  saveSalesState();
+  render();
 });
 
 document.getElementById("seedOutreach").addEventListener("click", () => {
