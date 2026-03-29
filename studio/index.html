@@ -905,8 +905,36 @@ Più Mosso</p>
                 <label>Data wydarzenia
                   <input type="date" name="eventDate">
                 </label>
+                <label>Miejsce / miasto
+                  <input name="venue" placeholder="Np. Poznań / Fara Poznań">
+                </label>
+                <label>Kontakt
+                  <input name="contact" placeholder="mail / telefon / IG">
+                </label>
                 <label>Kwota / pakiet
                   <input name="value" placeholder="Np. Signature / 3500 PLN">
+                </label>
+                <label>Umowa
+                  <select name="contractStatus">
+                    <option value="not-started">Nie ruszona</option>
+                    <option value="draft">Szkic gotowy</option>
+                    <option value="sent">Wysłana</option>
+                    <option value="signed">Podpisana</option>
+                  </select>
+                </label>
+                <label>Zaliczka
+                  <select name="depositStatus">
+                    <option value="not-requested">Nieproszone</option>
+                    <option value="requested">Poproszona</option>
+                    <option value="paid">Opłacona</option>
+                  </select>
+                </label>
+                <label>Repertuar / logistyka
+                  <select name="musicStatus">
+                    <option value="not-started">Do ustalenia</option>
+                    <option value="in-progress">W trakcie</option>
+                    <option value="ready">Gotowe</option>
+                  </select>
                 </label>
                 <label>Następny ruch
                   <input type="date" name="nextAction">
@@ -1234,7 +1262,12 @@ function createBooking(data) {
     kind: data.kind || "koncert",
     status: data.status || "new",
     eventDate: data.eventDate || "",
+    venue: data.venue || "",
+    contact: data.contact || "",
     value: data.value || "",
+    contractStatus: data.contractStatus || "not-started",
+    depositStatus: data.depositStatus || "not-requested",
+    musicStatus: data.musicStatus || "not-started",
     nextAction: data.nextAction || "",
     notes: data.notes || "",
     createdAt: new Date().toISOString()
@@ -1340,7 +1373,7 @@ function renderSalesEngine() {
   renderSalesList("bookingList", salesState.bookings, {
     empty: "Brak bookingów. Tutaj powinny wpadać wszystkie realne rozmowy sprzedażowe.",
     label: (item) => item.name,
-    summary: (item) => `Typ: ${escapeHtml(item.kind)} • Status: ${escapeHtml(item.status)} • Data: ${escapeHtml(formatDate(item.eventDate))}<br>Kwota / pakiet: ${escapeHtml(item.value || "—")}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
+    summary: (item) => `Typ: ${escapeHtml(item.kind)} • Status: ${escapeHtml(item.status)} • Data: ${escapeHtml(formatDate(item.eventDate))}<br>Miejsce: ${escapeHtml(item.venue || "—")} • Kontakt: ${escapeHtml(item.contact || "—")}<br>Kwota / pakiet: ${escapeHtml(item.value || "—")}<br>Umowa: ${escapeHtml(item.contractStatus || "—")} • Zaliczka: ${escapeHtml(item.depositStatus || "—")} • Repertuar: ${escapeHtml(item.musicStatus || "—")}<br>Następny ruch: ${escapeHtml(formatDate(item.nextAction))}<br>Notatki: ${escapeHtml(item.notes || "—")}`,
     advance: (id) => advanceSalesStatus("bookings", id, ["new", "offer", "decision", "deposit", "booked", "lost"]),
     edit: (id) => editSalesItem("bookingForm", salesState.bookings, id, "Zapisz booking"),
     remove: (id) => removeSalesItem("bookings", id, "Usunąć ten booking?")
@@ -1749,6 +1782,9 @@ function renderBoard() {
       if (index < STAGES.length - 1) {
         actions.appendChild(actionButton("Dalej", () => moveLead(lead.id, STAGES[index + 1].id), "good"));
       }
+      if (!["lost"].includes(lead.stage)) {
+        actions.appendChild(actionButton("Do bookingu", () => convertLeadToBooking(lead.id)));
+      }
       actions.appendChild(actionButton("Edytuj", () => editLead(lead.id)));
       actions.appendChild(actionButton("Usuń", () => removeLead(lead.id), "bad"));
 
@@ -1802,6 +1838,35 @@ function editLead(id) {
   form.dataset.editId = id;
   form.querySelector("button[type='submit']").textContent = "Zapisz zmiany";
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function convertLeadToBooking(id) {
+  const lead = state.leads.find((item) => item.id === id);
+  if (!lead) return;
+
+  const exists = salesState.bookings.some((booking) => booking.name === lead.title && booking.eventDate === lead.eventDate);
+  if (exists) {
+    alert("Ten lead jest już w Booking Tracker.");
+    return;
+  }
+
+  salesState.bookings.unshift(createBooking({
+    name: lead.title,
+    kind: lead.kind,
+    status: lead.stage === "won" ? "booked" : lead.stage === "offer" ? "offer" : lead.stage === "followup" ? "decision" : "new",
+    eventDate: lead.eventDate,
+    venue: lead.city,
+    contact: lead.contact,
+    value: lead.budget,
+    nextAction: lead.nextAction,
+    notes: lead.notes,
+    contractStatus: "not-started",
+    depositStatus: "not-requested",
+    musicStatus: "not-started"
+  }));
+
+  saveSalesState();
+  render();
 }
 
 function advancePartner(id) {
@@ -2209,7 +2274,12 @@ document.getElementById("seedBookings").addEventListener("click", () => {
       kind: "slub",
       status: "decision",
       eventDate: today,
+      venue: "Gniezno / ceremonia kościelna",
+      contact: "+48 000 000 000",
       value: "Signature / 3500 PLN",
+      contractStatus: "sent",
+      depositStatus: "requested",
+      musicStatus: "in-progress",
       nextAction: today,
       notes: "Wrócić po 48h z rekomendacją repertuaru"
     }),
@@ -2218,7 +2288,12 @@ document.getElementById("seedBookings").addEventListener("click", () => {
       kind: "koncert",
       status: "offer",
       eventDate: today,
+      venue: "Poznań / Fara",
+      contact: "sekretariat@...",
       value: "Oferta instytucjonalna",
+      contractStatus: "draft",
+      depositStatus: "not-requested",
+      musicStatus: "not-started",
       nextAction: today,
       notes: "Dopytać o budżet i termin decyzji"
     })
