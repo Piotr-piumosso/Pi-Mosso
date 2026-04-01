@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2026-04-01T13:41:52+02:00",
+=======
+  "generatedAt": "2026-04-01T11:30:53+02:00",
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
   "sourceStats": {
     "baza": 65,
     "nowe": 0,
@@ -851,29 +855,138 @@
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
+<<<<<<< HEAD
         "source_url": "https://msk.lodz.pl/o-nas/",
         "last_seen": "2026-03-31T11:28:58.434357+00:00",
+=======
+        "source_url": "https://www.miejski.pl/slowo-Essa",
+        "last_seen": "2026-03-29T10:36:49.151010+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "email": "info@huk-coburg.de",
+        "phone": null,
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "last_seen": "2026-03-30T11:04:46.343480+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "email": "beschwerde@versicherungsombudsmann.de",
+        "phone": null,
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "last_seen": "2026-03-30T11:04:46.343514+00:00",
+        "status": "new"
+      },
+      {
+        "name": "O nas - MSK",
+        "email": "sekretariat@msk.lodz.pl",
+        "phone": "42 674 92 30",
+        "website": "https://msk.lodz.pl/o-nas/",
+        "address": "Ośrodek Sztuki, ul. Krzemieniecka 2a",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/o-nas/",
+        "last_seen": "2026-03-31T10:55:26.135012+00:00",
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "status": "new"
       },
       {
         "name": "MSK: Polesie | Kontakt - MSK",
         "email": "osrodeksztuki@msk.lodz.pl",
+<<<<<<< HEAD
         "phone": "42 674 98 12",
         "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
         "address": null,
+=======
+        "phone": "518 522 696",
+        "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
+        "address": "Miejska Strefa Kultury – Ośrodek Sztuki, MSK: Polesie, ul. Krzemieniecka 2A, 94-030 Łódź",
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "category": "miejski ośrodek kultury",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://msk.lodz.pl/msk-polesie-kontakt/",
+<<<<<<< HEAD
         "last_seen": "2026-03-31T11:28:58.887072+00:00",
+=======
+        "last_seen": "2026-03-31T10:55:26.924772+00:00",
+        "status": "new"
+      },
+      {
+        "name": "MSK: Polesie | Kontakt - MSK",
+        "email": "sekretariat@msk.lodz.pl",
+        "phone": "518 522 696",
+        "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
+        "address": "Miejska Strefa Kultury – Ośrodek Sztuki, MSK: Polesie, ul. Krzemieniecka 2A, 94-030 Łódź",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/msk-polesie-kontakt/",
+        "last_seen": "2026-03-31T10:55:26.924802+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Miejska Strefa Kultury to: - MSK",
+        "email": "sekretariat@msk.lodz.pl",
+        "phone": "42 674 92 30",
+        "website": "https://msk.lodz.pl/miejska-strefa-kultury-to/",
+        "address": "ul. Sacharowa 18, Łódź",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/miejska-strefa-kultury-to/",
+        "last_seen": "2026-03-31T10:55:30.141948+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Instytucje kultury - MSK",
+        "email": "sekretariat@msk.lodz.pl",
+        "phone": "42 674 92 30",
+        "website": "https://msk.lodz.pl/instytucje-kultury/",
+        "address": "ul. Sacharowa 18, Łódź",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/instytucje-kultury/",
+        "last_seen": "2026-03-31T10:55:33.484710+00:00",
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "status": "new"
       },
       {
         "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
         "email": "coig@coig.com.pl",
+<<<<<<< HEAD
         "phone": null,
+=======
+        "phone": "22 648 80 90",
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "website": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
         "address": null,
         "category": "miejski ośrodek kultury",
@@ -882,9 +995,18 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
+<<<<<<< HEAD
         "last_seen": "2026-03-31T11:28:58.887096+00:00",
         "status": "new"
       }
+=======
+        "last_seen": "2026-03-31T10:55:34.070561+00:00",
+        "status": "new"
+      }
+    ],
+    "nowe": [
+
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
     ],
     "nowe": [],
     "engine": [
@@ -1366,7 +1488,11 @@
         "country_code": "DE",
         "country_name": "Niemcy",
         "language": "de",
+<<<<<<< HEAD
         "website": "https://www.huk.de/haus-haftung-recht/haftplichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
+=======
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
+>>>>>>> 8b334c8 (Refresh studio sync snapshot)
       },
       {
         "email": "sekretariat@msk.lodz.pl",
