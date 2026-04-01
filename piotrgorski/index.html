@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Piotr Górski — oprawa muzyczna ceremonii, koncertów i recitali</title>
+<meta name="description" content="Piotr Górski — solowa oprawa muzyczna ceremonii, koncertów i recitali. Organy i fortepian, repertuar dopasowany do miejsca, wydarzenia i spokojnej współpracy." />
+<link rel="canonical" href="https://piumosso.pl/piotrgorski/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pl_PL" />
+<meta property="og:title" content="Piotr Górski — oferta solowa" />
+<meta property="og:description" content="Solowa oprawa muzyczna ceremonii, koncertów i recitali w formule organowej lub fortepianowej." />
+<meta property="og:url" content="https://piumosso.pl/piotrgorski/" />
+<meta property="og:image" content="https://piumosso.pl/kalendarium/IMG_1452.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Piotr Górski — oferta solowa" />
+<meta name="twitter:description" content="Oprawa muzyczna ceremonii, koncertów i recitali. Organy i fortepian." />
+<meta name="twitter:image" content="https://piumosso.pl/kalendarium/IMG_1452.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Piotr Górski",
+  "jobTitle": "Organista i pianista",
+  "url": "https://piumosso.pl/piotrgorski/",
+  "image": "https://piumosso.pl/kalendarium/IMG_1452.jpeg",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Più Mosso",
+    "url": "https://piumosso.pl/"
+  },
+  "knowsAbout": [
+    "oprawa muzyczna ceremonii",
+    "recitale organowe",
+    "recitale fortepianowe",
+    "wydarzenia artystyczne"
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0f0b08;
+  --bg-2:#18120d;
+  --surface:rgba(30,22,16,.88);
+  --surface-2:rgba(25,19,14,.95);
+  --ink:#f8f1e5;
+  --muted:rgba(248,241,229,.76);
+  --muted-2:rgba(248,241,229,.58);
+  --gold:#d7b472;
+  --gold-2:#c79c52;
+  --line:rgba(215,180,114,.18);
+  --shadow:0 24px 70px rgba(0,0,0,.34);
+  --radius:26px;
+  --max:1180px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+  font-family:"Manrope",sans-serif;
+  color:var(--ink);
+  line-height:1.7;
+  background:
+    radial-gradient(900px 460px at 8% -8%, rgba(215,180,114,.13), transparent 60%),
+    radial-gradient(740px 420px at 100% 8%, rgba(146,104,48,.16), transparent 60%),
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  -webkit-font-smoothing:antialiased;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.12;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(180deg, rgba(0,0,0,.75), transparent 88%);
+}
+
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+.container{
+  width:min(calc(100% - 40px), var(--max));
+  margin:0 auto;
+}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter:blur(16px);
+  background:rgba(15,11,8,.68);
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.topbar-inner{
+  width:min(calc(100% - 40px), var(--max));
+  margin:0 auto;
+  padding:16px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.eyebrow,
+.brand-kicker{
+  font-size:.74rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted-2);
+}
+
+.brand strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.65rem;
+  font-weight:600;
+  letter-spacing:.03em;
+}
+
+.top-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  justify-content:flex-end;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.top-links .cta-link{
+  color:var(--ink);
+  font-weight:700;
+}
+
+.hero{
+  padding:72px 0 38px;
+}
+
+.hero-grid,
+.story-grid,
+.split-grid,
+.contact-grid,
+.offer-grid,
+.steps{
+  display:grid;
+  gap:24px;
+}
+
+.hero-grid{
+  grid-template-columns:1.16fr .84fr;
+  align-items:stretch;
+}
+
+.panel{
+  background:linear-gradient(180deg, var(--surface), var(--surface-2));
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.hero-copy{
+  position:relative;
+  overflow:hidden;
+  padding:44px;
+}
+
+.hero-copy::after{
+  content:"";
+  position:absolute;
+  right:-90px;
+  bottom:-90px;
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(215,180,114,.26), transparent 68%);
+}
+
+h1,h2,h3{
+  font-family:"Cormorant Garamond",serif;
+  line-height:1.05;
+  font-weight:600;
+}
+
+h1{
+  margin-top:14px;
+  font-size:clamp(3.15rem, 6vw, 5.8rem);
+  max-width:11ch;
+}
+
+.lead{
+  margin-top:20px;
+  max-width:61ch;
+  color:var(--muted);
+  font-size:1.07rem;
+}
+
+.hero-proof{
+  margin-top:18px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.hero-proof span{
+  padding:9px 13px;
+  border-radius:999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.hero-actions{
+  margin-top:28px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:50px;
+  padding:13px 22px;
+  border-radius:999px;
+  font-weight:800;
+  transition:transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.btn:hover{transform:translateY(-1px)}
+
+.btn-primary{
+  background:linear-gradient(180deg, #e2c385, #cb9f56);
+  color:#24180d;
+}
+
+.btn-secondary{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(215,180,114,.26);
+  color:var(--ink);
+}
+
+.mini-note{
+  margin-top:18px;
+  color:var(--muted-2);
+  font-size:.92rem;
+}
+
+.hero-side{
+  display:grid;
+  gap:18px;
+}
+
+.hero-photo{
+  overflow:hidden;
+  min-height:100%;
+}
+
+.hero-photo img{
+  width:100%;
+  height:100%;
+  min-height:620px;
+  object-fit:cover;
+}
+
+.aside-card{
+  padding:24px;
+}
+
+.aside-card h3{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.aside-card ul{
+  margin-top:12px;
+  padding-left:18px;
+  display:grid;
+  gap:8px;
+  color:var(--muted);
+}
+
+.section{
+  padding:28px 0;
+}
+
+.section-head{
+  max-width:760px;
+  margin-bottom:22px;
+}
+
+.section-head h2{
+  margin:10px 0 12px;
+  font-size:clamp(2.3rem, 4.5vw, 3.8rem);
+}
+
+.section-head p{
+  color:var(--muted);
+}
+
+.story-grid{
+  grid-template-columns:1fr 1fr;
+}
+
+.story-copy,
+.card,
+.contact-copy,
+.contact-card,
+.step{
+  padding:32px;
+}
+
+.story-copy p + p{
+  margin-top:14px;
+}
+
+.story-copy .highlight{
+  margin-top:18px;
+  padding-left:16px;
+  border-left:2px solid rgba(215,180,114,.46);
+  color:var(--ink);
+}
+
+.story-photo{
+  overflow:hidden;
+}
+
+.story-photo img{
+  width:100%;
+  height:100%;
+  min-height:430px;
+  object-fit:cover;
+}
+
+.offer-grid{
+  grid-template-columns:repeat(3, minmax(0,1fr));
+}
+
+.card h3{
+  font-size:2rem;
+  margin:12px 0 10px;
+}
+
+.card p,
+.card li,
+.contact-copy p,
+.contact-card p,
+.step p{
+  color:var(--muted);
+}
+
+.list{
+  margin-top:14px;
+  padding-left:18px;
+  display:grid;
+  gap:8px;
+}
+
+.feature-line{
+  display:inline-flex;
+  align-items:center;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  font-size:.84rem;
+  color:var(--muted-2);
+}
+
+.split-grid{
+  grid-template-columns:1.05fr .95fr;
+}
+
+.program-points{
+  display:grid;
+  gap:16px;
+  margin-top:18px;
+}
+
+.program-item{
+  padding:18px 20px;
+  border-radius:20px;
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(255,255,255,.06);
+}
+
+.program-item strong{
+  display:block;
+  margin-bottom:6px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:14px;
+}
+
+.gallery figure{
+  overflow:hidden;
+}
+
+.gallery img{
+  width:100%;
+  height:290px;
+  object-fit:cover;
+}
+
+.gallery figcaption{
+  padding:12px 14px 14px;
+  color:var(--muted-2);
+  font-size:.88rem;
+}
+
+.steps{
+  grid-template-columns:repeat(4, minmax(0,1fr));
+}
+
+.step-number{
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  margin-bottom:16px;
+  font-weight:800;
+  color:#23170d;
+  background:linear-gradient(180deg, #e2c385, #cb9f56);
+}
+
+.contact-grid{
+  grid-template-columns:1.1fr .9fr;
+}
+
+.contact-links{
+  margin-top:22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.contact-chip{
+  display:inline-flex;
+  align-items:center;
+  padding:12px 16px;
+  border-radius:999px;
+  border:1px solid rgba(215,180,114,.22);
+  background:rgba(255,255,255,.03);
+}
+
+.contact-card .btn{
+  margin-top:22px;
+}
+
+.contact-card .list{
+  margin-bottom:16px;
+}
+
+.footer{
+  padding:22px 0 60px;
+  color:var(--muted-2);
+  font-size:.92rem;
+}
+
+@media (max-width: 1040px){
+  .hero-grid,
+  .story-grid,
+  .offer-grid,
+  .split-grid,
+  .contact-grid,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .hero-photo img,
+  .story-photo img{
+    min-height:360px;
+  }
+}
+
+@media (max-width: 720px){
+  .topbar-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .hero-copy,
+  .story-copy,
+  .card,
+  .contact-copy,
+  .contact-card,
+  .step,
+  .aside-card{
+    padding:24px;
+  }
+
+  h1{
+    max-width:none;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-kicker">Oferta solowa w ramach Più Mosso</span>
+        <strong>Piotr Górski</strong>
+      </div>
+      <nav class="top-links" aria-label="Nawigacja">
+        <a href="#oferta">Oferta</a>
+        <a href="#repertuar">Repertuar</a>
+        <a href="#zdjecia">Zdjęcia</a>
+        <a href="#kontakt" class="cta-link">Kontakt</a>
+        <a href="../">Più Mosso</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="panel hero-copy">
+          <div class="eyebrow">Organy • fortepian • ceremonie • recitale</div>
+          <h1>Muzyka solowa, która porządkuje całe wydarzenie.</h1>
+          <p class="lead">Piotr Górski przygotowuje oprawę muzyczną ceremonii, koncertów i wydarzeń artystycznych w formule solowej. To propozycja dla osób i instytucji, którym zależy na wysokiej jakości wykonania, spokojnej współpracy i repertuarze dobrze dopasowanym do miejsca.</p>
+
+          <div class="hero-proof" aria-label="Najważniejsze atuty">
+            <span>laureat konkursów organowych</span>
+            <span>organy i fortepian</span>
+            <span>ceremonie i wydarzenia artystyczne</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Zapytaj o termin</a>
+            <a class="btn btn-secondary" href="#oferta">Zobacz zakres oferty</a>
+          </div>
+
+          <p class="mini-note">Najlepiej podać datę, miejscowość, typ wydarzenia oraz informację, czy chodzi o organy, fortepian albo recital solowy.</p>
+        </div>
+
+        <div class="hero-side">
+          <figure class="panel hero-photo">
+            <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski przy organach" />
+          </figure>
+          <aside class="panel aside-card">
+            <div class="feature-line">Dla klientów indywidualnych i instytucji</div>
+            <h3>Kiedy ta oferta sprawdza się najlepiej</h3>
+            <ul>
+              <li>gdy potrzebna jest elegancka oprawa ceremonii w formule solo,</li>
+              <li>gdy organizator szuka recitalu organowego lub fortepianowego,</li>
+              <li>gdy ważna jest dobra komunikacja i szybkie, konkretne ustalenia.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">O artyście</div>
+          <h2>Doświadczenie sceniczne połączone z praktycznym podejściem do realizacji.</h2>
+          <p>Piotr Górski jest laureatem konkursów organowych w Polsce i za granicą, absolwentem Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Regularnie koncertuje, prowadzi działalność pedagogiczną i współtworzy projekty, w których klasyka spotyka się z nowoczesnym myśleniem o przestrzeni.</p>
+        </div>
+
+        <div class="story-grid">
+          <article class="panel story-copy">
+            <p>Forma solowa pozwala zbudować oprawę, która jest skupiona, elegancka i dobrze osadzona w miejscu wydarzenia. Sprawdza się zarówno podczas ślubów i ceremonii, jak i w recitalach, koncertach festiwalowych czy wydarzeniach organizowanych przez instytucje kultury.</p>
+            <p>Każda realizacja powstaje indywidualnie. Program może opierać się na muzyce klasycznej, sakralnej, wybranych tematach filmowych albo na repertuarze przygotowanym specjalnie pod dane wydarzenie.</p>
+            <p class="highlight">To oferta dla osób, które nie chcą przypadkowej oprawy, tylko muzyki, która rzeczywiście podnosi poziom całego wydarzenia.</p>
+          </article>
+          <figure class="panel story-photo">
+            <img src="../kalendarium/100825-P3.JPG" alt="Piotr Górski podczas koncertu organowego" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="oferta">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Oferta</div>
+          <h2>Trzy najczęstsze obszary współpracy.</h2>
+          <p>Zakres można dopasować do miejsca, instrumentu, charakteru wydarzenia i oczekiwanej długości programu.</p>
+        </div>
+
+        <div class="offer-grid">
+          <article class="panel card">
+            <div class="feature-line">Ceremonie</div>
+            <h3>Oprawa muzyczna uroczystości</h3>
+            <p>Muzyka przygotowana na kluczowe momenty ceremonii, z dbałością o przebieg i właściwy nastrój.</p>
+            <ul class="list">
+              <li>ceremonie kościelne i cywilne,</li>
+              <li>pomoc w wyborze utworów i kolejności momentów,</li>
+              <li>spokojna realizacja bez chaosu organizacyjnego.</li>
+            </ul>
+          </article>
+
+          <article class="panel card">
+            <div class="feature-line">Koncerty</div>
+            <h3>Recitale i wydarzenia artystyczne</h3>
+            <p>Program budowany z myślą o akustyce miejsca, publiczności i dramaturgii całego wydarzenia.</p>
+            <ul class="list">
+              <li>kościoły, sale koncertowe, domy kultury i festiwale,</li>
+              <li>formuły organowe lub fortepianowe,</li>
+              <li>program dopasowany do charakteru wydarzenia.</li>
+            </ul>
+          </article>
+
+          <article class="panel card">
+            <div class="feature-line">Instytucje</div>
+            <h3>Współpraca z jasnym procesem</h3>
+            <p>Dobra propozycja dla organizatorów, którzy cenią wysoki poziom wykonania i sprawną komunikację.</p>
+            <ul class="list">
+              <li>szybkie potwierdzenie dostępności i zakresu,</li>
+              <li>czytelna propozycja programu,</li>
+              <li>realizacja przygotowana z wyprzedzeniem.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="repertuar">
+      <div class="container split-grid">
+        <article class="panel card">
+          <div class="eyebrow">Repertuar</div>
+          <h2>Program dobierany pod miejsce, wydarzenie i instrument.</h2>
+          <p>Repertuar nie jest stałą listą utworów. Powstaje tak, aby naturalnie pracował w danej przestrzeni i wspierał przebieg wydarzenia.</p>
+
+          <div class="program-points">
+            <div class="program-item">
+              <strong>Muzyka klasyczna i sakralna</strong>
+              <p>Repertuar przygotowany z dbałością o styl, proporcję i brzmienie.</p>
+            </div>
+            <div class="program-item">
+              <strong>Recital organowy lub fortepianowy</strong>
+              <p>Program solowy dla festiwali, parafii, instytucji i wydarzeń okolicznościowych.</p>
+            </div>
+            <div class="program-item">
+              <strong>Utwory specjalne</strong>
+              <p>Wybrane motywy filmowe lub kompozycje wskazane przez organizatora, jeśli dobrze pracują w formule solo.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card">
+          <div class="eyebrow">Jak to wygląda</div>
+          <h3>Dobór programu krok po kroku</h3>
+          <ul class="list">
+            <li>ustalenie rodzaju wydarzenia, miejsca i dostępnego instrumentu,</li>
+            <li>propozycja repertuaru lub kierunku programu,</li>
+            <li>dopasowanie długości i charakteru muzyki do przebiegu wydarzenia,</li>
+            <li>finalne potwierdzenie szczegółów w czytelnym procesie.</li>
+          </ul>
+          <p style="margin-top:16px">Jeśli repertuar nie jest jeszcze określony, wystarczy sam opis wydarzenia i oczekiwanego klimatu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="zdjecia">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Zdjęcia</div>
+          <h2>Wybrane kadry z koncertów i realizacji.</h2>
+          <p>Materiały wykorzystują zdjęcia dostępne w projekcie i pokazują ofertę Piotra Górskiego w formule solowej.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="panel">
+            <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski podczas gry na organach" />
+            <figcaption>Koncert organowy</figcaption>
+          </figure>
+          <figure class="panel">
+            <img src="../kalendarium/100825-P1.JPG" alt="Piotr Górski przy kontuarze organowym" />
+            <figcaption>Realizacja festiwalowa</figcaption>
+          </figure>
+          <figure class="panel">
+            <img src="../kalendarium/100825-P2.JPG" alt="Detal gry organowej Piotra Górskiego" />
+            <figcaption>Instrument i detal wykonania</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Współpraca</div>
+          <h2>Prosty proces od pierwszej wiadomości do dnia wydarzenia.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="panel step">
+            <div class="step-number">1</div>
+            <h3>Pierwszy kontakt</h3>
+            <p>W wiadomości wystarczy termin, miejscowość i typ wydarzenia.</p>
+          </article>
+          <article class="panel step">
+            <div class="step-number">2</div>
+            <h3>Propozycja</h3>
+            <p>Na tej podstawie powstaje zakres oprawy i wstępny kierunek repertuaru.</p>
+          </article>
+          <article class="panel step">
+            <div class="step-number">3</div>
+            <h3>Doprecyzowanie</h3>
+            <p>Ustalane są detale programu, przebiegu i warunków technicznych miejsca.</p>
+          </article>
+          <article class="panel step">
+            <div class="step-number">4</div>
+            <h3>Realizacja</h3>
+            <p>W dniu wydarzenia wszystko jest przygotowane tak, by muzyka naturalnie wspierała całość.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="panel contact-copy">
+          <div class="eyebrow">Kontakt</div>
+          <h2>Jeśli chcesz sprawdzić termin lub omówić wydarzenie, najlepiej zacząć od krótkiej wiadomości.</h2>
+          <p>Najwygodniej będzie, jeśli podasz datę, miejscowość, typ wydarzenia i informację, czy chodzi o oprawę organową, fortepianową albo recital solowy.</p>
+          <p>Na tej podstawie można od razu przygotować realną propozycję repertuaru i formy współpracy.</p>
+
+          <div class="contact-links">
+            <a class="contact-chip" href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+            <a class="contact-chip" href="tel:+48781010229">+48 781 010 229</a>
+            <a class="contact-chip" href="../kalendarium/">Kalendarium</a>
+          </div>
+        </div>
+
+        <aside class="panel contact-card">
+          <div class="eyebrow">Wiadomość</div>
+          <h3>Co warto dopisać</h3>
+          <ul class="list">
+            <li>datę i lokalizację wydarzenia,</li>
+            <li>rodzaj wydarzenia i przewidywany czas muzyki,</li>
+            <li>informację o instrumencie dostępnych na miejscu, jeśli jest znana,</li>
+            <li>ewentualne utwory, które powinny pojawić się w programie.</li>
+          </ul>
+          <p>Im więcej konkretów na start, tym szybciej można przygotować trafną odpowiedź.</p>
+          <a class="btn btn-primary" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Napisz wiadomość</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Piotr Górski • oferta solowa • część marki Più Mosso przygotowana pod adresem piumosso.pl/piotrgorski.</div>
+  </footer>
+</body>
+</html>
