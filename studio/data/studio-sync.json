@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T11:30:53+02:00",
+  "generatedAt": "2026-04-01T13:41:52+02:00",
   "sourceStats": {
     "baza": 65,
     "nowe": 0,
@@ -451,4 +451,1261 @@
         "status": "new"
       },
       {
-        "name": "kontakt - Agencja
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "email": "biuro@emotionsevents.pl",
+        "phone": "509 410 417",
+        "website": "https://www.emotionsevents.pl/kontakt/",
+        "address": "ul. Nowina 18A/1",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.emotionsevents.pl/kontakt/",
+        "last_seen": "2026-03-28T10:35:13.530146+00:00",
+        "status": "new"
+      },
+      {
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "email": "martabrzezinska@emotionsevents.pl",
+        "phone": "509 410 417",
+        "website": "https://www.emotionsevents.pl/kontakt/",
+        "address": "ul. Nowina 18A/1",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.emotionsevents.pl/kontakt/",
+        "last_seen": "2026-03-28T10:35:13.530179+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "email": "imprezy@hevent.pl",
+        "phone": "48 509 373 722",
+        "website": "https://www.hevent.pl/",
+        "address": null,
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.hevent.pl/",
+        "last_seen": "2026-03-28T10:35:14.352755+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja Eventowa Dolnośląskie 2026",
+        "email": "biuro@oferteo.pl",
+        "phone": "899-269-34-75",
+        "website": "https://www.oferteo.pl/agencja-eventowa/dolnoslaskie",
+        "address": "Zapraszamy do skorzystania z noclegów i restauracji w naszym obiekcie, który znajduje się na terenie strzelnicy WKS Śląsk przy ul. Świątnickiej 36, nieopodal Parku Wschodniego.",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.oferteo.pl/agencja-eventowa/dolnoslaskie",
+        "last_seen": "2026-03-28T10:35:16.094345+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Hanana Events - organizacja imprez i eventów firmowych - Agencja Eventowa",
+        "email": "biuro@hananaevents.pl",
+        "phone": "+48 661 728 400",
+        "website": "https://hananaevents.pl/",
+        "address": "ul. Klecińska 123, lok. A-1.5.9",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://hananaevents.pl/",
+        "last_seen": "2026-03-28T10:35:18.648647+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja eventowa Dream Events - kreatywna i profesjonalna organizacja imprez i eventów firmowych",
+        "email": "biuro@dreamevents.pl",
+        "phone": "+48 32 384 40 92",
+        "website": "https://dreamevents.pl/",
+        "address": "ul. Gliwicka 35",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://dreamevents.pl/",
+        "last_seen": "2026-03-28T10:35:21.786024+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
+        "email": "info@tokantis.pl",
+        "phone": null,
+        "website": "https://tokantis.pl/",
+        "address": "ul. Marywilska 38",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://tokantis.pl/",
+        "last_seen": "2026-03-28T10:35:22.331647+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "email": "biuro@creality.pl",
+        "phone": "570 127 859",
+        "website": "https://creality.pl/kontakt/",
+        "address": "ul. Sienkiewicza 85/87, 90-057 Łódź",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://creality.pl/kontakt/",
+        "last_seen": "2026-03-28T10:35:26.094229+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "email": "eventy@creality.pl",
+        "phone": "570 127 859",
+        "website": "https://creality.pl/kontakt/",
+        "address": "ul. Sienkiewicza 85/87, 90-057 Łódź",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://creality.pl/kontakt/",
+        "last_seen": "2026-03-28T10:35:26.094256+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
+        "email": "kontakt@marciniakevents.pl",
+        "phone": "+48 786 124 432",
+        "website": "https://marciniakevents.pl/",
+        "address": "ul. Wycieczkowa 2/10",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://marciniakevents.pl/",
+        "last_seen": "2026-03-28T10:35:29.463423+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
+        "email": "lodz@secret-event.pl",
+        "phone": "+48 537 460 060",
+        "website": "https://secret-event.pl/agencja-eventowa-lodz/",
+        "address": "ul. Senatorska 21/31 m. 102",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://secret-event.pl/agencja-eventowa-lodz/",
+        "last_seen": "2026-03-28T10:35:30.488227+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "email": "biuro@chillievent.pl",
+        "phone": "+48 42 636 77 85",
+        "website": "https://chillievent.pl/",
+        "address": "Al. Kościuszki 11",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://chillievent.pl/",
+        "last_seen": "2026-03-28T10:35:33.442758+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "email": "biuro_wawa@chillievent.pl",
+        "phone": "+48 42 636 77 85",
+        "website": "https://chillievent.pl/",
+        "address": "Al. Kościuszki 11",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://chillievent.pl/",
+        "last_seen": "2026-03-28T10:35:33.442789+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja eventowa ÅodÅº | Topevent.pl",
+        "email": "biuro@topevent.pl",
+        "phone": "48 537 076 661",
+        "website": "https://www.topevent.pl/agencja-eventowa-lodz",
+        "address": "ul. Michałowicza 18, 94-306 Łódź",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.topevent.pl/agencja-eventowa-lodz",
+        "last_seen": "2026-03-28T10:35:36.531627+00:00",
+        "status": "new"
+      },
+      {
+        "name": "OKiS » Kontakt",
+        "email": "katarzyna.grzegorczyk@okis.pl",
+        "phone": "+48 71 754 95 57",
+        "website": "https://okis.pl/o-nas/kontakt/",
+        "address": null,
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://okis.pl/o-nas/kontakt/",
+        "last_seen": "2026-03-28T10:35:45.690536+00:00",
+        "status": "new"
+      },
+      {
+        "name": "OKiS » Kontakt",
+        "email": "sekretariat@okis.pl",
+        "phone": "+48 71 754 95 57",
+        "website": "https://okis.pl/o-nas/kontakt/",
+        "address": null,
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://okis.pl/o-nas/kontakt/",
+        "last_seen": "2026-03-28T10:35:45.690566+00:00",
+        "status": "new"
+      },
+      {
+        "name": "DOLNY ŚLĄSK > Jednostki organizacyjne > Instytucje Kultury > Dane teleadresowe instytucji kultury",
+        "email": "umwd@dolnyslask.pl",
+        "phone": "+48 71 776 90 00",
+        "website": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/",
+        "address": null,
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/",
+        "last_seen": "2026-03-28T10:35:47.664194+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
+        "email": "biuro@gokiskwr.pl",
+        "phone": "71 3166 136",
+        "website": "https://gokiskwr.pl/",
+        "address": "ul. Zwycięstwa 23",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://gokiskwr.pl/",
+        "last_seen": "2026-03-28T10:35:51.429135+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Gminny Ośrodek Kultury - Gminny Ośrodek Kultury",
+        "email": "gokpawlowice@hoga.pl",
+        "phone": "32 472 31 53",
+        "website": "https://www.kultura.pawlowice.pl/",
+        "address": "ul. Zjednoczenia 67",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.kultura.pawlowice.pl/",
+        "last_seen": "2026-03-28T10:35:54.049809+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - YOLO Events Agencja Eventowa - Skontaktuj się z nami",
+        "email": "biuro@octagongroup.pl",
+        "phone": "+48 695 460 470",
+        "website": "https://yoloevents.pl/kontakt/",
+        "address": "Szczęśliwa 29/1",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://yoloevents.pl/kontakt/",
+        "last_seen": "2026-03-31T11:28:56.111349+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
+        "email": "info@fanfaraevents.pl",
+        "phone": "+48 692 823 401",
+        "website": "https://fanfaraevents.pl/",
+        "address": null,
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://fanfaraevents.pl/",
+        "last_seen": "2026-03-31T11:28:57.179689+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Yolo Events - Agencja eventowa",
+        "email": "biuro@meetingplanner.pl",
+        "phone": "+48 22 250 24 53",
+        "website": "https://www.meetingplanner.pl/mp-professionals/yolo-events/",
+        "address": null,
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.meetingplanner.pl/mp-professionals/yolo-events/",
+        "last_seen": "2026-03-31T11:28:57.479391+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "email": "biuro@infinitum.org.pl",
+        "phone": null,
+        "website": "https://infinitum.org.pl/",
+        "address": "ul. Marii Skłodowskiej-Curie 99/11",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://infinitum.org.pl/",
+        "last_seen": "2026-03-31T11:28:57.773320+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Miejski.pl - Miejski słownik slangu i mowy potocznej",
+        "email": "kontakt@miejski.pl",
+        "phone": null,
+        "website": "https://www.miejski.pl/",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.miejski.pl/",
+        "last_seen": "2026-03-31T11:28:57.853552+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "email": "info@huk-coburg.de",
+        "phone": null,
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "last_seen": "2026-03-31T11:28:57.944618+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "email": "beschwerde@versicherungsombudsmann.de",
+        "phone": null,
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "last_seen": "2026-03-31T11:28:58.164742+00:00",
+        "status": "new"
+      },
+      {
+        "name": "O nas - MSK",
+        "email": "sekretariat@msk.lodz.pl",
+        "phone": "42 674 98 00",
+        "website": "https://msk.lodz.pl/o-nas/",
+        "address": "ul. Traugutta 18, 90-113 Łódź",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/o-nas/",
+        "last_seen": "2026-03-31T11:28:58.434357+00:00",
+        "status": "new"
+      },
+      {
+        "name": "MSK: Polesie | Kontakt - MSK",
+        "email": "osrodeksztuki@msk.lodz.pl",
+        "phone": "42 674 98 12",
+        "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://msk.lodz.pl/msk-polesie-kontakt/",
+        "last_seen": "2026-03-31T11:28:58.887072+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
+        "email": "coig@coig.com.pl",
+        "phone": null,
+        "website": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
+        "last_seen": "2026-03-31T11:28:58.887096+00:00",
+        "status": "new"
+      }
+    ],
+    "nowe": [],
+    "engine": [
+      {
+        "email": "kasa@ck.lublin.pl",
+        "name": "Kontakt - Centrum Kultury w Lublinie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://ck-lublin.bilety24.pl/kontakt/"
+      },
+      {
+        "email": "marcin.sudzinski@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csklublin.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "klaudia.drozd@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csklublin.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "kancelaria@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csk.bip.lubelskie.pl/"
+      },
+      {
+        "email": "sylwester.krzywicki@csklublin.pl",
+        "name": "Centrum Spotkania Kultur w Lublinie - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/bip/centrum-spotkania-kultur-w-lublinie-lubelskie-lublin-lublin"
+      },
+      {
+        "email": "sekretariat@ck.lublin.pl",
+        "name": "Centrum Kultury w Lublinie - repertuar, bilety, adres i kontakt - Teatry Polskie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://teatry.art.pl/teatr/centrum-kultury-w-lublinie/"
+      },
+      {
+        "email": "mok@lubawa.pl",
+        "name": "Miejski Ośrodek Kultury w Lubawie – Miejski Ośrodek Kultury w Lubawie",
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://mok.lubawa.pl/"
+      },
+      {
+        "email": "kamila.kowalczyk@lcas.lubawa.pl",
+        "name": "Strona główna | BIP - Miejski Ośrodek Kultury w Lubawie",
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.mok-lubawa.4bip.pl/"
+      },
+      {
+        "email": "urzad-miasta@lubawa.pl",
+        "name": "Miejskie Jednostki Organizacyjne - Miasto Lubawa - Portal gov.pl",
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://samorzad.gov.pl/web/miasto-lubawa/miejskie-jednostki-organizacyjne"
+      },
+      {
+        "email": "kamila.stoinska@bobrowo.org",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bobrowo.bip.net.pl/kategorie/6-kontakt/artykuly/102-kontakt"
+      },
+      {
+        "email": "natalia.motylicka@bobrowo.org",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bobrowo.bip.net.pl/kategorie/6-kontakt/artykuly/102-kontakt"
+      },
+      {
+        "email": "kontakt@goksliwice.pl",
+        "name": "GOK Śliwice - Kontakt",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.goksliwice.pl/kontakt"
+      },
+      {
+        "email": "gok@gok-osieciny.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok-osieciny.pl/"
+      },
+      {
+        "email": "sekretariat@bobrowo.org",
+        "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.bobrowo.org.pl/asp/core/drukuj.asp?menu=17&artykul=0"
+      },
+      {
+        "email": "iod@bobrowo.org",
+        "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.bobrowo.org.pl/asp/core/drukuj.asp?menu=17&artykul=0"
+      },
+      {
+        "email": "centrum@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goksirbaruchowo.pl/kontakt"
+      },
+      {
+        "email": "kultura@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "category": "gminny ośrodek kultury",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goksirbaruchowo.pl/kontakt"
+      },
+      {
+        "email": "info@lodzkie.pl",
+        "name": "Wojewódzka Biblioteka Publiczna im Marszałka Józefa Piłsudskiego w Łodzi - www.bip.lodzkie.pl",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.lodzkie.pl/departament-kultury/jednostki-podlegle/item/682-wojewódzka-biblioteka-publiczna-im-marszałka-józefa-piłsudskiego-w-łodzi"
+      },
+      {
+        "email": "biuro@sbp.pl",
+        "name": "Okręg Łódzki",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.sbp.pl/o-sbp/struktura/okregi-oddzialy-kola-sbp/okreg-lodzki"
+      },
+      {
+        "email": "filia17@mbplp.lodz.pl",
+        "name": "Miejska Biblioteka Publiczna. Filia nr 17, Biblioteki, czytelnie",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.biznesfinder.pl/lodz-miejska-biblioteka-publiczna-filia-nr-17-478037.html"
+      },
+      {
+        "email": "sekretariat@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://biblioteka.lodz.pl/kontakt/"
+      },
+      {
+        "email": "promocja@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://biblioteka.lodz.pl/kontakt/"
+      },
+      {
+        "email": "biuro@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.emotionsevents.pl/kontakt/"
+      },
+      {
+        "email": "martabrzezinska@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.emotionsevents.pl/kontakt/"
+      },
+      {
+        "email": "imprezy@hevent.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.hevent.pl/"
+      },
+      {
+        "email": "biuro@oferteo.pl",
+        "name": "Agencja Eventowa Dolnośląskie 2026",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.oferteo.pl/agencja-eventowa/dolnoslaskie"
+      },
+      {
+        "email": "biuro@hananaevents.pl",
+        "name": "Hanana Events - organizacja imprez i eventów firmowych - Agencja Eventowa",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://hananaevents.pl/"
+      },
+      {
+        "email": "biuro@dreamevents.pl",
+        "name": "Agencja eventowa Dream Events - kreatywna i profesjonalna organizacja imprez i eventów firmowych",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dreamevents.pl/"
+      },
+      {
+        "email": "info@tokantis.pl",
+        "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
+        "category": "agencja eventowa",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://tokantis.pl/"
+      },
+      {
+        "email": "biuro@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://creality.pl/kontakt/"
+      },
+      {
+        "email": "eventy@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://creality.pl/kontakt/"
+      },
+      {
+        "email": "kontakt@marciniakevents.pl",
+        "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://marciniakevents.pl/"
+      },
+      {
+        "email": "lodz@secret-event.pl",
+        "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://secret-event.pl/agencja-eventowa-lodz/"
+      },
+      {
+        "email": "biuro@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://chillievent.pl/"
+      },
+      {
+        "email": "biuro_wawa@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://chillievent.pl/"
+      },
+      {
+        "email": "biuro@topevent.pl",
+        "name": "Agencja eventowa ÅodÅº | Topevent.pl",
+        "category": "agencja eventowa",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.topevent.pl/agencja-eventowa-lodz"
+      },
+      {
+        "email": "katarzyna.grzegorczyk@okis.pl",
+        "name": "OKiS » Kontakt",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://okis.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "sekretariat@okis.pl",
+        "name": "OKiS » Kontakt",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://okis.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "umwd@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Jednostki organizacyjne > Instytucje Kultury > Dane teleadresowe instytucji kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/"
+      },
+      {
+        "email": "biuro@gokiskwr.pl",
+        "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokiskwr.pl/"
+      },
+      {
+        "email": "gokpawlowice@hoga.pl",
+        "name": "Gminny Ośrodek Kultury - Gminny Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kultura.pawlowice.pl/"
+      },
+      {
+        "email": "biuro@octagongroup.pl",
+        "name": "Kontakt - YOLO Events Agencja Eventowa - Skontaktuj się z nami",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://yoloevents.pl/kontakt/"
+      },
+      {
+        "email": "info@fanfaraevents.pl",
+        "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://fanfaraevents.pl/"
+      },
+      {
+        "email": "biuro@meetingplanner.pl",
+        "name": "Yolo Events - Agencja eventowa",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.meetingplanner.pl/mp-professionals/yolo-events/"
+      },
+      {
+        "email": "biuro@infinitum.org.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://infinitum.org.pl/"
+      },
+      {
+        "email": "kontakt@miejski.pl",
+        "name": "Miejski.pl - Miejski słownik slangu i mowy potocznej",
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.miejski.pl/"
+      },
+      {
+        "email": "info@huk-coburg.de",
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
+      },
+      {
+        "email": "beschwerde@versicherungsombudsmann.de",
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.huk.de/haus-haftung-recht/haftplichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
+      },
+      {
+        "email": "sekretariat@msk.lodz.pl",
+        "name": "O nas - MSK",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://msk.lodz.pl/o-nas/"
+      },
+      {
+        "email": "osrodeksztuki@msk.lodz.pl",
+        "name": "MSK: Polesie | Kontakt - MSK",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://msk.lodz.pl/msk-polesie-kontakt/"
+      },
+      {
+        "email": "coig@coig.com.pl",
+        "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
+        "category": "miejski ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php"
+      }
+    ],
+    "sent": [
+      {
+        "email": "kasa@ck.lublin.pl",
+        "name": "Kontakt - Centrum Kultury w Lublinie",
+        "sent_at": "2026-03-28T12:37:41.407085+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "marcin.sudzinski@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "sent_at": "2026-03-28T12:37:43.595670+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "klaudia.drozd@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "sent_at": "2026-03-28T12:37:46.061859+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kancelaria@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-03-28T12:37:48.591431+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sylwester.krzywicki@csklublin.pl",
+        "name": "Centrum Spotkania Kultur w Lublinie - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "sent_at": "2026-03-28T12:37:50.898804+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sekretariat@ck.lublin.pl",
+        "name": "Centrum Kultury w Lublinie - repertuar, bilety, adres i kontakt - Teatry Polskie",
+        "sent_at": "2026-03-28T12:37:53.086486+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "mok@lubawa.pl",
+        "name": "Miejski Ośrodek Kultury w Lubawie – Miejski Ośrodek Kultury w Lubawie",
+        "sent_at": "2026-03-28T12:37:55.409916+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kamila.kowalczyk@lcas.lubawa.pl",
+        "name": "Strona główna | BIP - Miejski Ośrodek Kultury w Lubawie",
+        "sent_at": "2026-03-28T12:37:57.801863+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "urzad-miasta@lubawa.pl",
+        "name": "Miejskie Jednostki Organizacyjne - Miasto Lubawa - Portal gov.pl",
+        "sent_at": "2026-03-28T12:38:00.360720+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kamila.stoinska@bobrowo.org",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "sent_at": "2026-03-28T12:38:02.547940+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "natalia.motylicka@bobrowo.org",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "sent_at": "2026-03-28T12:38:05.174478+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kontakt@goksliwice.pl",
+        "name": "GOK Śliwice - Kontakt",
+        "sent_at": "2026-03-28T12:38:07.305801+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "gok@gok-osieciny.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury",
+        "sent_at": "2026-03-28T12:38:09.612349+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sekretariat@bobrowo.org",
+        "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
+        "sent_at": "2026-03-28T12:38:11.799454+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "iod@bobrowo.org",
+        "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
+        "sent_at": "2026-03-28T12:38:14.115123+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "centrum@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "sent_at": "2026-03-29T10:59:44.177150+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kultura@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "sent_at": "2026-03-29T10:59:45.886465+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "info@lodzkie.pl",
+        "name": "Wojewódzka Biblioteka Publiczna im Marszałka Józefa Piłsudskiego w Łodzi - www.bip.lodzkie.pl",
+        "sent_at": "2026-03-29T10:59:47.570997+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@sbp.pl",
+        "name": "Okręg Łódzki",
+        "sent_at": "2026-03-29T10:59:49.286476+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "filia17@mbplp.lodz.pl",
+        "name": "Miejska Biblioteka Publiczna. Filia nr 17, Biblioteki, czytelnie",
+        "sent_at": "2026-03-29T10:59:51.001246+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sekretariat@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "sent_at": "2026-03-29T10:59:52.692734+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "promocja@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "sent_at": "2026-03-29T10:59:54.494980+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "sent_at": "2026-03-29T10:59:56.177866+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "martabrzezinska@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "sent_at": "2026-03-29T10:59:57.989372+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "imprezy@hevent.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "sent_at": "2026-03-29T10:59:59.783845+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@oferteo.pl",
+        "name": "Agencja Eventowa Dolnośląskie 2026",
+        "sent_at": "2026-03-29T11:00:01.374765+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@hananaevents.pl",
+        "name": "Hanana Events - organizacja imprez i eventów firmowych - Agencja Eventowa",
+        "sent_at": "2026-03-29T11:00:02.980816+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@dreamevents.pl",
+        "name": "Agencja eventowa Dream Events - kreatywna i profesjonalna organizacja imprez i eventów firmowych",
+        "sent_at": "2026-03-29T11:00:04.767128+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "info@tokantis.pl",
+        "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
+        "sent_at": "2026-03-29T11:00:06.381147+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-03-29T11:00:07.987955+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "eventy@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-03-30T11:32:23.501644+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kontakt@marciniakevents.pl",
+        "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
+        "sent_at": "2026-03-30T11:32:25.563671+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "lodz@secret-event.pl",
+        "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
+        "sent_at": "2026-03-30T11:32:27.915368+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-03-30T11:32:30.267833+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro_wawa@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-03-30T11:32:32.540169+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@topevent.pl",
+        "name": "Agencja eventowa ÅodÅº | Topevent.pl",
+        "sent_at": "2026-03-30T11:32:34.605438+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "katarzyna.grzegorczyk@okis.pl",
+        "name": "OKiS » Kontakt",
+        "sent_at": "2026-03-30T11:32:36.958693+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sekretariat@okis.pl",
+        "name": "OKiS » Kontakt",
+        "sent_at": "2026-03-30T11:32:39.240256+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "umwd@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Jednostki organizacyjne > Instytucje Kultury > Dane teleadresowe instytucji kultury",
+        "sent_at": "2026-03-30T11:32:41.519859+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@gokiskwr.pl",
+        "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
+        "sent_at": "2026-03-30T11:32:43.585446+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "gokpawlowice@hoga.pl",
+        "name": "Gminny Ośrodek Kultury - Gminny Ośrodek Kultury",
+        "sent_at": "2026-03-30T11:32:45.756663+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@octagongroup.pl",
+        "name": "Kontakt - YOLO Events Agencja Eventowa - Skontaktuj się z nami",
+        "sent_at": "2026-03-30T11:32:48.113177+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "info@fanfaraevents.pl",
+        "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
+        "sent_at": "2026-03-30T11:32:50.423745+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@meetingplanner.pl",
+        "name": "Yolo Events - Agencja eventowa",
+        "sent_at": "2026-03-30T11:32:52.485284+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@infinitum.org.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "sent_at": "2026-03-30T11:32:54.635376+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kontakt@miejski.pl",
+        "name": "Miejski.pl - Miejski słownik slangu i mowy potocznej",
+        "sent_at": "2026-03-31T11:26:28.882099+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "info@huk-coburg.de",
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "sent_at": "2026-03-31T11:26:30.230074+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "beschwerde@versicherungsombudsmann.de",
+        "name": "Tierkrankenversicherung inkl. OP-Schutz",
+        "sent_at": "2026-03-31T11:26:31.853107+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "sekretariat@msk.lodz.pl",
+        "name": "O nas - MSK",
+        "sent_at": "2026-03-31T11:26:34.143937+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "osrodeksztuki@msk.lodz.pl",
+        "name": "MSK: Polesie | Kontakt - MSK",
+        "sent_at": "2026-03-31T11:26:36.501075+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "coig@coig.com.pl",
+        "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
+        "sent_at": "2026-03-31T11:26:38.930859+00:00",
+        "status": "sent"
+      }
+    ]
+  }
+}
