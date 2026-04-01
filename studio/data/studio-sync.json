@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "generatedAt": "2026-04-01T13:41:52+02:00",
-=======
-  "generatedAt": "2026-04-01T11:30:53+02:00",
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
+  "generatedAt": "2026-04-01T14:59:52+02:00",
   "sourceStats": {
     "baza": 65,
     "nowe": 0,
@@ -607,97 +603,97 @@
       {
         "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
         "email": "lodz@secret-event.pl",
-        "phone": "+48 537 460 060",
+        "phone": "+48 536 262 802",
         "website": "https://secret-event.pl/agencja-eventowa-lodz/",
-        "address": "ul. Senatorska 21/31 m. 102",
+        "address": null,
         "category": "agencja eventowa",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://secret-event.pl/agencja-eventowa-lodz/",
-        "last_seen": "2026-03-28T10:35:30.488227+00:00",
+        "last_seen": "2026-03-28T10:35:30.888082+00:00",
         "status": "new"
       },
       {
         "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
         "email": "biuro@chillievent.pl",
-        "phone": "+48 42 636 77 85",
+        "phone": "+48 512 310 085",
         "website": "https://chillievent.pl/",
-        "address": "Al. Kościuszki 11",
+        "address": "ul. Św. Franciszka z Asyżu 24",
         "category": "agencja eventowa",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://chillievent.pl/",
-        "last_seen": "2026-03-28T10:35:33.442758+00:00",
+        "last_seen": "2026-03-28T10:35:31.855527+00:00",
         "status": "new"
       },
       {
         "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
         "email": "biuro_wawa@chillievent.pl",
-        "phone": "+48 42 636 77 85",
+        "phone": "+48 512 310 085",
         "website": "https://chillievent.pl/",
-        "address": "Al. Kościuszki 11",
+        "address": "ul. Św. Franciszka z Asyżu 24",
         "category": "agencja eventowa",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://chillievent.pl/",
-        "last_seen": "2026-03-28T10:35:33.442789+00:00",
+        "last_seen": "2026-03-28T10:35:31.855554+00:00",
         "status": "new"
       },
       {
         "name": "Agencja eventowa ÅodÅº | Topevent.pl",
         "email": "biuro@topevent.pl",
-        "phone": "48 537 076 661",
+        "phone": "+48 500 444 422",
         "website": "https://www.topevent.pl/agencja-eventowa-lodz",
-        "address": "ul. Michałowicza 18, 94-306 Łódź",
+        "address": null,
         "category": "agencja eventowa",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.topevent.pl/agencja-eventowa-lodz",
-        "last_seen": "2026-03-28T10:35:36.531627+00:00",
+        "last_seen": "2026-03-28T10:35:32.073134+00:00",
         "status": "new"
       },
       {
         "name": "OKiS » Kontakt",
         "email": "katarzyna.grzegorczyk@okis.pl",
-        "phone": "+48 71 754 95 57",
+        "phone": "71 344 28 64",
         "website": "https://okis.pl/o-nas/kontakt/",
-        "address": null,
+        "address": "Rynek-Ratusz 24",
         "category": "gminny ośrodek kultury",
         "region": "dolnośląskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://okis.pl/o-nas/kontakt/",
-        "last_seen": "2026-03-28T10:35:45.690536+00:00",
+        "last_seen": "2026-03-28T12:58:34.638557+00:00",
         "status": "new"
       },
       {
         "name": "OKiS » Kontakt",
         "email": "sekretariat@okis.pl",
-        "phone": "+48 71 754 95 57",
+        "phone": "71 344 28 64",
         "website": "https://okis.pl/o-nas/kontakt/",
-        "address": null,
+        "address": "Rynek-Ratusz 24",
         "category": "gminny ośrodek kultury",
         "region": "dolnośląskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://okis.pl/o-nas/kontakt/",
-        "last_seen": "2026-03-28T10:35:45.690566+00:00",
+        "last_seen": "2026-03-28T12:58:34.638586+00:00",
         "status": "new"
       },
       {
         "name": "DOLNY ŚLĄSK > Jednostki organizacyjne > Instytucje Kultury > Dane teleadresowe instytucji kultury",
         "email": "umwd@dolnyslask.pl",
-        "phone": "+48 71 776 90 00",
+        "phone": "12-14 50-411",
         "website": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/",
         "address": null,
         "category": "gminny ośrodek kultury",
@@ -706,13 +702,13 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/",
-        "last_seen": "2026-03-28T10:35:47.664194+00:00",
+        "last_seen": "2026-03-28T12:58:35.775201+00:00",
         "status": "new"
       },
       {
         "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
         "email": "biuro@gokiskwr.pl",
-        "phone": "71 3166 136",
+        "phone": null,
         "website": "https://gokiskwr.pl/",
         "address": "ul. Zwycięstwa 23",
         "category": "gminny ośrodek kultury",
@@ -721,43 +717,43 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://gokiskwr.pl/",
-        "last_seen": "2026-03-28T10:35:51.429135+00:00",
+        "last_seen": "2026-03-28T12:58:36.584911+00:00",
         "status": "new"
       },
       {
         "name": "Gminny Ośrodek Kultury - Gminny Ośrodek Kultury",
         "email": "gokpawlowice@hoga.pl",
-        "phone": "32 472 31 53",
+        "phone": "23 24 25 26 27 28 01 02 03 04 05 06 07 08 09 10 11 12 13 14",
         "website": "https://www.kultura.pawlowice.pl/",
-        "address": "ul. Zjednoczenia 67",
+        "address": "ul. Zjednoczenia 67 43-250 Pawłowice",
         "category": "gminny ośrodek kultury",
         "region": "dolnośląskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.kultura.pawlowice.pl/",
-        "last_seen": "2026-03-28T10:35:54.049809+00:00",
+        "last_seen": "2026-03-28T12:58:50.487305+00:00",
         "status": "new"
       },
       {
         "name": "Kontakt - YOLO Events Agencja Eventowa - Skontaktuj się z nami",
         "email": "biuro@octagongroup.pl",
-        "phone": "+48 695 460 470",
+        "phone": "+48 607 323 341 +48 691 511 303",
         "website": "https://yoloevents.pl/kontakt/",
-        "address": "Szczęśliwa 29/1",
+        "address": "ul. Porzeczkowa 22a",
         "category": "agencja eventowa",
         "region": "lubuskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://yoloevents.pl/kontakt/",
-        "last_seen": "2026-03-31T11:28:56.111349+00:00",
+        "last_seen": "2026-03-28T12:59:02.057788+00:00",
         "status": "new"
       },
       {
         "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
         "email": "info@fanfaraevents.pl",
-        "phone": "+48 692 823 401",
+        "phone": "530-104-400",
         "website": "https://fanfaraevents.pl/",
         "address": null,
         "category": "agencja eventowa",
@@ -766,13 +762,13 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://fanfaraevents.pl/",
-        "last_seen": "2026-03-31T11:28:57.179689+00:00",
+        "last_seen": "2026-03-28T12:59:03.288192+00:00",
         "status": "new"
       },
       {
         "name": "Yolo Events - Agencja eventowa",
         "email": "biuro@meetingplanner.pl",
-        "phone": "+48 22 250 24 53",
+        "phone": "0000594302",
         "website": "https://www.meetingplanner.pl/mp-professionals/yolo-events/",
         "address": null,
         "category": "agencja eventowa",
@@ -781,22 +777,22 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.meetingplanner.pl/mp-professionals/yolo-events/",
-        "last_seen": "2026-03-31T11:28:57.479391+00:00",
+        "last_seen": "2026-03-28T12:59:04.495501+00:00",
         "status": "new"
       },
       {
         "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
         "email": "biuro@infinitum.org.pl",
-        "phone": null,
+        "phone": "9462750183",
         "website": "https://infinitum.org.pl/",
-        "address": "ul. Marii Skłodowskiej-Curie 99/11",
+        "address": "ul. Zbigniewa Herberta 14, 20-468 Lublin",
         "category": "agencja eventowa",
         "region": "lubuskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://infinitum.org.pl/",
-        "last_seen": "2026-03-31T11:28:57.773320+00:00",
+        "last_seen": "2026-03-28T12:59:08.285588+00:00",
         "status": "new"
       },
       {
@@ -811,54 +807,65 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.miejski.pl/",
-        "last_seen": "2026-03-31T11:28:57.853552+00:00",
+        "last_seen": "2026-03-29T10:36:45.764054+00:00",
         "status": "new"
       },
       {
-        "name": "Tierkrankenversicherung inkl. OP-Schutz",
-        "email": "info@huk-coburg.de",
-        "phone": null,
-        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
+        "name": "Słowa na literę A w słowniku Miejski.pl - strona 1",
+        "email": "kontakt@miejski.pl",
+        "phone": "1 2 3 4 5 6 7 8 9 10 11",
+        "website": "https://www.miejski.pl/a-0.html",
         "address": null,
         "category": "miejski ośrodek kultury",
-        "region": "dolnośląskie",
-        "country_code": "DE",
-        "country_name": "Niemcy",
-        "language": "de",
-        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
-        "last_seen": "2026-03-31T11:28:57.944618+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Tierkrankenversicherung inkl. OP-Schutz",
-        "email": "beschwerde@versicherungsombudsmann.de",
-        "phone": null,
-        "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
-        "address": null,
-        "category": "miejski ośrodek kultury",
-        "region": "dolnośląskie",
-        "country_code": "DE",
-        "country_name": "Niemcy",
-        "language": "de",
-        "source_url": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html",
-        "last_seen": "2026-03-31T11:28:58.164742+00:00",
-        "status": "new"
-      },
-      {
-        "name": "O nas - MSK",
-        "email": "sekretariat@msk.lodz.pl",
-        "phone": "42 674 98 00",
-        "website": "https://msk.lodz.pl/o-nas/",
-        "address": "ul. Traugutta 18, 90-113 Łódź",
-        "category": "miejski ośrodek kultury",
-        "region": "łódzkie",
+        "region": "lubuskie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
-<<<<<<< HEAD
-        "source_url": "https://msk.lodz.pl/o-nas/",
-        "last_seen": "2026-03-31T11:28:58.434357+00:00",
-=======
+        "source_url": "https://www.miejski.pl/a-0.html",
+        "last_seen": "2026-03-29T10:36:46.977700+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Miejski - Co to znaczy? Definicja w słowniku Miejski.pl",
+        "email": "kontakt@miejski.pl",
+        "phone": null,
+        "website": "https://www.miejski.pl/slowo-Miejski",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.miejski.pl/slowo-Miejski",
+        "last_seen": "2026-03-29T10:36:47.537328+00:00",
+        "status": "new"
+      },
+      {
+        "name": "xD - Co to znaczy? Definicja w słowniku Miejski.pl",
+        "email": "kontakt@miejski.pl",
+        "phone": null,
+        "website": "https://www.miejski.pl/slowo-xd",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.miejski.pl/slowo-xd",
+        "last_seen": "2026-03-29T10:36:48.124709+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Essa - Co to znaczy? Definicja w słowniku Miejski.pl",
+        "email": "kontakt@miejski.pl",
+        "phone": null,
+        "website": "https://www.miejski.pl/slowo-Essa",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
         "source_url": "https://www.miejski.pl/slowo-Essa",
         "last_seen": "2026-03-29T10:36:49.151010+00:00",
         "status": "new"
@@ -906,30 +913,20 @@
         "language": "pl",
         "source_url": "https://msk.lodz.pl/o-nas/",
         "last_seen": "2026-03-31T10:55:26.135012+00:00",
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "status": "new"
       },
       {
         "name": "MSK: Polesie | Kontakt - MSK",
         "email": "osrodeksztuki@msk.lodz.pl",
-<<<<<<< HEAD
-        "phone": "42 674 98 12",
-        "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
-        "address": null,
-=======
         "phone": "518 522 696",
         "website": "https://msk.lodz.pl/msk-polesie-kontakt/",
         "address": "Miejska Strefa Kultury – Ośrodek Sztuki, MSK: Polesie, ul. Krzemieniecka 2A, 94-030 Łódź",
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "category": "miejski ośrodek kultury",
         "region": "łódzkie",
         "country_code": "PL",
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://msk.lodz.pl/msk-polesie-kontakt/",
-<<<<<<< HEAD
-        "last_seen": "2026-03-31T11:28:58.887072+00:00",
-=======
         "last_seen": "2026-03-31T10:55:26.924772+00:00",
         "status": "new"
       },
@@ -976,17 +973,12 @@
         "language": "pl",
         "source_url": "https://msk.lodz.pl/instytucje-kultury/",
         "last_seen": "2026-03-31T10:55:33.484710+00:00",
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "status": "new"
       },
       {
         "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
         "email": "coig@coig.com.pl",
-<<<<<<< HEAD
-        "phone": null,
-=======
         "phone": "22 648 80 90",
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
         "website": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
         "address": null,
         "category": "miejski ośrodek kultury",
@@ -995,20 +987,13 @@
         "country_name": "Polska",
         "language": "pl",
         "source_url": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php",
-<<<<<<< HEAD
-        "last_seen": "2026-03-31T11:28:58.887096+00:00",
-        "status": "new"
-      }
-=======
         "last_seen": "2026-03-31T10:55:34.070561+00:00",
         "status": "new"
       }
     ],
     "nowe": [
 
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
     ],
-    "nowe": [],
     "engine": [
       {
         "email": "kasa@ck.lublin.pl",
@@ -1488,11 +1473,7 @@
         "country_code": "DE",
         "country_name": "Niemcy",
         "language": "de",
-<<<<<<< HEAD
-        "website": "https://www.huk.de/haus-haftung-recht/haftplichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
-=======
         "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
->>>>>>> 8b334c8 (Refresh studio sync snapshot)
       },
       {
         "email": "sekretariat@msk.lodz.pl",
