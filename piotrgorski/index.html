@@ -276,8 +276,9 @@ h1{
 .hero-photo img{
   width:100%;
   height:100%;
-  min-height:620px;
+  min-height:720px;
   object-fit:cover;
+  object-position:center 20%;
 }
 
 .aside-card{
@@ -408,7 +409,8 @@ h1{
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
+  grid-template-columns:1.6fr 1fr 1fr;
+  grid-template-rows:auto auto;
   gap:14px;
 }
 
@@ -416,16 +418,70 @@ h1{
   overflow:hidden;
 }
 
+.gallery figure:first-child{
+  grid-row:1 / 3;
+}
+
 .gallery img{
   width:100%;
-  height:290px;
+  height:100%;
+  min-height:240px;
   object-fit:cover;
+  transition:transform .5s ease;
+}
+
+.gallery figure:first-child img{
+  min-height:520px;
+}
+
+.gallery figure:hover img{
+  transform:scale(1.03);
 }
 
 .gallery figcaption{
-  padding:12px 14px 14px;
+  padding:10px 14px 13px;
   color:var(--muted-2);
-  font-size:.88rem;
+  font-size:.84rem;
+  letter-spacing:.04em;
+}
+
+.photo-break{
+  width:100%;
+  height:440px;
+  overflow:hidden;
+  position:relative;
+}
+
+.photo-break img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 28%;
+  filter:brightness(.68) saturate(.9);
+  transition:transform 8s ease;
+}
+
+.photo-break:hover img{
+  transform:scale(1.04);
+}
+
+.photo-break-label{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding-bottom:36px;
+  background:linear-gradient(to top, rgba(0,0,0,.42), transparent 55%);
+}
+
+.photo-break-label span{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.6rem,3.5vw,2.8rem);
+  font-weight:600;
+  color:rgba(248,241,229,.88);
+  letter-spacing:.06em;
+  text-align:center;
 }
 
 .steps{
@@ -489,12 +545,26 @@ h1{
   }
 
   .gallery{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+  }
+
+  .gallery figure:first-child{
+    grid-row:auto;
+    grid-column:1 / -1;
+  }
+
+  .gallery figure:first-child img{
+    min-height:360px;
   }
 
   .hero-photo img,
   .story-photo img{
     min-height:360px;
+  }
+
+  .photo-break{
+    height:300px;
   }
 }
 
@@ -543,7 +613,7 @@ h1{
         <div class="panel hero-copy">
           <div class="eyebrow">Organy • fortepian • ceremonie • recitale</div>
           <h1>Organy i fortepian. Muzyka grana na żywo.</h1>
-          <p class="lead">Laureat konkursów organowych w Polsce i za granicą. Absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Gra na ślubach, festiwalach i w salach koncertowych — samodzielnie lub w składzie duetu Più Mosso.</p>
+          <p class="lead">Laureat konkursów organowych w Polsce i za granicą. Absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Gra na ślubach, festiwalach i w salach koncertowych, samodzielnie i w składzie duetu Più Mosso.</p>
 
           <div class="hero-proof" aria-label="Najważniejsze atuty">
             <span>laureat konkursów organowych</span>
@@ -567,7 +637,7 @@ h1{
             <div class="feature-line">Dla klientów indywidualnych i instytucji</div>
             <h3>Dla kogo</h3>
             <ul>
-              <li>uroczystości kościelne i cywilne — organy lub fortepian,</li>
+              <li>uroczystości kościelne i cywilne (organy lub fortepian),</li>
               <li>recitale i koncerty solowe dla instytucji kultury,</li>
               <li>festiwale i projekty z indywidualnym programem.</li>
             </ul>
@@ -586,9 +656,9 @@ h1{
 
         <div class="story-grid">
           <article class="panel story-copy">
-            <p>Gra solowa ma w sobie coś niepodrabialnego — jeden instrument, jedno skupienie, pełna odpowiedzialność za przebieg. Sprawdza się na ślubach i ceremoniach, na recitalach festiwalowych i w salach instytucji kultury.</p>
-            <p>Każdy program składam od nowa — pod miejsce, akustykę i charakter okazji. Nie wysyłam gotowych list.</p>
-            <p class="highlight">To propozycja dla tych, którzy wiedzą, że dobra muzyka robi różnicę — i nie chcą zostawiać tego przypadkowi.</p>
+            <p>Gra solowa to jeden instrument i jedno skupienie. Nikt nie dzieli odpowiedzialności za to, jak brzmi sala. Sprawdza się na ślubach i ceremoniach, na recitalach festiwalowych i w salach instytucji kultury.</p>
+            <p>Każdy program składam pod konkretne miejsce, akustykę i charakter okazji. Nie wysyłam gotowych list.</p>
+            <p class="highlight">To propozycja dla tych, którzy wiedzą, że dobra muzyka robi różnicę i nie chcą zostawiać tego przypadkowi.</p>
           </article>
           <figure class="panel story-photo">
             <img src="../kalendarium/100825-P3.JPG" alt="Piotr Górski podczas koncertu organowego" />
@@ -596,6 +666,11 @@ h1{
         </div>
       </div>
     </section>
+
+    <div class="photo-break">
+      <img src="../kalendarium/100825-P.JPG" alt="Piotr Górski przy organach" />
+      <div class="photo-break-label"><span>Piotr Górski</span></div>
+    </div>
 
     <section class="section" id="oferta">
       <div class="container">
@@ -652,15 +727,15 @@ h1{
           <div class="program-points">
             <div class="program-item">
               <strong>Muzyka klasyczna i sakralna</strong>
-              <p>Bach, Buxtehude, Franck, Vierne — i wszystko to, co dobrze działa na konkretnych organach lub fortepianie.</p>
+              <p>Bach, Buxtehude, Franck, Vierne. I wszystko, co dobrze działa na konkretnych organach lub fortepianie.</p>
             </div>
             <div class="program-item">
               <strong>Recital organowy lub fortepianowy</strong>
-              <p>Program solowy z dramaturgią — nie przypadkowy zestaw utworów, tylko przemyślana całość.</p>
+              <p>Program solowy z dramaturgią, nie przypadkowy zestaw. Przemyślana całość od pierwszego do ostatniego dźwięku.</p>
             </div>
             <div class="program-item">
               <strong>Motywy filmowe i życzenia</strong>
-              <p>Jeśli zależy Wam na konkretnym utworze — powiedźcie. Jeśli da się go zagrać dobrze, zagram.</p>
+              <p>Jeśli zależy Wam na konkretnym utworze, powiedzcie. Jeśli da się go zagrać dobrze, zagram.</p>
             </div>
           </div>
         </article>
@@ -674,7 +749,7 @@ h1{
             <li>dopasowanie długości i charakteru muzyki do przebiegu wydarzenia,</li>
             <li>finalne potwierdzenie szczegółów w czytelnym procesie.</li>
           </ul>
-          <p style="margin-top:16px">Jeśli nie macie jeszcze żadnych preferencji — wystarczy opis miejsca i nastroju. Resztą się zajmę.</p>
+          <p style="margin-top:16px">Jeśli nie macie jeszcze żadnych preferencji, wystarczy opis miejsca i nastroju. Resztą się zajmę.</p>
         </article>
       </div>
     </section>
@@ -689,16 +764,24 @@ h1{
 
         <div class="gallery">
           <figure class="panel">
-            <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski podczas gry na organach" />
+            <img src="../kalendarium/100825-P3.JPG" alt="Piotr Górski podczas koncertu organowego" />
             <figcaption>Koncert organowy</figcaption>
           </figure>
           <figure class="panel">
-            <img src="../kalendarium/100825-P1.JPG" alt="Piotr Górski przy kontuarze organowym" />
+            <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski przy organach" />
+            <figcaption>Recital</figcaption>
+          </figure>
+          <figure class="panel">
+            <img src="../kalendarium/250924-P.JPG" alt="Piotr Górski na scenie" />
+            <figcaption>Wrzesień 2024</figcaption>
+          </figure>
+          <figure class="panel">
+            <img src="../kalendarium/100825-P1.JPG" alt="Piotr Górski przy kontuarze" />
             <figcaption>Realizacja festiwalowa</figcaption>
           </figure>
           <figure class="panel">
-            <img src="../kalendarium/100825-P2.JPG" alt="Detal gry organowej Piotra Górskiego" />
-            <figcaption>Instrument i detal wykonania</figcaption>
+            <img src="../kalendarium/100825-P2.JPG" alt="Detal gry organowej" />
+            <figcaption>Detal wykonania</figcaption>
           </figure>
         </div>
       </div>
@@ -720,7 +803,7 @@ h1{
           <article class="panel step">
             <div class="step-number">2</div>
             <h3>Propozycja</h3>
-            <p>Proponuję kierunek repertuaru i zakres — do wyboru lub modyfikacji.</p>
+            <p>Proponuję kierunek repertuaru i zakres, do wyboru i modyfikacji.</p>
           </article>
           <article class="panel step">
             <div class="step-number">3</div>
@@ -740,8 +823,8 @@ h1{
       <div class="container contact-grid">
         <div class="panel contact-copy">
           <div class="eyebrow">Kontakt</div>
-          <h2>Napisz — sprawdzę termin i odpiszę konkretnie.</h2>
-          <p>Wystarczy data, miejscowość i typ uroczystości. Jeśli wiadomo — organy czy fortepian. Resztę ustalimy w rozmowie.</p>
+          <h2>Napisz. Sprawdzę termin i odpiszę konkretnie.</h2>
+          <p>Wystarczy data, miejscowość i typ uroczystości. Jeśli wiadomo, które instrumenty są dostępne, tym lepiej. Resztę ustalimy w rozmowie.</p>
 
           <div class="contact-links">
             <a class="contact-chip" href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
