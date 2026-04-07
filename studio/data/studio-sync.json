@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-02T13:04:38+02:00",
+  "generatedAt": "2026-04-07T19:28:03.546128+02:00",
   "sourceStats": {
     "baza": 80,
     "nowe": 15,
-    "engine": 66,
+    "engine": 399,
     "sent": 51
   },
   "sourceRuns": {
@@ -1216,234 +1216,187 @@
         "status": "new"
       }
     ],
-    "nowe": [
-      {
-        "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
-        "email": "informacja@bracz.edu.pl",
-        "phone": "61 88 58 962",
-        "website": "https://bracz.edu.pl/",
-        "address": "Pl. Wolności 19",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://bracz.edu.pl/",
-        "last_seen": "2026-04-01T11:00:38.753539+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
-        "email": "wypozyczalnia@bracz.edu.pl",
-        "phone": "61 88 58 962",
-        "website": "https://bracz.edu.pl/",
-        "address": "Pl. Wolności 19",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://bracz.edu.pl/",
-        "last_seen": "2026-04-01T11:00:38.753571+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
-        "email": "sekretariat@bracz.edu.pl",
-        "phone": "61 88 58 962",
-        "website": "https://bracz.edu.pl/",
-        "address": "Pl. Wolności 19",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://bracz.edu.pl/",
-        "last_seen": "2026-04-01T11:00:38.753589+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
-        "email": "darygromadzenie@bracz.edu.pl",
-        "phone": "61 88 58 962",
-        "website": "https://bracz.edu.pl/",
-        "address": "Pl. Wolności 19",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://bracz.edu.pl/",
-        "last_seen": "2026-04-01T11:00:38.753604+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Narodowa",
-        "email": "kontakt@bn.org.pl",
-        "phone": null,
-        "website": "https://www.bn.org.pl/",
-        "address": "AL. NIEPODLEGŁOŚCI 213, WARSZAWA",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://www.bn.org.pl/",
-        "last_seen": "2026-04-01T11:00:41.416961+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Narodowa",
-        "email": "palac@bn.org.pl",
-        "phone": null,
-        "website": "https://www.bn.org.pl/",
-        "address": "AL. NIEPODLEGŁOŚCI 213, WARSZAWA",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://www.bn.org.pl/",
-        "last_seen": "2026-04-01T11:00:41.416986+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Narodowa",
-        "email": "bdpp@bn.org.pl",
-        "phone": null,
-        "website": "https://www.bn.org.pl/",
-        "address": "AL. NIEPODLEGŁOŚCI 213, WARSZAWA",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://www.bn.org.pl/",
-        "last_seen": "2026-04-01T11:00:41.416999+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Kraków",
-        "email": "sekretariat@biblioteka.krakow.pl",
-        "phone": "12 61 89 100",
-        "website": "https://biblioteka.krakow.pl/",
-        "address": "Biblioteka Główna | ul. Powroźnicza 2, 30-307 Kraków",
-        "category": "biblioteka publiczna",
-        "region": "opolskie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://biblioteka.krakow.pl/",
-        "last_seen": "2026-04-01T11:00:42.907325+00:00",
-        "status": "new"
-      },
-      {
-        "name": "w.bibliotece.pl - szukaj książek w bibliotekach",
-        "email": "portal@sokrates-it.pl",
-        "phone": null,
-        "website": "https://w.bibliotece.pl/",
-        "address": null,
-        "category": "biblioteka publiczna",
-        "region": "podkarpackie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://w.bibliotece.pl/",
-        "last_seen": "2026-04-01T11:01:10.774027+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteka Śląska - Biblioteka Śląska jest biblioteką publiczną i wojewódzką o statusie naukowym.",
-        "email": "info@bs.katowice.pl",
-        "phone": "32 208 37 00",
-        "website": "https://bs.katowice.pl/",
-        "address": "Plac Rady Europy 1",
-        "category": "biblioteka publiczna",
-        "region": "podkarpackie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://bs.katowice.pl/",
-        "last_seen": "2026-04-01T11:01:13.727553+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Biblioteki cyfrowe w Polsce - Lustro Biblioteki",
-        "email": "b.morawiec@lustrobiblioteki.pl",
-        "phone": null,
-        "website": "https://lustrobiblioteki.pl/biblioteki-cyfrowe-polsce/",
-        "address": null,
-        "category": "biblioteka publiczna",
-        "region": "podkarpackie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://lustrobiblioteki.pl/biblioteki-cyfrowe-polsce/",
-        "last_seen": "2026-04-01T11:01:23.945692+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Kontakt – Łódzkie Centrum Wydarzeń",
-        "email": "biuro@lcw.lodz.pl",
-        "phone": "+48 42 633 26 41",
-        "website": "https://lcw.lodz.pl/kontakt/",
-        "address": "ul. Zachodnia 54/56, Łódź",
-        "category": "organizacja wydarzeń",
-        "region": "łódzkie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://lcw.lodz.pl/kontakt/",
-        "last_seen": "2026-04-01T11:02:32.497159+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Kontakt – Łódzkie Centrum Wydarzeń",
-        "email": "rodo@lodz-radca.pl",
-        "phone": "+48 42 633 26 41",
-        "website": "https://lcw.lodz.pl/kontakt/",
-        "address": "ul. Zachodnia 54/56, Łódź",
-        "category": "organizacja wydarzeń",
-        "region": "łódzkie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://lcw.lodz.pl/kontakt/",
-        "last_seen": "2026-04-01T11:02:32.497184+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Agencja eventowa Łódź, firma eventowa Łódź, organizacja imprez firmowych Łódź, organizacja imprez plenerowych Łódź, organizacja eventów Łódź",
-        "email": "kontakt@septemberevents.pl",
-        "phone": "+48 71 370 58 70",
-        "website": "https://septemberevents.pl/agencja-eventowa-lodz/",
-        "address": "Rynek 7, 50-106 Wrocław",
-        "category": "organizacja wydarzeń",
-        "region": "łódzkie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://septemberevents.pl/agencja-eventowa-lodz/",
-        "last_seen": "2026-04-01T11:02:37.583270+00:00",
-        "status": "new"
-      },
-      {
-        "name": "Imprezy Firmowe i Integracyjne Łódź - Agencja Eventowa - organizacja imprez Łódź",
-        "email": "kontakt@silverbird.com.pl",
-        "phone": "+48 537 460 033",
-        "website": "https://silverbird.com.pl/agencja-eventowa-lodz/",
-        "address": null,
-        "category": "organizacja wydarzeń",
-        "region": "łódzkie",
-        "country_code": "PL",
-        "country_name": "Polska",
-        "language": "pl",
-        "source_url": "https://silverbird.com.pl/agencja-eventowa-lodz/",
-        "last_seen": "2026-04-01T11:02:38.693868+00:00",
-        "status": "new"
-      }
-    ],
     "engine": [
+      {
+        "email": "a.adamek@agencjaperspektywy.pl",
+        "name": "Kontakt | Agencja Perspektywy",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjaperspektywy.pl/kontakt"
+      },
+      {
+        "email": "a.rutkowska@pikpodlaskie.pl",
+        "name": "Kontakt – Strona Array – Podlaski Instytut Kultury",
+        "category": "samorządowa instytucja kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://pikpodlaskie.pl/kontakt/"
+      },
+      {
+        "email": "abo@focus.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.focus.de/experts/fisch-gegen-tinnitus-neue-studie-sorgt-fuer-aufsehen-das-steckt-dahinter_id_260415444.html"
+      },
+      {
+        "email": "administracja@kpck.pl",
+        "name": "kontakt - Kujawsko-Pomorskie Centrum Kultury w Bydgoszczv",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kpck.pl/kontakt/"
+      },
+      {
+        "email": "administracja@mok.miasteczko-slaskie.pl",
+        "name": "O Nas - Miejski Ośrodek Kultury im. Krzysztofa Respondka w Miasteczku Śląskim",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.miasteczko-slaskie.pl/o-nas"
+      },
+      {
+        "email": "agencja@agencjalaura.pl",
+        "name": "Agencja Artystyczna: usługi reklamowe, organizacja imprez, impresariat. Agencja Artystyczna świadczy usługi reklamowe, impresariat, organizacja imprez. Agencja artystyczna, organizacja imprez, impresariat, mistrz mowy polskiej, mistrz mowy polskiej.",
+        "category": "agencja artystyczna",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.agencjalaura.pl/kontakt/dane-kontaktowe"
+      },
+      {
+        "email": "agnieszka.banach@lubelskie.pl",
+        "name": "Struktura organizacyjna – Urząd Marszałkowski Województwa Lubelskiego w Lublinie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.lubelskie.pl/struktura-organizacyjna/"
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csk.bip.lubelskie.pl/index.php?id=11"
+      },
+      {
+        "email": "alicja.balaban@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csk.bip.lubelskie.pl/index.php?id=11"
+      },
+      {
+        "email": "alicja@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eskander.pl/kontakt"
+      },
+      {
+        "email": "alina@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "category": "agencja artystyczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.promusica.pl/kontakt/"
+      },
+      {
+        "email": "ania@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eskander.pl/kontakt"
+      },
+      {
+        "email": "ania@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "category": "agencja eventowa",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.live.com.pl/pl/"
+      },
+      {
+        "email": "anna.prasek@spotkaniakultur.com",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csk.bip.lubelskie.pl/index.php?id=11"
+      },
+      {
+        "email": "arek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "category": "agencja eventowa",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.live.com.pl/pl/"
+      },
+      {
+        "email": "art@jsoundart.pl",
+        "name": "Kontakt | J'Sound",
+        "category": "agencja artystyczna",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jsoundart.pl/kontakt/"
+      },
+      {
+        "email": "artur.wijata@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kck.com.pl/kontakt"
+      },
+      {
+        "email": "b.majchrzak@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://creality.pl/kontakt/"
+      },
       {
         "email": "b.morawiec@lustrobiblioteki.pl",
         "name": "Biblioteki cyfrowe w Polsce - Lustro Biblioteki",
@@ -1453,6 +1406,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://lustrobiblioteki.pl/biblioteki-cyfrowe-polsce/"
+      },
+      {
+        "email": "bartek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "category": "agencja eventowa",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.live.com.pl/pl/"
       },
       {
         "email": "bdpp@bn.org.pl",
@@ -1465,6 +1428,16 @@
         "website": "https://www.bn.org.pl/"
       },
       {
+        "email": "beniaminow@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.nieporet.pl/"
+      },
+      {
         "email": "beschwerde@versicherungsombudsmann.de",
         "name": "Tierkrankenversicherung inkl. OP-Schutz",
         "category": "miejski ośrodek kultury",
@@ -1473,6 +1446,156 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.huk.de/haus-haftung-recht/haftpflichtversicherung/tierhalterhaftpflichtversicherung/tierkrankenversicherung.html"
+      },
+      {
+        "email": "bestell@focus-money.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.focus.de/experts/fisch-gegen-tinnitus-neue-studie-sorgt-fuer-aufsehen-das-steckt-dahinter_id_260415444.html"
+      },
+      {
+        "email": "biblioteka@gokiw.wielopole",
+        "name": "Gminny Ośrodek Kultury i Wypoczynku w Wielopolu Skrzyńskim",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokiw.pl/"
+      },
+      {
+        "email": "biblioteka@spytkowice.pl",
+        "name": "Kontakt – Gminne Centrum Kultury w Spytkowicach",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gck-spytkowice.pl/kontakt/"
+      },
+      {
+        "email": "bilety@agencjamuza.pl",
+        "name": "Kontakt - Agencja Artystyczna MUZA | Spektakle, Koncerty, Kabarety",
+        "category": "agencja artystyczna",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjamuza.pl/kontakt/"
+      },
+      {
+        "email": "bilety@agencjaperspektywy.pl",
+        "name": "Kontakt | Agencja Perspektywy",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjaperspektywy.pl/kontakt"
+      },
+      {
+        "email": "bilety@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eskander.pl/kontakt"
+      },
+      {
+        "email": "bilety@just4music.pl",
+        "name": "Agencja - Just4music",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://just4music.pl/"
+      },
+      {
+        "email": "bilety@kulturapodkarpacka.pl",
+        "name": "Kontakt - Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bilety.kulturapodkarpacka.pl/kontakt/"
+      },
+      {
+        "email": "bilety@stadionpoznan.pl",
+        "name": "Kontakt - Enea Stadion",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eneastadion.pl/kontakt/"
+      },
+      {
+        "email": "bit.gok@rymanow.pl",
+        "name": "Twórz, inspiruj, bądź!",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gokrymanow.pl/"
+      },
+      {
+        "email": "biuro@agencjamuza.pl",
+        "name": "Kontakt - Agencja Artystyczna MUZA | Spektakle, Koncerty, Kabarety",
+        "category": "agencja artystyczna",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjamuza.pl/kontakt/"
+      },
+      {
+        "email": "biuro@agencjaperspektywy.pl",
+        "name": "Kontakt | Agencja Perspektywy",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjaperspektywy.pl/kontakt"
+      },
+      {
+        "email": "biuro@agencjaproarte.pl",
+        "name": "Kontakt :: Agencja Koncertowa Pro Arte",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.agencjaproarte.pl/kontakt"
+      },
+      {
+        "email": "biuro@artmann.pl",
+        "name": "ORGANIZATOR IMPREZ PODLASKIE | organizacja imprez",
+        "category": "organizacja wydarzeń",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://artmann.pl/organizator-imprez-podlaskie/"
+      },
+      {
+        "email": "biuro@btl-event.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.btl-event.com.pl/"
       },
       {
         "email": "biuro@chillievent.pl",
@@ -1515,6 +1638,36 @@
         "website": "https://www.emotionsevents.pl/kontakt/"
       },
       {
+        "email": "biuro@eskander.com.pl",
+        "name": "Agencja Artystyczna ESKANDER – Encyklopedia Kabaretu",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://encyklopediakabaretu.pl/wiki/Agencja_Artystyczna_ESKANDER"
+      },
+      {
+        "email": "biuro@extraagencjapracy.pl",
+        "name": "Agencja pracy tymczasowej Warmińsko-mazurskie",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.extraagencjapracy.pl/warminsko-mazurskie/"
+      },
+      {
+        "email": "biuro@funfaktoria.pl",
+        "name": "Agencja eventowa, imprezy integracyjne, firmowe Poznań - Fun Faktoria",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.funfaktoria.pl/"
+      },
+      {
         "email": "biuro@gokiskwr.pl",
         "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
         "category": "gminny ośrodek kultury",
@@ -1523,6 +1676,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://gokiskwr.pl/"
+      },
+      {
+        "email": "biuro@gokmniow.pl",
+        "name": "Kontakt - Gminny OÅrodek Kultury w Mniowie",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gokmniow.pl/asp/kontakt,6,,1"
+      },
+      {
+        "email": "biuro@gokosie.pl",
+        "name": "Kontakt | Gminny Ośrodek Kultury w Osiu",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokosie.pl/kontakt-gminy-osrodek-kultury-w-osiu/"
+      },
+      {
+        "email": "biuro@goksuchowola.pl",
+        "name": "Strona główna - GOKSiT Suchowola",
+        "category": "gminny ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goksuchowola.pl/"
       },
       {
         "email": "biuro@hananaevents.pl",
@@ -1545,6 +1728,36 @@
         "website": "https://infinitum.org.pl/"
       },
       {
+        "email": "biuro@kereza.pl",
+        "name": "Agencja Artystyczna Kereza +48 720 870 670 biuro@kereza.pl",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kereza.pl/kontakt/"
+      },
+      {
+        "email": "biuro@krakownh.pl",
+        "name": "Serwis Ośrodka Kultury Kraków-Nowa Huta",
+        "category": "ośrodek kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://krakownh.pl/"
+      },
+      {
+        "email": "biuro@kulturagk.pl",
+        "name": "Kontakt - Ośrodek Kultury w Górze Kalwarii",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://okgk.bip.eur.pl/public/?id=180031"
+      },
+      {
         "email": "biuro@lcw.lodz.pl",
         "name": "Kontakt – Łódzkie Centrum Wydarzeń",
         "category": "organizacja wydarzeń",
@@ -1555,6 +1768,16 @@
         "website": "https://lcw.lodz.pl/kontakt/"
       },
       {
+        "email": "biuro@m-gp.mail.pl",
+        "name": "Agencja artystyczna: organizacja koncertów, spektakli, wydarzeń kulturalnych - M-GROUP POLSKA",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.m-group.com.pl/"
+      },
+      {
         "email": "biuro@meetingplanner.pl",
         "name": "Yolo Events - Agencja eventowa",
         "category": "agencja eventowa",
@@ -1563,6 +1786,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.meetingplanner.pl/mp-professionals/yolo-events/"
+      },
+      {
+        "email": "biuro@mimello.pl",
+        "name": "Agencja artystyczna Opole - Mimello – Artyści do usług",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mimello.pl/agencja-artystyczna-opole/"
+      },
+      {
+        "email": "biuro@mksport.com.pl",
+        "name": "Imprezy integracyjne i firmowe Poznań | Wielkopolska | MK Sport | MKsport",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mksport.com.pl/"
+      },
+      {
+        "email": "biuro@mok.pl",
+        "name": "Miejski Ośrodek Kultury im. A. Mickiewicza w Zawierciu",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.mok.pl/"
       },
       {
         "email": "biuro@octagongroup.pl",
@@ -1585,6 +1838,56 @@
         "website": "https://www.oferteo.pl/agencja-eventowa/dolnoslaskie"
       },
       {
+        "email": "biuro@paczkaevents.pl",
+        "name": "Kontakt | Kompleksowa organizacja wydarzeń | Paczka Events",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://paczkaevents.pl/kontakt/"
+      },
+      {
+        "email": "biuro@partyplanners.pl",
+        "name": "Kontakt - Organizacja Eventów - Party Planners Poznań",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://partyplanners.pl/kontakt/"
+      },
+      {
+        "email": "biuro@praca.pl",
+        "name": "Praca.pl - Oferty pracy - praca dla Ciebie od zaraz",
+        "category": "ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.praca.pl/"
+      },
+      {
+        "email": "biuro@proculture.pl",
+        "name": "Proculture – Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://proculture.pl/"
+      },
+      {
+        "email": "biuro@rdk.rzeszow.pl",
+        "name": "Rzeszowski Dom Kultury - Informacje o jednostce - Biuletyn Informacji Publicznej Miasta Rzeszów",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.erzeszow.pl/295-rzeszowski-dom-kultury/25189-informacja-o-jednostce.html"
+      },
+      {
         "email": "biuro@sbp.pl",
         "name": "Okręg Łódzki",
         "category": "biblioteka publiczna",
@@ -1593,6 +1896,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.sbp.pl/o-sbp/struktura/okregi-oddzialy-kola-sbp/okreg-lodzki"
+      },
+      {
+        "email": "biuro@seven-event.pl",
+        "name": "Seven event group contact - SEVEN",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.seven-event.pl/en/contact"
+      },
+      {
+        "email": "biuro@star-art.pl",
+        "name": "Star ART Organizacja imprez i eventów - Star ART Organizacja imprez",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://star-art-poznan.pl/"
+      },
+      {
+        "email": "biuro@teatropole.pl",
+        "name": "Wojewódzkie instytucje kultury - Samorząd Województwa Opolskiego",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.opolskie.pl/wojewodzkie-instytucje-kultury/"
       },
       {
         "email": "biuro@topevent.pl",
@@ -1605,6 +1938,16 @@
         "website": "https://www.topevent.pl/agencja-eventowa-lodz"
       },
       {
+        "email": "biuro@trufland.pl",
+        "name": "Agencja eventowa, kompleksowa organizacja imprez masowych – Podkarpackie – Trufland",
+        "category": "organizacja wydarzeń",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://trufland.pl/"
+      },
+      {
         "email": "biuro_wawa@chillievent.pl",
         "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
         "category": "agencja eventowa",
@@ -1613,6 +1956,66 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://chillievent.pl/"
+      },
+      {
+        "email": "bluenote@bluenote.waw.pl",
+        "name": "Kontakt - Blue Note - Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.bluenote.waw.pl/kontakt/"
+      },
+      {
+        "email": "bocaoangola@web.de",
+        "name": "Kontakt - Centro Cultural Alabe",
+        "category": "cultural center",
+        "region": "podlaskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.capoeira-angola-hamburg.de/kontakt-2/"
+      },
+      {
+        "email": "bolstad@snl.no",
+        "name": "Falklandsøyene – britisk territorium i Atlanteren – SNL",
+        "category": "miejski ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://snl.no/Falklandsøyene"
+      },
+      {
+        "email": "bslusarski@mdk.wroclaw.pl",
+        "name": "Kontakt | Młodzieżowy Dom Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdk.wroclaw.pl/kontakt/"
+      },
+      {
+        "email": "burda@post.pl",
+        "name": "KONTAKT – Burda Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://burda-szczecin.pl/kontakt/"
+      },
+      {
+        "email": "capoeiraangola@email.de",
+        "name": "Kontakt - Centro Cultural Alabe",
+        "category": "cultural center",
+        "region": "podlaskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.capoeira-angola-hamburg.de/kontakt-2/"
       },
       {
         "email": "centrum@baruchowo.pl",
@@ -1625,6 +2028,26 @@
         "website": "https://goksirbaruchowo.pl/kontakt"
       },
       {
+        "email": "centrum@gminaolesnica.pl",
+        "name": "Kontakt - Miejsko-Gminne Centrum Kultury w Oleśnicy",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mgckolesnica.naszdomkultury.pl/kontakt"
+      },
+      {
+        "email": "ck@ck.przemysl.pl",
+        "name": "Centrum Kulturalne w Przemyślu - Instytucja Kultury Województwa Podkarpackiego - Kontakt",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.ck.przemysl.pl/kontakt-bip"
+      },
+      {
         "email": "coig@coig.com.pl",
         "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
         "category": "miejski ośrodek kultury",
@@ -1633,6 +2056,56 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.coig.com.pl/wykaz_lista_baza_domy-kultury.php"
+      },
+      {
+        "email": "cth.wystawa@mck.ostrowiec.pl",
+        "name": "Kontakt - MCK Ostrowiec",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck.ostrowiec.pl/kontakt/"
+      },
+      {
+        "email": "ctk@suchowola.pl",
+        "name": "Strona główna - GOKSiT Suchowola",
+        "category": "gminny ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goksuchowola.pl/"
+      },
+      {
+        "email": "czytelnia@wbp.poznan.pl",
+        "name": "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu • WBPiCAK • Strona główna",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wbp.poznan.pl/"
+      },
+      {
+        "email": "d.falana@kulturagk.pl",
+        "name": "Kontakt - Ośrodek Kultury w Górze Kalwarii",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://okgk.bip.eur.pl/public/?id=180031"
+      },
+      {
+        "email": "dariusz.klimek@artagencja.pl",
+        "name": "Kontakt – Dariusz Klimek Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.artagencja.pl/kontakt/"
       },
       {
         "email": "darygromadzenie@bracz.edu.pl",
@@ -1645,6 +2118,96 @@
         "website": "https://bracz.edu.pl/"
       },
       {
+        "email": "digital@welt.de",
+        "name": "Miley Cyrus: Aktuelle News, Bilder & Nachrichten zum Popstar - WELT",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.welt.de/themen/miley-cyrus/"
+      },
+      {
+        "email": "do@warmia.mazury.pl",
+        "name": "Urząd Marszałkowski Województwa Warmińsko-Mazurskiego w Olsztynie - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/bip/urzad-marszalkowski-wojewodztwa-warminsko-mazurskiego-olsztyn-warminsko-mazurskie-olsztyn-olsztyn"
+      },
+      {
+        "email": "dorota.bacher@rdk.rzeszow.pl",
+        "name": "Rzeszowski Dom Kultury - Informacje o jednostce - Biuletyn Informacji Publicznej Miasta Rzeszów",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.erzeszow.pl/295-rzeszowski-dom-kultury/25189-informacja-o-jednostce.html"
+      },
+      {
+        "email": "dyrektor@gokiw.wielopole",
+        "name": "Gminny Ośrodek Kultury i Wypoczynku w Wielopolu Skrzyńskim",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokiw.pl/"
+      },
+      {
+        "email": "dyrektor@gokosie.pl",
+        "name": "Kontakt | Gminny Ośrodek Kultury w Osiu",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokosie.pl/kontakt-gminy-osrodek-kultury-w-osiu/"
+      },
+      {
+        "email": "dyrektor@jok.jawor.pl",
+        "name": "Strona główna - Jaworski Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jok.jawor.pl/"
+      },
+      {
+        "email": "dyrektor@m-ok.pl",
+        "name": "Kontakt - Mysłowicki Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://m-ok.pl/kontakt"
+      },
+      {
+        "email": "elzbieta.kuzniar@jok.jawor.pl",
+        "name": "Strona główna - Jaworski Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jok.jawor.pl/"
+      },
+      {
+        "email": "etnografia@pmkl.pl",
+        "name": "Zespół - Podlaskie Muzeum Kultury Ludowej",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://pmkl.pl/kontakt"
+      },
+      {
         "email": "eventy@creality.pl",
         "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
         "category": "agencja eventowa",
@@ -1653,6 +2216,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://creality.pl/kontakt/"
+      },
+      {
+        "email": "filharmonia@filharmonia.opole.pl",
+        "name": "Wojewódzkie instytucje kultury - Samorząd Województwa Opolskiego",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.opolskie.pl/wojewodzkie-instytucje-kultury/"
       },
       {
         "email": "filia17@mbplp.lodz.pl",
@@ -1665,6 +2238,116 @@
         "website": "https://www.biznesfinder.pl/lodz-miejska-biblioteka-publiczna-filia-nr-17-478037.html"
       },
       {
+        "email": "finanse@wbp.poznan.pl",
+        "name": "Kontakt • Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wbp.poznan.pl/biblioteka/o-nas/kontakt-z-wbpicak/"
+      },
+      {
+        "email": "g.grynkiewicz@lubuskie.pl",
+        "name": "Kontakt turystyka - Portal Województwa Lubuskiego",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lubuskie.pl/cms/248/kontakt_turystyka"
+      },
+      {
+        "email": "gaja.tyralska@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
+      },
+      {
+        "email": "galeria@kpck.pl",
+        "name": "kontakt - Kujawsko-Pomorskie Centrum Kultury w Bydgoszczv",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kpck.pl/kontakt/"
+      },
+      {
+        "email": "gazeta@mgokosiek.pl",
+        "name": "Miejsko-Gminny Ośrodek Kultury w Osieku",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://mgokosiek.pl/"
+      },
+      {
+        "email": "gck@spytkowice.pl",
+        "name": "Kontakt – Gminne Centrum Kultury w Spytkowicach",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gck-spytkowice.pl/kontakt/"
+      },
+      {
+        "email": "gckwohyn@vp.pl",
+        "name": "Adresy podmiotÃ³w dziaÅajÄ cych w sferze kultury : RadzyÅska Kraina SerdecznoÅci",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://krainaserdecznosci.pl/pl/kontakt-kultura"
+      },
+      {
+        "email": "gmina@mogielnica.pl",
+        "name": "KONTAKT – Gmina Mogielnica",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://nowa.mogielnica.pl/?page_id=106"
+      },
+      {
+        "email": "gok.kakolewnica@op.pl",
+        "name": "Adresy podmiotÃ³w dziaÅajÄ cych w sferze kultury : RadzyÅska Kraina SerdecznoÅci",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://krainaserdecznosci.pl/pl/kontakt-kultura"
+      },
+      {
+        "email": "gok.turystyka@janowpodlaski.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://janowpodlaski.naszgok.pl/kontakt-1"
+      },
+      {
+        "email": "gok@gminaborki.pl",
+        "name": "Adresy podmiotÃ³w dziaÅajÄ cych w sferze kultury : RadzyÅska Kraina SerdecznoÅci",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://krainaserdecznosci.pl/pl/kontakt-kultura"
+      },
+      {
         "email": "gok@gok-osieciny.pl",
         "name": "Strona główna - Gminny Ośrodek Kultury",
         "category": "gminny ośrodek kultury",
@@ -1673,6 +2356,66 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://gok-osieciny.pl/"
+      },
+      {
+        "email": "gok@gokmichalowo.pl",
+        "name": "O nas - Gminny Ośrodek Kultury w Michałowie",
+        "category": "gminny ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokmichalowo.pl/o-nas/"
+      },
+      {
+        "email": "gok@janowpodlaski.pl",
+        "name": "Kontakt GOK – Gmina Janów Podlaski",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.janowpodlaski.pl/kontakt-gok/"
+      },
+      {
+        "email": "gok@loniow.pl",
+        "name": "Kontakt – G O K",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.loniow.pl/kontakt/"
+      },
+      {
+        "email": "gok@malczyce.wroc.pl",
+        "name": "Kontakt – GMINNY OŚRODEK KULTURY I SPORTU W MALCZYCACH",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokismalczyce.pl/kontakt/"
+      },
+      {
+        "email": "gok@rymanow.pl",
+        "name": "Twórz, inspiruj, bądź!",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gokrymanow.pl/"
+      },
+      {
+        "email": "gokis@radzynpodlaski.pl",
+        "name": "Adresy podmiotÃ³w dziaÅajÄ cych w sferze kultury : RadzyÅska Kraina SerdecznoÅci",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://krainaserdecznosci.pl/pl/kontakt-kultura"
       },
       {
         "email": "gokpawlowice@hoga.pl",
@@ -1685,6 +2428,66 @@
         "website": "https://www.kultura.pawlowice.pl/"
       },
       {
+        "email": "gops@gopsnaglowice.pl",
+        "name": "Gminy Ośrodek Pomocy Społecznej w Nagłowicach",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gopsnaglowice.pl/"
+      },
+      {
+        "email": "gosia@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "category": "agencja eventowa",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.live.com.pl/pl/"
+      },
+      {
+        "email": "i.dumin@dops.wroc.pl",
+        "name": "Kontakt - Dolnośląski Ośrodek Polityki Społecznej",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dops.wroc.pl/dolnoslaskie-centrum-kultury-polskiej/kontakt/"
+      },
+      {
+        "email": "i.rerikh@dops.wroc.pl",
+        "name": "Kontakt - Dolnośląski Ośrodek Polityki Społecznej",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dops.wroc.pl/dolnoslaskie-centrum-kultury-polskiej/kontakt/"
+      },
+      {
+        "email": "i.solarek@saa.pl",
+        "name": "Kontakt | Szczecińska Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://saa.pl/kontakt"
+      },
+      {
+        "email": "impresariat@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kck.com.pl/kontakt"
+      },
+      {
         "email": "imprezy@hevent.pl",
         "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
         "category": "agencja eventowa",
@@ -1693,6 +2496,26 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.hevent.pl/"
+      },
+      {
+        "email": "infnauk@bu.uni.wroc.pl",
+        "name": "Biblioteki",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.informacja.wroclaw.pl/biblioteki2"
+      },
+      {
+        "email": "info@biblioteka-ostrow.pl",
+        "name": "Biblioteka Publiczna im. Stefana Rowińskiego w Ostrowie Wielkopolskim",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.biblioteka-ostrow.pl/"
       },
       {
         "email": "info@bs.katowice.pl",
@@ -1705,6 +2528,26 @@
         "website": "https://bs.katowice.pl/"
       },
       {
+        "email": "info@dr-asch.de",
+        "name": "Fisch gegen Tinnitus | Stuttgart Hausarzt Allgemeinmediziner Experte Arzt Praxis",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.dr-asch.de/aktuelles/praxis-medizin/fisch-gegen-tinnitus"
+      },
+      {
+        "email": "info@energieleser.de",
+        "name": "Stromzähler mit App ablesen – einfache Anleitung",
+        "category": "agencja artystyczna",
+        "region": "podlaskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://stromleser.de/blogs/news/stromzahler-per-app-ablesen-so-einfach-geht-s-digital-inkl-vorstellung-der-stromleser-app"
+      },
+      {
         "email": "info@fanfaraevents.pl",
         "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
         "category": "agencja eventowa",
@@ -1713,6 +2556,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://fanfaraevents.pl/"
+      },
+      {
+        "email": "info@gelbe-liste.de",
+        "name": "Regelmäßiger Fischkonsum senkt Tinnitus-Risiko | Gelbe Liste",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.gelbe-liste.de/hno/fischkonsum-tinnitus-risiko"
+      },
+      {
+        "email": "info@grupafuntime.pl",
+        "name": "Grupa Funtime",
+        "category": "organizacja wydarzeń",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://grupafuntime.pl/"
+      },
+      {
+        "email": "info@heilpraxisnet.de",
+        "name": "Tinnitus: Fisch und MeeresfrÃ¼chte senken Risiko – Heilpraxis",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.heilpraxisnet.de/naturheilpraxis/tinnitus-fisch-und-meeresfruechte-senken-risiko-20241001585613/"
       },
       {
         "email": "info@huk-coburg.de",
@@ -1735,6 +2608,26 @@
         "website": "https://bip.lodzkie.pl/departament-kultury/jednostki-podlegle/item/682-wojewódzka-biblioteka-publiczna-im-marszałka-józefa-piłsudskiego-w-łodzi"
       },
       {
+        "email": "info@lubelskie.pl",
+        "name": "Urząd Marszałkowski Województwa Lubelskiego w Lublinie – Informacje o wojewódzkich władzach samorządowych i Lubelszczyźnie",
+        "category": "ośrodek kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.lubelskie.pl/"
+      },
+      {
+        "email": "info@prawodlapraktykow.pl",
+        "name": "Strona główna - Portal Instytucji Kultury",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://prawodlapraktykow.pl/"
+      },
+      {
         "email": "info@tokantis.pl",
         "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
         "category": "agencja eventowa",
@@ -1743,6 +2636,46 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://tokantis.pl/"
+      },
+      {
+        "email": "info@vdwklang.pl",
+        "name": "Home",
+        "category": "organizacja wydarzeń",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.vdwklang.pl/"
+      },
+      {
+        "email": "info@visitbydgoszcz.pl",
+        "name": "Kujawsko Pomorskie Centrum Kultury - Instytucje kultury",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://visitbydgoszcz.pl/pl/miejsca/21-instytucje-kultury/912-kujawsko-pomorskie-centrum-kul"
+      },
+      {
+        "email": "info@win-tipps.de",
+        "name": "PC herunterfahren | So geht’s einfach und schnell",
+        "category": "samorządowa instytucja kultury",
+        "region": "opolskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.win-tipps.de/pc-herunterfahren/"
+      },
+      {
+        "email": "info@zaczarowane-eventy.pl",
+        "name": "Kontakt - Zaczarowane Eventy",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zaczarowane-eventy.pl/kontakt/"
       },
       {
         "email": "informacja@bracz.edu.pl",
@@ -1755,6 +2688,56 @@
         "website": "https://bracz.edu.pl/"
       },
       {
+        "email": "inspektor@cbi24.pl",
+        "name": "Portal - MGOKSiR Gniewkowo",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://kisgniewkowo.pl/"
+      },
+      {
+        "email": "instruktorzy@gokiw.wielopole",
+        "name": "Gminny Ośrodek Kultury i Wypoczynku w Wielopolu Skrzyńskim",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokiw.pl/"
+      },
+      {
+        "email": "integracja@kpck.pl",
+        "name": "kontakt - Kujawsko-Pomorskie Centrum Kultury w Bydgoszczv",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kpck.pl/kontakt/"
+      },
+      {
+        "email": "iod-j@e-swidnik.pl",
+        "name": "Kontakt | Miejski Ośrodek Kultury w Świdniku",
+        "category": "miejski ośrodek kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.swidnik.pl/centrum-kultury/o-nas/kontakt/"
+      },
+      {
+        "email": "iod.gok@janowpodlaski.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://janowpodlaski.naszgok.pl/kontakt-1"
+      },
+      {
         "email": "iod@bobrowo.org",
         "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
         "category": "gminny ośrodek kultury",
@@ -1763,6 +2746,186 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.bobrowo.org.pl/asp/core/drukuj.asp?menu=17&artykul=0"
+      },
+      {
+        "email": "iod@drmendyk.pl",
+        "name": "Kontakt – GMINNY OŚRODEK KULTURY I SPORTU W MALCZYCACH",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokismalczyce.pl/kontakt/"
+      },
+      {
+        "email": "iod@gokosie.pl",
+        "name": "Kontakt | Gminny Ośrodek Kultury w Osiu",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokosie.pl/kontakt-gminy-osrodek-kultury-w-osiu/"
+      },
+      {
+        "email": "iod@janowpodlaski.pl",
+        "name": "Kontakt GOK – Gmina Janów Podlaski",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.janowpodlaski.pl/kontakt-gok/"
+      },
+      {
+        "email": "iod@not.org.pl",
+        "name": "eNOT.pl",
+        "category": "organizacja wydarzeń",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://not.org.pl/"
+      },
+      {
+        "email": "iodo@lck.lubelskie.pl",
+        "name": "Contact - Lublin Conference Centre",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lck.lubelskie.pl/en/contact/"
+      },
+      {
+        "email": "iodo@loniow.pl",
+        "name": "Kontakt – G O K",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.loniow.pl/kontakt/"
+      },
+      {
+        "email": "izabela.kurc-kuriata@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
+      },
+      {
+        "email": "j.sadowska@kulturagk.pl",
+        "name": "Kontakt - Ośrodek Kultury w Górze Kalwarii",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://okgk.bip.eur.pl/public/?id=180031"
+      },
+      {
+        "email": "j.zapotocki@ck.przemysl.pl",
+        "name": "Centrum Kulturalne w Przemyślu - Instytucja Kultury Województwa Podkarpackiego - Kontakt",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.ck.przemysl.pl/kontakt-bip"
+      },
+      {
+        "email": "jacek@agenart.pl",
+        "name": "Kontakt – AgenArt",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agenart.pl/kontakt/"
+      },
+      {
+        "email": "jakub@agencjaperspektywy.pl",
+        "name": "Kontakt | Agencja Perspektywy",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjaperspektywy.pl/kontakt"
+      },
+      {
+        "email": "janek@just4music.pl",
+        "name": "Agencja - Just4music",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://just4music.pl/"
+      },
+      {
+        "email": "jedrzej.borowiecki@sejmik.kielce.pl",
+        "name": "Kontakt - Świętokrzyskie szlaki turystyczne",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://swietokrzyskie.szlaki.pttk.pl/kontakt"
+      },
+      {
+        "email": "jgawronska@mdk.wroclaw.pl",
+        "name": "Kontakt | Młodzieżowy Dom Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdk.wroclaw.pl/kontakt/"
+      },
+      {
+        "email": "k.mistygacz@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://creality.pl/kontakt/"
+      },
+      {
+        "email": "k.sak@kulturagk.pl",
+        "name": "Kontakt - Ośrodek Kultury w Górze Kalwarii",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://okgk.bip.eur.pl/public/?id=180031"
+      },
+      {
+        "email": "k@ck.przemysl.pl",
+        "name": "Centrum Kulturalne w Przemyślu - Instytucja Kultury Województwa Podkarpackiego - Kontakt",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.ck.przemysl.pl/kontakt-bip"
+      },
+      {
+        "email": "kajavoelkel@emotionsevents.pl",
+        "name": "Agencja eventowa Poznań, Dolnośląskie, Wielkopolskie - Emotions Events",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.emotionsevents.pl/"
       },
       {
         "email": "kamila.kowalczyk@lcas.lubawa.pl",
@@ -1785,6 +2948,36 @@
         "website": "https://bobrowo.bip.net.pl/kategorie/6-kontakt/artykuly/102-kontakt"
       },
       {
+        "email": "kancelaria.ciolka@up.warszawa.pl",
+        "name": "Praca Warszawa, Oferty pracy w Warszawie 2026 - JOBS.pl",
+        "category": "ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.jobs.pl/praca/warszawa"
+      },
+      {
+        "email": "kancelaria.grochowska@up.warszawa.pl",
+        "name": "Praca Warszawa, Oferty pracy w Warszawie 2026 - JOBS.pl",
+        "category": "ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.jobs.pl/praca/warszawa"
+      },
+      {
+        "email": "kancelaria.marszalka@lubelskie.pl",
+        "name": "Struktura organizacyjna – Urząd Marszałkowski Województwa Lubelskiego w Lublinie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.lubelskie.pl/struktura-organizacyjna/"
+      },
+      {
         "email": "kancelaria@csklublin.pl",
         "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
         "category": "centrum kultury",
@@ -1793,6 +2986,46 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://csk.bip.lubelskie.pl/"
+      },
+      {
+        "email": "kancelaria@slaskie.pl",
+        "name": "Biblioteka Śląska w Katowicach - Biuletyn Informacji Publicznej Samorządu Województwa Śląskiego",
+        "category": "biblioteka publiczna",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.slaskie.pl/wojewodztwo/jednostki_org_i_spolki_z_udzialem_wojewodztwa/jednostki_kultury/biblioteka-slaska-w-katowicach.html"
+      },
+      {
+        "email": "kancelaria@ug.lubin.pl",
+        "name": "Gmina Lubin",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://ug.lubin.pl/"
+      },
+      {
+        "email": "karg@smok.slubice.pl",
+        "name": "Kontakt - Słubicki Miejski Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://smok.slubice.pl/kontakt/"
+      },
+      {
+        "email": "kasa.kinolot@mok.swidnik.pl",
+        "name": "Kontakt | Miejski Ośrodek Kultury w Świdniku",
+        "category": "miejski ośrodek kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.swidnik.pl/centrum-kultury/o-nas/kontakt/"
       },
       {
         "email": "kasa@ck.lublin.pl",
@@ -1805,6 +3038,36 @@
         "website": "https://ck-lublin.bilety24.pl/kontakt/"
       },
       {
+        "email": "kasa@ck.pl",
+        "name": "Contact - CK Lublin",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://ck.lublin.pl/en/contact/"
+      },
+      {
+        "email": "kasia@mimello.pl",
+        "name": "Agencja artystyczna Opole - Mimello – Artyści do usług",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mimello.pl/agencja-artystyczna-opole/"
+      },
+      {
+        "email": "kasia@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "category": "agencja artystyczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.promusica.pl/kontakt/"
+      },
+      {
         "email": "katarzyna.grzegorczyk@okis.pl",
         "name": "OKiS » Kontakt",
         "category": "gminny ośrodek kultury",
@@ -1813,6 +3076,106 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://okis.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "katarzyna.kusnierek@wbp.poznan.pl",
+        "name": "Kontakt • Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wbp.poznan.pl/biblioteka/o-nas/kontakt-z-wbpicak/"
+      },
+      {
+        "email": "katarzyna.sapa@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Dziedzictwa Kulturowego",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://umwd.dolnyslask.pl/kultura/kontakt-departament-kultury-i-dziedzictwa-kulturowego-wydzial-dziedzictwa-kulturowego/"
+      },
+      {
+        "email": "katarzyna.soltan-mlodozeniec@ceo.org.pl",
+        "name": "Dolnośląska Biblioteka Publiczna im. Tadeusza Mikulskiego we Wrocławiu - Noc Bibliotek",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://nocbibliotek2025.ceo.org.pl/biblioteka/dolnoslaska-biblioteka-publiczna-im-tadeusza-mikulskiego-we-wroclawiu/"
+      },
+      {
+        "email": "katowice@btl-group.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.btl-event.com.pl/"
+      },
+      {
+        "email": "katywegierskie@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.nieporet.pl/"
+      },
+      {
+        "email": "kdk39@op.pl",
+        "name": "Strona główna - Miejsko-Gminny Ośrodek Kultury i Sportu w Koprzywnicy",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://koprzywnica.naszdomkultury.pl/bip/"
+      },
+      {
+        "email": "kierownik.etnografia@pmkl.pl",
+        "name": "Zespół - Podlaskie Muzeum Kultury Ludowej",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://pmkl.pl/kontakt"
+      },
+      {
+        "email": "kino.etiuda@mck.ostrowiec.pl",
+        "name": "Kontakt - MCK Ostrowiec",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck.ostrowiec.pl/kontakt/"
+      },
+      {
+        "email": "kino@goktychowo.pl",
+        "name": "Gminny Ośrodek Kultury w Tychowie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goktychowo.pl/"
+      },
+      {
+        "email": "kino@smok.slubice.pl",
+        "name": "Kontakt - Słubicki Miejski Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://smok.slubice.pl/kontakt/"
       },
       {
         "email": "klaudia.drozd@csklublin.pl",
@@ -1825,6 +3188,46 @@
         "website": "https://csklublin.pl/o-nas/kontakt/"
       },
       {
+        "email": "komendant@ol.policja.gov.pl",
+        "name": "Kontakt Policja Warmińsko-Mazurska",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://warminsko-mazurska.policja.gov.pl/ol/kontakt"
+      },
+      {
+        "email": "kontakt@agencjamuza.pl",
+        "name": "Kontakt - Agencja Artystyczna MUZA | Spektakle, Koncerty, Kabarety",
+        "category": "agencja artystyczna",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agencjamuza.pl/kontakt/"
+      },
+      {
+        "email": "kontakt@amadeusevent.pl",
+        "name": "Organizator imprez i wyjazdów firmowych - team building",
+        "category": "organizacja wydarzeń",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://amadeusevent.pl/"
+      },
+      {
+        "email": "kontakt@beevents.pl",
+        "name": "Kontakt | Agencja eventowa Trójmiasto",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://beevents.pl/kontakt/"
+      },
+      {
         "email": "kontakt@bn.org.pl",
         "name": "Biblioteka Narodowa",
         "category": "biblioteka publiczna",
@@ -1833,6 +3236,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.bn.org.pl/"
+      },
+      {
+        "email": "kontakt@decoartmedia.pl",
+        "name": "Decoart Media - Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://decoartmedia.pl/"
+      },
+      {
+        "email": "kontakt@eventme.pl",
+        "name": "Kontakt – EventMe",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eventme.pl/kontakt/"
+      },
+      {
+        "email": "kontakt@firmaeventowa.pl",
+        "name": "Firma eventowa: Białystok - Agencja eventowa - Konferencje i imprezy",
+        "category": "organizacja wydarzeń",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://firmaeventowa.pl/bialystok/"
       },
       {
         "email": "kontakt@goksliwice.pl",
@@ -1845,6 +3278,36 @@
         "website": "https://www.goksliwice.pl/kontakt"
       },
       {
+        "email": "kontakt@intellect-group.pl",
+        "name": "Budowanie zespołu - Najważniejsze elementy - Intellect",
+        "category": "organizacja wydarzeń",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://intellect-group.pl/wiedza/budowanie-zespolu-najwazniejsze-elementy/"
+      },
+      {
+        "email": "kontakt@kpca.com.pl",
+        "name": "Kontakt – Kujawsko-Pomorskie Centrum Aktywności",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kpca.com.pl/kontakt/"
+      },
+      {
+        "email": "kontakt@manufakturawydarzen.pl",
+        "name": "Strona główna - Manufaktura Wydarzeń",
+        "category": "organizacja wydarzeń",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.manufakturawydarzen.pl/"
+      },
+      {
         "email": "kontakt@marciniakevents.pl",
         "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
         "category": "agencja eventowa",
@@ -1855,6 +3318,16 @@
         "website": "https://marciniakevents.pl/"
       },
       {
+        "email": "kontakt@maxgroupeventy.pl",
+        "name": "NagÅoÅnienie Olsztyn, Profesjonalna obsÅuga Techniczna EventÃ³w | MAX GROUP organizacja eventÃ³w, nagÅoÅnienie Olsztyn, oÅwietlenie, sceny",
+        "category": "organizacja wydarzeń",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.maxgroupeventy.pl/"
+      },
+      {
         "email": "kontakt@miejski.pl",
         "name": "Miejski.pl - Miejski słownik slangu i mowy potocznej",
         "category": "miejski ośrodek kultury",
@@ -1863,6 +3336,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.miejski.pl/"
+      },
+      {
+        "email": "kontakt@mimello.pl",
+        "name": "Agencja artystyczna Opole - Mimello – Artyści do usług",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mimello.pl/agencja-artystyczna-opole/"
+      },
+      {
+        "email": "kontakt@mok.art.pl",
+        "name": "KONTAKT",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.art.pl/pl/index.php?option=com_content&view=article&id=100&Itemid=106"
+      },
+      {
+        "email": "kontakt@secret-event.pl",
+        "name": "Profesjonalna Agencja Eventowa - Organizacja Eventów | Secret Event",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://secret-event.pl/"
       },
       {
         "email": "kontakt@septemberevents.pl",
@@ -1885,6 +3388,146 @@
         "website": "https://silverbird.com.pl/agencja-eventowa-lodz/"
       },
       {
+        "email": "kontakt@stadionpoznan.pl",
+        "name": "Kontakt - Enea Stadion",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eneastadion.pl/kontakt/"
+      },
+      {
+        "email": "kontakt@welt.de",
+        "name": "Miley Cyrus: Aktuelle News, Bilder & Nachrichten zum Popstar - WELT",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.welt.de/themen/miley-cyrus/"
+      },
+      {
+        "email": "kontakt@wenet.pl",
+        "name": "Brak wyników dla wybranych parametrów wyszukiwania",
+        "category": "organizacja wydarzeń",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.biznesfinder.pl/podlaskie/organizacja+eventów"
+      },
+      {
+        "email": "kontakt@whatevent.pl",
+        "name": "Kontakt - Whatevent Agencja Eventowa - Organizacja eventów / imprez",
+        "category": "organizacja wydarzeń",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.whatevent.pl/kontakt/"
+      },
+      {
+        "email": "koordynacjasrw@uw.olsztyn.pl",
+        "name": "Kontakt - Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie - Portal Gov.pl",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/uw-warminsko-mazurski/kontakt2"
+      },
+      {
+        "email": "koprzywnickie.pejzaze@op.pl",
+        "name": "Strona główna - Miejsko-Gminny Ośrodek Kultury i Sportu w Koprzywnicy",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://koprzywnica.naszdomkultury.pl/"
+      },
+      {
+        "email": "kronika@wbp.poznan.pl",
+        "name": "Redakcja Kroniki Wielkopolski | Odkryj Wielkopolskę • sprawdź ciekawe miejsca w Twojej okolicy",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://regionwielkopolska.pl/kronika-wielkopolski/redakcja-kroniki-wielkopolski/"
+      },
+      {
+        "email": "krystian.okon@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
+      },
+      {
+        "email": "krzysztof@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "category": "agencja artystyczna",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eskander.pl/kontakt"
+      },
+      {
+        "email": "ksiegowa@gokosie.pl",
+        "name": "Kontakt | Gminny Ośrodek Kultury w Osiu",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokosie.pl/kontakt-gminy-osrodek-kultury-w-osiu/"
+      },
+      {
+        "email": "ksiegowosc@gokiw.wielopole",
+        "name": "Gminny Ośrodek Kultury i Wypoczynku w Wielopolu Skrzyńskim",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gokiw.pl/"
+      },
+      {
+        "email": "ksiegowosc@mok.art.pl",
+        "name": "KONTAKT",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.art.pl/pl/index.php?option=com_content&view=article&id=100&Itemid=106"
+      },
+      {
+        "email": "ksiegowosc@pikpodlaskie.pl",
+        "name": "Kontakt – Strona Array – Podlaski Instytut Kultury",
+        "category": "samorządowa instytucja kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://pikpodlaskie.pl/kontakt/"
+      },
+      {
+        "email": "ksiegowosc@saa.pl",
+        "name": "Kontakt | Szczecińska Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://saa.pl/kontakt"
+      },
+      {
         "email": "kultura@baruchowo.pl",
         "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
         "category": "gminny ośrodek kultury",
@@ -1893,6 +3536,126 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://goksirbaruchowo.pl/kontakt"
+      },
+      {
+        "email": "kultura@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.nieporet.pl/"
+      },
+      {
+        "email": "kultura@koprzywnica.eu",
+        "name": "Strona główna - Miejsko-Gminny Ośrodek Kultury i Sportu w Koprzywnicy",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://koprzywnica.naszdomkultury.pl/"
+      },
+      {
+        "email": "kultura@kulturasamborzec.pl",
+        "name": "Kontakt - Gminny OÅrodek Kultury wÂ Samborcu",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gcksir.samborzec.pl/asp/kontakt,9,,1"
+      },
+      {
+        "email": "kultura@pawlow.pl",
+        "name": "Kontakt – Gminny Ośrodek Kultury, Sportu i Rekreacji w Pawłowie",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goksir.pawlow.pl/kontakt/"
+      },
+      {
+        "email": "kundenservice@wams.de",
+        "name": "Miley Cyrus: Aktuelle News, Bilder & Nachrichten zum Popstar - WELT",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.welt.de/themen/miley-cyrus/"
+      },
+      {
+        "email": "kundenservice@welt.de",
+        "name": "Miley Cyrus: Aktuelle News, Bilder & Nachrichten zum Popstar - WELT",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.welt.de/themen/miley-cyrus/"
+      },
+      {
+        "email": "kupbilet@pcn.org.pl",
+        "name": "Kontakt do WDK w Rzeszowie - Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wdk.kulturapodkarpacka.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "l.mackowski@lubuskie.pl",
+        "name": "Kontakt turystyka - Portal Województwa Lubuskiego",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lubuskie.pl/cms/248/kontakt_turystyka"
+      },
+      {
+        "email": "l.zagrobelny@ck.przemysl.pl",
+        "name": "Centrum Kulturalne w Przemyślu - Instytucja Kultury Województwa Podkarpackiego - Kontakt",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.ck.przemysl.pl/kontakt-bip"
+      },
+      {
+        "email": "lck@lck.lubelskie.pl",
+        "name": "Contact - Lublin Conference Centre",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lck.lubelskie.pl/en/contact/"
+      },
+      {
+        "email": "leserbriefe@focus-magazin.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.focus.de/experts/fisch-gegen-tinnitus-neue-studie-sorgt-fuer-aufsehen-das-steckt-dahinter_id_260415444.html"
+      },
+      {
+        "email": "lie@snl.no",
+        "name": "Falklandsøyene – britisk territorium i Atlanteren – SNL",
+        "category": "miejski ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://snl.no/Falklandsøyene"
       },
       {
         "email": "lodz@secret-event.pl",
@@ -1905,6 +3668,56 @@
         "website": "https://secret-event.pl/agencja-eventowa-lodz/"
       },
       {
+        "email": "lowee@lowee.org",
+        "name": "Kontakt - LoweeEvents",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.loweevents.pl/kontakt/"
+      },
+      {
+        "email": "m.macura@dops.wroc.pl",
+        "name": "Kontakt - Dolnośląski Ośrodek Polityki Społecznej",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dops.wroc.pl/dolnoslaskie-centrum-kultury-polskiej/kontakt/"
+      },
+      {
+        "email": "m.noll@mmi.de",
+        "name": "Regelmäßiger Fischkonsum senkt Tinnitus-Risiko | Gelbe Liste",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.gelbe-liste.de/hno/fischkonsum-tinnitus-risiko"
+      },
+      {
+        "email": "m.nowak@lubuskie.pl",
+        "name": "Kontakt turystyka - Portal Województwa Lubuskiego",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lubuskie.pl/cms/248/kontakt_turystyka"
+      },
+      {
+        "email": "m.schwab@mmi.de",
+        "name": "Regelmäßiger Fischkonsum senkt Tinnitus-Risiko | Gelbe Liste",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.gelbe-liste.de/hno/fischkonsum-tinnitus-risiko"
+      },
+      {
         "email": "marcin.sudzinski@csklublin.pl",
         "name": "Kontakt - Centrum Spotkania Kultur",
         "category": "centrum kultury",
@@ -1913,6 +3726,56 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://csklublin.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "marcin@seven-event.pl",
+        "name": "Seven event group contact - SEVEN",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.seven-event.pl/en/contact"
+      },
+      {
+        "email": "mariola.fiodorek@rdk.rzeszow.pl",
+        "name": "Rzeszowski Dom Kultury - Informacje o jednostce - Biuletyn Informacji Publicznej Miasta Rzeszów",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.erzeszow.pl/295-rzeszowski-dom-kultury/25189-informacja-o-jednostce.html"
+      },
+      {
+        "email": "marlena.kaminska@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
+      },
+      {
+        "email": "marta.kaluch-tabisz@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Dziedzictwa Kulturowego",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://umwd.dolnyslask.pl/kultura/kontakt-departament-kultury-i-dziedzictwa-kulturowego-wydzial-dziedzictwa-kulturowego/"
+      },
+      {
+        "email": "marta@agenart.pl",
+        "name": "Kontakt – AgenArt",
+        "category": "agencja artystyczna",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://agenart.pl/kontakt/"
       },
       {
         "email": "martabrzezinska@emotionsevents.pl",
@@ -1925,6 +3788,106 @@
         "website": "https://www.emotionsevents.pl/kontakt/"
       },
       {
+        "email": "marzena.styga@rdk.rzeszow.pl",
+        "name": "Rzeszowski Dom Kultury - Informacje o jednostce - Biuletyn Informacji Publicznej Miasta Rzeszów",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.erzeszow.pl/295-rzeszowski-dom-kultury/25189-informacja-o-jednostce.html"
+      },
+      {
+        "email": "mcdis@polekultury.pl",
+        "name": "POLE KULTURY Samorządowa Instytucja Kultury Miasta i Gminy Niepołomice - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/bip/pole-kultury-samorzadowa-instytucja-kultury-miasta-i-gminy-niepolomice-malopolskie-wielicki-niepolomice"
+      },
+      {
+        "email": "mckostr@mck.ostrowiec.pl",
+        "name": "Kontakt - MCK Ostrowiec",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck.ostrowiec.pl/kontakt/"
+      },
+      {
+        "email": "messtechnik.rheinfelden@naturenergie-netze.de",
+        "name": "Digitale Stromzähler bequem auslesen – so geht’s - naturenergie netze Blog",
+        "category": "agencja artystyczna",
+        "region": "podlaskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://blog.naturenergie-netze.de/digitale-stromzaehler-bequem-auslesen-so-gehts/"
+      },
+      {
+        "email": "mgok@kowalewopomorskie.pl",
+        "name": "Kontakt | MGOK Kowalewo Pomorskie",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://mgok.kowalewopomorskie.pl/kontakt/"
+      },
+      {
+        "email": "mgokkowalewo@xl.wp.pl",
+        "name": "M-GOK Kowalewo Pomorskie - Miejska i Powiatowa Biblioteka Publiczna im. ks. F. K. Malinowskiego w Golubiu-Dobrzyniu",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bibliotekagolub.pl/biblioteki-w-powiecie/m-gok-kowalewo-pomorskie"
+      },
+      {
+        "email": "mgokosiek@mgokosiek.pl",
+        "name": "Kontakt | Miejsko-Gminny Ośrodek Kultury w Osieku",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mgokosiek.pl/kontakt/"
+      },
+      {
+        "email": "mgokwiecbork@poczta.onet.pl",
+        "name": "Kontakt – MGOK Więcbork",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mgokwiecbork.pl/kontakt"
+      },
+      {
+        "email": "mkrasucki@samorzad.org.pl",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bobrowo.bip.net.pl/kategorie/6-kontakt/artykuly/102-kontakt"
+      },
+      {
+        "email": "mlynarska@up.warszawa.pl",
+        "name": "Praca Warszawa, Oferty pracy w Warszawie 2026 - JOBS.pl",
+        "category": "ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.jobs.pl/praca/warszawa"
+      },
+      {
         "email": "mok@lubawa.pl",
         "name": "Miejski Ośrodek Kultury w Lubawie – Miejski Ośrodek Kultury w Lubawie",
         "category": "miejski ośrodek kultury",
@@ -1935,6 +3898,66 @@
         "website": "http://mok.lubawa.pl/"
       },
       {
+        "email": "mok@mok.swidnik.pl",
+        "name": "Kontakt | Miejski Ośrodek Kultury w Świdniku",
+        "category": "miejski ośrodek kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mok.swidnik.pl/centrum-kultury/o-nas/kontakt/"
+      },
+      {
+        "email": "monika.majewska-szymkowiak@wbp.poznan.pl",
+        "name": "Kontakt • Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wbp.poznan.pl/biblioteka/o-nas/kontakt-z-wbpicak/"
+      },
+      {
+        "email": "moranguinho@email.de",
+        "name": "Kontakt - Centro Cultural Alabe",
+        "category": "cultural center",
+        "region": "podlaskie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.capoeira-angola-hamburg.de/kontakt-2/"
+      },
+      {
+        "email": "mscibior@beevents.pl",
+        "name": "Kontakt | Agencja eventowa Trójmiasto",
+        "category": "agencja eventowa",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://beevents.pl/kontakt/"
+      },
+      {
+        "email": "muzeum@pft.wroc.pl",
+        "name": "Biblioteki",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.informacja.wroclaw.pl/biblioteki2"
+      },
+      {
+        "email": "mw.sekretariat@kujawsko-pomorskie.pl",
+        "name": "Contact information | Województwo Kujawsko-Pomorskie",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kujawsko-pomorskie.pl/en/contact-information/"
+      },
+      {
         "email": "natalia.motylicka@bobrowo.org",
         "name": "BIP Urząd Gminy w Bobrowie",
         "category": "gminny ośrodek kultury",
@@ -1943,6 +3966,86 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://bobrowo.bip.net.pl/kategorie/6-kontakt/artykuly/102-kontakt"
+      },
+      {
+        "email": "nataliahalas@emotionsevents.pl",
+        "name": "Agencja eventowa Poznań, Dolnośląskie, Wielkopolskie - Emotions Events",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.emotionsevents.pl/"
+      },
+      {
+        "email": "nocbibliotek@ceo.org.pl",
+        "name": "Dolnośląska Biblioteka Publiczna im. Tadeusza Mikulskiego we Wrocławiu - Noc Bibliotek",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://nocbibliotek2025.ceo.org.pl/biblioteka/dolnoslaska-biblioteka-publiczna-im-tadeusza-mikulskiego-we-wroclawiu/"
+      },
+      {
+        "email": "nordal@snl.no",
+        "name": "Falklandsøyene – britisk territorium i Atlanteren – SNL",
+        "category": "miejski ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://snl.no/Falklandsøyene"
+      },
+      {
+        "email": "nppwo@opolskie.pl",
+        "name": "Gminny Ośrodek Kultury - Samorząd Województwa Opolskiego",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://przestrzen.opolskie.pl/lokalizacje/gminny-osrodek-kultury-7/"
+      },
+      {
+        "email": "obslugawidza@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "category": "cultural center",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csklublin.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "obslugawidza@spotkaniakultur.com",
+        "name": "Contact - Centrum Spotkania Kultur",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csklublin.pl/en/o-nas/kontakt/"
+      },
+      {
+        "email": "office@laznia.pl",
+        "name": "Instytucja - CSWŁaźnia",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.laznia.pl/instytucja/"
+      },
+      {
+        "email": "ola@seven-event.pl",
+        "name": "Seven event group contact - SEVEN",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.seven-event.pl/en/contact"
       },
       {
         "email": "osrodeksztuki@msk.lodz.pl",
@@ -1965,6 +4068,96 @@
         "website": "https://www.bn.org.pl/"
       },
       {
+        "email": "pcn@pcn.org.pl",
+        "name": "Kontakt do WDK w Rzeszowie - Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wdk.kulturapodkarpacka.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "perla@nowiny.com.pl",
+        "name": "Kontakt – Gminny Ośrodek Kultury w Nowinach",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://gok.nowiny.com.pl/kontakt/"
+      },
+      {
+        "email": "pik@pikpodlaskie.pl",
+        "name": "Podlaski Instytut Kultury – Instytucja kultury województwa podlaskiego",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://pikpodlaskie.pl/"
+      },
+      {
+        "email": "pik@wdk-kielce.pl",
+        "name": "Kontakt | Portal Informacji Kulturalnej WojewÃ³dztwa ÅwiÄtokrzyskiego",
+        "category": "dom kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://pik.kielce.pl/kontakt"
+      },
+      {
+        "email": "piotr.zelazo@dolnyslask.pl",
+        "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Dziedzictwa Kulturowego",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://umwd.dolnyslask.pl/kultura/kontakt-departament-kultury-i-dziedzictwa-kulturowego-wydzial-dziedzictwa-kulturowego/"
+      },
+      {
+        "email": "piwmarr@wmarr.olsztyn.pl",
+        "name": "WMARR Olsztyn",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.wmarr.olsztyn.pl/"
+      },
+      {
+        "email": "pmkl@pmkl.pl",
+        "name": "Zespół - Podlaskie Muzeum Kultury Ludowej",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://pmkl.pl/kontakt"
+      },
+      {
+        "email": "poczta@cotg.pttk.pl",
+        "name": "Kontakt - Świętokrzyskie szlaki turystyczne",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://swietokrzyskie.szlaki.pttk.pl/kontakt"
+      },
+      {
+        "email": "poczta@domkultury.kety.pl",
+        "name": "Kalendarium",
+        "category": "dom kultury",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.domkultury.kety.pl/kalendarium"
+      },
+      {
         "email": "portal@sokrates-it.pl",
         "name": "w.bibliotece.pl - szukaj książek w bibliotekach",
         "category": "biblioteka publiczna",
@@ -1973,6 +4166,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://w.bibliotece.pl/"
+      },
+      {
+        "email": "promo@just4music.pl",
+        "name": "Agencja - Just4music",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://just4music.pl/"
       },
       {
         "email": "promocja@biblioteka.lodz.pl",
@@ -1985,6 +4188,136 @@
         "website": "https://biblioteka.lodz.pl/kontakt/"
       },
       {
+        "email": "promocja@goktychowo.pl",
+        "name": "Gminny Ośrodek Kultury w Tychowie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goktychowo.pl/"
+      },
+      {
+        "email": "promusica@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "category": "agencja artystyczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.promusica.pl/kontakt/"
+      },
+      {
+        "email": "punkt.informacyjny@kujawsko-pomorskie.pl",
+        "name": "Contact information | Województwo Kujawsko-Pomorskie",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kujawsko-pomorskie.pl/en/contact-information/"
+      },
+      {
+        "email": "r.kaczmarek@janowpodlaski.pl",
+        "name": "Kontakt GOK – Gmina Janów Podlaski",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.janowpodlaski.pl/kontakt-gok/"
+      },
+      {
+        "email": "rdoroba@mdk.wroclaw.pl",
+        "name": "Kontakt | Młodzieżowy Dom Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdk.wroclaw.pl/kontakt/"
+      },
+      {
+        "email": "redaksjonen@snl.no",
+        "name": "Falklandsøyene – britisk territorium i Atlanteren – SNL",
+        "category": "miejski ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://snl.no/Falklandsøyene"
+      },
+      {
+        "email": "redaktion@focus.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.focus.de/experts/fisch-gegen-tinnitus-neue-studie-sorgt-fuer-aufsehen-das-steckt-dahinter_id_260415444.html"
+      },
+      {
+        "email": "redaktion@gelbe-liste.de",
+        "name": "Regelmäßiger Fischkonsum senkt Tinnitus-Risiko | Gelbe Liste",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.gelbe-liste.de/hno/fischkonsum-tinnitus-risiko"
+      },
+      {
+        "email": "redaktion@heilpraxisnet.de",
+        "name": "Tinnitus: Fisch und MeeresfrÃ¼chte senken Risiko – Heilpraxis",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.heilpraxisnet.de/naturheilpraxis/tinnitus-fisch-und-meeresfruechte-senken-risiko-20241001585613/"
+      },
+      {
+        "email": "renata@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "category": "agencja artystyczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.promusica.pl/kontakt/"
+      },
+      {
+        "email": "rezydencje@laznia.pl",
+        "name": "Instytucja - CSWŁaźnia",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.laznia.pl/instytucja/"
+      },
+      {
+        "email": "robert.wieczorek@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kck.com.pl/kontakt"
+      },
+      {
+        "email": "rodo@kulturapodkarpacka.pl",
+        "name": "Kontakt do WDK w Rzeszowie - Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wdk.kulturapodkarpacka.pl/o-nas/kontakt/"
+      },
+      {
         "email": "rodo@lodz-radca.pl",
         "name": "Kontakt – Łódzkie Centrum Wydarzeń",
         "category": "organizacja wydarzeń",
@@ -1993,6 +4326,46 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://lcw.lodz.pl/kontakt/"
+      },
+      {
+        "email": "rodo@praca.pl",
+        "name": "Praca.pl - Oferty pracy - praca dla Ciebie od zaraz",
+        "category": "ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.praca.pl/"
+      },
+      {
+        "email": "rzecznikprasowy@lubelskie.pl",
+        "name": "Struktura organizacyjna – Urząd Marszałkowski Województwa Lubelskiego w Lublinie",
+        "category": "centrum kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.lubelskie.pl/struktura-organizacyjna/"
+      },
+      {
+        "email": "rzeszow@secret-event.pl",
+        "name": "Profesjonalna Agencja Eventowa Rzeszów | Organizacja Eventów | Secret Event",
+        "category": "organizacja wydarzeń",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://secret-event.pl/agencja-eventowa-rzeszow/"
+      },
+      {
+        "email": "sandra.potocka@jok.jawor.pl",
+        "name": "Strona główna - Jaworski Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jok.jawor.pl/"
       },
       {
         "email": "sekretariat@biblioteka.krakow.pl",
@@ -2015,6 +4388,16 @@
         "website": "https://biblioteka.lodz.pl/kontakt/"
       },
       {
+        "email": "sekretariat@biblioteka.waw.pl",
+        "name": "Biblioteka Publiczna w Dzielnicy Śródmieście m.st. Warszawy | Biblioteka Publiczna w Dzielnicy Śródmieście m.st. Warszawy",
+        "category": "biblioteka publiczna",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://biblioteka.waw.pl/"
+      },
+      {
         "email": "sekretariat@bobrowo.org",
         "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
         "category": "gminny ośrodek kultury",
@@ -2035,6 +4418,16 @@
         "website": "https://bracz.edu.pl/"
       },
       {
+        "email": "sekretariat@bs.katowice.pl",
+        "name": "Kontakt - Biuletyn Informacji Publicznej - Biblioteka Śląska w Katowicach",
+        "category": "biblioteka publiczna",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bibliotekaslaska-bip.slaskie.pl/kontakt.html"
+      },
+      {
         "email": "sekretariat@ck.lublin.pl",
         "name": "Centrum Kultury w Lublinie - repertuar, bilety, adres i kontakt - Teatry Polskie",
         "category": "centrum kultury",
@@ -2043,6 +4436,136 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://teatry.art.pl/teatr/centrum-kultury-w-lublinie/"
+      },
+      {
+        "email": "sekretariat@ck.pl",
+        "name": "Contact - CK Lublin",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://ck.lublin.pl/en/contact/"
+      },
+      {
+        "email": "sekretariat@cks.org.pl",
+        "name": "CKŚ – Centrum Kultury Śląskiej",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://cks.org.pl/"
+      },
+      {
+        "email": "sekretariat@cusopolelubelskie.pl",
+        "name": "Jednostki organizacyjne gminy | Urząd Miejski w Opolu Lubelskim - oficjalny serwis",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://opolelubelskie.pl/strona/jednostki-organizacyjne-gminy"
+      },
+      {
+        "email": "sekretariat@dbp.wroc.pl",
+        "name": "Biblioteki",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.informacja.wroclaw.pl/biblioteki2"
+      },
+      {
+        "email": "sekretariat@eskander.pl",
+        "name": "Agencja Artystyczna Eskander",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eskander.pl/"
+      },
+      {
+        "email": "sekretariat@goktychowo.pl",
+        "name": "Gminny Ośrodek Kultury w Tychowie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://goktychowo.pl/"
+      },
+      {
+        "email": "sekretariat@jok.jawor.pl",
+        "name": "Strona główna - Jaworski Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jok.jawor.pl/"
+      },
+      {
+        "email": "sekretariat@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kck.com.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@kisgniewkowo.pl",
+        "name": "Portal - MGOKSiR Gniewkowo",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://kisgniewkowo.pl/"
+      },
+      {
+        "email": "sekretariat@kpck.pl",
+        "name": "Kujawsko Pomorskie Centrum Kultury - Instytucje kultury",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://visitbydgoszcz.pl/pl/miejsca/21-instytucje-kultury/912-kujawsko-pomorskie-centrum-kul"
+      },
+      {
+        "email": "sekretariat@m-ok.pl",
+        "name": "Kontakt - Mysłowicki Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://m-ok.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@mbp.katowice.pl",
+        "name": "Kontakt",
+        "category": "biblioteka publiczna",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bip.mbp.katowice.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@mdk.wroclaw.pl",
+        "name": "Kontakt | Młodzieżowy Dom Kultury",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdk.wroclaw.pl/kontakt/"
       },
       {
         "email": "sekretariat@msk.lodz.pl",
@@ -2055,6 +4578,36 @@
         "website": "https://msk.lodz.pl/o-nas/"
       },
       {
+        "email": "sekretariat@muzeum.opole.pl",
+        "name": "Wojewódzkie instytucje kultury - Samorząd Województwa Opolskiego",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.opolskie.pl/wojewodzkie-instytucje-kultury/"
+      },
+      {
+        "email": "sekretariat@not.org.pl",
+        "name": "eNOT.pl",
+        "category": "organizacja wydarzeń",
+        "region": "małopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://not.org.pl/"
+      },
+      {
+        "email": "sekretariat@ockopolelubelskie.pl",
+        "name": "Jednostki organizacyjne gminy | Urząd Miejski w Opolu Lubelskim - oficjalny serwis",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://opolelubelskie.pl/strona/jednostki-organizacyjne-gminy"
+      },
+      {
         "email": "sekretariat@okis.pl",
         "name": "OKiS » Kontakt",
         "category": "gminny ośrodek kultury",
@@ -2063,6 +4616,206 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://okis.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "sekretariat@okn.edu.pl",
+        "name": "Ośrodek Kultury Norwida",
+        "category": "ośrodek kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://okn.edu.pl/"
+      },
+      {
+        "email": "sekretariat@opolelubelskie.pl",
+        "name": "Jednostki organizacyjne gminy | Urząd Miejski w Opolu Lubelskim - oficjalny serwis",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://opolelubelskie.pl/strona/jednostki-organizacyjne-gminy"
+      },
+      {
+        "email": "sekretariat@pikpodlaskie.pl",
+        "name": "Kontakt – Strona Array – Podlaski Instytut Kultury",
+        "category": "samorządowa instytucja kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://pikpodlaskie.pl/kontakt/"
+      },
+      {
+        "email": "sekretariat@potokgorny.com.pl",
+        "name": "Gminny Ośrodek Kultury | Gmina Potok Górny",
+        "category": "gminny ośrodek kultury",
+        "region": "pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://potokgorny.com.pl/kultura/gminny-osrodek-kultury.html"
+      },
+      {
+        "email": "sekretariat@radzyn-podl.pl",
+        "name": "Radzyński Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://radzyn-podl.pl/miasto/jednostki-organizacyjne/radzynski-osrodek-kultury.html"
+      },
+      {
+        "email": "sekretariat@radzynrok.pl",
+        "name": "ROK – Radzyński Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://radzynrok.pl/"
+      },
+      {
+        "email": "sekretariat@saa.pl",
+        "name": "Kontakt | Szczecińska Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://saa.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@samborzec.pl",
+        "name": "Kontakt - Gmina Samborzec",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://samborzec.pl/asp/pl_start.asp?typ=14&menu=6&strona=1"
+      },
+      {
+        "email": "sekretariat@teatr-rzeszow.pl",
+        "name": "Kultura w Rzeszowie / Instytucje kultury / Instytucje Kultury Województwa Podkarpackiego",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.kultura.erzeszow.pl/instytucje-kultury/instytucje-kultury-wojewodztwa-podkarpackiego/"
+      },
+      {
+        "email": "sekretariat@turosnkoscielna.pl",
+        "name": "Strona główna - Gmina Turośń Kościelna",
+        "category": "gminny ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://turosnkoscielna.pl/"
+      },
+      {
+        "email": "sekretariat@wbp.opole.pl",
+        "name": "Wojewódzkie instytucje kultury - Samorząd Województwa Opolskiego",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.opolskie.pl/wojewodzkie-instytucje-kultury/"
+      },
+      {
+        "email": "sekretariat@wbp.poznan.pl",
+        "name": "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury - Poznan.pl",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.poznan.pl/mim/cik/biblioteki,poi,166/wojewodzka-biblioteka-publiczna-i-centrum-animacji-kultury,16325.html"
+      },
+      {
+        "email": "sekretarz@samborzec.pl",
+        "name": "Kontakt - Gmina Samborzec",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://samborzec.pl/asp/pl_start.asp?typ=14&menu=6&strona=1"
+      },
+      {
+        "email": "sekrks@uw.olsztyn.pl",
+        "name": "Kontakt - Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie - Portal Gov.pl",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/uw-warminsko-mazurski/kontakt2"
+      },
+      {
+        "email": "sklep@prawodlapraktykow.pl",
+        "name": "Strona główna - Portal Instytucji Kultury",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://prawodlapraktykow.pl/"
+      },
+      {
+        "email": "smok@slubice.pl",
+        "name": "Kontakt - Słubicki Miejski Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://smok.slubice.pl/kontakt/"
+      },
+      {
+        "email": "sokolarnia@pmkl.pl",
+        "name": "Zespół - Podlaskie Muzeum Kultury Ludowej",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://pmkl.pl/kontakt"
+      },
+      {
+        "email": "som@kulturapodkarpacka.pl",
+        "name": "Kontakt - Biuletyn Informacji Publicznej, Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wdk-bip.kulturapodkarpacka.pl/kontakt/"
+      },
+      {
+        "email": "sowa@mck.ostrowiec.pl",
+        "name": "Kontakt - MCK Ostrowiec",
+        "category": "ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck.ostrowiec.pl/kontakt/"
+      },
+      {
+        "email": "stanislawowdrugi@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://gok.nieporet.pl/"
       },
       {
         "email": "sylwester.krzywicki@csklublin.pl",
@@ -2075,6 +4828,116 @@
         "website": "https://www.gov.pl/web/bip/centrum-spotkania-kultur-w-lublinie-lubelskie-lublin-lublin"
       },
       {
+        "email": "system@m-ok.pl",
+        "name": "Kontakt - Mysłowicki Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://m-ok.pl/kontakt"
+      },
+      {
+        "email": "szczecin@btl-group.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.btl-event.com.pl/"
+      },
+      {
+        "email": "szymon.lejawka@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "category": "cultural center",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://csk.bip.lubelskie.pl/index.php?id=11"
+      },
+      {
+        "email": "t.kuczynski@saa.pl",
+        "name": "Kontakt | Szczecińska Agencja Artystyczna",
+        "category": "agencja artystyczna",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://saa.pl/kontakt"
+      },
+      {
+        "email": "tamborski@smok.slubice.pl",
+        "name": "Kontakt - Słubicki Miejski Ośrodek Kultury",
+        "category": "gminny ośrodek kultury",
+        "region": "mazowieckie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://smok.slubice.pl/kontakt/"
+      },
+      {
+        "email": "tobiasz@mksport.com.pl",
+        "name": "Imprezy integracyjne i firmowe Poznań | Wielkopolska | MK Sport | MKsport",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mksport.com.pl/"
+      },
+      {
+        "email": "travel@seven-event.pl",
+        "name": "Seven event group contact - SEVEN",
+        "category": "event agency",
+        "region": "łódzkie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.seven-event.pl/en/contact"
+      },
+      {
+        "email": "turystyka@lubuskie.pl",
+        "name": "Kontakt turystyka - Portal Województwa Lubuskiego",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://lubuskie.pl/cms/248/kontakt_turystyka"
+      },
+      {
+        "email": "ug@janowpodlaski.pl",
+        "name": "Kontakt GOK – Gmina Janów Podlaski",
+        "category": "ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.janowpodlaski.pl/kontakt-gok/"
+      },
+      {
+        "email": "ug@lomazy.pl",
+        "name": "Gmina Łomazy",
+        "category": "ośrodek kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://lomazy.pl/"
+      },
+      {
+        "email": "umboleslawiec@um.boleslawiec.pl",
+        "name": "Urząd Miasta Bolesławiec - URZĄD MIASTA BOLESŁAWIEC - oficjalna witryna",
+        "category": "miejski ośrodek kultury",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://xn--bolesawiec-e0b.pl/"
+      },
+      {
         "email": "umwd@dolnyslask.pl",
         "name": "DOLNY ŚLĄSK > Jednostki organizacyjne > Instytucje Kultury > Dane teleadresowe instytucji kultury",
         "category": "gminny ośrodek kultury",
@@ -2083,6 +4946,26 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://umwd.dolnyslask.pl/jednostki/instytucje-kultury/dane-teleadresowe-instytucji-kultury/"
+      },
+      {
+        "email": "umwo@opolskie.pl",
+        "name": "Gminny Ośrodek Kultury - Samorząd Województwa Opolskiego",
+        "category": "gminny ośrodek kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.opolskie.pl/lokalizacje/gminny-osrodek-kultury-8/"
+      },
+      {
+        "email": "umwz@wzp.pl",
+        "name": "Urząd Marszałkowski Województwa Zachodniopomorskiego – Pomorze Zachodnie",
+        "category": "samorządowa instytucja kultury",
+        "region": "zachodniopomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wzp.pl/"
       },
       {
         "email": "urzad-miasta@lubawa.pl",
@@ -2095,6 +4978,146 @@
         "website": "https://samorzad.gov.pl/web/miasto-lubawa/miejskie-jednostki-organizacyjne"
       },
       {
+        "email": "urzad@bytow.pl",
+        "name": "Urząd Miejski w Bytowie",
+        "category": "miejski ośrodek kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bytow.com.pl/"
+      },
+      {
+        "email": "urzadgminy@dzierzkowice.pl",
+        "name": "Biuletyn Informacji Publicznej - Urząd Gminy Dzierzkowice",
+        "category": "ośrodek kultury",
+        "region": "lubelskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://ugdzierzkowice.bip.lubelskie.pl/"
+      },
+      {
+        "email": "volkerhellmich2@web.de",
+        "name": "Poor Things - Film ∣ Kritik ∣ Trailer – Filmdienst",
+        "category": "samorządowa instytucja kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.filmdienst.de/film/details/621303/poor-things"
+      },
+      {
+        "email": "warminsko_mazurski@arimr.gov.pl",
+        "name": "Warmińsko - Mazurski - OR14 - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/warminsko---mazurski---or14"
+      },
+      {
+        "email": "warszawa@btl-group.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.btl-event.com.pl/"
+      },
+      {
+        "email": "wbp@wbp.wroc.pl",
+        "name": "Biblioteki",
+        "category": "biblioteka publiczna",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.informacja.wroclaw.pl/biblioteki2"
+      },
+      {
+        "email": "wdk@kulturapodkarpacka.pl",
+        "name": "Kontakt do WDK w Rzeszowie - Wojewódzki Dom Kultury w Rzeszowie",
+        "category": "samorządowa instytucja kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wdk.kulturapodkarpacka.pl/o-nas/kontakt/"
+      },
+      {
+        "email": "wdk@podkarpackie.pl",
+        "name": "WOJEWÓDZKI DOM KULTURY, Rzeszów, WOJEWÓDZKI DOM KULTURY, organizacja imprez wystaw konkursów szkoleń Kino WDK WOJEWÓDZKI DOM KULTURY - Branżowy Katalog Firm podkarpacia, podkarpacie, podkarpackie, rzeszów",
+        "category": "dom kultury",
+        "region": "podkarpackie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://www.wdk.rze.pl/"
+      },
+      {
+        "email": "wdk@wdk-kielce.pl",
+        "name": "Wojewódzki Dom Kultury Kielce",
+        "category": "dom kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "http://wdk-kielce.pl/dofinansowanie/kontakt/"
+      },
+      {
+        "email": "werbung@heilpraxisnet.de",
+        "name": "Tinnitus: Fisch und MeeresfrÃ¼chte senken Risiko – Heilpraxis",
+        "category": "gminny ośrodek kultury",
+        "region": "łódzkie",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.heilpraxisnet.de/naturheilpraxis/tinnitus-fisch-und-meeresfruechte-senken-risiko-20241001585613/"
+      },
+      {
+        "email": "wmarr@wmarr.olsztyn.pl",
+        "name": "WMARR Olsztyn",
+        "category": "agencja artystyczna",
+        "region": "warmińsko-mazurskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.wmarr.olsztyn.pl/"
+      },
+      {
+        "email": "wojt@samborzec.pl",
+        "name": "Kontakt - Gmina Samborzec",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://samborzec.pl/asp/pl_start.asp?typ=14&menu=6&strona=1"
+      },
+      {
+        "email": "wojt@turosnkoscielna.pl",
+        "name": "Strona główna - Gmina Turośń Kościelna",
+        "category": "gminny ośrodek kultury",
+        "region": "podlaskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://turosnkoscielna.pl/"
+      },
+      {
+        "email": "wycieczki@lechpoznan.pl",
+        "name": "Kontakt - Enea Stadion",
+        "category": "organizacja wydarzeń",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://eneastadion.pl/kontakt/"
+      },
+      {
         "email": "wypozyczalnia@bracz.edu.pl",
         "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
         "category": "biblioteka publiczna",
@@ -2103,9 +5126,89 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://bracz.edu.pl/"
+      },
+      {
+        "email": "wypozyczalnia@wbp.poznan.pl",
+        "name": "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu • WBPiCAK • Strona główna",
+        "category": "biblioteka publiczna",
+        "region": "wielkopolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://wbp.poznan.pl/"
+      },
+      {
+        "email": "y.matnenko@dops.wroc.pl",
+        "name": "Kontakt - Dolnośląski Ośrodek Polityki Społecznej",
+        "category": "cultural center",
+        "region": "dolnośląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dops.wroc.pl/dolnoslaskie-centrum-kultury-polskiej/kontakt/"
+      },
+      {
+        "email": "zaplanuj@covaevents.pl",
+        "name": "Organizacja wydarzeń | Cova Events Zróbmy to Dobrze!",
+        "category": "organizacja wydarzeń",
+        "region": "lubuskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://covaevents.pl/"
+      },
+      {
+        "email": "zastepca.wojta@samborzec.pl",
+        "name": "Kontakt - Gmina Samborzec",
+        "category": "gminny ośrodek kultury",
+        "region": "świętokrzyskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://samborzec.pl/asp/pl_start.asp?typ=14&menu=6&strona=1"
+      },
+      {
+        "email": "zastepcadyrektora@m-ok.pl",
+        "name": "Kontakt - Mysłowicki Ośrodek Kultury",
+        "category": "miejski ośrodek kultury",
+        "region": "śląskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://m-ok.pl/kontakt"
+      },
+      {
+        "email": "zeas@opolelubelskie.pl",
+        "name": "Jednostki organizacyjne gminy | Urząd Miejski w Opolu Lubelskim - oficjalny serwis",
+        "category": "dom kultury",
+        "region": "opolskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://opolelubelskie.pl/strona/jednostki-organizacyjne-gminy"
+      },
+      {
+        "email": "zwkp1@kujawsko-pomorskie.pl",
+        "name": "Contact information | Województwo Kujawsko-Pomorskie",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kujawsko-pomorskie.pl/en/contact-information/"
+      },
+      {
+        "email": "zwkp2@kujawsko-pomorskie.pl",
+        "name": "Contact information | Województwo Kujawsko-Pomorskie",
+        "category": "community center",
+        "region": "kujawsko-pomorskie",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://kujawsko-pomorskie.pl/en/contact-information/"
       }
     ],
-    "sent": [
+    "sentLog": [
       {
         "email": "kasa@ck.lublin.pl",
         "name": "Kontakt - Centrum Kultury w Lublinie",
