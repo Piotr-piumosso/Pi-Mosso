@@ -663,7 +663,7 @@ section{
 }
 .process-step:first-child{border-right:none;border-radius:var(--r) 0 0 var(--r)}
 .process-step:last-child{border-left:none;border-radius:0 var(--r) var(--r) 0}
-.process-step:nth-child(2),:nth-child(3){border-left:none;border-right:none}
+.process-step:nth-child(2),.process-step:nth-child(3){border-left:none;border-right:none}
 .step-num{
   font-family:"Cormorant Garamond",serif;
   font-size:3.4rem;
@@ -838,18 +838,26 @@ footer{
   .media-copy{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
   .contact-copy{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
   .contact-form-wrap{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
-  .offer-grid{grid-template-columns:1fr;gap:2px}
-  .offer-card:first-child{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0;border-bottom:none}
-  .offer-card:last-child{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r);border-top:none}
-  .offer-card:nth-child(2){border:1px solid var(--line);border-top:none;border-bottom:none}
-  .process-grid{grid-template-columns:1fr 1fr}
-  .process-step:nth-child(2){border-left:none}
-  .process-step:nth-child(3){border-right:none}
-  .process-step:nth-child(2),.process-step:nth-child(3){border-right:none}
+  /* offer: single column stack */
+  .offer-grid{grid-template-columns:1fr;gap:0}
+  .offer-card{border-radius:0}
+  .offer-card:first-child{border-radius:var(--r) var(--r) 0 0;border-bottom:none}
+  .offer-card:nth-child(2){border-top:none;border-bottom:none}
+  .offer-card:last-child{border-radius:0 0 var(--r) var(--r);border-top:none}
+  /* process: 2×2 grid */
+  .process-grid{grid-template-columns:1fr 1fr;gap:0}
+  .process-step{border-radius:0}
+  .process-step:nth-child(1){border-radius:var(--r) 0 0 0;border-right:none}
+  .process-step:nth-child(2){border-radius:0 var(--r) 0 0;border-left:none}
+  .process-step:nth-child(3){border-radius:0 0 0 var(--r);border-right:none;border-top:none}
+  .process-step:nth-child(4){border-radius:0 0 var(--r) 0;border-left:none;border-top:none}
+  /* gallery */
   .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
   .gallery-grid figure:first-child{grid-row:auto;grid-column:1/-1}
-  .artists-grid{grid-template-columns:1fr}
-  .artist-card:first-child{border-right:1px solid var(--line);border-radius:0}
+  /* artists: single column stack */
+  .artists-grid{grid-template-columns:1fr;gap:0}
+  .artist-card{border-radius:0}
+  .artist-card:first-child{border-bottom:none}
   .artist-card:last-child{border-top:none;border-radius:0 0 var(--r) var(--r)}
 }
 @media(max-width:760px){
@@ -861,12 +869,13 @@ footer{
   .nav-toggle{display:flex}
   nav.scrolled{padding:10px 16px}
   .hero-content .wrap{width:calc(100% - 32px)}
-  .process-grid{grid-template-columns:1fr}
-  .process-step:first-child,.process-step:last-child{border-radius:0}
-  .process-step:nth-child(2){border-top:none;border-bottom:none}
-  .process-step:nth-child(3){border-top:none;border-bottom:none}
+  /* process: single column at mobile */
+  .process-grid{grid-template-columns:1fr;gap:0}
+  .process-step{border-radius:0;border-right:1px solid var(--line);border-left:1px solid var(--line)}
   .process-step:first-child{border-radius:var(--r) var(--r) 0 0}
-  .process-step:last-child{border-radius:0 0 var(--r) var(--r)}
+  .process-step:nth-child(2){border-top:none}
+  .process-step:nth-child(3){border-top:none}
+  .process-step:last-child{border-top:none;border-radius:0 0 var(--r) var(--r)}
   .gallery-grid{grid-template-rows:180px 180px 180px}
   .footer-inner{flex-direction:column;align-items:flex-start}
   .hero-scroll{display:none}
@@ -877,7 +886,6 @@ footer{
   .hero{min-height:100svh}
   .hero-actions{flex-direction:column;align-items:flex-start}
   .btn{width:100%;justify-content:center}
-  .offer-card:nth-child(2){border-top:none;border-bottom:none}
 }
 </style>
 </head>
@@ -913,7 +921,7 @@ footer{
   <div class="hero-content">
     <div class="wrap">
       <div class="hero-kicker" data-reveal>Skrzypce · Organy · Fortepian</div>
-      <h1 data-reveal>Muzyka grana na żywo.</h1>
+      <h1 data-reveal>Più Mosso.</h1>
       <p class="hero-sub" data-reveal>Gramy na ślubach, koncertach i wydarzeniach kulturalnych. Repertuar dobieramy pod konkretne miejsce, akustykę i charakter spotkania.</p>
       <div class="hero-actions" data-reveal>
         <a class="btn btn-gold" href="#kontakt">Sprawdź termin</a>
@@ -939,7 +947,6 @@ footer{
         <p>Pracujemy na ślubach, w kościołach i salach koncertowych, na festiwalach i wydarzeniach domów kultury. Za każdym razem układamy program pod konkretne miejsce, akustykę i typ spotkania.</p>
         <p>Wiemy, kiedy grać ciszej, kiedy głośniej i kiedy po prostu poczekać. Przebieg ceremonii jest dla nas równie ważny jak nuty.</p>
         <p>Odpowiadamy szybko, ustalamy szczegóły bez zbędnych formalności. Na każde pytanie dostajecie konkretną odpowiedź.</p>
-        <p class="pull">"Nie wysyłamy gotowych list repertuaru. Każdy program budujemy pod konkretne miejsce i okazję."</p>
       </div>
       <figure class="about-photo">
         <img src="DSCF3970.jpeg" alt="Duet Più Mosso — Zofia Andersz i Piotr Górski" width="1074" height="1554" loading="lazy">

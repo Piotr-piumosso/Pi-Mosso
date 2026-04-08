@@ -452,7 +452,8 @@ function saveDH() { localStorage.setItem(DHK, JSON.stringify(DH)); }
 
 // Auth
 function unlock() {
-  if (document.getElementById("pin").value === PIN) {
+  const val = document.getElementById("pin").value.replace(/\D/g,"");
+  if (val === PIN) {
     sessionStorage.setItem("pm_unlocked","1");
     document.getElementById("lo").classList.add("h");
     document.getElementById("app").classList.remove("h");
@@ -463,11 +464,11 @@ function unlock() {
   }
 }
 document.getElementById("pin").addEventListener("keyup", e => { if (e.key==="Enter"||e.keyCode===13) unlock(); });
-// Auto-unlock if already authenticated this session
+// Auto-unlock if already authenticated this session (DOM is already ready at script execution)
 if (sessionStorage.getItem("pm_unlocked")==="1") {
   document.getElementById("lo").classList.add("h");
   document.getElementById("app").classList.remove("h");
-  document.addEventListener("DOMContentLoaded", init);
+  init();
 }
 
 // Boot
