@@ -119,7 +119,7 @@ img{display:block;max-width:100%}
 .brand{
   display:flex;
   flex-direction:column;
-  gap:1px;
+  gap:5px;
 }
 
 .brand-kicker{
@@ -128,6 +128,7 @@ img{display:block;max-width:100%}
   text-transform:uppercase;
   color:var(--muted-2);
   font-weight:600;
+  white-space:nowrap;
 }
 
 .brand strong{
@@ -189,7 +190,67 @@ img{display:block;max-width:100%}
 }
 
 .hero{
-  padding:100px 0 38px;
+  position:relative;
+  height:100svh;
+  min-height:600px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.hero-media{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.hero-media img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(.75) brightness(.42);
+}
+.hero-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to top, rgba(15,11,8,.92) 0%, rgba(15,11,8,.18) 55%, rgba(15,11,8,.38) 100%),
+    radial-gradient(ellipse 80% 50% at 50% 60%, rgba(0,0,0,.3), transparent);
+}
+.hero-content{
+  position:relative;
+  z-index:1;
+  width:100%;
+  padding-bottom:clamp(52px,8vh,96px);
+}
+.hero-kicker{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-size:.7rem;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:600;
+  margin-bottom:clamp(16px,3vh,28px);
+}
+.hero-kicker::before{
+  content:"";
+  width:48px;
+  height:1px;
+  background:var(--gold);
+}
+.hero-sub{
+  max-width:52ch;
+  font-size:1.05rem;
+  color:rgba(248,241,229,.72);
+  margin-bottom:clamp(24px,4vh,40px);
+  line-height:1.65;
+}
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:center;
 }
 
 .hero-grid,
@@ -287,15 +348,15 @@ h1{
 
 .btn:hover{transform:translateY(-1px)}
 
-.btn-primary{
-  background:linear-gradient(180deg, #e2c385, #cb9f56);
-  color:#24180d;
+.btn-gold{
+  background:var(--gold);
+  color:var(--bg);
+  border-color:var(--gold);
 }
 
-.btn-secondary{
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(215,180,114,.26);
-  color:var(--ink);
+.btn-ghost{
+  border:1px solid rgba(255,255,255,.18);
+  color:var(--muted);
 }
 
 .mini-note{
@@ -637,7 +698,7 @@ h1{
   <header class="topbar" id="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <span class="brand-kicker">Oferta solowa · Più Mosso ✓v2</span>
+        <span class="brand-kicker">Oferta solowa · Più Mosso</span>
         <strong>Piotr Górski</strong>
       </div>
       <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">
@@ -654,40 +715,19 @@ h1{
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="panel hero-copy">
-          <div class="eyebrow">Organy • fortepian • ceremonie • recitale</div>
-          <h1>Organy i fortepian. Muzyka grana na żywo.</h1>
-          <p class="lead">Laureat konkursów organowych w Polsce i za granicą. Absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Gra na ślubach, festiwalach i w salach koncertowych, samodzielnie i w składzie duetu Più Mosso.</p>
-
-          <div class="hero-proof" aria-label="Najważniejsze atuty">
-            <span>laureat konkursów organowych</span>
-            <span>organy i fortepian</span>
-            <span>ceremonie i wydarzenia artystyczne</span>
-          </div>
-
+    <section class="hero" id="start">
+      <div class="hero-media" aria-hidden="true">
+        <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski przy organach" loading="eager">
+      </div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-kicker">Organy · Fortepian · Ceremonie · Recitale</div>
+          <h1>Piotr Górski.</h1>
+          <p class="hero-sub">Organista i pianista. Laureat konkursów organowych w Polsce i za granicą. Absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Zapytaj o termin</a>
-            <a class="btn btn-secondary" href="#oferta">Zobacz zakres oferty</a>
+            <a class="btn btn-gold" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Zapytaj o termin</a>
+            <a class="btn btn-ghost" href="#oferta">Zobacz ofertę</a>
           </div>
-
-          <p class="mini-note">Najlepiej podać datę, miejscowość, typ wydarzenia oraz informację, czy chodzi o organy, fortepian albo recital solowy.</p>
-        </div>
-
-        <div class="hero-side">
-          <figure class="panel hero-photo">
-            <img src="../kalendarium/IMG_1452.jpeg" alt="Piotr Górski przy organach" />
-          </figure>
-          <aside class="panel aside-card">
-            <div class="feature-line">Dla klientów indywidualnych i instytucji</div>
-            <h3>Dla kogo</h3>
-            <ul>
-              <li>uroczystości kościelne i cywilne (organy lub fortepian),</li>
-              <li>recitale i koncerty solowe dla instytucji kultury,</li>
-              <li>festiwale i projekty z indywidualnym programem.</li>
-            </ul>
-          </aside>
         </div>
       </div>
     </section>
@@ -889,7 +929,7 @@ h1{
             <li>ewentualne utwory, które powinny pojawić się w programie.</li>
           </ul>
           <p>Im więcej konkretów na start, tym szybciej przygotuję trafną odpowiedź.</p>
-          <a class="btn btn-primary" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Napisz wiadomość</a>
+          <a class="btn btn-gold" href="mailto:kontakt@piumosso.pl?subject=Zapytanie%20o%20ofert%C4%99%20solow%C4%85%20Piotra%20G%C3%B3rskiego">Napisz wiadomość</a>
         </aside>
       </div>
     </section>

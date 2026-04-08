@@ -151,6 +151,7 @@ nav{
   top:0;inset:0 0 auto 0;
   z-index:60;
   padding:20px 24px;
+  background:linear-gradient(180deg,rgba(15,11,8,.55) 0%,transparent 100%);
   transition:background .3s, border-color .3s;
 }
 nav.scrolled{
@@ -170,7 +171,7 @@ nav.scrolled{
 .nav-brand{
   display:flex;
   flex-direction:column;
-  gap:1px;
+  gap:5px;
 }
 .nav-brand span{
   font-size:.62rem;
@@ -178,6 +179,7 @@ nav.scrolled{
   text-transform:uppercase;
   color:var(--muted2);
   font-weight:600;
+  white-space:nowrap;
 }
 .nav-brand strong{
   font-family:"Cormorant Garamond",serif;
