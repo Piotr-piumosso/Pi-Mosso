@@ -97,63 +97,99 @@ img{display:block;max-width:100%}
   position:fixed;
   inset:0 0 auto 0;
   z-index:60;
-  backdrop-filter:blur(16px);
-  background:rgba(15,11,8,.68);
-  border-bottom:1px solid rgba(215,180,114,.1);
+  padding:20px 24px;
   transition:background .3s, border-color .3s;
 }
 .topbar.scrolled{
-  background:rgba(15,11,8,.92);
-  border-bottom:1px solid rgba(215,180,114,.14);
+  background:rgba(15,11,8,.82);
+  border-bottom:1px solid rgba(215,180,114,.1);
+  backdrop-filter:blur(18px);
+  padding:14px 24px;
 }
 
 .topbar-inner{
-  width:min(calc(100% - 40px), var(--max));
+  max-width:var(--max);
   margin:0 auto;
-  padding:16px 0;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:16px;
+  gap:20px;
 }
 
 .brand{
   display:flex;
   flex-direction:column;
-  gap:2px;
+  gap:1px;
 }
 
-.eyebrow,
 .brand-kicker{
-  font-size:.74rem;
-  letter-spacing:.18em;
+  font-size:.62rem;
+  letter-spacing:.22em;
   text-transform:uppercase;
   color:var(--muted-2);
+  font-weight:600;
 }
 
 .brand strong{
   font-family:"Cormorant Garamond",serif;
-  font-size:1.65rem;
+  font-size:1.55rem;
   font-weight:600;
-  letter-spacing:.03em;
+  letter-spacing:.04em;
+  color:var(--ink);
+  line-height:1;
 }
 
 .top-links{
   display:flex;
-  flex-wrap:wrap;
-  gap:18px;
-  justify-content:flex-end;
-  color:var(--muted);
-  font-size:.95rem;
+  align-items:center;
+  gap:26px;
 }
 
-.top-links .cta-link{
+.top-links a{
+  font-size:.85rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--muted);
+}
+
+.top-links a.cta-link{
+  padding:10px 20px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--gold);
+  background:rgba(215,180,114,.06);
+}
+
+.top-links a.cta-link:hover{
+  background:rgba(215,180,114,.12);
+  opacity:1;
+}
+
+.nav-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  background:none;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:10px;
+  cursor:pointer;
   color:var(--ink);
-  font-weight:700;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+}
+
+.nav-toggle span{
+  display:block;
+  width:18px;
+  height:1.5px;
+  background:currentColor;
+  border-radius:2px;
 }
 
 .hero{
-  padding:130px 0 38px;
+  padding:100px 0 38px;
 }
 
 .hero-grid,
@@ -573,12 +609,14 @@ h1{
   }
 }
 
-@media (max-width: 720px){
-  .topbar-inner{
-    flex-direction:column;
-    align-items:flex-start;
-  }
+@media (max-width: 760px){
+  .top-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(15,11,8,.96);backdrop-filter:blur(16px);flex-direction:column;padding:18px 24px;gap:14px;border-bottom:1px solid var(--line)}
+  .top-links.open{display:flex}
+  .nav-toggle{display:flex}
+  .topbar.scrolled{padding:10px 16px}
+}
 
+@media (max-width: 720px){
   .hero-copy,
   .story-copy,
   .card,
@@ -596,13 +634,16 @@ h1{
 </style>
 </head>
 <body>
-  <header class="topbar">
+  <header class="topbar" id="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <span class="brand-kicker">Oferta solowa w ramach Più Mosso</span>
+        <span class="brand-kicker">Oferta solowa · Più Mosso</span>
         <strong>Piotr Górski</strong>
       </div>
-      <nav class="top-links" aria-label="Nawigacja">
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="top-links" id="navLinks" aria-label="Nawigacja">
         <a href="#oferta">Oferta</a>
         <a href="#repertuar">Repertuar</a>
         <a href="#zdjecia">Zdjęcia</a>
@@ -858,11 +899,25 @@ h1{
     <div class="container">Piotr Górski • organista i pianista • <a href="https://piumosso.pl" style="color:inherit;border-bottom:1px solid rgba(215,180,114,.3)">piumosso.pl</a></div>
   </footer>
 <script>
-// Topbar scroll effect
-const topbar = document.querySelector('.topbar');
+const topbar = document.getElementById('topbar');
+const toggle = document.getElementById('navToggle');
+const links  = document.getElementById('navLinks');
+
 window.addEventListener('scroll', () => {
   topbar.classList.toggle('scrolled', window.scrollY > 40);
 }, {passive:true});
+
+toggle.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+});
+
+links.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
 </script>
 </body>
 </html>
