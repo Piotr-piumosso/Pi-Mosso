@@ -59,7 +59,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 
 body{
   font-family:"Manrope",sans-serif;
@@ -94,12 +94,17 @@ img{display:block;max-width:100%}
 }
 
 .topbar{
-  position:sticky;
-  top:0;
-  z-index:20;
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:60;
   backdrop-filter:blur(16px);
   background:rgba(15,11,8,.68);
-  border-bottom:1px solid rgba(255,255,255,.05);
+  border-bottom:1px solid rgba(215,180,114,.1);
+  transition:background .3s, border-color .3s;
+}
+.topbar.scrolled{
+  background:rgba(15,11,8,.92);
+  border-bottom:1px solid rgba(215,180,114,.14);
 }
 
 .topbar-inner{
@@ -148,7 +153,7 @@ img{display:block;max-width:100%}
 }
 
 .hero{
-  padding:72px 0 38px;
+  padding:130px 0 38px;
 }
 
 .hero-grid,
@@ -852,5 +857,12 @@ h1{
   <footer class="footer">
     <div class="container">Piotr Górski • organista i pianista • <a href="https://piumosso.pl" style="color:inherit;border-bottom:1px solid rgba(215,180,114,.3)">piumosso.pl</a></div>
   </footer>
+<script>
+// Topbar scroll effect
+const topbar = document.querySelector('.topbar');
+window.addEventListener('scroll', () => {
+  topbar.classList.toggle('scrolled', window.scrollY > 40);
+}, {passive:true});
+</script>
 </body>
 </html>
