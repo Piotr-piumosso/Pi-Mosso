@@ -143,8 +143,10 @@ textarea{resize:vertical;min-height:54px}
     <div style="font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:5px">Più Mosso</div>
     <h2 style="font-size:1.2rem;margin-bottom:0">Studio</h2>
     <p>Wpisz PIN</p>
+    <form onsubmit="event.preventDefault();unlock()">
     <input id="pin" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="PIN" autocomplete="off" autocorrect="off" autocapitalize="off">
-    <button class="btn btn-p" style="width:100%" onclick="unlock()">Wejdź</button>
+    <button type="submit" class="btn btn-p" style="width:100%">Wejdź</button>
+    </form>
     <div id="pin-err" style="color:var(--red);font-size:.75rem;margin-top:6px;min-height:1em"></div>
   </div>
 </div>
@@ -451,27 +453,28 @@ function saveP()  { localStorage.setItem(PK,  JSON.stringify(PS)); }
 function saveDH() { localStorage.setItem(DHK, JSON.stringify(DH)); }
 
 // Auth
+function _showApp() {
+  document.getElementById("lo").classList.add("h");
+  document.getElementById("app").classList.remove("h");
+  try { init(); } catch(e) { console.error("Studio init error:", e); }
+}
 function unlock() {
   const val = document.getElementById("pin").value.replace(/\D/g,"");
   if (val === PIN) {
     try { sessionStorage.setItem("pm_unlocked","1"); } catch(e) {}
-    document.getElementById("lo").classList.add("h");
-    document.getElementById("app").classList.remove("h");
-    init();
+    try { localStorage.setItem("pm_unlocked_p","1"); } catch(e) {}
+    _showApp();
   } else {
     document.getElementById("pin-err").textContent = "Błędny PIN.";
     document.getElementById("pin").value = "";
+    document.getElementById("pin").focus();
   }
 }
-document.getElementById("pin").addEventListener("keyup", e => { if (e.key==="Enter"||e.keyCode===13) unlock(); });
-// Auto-unlock if already authenticated this session (DOM is already ready at script execution)
-let _sessionOk = false;
-try { _sessionOk = sessionStorage.getItem("pm_unlocked")==="1"; } catch(e) {}
-if (_sessionOk) {
-  document.getElementById("lo").classList.add("h");
-  document.getElementById("app").classList.remove("h");
-  init();
-}
+// Auto-unlock: check sessionStorage AND localStorage (localStorage survives tab close, works in Safari)
+let _ok = false;
+try { _ok = sessionStorage.getItem("pm_unlocked")==="1"; } catch(e) {}
+try { if (!_ok) _ok = localStorage.getItem("pm_unlocked_p")==="1"; } catch(e) {}
+if (_ok) _showApp();
 
 // Boot
 function init() {
