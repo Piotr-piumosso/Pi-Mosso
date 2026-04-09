@@ -29,6 +29,7 @@
 
 <link rel="alternate" hreflang="en" href="https://piumosso.pl/en/">
 <link rel="alternate" hreflang="pl" href="https://piumosso.pl/">
+<link rel="alternate" hreflang="de" href="https://piumosso.pl/de/">
 <link rel="alternate" hreflang="x-default" href="https://piumosso.pl/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -190,6 +191,13 @@ nav{
   border-radius:999px;
   background:currentColor;
 }
+.lang-switch{position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.78rem;font-weight:700;letter-spacing:.08em;color:var(--muted);cursor:pointer;font-family:"Manrope",sans-serif;transition:border-color .2s,color .2s}
+.lang-btn:hover{color:var(--ink);border-color:var(--gold)}
+.lang-menu{position:absolute;top:calc(100% + 8px);right:0;background:rgba(15,11,8,.97);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:14px;padding:6px;min-width:72px;display:none;flex-direction:column;gap:2px;z-index:100}
+.lang-menu.open{display:flex}
+.lang-menu a{padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.lang-menu a:hover,.lang-menu a.active{background:rgba(215,180,114,.1);color:var(--ink);opacity:1}
 .nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .nav-links a{
   color:var(--muted-strong);
@@ -763,7 +771,14 @@ footer{
         <a href="#offer">Offer</a>
         <a href="#media">Media</a>
         <a href="#contact">Contact</a>
-        <a href="/">PL</a>
+        <div class="lang-switch" id="langSwitch">
+          <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="lang-menu" id="langMenu" role="menu">
+            <a href="/" role="menuitem">PL</a>
+            <a href="/en/" class="active" role="menuitem">EN</a>
+            <a href="/de/" role="menuitem">DE</a>
+          </div>
+        </div>
         <a href="#contact" class="cta">Book the duo</a>
       </div>
     </div>
@@ -1109,6 +1124,21 @@ footer{
           navShell.classList.remove("menu-open");
           navToggle.setAttribute("aria-expanded", "false");
         });
+      });
+    }
+
+    // Language switcher
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('langMenu');
+    if (langBtn && langMenu) {
+      langBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        const open = langMenu.classList.toggle('open');
+        langBtn.setAttribute('aria-expanded', open);
+      });
+      document.addEventListener('click', () => {
+        langMenu.classList.remove('open');
+        if (langBtn) langBtn.setAttribute('aria-expanded','false');
       });
     }
 
