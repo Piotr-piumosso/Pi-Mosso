@@ -1,195 +1,904 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Più Mosso — concert and ceremony music</title>
-<meta name="description" content="Più Mosso is a violin, organ and piano duo performing concerts and musical settings for weddings and ceremonies." />
+<title>Più Mosso — concerts and ceremony music</title>
+<meta name="description" content="Più Mosso is a violin, organ and piano duo from Poland. We perform at concerts, weddings and cultural events. Programme tailored to the venue and occasion.">
 
 <link rel="icon" href="../favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<meta name="theme-color" content="#f2e9df">
+<meta name="theme-color" content="#0f0b08">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://piumosso.pl/en/">
-<meta property="og:title" content="Più Mosso — concert and ceremony music">
-<meta property="og:description" content="Violin, organ and piano duo for concerts, weddings and ceremonies." />
-<meta property="og:image" content="https://piumosso.pl/IMG_0554.JPG">
+<meta property="og:title" content="Più Mosso — concerts and ceremony music">
+<meta property="og:description" content="Violin, organ and piano duo. Concerts, ceremonies and music shaped around the venue and occasion.">
+<meta property="og:image" content="https://piumosso.pl/DSCF3970.jpeg">
 <meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="pl_PL">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Più Mosso — concert and ceremony music">
-<meta name="twitter:description" content="Concerts, ceremonies and music shaped around the event and venue." />
-<meta name="twitter:image" content="https://piumosso.pl/IMG_0554.JPG">
+<meta name="twitter:title" content="Più Mosso — concerts and ceremony music">
+<meta name="twitter:description" content="Violin, organ and piano duo. Concerts, ceremonies and music shaped around the venue and occasion.">
+<meta name="twitter:image" content="https://piumosso.pl/DSCF3970.jpeg">
 
-<link rel="alternate" hreflang="en" href="https://piumosso.pl/en/">
+<link rel="canonical" href="https://piumosso.pl/en/">
 <link rel="alternate" hreflang="pl" href="https://piumosso.pl/">
+<link rel="alternate" hreflang="en" href="https://piumosso.pl/en/">
 <link rel="alternate" hreflang="de" href="https://piumosso.pl/de/">
+<link rel="alternate" hreflang="fr" href="https://piumosso.pl/fr/">
 <link rel="alternate" hreflang="x-default" href="https://piumosso.pl/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Più Mosso",
+  "url": "https://piumosso.pl/en/",
+  "image": "https://piumosso.pl/DSCF3970.jpeg",
+  "genre": ["Classical", "Sacred"],
+  "member": [
+    {"@type":"Person","name":"Zofia Andersz","instrument":"Violin"},
+    {"@type":"Person","name":"Piotr Górski","instrument":"Organ, Piano"}
+  ]
+}
+</script>
 
 <style>
 :root{
-  --bg:#efe6da;
-  --bg-soft:#f6f1ea;
-  --panel:#fffaf5;
-  --panel-strong:#f3ebe2;
-  --panel-glass:rgba(255,250,245,.78);
-  --text:#2d241d;
-  --muted:rgba(45,36,29,.72);
-  --muted-strong:rgba(45,36,29,.84);
-  --gold:#6f5c49;
-  --gold-soft:#8f775f;
-  --gold-line:rgba(111,92,73,.18);
-  --white-line:rgba(61,47,35,.08);
-  --shadow:0 24px 60px rgba(77,58,40,.12);
-  --radius-xl:30px;
-  --radius-lg:22px;
-  --radius-md:16px;
+  --bg:#0f0b08;
+  --bg2:#18120d;
+  --surf:rgba(30,22,16,.88);
+  --surf2:rgba(25,19,14,.95);
+  --ink:#f8f1e5;
+  --muted:rgba(248,241,229,.76);
+  --muted2:rgba(248,241,229,.58);
+  --gold:#d7b472;
+  --gold2:#c79c52;
+  --line:rgba(215,180,114,.18);
+  --line2:rgba(255,255,255,.06);
+  --shadow:0 32px 80px rgba(0,0,0,.44);
   --max:1200px;
+  --r:26px;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+
 body{
   font-family:"Manrope",sans-serif;
   font-size:17px;
-  line-height:1.75;
-  color:var(--text);
+  line-height:1.72;
+  color:var(--ink);
   background:
-    radial-gradient(900px 520px at 0% 0%, rgba(168,145,120,.16), transparent 60%),
-    radial-gradient(1000px 640px at 100% 12%, rgba(186,166,145,.16), transparent 56%),
-    linear-gradient(180deg, #f7f2ec 0%, #f2e9df 45%, #ecdfd2 100%);
+    radial-gradient(900px 460px at 8% -8%, rgba(215,180,114,.13), transparent 60%),
+    radial-gradient(740px 420px at 100% 8%, rgba(146,104,48,.16), transparent 60%),
+    linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
   -webkit-font-smoothing:antialiased;
 }
-img,video{max-width:100%;height:auto;display:block}
-a{
-  color:var(--gold);
-  text-decoration:none;
-  transition:color .25s ease, border-color .25s ease, opacity .25s ease, transform .25s ease;
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.12;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(180deg, rgba(0,0,0,.75), transparent 88%);
 }
-a:hover{color:#ecd2a0}
-button,input,textarea{font:inherit}
+
+a{color:inherit;text-decoration:none;transition:opacity .2s}
+a:hover{opacity:.7}
+img,video{display:block;max-width:100%}
 h1,h2,h3,h4{
-  font-family:"Fraunces",serif;
+  font-family:"Cormorant Garamond",serif;
   font-weight:600;
-  line-height:1.02;
-  letter-spacing:.01em;
+  line-height:1.05;
+  letter-spacing:-.01em;
+  color:var(--ink);
 }
-h1{font-size:clamp(3.5rem,9vw,6.9rem)}
-h2{font-size:clamp(2.3rem,4vw,4rem)}
-h3{font-size:clamp(1.55rem,2.4vw,2.05rem)}
-p{margin:.9em 0;color:var(--muted)}
-strong{color:var(--text);font-weight:700}
-section{padding:110px 20px;position:relative}
-.container{max-width:var(--max);margin:0 auto}
+h1{font-size:clamp(3.8rem,8vw,7.5rem);line-height:.97}
+h2{font-size:clamp(2.6rem,5vw,5rem);line-height:1.0}
+h3{font-size:clamp(1.7rem,3vw,2.6rem)}
+p{color:var(--muted)}
+strong{color:var(--ink)}
+
+.wrap{
+  width:min(calc(100% - 48px),var(--max));
+  margin:0 auto;
+}
+.wrap-wide{
+  width:min(calc(100% - 48px),1400px);
+  margin:0 auto;
+}
+
+/* Eyebrow */
 .eyebrow{
   display:inline-flex;
   align-items:center;
-  gap:12px;
-  font-size:.78rem;
-  letter-spacing:.24em;
+  gap:14px;
+  font-size:.72rem;
+  letter-spacing:.28em;
   text-transform:uppercase;
-  color:var(--muted-strong);
+  color:var(--muted2);
+  font-family:"Manrope",sans-serif;
+  font-weight:600;
 }
 .eyebrow::before{
   content:"";
-  width:42px;
+  width:38px;
   height:1px;
-  background:linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-.section-head{max-width:760px;margin:0 auto 28px;text-align:center}
-.section-head p{font-size:1.05rem}
-.grid{display:grid;gap:24px}
-.panel{
-  position:relative;
-  border:1px solid var(--white-line);
-  border-radius:var(--radius-xl);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.52)),
-    rgba(255,250,245,.88);
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-.panel::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:inherit;
-  padding:1px;
-  background:linear-gradient(135deg, rgba(111,92,73,.18), rgba(255,255,255,0) 35%, rgba(111,92,73,.08));
-  -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite:xor;
-  mask-composite:exclude;
-  pointer-events:none;
+  background:var(--gold);
+  opacity:.6;
 }
 
+/* Divider */
+.rule{
+  width:100%;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:.22;
+}
+
+/* ── NAV ── */
 nav{
   position:fixed;
-  inset:0 0 auto 0;
-  z-index:50;
-  padding:16px 20px;
-  background:linear-gradient(180deg, rgba(247,242,236,.9), rgba(247,242,236,.56));
-  backdrop-filter:blur(16px);
+  top:0;inset:0 0 auto 0;
+  z-index:60;
+  padding:20px 24px;
+  background:rgba(15,11,8,.72);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(215,11,8,0);
+  transition:background .3s, border-color .3s;
 }
-.nav-shell{
+nav.scrolled{
+  background:rgba(15,11,8,.92);
+  border-bottom:1px solid rgba(215,180,114,.12);
+  padding:14px 24px;
+}
+.nav-inner{
   max-width:var(--max);
   margin:0 auto;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
-  padding:10px 16px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.08);
-  background:rgba(255,250,245,.72);
+  gap:20px;
 }
-.brand{display:flex;align-items:center;gap:14px;color:var(--text)}
-.brand img{
-  height:36px;
-  width:auto;
-  filter:invert(1) brightness(.18) contrast(1.1);
+.nav-brand{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
 }
-.brand-mark{display:flex;flex-direction:column;line-height:1}
-.brand-mark strong{
-  font-size:1rem;
+.nav-brand span{
+  font-size:.62rem;
   letter-spacing:.22em;
   text-transform:uppercase;
-  font-weight:800;
+  color:var(--muted2);
+  font-weight:600;
+  white-space:nowrap;
 }
-.brand-mark span{
-  font-size:.7rem;
-  letter-spacing:.2em;
-  text-transform:uppercase;
+.nav-brand strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.55rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--ink);
+  line-height:1;
+}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+.nav-links a{
+  font-size:.85rem;
+  font-weight:600;
+  letter-spacing:.04em;
   color:var(--muted);
-  margin-top:6px;
+}
+.nav-links a.cta{
+  padding:10px 20px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--gold);
+  background:rgba(212,176,106,.06);
+}
+.nav-links a.cta:hover{
+  background:rgba(212,176,106,.12);
+  opacity:1;
 }
 .nav-toggle{
   display:none;
-  width:46px;
-  height:46px;
-  border-radius:14px;
-  border:1px solid rgba(61,47,35,.12);
-  background:rgba(111,92,73,.06);
-  color:var(--text);
+  width:44px;
+  height:44px;
+  background:none;
+  border:1px solid var(--line2);
+  border-radius:10px;
+  cursor:pointer;
+  color:var(--ink);
+  flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:4px;
-  cursor:pointer;
+  gap:5px;
 }
 .nav-toggle span{
   display:block;
   width:18px;
   height:1.5px;
-  border-radius:999px;
   background:currentColor;
+  border-radius:2px;
+}
+
+/* ── HERO ── */
+.hero{
+  position:relative;
+  height:100svh;
+  min-height:600px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.hero-media{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.hero-media video{
+  width:100%;height:100%;
+  object-fit:cover;
+  filter:saturate(.8) brightness(.44);
+}
+.hero-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to top, rgba(15,11,8,.88) 0%, rgba(15,11,8,.18) 50%, rgba(15,11,8,.35) 100%),
+    radial-gradient(ellipse 80% 50% at 50% 60%, rgba(0,0,0,.3), transparent);
+}
+.hero-content{
+  position:relative;
+  z-index:1;
+  width:100%;
+  padding-bottom:clamp(52px,8vh,96px);
+}
+.hero-kicker{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-size:.7rem;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:600;
+  margin-bottom:clamp(16px,3vh,28px);
+}
+.hero-kicker::before{
+  content:"";
+  width:48px;
+  height:1px;
+  background:var(--gold);
+}
+.hero h1{
+  max-width:16ch;
+  margin-bottom:clamp(18px,3vh,32px);
+}
+.hero-sub{
+  max-width:52ch;
+  font-size:1.05rem;
+  color:rgba(248,241,229,.72);
+  margin-bottom:clamp(24px,4vh,40px);
+  line-height:1.65;
+}
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:center;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:52px;
+  padding:0 28px;
+  border-radius:999px;
+  font-size:.88rem;
+  font-weight:700;
+  letter-spacing:.04em;
+  border:1px solid transparent;
+  transition:opacity .2s, transform .15s;
+}
+.btn:hover{opacity:.85;transform:translateY(-1px)}
+.btn-gold{
+  background:linear-gradient(160deg,#e4c98a,var(--gold));
+  color:#1a130a;
+  box-shadow:0 12px 32px rgba(212,176,106,.24);
+}
+.btn-ghost{
+  background:rgba(255,255,255,.04);
+  border-color:rgba(212,176,106,.22);
+  color:var(--ink);
+}
+.hero-scroll{
+  position:absolute;
+  bottom:clamp(20px,4vh,38px);
+  right:clamp(24px,4vw,48px);
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  font-size:.65rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted2);
+  font-weight:600;
+}
+.hero-scroll::after{
+  content:"";
+  width:1px;
+  height:52px;
+  background:linear-gradient(to bottom,var(--gold),transparent);
+  opacity:.4;
+}
+
+/* ── SECTION BASE ── */
+section{
+  padding:clamp(80px,12vw,160px) 0;
+  position:relative;
+}
+
+.section-head{
+  margin-bottom:clamp(40px,6vw,72px);
+}
+.section-head .eyebrow{
+  margin-bottom:18px;
+}
+.section-head h2{
+  max-width:20ch;
+}
+.section-head p{
+  max-width:54ch;
+  margin-top:16px;
+  font-size:1.02rem;
+}
+
+/* ── ABOUT ── */
+.about-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:2px;
+}
+.about-copy{
+  background:var(--surf);
+  border:1px solid var(--line);
+  border-right:none;
+  border-radius:var(--r) 0 0 var(--r);
+  padding:clamp(36px,5vw,64px);
+}
+.about-copy p{
+  font-size:1.05rem;
+  max-width:58ch;
+}
+.about-copy p + p{margin-top:18px}
+.about-copy .pull{
+  margin-top:28px;
+  padding-left:22px;
+  border-left:2px solid rgba(212,176,106,.38);
+  color:var(--ink);
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.38rem;
+  font-weight:500;
+  line-height:1.4;
+  font-style:italic;
+}
+.about-photo{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-left:none;
+  border-radius:0 var(--r) var(--r) 0;
+}
+.about-photo img{
+  width:100%;
+  height:100%;
+  min-height:520px;
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(.88);
+  transition:transform 6s ease;
+}
+.about-photo:hover img{
+  transform:scale(1.04);
+}
+.about-photo figcaption{
+  position:absolute;
+  bottom:18px;right:18px;
+  padding:8px 14px;
+  background:rgba(15,11,8,.72);
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:.72rem;
+  color:var(--muted2);
+  letter-spacing:.06em;
+}
+
+/* ── ARTISTS ── */
+.artists-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:2px;
+  margin-top:2px;
+}
+.artist-card{
+  background:var(--surf);
+  border:1px solid var(--line);
+  padding:clamp(28px,4vw,48px);
+}
+.artist-card:first-child{
+  border-right:none;
+  border-radius:0 0 0 var(--r);
+}
+.artist-card:last-child{
+  border-radius:0 0 var(--r) 0;
+}
+.artist-role{
+  font-size:.7rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:700;
+  margin-bottom:14px;
+}
+.artist-card h3{
+  font-size:clamp(1.5rem,2.5vw,2.2rem);
+  margin-bottom:14px;
+}
+.artist-card p{font-size:.97rem}
+.artist-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:22px;
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--gold);
+  border-bottom:1px solid rgba(212,176,106,.24);
+  padding-bottom:2px;
+}
+.artist-link:hover{opacity:1;border-color:var(--gold)}
+
+/* ── FULL BLEED BREAK ── */
+.photo-break{
+  width:100%;
+  height:clamp(280px,40vw,560px);
+  overflow:hidden;
+  position:relative;
+}
+.photo-break img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 35%;
+  filter:brightness(.55) saturate(.85);
+  transition:transform 8s ease;
+}
+.photo-break:hover img{transform:scale(1.03)}
+.photo-break-text{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(to right,rgba(12,10,7,.5),transparent 50%,rgba(12,10,7,.3));
+}
+.photo-break-text span{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(2rem,5vw,4.2rem);
+  font-weight:500;
+  letter-spacing:.12em;
+  color:rgba(248,241,229,.82);
+  font-style:italic;
+}
+
+/* ── OFFER ── */
+.offer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+.offer-card{
+  background:var(--surf);
+  border:1px solid var(--line);
+  padding:clamp(28px,4vw,46px);
+}
+.offer-card:first-child{border-radius:var(--r) 0 0 var(--r);border-right:none}
+.offer-card:last-child{border-radius:0 var(--r) var(--r) 0;border-left:none}
+.offer-card:nth-child(2){border-left:none;border-right:none}
+.offer-tag{
+  font-size:.67rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:700;
+  margin-bottom:16px;
+}
+.offer-card h3{
+  font-size:clamp(1.4rem,2.2vw,2rem);
+  margin-bottom:14px;
+}
+.offer-card p{font-size:.95rem;margin-bottom:18px}
+.offer-list{
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+.offer-list li{
+  position:relative;
+  padding-left:16px;
+  font-size:.9rem;
+  color:var(--muted);
+}
+.offer-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.72em;
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--gold);
+  opacity:.6;
+}
+.offer-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:24px;
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  border-bottom:1px solid var(--line);
+  padding-bottom:2px;
+  transition:color .2s, border-color .2s;
+}
+.offer-cta:hover{color:var(--gold);border-color:var(--gold);opacity:1}
+
+/* ── MULTIMEDIA ── */
+.media-grid{
+  display:grid;
+  grid-template-columns:1.28fr .72fr;
+  gap:2px;
+  align-items:stretch;
+}
+.video-wrap{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-right:none;
+  border-radius:var(--r) 0 0 var(--r);
+}
+.video-wrap::before{
+  content:"";
+  display:block;
+  padding-top:56.25%;
+}
+.video-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;height:100%;
+  border:0;
+}
+.media-copy{
+  background:var(--surf);
+  border:1px solid var(--line);
+  border-left:none;
+  border-radius:0 var(--r) var(--r) 0;
+  padding:clamp(28px,4vw,52px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.media-copy h2{
+  font-size:clamp(1.8rem,3vw,3rem);
+  margin:16px 0 16px;
+}
+.media-copy p{font-size:.97rem;max-width:44ch}
+.media-links{
+  margin-top:26px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.media-link{
+  padding:10px 16px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:.8rem;
+  color:var(--muted);
+  background:rgba(212,176,106,.04);
+  transition:border-color .2s,color .2s;
+}
+.media-link:hover{border-color:var(--gold);color:var(--gold);opacity:1}
+
+/* ── GALLERY ── */
+.gallery-section{
+  padding:0;
+  overflow:hidden;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1.55fr 1fr 1fr;
+  grid-template-rows:240px 240px;
+  gap:3px;
+}
+.gallery-grid figure{overflow:hidden}
+.gallery-grid figure:first-child{grid-row:1/3}
+.gallery-grid figure img,
+.gallery-grid figure video{
+  width:100%;height:100%;
+  object-fit:cover;
+  filter:saturate(.82) brightness(.9);
+  transition:transform .7s ease,filter .7s ease;
+}
+.gallery-grid figure:hover img,
+.gallery-grid figure:hover video{
+  transform:scale(1.04);
+  filter:saturate(.96) brightness(.98);
+}
+
+/* ── PROCESS ── */
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+}
+.process-step{
+  background:var(--surf);
+  border:1px solid var(--line);
+  padding:clamp(24px,3.5vw,40px);
+}
+.process-step:first-child{border-right:none;border-radius:var(--r) 0 0 var(--r)}
+.process-step:last-child{border-left:none;border-radius:0 var(--r) var(--r) 0}
+.process-step:nth-child(2),.process-step:nth-child(3){border-left:none;border-right:none}
+.step-num{
+  font-family:"Cormorant Garamond",serif;
+  font-size:3.4rem;
+  font-weight:500;
+  color:rgba(212,176,106,.22);
+  line-height:1;
+  margin-bottom:14px;
+}
+.process-step h3{
+  font-size:1.32rem;
+  margin-bottom:10px;
+}
+.process-step p{font-size:.92rem}
+
+/* ── CONTACT ── */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2px;
+}
+.contact-copy{
+  background:var(--surf);
+  border:1px solid var(--line);
+  border-right:none;
+  border-radius:var(--r) 0 0 var(--r);
+  padding:clamp(36px,5vw,64px);
+}
+.contact-copy h2{
+  font-size:clamp(2rem,4vw,3.6rem);
+  margin:18px 0 18px;
+  max-width:18ch;
+}
+.contact-copy p{font-size:.97rem;max-width:46ch}
+.contact-direct{
+  margin-top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.contact-direct a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:.92rem;
+  color:var(--ink);
+  border-bottom:1px solid var(--line);
+  padding-bottom:4px;
+  width:fit-content;
+}
+.contact-direct a:hover{border-color:var(--gold);color:var(--gold);opacity:1}
+.contact-form-wrap{
+  background:var(--surf2);
+  border:1px solid var(--line);
+  border-left:none;
+  border-radius:0 var(--r) var(--r) 0;
+  padding:clamp(36px,5vw,64px);
+}
+.contact-form-wrap h3{
+  font-size:1.9rem;
+  margin-bottom:24px;
+}
+form{display:grid;gap:14px}
+label{
+  display:grid;
+  gap:6px;
+  font-size:.82rem;
+  color:var(--muted2);
+  letter-spacing:.04em;
+  font-weight:600;
+}
+input,select,textarea{
+  width:100%;
+  padding:14px 16px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  color:var(--ink);
+  font-size:.95rem;
+  font-family:"Manrope",sans-serif;
+  transition:border-color .2s,box-shadow .2s;
+}
+input::placeholder,textarea::placeholder{color:rgba(248,241,229,.28)}
+select option{background:#1a130a}
+input:focus,select:focus,textarea:focus{
+  outline:none;
+  border-color:rgba(212,176,106,.4);
+  box-shadow:0 0 0 4px rgba(212,176,106,.08);
+}
+textarea{resize:vertical;min-height:120px}
+button[type="submit"]{
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  margin-top:4px;
+}
+.form-note{
+  margin-top:12px;
+  font-size:.8rem;
+  color:var(--muted2);
+}
+
+/* ── FOOTER ── */
+footer{
+  padding:clamp(28px,4vw,52px) 0;
+  border-top:1px solid var(--line);
+}
+.footer-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.footer-brand{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.28rem;
+  font-weight:600;
+  color:var(--muted2);
+  letter-spacing:.06em;
+}
+.footer-links{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  font-size:.8rem;
+  color:var(--muted2);
+  letter-spacing:.06em;
+}
+.footer-copy{
+  font-size:.78rem;
+  color:var(--muted2);
+  opacity:.6;
+}
+
+/* ── STICKY CTA ── */
+.sticky-cta{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:55;
+  padding:14px 22px;
+  border-radius:999px;
+  font-size:.84rem;
+  font-weight:700;
+  color:#1a130a;
+  letter-spacing:.04em;
+  background:linear-gradient(160deg,#e4c98a,var(--gold));
+  box-shadow:0 16px 44px rgba(0,0,0,.36);
+  transform:translateY(100px);
+  opacity:0;
+  transition:transform .35s ease,opacity .35s ease;
+}
+.sticky-cta.show{transform:translateY(0);opacity:1}
+
+/* ── REVEAL ── */
+[data-reveal]{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity .75s ease,transform .75s ease;
+}
+[data-reveal].visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1080px){
+  .about-grid,.media-grid,.contact-grid{grid-template-columns:1fr}
+  .about-copy{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
+  .about-photo{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
+  .about-photo img{min-height:360px}
+  .video-wrap{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
+  .media-copy{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
+  .contact-copy{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
+  .contact-form-wrap{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
+  /* offer: single column stack */
+  .offer-grid{grid-template-columns:1fr;gap:0}
+  .offer-card{border-radius:0}
+  .offer-card:first-child{border-radius:var(--r) var(--r) 0 0;border-bottom:none}
+  .offer-card:nth-child(2){border-top:none;border-bottom:none}
+  .offer-card:last-child{border-radius:0 0 var(--r) var(--r);border-top:none}
+  /* process: 2x2 grid */
+  .process-grid{grid-template-columns:1fr 1fr;gap:0}
+  .process-step{border-radius:0}
+  .process-step:nth-child(1){border-radius:var(--r) 0 0 0;border-right:none}
+  .process-step:nth-child(2){border-radius:0 var(--r) 0 0;border-left:none}
+  .process-step:nth-child(3){border-radius:0 0 0 var(--r);border-right:none;border-top:none}
+  .process-step:nth-child(4){border-radius:0 0 var(--r) 0;border-left:none;border-top:none}
+  /* gallery */
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .gallery-grid figure:first-child{grid-row:auto;grid-column:1/-1}
+  /* artists: single column stack */
+  .artists-grid{grid-template-columns:1fr;gap:0}
+  .artist-card{border-radius:0}
+  .artist-card:first-child{border-bottom:none}
+  .artist-card:last-child{border-top:none;border-radius:0 0 var(--r) var(--r)}
+}
+@media(max-width:760px){
+  .wrap,.wrap-wide{width:calc(100% - 32px)}
+  h1{font-size:clamp(3rem,13vw,5rem)}
+  h2{font-size:clamp(2.2rem,9vw,3.4rem)}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(15,11,8,.96);backdrop-filter:blur(16px);flex-direction:column;padding:18px 24px;gap:14px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:flex}
+  nav.scrolled{padding:10px 16px}
+  .hero-content .wrap{width:calc(100% - 32px)}
+  /* process: single column at mobile */
+  .process-grid{grid-template-columns:1fr;gap:0}
+  .process-step{border-radius:0;border-right:1px solid var(--line);border-left:1px solid var(--line)}
+  .process-step:first-child{border-radius:var(--r) var(--r) 0 0}
+  .process-step:nth-child(2){border-top:none}
+  .process-step:nth-child(3){border-top:none}
+  .process-step:last-child{border-top:none;border-radius:0 0 var(--r) var(--r)}
+  .gallery-grid{grid-template-rows:180px 180px 180px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .hero-scroll{display:none}
+  .sticky-cta{right:16px;left:16px;bottom:14px;text-align:center}
+}
+@media(max-width:520px){
+  body{font-size:16px}
+  .hero{min-height:100svh}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .btn{width:100%;justify-content:center}
 }
 .lang-switch{position:relative}
 .lang-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.78rem;font-weight:700;letter-spacing:.08em;color:var(--muted);cursor:pointer;font-family:"Manrope",sans-serif;transition:border-color .2s,color .2s}
@@ -198,1015 +907,456 @@ nav{
 .lang-menu.open{display:flex}
 .lang-menu a{padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
 .lang-menu a:hover,.lang-menu a.active{background:rgba(215,180,114,.1);color:var(--ink);opacity:1}
-.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.nav-links a{
-  color:var(--muted-strong);
-  font-size:.92rem;
-  font-weight:600;
-}
-.nav-links a.cta{
-  padding:11px 18px;
-  border-radius:999px;
-  color:#fffaf5;
-  background:linear-gradient(180deg, #7d6954, var(--gold));
-}
-
-.hero{
-  min-height:100svh;
-  padding:138px 20px 70px;
-  overflow:hidden;
-}
-.hero-media{
-  position:absolute;
-  inset:0;
-}
-.hero-media video{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  filter:saturate(.9) brightness(.56) contrast(1.03);
-}
-.hero-media::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(180deg, rgba(28,20,15,.28), rgba(28,20,15,.52)),
-    radial-gradient(900px 520px at 50% 20%, rgba(255,245,234,.18), transparent 60%);
-}
-.hero-shell{
-  position:relative;
-  z-index:1;
-  max-width:var(--max);
-  margin:0 auto;
-  display:grid;
-  gap:28px;
-  align-items:end;
-}
-.hero-card{
-  padding:44px;
-  max-width:760px;
-  background:linear-gradient(180deg, rgba(255,248,241,.86), rgba(255,248,241,.7));
-  backdrop-filter:blur(10px);
-}
-.hero-copy .eyebrow{margin-bottom:20px}
-.hero-copy p{
-  max-width:640px;
-  font-size:1.08rem;
-  color:rgba(45,36,29,.78);
-}
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-top:28px;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  min-height:54px;
-  padding:0 26px;
-  border-radius:999px;
-  border:1px solid transparent;
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.btn-primary{
-  color:#1a130e;
-  background:linear-gradient(180deg, #e7c98b, var(--gold));
-  box-shadow:0 14px 34px rgba(0,0,0,.28);
-}
-.btn-secondary{
-  color:var(--text);
-  background:rgba(255,255,255,.02);
-  border-color:rgba(255,255,255,.14);
-}
-.hero-meta{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:14px;
-  margin-top:32px;
-}
-.meta-box{
-  padding:18px 18px 16px;
-  border-radius:18px;
-  background:rgba(255,255,255,.42);
-  border:1px solid rgba(61,47,35,.08);
-}
-.meta-box strong{
-  display:block;
-  font-size:1.4rem;
-  font-family:"Cormorant Garamond",serif;
-  margin-bottom:2px;
-}
-.meta-box span{
-  font-size:.88rem;
-  color:var(--muted);
-}
-.hero-note{
-  justify-self:end;
-  width:min(100%,340px);
-  padding:24px;
-  margin-bottom:8px;
-}
-.hero-note h3{
-  font-size:1.55rem;
-  margin-bottom:12px;
-}
-.hero-note ul{
-  list-style:none;
-  display:grid;
-  gap:12px;
-}
-.hero-note li{
-  padding-left:18px;
-  position:relative;
-  color:var(--muted);
-}
-.hero-note li::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:.82em;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:linear-gradient(180deg, #e8cb90, var(--gold-soft));
-  box-shadow:0 0 18px rgba(212,176,106,.45);
-}
-
-.story-grid{
-  grid-template-columns:1.15fr .85fr;
-  align-items:stretch;
-}
-.story-copy,
-.story-image{
-  padding:38px;
-}
-.story-copy p{font-size:1.02rem}
-.signature-list{
-  margin-top:26px;
-  display:grid;
-  gap:14px;
-}
-.signature-item{
-  display:flex;
-  gap:14px;
-  align-items:flex-start;
-  padding:16px 18px;
-  border-radius:18px;
-  background:rgba(255,255,255,.34);
-  border:1px solid rgba(61,47,35,.08);
-}
-.signature-item strong{
-  font-size:1.05rem;
-  display:block;
-  margin-bottom:4px;
-}
-.signature-index{
-  min-width:38px;
-  height:38px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:rgba(212,176,106,.12);
-  border:1px solid rgba(212,176,106,.28);
-  color:var(--gold);
-  font-weight:800;
-}
-.portrait{
-  height:100%;
-  min-height:560px;
-  position:relative;
-}
-.portrait img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:24px;
-}
-.portrait figcaption{
-  position:absolute;
-  left:22px;
-  bottom:22px;
-  padding:12px 16px;
-  border-radius:16px;
-  background:rgba(255,250,245,.78);
-  border:1px solid rgba(61,47,35,.08);
-  color:rgba(45,36,29,.84);
-  font-size:.84rem;
-}
-
-.profiles{
-  grid-template-columns:repeat(2,minmax(0,1fr));
-}
-.profile-card{
-  padding:34px;
-}
-.role-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:18px;
-  padding:8px 14px;
-  border-radius:999px;
-  background:rgba(111,92,73,.08);
-  border:1px solid rgba(111,92,73,.18);
-  color:var(--muted-strong);
-  font-size:.78rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-}
-
-.offer-grid{
-  grid-template-columns:repeat(3,minmax(0,1fr));
-}
-.offer-card{
-  padding:32px;
-}
-.offer-card p{margin-bottom:0}
-.offer-card .label{
-  display:inline-block;
-  margin-bottom:18px;
-  font-size:.75rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--gold);
-}
-.offer-card ul{
-  list-style:none;
-  margin-top:18px;
-  display:grid;
-  gap:12px;
-}
-.offer-card li{
-  position:relative;
-  padding-left:18px;
-  color:var(--muted);
-}
-.offer-card li::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:.82em;
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:var(--gold);
-}
-
-.media-layout{
-  grid-template-columns:1.2fr .8fr;
-  align-items:start;
-}
-.video-frame{
-  position:relative;
-  overflow:hidden;
-  border-radius:24px;
-  border:1px solid rgba(61,47,35,.08);
-  box-shadow:var(--shadow);
-}
-.video-frame::before{
-  content:"";
-  display:block;
-  padding-top:56.25%;
-}
-.video-frame iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-.media-copy{
-  padding:30px;
-}
-.media-copy .quote{
-  margin:20px 0;
-  padding:18px 20px;
-  border-left:2px solid rgba(111,92,73,.32);
-  color:var(--muted-strong);
-  background:rgba(255,255,255,.3);
-  border-radius:0 16px 16px 0;
-}
-.repertoire{
-  display:grid;
-  gap:12px;
-  margin-top:22px;
-}
-.repertoire div{
-  padding:16px 18px;
-  border-radius:18px;
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.06);
-}
-.repertoire strong{
-  display:block;
-  font-size:1rem;
-  margin-bottom:3px;
-}
-
-.steps{
-  grid-template-columns:repeat(4,minmax(0,1fr));
-}
-.step-card{
-  padding:28px;
-}
-.step-number{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:44px;
-  height:44px;
-  margin-bottom:18px;
-  border-radius:50%;
-  border:1px solid rgba(212,176,106,.28);
-  background:rgba(212,176,106,.10);
-  color:var(--gold);
-  font-weight:800;
-}
-
-.cta-wrap{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:24px;
-  align-items:stretch;
-}
-.cta-copy,
-.contact-card{
-  padding:38px;
-}
-.cta-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:26px;
-}
-.cta-links a{
-  padding:14px 18px;
-  border-radius:16px;
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.08);
-  color:var(--text);
-}
-form{
-  display:grid;
-  gap:16px;
-  margin-top:10px;
-}
-label{
-  display:grid;
-  gap:8px;
-  font-size:.92rem;
-  color:var(--muted-strong);
-}
-input,textarea{
-  width:100%;
-  padding:15px 16px;
-  color:var(--text);
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:14px;
-}
-input::placeholder,textarea::placeholder{color:rgba(244,236,223,.46)}
-input:focus,textarea:focus{
-  outline:none;
-  border-color:rgba(212,176,106,.45);
-  box-shadow:0 0 0 4px rgba(212,176,106,.10);
-}
-textarea{resize:vertical;min-height:140px}
-button[type="submit"]{
-  appearance:none;
-  border:0;
-  cursor:pointer;
-  text-align:center;
-}
-.contact-meta{
-  display:grid;
-  gap:12px;
-  margin-top:22px;
-}
-.contact-meta a{
-  color:var(--text);
-  border-bottom:1px solid rgba(212,176,106,.25);
-  width:fit-content;
-}
-.sticky-cta{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:55;
-  padding:15px 22px;
-  border-radius:999px;
-  color:#19120d;
-  font-weight:800;
-  background:linear-gradient(180deg, #e7c98b, var(--gold));
-  box-shadow:0 18px 40px rgba(0,0,0,.3);
-  transform:translateY(130px);
-  transition:transform .35s ease;
-}
-.sticky-cta.show{transform:translateY(0)}
-footer{
-  padding:36px 20px 52px;
-  color:rgba(244,236,223,.52);
-  text-align:center;
-  font-size:.88rem;
-}
-[data-reveal]{
-  opacity:0;
-  transform:translateY(34px);
-  transition:opacity .75s ease, transform .75s ease;
-}
-[data-reveal].is-visible{
-  opacity:1;
-  transform:translateY(0);
-}
-
-@media (max-width:1080px){
-  .hero-shell,
-  .story-grid,
-  .media-layout,
-  .cta-wrap{
-    grid-template-columns:1fr;
-  }
-  .offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .hero-note{justify-self:start}
-}
-
-@media (max-width:760px){
-  section{padding:88px 18px}
-  nav{padding:12px 12px}
-  .nav-shell{
-    border-radius:26px;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:10px;
-    padding:14px;
-  }
-  .brand{
-    flex:1;
-    min-width:0;
-    justify-content:flex-start;
-  }
-  .nav-toggle{display:inline-flex}
-  .brand img{height:32px}
-  .brand-mark strong{font-size:.9rem}
-  .brand-mark span{
-    font-size:.63rem;
-    margin-top:4px;
-  }
-  .nav-links{
-    width:100%;
-    display:none;
-    gap:10px;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    padding-top:6px;
-  }
-  .nav-shell.menu-open .nav-links{
-    display:grid;
-  }
-  .nav-links a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    min-height:44px;
-    padding:10px 12px;
-    border-radius:14px;
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.06);
-  }
-  .nav-links a.cta{
-    grid-column:1 / -1;
-  }
-  .hero-card,
-  .story-copy,
-  .story-image,
-  .profile-card,
-  .offer-card,
-  .media-copy,
-  .step-card,
-  .cta-copy,
-  .contact-card{
-    padding:24px;
-  }
-  .hero{
-    min-height:auto;
-    padding-top:132px;
-    padding-bottom:48px;
-  }
-  .hero-shell{gap:18px}
-  .hero-copy p{font-size:1rem}
-  .hero-meta,
-  .profiles,
-  .offer-grid,
-  .steps{
-    grid-template-columns:1fr;
-  }
-  .hero-note{
-    width:100%;
-    margin-bottom:0;
-    padding:22px;
-  }
-  .meta-box{padding:16px}
-  .portrait{min-height:360px}
-}
-
-@media (max-width:520px){
-  body{font-size:16px}
-  section{padding:76px 16px}
-  nav{padding:10px}
-  h1{font-size:clamp(2.7rem,15vw,3.9rem)}
-  h2{font-size:clamp(2rem,10vw,2.7rem)}
-  .nav-shell{padding:12px}
-  .nav-links{grid-template-columns:1fr}
-  .hero-actions,
-  .cta-links{
-    flex-direction:column;
-  }
-  .btn,
-  .cta-links a{
-    width:100%;
-  }
-  .hero{padding-top:120px}
-  .hero-card,
-  .story-copy,
-  .story-image,
-  .profile-card,
-  .offer-card,
-  .media-copy,
-  .step-card,
-  .cta-copy,
-  .contact-card{
-    padding:22px;
-  }
-  .portrait{min-height:300px}
-  .sticky-cta{
-    right:14px;
-    left:14px;
-    bottom:14px;
-    text-align:center;
-  }
-}
 </style>
 </head>
 <body>
-  <nav aria-label="Main">
-    <div class="nav-shell">
-      <a href="#start" class="brand" aria-label="Più Mosso">
-        <img src="../piumosso_bialy.png" alt="Più Mosso logo">
-        <span class="brand-mark">
-          <strong>Più Mosso</strong>
-          <span>artistic duo</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#offer">Offer</a>
-        <a href="#media">Media</a>
-        <a href="#contact">Contact</a>
-        <div class="lang-switch" id="langSwitch">
-          <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="lang-menu" id="langMenu" role="menu">
-            <a href="/" role="menuitem">PL</a>
-            <a href="/en/" class="active" role="menuitem">EN</a>
-            <a href="/de/" role="menuitem">DE</a>
-          </div>
-        </div>
-        <a href="#contact" class="cta">Book the duo</a>
-      </div>
-    </div>
-  </nav>
 
-  <header class="hero" id="start">
-    <div class="hero-media" aria-hidden="true">
-      <video src="../IMG_3283.webm" autoplay muted loop playsinline></video>
-    </div>
-
-    <div class="hero-shell">
-      <div class="hero-card panel hero-copy" data-reveal>
-        <div class="eyebrow">Violin • organ • piano</div>
-        <h1>Music that sits naturally in an important moment.</h1>
-        <p>Più Mosso is a violin, organ and piano duo. We perform at weddings, concerts and events where good repertoire, calm communication and a thoughtful musical presence matter.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Check availability</a>
-          <a class="btn btn-secondary" href="../concert-offer-en.pdf" target="_blank" rel="noopener">Concert offer PDF</a>
-        </div>
-        <div class="hero-meta">
-          <div class="meta-box">
-            <strong>Concerts</strong>
-            <span>recitals, festivals, churches and cultural events</span>
-          </div>
-          <div class="meta-box">
-            <strong>Weddings</strong>
-            <span>music shaped around the ceremony from entrance to final moment</span>
-          </div>
-          <div class="meta-box">
-            <strong>Presence</strong>
-            <span>clear repertoire planning and calm collaboration from start to finish</span>
-          </div>
+<!-- Navigation -->
+<nav id="nav" aria-label="Navigation">
+  <div class="nav-inner">
+    <a href="#start" class="nav-brand" aria-label="Più Mosso">
+      <span>music duo</span>
+      <strong>Più Mosso</strong>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#offer">Offer</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="../piotrgorski/">Piotr Górski</a>
+      <a href="#contact">Contact</a>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="lang-menu" id="langMenu" role="menu">
+          <a href="../" role="menuitem">PL</a>
+          <a href="../en/" class="active" role="menuitem">EN</a>
+          <a href="../de/" role="menuitem">DE</a>
+          <a href="../fr/" role="menuitem">FR</a>
         </div>
       </div>
+      <a href="#contact" class="cta">Book the duo</a>
+    </div>
+  </div>
+</nav>
 
-      <aside class="hero-note panel" data-reveal>
-        <h3>What defines us</h3>
-        <ul>
-          <li>clear musical direction with visual restraint,</li>
-          <li>direct communication and thoughtful planning,</li>
-          <li>programs adapted to the venue, ceremony and audience.</li>
+<!-- Hero -->
+<header class="hero" id="start">
+  <div class="hero-media" aria-hidden="true">
+    <video src="../IMG_3283.webm" autoplay muted loop playsinline></video>
+  </div>
+  <div class="hero-content">
+    <div class="wrap">
+      <div class="hero-kicker" data-reveal>Violin · Organ · Piano</div>
+      <h1 data-reveal>Più Mosso.</h1>
+      <p class="hero-sub" data-reveal>We play at weddings, concerts and cultural events. The programme is tailored to the venue, acoustics and the nature of the occasion.</p>
+      <div class="hero-actions" data-reveal>
+        <a class="btn btn-gold" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="../concert-offer-en.pdf" target="_blank" rel="noopener">Offer PDF</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">About us</div>
+      <h2>Violin and organ. We have played together for years.</h2>
+      <p>Every piece has its shape and its place in the programme.</p>
+    </div>
+    <div class="about-grid" data-reveal>
+      <div class="about-copy">
+        <p>Weddings, churches, concert halls, festivals, cultural centres. The programme follows the acoustics and character of the space — not a ready-made list.</p>
+        <p>We take a ceremony seriously. We know when to start, when to stop, when to stay quiet.</p>
+        <p>You write, we answer. Details sorted without long back-and-forth.</p>
+      </div>
+      <figure class="about-photo">
+        <img src="../DSCF3970.jpeg" alt="Duo Più Mosso — Zofia Andersz and Piotr Górski" width="1074" height="1554" loading="lazy">
+        <figcaption>photo: N. Zhang</figcaption>
+      </figure>
+    </div>
+    <div class="artists-grid" data-reveal>
+      <article class="artist-card">
+        <div class="artist-role">Zofia Andersz · Violin</div>
+        <h3>Plays with ease, precision and a feel for the space.</h3>
+        <p>She studies with Prof. Dr. habil. Dorota Kwiecińska. She performs at chamber music festivals, orchestral projects and solo concerts. Her repertoire spans classical music, film music and entertainment. The same awareness of sound every time.</p>
+      </article>
+      <article class="artist-card">
+        <div class="artist-role">Piotr Górski · Organ and Piano</div>
+        <h3>Prize-winner. Graduate with distinction.</h3>
+        <p>Prize-winner at international organ competitions, graduate of the Poznań Academy of Music with distinction. He performs regularly and looks for projects where classical preparation meets interesting spaces or unusual programmes.</p>
+        <a class="artist-link" href="../piotrgorski/">Solo programme →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Photo break -->
+<div class="photo-break">
+  <img src="../galeria/IMG_0785.jpeg" alt="Più Mosso — concert" loading="lazy">
+  <div class="photo-break-text">
+    <span>Più Mosso</span>
+  </div>
+</div>
+
+<!-- Offer -->
+<section id="offer">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Offer</div>
+      <h2>What we play and for whom.</h2>
+      <p>We perform at weddings and concerts for cultural institutions. In both cases: with full preparation and no standard programmes.</p>
+    </div>
+    <div class="offer-grid" data-reveal>
+      <article class="offer-card">
+        <div class="offer-tag">Concerts</div>
+        <h3>Recitals and arts events</h3>
+        <p>We build programmes around the acoustics of the venue, the character of the audience and the dramaturgy of the evening.</p>
+        <ul class="offer-list">
+          <li>Churches, concert halls, cultural centres, festivals</li>
+          <li>Solo and duo formats</li>
+          <li>Programme shaped to the nature of the event</li>
         </ul>
-      </aside>
+        <a class="offer-cta" href="../concert-offer-en.pdf" target="_blank" rel="noopener">Download offer PDF →</a>
+      </article>
+      <article class="offer-card">
+        <div class="offer-tag">Weddings</div>
+        <h3>Ceremonies with a calm, clear flow</h3>
+        <p>We provide a musical setting that supports the ceremony and guides its individual moments naturally.</p>
+        <ul class="offer-list">
+          <li>Church and civil ceremonies</li>
+          <li>Help with repertoire selection</li>
+          <li>Calm execution and clear structure</li>
+        </ul>
+        <a class="offer-cta" href="../wedding-offer-pl.pdf" target="_blank" rel="noopener">Wedding offer PDF →</a>
+      </article>
+      <article class="offer-card">
+        <div class="offer-tag">With voice</div>
+        <h3>Guest appearance with Karolina Styszyńska</h3>
+        <p>For couples and organisers who want an extended line-up with voice.</p>
+        <ul class="offer-list">
+          <li>More developed ceremony dramaturgy</li>
+          <li>Wider repertoire range</li>
+          <li>Coherent shape from start to finish</li>
+        </ul>
+        <a class="offer-cta" href="../guest-vocal-offer.pdf" target="_blank" rel="noopener">View PDF →</a>
+      </article>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="eyebrow">About the duo</div>
-          <h2>Music that does more than accompany a moment. It shapes the atmosphere around it.</h2>
-          <p>We combine classical training with a practical approach to venue, acoustics and timing. The goal is simple: music that fits the event well and supports its flow.</p>
-        </div>
-
-        <div class="grid story-grid">
-          <div class="panel story-copy" data-reveal>
-            <h3>Più Mosso is built around solid performance and clear collaboration.</h3>
-            <p>We focus on sound, pacing and a program that fits the situation. That makes our performances work naturally for weddings, ceremonies, recitals and institutional events alike.</p>
-
-            <div class="signature-list">
-              <div class="signature-item">
-                <div class="signature-index">01</div>
-                <div>
-                  <strong>Thoughtful repertoire choices</strong>
-                  <p>From sacred and classical works to selected film themes, always chosen to keep the program coherent.</p>
-                </div>
-              </div>
-              <div class="signature-item">
-                <div class="signature-index">02</div>
-                <div>
-                  <strong>Attention to the event flow</strong>
-                  <p>We care not only about the performance itself, but also about timing, entry points and organiser comfort.</p>
-                </div>
-              </div>
-              <div class="signature-item">
-                <div class="signature-index">03</div>
-                <div>
-                  <strong>Clear and calm collaboration</strong>
-                  <p>Fast communication and a structured process make planning easy for organisers and couples.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <figure class="panel story-image portrait" data-reveal>
-            <img src="../DSCF3970.jpeg" alt="Più Mosso duo — Zofia Andersz and Piotr Górski" width="1074" height="1554" loading="lazy" decoding="async">
-            <figcaption>photo: N. Zhang</figcaption>
-          </figure>
+<!-- Multimedia -->
+<section id="multimedia">
+  <div class="wrap">
+    <div class="media-grid" data-reveal>
+      <div class="video-wrap">
+        <iframe title="Più Mosso – Bach / Gounod Ave Maria" src="https://www.youtube.com/embed/zUReBhFwYuc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="media-copy">
+        <div class="eyebrow">Multimedia</div>
+        <h2>Hear how we play.</h2>
+        <p>Not background music. Every piece has its shape and its place in the programme.</p>
+        <div class="media-links">
+          <a class="media-link" href="../galeria/">Photo gallery</a>
+          <a class="media-link" href="../kalendarium/">Concert calendar</a>
+          <a class="media-link" href="../concert-offer-en.pdf" target="_blank" rel="noopener">Offer EN</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section>
-      <div class="container">
-        <div class="grid profiles">
-          <article class="panel profile-card" data-reveal>
-            <div class="role-pill">Zofia Andersz • violin</div>
-            <h3>Sound shaped with lightness, nuance and natural stage freedom.</h3>
-            <p>A violinist currently continuing her studies under Prof. Dorota Kwiecińska. She performs in chamber festivals, solo concerts and orchestral projects spanning classical, film and popular repertoire. Her playing brings lyricism, precision and a strong sense of storytelling.</p>
-          </article>
+<!-- Gallery -->
+<div class="gallery-section" data-reveal>
+  <div class="gallery-grid">
+    <figure>
+      <img src="../galeria/IMG_0787.jpeg" alt="Più Mosso" loading="lazy">
+    </figure>
+    <figure>
+      <img src="../galeria/IMG_0781.jpeg" alt="Più Mosso" loading="lazy">
+    </figure>
+    <figure>
+      <img src="../galeria/IMG_0775.jpeg" alt="Più Mosso" loading="lazy">
+    </figure>
+    <figure>
+      <img src="../galeria/IMG_0771.jpeg" alt="Più Mosso" loading="lazy">
+    </figure>
+    <figure>
+      <img src="../galeria/IMG_0769.jpeg" alt="Più Mosso" loading="lazy">
+    </figure>
+  </div>
+</div>
 
-          <article class="panel profile-card" data-reveal>
-            <div class="role-pill">Piotr Górski • organ and piano</div>
-            <h3>Interpretation grounded in virtuosity, dramaturgy and concert experience.</h3>
-            <p>An award-winning organist and pianist, graduate of the Poznań Academy of Music with honours. He performs regularly, teaches, and develops projects where classical tradition meets a modern sense of form, pacing and architectural space.</p>
-          </article>
+<!-- Working together -->
+<section>
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Working together</div>
+      <h2>From first contact to the performance.</h2>
+    </div>
+    <div class="process-grid" data-reveal>
+      <article class="process-step">
+        <div class="step-num">01</div>
+        <h3>First enquiry</h3>
+        <p>Send the date, venue and type of event. We usually reply the same day.</p>
+      </article>
+      <article class="process-step">
+        <div class="step-num">02</div>
+        <h3>Format</h3>
+        <p>We suggest a line-up and repertoire direction. You can choose a ready programme or build your own.</p>
+      </article>
+      <article class="process-step">
+        <div class="step-num">03</div>
+        <h3>Details</h3>
+        <p>We agree on entry moments, section lengths and requests. You receive a clear run-of-show in good time.</p>
+      </article>
+      <article class="process-step">
+        <div class="step-num">04</div>
+        <h3>Performance</h3>
+        <p>We arrive early, check the acoustics and are ready for last-minute changes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid" data-reveal>
+      <div class="contact-copy">
+        <div class="eyebrow">Contact</div>
+        <h2>Write to us. We check the date and reply quickly.</h2>
+        <p>Direct booking. Date, venue and type of event is enough.</p>
+        <div class="contact-direct">
+          <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+          <a href="tel:+48781010229">+48 781 010 229</a>
+          <a href="tel:+48721521594">+48 721 521 594</a>
         </div>
       </div>
-    </section>
-
-    <section id="offer">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="eyebrow">Offer</div>
-          <h2>A format shaped around the venue, the audience and the tone of the occasion.</h2>
-          <p>We work with both private clients and institutions. Each performance is designed so the music genuinely enhances the event.</p>
-        </div>
-
-        <div class="grid offer-grid">
-          <article class="panel offer-card" data-reveal>
-            <span class="label">Concerts</span>
-            <h3>Recitals and artistic events</h3>
-            <p>Our concert programs are prepared with the venue acoustics, audience profile and dramatic arc of the evening in mind.</p>
-            <ul>
-              <li>churches, concert halls, festivals and cultural venues,</li>
-              <li>solo and duo formats,</li>
-              <li>tailored repertoire proposals.</li>
-            </ul>
-            <p style="margin-top:22px"><a class="btn btn-secondary" href="../concert-offer-en.pdf" target="_blank" rel="noopener">Download offer</a></p>
-          </article>
-
-          <article class="panel offer-card" data-reveal>
-            <span class="label">Weddings</span>
-            <h3>Ceremony music with a calm, clear flow</h3>
-            <p>We create musical settings that support the ceremony and guide its key moments without getting in the way.</p>
-            <ul>
-              <li>church and civil ceremonies,</li>
-              <li>guidance in selecting music,</li>
-              <li>clear structure and polished execution.</li>
-            </ul>
-            <p style="margin-top:22px"><a class="btn btn-secondary" href="../wedding-offer-pl.pdf" target="_blank" rel="noopener">Wedding offer PDF</a></p>
-          </article>
-
-          <article class="panel offer-card" data-reveal>
-            <span class="label">Extended format</span>
-            <h3>Guest vocalist option</h3>
-            <p>For couples and organisers who want a broader line-up, we also offer a version with vocalist Karolina Styszyńska.</p>
-            <ul>
-              <li>a broader dramatic palette for the ceremony,</li>
-              <li>expanded repertoire possibilities,</li>
-              <li>a cohesive overall program.</li>
-            </ul>
-            <p style="margin-top:22px"><a class="btn btn-secondary" href="../guest-vocal-offer.pdf" target="_blank" rel="noopener">View PDF</a></p>
-          </article>
-        </div>
+      <div class="contact-form-wrap">
+        <h3>Send us a message</h3>
+        <form id="contact-form" novalidate>
+          <label>Name *
+            <input type="text" name="name" required placeholder="Jane Smith">
+          </label>
+          <label>Type of event *
+            <select name="eventType" required>
+              <option value="">Select…</option>
+              <option value="slub">Wedding / Ceremony</option>
+              <option value="koncert">Concert / Recital</option>
+              <option value="instytucja">Institution / Cultural event</option>
+              <option value="event">Private event</option>
+            </select>
+          </label>
+          <label>City / Venue
+            <input type="text" name="city" placeholder="e.g. London">
+          </label>
+          <label>Date of event
+            <input type="date" name="eventDate">
+          </label>
+          <label>Line-up / Scope
+            <input type="text" name="budget" placeholder="e.g. Duo / with voice / solo recital">
+          </label>
+          <label>Phone *
+            <input type="tel" name="phone" required placeholder="+44 000 0000000">
+          </label>
+          <label>E-Mail
+            <input type="email" name="email" placeholder="optional">
+          </label>
+          <label>Message
+            <textarea name="message" placeholder="Describe the date, venue and character of the event"></textarea>
+          </label>
+          <button type="submit" class="btn btn-gold">Send enquiry</button>
+        </form>
+        <p class="form-note">We usually reply the same day.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="media">
-      <div class="container">
-        <div class="grid media-layout">
-          <div data-reveal>
-            <div class="video-frame">
-              <iframe title="Più Mosso – Bach / Gounod 'Ave Maria'" src="https://www.youtube.com/embed/zUReBhFwYuc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="panel media-copy" data-reveal>
-            <div class="eyebrow">Media</div>
-            <h2>See how we work with sound and form.</h2>
-            <p class="quote">We care about clarity, space and a good balance of emotion. Even a short recording should show the way we shape music.</p>
-
-            <div class="repertoire">
-              <div>
-                <strong>Classical repertoire</strong>
-                <span>sacred, recital and chamber works performed with clarity and precision.</span>
-              </div>
-              <div>
-                <strong>Selected film themes</strong>
-                <span>arrangements that remain tasteful and artistically coherent.</span>
-              </div>
-              <div>
-                <strong>Tailored event programs</strong>
-                <span>we help match the music to the ceremony, space and overall tone.</span>
-              </div>
-            </div>
-
-            <p style="margin-top:22px"><a href="/en/gallery/">Browse the gallery</a> or <a href="/en/calendar/">see upcoming dates</a>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div class="eyebrow">Process</div>
-          <h2>A simple collaboration flow that leaves room for clarity and peace of mind.</h2>
-        </div>
-
-        <div class="grid steps">
-          <article class="panel step-card" data-reveal>
-            <div class="step-number">1</div>
-            <h3>Initial message</h3>
-            <p>Send us the date, venue and type of event. We come back quickly with availability.</p>
-          </article>
-          <article class="panel step-card" data-reveal>
-            <div class="step-number">2</div>
-            <h3>Choosing the format</h3>
-            <p>We suggest the most suitable line-up, repertoire and level of musical presence for your event.</p>
-          </article>
-          <article class="panel step-card" data-reveal>
-            <div class="step-number">3</div>
-            <h3>Refining the details</h3>
-            <p>We confirm the order of moments, musical cues, practical matters and any special requests.</p>
-          </article>
-          <article class="panel step-card" data-reveal>
-            <div class="step-number">4</div>
-            <h3>Performance day</h3>
-            <p>We bring readiness, calm and artistic polish so the music naturally supports the event.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="grid cta-wrap">
-          <div class="panel cta-copy" data-reveal>
-            <div class="eyebrow">Contact</div>
-          <h2>If you are looking for music for an event, send us a message.</h2>
-            <p>We handle bookings directly. The most helpful first message includes the date, city, type of event and the general scope you have in mind.</p>
-            <div class="cta-links">
-              <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
-              <a href="tel:+48781010229">+48 781 010 229</a>
-              <a href="tel:+48721521594">+48 721 521 594</a>
-            </div>
-          </div>
-
-          <div class="panel contact-card" data-reveal>
-            <h3>Send us a message</h3>
-            <form id="contact-form" novalidate>
-              <label>Full name *
-                <input type="text" name="name" required>
-              </label>
-              <label>Event type *
-                <select name="eventType" required>
-                  <option value="slub">Wedding / ceremony</option>
-                  <option value="koncert">Concert / recital</option>
-                  <option value="instytucja">Institution / cultural event</option>
-                  <option value="event">Private event</option>
-                </select>
-              </label>
-              <label>City / venue
-                <input type="text" name="city" placeholder="e.g. Poznan / Wrzesnia">
-              </label>
-              <label>Event date
-                <input type="date" name="eventDate">
-              </label>
-              <label>Budget / scope
-                <input type="text" name="budget" placeholder="e.g. target range / duo or vocal option">
-              </label>
-              <label>Email
-                <input type="email" name="email" placeholder="optional">
-              </label>
-              <label>Phone *
-                <input type="tel" name="phone" required pattern="[0-9+\s-]{6,}" placeholder="+48 000 000 000">
-              </label>
-              <label>Message
-                <textarea name="message" placeholder="Tell us about the date, venue and type of event"></textarea>
-              </label>
-              <button type="submit" class="btn btn-primary">Send enquiry</button>
-            </form>
-
-            <div class="contact-meta">
-              <p>We usually reply the same day.</p>
-              <a href="/en/calendar/">See upcoming events</a>
-            </div>
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">Più Mosso</div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="../galeria/">Gallery</a>
+        <a href="../kalendarium/">Concert calendar</a>
+        <a href="../piotrgorski/">Piotr Górski</a>
+        <div class="lang-switch" id="langSwitchFooter">
+          <button class="lang-btn" id="langBtnFooter" type="button" aria-expanded="false">EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="lang-menu" id="langMenuFooter" role="menu">
+            <a href="../" role="menuitem">PL</a>
+            <a href="../en/" class="active" role="menuitem">EN</a>
+            <a href="../de/" role="menuitem">DE</a>
+            <a href="../fr/" role="menuitem">FR</a>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+      <span class="footer-copy">&copy; 2026 Più Mosso</span>
+    </div>
+  </div>
+</footer>
 
-  <footer>&copy; 2026 Più Mosso. All rights reserved.</footer>
+<!-- Sticky CTA -->
+<a href="#contact" class="sticky-cta" id="stickyCta">Book the duo</a>
 
-  <a href="#contact" class="sticky-cta" id="stickyCta">Book the duo</a>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  // Nav scroll
+  const nav = document.getElementById("nav");
+  const onScroll = () => {
+    nav.classList.toggle("scrolled", window.scrollY > 60);
+  };
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
 
-  <script>
-  history.scrollRestoration = "manual";
-  window.addEventListener("DOMContentLoaded", () => {
-    const STUDIO_STORAGE_KEY = "pm_studio_os_v1";
-    const inferLeadKind = (message, eventType) => {
-      if (eventType) return eventType;
-      const text = String(message || "").toLowerCase();
-      if (text.includes("wedding") || text.includes("ceremon")) return "slub";
-      if (text.includes("concert") || text.includes("recital") || text.includes("event")) return "koncert";
-      if (text.includes("institution") || text.includes("cultural") || text.includes("venue")) return "instytucja";
-      return "koncert";
-    };
+  // Mobile nav
+  const toggle = document.getElementById("navToggle");
+  const links  = document.getElementById("navLinks");
+  toggle.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open);
+  });
+  links.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.setAttribute("aria-expanded","false");
+    });
+  });
 
-    const saveLeadToStudio = (payload) => {
-      try {
-        const saved = localStorage.getItem(STUDIO_STORAGE_KEY);
-        const parsed = saved ? JSON.parse(saved) : { leads: [] };
-        const safeState = Array.isArray(parsed.leads) ? parsed : { leads: [] };
-        safeState.leads.unshift({
-          id: crypto.randomUUID(),
-          title: payload.name,
-          kind: inferLeadKind(payload.message, payload.eventType),
-          city: payload.city || "",
-          eventDate: payload.eventDate || "",
-          budget: payload.budget || "",
-          source: "strona",
-          contact: [payload.phone, payload.email].filter(Boolean).join(" • "),
-          nextAction: new Date().toISOString().slice(0, 10),
-          notes: [
-            payload.message || `Website enquiry from ${payload.name}`,
-            payload.city ? `City / venue: ${payload.city}` : "",
-            payload.eventDate ? `Event date: ${payload.eventDate}` : "",
-            payload.budget ? `Budget / scope: ${payload.budget}` : ""
-          ].filter(Boolean).join("\n"),
-          stage: "new",
-          createdAt: new Date().toISOString()
-        });
-        localStorage.setItem(STUDIO_STORAGE_KEY, JSON.stringify(safeState));
-      } catch {}
-    };
+  // Sticky CTA
+  const cta  = document.getElementById("stickyCta");
+  const hero = document.getElementById("start");
+  if (cta && hero) {
+    new IntersectionObserver(([e]) => {
+      cta.classList.toggle("show", !e.isIntersecting);
+    }).observe(hero);
+  }
 
-    const navShell = document.querySelector(".nav-shell");
-    const navToggle = document.querySelector("#navToggle");
-    const navLinks = document.querySelector("#navLinks");
+  // Reveal
+  const ro = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("visible");
+      obs.unobserve(e.target);
+    });
+  }, {threshold:.1});
+  document.querySelectorAll("[data-reveal]").forEach(el => ro.observe(el));
 
-    if (navShell && navToggle && navLinks) {
-      navToggle.addEventListener("click", () => {
-        const open = navShell.classList.toggle("menu-open");
-        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  // Lead save
+  const STUDIO_KEY = "pm_studio_os_v1";
+  const inferKind  = (msg, type) => {
+    if (type) return type;
+    const t = String(msg||"").toLowerCase();
+    if (t.includes("ślub")||t.includes("slub")||t.includes("ceremon")) return "slub";
+    if (t.includes("koncert")||t.includes("recital")||t.includes("wydarzen")) return "koncert";
+    if (t.includes("instytuc")||t.includes("dom kultury")) return "instytucja";
+    return "koncert";
+  };
+  const saveLead = p => {
+    try {
+      const raw    = localStorage.getItem(STUDIO_KEY);
+      const state  = raw ? JSON.parse(raw) : {leads:[]};
+      const safe   = Array.isArray(state.leads) ? state : {leads:[]};
+      safe.leads.unshift({
+        id: crypto.randomUUID(),
+        title: p.name,
+        kind:  inferKind(p.message, p.eventType),
+        city:  p.city||"",
+        eventDate: p.eventDate||"",
+        budget: p.budget||"",
+        source: "strona",
+        contact: [p.phone, p.email].filter(Boolean).join(" • "),
+        nextAction: new Date().toISOString().slice(0,10),
+        notes: [
+          p.message||`Zapytanie ze strony od ${p.name}`,
+          p.city?`Miasto: ${p.city}`:"",
+          p.eventDate?`Data: ${p.eventDate}`:"",
+          p.budget?`Zakres: ${p.budget}`:"",
+        ].filter(Boolean).join("\n"),
+        stage: "new",
+        createdAt: new Date().toISOString(),
       });
+      localStorage.setItem(STUDIO_KEY, JSON.stringify(safe));
+    } catch {}
+  };
 
-      navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navShell.classList.remove("menu-open");
-          navToggle.setAttribute("aria-expanded", "false");
-        });
-      });
-    }
-
-    // Language switcher
-    const langBtn = document.getElementById('langBtn');
-    const langMenu = document.getElementById('langMenu');
-    if (langBtn && langMenu) {
-      langBtn.addEventListener('click', e => {
-        e.stopPropagation();
-        const open = langMenu.classList.toggle('open');
-        langBtn.setAttribute('aria-expanded', open);
-      });
-      document.addEventListener('click', () => {
-        langMenu.classList.remove('open');
-        if (langBtn) langBtn.setAttribute('aria-expanded','false');
-      });
-    }
-
-    setTimeout(() => {
-      if (document.activeElement instanceof HTMLElement) {
-        document.activeElement.blur();
+  // Contact form
+  const form = document.querySelector("#contact-form");
+  if (form) {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const fd       = new FormData(form);
+      const name     = fd.get("name")?.trim();
+      const phone    = fd.get("phone")?.trim();
+      const eventType= fd.get("eventType")?.trim();
+      if (!name||!phone) {
+        alert("Please enter your name and phone number.");
+        return;
       }
-      scrollTo(0, 0);
-    }, 60);
-
-    const stickyCta = document.querySelector("#stickyCta");
-    const hero = document.querySelector("#start");
-    if (stickyCta && hero) {
-      new IntersectionObserver(([entry]) => {
-        stickyCta.classList.toggle("show", !entry.isIntersecting);
-      }).observe(hero);
-    }
-
-    const revealItems = document.querySelectorAll("[data-reveal]");
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.16 });
-    revealItems.forEach((item) => revealObserver.observe(item));
-
-    const contactForm = document.querySelector("#contact-form");
-    if (contactForm) {
-      contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const formData = new FormData(contactForm);
-        const name = formData.get("name")?.toString().trim();
-        const phone = formData.get("phone")?.toString().trim();
-        const eventType = formData.get("eventType")?.toString().trim();
-
-        if (!name || !phone || !eventType) {
-          alert("Please provide your full name, event type and phone number.");
-          return;
-        }
-
-        const email = formData.get("email")?.toString().trim() || "";
-        const message = formData.get("message")?.toString().trim() || "";
-        const city = formData.get("city")?.toString().trim() || "";
-        const eventDate = formData.get("eventDate")?.toString().trim() || "";
-        const budget = formData.get("budget")?.toString().trim() || "";
-        saveLeadToStudio({ name, phone, email, message, city, eventDate, budget, eventType });
-
-        const body = encodeURIComponent(
-`Full name: ${name}
-Event type: ${eventType}
-City / venue: ${city || "–"}
-Event date: ${eventDate || "–"}
-Budget / scope: ${budget || "–"}
+      const email    = fd.get("email")?.trim()||"";
+      const message  = fd.get("message")?.trim()||"";
+      const city     = fd.get("city")?.trim()||"";
+      const eventDate= fd.get("eventDate")?.trim()||"";
+      const budget   = fd.get("budget")?.trim()||"";
+      saveLead({name,phone,email,message,city,eventDate,budget,eventType});
+      const body = encodeURIComponent(
+`Name: ${name}
+Type of event: ${eventType||"–"}
+City / Venue: ${city||"–"}
+Date of event: ${eventDate||"–"}
+Line-up / Scope: ${budget||"–"}
 Phone: ${phone}
-Email: ${email || "–"}
+E-Mail: ${email||"–"}
 
 Message:
-${message || "–"}`
-        );
+${message||"–"}`
+      );
+      location.href = `mailto:kontakt@piumosso.pl?subject=Website%20enquiry&body=${body}`;
+    });
+  }
 
-        location.href = `mailto:kontakt@piumosso.pl?subject=Website%20enquiry&body=${body}`;
-      });
-    }
-  });
-  </script>
+  // Scroll restore
+  history.scrollRestoration = "manual";
+  setTimeout(() => {scrollTo(0,0)}, 60);
+
+  // Language switcher
+  const langBtn = document.getElementById('langBtn');
+  const langMenu = document.getElementById('langMenu');
+  if (langBtn && langMenu) {
+    langBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = langMenu.classList.toggle('open');
+      langBtn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', () => {
+      langMenu.classList.remove('open');
+      if(langBtn) langBtn.setAttribute('aria-expanded','false');
+    });
+  }
+
+  // Language switcher footer
+  const langBtnFooter = document.getElementById('langBtnFooter');
+  const langMenuFooter = document.getElementById('langMenuFooter');
+  if (langBtnFooter && langMenuFooter) {
+    langBtnFooter.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = langMenuFooter.classList.toggle('open');
+      langBtnFooter.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', () => {
+      langMenuFooter.classList.remove('open');
+      if(langBtnFooter) langBtnFooter.setAttribute('aria-expanded','false');
+    });
+  }
+});
+</script>
 </body>
 </html>
