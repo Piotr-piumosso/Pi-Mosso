@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-08T11:30:20.027002+00:00",
+  "generatedAt": "2026-04-09T11:31:39.947327+00:00",
   "sourceStats": {
-    "baza": 850,
-    "nowe": 437,
-    "engine": 836,
-    "sent": 66
+    "baza": 904,
+    "nowe": 54,
+    "engine": 890,
+    "sent": 81
   },
   "sourceRuns": {
-    "lead_machine_last_run": "2026-04-08T11:22:12.271842+00:00",
-    "lead_machine_added_rows": 437,
-    "engine_last_run": "2026-04-08T11:30:19.332846+00:00",
+    "lead_machine_last_run": "2026-04-09T11:13:53.961202+00:00",
+    "lead_machine_added_rows": 54,
+    "engine_last_run": "2026-04-09T11:31:39.299125+00:00",
     "engine_attempted": 15,
     "engine_sent": 15
   },
@@ -12764,6 +12764,816 @@
         "source_url": "https://pracowniateatralna.pl/kontakt/",
         "last_seen": "2026-04-08T11:22:00.120158+00:00",
         "status": "new"
+      },
+      {
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "email": "a.miedzinska@zok.com.pl",
+        "phone": "696 391 231",
+        "website": "https://zok.com.pl/o-nas/kontakt/",
+        "address": "ul. Artura Grottgera 7",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://zok.com.pl/o-nas/kontakt/",
+        "last_seen": "2026-04-09T11:04:09.947963+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "email": "t.korniluk@zok.com.pl",
+        "phone": "696 391 231",
+        "website": "https://zok.com.pl/o-nas/kontakt/",
+        "address": "ul. Artura Grottgera 7",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://zok.com.pl/o-nas/kontakt/",
+        "last_seen": "2026-04-09T11:04:09.947978+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "email": "k.rosinska@zok.com.pl",
+        "phone": "696 391 231",
+        "website": "https://zok.com.pl/o-nas/kontakt/",
+        "address": "ul. Artura Grottgera 7",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://zok.com.pl/o-nas/kontakt/",
+        "last_seen": "2026-04-09T11:04:09.947992+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Urząd Miasta Zielona Góra – Oficjalna strona Miasta Zielona Góra",
+        "email": "urzadmiasta@um.zielona-gora.pl",
+        "phone": "1 2 3 4 5 6 7 8 9 10 11",
+        "website": "https://www.zielona-gora.pl/",
+        "address": "ul. Podgórna 22",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.zielona-gora.pl/",
+        "last_seen": "2026-04-09T11:04:13.992063+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "email": "wnioskiskargipetycje@um.zielona-gora.pl",
+        "phone": "973-100-74-58",
+        "website": "https://www.zielona-gora.pl/kontakt/",
+        "address": "ul. Podgórna 22",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.zielona-gora.pl/kontakt/",
+        "last_seen": "2026-04-09T11:04:24.743317+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "email": "informacjapubliczna@um.zielona-gora.pl",
+        "phone": "973-100-74-58",
+        "website": "https://www.zielona-gora.pl/kontakt/",
+        "address": "ul. Podgórna 22",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.zielona-gora.pl/kontakt/",
+        "last_seen": "2026-04-09T11:04:24.743332+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "email": "bip@um.zielona-gora.pl",
+        "phone": "973-100-74-58",
+        "website": "https://www.zielona-gora.pl/kontakt/",
+        "address": "ul. Podgórna 22",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.zielona-gora.pl/kontakt/",
+        "last_seen": "2026-04-09T11:04:24.743346+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Ośrodek Kultury Fizycznej w Górze",
+        "email": "biuro@okfgora.pl",
+        "phone": "65-543-25-03",
+        "website": "https://okfgora.pl/kontakt/",
+        "address": "56-200 Góra, ul. Sportowa 1",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://okfgora.pl/kontakt/",
+        "last_seen": "2026-04-09T11:04:28.255205+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt : Kulturalna",
+        "email": "kontakt@kulturalna.pl",
+        "phone": "+48 728 962 692",
+        "website": "https://www.kulturalna.pl/kontakt/",
+        "address": "Plac Defilad 1",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.kulturalna.pl/kontakt/",
+        "last_seen": "2026-04-09T11:05:00.441936+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "kujawsko_pomorski@arimr.gov.pl",
+        "phone": "56 619 83 41",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "address": "ul. Wojska Polskiego 16B,",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "last_seen": "2026-04-09T11:05:05.612677+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "bp027_kancelaria@arimr.gov.pl",
+        "phone": "56 619 83 41",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "address": "ul. Wojska Polskiego 16B,",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "last_seen": "2026-04-09T11:05:05.612704+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "bp028_kancelaria@arimr.gov.pl",
+        "phone": "56 619 83 41",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "address": "ul. Wojska Polskiego 16B,",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "last_seen": "2026-04-09T11:05:05.612718+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "bp029_kancelaria@arimr.gov.pl",
+        "phone": "56 619 83 41",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "address": "ul. Wojska Polskiego 16B,",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/dane-teleadresowe",
+        "last_seen": "2026-04-09T11:05:05.612732+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "sekretariat.dwr@arimr.gov.pl",
+        "phone": "22 318-46-70",
+        "website": "https://www.gov.pl/web/arimr/kontakt2",
+        "address": "ul. Poleczki 33",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/kontakt2",
+        "last_seen": "2026-04-09T11:05:11.497059+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "email": "ryby.cst2021@arimr.gov.pl",
+        "phone": "22 318-46-70",
+        "website": "https://www.gov.pl/web/arimr/kontakt2",
+        "address": "ul. Poleczki 33",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/arimr/kontakt2",
+        "last_seen": "2026-04-09T11:05:11.497083+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Logowanie Poczta Onet | Bezpieczna i darmowa poczta e-mail",
+        "email": "poczta@grupaonet.pl",
+        "phone": null,
+        "website": "https://poczta.onet.pl/",
+        "address": null,
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://poczta.onet.pl/",
+        "last_seen": "2026-04-09T11:05:12.684864+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "email": "buergeramt-bemerode@hannover-stadt.de",
+        "phone": null,
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "address": null,
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "last_seen": "2026-04-09T11:05:23.182001+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "email": "buergeramt-doehren@hannover-stadt.de",
+        "phone": null,
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "address": null,
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "last_seen": "2026-04-09T11:05:23.182026+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "email": "buergeramt-herrenhausen@hannover-stadt.de",
+        "phone": null,
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "address": null,
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "last_seen": "2026-04-09T11:05:23.182038+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "email": "buergeramt-linden@hannover-stadt.de",
+        "phone": null,
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "address": null,
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover",
+        "last_seen": "2026-04-09T11:05:23.182050+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "email": "amc.poland@pansa.pl",
+        "phone": "+48 22 574 57 31",
+        "website": "https://www.amc.pansa.pl/amc-polska/kontakt/",
+        "address": "ul. Wieżowa 8",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.amc.pansa.pl/amc-polska/kontakt/",
+        "last_seen": "2026-04-09T11:05:34.145931+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "email": "rqa@pansa.pl",
+        "phone": "+48 22 574 57 31",
+        "website": "https://www.amc.pansa.pl/amc-polska/kontakt/",
+        "address": "ul. Wieżowa 8",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.amc.pansa.pl/amc-polska/kontakt/",
+        "last_seen": "2026-04-09T11:05:34.145960+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Interstellar: Die ultimative Erklärung für das Ende und die Handlung des Sci-Fi-Films",
+        "email": "pitch@moviepilot.de",
+        "phone": null,
+        "website": "https://www.moviepilot.de/news/interstellar-die-ultimative-erklaerung-ende-handlung-des-sci-fi-films-christopher-nolan-1136150",
+        "address": null,
+        "category": "agencja impresaryjna",
+        "region": "Gdynia",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.moviepilot.de/news/interstellar-die-ultimative-erklaerung-ende-handlung-des-sci-fi-films-christopher-nolan-1136150",
+        "last_seen": "2026-04-09T11:05:44.075734+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Fenstersanierung im Winter: Sofort Energie sparen und Wohnkomfort gewinnen - Bauschweiz - Das Portal für Bauen und Wohnen.",
+        "email": "office@bauschweiz.ch",
+        "phone": null,
+        "website": "https://bauschweiz.ch/renovation/fenstersanierung-im-winter-sofort-energie-sparen-und-wohnkomfort-gewinnen/",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://bauschweiz.ch/renovation/fenstersanierung-im-winter-sofort-energie-sparen-und-wohnkomfort-gewinnen/",
+        "last_seen": "2026-04-09T11:06:15.492943+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Fensterausstellung in Bern - 4B",
+        "email": "info@4-b.ch",
+        "phone": null,
+        "website": "https://www.4-b.ch/de/standorte/fensterausstellung-bern/",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://www.4-b.ch/de/standorte/fensterausstellung-bern/",
+        "last_seen": "2026-04-09T11:06:17.636631+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Fenster ersetzen - Tipps & Kosten | Bauen und Wohnen in der Schweiz",
+        "email": "info@bawos.ch",
+        "phone": null,
+        "website": "https://bawos.ch/fenster-ersetzen-kosten-und-wertvolle-tipps/",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://bawos.ch/fenster-ersetzen-kosten-und-wertvolle-tipps/",
+        "last_seen": "2026-04-09T11:06:21.056444+00:00",
+        "status": "new"
+      },
+      {
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "email": "bankingline@bankzweiplus.ch",
+        "phone": "0014420878",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "address": null,
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "last_seen": "2026-04-09T11:07:45.992568+00:00",
+        "status": "new"
+      },
+      {
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "email": "redaktion@cash.ch",
+        "phone": "0014420878",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "address": null,
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "last_seen": "2026-04-09T11:07:45.992597+00:00",
+        "status": "new"
+      },
+      {
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "email": "office@cash.ch",
+        "phone": "0014420878",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "address": null,
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "source_url": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf",
+        "last_seen": "2026-04-09T11:07:45.992629+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Call a Pizza Berlin - Lieferservice Standorte finden!",
+        "email": "info@call-a-pizza.de",
+        "phone": null,
+        "website": "https://www.call-a-pizza.de/berlin-lieferservice",
+        "address": "Sophie-Charlotten-Straße 35, 14059 Berlin",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.call-a-pizza.de/berlin-lieferservice",
+        "last_seen": "2026-04-09T11:08:14.010950+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Call a Pizza Berlin - Lieferservice Standorte finden!",
+        "email": "info@ottomatik.de",
+        "phone": null,
+        "website": "https://www.call-a-pizza.de/berlin-lieferservice",
+        "address": "Sophie-Charlotten-Straße 35, 14059 Berlin",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.call-a-pizza.de/berlin-lieferservice",
+        "last_seen": "2026-04-09T11:08:14.010975+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Domino's Pizza - Jetzt Pizza bestellen & genießen! 🍕😋 | Domino's Pizza",
+        "email": "info@dominos.de",
+        "phone": null,
+        "website": "https://www.dominos.de/",
+        "address": null,
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.dominos.de/",
+        "last_seen": "2026-04-09T11:08:16.101741+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tipps für Pizza in Berlin | visitBerlin.de",
+        "email": "hallo@visitberlin.de",
+        "phone": null,
+        "website": "https://www.visitberlin.de/de/blog/11-tipps-pizza-berlin",
+        "address": "Wo: Goltzstraße 36, Schöneberg",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.visitberlin.de/de/blog/11-tipps-pizza-berlin",
+        "last_seen": "2026-04-09T11:08:34.399754+00:00",
+        "status": "new"
+      },
+      {
+        "name": "LANDESPOLIZEIDIREKTION OBERÖSTERREICH - Polizeikommissariat Steyr - Steyr - Zentrum",
+        "email": "pk-o-steyr-leitung@polizei.gv.at",
+        "phone": "59133 46 5009",
+        "website": "https://www.steyr.at/LANDESPOLIZEIDIREKTION_OBEROeSTERREICH_-_Polizeikommissariat_Steyr",
+        "address": "Pyrachstraße 7 (Reithoffer)",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/LANDESPOLIZEIDIREKTION_OBEROeSTERREICH_-_Polizeikommissariat_Steyr",
+        "last_seen": "2026-04-09T11:08:39.632734+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "email": "ape.office@steyr.gv.at",
+        "phone": "+43 7252 575",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "address": "Leharstraße 24, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "last_seen": "2026-04-09T11:08:43.394457+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "email": "apm.office@steyr.gv.at",
+        "phone": "+43 7252 575",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "address": "Leharstraße 24, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "last_seen": "2026-04-09T11:08:43.394486+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "email": "apt.office@steyr.gv.at",
+        "phone": "+43 7252 575",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "address": "Leharstraße 24, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime",
+        "last_seen": "2026-04-09T11:08:43.394503+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "email": "marktwesen@steyr.gv.at",
+        "phone": "1 +43 7252 575 558",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "address": "Franz-Sebek-Straße, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "last_seen": "2026-04-09T11:08:45.294577+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "email": "info@stadtmuseum-steyr.at",
+        "phone": "1 +43 7252 575 558",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "address": "Franz-Sebek-Straße, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "last_seen": "2026-04-09T11:08:45.294621+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "email": "dominikanerhaus@dioezese-linz.at",
+        "phone": "1 +43 7252 575 558",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "address": "Franz-Sebek-Straße, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "last_seen": "2026-04-09T11:08:45.294636+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "email": "laufenmachtspass@laufwunder.at",
+        "phone": "1 +43 7252 575 558",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "address": "Franz-Sebek-Straße, 4400 Steyr",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.steyr.at/Freizeit/Veranstaltungskalender",
+        "last_seen": "2026-04-09T11:08:45.294650+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Caritas Oberösterreich, Integrationszentrum PARAPLÜ - Steyr - Zentrum",
+        "email": "paraplue.steyr@caritas-ooe.at",
+        "phone": "1 +43 7252 41702",
+        "website": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe",
+        "address": "Pyrachstraße 7 (Reithoffer)",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe",
+        "last_seen": "2026-04-09T11:08:47.380438+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Caritas Oberösterreich, Integrationszentrum PARAPLÜ - Steyr - Zentrum",
+        "email": "manuela.angerer@caritas-ooe.at",
+        "phone": "1 +43 7252 41702",
+        "website": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe",
+        "address": "Pyrachstraße 7 (Reithoffer)",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe",
+        "last_seen": "2026-04-09T11:08:47.380465+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "email": "mail@hep-hamburg.de",
+        "phone": "238 058 550",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "address": "Gertigstraße 12-14, 22303 Hamburg",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "last_seen": "2026-04-09T11:09:51.799931+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "email": "info@partyboot.net",
+        "phone": "238 058 550",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "address": "Gertigstraße 12-14, 22303 Hamburg",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "last_seen": "2026-04-09T11:09:51.799960+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "email": "info@jpaf.de",
+        "phone": "238 058 550",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "address": "Gertigstraße 12-14, 22303 Hamburg",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "last_seen": "2026-04-09T11:09:51.799974+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "email": "info@eventagentur412.de",
+        "phone": "238 058 550",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "address": "Gertigstraße 12-14, 22303 Hamburg",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/",
+        "last_seen": "2026-04-09T11:09:51.799988+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Hamburg Welcome Center",
+        "email": "info@welcome.hamburg.de",
+        "phone": "42839-5555",
+        "website": "https://welcome.hamburg.de/kontakt/",
+        "address": "Süderstraße 32b, 20097 Hamburg.",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://welcome.hamburg.de/kontakt/",
+        "last_seen": "2026-04-09T11:09:57.548149+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Amtsgericht, Hamburg, Hamburg-Mitte, Adresse, Kontakt, Telefon, Anfahrt, Drehgenehmigung, Fotogenehmigung - FHH",
+        "email": "poststelle@arbg.justiz.hamburg.de",
+        "phone": "300121 20348",
+        "website": "https://justiz.hamburg.de/gerichte/amtsgericht-hamburg/gerichte-und-segmente/amtsgericht-hamburg-mitte/kontakt-636758",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://justiz.hamburg.de/gerichte/amtsgericht-hamburg/gerichte-und-segmente/amtsgericht-hamburg-mitte/kontakt-636758",
+        "last_seen": "2026-04-09T11:10:00.255053+00:00",
+        "status": "new"
+      },
+      {
+        "name": "EMail - Sozialgericht - Hamburg - FHH",
+        "email": "poststelle@lsg.justiz.hamburg.de",
+        "phone": null,
+        "website": "https://justiz.hamburg.de/gerichte/sozialgericht-hamburg/kontakt/emailpoststelle-640450",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://justiz.hamburg.de/gerichte/sozialgericht-hamburg/kontakt/emailpoststelle-640450",
+        "last_seen": "2026-04-09T11:10:01.071891+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt | Regierungspräsidium Stuttgart",
+        "email": "poststelle@rps.bwl.de",
+        "phone": null,
+        "website": "https://rps.baden-wuerttemberg.de/kontakt/",
+        "address": "Abteilung 4 - Mobilität, Verkehr, Straßen",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://rps.baden-wuerttemberg.de/kontakt/",
+        "last_seen": "2026-04-09T11:12:58.236793+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt | Regierungspräsidium Stuttgart",
+        "email": "poststelle.rps@im.bwl.de-mail.de",
+        "phone": null,
+        "website": "https://rps.baden-wuerttemberg.de/kontakt/",
+        "address": "Abteilung 4 - Mobilität, Verkehr, Straßen",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://rps.baden-wuerttemberg.de/kontakt/",
+        "last_seen": "2026-04-09T11:12:58.236820+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Über uns | Bundesagentur für Arbeit",
+        "email": "stuttgart.is-aqua@arbeitsagentur.de",
+        "phone": "0711 941 2115",
+        "website": "https://www.arbeitsagentur.de/vor-ort/stuttgart/ueber-uns",
+        "address": null,
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.arbeitsagentur.de/vor-ort/stuttgart/ueber-uns",
+        "last_seen": "2026-04-09T11:12:59.341236+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Staatliche Akademie der Bildenden Künste Stuttgart",
+        "email": "info@abk-stuttgart.de",
+        "phone": null,
+        "website": "https://www.abk-stuttgart.de/",
+        "address": "Jerry Ahn, „Stacking Malevich: Self-replacing Brick House”, Ausstellung „Kleine Neue Nationalgalerie“ der Klasse Choi im Rahmen der Reihe Inside AKA Nr. 9, 2025 (Foto: Nadine Bracht)",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.abk-stuttgart.de/",
+        "last_seen": "2026-04-09T11:13:02.568297+00:00",
+        "status": "new"
       }
     ],
     "engine": [
@@ -12786,6 +13596,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://kultura.stoczek-lukowski.pl/kontakt"
+      },
+      {
+        "email": "a.miedzinska@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zok.com.pl/o-nas/kontakt/"
       },
       {
         "email": "a.nowakowska@zsm.torun.pl",
@@ -13038,6 +13858,16 @@
         "website": "https://www.promusica.pl/kontakt/"
       },
       {
+        "email": "amc.poland@pansa.pl",
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.amc.pansa.pl/amc-polska/kontakt/"
+      },
+      {
         "email": "amuz@amuz.edu.pl",
         "name": "Kontakt - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
         "category": "centrum muzyczne",
@@ -13126,6 +13956,36 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.hcc.de/kontakt/"
+      },
+      {
+        "email": "ape.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime"
+      },
+      {
+        "email": "apm.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime"
+      },
+      {
+        "email": "apt.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Leben/SeniorInnen/Alten-_und_Pflegeheime"
       },
       {
         "email": "arek@live.com.pl",
@@ -13266,6 +14126,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.hcc.de/kontakt/"
+      },
+      {
+        "email": "bankingline@bankzweiplus.ch",
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf"
       },
       {
         "email": "barrierefrei@elbphilharmonie.de",
@@ -13516,6 +14386,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://bip.um.wroc.pl/artykul/1230/3197/wydzial-kultury"
+      },
+      {
+        "email": "bip@um.zielona-gora.pl",
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.zielona-gora.pl/kontakt/"
       },
       {
         "email": "bit.gok@rymanow.pl",
@@ -13898,6 +14778,16 @@
         "website": "https://www.oferteo.pl/agencja-eventowa/dolnoslaskie"
       },
       {
+        "email": "biuro@okfgora.pl",
+        "name": "Kontakt – Ośrodek Kultury Fizycznej w Górze",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://okfgora.pl/kontakt/"
+      },
+      {
         "email": "biuro@paczkaevents.pl",
         "name": "Kontakt | Kompleksowa organizacja wydarzeń | Paczka Events",
         "category": "organizacja wydarzeń",
@@ -14158,6 +15048,36 @@
         "website": "https://www.teatrmuzyczny.torun.pl/en/contact/"
       },
       {
+        "email": "bp027_kancelaria@arimr.gov.pl",
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe"
+      },
+      {
+        "email": "bp028_kancelaria@arimr.gov.pl",
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe"
+      },
+      {
+        "email": "bp029_kancelaria@arimr.gov.pl",
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe"
+      },
+      {
         "email": "brandpartnershipsgsa@sonymusic.com",
         "name": "- Sony Music Partnerships",
         "category": "music foundation",
@@ -14206,6 +15126,46 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.werk-2.de/kontakt_"
+      },
+      {
+        "email": "buergeramt-bemerode@hannover-stadt.de",
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover"
+      },
+      {
+        "email": "buergeramt-doehren@hannover-stadt.de",
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover"
+      },
+      {
+        "email": "buergeramt-herrenhausen@hannover-stadt.de",
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover"
+      },
+      {
+        "email": "buergeramt-linden@hannover-stadt.de",
+        "name": "Landeshauptstadt Hannover - Hannover.de",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hannover.de/Kontakt/Landeshauptstadt-Hannover"
       },
       {
         "email": "burda@post.pl",
@@ -14516,6 +15476,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://teatrcapitol.pl/kontakt/bow/"
+      },
+      {
+        "email": "dominikanerhaus@dioezese-linz.at",
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender"
       },
       {
         "email": "dorota.bacher@rdk.rzeszow.pl",
@@ -15298,6 +16268,16 @@
         "website": "http://www.kulturfabrik-leipzig.de/kontakt/"
       },
       {
+        "email": "hallo@visitberlin.de",
+        "name": "Tipps für Pizza in Berlin | visitBerlin.de",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.visitberlin.de/de/blog/11-tipps-pizza-berlin"
+      },
+      {
         "email": "hannah.kayenburg@bkm.hamburg.de",
         "name": "Förderdatenbank - Förderorganisationen - Behörde für Kultur und",
         "category": "agencja kulturalna",
@@ -15378,6 +16358,26 @@
         "website": "https://www.informacja.wroclaw.pl/biblioteki2"
       },
       {
+        "email": "info@4-b.ch",
+        "name": "Fensterausstellung in Bern - 4B",
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://www.4-b.ch/de/standorte/fensterausstellung-bern/"
+      },
+      {
+        "email": "info@abk-stuttgart.de",
+        "name": "Staatliche Akademie der Bildenden Künste Stuttgart",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.abk-stuttgart.de/"
+      },
+      {
         "email": "info@agencjabrussa.pl",
         "name": "Agencja Brussa – Organizacja Koncertów i Widowisk Muzycznych",
         "category": "agencja impresaryjna",
@@ -15386,6 +16386,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.agencjabrussa.pl/"
+      },
+      {
+        "email": "info@bawos.ch",
+        "name": "Fenster ersetzen - Tipps & Kosten | Bauen und Wohnen in der Schweiz",
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://bawos.ch/fenster-ersetzen-kosten-und-wertvolle-tipps/"
       },
       {
         "email": "info@biblioteka-ostrow.pl",
@@ -15418,6 +16428,16 @@
         "website": "https://www.infomaza.bielsko.pl/organizacje.php"
       },
       {
+        "email": "info@call-a-pizza.de",
+        "name": "Call a Pizza Berlin - Lieferservice Standorte finden!",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.call-a-pizza.de/berlin-lieferservice"
+      },
+      {
         "email": "info@cbos.pl",
         "name": "Fundacja CBOS - strona główna",
         "category": "fundacja muzyczna",
@@ -15436,6 +16456,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://aplikacja.ceidg.gov.pl/ceidg/ceidg.public.ui/SearchDetails.aspx?Id=ace8a15e-56ed-4e5e-a6bf-aded6a815bb8"
+      },
+      {
+        "email": "info@dominos.de",
+        "name": "Domino's Pizza - Jetzt Pizza bestellen & genießen! 🍕😋 | Domino's Pizza",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.dominos.de/"
       },
       {
         "email": "info@dr-asch.de",
@@ -15476,6 +16506,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://stromleser.de/blogs/news/stromzahler-per-app-ablesen-so-einfach-geht-s-digital-inkl-vorstellung-der-stromleser-app"
+      },
+      {
+        "email": "info@eventagentur412.de",
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/"
       },
       {
         "email": "info@fanfaraevents.pl",
@@ -15608,6 +16648,16 @@
         "website": "https://www.myticket-jahrhunderthalle.de/kontakt"
       },
       {
+        "email": "info@jpaf.de",
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/"
+      },
+      {
         "email": "info@konzert-verein.de",
         "name": "Konzert Verein: Kontakt",
         "category": "konzertsaal",
@@ -15728,6 +16778,26 @@
         "website": "https://oper-frankfurt.de/de/kontakt/"
       },
       {
+        "email": "info@ottomatik.de",
+        "name": "Call a Pizza Berlin - Lieferservice Standorte finden!",
+        "category": "philharmonie",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.call-a-pizza.de/berlin-lieferservice"
+      },
+      {
+        "email": "info@partyboot.net",
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/"
+      },
+      {
         "email": "info@pavillon-hannover.de",
         "name": "Öffnungszeiten und Kontakt - Pavillon",
         "category": "ośrodek kultury",
@@ -15756,6 +16826,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.sachsen.de/en/284.htm"
+      },
+      {
+        "email": "info@stadtmuseum-steyr.at",
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender"
       },
       {
         "email": "info@stuttgart-tourist.de",
@@ -15828,6 +16908,16 @@
         "website": "https://visitbydgoszcz.pl/pl/miejsca/21-instytucje-kultury/912-kujawsko-pomorskie-centrum-kul"
       },
       {
+        "email": "info@welcome.hamburg.de",
+        "name": "Kontakt - Hamburg Welcome Center",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://welcome.hamburg.de/kontakt/"
+      },
+      {
         "email": "info@werk-2.de",
         "name": "WERK 2 – Kulturfabrik Leipzig e.V.",
         "category": "centrum kulturalne",
@@ -15896,6 +16986,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.milleniumhall.pl/kontakt.html"
+      },
+      {
+        "email": "informacjapubliczna@um.zielona-gora.pl",
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.zielona-gora.pl/kontakt/"
       },
       {
         "email": "informacje@pkobp.pl",
@@ -16326,6 +17426,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://filharmonia.rzeszow.pl/kontakt/"
+      },
+      {
+        "email": "k.rosinska@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zok.com.pl/o-nas/kontakt/"
       },
       {
         "email": "k.sak@kulturagk.pl",
@@ -16978,6 +18088,16 @@
         "website": "https://www.kpca.com.pl/kontakt/"
       },
       {
+        "email": "kontakt@kulturalna.pl",
+        "name": "Kontakt : Kulturalna",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.kulturalna.pl/kontakt/"
+      },
+      {
         "email": "kontakt@kulturampavillon.de",
         "name": "Kontakt | Kultur am Pavillon",
         "category": "kulturverein",
@@ -17388,6 +18508,16 @@
         "website": "https://www.teatrgrodzki.pl/kontakt/"
       },
       {
+        "email": "kujawsko_pomorski@arimr.gov.pl",
+        "name": "Dane teleadresowe - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/dane-teleadresowe"
+      },
+      {
         "email": "kultur-denkmalschutz@dresden.de",
         "name": "Kulturbereiche, Ansprechpartner | Dienstleistungen | Landeshauptstadt Dresden",
         "category": "agencja kulturalna",
@@ -17536,6 +18666,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.ck.przemysl.pl/kontakt-bip"
+      },
+      {
+        "email": "laufenmachtspass@laufwunder.at",
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender"
       },
       {
         "email": "lck@lck.lubelskie.pl",
@@ -17748,6 +18888,16 @@
         "website": "https://kultur-frankfurt.de/portal/de/Musik/ClaraSchumannSaal26EngelbertHumperdinckSaal/41/170/30389/mod122-details1/5.aspx"
       },
       {
+        "email": "mail@hep-hamburg.de",
+        "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/"
+      },
+      {
         "email": "mail@initiativteam.de",
         "name": "initiativ team gmbh",
         "category": "agencja impresaryjna",
@@ -17756,6 +18906,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "http://www.initiativteam.de/"
+      },
+      {
+        "email": "manuela.angerer@caritas-ooe.at",
+        "name": "Caritas Oberösterreich, Integrationszentrum PARAPLÜ - Steyr - Zentrum",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe"
       },
       {
         "email": "marc@marctheis.de",
@@ -17816,6 +18976,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://oper-frankfurt.de/de/kontakt/"
+      },
+      {
+        "email": "marktwesen@steyr.gv.at",
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender"
       },
       {
         "email": "marlena.kaminska@dolnyslask.pl",
@@ -18328,6 +19498,26 @@
         "website": "http://www.kulturpalast-dresden.de/de/kontakt-1/"
       },
       {
+        "email": "office@bauschweiz.ch",
+        "name": "Fenstersanierung im Winter: Sofort Energie sparen und Wohnkomfort gewinnen - Bauschweiz - Das Portal für Bauen und Wohnen.",
+        "category": "fundacja kulturalna",
+        "region": "Zielona Góra",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://bauschweiz.ch/renovation/fenstersanierung-im-winter-sofort-energie-sparen-und-wohnkomfort-gewinnen/"
+      },
+      {
+        "email": "office@cash.ch",
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf"
+      },
+      {
         "email": "office@dommuseum.at",
         "name": "Dom Museum Wien - Team",
         "category": "dom kultury",
@@ -18458,6 +19648,16 @@
         "website": "https://www.bn.org.pl/"
       },
       {
+        "email": "paraplue.steyr@caritas-ooe.at",
+        "name": "Caritas Oberösterreich, Integrationszentrum PARAPLÜ - Steyr - Zentrum",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe"
+      },
+      {
         "email": "patrycja.gorska@teatrcapitol.pl",
         "name": "Biuro obsługi Widzów - Teatr Capitol Warszawa",
         "category": "konzertsaal",
@@ -18548,6 +19748,16 @@
         "website": "https://umwd.dolnyslask.pl/kultura/kontakt-departament-kultury-i-dziedzictwa-kulturowego-wydzial-dziedzictwa-kulturowego/"
       },
       {
+        "email": "pitch@moviepilot.de",
+        "name": "Interstellar: Die ultimative Erklärung für das Ende und die Handlung des Sci-Fi-Films",
+        "category": "agencja impresaryjna",
+        "region": "Gdynia",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.moviepilot.de/news/interstellar-die-ultimative-erklaerung-ende-handlung-des-sci-fi-films-christopher-nolan-1136150"
+      },
+      {
         "email": "piwmarr@wmarr.olsztyn.pl",
         "name": "WMARR Olsztyn",
         "category": "agencja artystyczna",
@@ -18556,6 +19766,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.wmarr.olsztyn.pl/"
+      },
+      {
+        "email": "pk-o-steyr-leitung@polizei.gv.at",
+        "name": "LANDESPOLIZEIDIREKTION OBERÖSTERREICH - Polizeikommissariat Steyr - Steyr - Zentrum",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.steyr.at/LANDESPOLIZEIDIREKTION_OBEROeSTERREICH_-_Polizeikommissariat_Steyr"
       },
       {
         "email": "pluczak@amuz.edu.pl",
@@ -18596,6 +19816,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.domkultury.kety.pl/kalendarium"
+      },
+      {
+        "email": "poczta@grupaonet.pl",
+        "name": "Logowanie Poczta Onet | Bezpieczna i darmowa poczta e-mail",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://poczta.onet.pl/"
       },
       {
         "email": "poczta@kbf.krakow.pl",
@@ -18678,6 +19908,26 @@
         "website": "https://www.medienkulturzentrum.de/kontakt/"
       },
       {
+        "email": "poststelle.rps@im.bwl.de-mail.de",
+        "name": "Kontakt | Regierungspräsidium Stuttgart",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://rps.baden-wuerttemberg.de/kontakt/"
+      },
+      {
+        "email": "poststelle@arbg.justiz.hamburg.de",
+        "name": "Amtsgericht, Hamburg, Hamburg-Mitte, Adresse, Kontakt, Telefon, Anfahrt, Drehgenehmigung, Fotogenehmigung - FHH",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://justiz.hamburg.de/gerichte/amtsgericht-hamburg/gerichte-und-segmente/amtsgericht-hamburg-mitte/kontakt-636758"
+      },
+      {
         "email": "poststelle@duesseldorf.de",
         "name": "Kulturamt - Landeshauptstadt Düsseldorf",
         "category": "dom kultury",
@@ -18706,6 +19956,26 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://kulturhelfer-hannover.de/?page_id=3"
+      },
+      {
+        "email": "poststelle@lsg.justiz.hamburg.de",
+        "name": "EMail - Sozialgericht - Hamburg - FHH",
+        "category": "veranstaltungsagentur",
+        "region": "Hamburg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://justiz.hamburg.de/gerichte/sozialgericht-hamburg/kontakt/emailpoststelle-640450"
+      },
+      {
+        "email": "poststelle@rps.bwl.de",
+        "name": "Kontakt | Regierungspräsidium Stuttgart",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://rps.baden-wuerttemberg.de/kontakt/"
       },
       {
         "email": "poststelle@stmbw.bayern.de",
@@ -18976,6 +20246,16 @@
         "country_name": "Norwegia",
         "language": "en",
         "website": "https://snl.no/Falklandsøyene"
+      },
+      {
+        "email": "redaktion@cash.ch",
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "category": "festiwal muzyczny",
+        "region": "Düsseldorf",
+        "country_code": "CH",
+        "country_name": "Szwajcaria",
+        "language": "de",
+        "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf"
       },
       {
         "email": "redaktion@focus.de",
@@ -19258,6 +20538,16 @@
         "website": "https://art-dus.de/de/contact/"
       },
       {
+        "email": "rqa@pansa.pl",
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "category": "agencja kulturalna",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.amc.pansa.pl/amc-polska/kontakt/"
+      },
+      {
         "email": "ry-chaszczewicz@t-online.de",
         "name": "Polonia Hannover | PoloniaHannover Polacy w Hanowerze Polen in Hannover |SC Polonia Sztab Wosp Hannover polacywhanowerze",
         "category": "ośrodek kultury",
@@ -19266,6 +20556,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.poloniahannover.de/"
+      },
+      {
+        "email": "ryby.cst2021@arimr.gov.pl",
+        "name": "Kontakt - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/kontakt2"
       },
       {
         "email": "rzecznik@pzu.pl",
@@ -19386,6 +20686,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.tvp.pl/kontakt"
+      },
+      {
+        "email": "sekretariat.dwr@arimr.gov.pl",
+        "name": "Kontakt - Agencja Restrukturyzacji i Modernizacji Rolnictwa - Portal Gov.pl",
+        "category": "agencja kulturalna",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/arimr/kontakt2"
       },
       {
         "email": "sekretariat.gdansk@tvp.pl",
@@ -20358,6 +21668,16 @@
         "website": "https://www.kunst-musik-dresden.de/en/contact"
       },
       {
+        "email": "stuttgart.is-aqua@arbeitsagentur.de",
+        "name": "Über uns | Bundesagentur für Arbeit",
+        "category": "arts agency",
+        "region": "Stuttgart",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.arbeitsagentur.de/vor-ort/stuttgart/ueber-uns"
+      },
+      {
         "email": "stuttgarter.musikschule@stuttgart.de",
         "name": "Stuttgarter Musikschule:Kontakt",
         "category": "musikzentrum",
@@ -20426,6 +21746,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://csk.bip.lubelskie.pl/index.php?id=11"
+      },
+      {
+        "email": "t.korniluk@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zok.com.pl/o-nas/kontakt/"
       },
       {
         "email": "t.kuczynski@saa.pl",
@@ -20708,6 +22038,16 @@
         "website": "http://ugdzierzkowice.bip.lubelskie.pl/"
       },
       {
+        "email": "urzadmiasta@um.zielona-gora.pl",
+        "name": "Urząd Miasta Zielona Góra – Oficjalna strona Miasta Zielona Góra",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.zielona-gora.pl/"
+      },
+      {
         "email": "ute.gattinger@staatstheater-stuttgart.de",
         "name": "Kontakt | Schauspiel Stuttgart",
         "category": "stowarzyszenie artystyczne",
@@ -20926,6 +22266,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.wmarr.olsztyn.pl/"
+      },
+      {
+        "email": "wnioskiskargipetycje@um.zielona-gora.pl",
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "category": "ośrodek kultury",
+        "region": "Zielona Góra",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.zielona-gora.pl/kontakt/"
       },
       {
         "email": "wojt@samborzec.pl",
@@ -21523,6 +22873,96 @@
         "email": "administracja@mok.miasteczko-slaskie.pl",
         "name": "O Nas - Miejski Ośrodek Kultury im. Krzysztofa Respondka w Miasteczku Śląskim",
         "sent_at": "2026-04-08T11:30:19.332602+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "a.miedzinska@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "sent_at": "2026-04-09T11:30:55.567450+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "administracja@stdt.pl",
+        "name": "Stowarzyszenie The Droshkoov Theatre",
+        "sent_at": "2026-04-09T11:30:58.767639+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "administracja@szkolamuzyczna.bydgoszcz.pl",
+        "name": "Administracja - Państwowy Zespół Szkół Muzycznych im. A. Rubinsteina w Bydgoszczy - Portal Gov.pl",
+        "sent_at": "2026-04-09T11:31:02.034011+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "agadzina@amuz.edu.pl",
+        "name": "Strona główna - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "sent_at": "2026-04-09T11:31:05.015981+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "agencja@agencjalaura.pl",
+        "name": "Agencja Artystyczna: usługi reklamowe, organizacja imprez, impresariat. Agencja Artystyczna świadczy usługi reklamowe, impresariat, organizacja imprez. Agencja artystyczna, organizacja imprez, impresariat, mistrz mowy polskiej, mistrz mowy polskiej.",
+        "sent_at": "2026-04-09T11:31:08.268637+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "agnieszka.banach@lubelskie.pl",
+        "name": "Struktura organizacyjna – Urząd Marszałkowski Województwa Lubelskiego w Lublinie",
+        "sent_at": "2026-04-09T11:31:11.423269+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-09T11:31:14.399810+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "agnieszka.chodysz@okis.pl",
+        "name": "kontakt - Hide or sek",
+        "sent_at": "2026-04-09T11:31:17.598828+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "akademie@blasmusikverband-bw.de",
+        "name": "Musikzentrum Baden-Württemberg - Das Bildungs- und Tagungshaus für die Amateurmusik",
+        "sent_at": "2026-04-09T11:31:20.870439+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "alexandra.laetzel@stuttgart.de",
+        "name": "Stuttgarter Musikschule:Kontakt",
+        "sent_at": "2026-04-09T11:31:23.858836+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "alicja.balaban@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-09T11:31:26.968718+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "alicja@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "sent_at": "2026-04-09T11:31:30.136255+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "alina@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "sent_at": "2026-04-09T11:31:33.267022+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "amc.poland@pansa.pl",
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "sent_at": "2026-04-09T11:31:36.253364+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "amuz@amuz.edu.pl",
+        "name": "Kontakt - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "sent_at": "2026-04-09T11:31:39.298777+00:00",
         "status": "sent"
       }
     ]
