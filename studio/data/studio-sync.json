@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-09T11:31:39.947327+00:00",
+  "generatedAt": "2026-04-10T11:26:21.058069+00:00",
   "sourceStats": {
-    "baza": 904,
-    "nowe": 54,
-    "engine": 890,
-    "sent": 81
+    "baza": 951,
+    "nowe": 47,
+    "engine": 937,
+    "sent": 96
   },
   "sourceRuns": {
-    "lead_machine_last_run": "2026-04-09T11:13:53.961202+00:00",
-    "lead_machine_added_rows": 54,
-    "engine_last_run": "2026-04-09T11:31:39.299125+00:00",
+    "lead_machine_last_run": "2026-04-10T11:08:18.367420+00:00",
+    "lead_machine_added_rows": 47,
+    "engine_last_run": "2026-04-10T11:26:20.414219+00:00",
     "engine_attempted": 15,
     "engine_sent": 15
   },
@@ -13574,6 +13574,711 @@
         "source_url": "https://www.abk-stuttgart.de/",
         "last_seen": "2026-04-09T11:13:02.568297+00:00",
         "status": "new"
+      },
+      {
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "email": "zuzanna.majeran@rmf.pl",
+        "phone": "+48 123 703 703",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "address": "+48 123 703 703, Al. Waszyngtona 1, 30-204 Kraków",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "last_seen": "2026-04-10T10:57:43.905810+00:00",
+        "status": "new"
+      },
+      {
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "email": "pawel.pawlik@rmfclassic.pl",
+        "phone": "+48 123 703 703",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "address": "+48 123 703 703, Al. Waszyngtona 1, 30-204 Kraków",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "last_seen": "2026-04-10T10:57:43.905849+00:00",
+        "status": "new"
+      },
+      {
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "email": "iwona.zygmunt@rmf.pl",
+        "phone": "+48 123 703 703",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "address": "+48 123 703 703, Al. Waszyngtona 1, 30-204 Kraków",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "last_seen": "2026-04-10T10:57:43.905868+00:00",
+        "status": "new"
+      },
+      {
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "email": "reklama@rmf.pl",
+        "phone": "+48 123 703 703",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "address": "+48 123 703 703, Al. Waszyngtona 1, 30-204 Kraków",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html",
+        "last_seen": "2026-04-10T10:57:43.905886+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Cavatina Hall, BIelsko Biała - Cavatina Holding S.A.",
+        "email": "krzysztof.wilczak@cavatina.pl",
+        "phone": "+48 537 337 381",
+        "website": "https://cavatina.pl/inwestycje/cavatina-hall",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://cavatina.pl/inwestycje/cavatina-hall",
+        "last_seen": "2026-04-10T10:57:58.980251+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Sala koncertowa - Zespół Państwowych Szkół Muzycznych im. S. Moniuszki w Bielsku-Białej - Portal Gov.pl",
+        "email": "salakoncertowa@zpsm.bielsko.pl",
+        "phone": "+48 721 770 477",
+        "website": "https://www.gov.pl/web/zpsmbielsko/kalendarz-roku-szkolnego2",
+        "address": "ul. Wyspiańskiego 5a",
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/zpsmbielsko/kalendarz-roku-szkolnego2",
+        "last_seen": "2026-04-10T10:57:59.817787+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Sala koncertowa w Bielskie Centrum Kultury im. M. Koterbskiej – konferencje.pl",
+        "email": "justyna@konferencje.pl",
+        "phone": null,
+        "website": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html",
+        "last_seen": "2026-04-10T10:58:00.902311+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Sala koncertowa w Bielskie Centrum Kultury im. M. Koterbskiej – konferencje.pl",
+        "email": "milena.wieczorek@grupamp.pl",
+        "phone": null,
+        "website": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html",
+        "last_seen": "2026-04-10T10:58:00.902341+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de",
+        "email": "kundenservice@berlin.de",
+        "phone": null,
+        "website": "https://www.berlin.de/",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.berlin.de/",
+        "last_seen": "2026-04-10T10:58:52.388910+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de",
+        "email": "info@berlin.de",
+        "phone": null,
+        "website": "https://www.berlin.de/",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.berlin.de/",
+        "last_seen": "2026-04-10T10:58:52.388937+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Auswärtiges Amt - Auswärtiges Amt",
+        "email": "presse@diplo.de",
+        "phone": null,
+        "website": "https://www.auswaertiges-amt.de/",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.auswaertiges-amt.de/",
+        "last_seen": "2026-04-10T10:58:56.464864+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Stadt Nürnberg, Kreisfreie Stadt - BayernPortal",
+        "email": "poststelle@stadt.nuernberg.de",
+        "phone": "+49 911 231-0",
+        "website": "https://www.bayernportal.de/dokumente/behoerde/40553755388",
+        "address": null,
+        "category": "dom kultury",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.bayernportal.de/dokumente/behoerde/40553755388",
+        "last_seen": "2026-04-10T11:00:04.406963+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Amt für Kultur und Freizeit - Kulturportal Bayern",
+        "email": "kuf@stadt.nuernberg.de",
+        "phone": null,
+        "website": "https://kulturportal-bayern.de/veranstalter/amt-fuer-kultur-und-freizeit/",
+        "address": null,
+        "category": "dom kultury",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://kulturportal-bayern.de/veranstalter/amt-fuer-kultur-und-freizeit/",
+        "last_seen": "2026-04-10T11:00:05.551110+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Stadium.fi – Urheilua ja urheilumuotia parhaaseen hintaan",
+        "email": "info.fi@stadium.fi",
+        "phone": "075 325 2200",
+        "website": "https://www.stadium.fi/",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "Łódź",
+        "country_code": "FI",
+        "country_name": "Finlandia",
+        "language": "en",
+        "source_url": "https://www.stadium.fi/",
+        "last_seen": "2026-04-10T11:00:10.226192+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Stadium Outlet Store | Stadium",
+        "email": "tyo@stadium.fi",
+        "phone": null,
+        "website": "https://ura.stadium.fi/stadium-outlet-store/",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "Łódź",
+        "country_code": "FI",
+        "country_name": "Finlandia",
+        "language": "en",
+        "source_url": "https://ura.stadium.fi/stadium-outlet-store/",
+        "last_seen": "2026-04-10T11:00:11.071567+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kulturförderung - Standorte - Service Berlin - Berlin.de",
+        "email": "post@kultur.berlin.de",
+        "phone": null,
+        "website": "https://service.berlin.de/standort/330373/",
+        "address": "Brunnenstraße 188-190",
+        "category": "agencja kulturalna",
+        "region": "Berlin",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://service.berlin.de/standort/330373/",
+        "last_seen": "2026-04-10T11:01:08.317234+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Wir über uns – Leitung und Organisation - Berlin.de",
+        "email": "barrierefreiheit@kultur.berlin.de",
+        "phone": "30 90 228 202",
+        "website": "https://www.berlin.de/sen/kultgz/ueber-uns/",
+        "address": "Brunnenstraße 188-190",
+        "category": "agencja kulturalna",
+        "region": "Berlin",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.berlin.de/sen/kultgz/ueber-uns/",
+        "last_seen": "2026-04-10T11:01:09.111511+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Impressum - Kulturpalast Dresden",
+        "email": "stadtverwaltung@dresden.de",
+        "phone": "140135127",
+        "website": "https://www.kulturpalast-dresden.de/de/impressum/",
+        "address": "Schloßstraße 2",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kulturpalast-dresden.de/de/impressum/",
+        "last_seen": "2026-04-10T11:03:45.717435+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Vermietung des Konzertsaals - Dresdner Philharmonie",
+        "email": "buelow@dresdnerphilharmonie.de",
+        "phone": "+49 0351 4866-334",
+        "website": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/saal-fuer-sie-saalmiete/",
+        "address": null,
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/saal-fuer-sie-saalmiete/",
+        "last_seen": "2026-04-10T11:03:46.265835+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Tickets & Angebote - Dresdner Philharmonie",
+        "email": "gruppenbestellung@dresdnerphilharmonie.de",
+        "phone": null,
+        "website": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/",
+        "address": "Schloßstr. 2 | 01067 Dresden",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/",
+        "last_seen": "2026-04-10T11:03:46.888404+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kulturpalast Dresden • Konzerthaus » OAD Elbland Dresden",
+        "email": "info@elbland.de",
+        "phone": "411623 5656260",
+        "website": "https://www.dresden-elbland.de/de/poi/konzerthaus/kulturpalast-dresden/34055788/",
+        "address": "Der Kulturpalast liegt zentral am Altmarkt in der Inneren Altstadt. Mit den Straßenbahnlinien 1, 2 oder 9 erreicht man die Haltestelle \"Altmarkt\", von dort sind es wenige Schritte zu Fuß.",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.dresden-elbland.de/de/poi/konzerthaus/kulturpalast-dresden/34055788/",
+        "last_seen": "2026-04-10T11:03:48.663268+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "email": "biuro.podawcze.prchz@prokuratura.gov.pl",
+        "phone": "778-11-34-985",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "address": "ul. Krasińskiego 8",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "last_seen": "2026-04-10T11:04:48.522097+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "email": "biuro.podawcze.prgni@prokuratura.gov.pl",
+        "phone": "778-11-34-985",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "address": "ul. Krasińskiego 8",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "last_seen": "2026-04-10T11:04:48.522126+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "email": "biuro.podawcze.prgos@prokuratura.gov.pl",
+        "phone": "778-11-34-985",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "address": "ul. Krasińskiego 8",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "last_seen": "2026-04-10T11:04:48.522142+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "email": "biuro.podawcze.prgwl@prokuratura.gov.pl",
+        "phone": "778-11-34-985",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "address": "ul. Krasińskiego 8",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/po-poznan/jednostki-podlegle",
+        "last_seen": "2026-04-10T11:04:48.522156+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt CONZIL Veranstaltungs GmbH, Veranstaltungsagentur Hamburg, Eventmanagement, Teilnehmermanagement, Hoteleinkauf, Tagung, Meeting, Zimmer zu Messen | CONZIL Veranstaltungs GmbH",
+        "email": "elbe@conzil.de",
+        "phone": "40 22 65 93 00",
+        "website": "https://conzil.de/kontakt/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://conzil.de/kontakt/",
+        "last_seen": "2026-04-10T11:04:53.155539+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt CONZIL Veranstaltungs GmbH, Veranstaltungsagentur Hamburg, Eventmanagement, Teilnehmermanagement, Hoteleinkauf, Tagung, Meeting, Zimmer zu Messen | CONZIL Veranstaltungs GmbH",
+        "email": "isar@conzil.de",
+        "phone": "40 22 65 93 00",
+        "website": "https://conzil.de/kontakt/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://conzil.de/kontakt/",
+        "last_seen": "2026-04-10T11:04:53.155569+00:00",
+        "status": "new"
+      },
+      {
+        "name": "OIP - Okręgowy Inspektorat Pracy w Poznaniu",
+        "email": "kancelaria@poznan.pip.gov.pl",
+        "phone": null,
+        "website": "https://poznan.pip.gov.pl/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://poznan.pip.gov.pl/",
+        "last_seen": "2026-04-10T11:04:55.663635+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "email": "redaktion@kino.de",
+        "phone": null,
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "last_seen": "2026-04-10T11:05:08.472024+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "email": "scgs@stroeer-publishing.de",
+        "phone": null,
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "last_seen": "2026-04-10T11:05:08.472056+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "email": "kinoprogramm@kino.de",
+        "phone": null,
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ",
+        "last_seen": "2026-04-10T11:05:08.472075+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Formularz przypomnienia adresu email - Oficjalny serwis miejski - Magiczny Kraków",
+        "email": "budzetobywatelski@um.krakow.pl",
+        "phone": null,
+        "website": "https://budzet.krakow.pl/przypomnienie_email",
+        "address": null,
+        "category": "musikagentur",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://budzet.krakow.pl/przypomnienie_email",
+        "last_seen": "2026-04-10T11:05:20.922715+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Pizzeria Galéjan - Orderhero.se",
+        "email": "info@orderhero.se",
+        "phone": "019-6116341",
+        "website": "https://www.orderhero.se/restaurang/pizzeria-galejan/",
+        "address": null,
+        "category": "musikagentur",
+        "region": "Gdynia",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "source_url": "https://www.orderhero.se/restaurang/pizzeria-galejan/",
+        "last_seen": "2026-04-10T11:05:31.214132+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Mat & dryck - Visit Örebro",
+        "email": "info@orebrokompaniet.se",
+        "phone": null,
+        "website": "https://www.visitorebro.se/lokala-smaker/",
+        "address": null,
+        "category": "kulturverein",
+        "region": "Łódź",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "source_url": "https://www.visitorebro.se/lokala-smaker/",
+        "last_seen": "2026-04-10T11:05:50.200054+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Mat & dryck - Visit Örebro",
+        "email": "faktura@orebrokompaniet.se",
+        "phone": null,
+        "website": "https://www.visitorebro.se/lokala-smaker/",
+        "address": null,
+        "category": "kulturverein",
+        "region": "Łódź",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "source_url": "https://www.visitorebro.se/lokala-smaker/",
+        "last_seen": "2026-04-10T11:05:50.200079+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Kulturamt Frankfurt",
+        "email": "kommunikation.kulturamt@stadt-frankfurt.de",
+        "phone": null,
+        "website": "https://www.vielfalt-bewegt-frankfurt.de/de/kulturamt-frankfurt/contact",
+        "address": "Brückenstraße 3-7",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.vielfalt-bewegt-frankfurt.de/de/kulturamt-frankfurt/contact",
+        "last_seen": "2026-04-10T11:06:07.627319+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kulturamt - Hessian Portal for Administrative Services",
+        "email": "info.kulturamt@stadt-frankfurt.de",
+        "phone": "+49 69 212-36325",
+        "website": "https://verwaltungsportal.hessen.de/en/behoerde?org_id=L100001_385032621",
+        "address": "Brückenstraße 3-7",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://verwaltungsportal.hessen.de/en/behoerde?org_id=L100001_385032621",
+        "last_seen": "2026-04-10T11:06:08.505885+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Frankfurter Kultur Komitee",
+        "email": "info@frakk.de",
+        "phone": "172 678 562 8",
+        "website": "https://www.frakk.de/kontakt/",
+        "address": null,
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.frakk.de/kontakt/",
+        "last_seen": "2026-04-10T11:06:10.641693+00:00",
+        "status": "new"
+      },
+      {
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "email": "sonja.vandenrath@stadt-frankfurt.de",
+        "phone": "069 212 36091",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "address": "Brückenstraße 3-7",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "last_seen": "2026-04-10T11:06:14.595447+00:00",
+        "status": "new"
+      },
+      {
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "email": "markus.huber@stadt-frankfurt.de",
+        "phone": "069 212 36091",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "address": "Brückenstraße 3-7",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "last_seen": "2026-04-10T11:06:14.595475+00:00",
+        "status": "new"
+      },
+      {
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "email": "maximilian.mayer@stadt-frankfurt.de",
+        "phone": "069 212 36091",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "address": "Brückenstraße 3-7",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx",
+        "last_seen": "2026-04-10T11:06:14.595490+00:00",
+        "status": "new"
+      },
+      {
+        "name": "NFM",
+        "email": "rezerwacje@nfm.wroclaw.pl",
+        "phone": "022414470",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "address": "plac Wolności 1, 50-071 Wrocław",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "last_seen": "2026-04-10T11:06:19.699349+00:00",
+        "status": "new"
+      },
+      {
+        "name": "NFM",
+        "email": "office@nfm.wroclaw.pl",
+        "phone": "022414470",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "address": "plac Wolności 1, 50-071 Wrocław",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "last_seen": "2026-04-10T11:06:19.699389+00:00",
+        "status": "new"
+      },
+      {
+        "name": "NFM",
+        "email": "radoslaw.pujanek@nfm.wroclaw.pl",
+        "phone": "022414470",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "address": "plac Wolności 1, 50-071 Wrocław",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "last_seen": "2026-04-10T11:06:19.699412+00:00",
+        "status": "new"
+      },
+      {
+        "name": "NFM",
+        "email": "joanna.borek@nfm.wroclaw.pl",
+        "phone": "022414470",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "address": "plac Wolności 1, 50-071 Wrocław",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/contact-us",
+        "last_seen": "2026-04-10T11:06:19.699436+00:00",
+        "status": "new"
+      },
+      {
+        "name": "FAQ",
+        "email": "bookstore@niskielaki.pl",
+        "phone": "48 533 338 599",
+        "website": "https://www.nfm.wroclaw.pl/en/faq-2",
+        "address": "The NFM Box Office (plac Wolności 1) is open from Monday to Friday from 11 am to 6 pm (or until the evening concert) with a break between 3 pm and 3.30 pm. On Saturdays it is open from 2 pm to 7.30 pm",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/faq-2",
+        "last_seen": "2026-04-10T11:06:20.616769+00:00",
+        "status": "new"
+      },
+      {
+        "name": "FAQ",
+        "email": "parking@wi.wroc.pl",
+        "phone": "48 533 338 599",
+        "website": "https://www.nfm.wroclaw.pl/en/faq-2",
+        "address": "The NFM Box Office (plac Wolności 1) is open from Monday to Friday from 11 am to 6 pm (or until the evening concert) with a break between 3 pm and 3.30 pm. On Saturdays it is open from 2 pm to 7.30 pm",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.nfm.wroclaw.pl/en/faq-2",
+        "last_seen": "2026-04-10T11:06:20.616800+00:00",
+        "status": "new"
       }
     ],
     "engine": [
@@ -14148,6 +14853,16 @@
         "website": "https://www.elbphilharmonie.de/en/ticketing-information"
       },
       {
+        "email": "barrierefreiheit@kultur.berlin.de",
+        "name": "Wir über uns – Leitung und Organisation - Berlin.de",
+        "category": "agencja kulturalna",
+        "region": "Berlin",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.berlin.de/sen/kultgz/ueber-uns/"
+      },
+      {
         "email": "barrierefreiheit@lea.berlin.de",
         "name": "Wollen Sie Kontakt zu uns aufnehmen? - Berlin.de",
         "category": "stowarzyszenie artystyczne",
@@ -14406,6 +15121,46 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.gokrymanow.pl/"
+      },
+      {
+        "email": "biuro.podawcze.prchz@prokuratura.gov.pl",
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle"
+      },
+      {
+        "email": "biuro.podawcze.prgni@prokuratura.gov.pl",
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle"
+      },
+      {
+        "email": "biuro.podawcze.prgos@prokuratura.gov.pl",
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle"
+      },
+      {
+        "email": "biuro.podawcze.prgwl@prokuratura.gov.pl",
+        "name": "Jednostki podległe - Prokuratura Okręgowa w Poznaniu - Portal Gov.pl",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/po-poznan/jednostki-podlegle"
       },
       {
         "email": "biuro@agencjamuza.pl",
@@ -15028,6 +15783,16 @@
         "website": "https://www.myticket-jahrhunderthalle.de/kontakt"
       },
       {
+        "email": "bookstore@niskielaki.pl",
+        "name": "FAQ",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/faq-2"
+      },
+      {
         "email": "borsche@musikfonds.de",
         "name": "Kontakt | Musikfonds e.V",
         "category": "music foundation",
@@ -15126,6 +15891,26 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.werk-2.de/kontakt_"
+      },
+      {
+        "email": "budzetobywatelski@um.krakow.pl",
+        "name": "Formularz przypomnienia adresu email - Oficjalny serwis miejski - Magiczny Kraków",
+        "category": "musikagentur",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://budzet.krakow.pl/przypomnienie_email"
+      },
+      {
+        "email": "buelow@dresdnerphilharmonie.de",
+        "name": "Vermietung des Konzertsaals - Dresdner Philharmonie",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/saal-fuer-sie-saalmiete/"
       },
       {
         "email": "buergeramt-bemerode@hannover-stadt.de",
@@ -15698,6 +16483,16 @@
         "website": "https://kbf.krakow.pl/biuro-prasowe/kontakt/"
       },
       {
+        "email": "elbe@conzil.de",
+        "name": "Kontakt CONZIL Veranstaltungs GmbH, Veranstaltungsagentur Hamburg, Eventmanagement, Teilnehmermanagement, Hoteleinkauf, Tagung, Meeting, Zimmer zu Messen | CONZIL Veranstaltungs GmbH",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://conzil.de/kontakt/"
+      },
+      {
         "email": "elzbieta.berkowicz@ckpodgorza.pl",
         "name": "Centrum Kultury Podgórza - Kontakt",
         "category": "agencja kulturalna",
@@ -15806,6 +16601,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://fama.wroc.pl/kontakt/"
+      },
+      {
+        "email": "faktura@orebrokompaniet.se",
+        "name": "Mat & dryck - Visit Örebro",
+        "category": "kulturverein",
+        "region": "Łódź",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "website": "https://www.visitorebro.se/lokala-smaker/"
       },
       {
         "email": "festiwale@mok.olsztyn.pl",
@@ -16238,6 +17043,16 @@
         "website": "https://www.semperoper.de/en/your-visit/contact.html"
       },
       {
+        "email": "gruppenbestellung@dresdnerphilharmonie.de",
+        "name": "Tickets & Angebote - Dresdner Philharmonie",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.dresdnerphilharmonie.de/de/konzerte-tickets/tickets-angebote/"
+      },
+      {
         "email": "grzegorz.slacz@krakowculture.pl",
         "name": "Kontakt - Kraków Culture",
         "category": "agencja kulturalna",
@@ -16358,6 +17173,26 @@
         "website": "https://www.informacja.wroclaw.pl/biblioteki2"
       },
       {
+        "email": "info.fi@stadium.fi",
+        "name": "Stadium.fi – Urheilua ja urheilumuotia parhaaseen hintaan",
+        "category": "miejski ośrodek kultury",
+        "region": "Łódź",
+        "country_code": "FI",
+        "country_name": "Finlandia",
+        "language": "en",
+        "website": "https://www.stadium.fi/"
+      },
+      {
+        "email": "info.kulturamt@stadt-frankfurt.de",
+        "name": "Kulturamt - Hessian Portal for Administrative Services",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://verwaltungsportal.hessen.de/en/behoerde?org_id=L100001_385032621"
+      },
+      {
         "email": "info@4-b.ch",
         "name": "Fensterausstellung in Bern - 4B",
         "category": "fundacja kulturalna",
@@ -16396,6 +17231,16 @@
         "country_name": "Szwajcaria",
         "language": "de",
         "website": "https://bawos.ch/fenster-ersetzen-kosten-und-wertvolle-tipps/"
+      },
+      {
+        "email": "info@berlin.de",
+        "name": "Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de",
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.berlin.de/"
       },
       {
         "email": "info@biblioteka-ostrow.pl",
@@ -16498,6 +17343,16 @@
         "website": "https://www.dresden.de/en/091/contact.php"
       },
       {
+        "email": "info@elbland.de",
+        "name": "Kulturpalast Dresden • Konzerthaus » OAD Elbland Dresden",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.dresden-elbland.de/de/poi/konzerthaus/kulturpalast-dresden/34055788/"
+      },
+      {
         "email": "info@energieleser.de",
         "name": "Stromzähler mit App ablesen – einfache Anleitung",
         "category": "agencja artystyczna",
@@ -16546,6 +17401,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.foerderverein-kunstakademie.de/kontakt"
+      },
+      {
+        "email": "info@frakk.de",
+        "name": "Kontakt - Frankfurter Kultur Komitee",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.frakk.de/kontakt/"
       },
       {
         "email": "info@freunde-der-staatsgalerie.de",
@@ -16776,6 +17641,26 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://oper-frankfurt.de/de/kontakt/"
+      },
+      {
+        "email": "info@orderhero.se",
+        "name": "Pizzeria Galéjan - Orderhero.se",
+        "category": "musikagentur",
+        "region": "Gdynia",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "website": "https://www.orderhero.se/restaurang/pizzeria-galejan/"
+      },
+      {
+        "email": "info@orebrokompaniet.se",
+        "name": "Mat & dryck - Visit Örebro",
+        "category": "kulturverein",
+        "region": "Łódź",
+        "country_code": "SE",
+        "country_name": "Szwecja",
+        "language": "en",
+        "website": "https://www.visitorebro.se/lokala-smaker/"
       },
       {
         "email": "info@ottomatik.de",
@@ -17198,6 +18083,16 @@
         "website": "https://www.stuttgarter-musikschule.de/start/ueber+uns/kontakt.html"
       },
       {
+        "email": "isar@conzil.de",
+        "name": "Kontakt CONZIL Veranstaltungs GmbH, Veranstaltungsagentur Hamburg, Eventmanagement, Teilnehmermanagement, Hoteleinkauf, Tagung, Meeting, Zimmer zu Messen | CONZIL Veranstaltungs GmbH",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://conzil.de/kontakt/"
+      },
+      {
         "email": "iwona.stankiewicz@amuz.krakow.pl",
         "name": "AMKP - Oficjalna strona Akademii Muzycznej im. Krzysztofa Pendereckiego w Krakowie (AMKP).",
         "category": "fundacja muzyczna",
@@ -17206,6 +18101,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.amuz.krakow.pl/"
+      },
+      {
+        "email": "iwona.zygmunt@rmf.pl",
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html"
       },
       {
         "email": "izabela.kurc-kuriata@dolnyslask.pl",
@@ -17358,6 +18263,16 @@
         "website": "https://amuz.edu.pl/"
       },
       {
+        "email": "joanna.borek@nfm.wroclaw.pl",
+        "name": "NFM",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us"
+      },
+      {
         "email": "joerglothar.schneider@duesseldorf.de",
         "name": "Ansprechpartnerinnen - Landeshauptstadt Düsseldorf",
         "category": "dom kultury",
@@ -17376,6 +18291,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://dkswit.com.pl/kontakt/"
+      },
+      {
+        "email": "justyna@konferencje.pl",
+        "name": "Sala koncertowa w Bielskie Centrum Kultury im. M. Koterbskiej – konferencje.pl",
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html"
       },
       {
         "email": "k.korzeniewska@gck.gdynia.pl",
@@ -17576,6 +18501,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.bip.piotrkow.pl/index.php?idg=4&id=70&x=108&y=4"
+      },
+      {
+        "email": "kancelaria@poznan.pip.gov.pl",
+        "name": "OIP - Okręgowy Inspektorat Pracy w Poznaniu",
+        "category": "veranstaltungsagentur",
+        "region": "Poznań",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://poznan.pip.gov.pl/"
       },
       {
         "email": "kancelaria@slaskie.pl",
@@ -17888,6 +18823,16 @@
         "website": "https://smok.slubice.pl/kontakt/"
       },
       {
+        "email": "kinoprogramm@kino.de",
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ"
+      },
+      {
         "email": "kkabat@biblioteka.wroc.pl",
         "name": "Kontakt - Centrum Biblioteczno-Kulturalne FAMA",
         "category": "centrum kulturalne",
@@ -17926,6 +18871,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://warminsko-mazurska.policja.gov.pl/ol/kontakt"
+      },
+      {
+        "email": "kommunikation.kulturamt@stadt-frankfurt.de",
+        "name": "Kontakt - Kulturamt Frankfurt",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.vielfalt-bewegt-frankfurt.de/de/kulturamt-frankfurt/contact"
       },
       {
         "email": "kontakt@agencjamuza.pl",
@@ -18408,6 +19363,16 @@
         "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
       },
       {
+        "email": "krzysztof.wilczak@cavatina.pl",
+        "name": "Cavatina Hall, BIelsko Biała - Cavatina Holding S.A.",
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://cavatina.pl/inwestycje/cavatina-hall"
+      },
+      {
         "email": "krzysztof@eskander.pl",
         "name": "Kontakt - Agencja Artystyczna Eskander",
         "category": "agencja artystyczna",
@@ -18506,6 +19471,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.teatrgrodzki.pl/kontakt/"
+      },
+      {
+        "email": "kuf@stadt.nuernberg.de",
+        "name": "Amt für Kultur und Freizeit - Kulturportal Bayern",
+        "category": "dom kultury",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://kulturportal-bayern.de/veranstalter/amt-fuer-kultur-und-freizeit/"
       },
       {
         "email": "kujawsko_pomorski@arimr.gov.pl",
@@ -18616,6 +19591,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://bip.um.wroc.pl/artykul/1230/3197/wydzial-kultury"
+      },
+      {
+        "email": "kundenservice@berlin.de",
+        "name": "Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de",
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.berlin.de/"
       },
       {
         "email": "kundenservice@wams.de",
@@ -18988,6 +19973,16 @@
         "website": "https://www.steyr.at/Freizeit/Veranstaltungskalender"
       },
       {
+        "email": "markus.huber@stadt-frankfurt.de",
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx"
+      },
+      {
         "email": "marlena.kaminska@dolnyslask.pl",
         "name": "DOLNY ŚLĄSK > Kultura > Kontakt - Departament Kultury i Dziedzictwa Kulturowego - Wydział Kultury",
         "category": "cultural center",
@@ -19046,6 +20041,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://teatrcapitol.pl/eventy-kontakt/"
+      },
+      {
+        "email": "maximilian.mayer@stadt-frankfurt.de",
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx"
       },
       {
         "email": "mbp11@biblioteka.wroc.pl",
@@ -19166,6 +20171,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.mik.waw.pl/kontakt/"
+      },
+      {
+        "email": "milena.wieczorek@grupamp.pl",
+        "name": "Sala koncertowa w Bielskie Centrum Kultury im. M. Koterbskiej – konferencje.pl",
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.konferencje.pl/o/bielskie-centrum-kultury-im-m-koterbskiej/26109-sala-koncertowa.html"
       },
       {
         "email": "mkrasucki@samorzad.org.pl",
@@ -19568,6 +20583,16 @@
         "website": "https://www.laznia.pl/instytucja/"
       },
       {
+        "email": "office@nfm.wroclaw.pl",
+        "name": "NFM",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us"
+      },
+      {
         "email": "office@oek.or.at",
         "name": "Kontakt – ÖK",
         "category": "dom kultury",
@@ -19658,6 +20683,16 @@
         "website": "https://steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe"
       },
       {
+        "email": "parking@wi.wroc.pl",
+        "name": "FAQ",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/faq-2"
+      },
+      {
         "email": "patrycja.gorska@teatrcapitol.pl",
         "name": "Biuro obsługi Widzów - Teatr Capitol Warszawa",
         "category": "konzertsaal",
@@ -19666,6 +20701,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://teatrcapitol.pl/kontakt/bow/"
+      },
+      {
+        "email": "pawel.pawlik@rmfclassic.pl",
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html"
       },
       {
         "email": "pcn@pcn.org.pl",
@@ -19878,6 +20923,16 @@
         "website": "https://www.gov.pl/web/zpsmkatowice/dane-kontaktowe"
       },
       {
+        "email": "post@kultur.berlin.de",
+        "name": "Kulturförderung - Standorte - Service Berlin - Berlin.de",
+        "category": "agencja kulturalna",
+        "region": "Berlin",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://service.berlin.de/standort/330373/"
+      },
+      {
         "email": "post@kulturkosmos-leipzig.de",
         "name": "Kontakt – Kulturkosmos Leipzig",
         "category": "centrum kulturalne",
@@ -19978,6 +21033,16 @@
         "website": "https://rps.baden-wuerttemberg.de/kontakt/"
       },
       {
+        "email": "poststelle@stadt.nuernberg.de",
+        "name": "Stadt Nürnberg, Kreisfreie Stadt - BayernPortal",
+        "category": "dom kultury",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.bayernportal.de/dokumente/behoerde/40553755388"
+      },
+      {
         "email": "poststelle@stmbw.bayern.de",
         "name": "Konzerthaus München - Werksviertel",
         "category": "konzertsaal",
@@ -20006,6 +21071,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://artmuzyka.pl/kontakt"
+      },
+      {
+        "email": "presse@diplo.de",
+        "name": "Auswärtiges Amt - Auswärtiges Amt",
+        "category": "filharmonia",
+        "region": "Zielona Góra",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.auswaertiges-amt.de/"
       },
       {
         "email": "presse@dresden.de",
@@ -20228,6 +21303,16 @@
         "website": "https://radio.katowice.pl/player_transmisja/kontakt.html"
       },
       {
+        "email": "radoslaw.pujanek@nfm.wroclaw.pl",
+        "name": "NFM",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us"
+      },
+      {
         "email": "rdoroba@mdk.wroclaw.pl",
         "name": "Kontakt | Młodzieżowy Dom Kultury",
         "category": "cultural center",
@@ -20286,6 +21371,26 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.heilpraxisnet.de/naturheilpraxis/tinnitus-fisch-und-meeresfruechte-senken-risiko-20241001585613/"
+      },
+      {
+        "email": "redaktion@kino.de",
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ"
+      },
+      {
+        "email": "reklama@rmf.pl",
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html"
       },
       {
         "email": "reklama@trojmiasto.pl",
@@ -20406,6 +21511,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.gck.gdynia.pl/"
+      },
+      {
+        "email": "rezerwacje@nfm.wroclaw.pl",
+        "name": "NFM",
+        "category": "concert hall",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.nfm.wroclaw.pl/en/contact-us"
       },
       {
         "email": "rezerwacje@strefakultury.pl",
@@ -20608,6 +21723,16 @@
         "website": "https://secret-event.pl/agencja-eventowa-rzeszow/"
       },
       {
+        "email": "salakoncertowa@zpsm.bielsko.pl",
+        "name": "Sala koncertowa - Zespół Państwowych Szkół Muzycznych im. S. Moniuszki w Bielsku-Białej - Portal Gov.pl",
+        "category": "sala koncertowa",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/zpsmbielsko/kalendarz-roku-szkolnego2"
+      },
+      {
         "email": "sandra.potocka@jok.jawor.pl",
         "name": "Strona główna - Jaworski Ośrodek Kultury",
         "category": "miejski ośrodek kultury",
@@ -20626,6 +21751,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.hannover.de/Leben-in-der-Region-Hannover/Kulturförderung/Kulturbüro-der-Landeshauptstadt-Hannover/Kontakt"
+      },
+      {
+        "email": "scgs@stroeer-publishing.de",
+        "name": "Für viele ist es heute der beste Hollywood-Film aller Zeiten – doch für Tom Cruise war es vor 32 Jahren eine verpasste Chance",
+        "category": "veranstaltungsagentur",
+        "region": "Wien",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kino.de/news/fuer-viele-ist-es-heute-der-beste-hollywood-film-aller-zeiten-doch-fuer-tom-cruise-war-es-vor-32-jahren-eine-verpasste-chance--01K2C4WN5CBJ2JG0E3JXCJVXPJ"
       },
       {
         "email": "scheufele@musikfonds.de",
@@ -21598,6 +22733,16 @@
         "website": "https://wdk-bip.kulturapodkarpacka.pl/kontakt/"
       },
       {
+        "email": "sonja.vandenrath@stadt-frankfurt.de",
+        "name": "KulturPortal Frankfurt: Newsletter und Kontakt",
+        "category": "kulturverein",
+        "region": "Frankfurt am Main",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://kultur-frankfurt.de/portal/de/Startseite/Literatur/6/2234/0/0/1159.aspx"
+      },
+      {
         "email": "sowa@mck.ostrowiec.pl",
         "name": "Kontakt - MCK Ostrowiec",
         "category": "ośrodek kultury",
@@ -21636,6 +22781,16 @@
         "country_name": "Austria",
         "language": "de",
         "website": "https://www.wien.gv.at/kontakt/magistratsabteilungen"
+      },
+      {
+        "email": "stadtverwaltung@dresden.de",
+        "name": "Impressum - Kulturpalast Dresden",
+        "category": "konzertsaal",
+        "region": "Dresden",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kulturpalast-dresden.de/de/impressum/"
       },
       {
         "email": "stanislawowdrugi@gok.nieporet.pl",
@@ -21926,6 +23081,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://lubuskie.pl/cms/248/kontakt_turystyka"
+      },
+      {
+        "email": "tyo@stadium.fi",
+        "name": "Stadium Outlet Store | Stadium",
+        "category": "miejski ośrodek kultury",
+        "region": "Łódź",
+        "country_code": "FI",
+        "country_name": "Finlandia",
+        "language": "en",
+        "website": "https://ura.stadium.fi/stadium-outlet-store/"
       },
       {
         "email": "u.perczynska@stoczek-lukowski.pl",
@@ -22436,6 +23601,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://zok.com.pl/"
+      },
+      {
+        "email": "zuzanna.majeran@rmf.pl",
+        "name": "4. Międzynarodowy Festiwal i Konkurs Baltic Guitar Days Szczecin 2025 - RMF Classic",
+        "category": "sala koncertowa",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.rmfclassic.pl/informacje/Muzyka,10/4-Miedzynarodowy-Festiwal-i-Konkurs-Baltic-Guitar-Days-Szczecin-2025,53597.html"
       },
       {
         "email": "zwiedzanie@nospr.org.pl",
@@ -22963,6 +24138,96 @@
         "email": "amuz@amuz.edu.pl",
         "name": "Kontakt - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
         "sent_at": "2026-04-09T11:31:39.298777+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "andrzej.telnet@vp.pl",
+        "name": "Wykaz Organizacji Pozarządowych Rudy Śląskiej - Ruda Śląska",
+        "sent_at": "2026-04-10T11:25:33.198588+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "ania@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "sent_at": "2026-04-10T11:25:36.643620+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "ania@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-04-10T11:25:40.016284+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.magiera@ckpodgorza.pl",
+        "name": "Centrum Kultury Podgórza - Kontakt",
+        "sent_at": "2026-04-10T11:25:43.482262+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.prasek@spotkaniakultur.com",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-10T11:25:47.129879+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.szczygiel@kbf.krakow.pl",
+        "name": "Kontakt - KBF",
+        "sent_at": "2026-04-10T11:25:50.284401+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anne.prenzler@hannover-stadt.de",
+        "name": "Kontakt - Hannover.de",
+        "sent_at": "2026-04-10T11:25:53.586121+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "antonov@hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-04-10T11:25:56.675625+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "ape.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-04-10T11:25:59.631021+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "apm.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-04-10T11:26:02.799224+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "apt.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-04-10T11:26:06.171240+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "arek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-04-10T11:26:11.054781+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "art@art.com.pl",
+        "name": "Kontakt | - Zakłady Artystyczne ART Sp z o.o.",
+        "sent_at": "2026-04-10T11:26:14.359869+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "art@jsoundart.pl",
+        "name": "Kontakt | J'Sound",
+        "sent_at": "2026-04-10T11:26:17.467037+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "artur.wijata@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "sent_at": "2026-04-10T11:26:20.413980+00:00",
         "status": "sent"
       }
     ]
