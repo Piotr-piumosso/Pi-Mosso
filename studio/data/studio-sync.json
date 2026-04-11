@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-10T11:26:21.058069+00:00",
+  "generatedAt": "2026-04-11T11:02:48.399991+00:00",
   "sourceStats": {
-    "baza": 951,
-    "nowe": 47,
-    "engine": 937,
-    "sent": 96
+    "baza": 984,
+    "nowe": 33,
+    "engine": 970,
+    "sent": 111
   },
   "sourceRuns": {
-    "lead_machine_last_run": "2026-04-10T11:08:18.367420+00:00",
-    "lead_machine_added_rows": 47,
-    "engine_last_run": "2026-04-10T11:26:20.414219+00:00",
+    "lead_machine_last_run": "2026-04-11T10:48:00.347813+00:00",
+    "lead_machine_added_rows": 33,
+    "engine_last_run": "2026-04-11T11:02:47.626253+00:00",
     "engine_attempted": 15,
     "engine_sent": 15
   },
@@ -14279,6 +14279,501 @@
         "source_url": "https://www.nfm.wroclaw.pl/en/faq-2",
         "last_seen": "2026-04-10T11:06:20.616800+00:00",
         "status": "new"
+      },
+      {
+        "name": "ᐅ Godziny otwarcia „Sala Widowiskowo - Koncertowa MUZA“ | Warszawska 2 w Sosnowiec",
+        "email": "sekretariat@kiepura.pl",
+        "phone": "32 213 99 00",
+        "website": "https://godzinyotwarcia24.pl/Sala-Widowiskowo-Koncertowa-Muza-Sosnowiec-KYYZJ6",
+        "address": "© 2013-2022 GodzinyOtwarcia24.pl.",
+        "category": "sala koncertowa",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://godzinyotwarcia24.pl/Sala-Widowiskowo-Koncertowa-Muza-Sosnowiec-KYYZJ6",
+        "last_seen": "2026-04-11T10:37:33.110931+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+        "email": "bas.dingemans@programmeerplaats.nl",
+        "phone": "003597239",
+        "website": "https://programmeerplaats.nl/wat-is-een-query/",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Gdańsk",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "source_url": "https://programmeerplaats.nl/wat-is-een-query/",
+        "last_seen": "2026-04-11T10:38:12.584061+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Les mémoires de Grétry à Bruxelles, Restaurants",
+        "email": "info@oye-oye.net",
+        "phone": "+32472411851",
+        "website": "https://local.infobel.be/BE100499549-022181519/les_memoires_de_gretry-bruxelles.html",
+        "address": "Place Saint-Géry 1",
+        "category": "agencja kulturalna",
+        "region": "Białystok",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://local.infobel.be/BE100499549-022181519/les_memoires_de_gretry-bruxelles.html",
+        "last_seen": "2026-04-11T10:40:08.579367+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Accueil | La Maison du Tourisme de Liège",
+        "email": "info@visitezliege.be",
+        "phone": null,
+        "website": "https://www.visitezliege.be/fr",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://www.visitezliege.be/fr",
+        "last_seen": "2026-04-11T10:41:04.702990+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "email": "info@visitwallonia.be",
+        "phone": null,
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "last_seen": "2026-04-11T10:41:05.993500+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "email": "redacteur@visitwallonia.be",
+        "phone": null,
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "last_seen": "2026-04-11T10:41:05.993527+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "email": "event@visitwallonia.be",
+        "phone": null,
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "address": null,
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege",
+        "last_seen": "2026-04-11T10:41:05.993542+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Bovenfrees spantang 8,0 mm",
+        "email": "info@freesjes.nl",
+        "phone": "053 47 87 261",
+        "website": "https://www.freesjes.nl/nl/spantangen/black-decker-elu/bovenfrees-spantang-8-0-mm/a-1731-10000227",
+        "address": null,
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "source_url": "https://www.freesjes.nl/nl/spantangen/black-decker-elu/bovenfrees-spantang-8-0-mm/a-1731-10000227",
+        "last_seen": "2026-04-11T10:41:20.315765+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Spantangen - Baptist",
+        "email": "verkoop@baptist.nl",
+        "phone": "026 351 2856",
+        "website": "https://baptist.nl/frezen/spantangen",
+        "address": null,
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "source_url": "https://baptist.nl/frezen/spantangen",
+        "last_seen": "2026-04-11T10:41:21.063212+00:00",
+        "status": "new"
+      },
+      {
+        "name": "≥ Spantangen voor Gereedschap en Freesmachines | Marktplaats",
+        "email": "info@dutchmachineshop.com",
+        "phone": "6 8 10 12 16 20",
+        "website": "https://www.marktplaats.nl/l/doe-het-zelf-en-verbouw/gereedschap-freesmachines/q/spantangen/?msockid=1c787e84cb91659619d269bcca5d642f",
+        "address": null,
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "source_url": "https://www.marktplaats.nl/l/doe-het-zelf-en-verbouw/gereedschap-freesmachines/q/spantangen/?msockid=1c787e84cb91659619d269bcca5d642f",
+        "last_seen": "2026-04-11T10:41:21.841965+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Konjugation \"unterhalten\" - Alle Formen des Verbs, Beispiele, Regeln | Netzverb Wörterbuch",
+        "email": "info@netzverb.de",
+        "phone": "+49 3733 6196894",
+        "website": "https://www.verbformen.de/konjugation/unterhalten.htm",
+        "address": "Alte Buchholzer Str. 8",
+        "category": "konzerthaus",
+        "region": "Białystok",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.verbformen.de/konjugation/unterhalten.htm",
+        "last_seen": "2026-04-11T10:43:55.248342+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Strona główna | Polski Komitet Normalizacyjny",
+        "email": "info@pkn.pl",
+        "phone": null,
+        "website": "https://www.pkn.pl/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Białystok",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.pkn.pl/",
+        "last_seen": "2026-04-11T10:44:08.812535+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Strona główna | Polski Komitet Normalizacyjny",
+        "email": "daneosobowe@pkn.pl",
+        "phone": null,
+        "website": "https://www.pkn.pl/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "Białystok",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.pkn.pl/",
+        "last_seen": "2026-04-11T10:44:08.812559+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kalenderpedia - Informationen zum Kalender",
+        "email": "info@kalenderpedia.de",
+        "phone": null,
+        "website": "https://www.kalenderpedia.de/",
+        "address": "Akademischer Kal. 26/27",
+        "category": "veranstaltungsagentur",
+        "region": "München",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kalenderpedia.de/",
+        "last_seen": "2026-04-11T10:44:29.785827+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kalender 2026",
+        "email": "kontakt@timeanddate.de",
+        "phone": "2025 2026 2027",
+        "website": "https://www.timeanddate.de/kalender/",
+        "address": null,
+        "category": "veranstaltungsagentur",
+        "region": "München",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.timeanddate.de/kalender/",
+        "last_seen": "2026-04-11T10:44:30.217643+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "email": "info@upupup.be",
+        "phone": null,
+        "website": "https://upupup.be/festival/",
+        "address": "festival. Pendant 4 journées professionnelles, spectacles, échanges & mise",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://upupup.be/festival/",
+        "last_seen": "2026-04-11T10:47:00.999324+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "email": "accueil@upupup.be",
+        "phone": null,
+        "website": "https://upupup.be/festival/",
+        "address": "festival. Pendant 4 journées professionnelles, spectacles, échanges & mise",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://upupup.be/festival/",
+        "last_seen": "2026-04-11T10:47:00.999349+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "email": "intendance@upupup.be",
+        "phone": null,
+        "website": "https://upupup.be/festival/",
+        "address": "festival. Pendant 4 journées professionnelles, spectacles, échanges & mise",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://upupup.be/festival/",
+        "last_seen": "2026-04-11T10:47:00.999365+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "email": "multimedia@upupup.be",
+        "phone": null,
+        "website": "https://upupup.be/festival/",
+        "address": "festival. Pendant 4 journées professionnelles, spectacles, échanges & mise",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://upupup.be/festival/",
+        "last_seen": "2026-04-11T10:47:00.999380+00:00",
+        "status": "new"
+      },
+      {
+        "name": "The performing arts in Flanders | Flanders Arts Institute",
+        "email": "advies@kunsten.be",
+        "phone": null,
+        "website": "https://www.kunsten.be/en/disciplines/performing-arts/the-performing-arts-in-flanders/",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://www.kunsten.be/en/disciplines/performing-arts/the-performing-arts-in-flanders/",
+        "last_seen": "2026-04-11T10:47:02.475742+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Théâtre National",
+        "email": "billetterie@theatrenational.be",
+        "phone": "+32 2 203 53 03",
+        "website": "https://www.theatrenational.be/",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://www.theatrenational.be/",
+        "last_seen": "2026-04-11T10:47:03.434153+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Théâtre National",
+        "email": "info@theatrenational.be",
+        "phone": "+32 2 203 53 03",
+        "website": "https://www.theatrenational.be/",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://www.theatrenational.be/",
+        "last_seen": "2026-04-11T10:47:03.434179+00:00",
+        "status": "new"
+      },
+      {
+        "name": "HOME | BrusselsChamberChoir",
+        "email": "info@brusselschamberchoir.be",
+        "phone": null,
+        "website": "https://www.brusselschamberchoir.be/",
+        "address": ", a spectacular sound and light show to celebrate the 800th anniversary of the Brussels Cathedral. Each evening singers from the BCC perform favourites of the classical repertoire, accompanying a narr",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "source_url": "https://www.brusselschamberchoir.be/",
+        "last_seen": "2026-04-11T10:47:04.777387+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "email": "bilety@teatrpolski.pl",
+        "phone": "554 10 00 818",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "last_seen": "2026-04-11T10:47:09.563273+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "email": "tp@teatrpolski.pl",
+        "phone": "554 10 00 818",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "last_seen": "2026-04-11T10:47:09.563298+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "email": "jacek.grabarczyk@teatrpolski.pl",
+        "phone": "554 10 00 818",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "last_seen": "2026-04-11T10:47:09.563312+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "email": "natalia.gryszowka@teatrpolski.pl",
+        "phone": "554 10 00 818",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "address": null,
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.teatrpolski.pl/kontakt.html?lang=en",
+        "last_seen": "2026-04-11T10:47:09.563325+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Bydgoskie Centrum Sztuki",
+        "email": "bcs@horno.pl",
+        "phone": "+48 668 892 896",
+        "website": "https://bcs.bydgoszcz.pl/kontakt/",
+        "address": "ul. Jagiellońska 47",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://bcs.bydgoszcz.pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:10.962354+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Festiwal Prapremier",
+        "email": "joanna.kraszewska@teatrpolski.pl",
+        "phone": "554 10 00 818",
+        "website": "https://festiwalprapremier.pl/pl/kontakt/",
+        "address": "Wejście do kasy biletowej od strony Parku Kochanowskiego, od ul. 20 stycznia 1920 roku.",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://festiwalprapremier.pl/pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:12.389075+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "email": "mck@mck-bydgoszcz.pl",
+        "phone": "52 32 55 540",
+        "website": "https://mck-bydgoszcz.pl/kontakt/",
+        "address": "ul. Bydgoska 9, 86-070, Ostromecko",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mck-bydgoszcz.pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:12.990489+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "email": "dyrekcja@mck-bydgoszcz.pl",
+        "phone": "52 32 55 540",
+        "website": "https://mck-bydgoszcz.pl/kontakt/",
+        "address": "ul. Bydgoska 9, 86-070, Ostromecko",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mck-bydgoszcz.pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:12.990517+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "email": "sekretariat@mck-bydgoszcz.pl",
+        "phone": "52 32 55 540",
+        "website": "https://mck-bydgoszcz.pl/kontakt/",
+        "address": "ul. Bydgoska 9, 86-070, Ostromecko",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mck-bydgoszcz.pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:12.990532+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "email": "bartosz.jaszczyk@mck-bydgoszcz.pl",
+        "phone": "52 32 55 540",
+        "website": "https://mck-bydgoszcz.pl/kontakt/",
+        "address": "ul. Bydgoska 9, 86-070, Ostromecko",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mck-bydgoszcz.pl/kontakt/",
+        "last_seen": "2026-04-11T10:47:12.990546+00:00",
+        "status": "new"
       }
     ],
     "engine": [
@@ -14413,6 +14908,16 @@
         "website": "https://www.buehnen-frankfurt.de/kontakt/"
       },
       {
+        "email": "accueil@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://upupup.be/festival/"
+      },
+      {
         "email": "ack@uwm.edu.pl",
         "name": "Kontakt - Akademickie Centrum Kultury",
         "category": "agencja kulturalna",
@@ -14461,6 +14966,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.gov.pl/web/pzsmbydgoszcz/administracja2"
+      },
+      {
+        "email": "advies@kunsten.be",
+        "name": "The performing arts in Flanders | Flanders Arts Institute",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://www.kunsten.be/en/disciplines/performing-arts/the-performing-arts-in-flanders/"
       },
       {
         "email": "agadzina@amuz.edu.pl",
@@ -14883,6 +15398,36 @@
         "website": "https://www.live.com.pl/pl/"
       },
       {
+        "email": "bartosz.jaszczyk@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck-bydgoszcz.pl/kontakt/"
+      },
+      {
+        "email": "bas.dingemans@programmeerplaats.nl",
+        "name": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+        "category": "filharmonia",
+        "region": "Gdańsk",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "website": "https://programmeerplaats.nl/wat-is-een-query/"
+      },
+      {
+        "email": "bcs@horno.pl",
+        "name": "Kontakt – Bydgoskie Centrum Sztuki",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bcs.bydgoszcz.pl/kontakt/"
+      },
+      {
         "email": "bdpp@bn.org.pl",
         "name": "Biblioteka Narodowa",
         "category": "biblioteka publiczna",
@@ -15083,6 +15628,16 @@
         "website": "https://eneastadion.pl/kontakt/"
       },
       {
+        "email": "bilety@teatrpolski.pl",
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en"
+      },
+      {
         "email": "bilety@ticketclub.pl",
         "name": "Royal Chopin Hall przy Klasztorze O.O. Bernardynów: bilety na wydarzenia, koncerty, kalendarz imprez 2026/2027 - TicketClub.pl",
         "category": "concert hall",
@@ -15091,6 +15646,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://ticketclub.pl/miejsca/royal-chopin-hall-przy-klasztorze-oo-bernardynow-krakow-407/"
+      },
+      {
+        "email": "billetterie@theatrenational.be",
+        "name": "Théâtre National",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://www.theatrenational.be/"
       },
       {
         "email": "bip@um.wroc.pl",
@@ -16143,6 +16708,16 @@
         "website": "http://okgk.bip.eur.pl/public/?id=180031"
       },
       {
+        "email": "daneosobowe@pkn.pl",
+        "name": "Strona główna | Polski Komitet Normalizacyjny",
+        "category": "veranstaltungsagentur",
+        "region": "Białystok",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.pkn.pl/"
+      },
+      {
         "email": "dariusz.klimek@artagencja.pl",
         "name": "Kontakt – Dariusz Klimek Agencja Artystyczna",
         "category": "agencja artystyczna",
@@ -16311,6 +16886,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://kulturbuero-dresden.de/Kontakt"
+      },
+      {
+        "email": "dyrekcja@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck-bydgoszcz.pl/kontakt/"
       },
       {
         "email": "dyrekcja@teatrmuzyczny.torun.pl",
@@ -16551,6 +17136,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.stuttgarter-musikschule.de/start/ueber+uns/kontakt.html"
+      },
+      {
+        "email": "event@visitwallonia.be",
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege"
       },
       {
         "email": "events@hannover96.de",
@@ -17253,6 +17848,16 @@
         "website": "http://www.biblioteka-ostrow.pl/"
       },
       {
+        "email": "info@brusselschamberchoir.be",
+        "name": "HOME | BrusselsChamberChoir",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://www.brusselschamberchoir.be/"
+      },
+      {
         "email": "info@bs.katowice.pl",
         "name": "Biblioteka Śląska - Biblioteka Śląska jest biblioteką publiczną i wojewódzką o statusie naukowym.",
         "category": "biblioteka publiczna",
@@ -17343,6 +17948,16 @@
         "website": "https://www.dresden.de/en/091/contact.php"
       },
       {
+        "email": "info@dutchmachineshop.com",
+        "name": "≥ Spantangen voor Gereedschap en Freesmachines | Marktplaats",
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "website": "https://www.marktplaats.nl/l/doe-het-zelf-en-verbouw/gereedschap-freesmachines/q/spantangen/?msockid=1c787e84cb91659619d269bcca5d642f"
+      },
+      {
         "email": "info@elbland.de",
         "name": "Kulturpalast Dresden • Konzerthaus » OAD Elbland Dresden",
         "category": "konzertsaal",
@@ -17411,6 +18026,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.frakk.de/kontakt/"
+      },
+      {
+        "email": "info@freesjes.nl",
+        "name": "Bovenfrees spantang 8,0 mm",
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "website": "https://www.freesjes.nl/nl/spantangen/black-decker-elu/bovenfrees-spantang-8-0-mm/a-1731-10000227"
       },
       {
         "email": "info@freunde-der-staatsgalerie.de",
@@ -17523,6 +18148,16 @@
         "website": "https://www.hamburg.de/branchenbuch/hamburg/veranstaltungsagentur/"
       },
       {
+        "email": "info@kalenderpedia.de",
+        "name": "Kalenderpedia - Informationen zum Kalender",
+        "category": "veranstaltungsagentur",
+        "region": "München",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kalenderpedia.de/"
+      },
+      {
         "email": "info@konzert-verein.de",
         "name": "Konzert Verein: Kontakt",
         "category": "konzertsaal",
@@ -17613,6 +18248,16 @@
         "website": "https://www.musikfonds.de/node/10776"
       },
       {
+        "email": "info@netzverb.de",
+        "name": "Konjugation \"unterhalten\" - Alle Formen des Verbs, Beispiele, Regeln | Netzverb Wörterbuch",
+        "category": "konzerthaus",
+        "region": "Białystok",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.verbformen.de/konjugation/unterhalten.htm"
+      },
+      {
         "email": "info@oberueber-karger.de",
         "name": "Impressum - Stiftung Kunst und Musik für Dresden",
         "category": "arts foundation",
@@ -17673,6 +18318,16 @@
         "website": "https://www.call-a-pizza.de/berlin-lieferservice"
       },
       {
+        "email": "info@oye-oye.net",
+        "name": "Les mémoires de Grétry à Bruxelles, Restaurants",
+        "category": "agencja kulturalna",
+        "region": "Białystok",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://local.infobel.be/BE100499549-022181519/les_memoires_de_gretry-bruxelles.html"
+      },
+      {
         "email": "info@partyboot.net",
         "name": "Veranstaltungsagentur Hamburg - 103 Adressen - hamburg.de",
         "category": "veranstaltungsagentur",
@@ -17691,6 +18346,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://pavillon-hannover.de/kontakt/oeffnungszeiten-und-kontakt"
+      },
+      {
+        "email": "info@pkn.pl",
+        "name": "Strona główna | Polski Komitet Normalizacyjny",
+        "category": "veranstaltungsagentur",
+        "region": "Białystok",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.pkn.pl/"
       },
       {
         "email": "info@prawodlapraktykow.pl",
@@ -17733,6 +18398,16 @@
         "website": "https://www.stuttgart-tourist.de/en/a-musikzentrum-baden-wuerttemberg"
       },
       {
+        "email": "info@theatrenational.be",
+        "name": "Théâtre National",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://www.theatrenational.be/"
+      },
+      {
         "email": "info@tokantis.pl",
         "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
         "category": "agencja eventowa",
@@ -17763,6 +18438,16 @@
         "website": "https://www.musik-fuer-dich.de/impressum"
       },
       {
+        "email": "info@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://upupup.be/festival/"
+      },
+      {
         "email": "info@vdwklang.pl",
         "name": "Home",
         "category": "organizacja wydarzeń",
@@ -17791,6 +18476,26 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://visitbydgoszcz.pl/pl/miejsca/21-instytucje-kultury/912-kujawsko-pomorskie-centrum-kul"
+      },
+      {
+        "email": "info@visitezliege.be",
+        "name": "Accueil | La Maison du Tourisme de Liège",
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://www.visitezliege.be/fr"
+      },
+      {
+        "email": "info@visitwallonia.be",
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege"
       },
       {
         "email": "info@welcome.hamburg.de",
@@ -17931,6 +18636,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://kpck.pl/kontakt/"
+      },
+      {
+        "email": "intendance@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://upupup.be/festival/"
       },
       {
         "email": "intendanz@dresdnerphilharmonie.de",
@@ -18153,6 +18868,16 @@
         "website": "https://www.ck.przemysl.pl/kontakt-bip"
       },
       {
+        "email": "jacek.grabarczyk@teatrpolski.pl",
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en"
+      },
+      {
         "email": "jacek@agenart.pl",
         "name": "Kontakt – AgenArt",
         "category": "agencja artystyczna",
@@ -18271,6 +18996,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.nfm.wroclaw.pl/en/contact-us"
+      },
+      {
+        "email": "joanna.kraszewska@teatrpolski.pl",
+        "name": "Kontakt – Festiwal Prapremier",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://festiwalprapremier.pl/pl/kontakt/"
       },
       {
         "email": "joerglothar.schneider@duesseldorf.de",
@@ -19223,6 +19958,16 @@
         "website": "https://ticketclub.pl/miejsca/royal-chopin-hall-przy-klasztorze-oo-bernardynow-krakow-407/"
       },
       {
+        "email": "kontakt@timeanddate.de",
+        "name": "Kalender 2026",
+        "category": "veranstaltungsagentur",
+        "region": "München",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.timeanddate.de/kalender/"
+      },
+      {
         "email": "kontakt@tixsel.pl",
         "name": "Gdyńskie Centrum Kultury – …",
         "category": "dom kultury",
@@ -20073,6 +20818,16 @@
         "website": "https://www.gov.pl/web/bip/pole-kultury-samorzadowa-instytucja-kultury-miasta-i-gminy-niepolomice-malopolskie-wielicki-niepolomice"
       },
       {
+        "email": "mck@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck-bydgoszcz.pl/kontakt/"
+      },
+      {
         "email": "mckostr@mck.ostrowiec.pl",
         "name": "Kontakt - MCK Ostrowiec",
         "category": "ośrodek kultury",
@@ -20293,6 +21048,16 @@
         "website": "https://beevents.pl/kontakt/"
       },
       {
+        "email": "multimedia@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "category": "performing arts center",
+        "region": "Katowice",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://upupup.be/festival/"
+      },
+      {
         "email": "muzeum@pft.wroc.pl",
         "name": "Biblioteki",
         "category": "biblioteka publiczna",
@@ -20361,6 +21126,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.musiccenter.com.pl/kontakt"
+      },
+      {
+        "email": "natalia.gryszowka@teatrpolski.pl",
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en"
       },
       {
         "email": "natalia.motylicka@bobrowo.org",
@@ -21323,6 +22098,16 @@
         "website": "https://mdk.wroclaw.pl/kontakt/"
       },
       {
+        "email": "redacteur@visitwallonia.be",
+        "name": "Visiter la ville de Liège et découvrir ses incontournables",
+        "category": "fundacja kulturalna",
+        "region": "Hamburg",
+        "country_code": "BE",
+        "country_name": "Belgia",
+        "language": "en",
+        "website": "https://visitwallonia.be/fr-be/3/ou-aller/villes-wallonnes/liege"
+      },
+      {
         "email": "redaksjonen@snl.no",
         "name": "Falklandsøyene – britisk territorium i Atlanteren – SNL",
         "category": "miejski ośrodek kultury",
@@ -22203,6 +22988,16 @@
         "website": "https://www.kck.com.pl/kontakt"
       },
       {
+        "email": "sekretariat@kiepura.pl",
+        "name": "ᐅ Godziny otwarcia „Sala Widowiskowo - Koncertowa MUZA“ | Warszawska 2 w Sosnowiec",
+        "category": "sala koncertowa",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://godzinyotwarcia24.pl/Sala-Widowiskowo-Koncertowa-Muza-Sosnowiec-KYYZJ6"
+      },
+      {
         "email": "sekretariat@kisgniewkowo.pl",
         "name": "Portal - MGOKSiR Gniewkowo",
         "category": "gminny ośrodek kultury",
@@ -22241,6 +23036,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://bip.mbp.katowice.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mck-bydgoszcz.pl/kontakt/"
       },
       {
         "email": "sekretariat@mdk.wroclaw.pl",
@@ -23063,6 +23868,16 @@
         "website": "https://www.milleniumhall.pl/kontakt.html"
       },
       {
+        "email": "tp@teatrpolski.pl",
+        "name": "Teatr Polski Bydgoszcz - kontakt",
+        "category": "performing arts center",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.teatrpolski.pl/kontakt.html?lang=en"
+      },
+      {
         "email": "travel@seven-event.pl",
         "name": "Seven event group contact - SEVEN",
         "category": "event agency",
@@ -23251,6 +24066,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://ksg-dresden.de/fv-kontakt"
+      },
+      {
+        "email": "verkoop@baptist.nl",
+        "name": "Spantangen - Baptist",
+        "category": "stowarzyszenie muzyczne",
+        "region": "Toruń",
+        "country_code": "NL",
+        "country_name": "Holandia",
+        "language": "en",
+        "website": "https://baptist.nl/frezen/spantangen"
       },
       {
         "email": "vermittlung.schauspiel@staatstheater-stuttgart.de",
@@ -24228,6 +25053,96 @@
         "email": "artur.wijata@kck.com.pl",
         "name": "Kontakt - Kieleckie Centrum Kultury",
         "sent_at": "2026-04-10T11:26:20.413980+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "accueil@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "sent_at": "2026-04-11T11:01:45.749448+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "advies@kunsten.be",
+        "name": "The performing arts in Flanders | Flanders Arts Institute",
+        "sent_at": "2026-04-11T11:01:50.817359+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "assistenz@wkv-stuttgart.de",
+        "name": "Württ. Kunstverein Stuttgart: Info",
+        "sent_at": "2026-04-11T11:01:55.421288+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "astrid.bernicke@bkm.hamburg.de",
+        "name": "Kontaktinformationen der Behörde für Kultur und Medien - hamburg.de",
+        "sent_at": "2026-04-11T11:01:59.917178+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "astrid.kaulich@volkstheater.at",
+        "name": "Kontakt - Volkstheater Wien",
+        "sent_at": "2026-04-11T11:02:04.183868+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "audycje@filharmonia.pl",
+        "name": "Kontakt Filharmonia Narodowa",
+        "sent_at": "2026-04-11T11:02:08.624632+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "aw@dommuseum.at",
+        "name": "Dom Museum Wien - Team",
+        "sent_at": "2026-04-11T11:02:12.893043+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "awareness@hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-04-11T11:02:17.408505+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "b.frankowska-patrzykont@mik.waw.pl",
+        "name": "Mazowieckie Obserwatorium Kultury - kontakt",
+        "sent_at": "2026-04-11T11:02:21.675454+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "b.majchrzak@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-04-11T11:02:26.122221+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "b.morawiec@lustrobiblioteki.pl",
+        "name": "Biblioteki cyfrowe w Polsce - Lustro Biblioteki",
+        "sent_at": "2026-04-11T11:02:30.402873+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "b.peter@chs-hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-04-11T11:02:34.818873+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bankingline@bankzweiplus.ch",
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "sent_at": "2026-04-11T11:02:39.085356+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "barrierefrei@elbphilharmonie.de",
+        "name": "Ticketing Information - Elbphilharmonie",
+        "sent_at": "2026-04-11T11:02:43.354926+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "barrierefreiheit@kultur.berlin.de",
+        "name": "Wir über uns – Leitung und Organisation - Berlin.de",
+        "sent_at": "2026-04-11T11:02:47.626019+00:00",
         "status": "sent"
       }
     ]
