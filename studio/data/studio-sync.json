@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-11T11:02:48.399991+00:00",
+  "generatedAt": "2026-04-12T11:06:48.674230+00:00",
   "sourceStats": {
-    "baza": 984,
-    "nowe": 33,
-    "engine": 970,
-    "sent": 111
+    "baza": 1056,
+    "nowe": 72,
+    "engine": 1042,
+    "sent": 126
   },
   "sourceRuns": {
-    "lead_machine_last_run": "2026-04-11T10:48:00.347813+00:00",
-    "lead_machine_added_rows": 33,
-    "engine_last_run": "2026-04-11T11:02:47.626253+00:00",
+    "lead_machine_last_run": "2026-04-12T10:54:23.708791+00:00",
+    "lead_machine_added_rows": 72,
+    "engine_last_run": "2026-04-12T11:06:26.481990+00:00",
     "engine_attempted": 15,
     "engine_sent": 15
   },
@@ -14774,9 +14774,1099 @@
         "source_url": "https://mck-bydgoszcz.pl/kontakt/",
         "last_seen": "2026-04-11T10:47:12.990546+00:00",
         "status": "new"
+      },
+      {
+        "name": "Filme",
+        "email": "info@zdf.de",
+        "phone": null,
+        "website": "https://www.zdf.de/filme",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.zdf.de/filme",
+        "last_seen": "2026-04-12T10:40:39.004551+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filme",
+        "email": "pressedesk@zdf.de",
+        "phone": null,
+        "website": "https://www.zdf.de/filme",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.zdf.de/filme",
+        "last_seen": "2026-04-12T10:40:39.004572+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filme",
+        "email": "unternehmensarchiv@zdf.de",
+        "phone": null,
+        "website": "https://www.zdf.de/filme",
+        "address": null,
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.zdf.de/filme",
+        "last_seen": "2026-04-12T10:40:39.004582+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Sale Prób Dźwiękówa – Profesjonalne sale prób i studio nagrań we Wrocławiu.",
+        "email": "info@dzwiekowa.pl",
+        "phone": null,
+        "website": "https://dzwiekowa.pl/",
+        "address": null,
+        "category": "sala muzyczna",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://dzwiekowa.pl/",
+        "last_seen": "2026-04-12T10:41:44.956302+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Aktualności | OSM PLOCK",
+        "email": "sekretariat@psmplock.pl",
+        "phone": "24 2622470",
+        "website": "https://www.muzycznaplock.pl/",
+        "address": "Galeria MOSTY w Płocku, ul. Tysiąclecia 1",
+        "category": "sala muzyczna",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.muzycznaplock.pl/",
+        "last_seen": "2026-04-12T10:41:46.090062+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filharmonia Krakowska Zwierzyniecka 1 - Kraków | CityOn.pl",
+        "email": "administracja@cityon.pl",
+        "phone": null,
+        "website": "https://cityon.pl/miejsce/filharmonia-krakowska-zwierzyniecka-1-krakow",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://cityon.pl/miejsce/filharmonia-krakowska-zwierzyniecka-1-krakow",
+        "last_seen": "2026-04-12T10:42:14.877562+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filharmonia Krakowska",
+        "email": "kasa@filharmonia.krakow.pl",
+        "phone": "12 619 87 22",
+        "website": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/",
+        "address": "(zgodnie z § 1, punkt 2, litera e), a także online poprzez stronę www.filharmoniakrakow.pl.",
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/",
+        "last_seen": "2026-04-12T10:42:15.595324+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filharmonia Krakowska",
+        "email": "iod@filharmonia.krakow.pl",
+        "phone": "12 619 87 22",
+        "website": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/",
+        "address": "(zgodnie z § 1, punkt 2, litera e), a także online poprzez stronę www.filharmoniakrakow.pl.",
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/",
+        "last_seen": "2026-04-12T10:42:15.595356+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "email": "a.tuderek@filhamonia.szczecin.pl",
+        "phone": "+48 531 300 190",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "last_seen": "2026-04-12T10:42:21.359842+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "email": "w.wiezowska@filharmonia.szczecin.pl",
+        "phone": "+48 531 300 190",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "last_seen": "2026-04-12T10:42:21.359863+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "email": "rzecznik@filharmonia.szczecin.pl",
+        "phone": "+48 531 300 190",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mdf.filharmonia.szczecin.pl/pl/kontakt",
+        "last_seen": "2026-04-12T10:42:21.359876+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Filharmonia im. Mieczysława Karłowicza w Szczecinie",
+        "email": "j.gibowski@filharmonia.szczecin.pl",
+        "phone": null,
+        "website": "https://filharmonia.szczecin.pl/de",
+        "address": null,
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://filharmonia.szczecin.pl/de",
+        "last_seen": "2026-04-12T10:42:22.821314+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Filharmonia w Szczecinie",
+        "email": "info.ilyo@filharmonia.szczecin.pl",
+        "phone": "+48 91 430 95 10",
+        "website": "https://ilyo.pl/2019/pl/kontakt",
+        "address": "ul. Małopolska 48, 70-515 Szczecin",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://ilyo.pl/2019/pl/kontakt",
+        "last_seen": "2026-04-12T10:42:25.211551+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "email": "kierownik@terminalkultury.pl",
+        "phone": "113-19-83-943",
+        "website": "https://terminalkultury.pl/",
+        "address": "ul. Jana Nowaka-Jeziorańskiego 24, 03-982 Warszawa",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://terminalkultury.pl/",
+        "last_seen": "2026-04-12T10:43:17.793737+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "email": "biuro@terminalkultury.pl",
+        "phone": "113-19-83-943",
+        "website": "https://terminalkultury.pl/",
+        "address": "ul. Jana Nowaka-Jeziorańskiego 24, 03-982 Warszawa",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://terminalkultury.pl/",
+        "last_seen": "2026-04-12T10:43:17.793760+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "email": "edukacja@terminalkultury.pl",
+        "phone": "113-19-83-943",
+        "website": "https://terminalkultury.pl/",
+        "address": "ul. Jana Nowaka-Jeziorańskiego 24, 03-982 Warszawa",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://terminalkultury.pl/",
+        "last_seen": "2026-04-12T10:43:17.793775+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "email": "imprezy@terminalkultury.pl",
+        "phone": "113-19-83-943",
+        "website": "https://terminalkultury.pl/",
+        "address": "ul. Jana Nowaka-Jeziorańskiego 24, 03-982 Warszawa",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://terminalkultury.pl/",
+        "last_seen": "2026-04-12T10:43:17.793788+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "email": "zsp01@edu.bydgoszcz.pl",
+        "phone": "52 373 25 15",
+        "website": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html",
+        "address": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "category": "dom kultury",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html",
+        "last_seen": "2026-04-12T10:43:31.351252+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "email": "mdk3@zsip1.bydgoszcz.pl",
+        "phone": "52 373 25 15",
+        "website": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html",
+        "address": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "category": "dom kultury",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html",
+        "last_seen": "2026-04-12T10:43:31.351291+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej",
+        "email": "sekretariat@mops.bielsko.pl",
+        "phone": null,
+        "website": "https://pokonajprzemoc.lk.pl/strona/kontakt",
+        "address": "Plac Ratuszowy 9",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://pokonajprzemoc.lk.pl/strona/kontakt",
+        "last_seen": "2026-04-12T10:43:54.859877+00:00",
+        "status": "new"
+      },
+      {
+        "name": "BCK im. M.Koterbskiej",
+        "email": "iod@bck.bielsko.pl",
+        "phone": "547-004-60-60",
+        "website": "https://www.bck.bielsko.pl/kontakt",
+        "address": "ul. Juliusza Słowackiego 27",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.bck.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:43:56.596997+00:00",
+        "status": "new"
+      },
+      {
+        "name": "BCK im. M.Koterbskiej",
+        "email": "bilety@bck.bielsko.pl",
+        "phone": "547-004-60-60",
+        "website": "https://www.bck.bielsko.pl/kontakt",
+        "address": "ul. Juliusza Słowackiego 27",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.bck.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:43:56.597031+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "email": "a.witos@mops.bielsko.pl",
+        "phone": "+48 33 499 56 50",
+        "website": "https://www.gov.pl/web/bip/miejski-osrodek-pomocy-spolecznej-w-bielsku-bialej-slaskie-bielsko-biala-bielsko-biala",
+        "address": null,
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.gov.pl/web/bip/miejski-osrodek-pomocy-spolecznej-w-bielsku-bialej-slaskie-bielsko-biala-bielsko-biala",
+        "last_seen": "2026-04-12T10:44:00.028916+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "email": "sekretariat@mokmiedzyrzecz.pl",
+        "phone": "95 741 18 02",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/",
+        "address": "Ul. Konstytucji 3 Maja 30",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mokmiedzyrzecz.pl/kontakt/",
+        "last_seen": "2026-04-12T10:44:32.124141+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "email": "dyrektor@mokmiedzyrzecz.pl",
+        "phone": "95 741 18 02",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/",
+        "address": "Ul. Konstytucji 3 Maja 30",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mokmiedzyrzecz.pl/kontakt/",
+        "last_seen": "2026-04-12T10:44:32.124163+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "email": "kultura@mokmiedzyrzecz.pl",
+        "phone": "95 741 18 02",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/",
+        "address": "Ul. Konstytucji 3 Maja 30",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mokmiedzyrzecz.pl/kontakt/",
+        "last_seen": "2026-04-12T10:44:32.124178+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "email": "promocja@mokmiedzyrzecz.pl",
+        "phone": "95 741 18 02",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/",
+        "address": "Ul. Konstytucji 3 Maja 30",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://mokmiedzyrzecz.pl/kontakt/",
+        "last_seen": "2026-04-12T10:44:32.124191+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "email": "sekretariat@bok.waw.pl",
+        "phone": "524-19-88-895",
+        "website": "https://bok.waw.pl/kontakt",
+        "address": "ul. van Gogha 1",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://bok.waw.pl/kontakt",
+        "last_seen": "2026-04-12T10:45:10.990463+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "email": "kasa@bok.waw.pl",
+        "phone": "524-19-88-895",
+        "website": "https://bok.waw.pl/kontakt",
+        "address": "ul. van Gogha 1",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://bok.waw.pl/kontakt",
+        "last_seen": "2026-04-12T10:45:10.990482+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "email": "3pokoje@bok.waw.pl",
+        "phone": "524-19-88-895",
+        "website": "https://bok.waw.pl/kontakt",
+        "address": "ul. van Gogha 1",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://bok.waw.pl/kontakt",
+        "last_seen": "2026-04-12T10:45:10.990495+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "email": "e.sawicka@bok.waw.pl",
+        "phone": "524-19-88-895",
+        "website": "https://bok.waw.pl/kontakt",
+        "address": "ul. van Gogha 1",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://bok.waw.pl/kontakt",
+        "last_seen": "2026-04-12T10:45:10.990507+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "email": "jok_janowl@op.pl",
+        "phone": "862-10-06-457",
+        "website": "https://jokjanow.pl/kontakt/",
+        "address": "ul. Jana Pawła II 3",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://jokjanow.pl/kontakt/",
+        "last_seen": "2026-04-12T10:45:14.046405+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "email": "jok.mr.ksiegowosc@onet.com.pl",
+        "phone": "862-10-06-457",
+        "website": "https://jokjanow.pl/kontakt/",
+        "address": "ul. Jana Pawła II 3",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://jokjanow.pl/kontakt/",
+        "last_seen": "2026-04-12T10:45:14.046450+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "email": "jok_andrzejw@onet.eu",
+        "phone": "862-10-06-457",
+        "website": "https://jokjanow.pl/kontakt/",
+        "address": "ul. Jana Pawła II 3",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://jokjanow.pl/kontakt/",
+        "last_seen": "2026-04-12T10:45:14.046480+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt | Messegelände Hannover",
+        "email": "datenschutz@messe.de",
+        "phone": null,
+        "website": "https://en.messegelaende.de/kontakt",
+        "address": null,
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://en.messegelaende.de/kontakt",
+        "last_seen": "2026-04-12T10:45:15.843330+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt | Messegelände Hannover",
+        "email": "guestevents@messe.de",
+        "phone": null,
+        "website": "https://en.messegelaende.de/kontakt",
+        "address": null,
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://en.messegelaende.de/kontakt",
+        "last_seen": "2026-04-12T10:45:15.843348+00:00",
+        "status": "new"
+      },
+      {
+        "name": "IEA Report — “Batteries & Secure Energy Transition”: Key Findings",
+        "email": "info@kyon-energy.com",
+        "phone": "89 413261042",
+        "website": "https://www.kyon-energy.de/en/blog/iea-report-batteries-secure-energy-transition-die-wichtigsten-erkenntnisse",
+        "address": null,
+        "category": "agencja impresaryjna",
+        "region": "Rzeszów",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.kyon-energy.de/en/blog/iea-report-batteries-secure-energy-transition-die-wichtigsten-erkenntnisse",
+        "last_seen": "2026-04-12T10:45:57.705498+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Deutscher Bundestag - Jakob-Kaiser-Haus",
+        "email": "mail@bundestag.de",
+        "phone": null,
+        "website": "https://www.bundestag.de/besuche/architektur/kaiserhaus/kaiserhaus-198854",
+        "address": null,
+        "category": "fundacja muzyczna",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.bundestag.de/besuche/architektur/kaiserhaus/kaiserhaus-198854",
+        "last_seen": "2026-04-12T10:46:12.542697+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Velkommen Til Tempoklubben | Norsk Tempoklubb",
+        "email": "styret@tempoklubben.com",
+        "phone": "1885 11 05774",
+        "website": "https://www.tempoklubben.no/",
+        "address": null,
+        "category": "festiwal muzyczny",
+        "region": "Köln",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "source_url": "https://www.tempoklubben.no/",
+        "last_seen": "2026-04-12T10:48:01.649913+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Velkommen Til Tempoklubben | Norsk Tempoklubb",
+        "email": "tempoposten@tempoklubben.com",
+        "phone": "1885 11 05774",
+        "website": "https://www.tempoklubben.no/",
+        "address": null,
+        "category": "festiwal muzyczny",
+        "region": "Köln",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "source_url": "https://www.tempoklubben.no/",
+        "last_seen": "2026-04-12T10:48:01.649933+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kosovo | Kriege und Konflikte | bpb.de",
+        "email": "info@bpb.de",
+        "phone": "143931701",
+        "website": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/",
+        "address": "Wie sehr der Konflikt eskaliert ist, zeigt der Streit um das Verbot serbischer Autokennzeichen, Ausweise und Pässe auf kosovarischem Gebiet. Als Reaktion kam es im Herbst 2022 an der Grenze zu Serbien",
+        "category": "konzertsaal",
+        "region": "Katowice",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/",
+        "last_seen": "2026-04-12T10:48:22.253456+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kosovo | Kriege und Konflikte | bpb.de",
+        "email": "poststelle@bpb.de",
+        "phone": "143931701",
+        "website": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/",
+        "address": "Wie sehr der Konflikt eskaliert ist, zeigt der Streit um das Verbot serbischer Autokennzeichen, Ausweise und Pässe auf kosovarischem Gebiet. Als Reaktion kam es im Herbst 2022 an der Grenze zu Serbien",
+        "category": "konzertsaal",
+        "region": "Katowice",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/",
+        "last_seen": "2026-04-12T10:48:22.253484+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "karten@koelnmusik.de",
+        "phone": "+49 221 280 280",
+        "website": "https://www.koelner-philharmonie.de/de/kontakt",
+        "address": null,
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.koelner-philharmonie.de/de/kontakt",
+        "last_seen": "2026-04-12T10:48:41.113447+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - Alte Philharmonie MÃ¼nster",
+        "email": "info@alte-philharmonie.de",
+        "phone": "02582-8013",
+        "website": "http://alte-philharmonie.de/kontakt/",
+        "address": null,
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "http://alte-philharmonie.de/kontakt/",
+        "last_seen": "2026-04-12T10:48:41.733726+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Isarphilharmonie - Gasteig München",
+        "email": "kommunikation@gasteig.de",
+        "phone": null,
+        "website": "https://www.gasteig.de/raeume/isarphilharmonie/",
+        "address": "Hans-Preißinger-Straße 8, 81379 München",
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.gasteig.de/raeume/isarphilharmonie/",
+        "last_seen": "2026-04-12T10:48:42.691382+00:00",
+        "status": "new"
+      },
+      {
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "email": "feedback@derstandard.at",
+        "phone": null,
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "address": null,
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "last_seen": "2026-04-12T10:49:07.296345+00:00",
+        "status": "new"
+      },
+      {
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "email": "redaktion@derstandard.at",
+        "phone": null,
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "address": null,
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "last_seen": "2026-04-12T10:49:07.296366+00:00",
+        "status": "new"
+      },
+      {
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "email": "tibg@derstandard.at",
+        "phone": null,
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "address": null,
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "last_seen": "2026-04-12T10:49:07.296381+00:00",
+        "status": "new"
+      },
+      {
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "email": "dsa@derstandard.at",
+        "phone": null,
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "address": null,
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "source_url": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen",
+        "last_seen": "2026-04-12T10:49:07.296395+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Festiwal Kontakt | www.torun.pl",
+        "email": "umt@um.torun.pl",
+        "phone": "+48 56 611 87 77",
+        "website": "https://torun.pl/pl/festiwal-kontakt",
+        "address": "Rynek Staromiejski 33",
+        "category": "musikzentrum",
+        "region": "Toruń",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://torun.pl/pl/festiwal-kontakt",
+        "last_seen": "2026-04-12T10:49:36.695685+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Impressum | Freies Musikzentrum München",
+        "email": "info@freies-musikzentrum.de",
+        "phone": null,
+        "website": "https://www.freies-musikzentrum.de/kontakt-service/impressum.html",
+        "address": "In der Ismaninger Straße 29",
+        "category": "musikzentrum",
+        "region": "Toruń",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.freies-musikzentrum.de/kontakt-service/impressum.html",
+        "last_seen": "2026-04-12T10:49:39.834314+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "email": "info@cbfranken.eu",
+        "phone": "0911 891861-57",
+        "website": "https://www.concertbuero-franken.de/",
+        "address": null,
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.concertbuero-franken.de/",
+        "last_seen": "2026-04-12T10:50:11.282803+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "email": "shop@cbfranken.eu",
+        "phone": "0911 891861-57",
+        "website": "https://www.concertbuero-franken.de/",
+        "address": null,
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.concertbuero-franken.de/",
+        "last_seen": "2026-04-12T10:50:11.282823+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "email": "gutschein@cbfranken.eu",
+        "phone": "0911 891861-57",
+        "website": "https://www.concertbuero-franken.de/",
+        "address": null,
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.concertbuero-franken.de/",
+        "last_seen": "2026-04-12T10:50:11.282837+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "sekretariat@szpital.bielsko.pl",
+        "phone": "33 498 40 01",
+        "website": "https://www.onkologia.bielsko.pl/kontakt",
+        "address": "ul. Wyzwolenia 18, 43-300 Bielsko-Biała",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.onkologia.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:50:26.826359+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "radiologia@onkologia.bielsko.pl",
+        "phone": "33 498 40 01",
+        "website": "https://www.onkologia.bielsko.pl/kontakt",
+        "address": "ul. Wyzwolenia 18, 43-300 Bielsko-Biała",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.onkologia.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:50:26.826381+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "zdo_wyspianski@onkologia.bielsko.pl",
+        "phone": "33 498 40 01",
+        "website": "https://www.onkologia.bielsko.pl/kontakt",
+        "address": "ul. Wyzwolenia 18, 43-300 Bielsko-Biała",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.onkologia.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:50:26.826396+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "zakladradioterapii@onkologia.bielsko.pl",
+        "phone": "33 498 40 01",
+        "website": "https://www.onkologia.bielsko.pl/kontakt",
+        "address": "ul. Wyzwolenia 18, 43-300 Bielsko-Biała",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.onkologia.bielsko.pl/kontakt",
+        "last_seen": "2026-04-12T10:50:26.826410+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt",
+        "email": "iodo@rekord.com.pl",
+        "phone": "5470171440",
+        "website": "https://www.rekord.com.pl/kontakt/",
+        "address": "ul. Powstańców Śląskich 9",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.rekord.com.pl/kontakt/",
+        "last_seen": "2026-04-12T10:50:29.114600+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt - EcoShine",
+        "email": "biuro@ecoshine.pl",
+        "phone": null,
+        "website": "https://www.ecoshine.pl/kontakt/",
+        "address": "ul. Międzyleska 4, 50-514 Wrocław",
+        "category": "musikagentur",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://www.ecoshine.pl/kontakt/",
+        "last_seen": "2026-04-12T10:50:37.059321+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt – Aptus Consulting – Biuro Rachunkowe Wrocław",
+        "email": "info@aptusbr.pl",
+        "phone": "+48 888 412 678",
+        "website": "https://aptusbr.pl/kontakt/",
+        "address": "serwisu aptusbr.pl oraz wyrażam zgodę na przetwarzanie przez APTUS CONSULTING SP. Z O.O. z siedzibą we Wrocławiu, ul. Ludwika Rydygiera 16/1 (kod pocztowy: 50-249), udostępnionych przeze mnie danych o",
+        "category": "musikagentur",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "source_url": "https://aptusbr.pl/kontakt/",
+        "last_seen": "2026-04-12T10:50:41.202169+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Rosenthal Musikmanagement Leipzig",
+        "email": "info@rmm-leipzig.de",
+        "phone": "+49-341-99187150",
+        "website": "https://rmm-leipzig.de/",
+        "address": "Oststraße 118",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://rmm-leipzig.de/",
+        "last_seen": "2026-04-12T10:51:03.077843+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Künstleragentur & Künstlervermittlung Leipzig in Sachsen",
+        "email": "info@california-promotion.de",
+        "phone": null,
+        "website": "https://kuenstleragentur-leipzig-halle.de/",
+        "address": null,
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://kuenstleragentur-leipzig-halle.de/",
+        "last_seen": "2026-04-12T10:51:04.399307+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Team - eberhardt konzertagentur",
+        "email": "eberhardt@konzertagentur-leipzig.de",
+        "phone": "170 5 83 19 62",
+        "website": "https://konzertagentur-leipzig.de/vita/",
+        "address": "Hermann-Löns-Str. 11",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://konzertagentur-leipzig.de/vita/",
+        "last_seen": "2026-04-12T10:51:07.760592+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Team - eberhardt konzertagentur",
+        "email": "freier@konzertagentur-leipzig.de",
+        "phone": "170 5 83 19 62",
+        "website": "https://konzertagentur-leipzig.de/vita/",
+        "address": "Hermann-Löns-Str. 11",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://konzertagentur-leipzig.de/vita/",
+        "last_seen": "2026-04-12T10:51:07.760612+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Team - eberhardt konzertagentur",
+        "email": "riebesell@konzertagentur-leipzig.de",
+        "phone": "170 5 83 19 62",
+        "website": "https://konzertagentur-leipzig.de/vita/",
+        "address": "Hermann-Löns-Str. 11",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://konzertagentur-leipzig.de/vita/",
+        "last_seen": "2026-04-12T10:51:07.760625+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt ~ amarcord",
+        "email": "rosenthal@rmm-leipzig.de",
+        "phone": "+49 341 99187150",
+        "website": "https://amarcord.de/kontakt/",
+        "address": "Oststraße 118",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://amarcord.de/kontakt/",
+        "last_seen": "2026-04-12T10:51:08.506637+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt ~ amarcord",
+        "email": "lenke@rmm-leipzig.de",
+        "phone": "+49 341 99187150",
+        "website": "https://amarcord.de/kontakt/",
+        "address": "Oststraße 118",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://amarcord.de/kontakt/",
+        "last_seen": "2026-04-12T10:51:08.506658+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt ~ amarcord",
+        "email": "office@amarcord.de",
+        "phone": "+49 341 99187150",
+        "website": "https://amarcord.de/kontakt/",
+        "address": "Oststraße 118",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://amarcord.de/kontakt/",
+        "last_seen": "2026-04-12T10:51:08.506669+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Kontakt ~ amarcord",
+        "email": "poeche@amarcord.de",
+        "phone": "+49 341 99187150",
+        "website": "https://amarcord.de/kontakt/",
+        "address": "Oststraße 118",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://amarcord.de/kontakt/",
+        "last_seen": "2026-04-12T10:51:08.506680+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agentur Bühnenreif - Die Künstleragentur in Leipzig - Home",
+        "email": "ulrich.hentze@agentur-buehnenreif.de",
+        "phone": "162-30 12 13 7",
+        "website": "https://www.agentur-buehnenreif.de/",
+        "address": null,
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.agentur-buehnenreif.de/",
+        "last_seen": "2026-04-12T10:51:09.472876+00:00",
+        "status": "new"
+      },
+      {
+        "name": "Agentur Bühnenreif - Die Künstleragentur in Leipzig - Home",
+        "email": "info@agentur-amadeus.com",
+        "phone": "162-30 12 13 7",
+        "website": "https://www.agentur-buehnenreif.de/",
+        "address": null,
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "source_url": "https://www.agentur-buehnenreif.de/",
+        "last_seen": "2026-04-12T10:51:09.472894+00:00",
+        "status": "new"
       }
     ],
     "engine": [
+      {
+        "email": "3pokoje@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bok.waw.pl/kontakt"
+      },
       {
         "email": "a.adamek@agencjaperspektywy.pl",
         "name": "Kontakt | Agencja Perspektywy",
@@ -14858,6 +15948,16 @@
         "website": "https://teatrkamienica.pl/pl/kontakt"
       },
       {
+        "email": "a.tuderek@filhamonia.szczecin.pl",
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt"
+      },
+      {
         "email": "a.urbanowicz@teatrkamienica.pl",
         "name": "Kontakt",
         "category": "konzertsaal",
@@ -14876,6 +15976,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://filharmonia.rzeszow.pl/en/kontakt/"
+      },
+      {
+        "email": "a.witos@mops.bielsko.pl",
+        "name": "Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.gov.pl/web/bip/miejski-osrodek-pomocy-spolecznej-w-bielsku-bialej-slaskie-bielsko-biala-bielsko-biala"
       },
       {
         "email": "abo@focus.de",
@@ -14926,6 +16036,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://uwm.edu.pl/ack/archiwum.php?show=kontakt"
+      },
+      {
+        "email": "administracja@cityon.pl",
+        "name": "Filharmonia Krakowska Zwierzyniecka 1 - Kraków | CityOn.pl",
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://cityon.pl/miejsce/filharmonia-krakowska-zwierzyniecka-1-krakow"
       },
       {
         "email": "administracja@kpck.pl",
@@ -15558,6 +16678,16 @@
         "website": "https://agencjaperspektywy.pl/kontakt"
       },
       {
+        "email": "bilety@bck.bielsko.pl",
+        "name": "BCK im. M.Koterbskiej",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.bck.bielsko.pl/kontakt"
+      },
+      {
         "email": "bilety@eskander.pl",
         "name": "Kontakt - Agencja Artystyczna Eskander",
         "category": "agencja artystyczna",
@@ -15836,6 +16966,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://dreamevents.pl/"
+      },
+      {
+        "email": "biuro@ecoshine.pl",
+        "name": "Kontakt - EcoShine",
+        "category": "musikagentur",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.ecoshine.pl/kontakt/"
       },
       {
         "email": "biuro@emotionsevents.pl",
@@ -16236,6 +17376,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.opolskie.pl/wojewodzkie-instytucje-kultury/"
+      },
+      {
+        "email": "biuro@terminalkultury.pl",
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://terminalkultury.pl/"
       },
       {
         "email": "biuro@topevent.pl",
@@ -16758,6 +17908,16 @@
         "website": "https://kulturhelfer-hannover.de/?page_id=3"
       },
       {
+        "email": "datenschutz@messe.de",
+        "name": "Kontakt | Messegelände Hannover",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://en.messegelaende.de/kontakt"
+      },
+      {
         "email": "datenschutzbeauftragte@bmwk.bund.de",
         "name": "Förderdatenbank - Förderorganisationen - Behörde für Kultur und",
         "category": "agencja kulturalna",
@@ -16878,6 +18038,16 @@
         "website": "https://www.wien.gv.at/kontakt/magistratsabteilungen"
       },
       {
+        "email": "dsa@derstandard.at",
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen"
+      },
+      {
         "email": "durchsetzungsstelle@sk.sachsen.de",
         "name": "Kontakt - Kulturbüro Dresden neu Dresden",
         "category": "agencja kulturalna",
@@ -16978,6 +18148,16 @@
         "website": "https://m-ok.pl/kontakt"
       },
       {
+        "email": "dyrektor@mokmiedzyrzecz.pl",
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/"
+      },
+      {
         "email": "dyrektor@muzyczna.kielce.pl",
         "name": "Kontakt",
         "category": "fundacja muzyczna",
@@ -17056,6 +18236,36 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://mok.olkusz.pl/index.php/kontakt"
+      },
+      {
+        "email": "e.sawicka@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bok.waw.pl/kontakt"
+      },
+      {
+        "email": "eberhardt@konzertagentur-leipzig.de",
+        "name": "Team - eberhardt konzertagentur",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://konzertagentur-leipzig.de/vita/"
+      },
+      {
+        "email": "edukacja@terminalkultury.pl",
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://terminalkultury.pl/"
       },
       {
         "email": "edyta.krzysiak@kbf.krakow.pl",
@@ -17208,6 +18418,16 @@
         "website": "https://www.visitorebro.se/lokala-smaker/"
       },
       {
+        "email": "feedback@derstandard.at",
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen"
+      },
+      {
         "email": "festiwale@mok.olsztyn.pl",
         "name": "Kontakt - MOK Olsztyn",
         "category": "agencja kulturalna",
@@ -17286,6 +18506,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "http://film-commission.pl/en/locations/krakow-philharmonic-hall/"
+      },
+      {
+        "email": "freier@konzertagentur-leipzig.de",
+        "name": "Team - eberhardt konzertagentur",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://konzertagentur-leipzig.de/vita/"
       },
       {
         "email": "fretter@kunststiftungnrw.de",
@@ -17668,6 +18898,26 @@
         "website": "https://www.wienmuseum.at/ansprechpartnerinnen"
       },
       {
+        "email": "guestevents@messe.de",
+        "name": "Kontakt | Messegelände Hannover",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://en.messegelaende.de/kontakt"
+      },
+      {
+        "email": "gutschein@cbfranken.eu",
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.concertbuero-franken.de/"
+      },
+      {
         "email": "hallo@frauenkultur-leipzig.de",
         "name": "Kulturfabrik Leipzig - Kontakt",
         "category": "centrum kulturalne",
@@ -17748,6 +18998,16 @@
         "website": "https://www.hevent.pl/"
       },
       {
+        "email": "imprezy@terminalkultury.pl",
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://terminalkultury.pl/"
+      },
+      {
         "email": "imprezy@trojmiasto.pl",
         "name": "miejski osrodek kultury - Gdańsk, Gdynia, Sopot - wyszukiwarka.",
         "category": "miejski ośrodek kultury",
@@ -17776,6 +19036,16 @@
         "country_name": "Finlandia",
         "language": "en",
         "website": "https://www.stadium.fi/"
+      },
+      {
+        "email": "info.ilyo@filharmonia.szczecin.pl",
+        "name": "Kontakt - Filharmonia w Szczecinie",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://ilyo.pl/2019/pl/kontakt"
       },
       {
         "email": "info.kulturamt@stadt-frankfurt.de",
@@ -17818,6 +19088,36 @@
         "website": "https://www.agencjabrussa.pl/"
       },
       {
+        "email": "info@agentur-amadeus.com",
+        "name": "Agentur Bühnenreif - Die Künstleragentur in Leipzig - Home",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.agentur-buehnenreif.de/"
+      },
+      {
+        "email": "info@alte-philharmonie.de",
+        "name": "Kontakt - Alte Philharmonie MÃ¼nster",
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "http://alte-philharmonie.de/kontakt/"
+      },
+      {
+        "email": "info@aptusbr.pl",
+        "name": "Kontakt – Aptus Consulting – Biuro Rachunkowe Wrocław",
+        "category": "musikagentur",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://aptusbr.pl/kontakt/"
+      },
+      {
         "email": "info@bawos.ch",
         "name": "Fenster ersetzen - Tipps & Kosten | Bauen und Wohnen in der Schweiz",
         "category": "fundacja kulturalna",
@@ -17846,6 +19146,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "http://www.biblioteka-ostrow.pl/"
+      },
+      {
+        "email": "info@bpb.de",
+        "name": "Kosovo | Kriege und Konflikte | bpb.de",
+        "category": "konzertsaal",
+        "region": "Katowice",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/"
       },
       {
         "email": "info@brusselschamberchoir.be",
@@ -17878,6 +19188,16 @@
         "website": "https://www.infomaza.bielsko.pl/organizacje.php"
       },
       {
+        "email": "info@california-promotion.de",
+        "name": "Künstleragentur & Künstlervermittlung Leipzig in Sachsen",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://kuenstleragentur-leipzig-halle.de/"
+      },
+      {
         "email": "info@call-a-pizza.de",
         "name": "Call a Pizza Berlin - Lieferservice Standorte finden!",
         "category": "philharmonie",
@@ -17886,6 +19206,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.call-a-pizza.de/berlin-lieferservice"
+      },
+      {
+        "email": "info@cbfranken.eu",
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.concertbuero-franken.de/"
       },
       {
         "email": "info@cbos.pl",
@@ -17956,6 +19286,16 @@
         "country_name": "Holandia",
         "language": "en",
         "website": "https://www.marktplaats.nl/l/doe-het-zelf-en-verbouw/gereedschap-freesmachines/q/spantangen/?msockid=1c787e84cb91659619d269bcca5d642f"
+      },
+      {
+        "email": "info@dzwiekowa.pl",
+        "name": "Sale Prób Dźwiękówa – Profesjonalne sale prób i studio nagrań we Wrocławiu.",
+        "category": "sala muzyczna",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://dzwiekowa.pl/"
       },
       {
         "email": "info@elbland.de",
@@ -18036,6 +19376,16 @@
         "country_name": "Holandia",
         "language": "en",
         "website": "https://www.freesjes.nl/nl/spantangen/black-decker-elu/bovenfrees-spantang-8-0-mm/a-1731-10000227"
+      },
+      {
+        "email": "info@freies-musikzentrum.de",
+        "name": "Impressum | Freies Musikzentrum München",
+        "category": "musikzentrum",
+        "region": "Toruń",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.freies-musikzentrum.de/kontakt-service/impressum.html"
       },
       {
         "email": "info@freunde-der-staatsgalerie.de",
@@ -18196,6 +19546,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.kulturzentrum-faust.de/kontakt.html"
+      },
+      {
+        "email": "info@kyon-energy.com",
+        "name": "IEA Report — “Batteries & Secure Energy Transition”: Key Findings",
+        "category": "agencja impresaryjna",
+        "region": "Rzeszów",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.kyon-energy.de/en/blog/iea-report-batteries-secure-energy-transition-die-wichtigsten-erkenntnisse"
       },
       {
         "email": "info@lodzkie.pl",
@@ -18366,6 +19726,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://prawodlapraktykow.pl/"
+      },
+      {
+        "email": "info@rmm-leipzig.de",
+        "name": "Rosenthal Musikmanagement Leipzig",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://rmm-leipzig.de/"
       },
       {
         "email": "info@sk.sachsen.de",
@@ -18558,6 +19928,16 @@
         "website": "https://zaczarowane-eventy.pl/kontakt/"
       },
       {
+        "email": "info@zdf.de",
+        "name": "Filme",
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.zdf.de/filme"
+      },
+      {
         "email": "informacja@bracz.edu.pl",
         "name": "Biblioteka Raczyńskich - Oficjalna strona Biblioteki Raczyńskich w Poznaniu",
         "category": "biblioteka publiczna",
@@ -18708,6 +20088,16 @@
         "website": "https://www.cbkkrzeszow.pl/kontakt/"
       },
       {
+        "email": "iod@bck.bielsko.pl",
+        "name": "BCK im. M.Koterbskiej",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.bck.bielsko.pl/kontakt"
+      },
+      {
         "email": "iod@bobrowo.org",
         "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
         "category": "gminny ośrodek kultury",
@@ -18726,6 +20116,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://gokismalczyce.pl/kontakt/"
+      },
+      {
+        "email": "iod@filharmonia.krakow.pl",
+        "name": "Filharmonia Krakowska",
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/"
       },
       {
         "email": "iod@gokosie.pl",
@@ -18788,6 +20188,16 @@
         "website": "https://gok.loniow.pl/kontakt/"
       },
       {
+        "email": "iodo@rekord.com.pl",
+        "name": "Kontakt",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.rekord.com.pl/kontakt/"
+      },
+      {
         "email": "isabel.kraning@stuttgart.de",
         "name": "Stuttgarter Musikschule:Kontakt",
         "category": "musikzentrum",
@@ -18836,6 +20246,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "http://www.umwd.dolnyslask.pl/kultura/kontakt/"
+      },
+      {
+        "email": "j.gibowski@filharmonia.szczecin.pl",
+        "name": "Filharmonia im. Mieczysława Karłowicza w Szczecinie",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://filharmonia.szczecin.pl/de"
       },
       {
         "email": "j.maczka@mok.olkusz.pl",
@@ -19016,6 +20436,36 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.duesseldorf.de/kulturamt/ueber-uns/ansprechpartnerinnen/"
+      },
+      {
+        "email": "jok.mr.ksiegowosc@onet.com.pl",
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jokjanow.pl/kontakt/"
+      },
+      {
+        "email": "jok_andrzejw@onet.eu",
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jokjanow.pl/kontakt/"
+      },
+      {
+        "email": "jok_janowl@op.pl",
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://jokjanow.pl/kontakt/"
       },
       {
         "email": "jpinkowska@dkswit.com.pl",
@@ -19288,6 +20738,16 @@
         "website": "https://smok.slubice.pl/kontakt/"
       },
       {
+        "email": "karten@koelnmusik.de",
+        "name": "Kontakt",
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.koelner-philharmonie.de/de/kontakt"
+      },
+      {
         "email": "kartenservice@staatstheater-hannover.de",
         "name": "Kontakt - Staatstheater Hannover",
         "category": "concert hall",
@@ -19318,6 +20778,16 @@
         "website": "https://mok.swidnik.pl/centrum-kultury/o-nas/kontakt/"
       },
       {
+        "email": "kasa@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bok.waw.pl/kontakt"
+      },
+      {
         "email": "kasa@ck.lublin.pl",
         "name": "Kontakt - Centrum Kultury w Lublinie",
         "category": "centrum kultury",
@@ -19336,6 +20806,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://ck.lublin.pl/en/contact/"
+      },
+      {
+        "email": "kasa@filharmonia.krakow.pl",
+        "name": "Filharmonia Krakowska",
+        "category": "filharmonia",
+        "region": "Kraków",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://filharmoniakrakow.pl/public/bilety/regulamin-sprzedazy-biletow/"
       },
       {
         "email": "kasa@filharmonia.szczecin.pl",
@@ -19528,6 +21008,16 @@
         "website": "http://pmkl.pl/kontakt"
       },
       {
+        "email": "kierownik@terminalkultury.pl",
+        "name": "Terminal Kultury Gocław - Terminal Kultury Gocław",
+        "category": "dom kultury",
+        "region": "Wrocław",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://terminalkultury.pl/"
+      },
+      {
         "email": "kino.etiuda@mck.ostrowiec.pl",
         "name": "Kontakt - MCK Ostrowiec",
         "category": "ośrodek kultury",
@@ -19616,6 +21106,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.vielfalt-bewegt-frankfurt.de/de/kulturamt-frankfurt/contact"
+      },
+      {
+        "email": "kommunikation@gasteig.de",
+        "name": "Isarphilharmonie - Gasteig München",
+        "category": "philharmonie",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.gasteig.de/raeume/isarphilharmonie/"
       },
       {
         "email": "kontakt@agencjamuza.pl",
@@ -20298,6 +21798,16 @@
         "website": "https://gcksir.samborzec.pl/asp/kontakt,9,,1"
       },
       {
+        "email": "kultura@mokmiedzyrzecz.pl",
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/"
+      },
+      {
         "email": "kultura@pawlow.pl",
         "name": "Kontakt – Gminny Ośrodek Kultury, Sportu i Rekreacji w Pawłowie",
         "category": "ośrodek kultury",
@@ -20416,6 +21926,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://lck.lubelskie.pl/en/contact/"
+      },
+      {
+        "email": "lenke@rmm-leipzig.de",
+        "name": "Kontakt ~ amarcord",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://amarcord.de/kontakt/"
       },
       {
         "email": "leserbriefe@focus-magazin.de",
@@ -20606,6 +22126,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.ckpodgorza.pl/kontakt"
+      },
+      {
+        "email": "mail@bundestag.de",
+        "name": "Deutscher Bundestag - Jakob-Kaiser-Haus",
+        "category": "fundacja muzyczna",
+        "region": "Warszawa",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.bundestag.de/besuche/architektur/kaiserhaus/kaiserhaus-198854"
       },
       {
         "email": "mail@dr-hochs.de",
@@ -20836,6 +22366,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://mck.ostrowiec.pl/kontakt/"
+      },
+      {
+        "email": "mdk3@zsip1.bydgoszcz.pl",
+        "name": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "category": "dom kultury",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html"
       },
       {
         "email": "mdk@mdk-krzyki.pl",
@@ -21288,6 +22828,16 @@
         "website": "http://www.kulturpalast-dresden.de/de/kontakt-1/"
       },
       {
+        "email": "office@amarcord.de",
+        "name": "Kontakt ~ amarcord",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://amarcord.de/kontakt/"
+      },
+      {
         "email": "office@bauschweiz.ch",
         "name": "Fenstersanierung im Winter: Sofort Energie sparen und Wohnkomfort gewinnen - Bauschweiz - Das Portal für Bauen und Wohnen.",
         "category": "fundacja kulturalna",
@@ -21658,6 +23208,16 @@
         "website": "https://krakowculture.pl/kontakt/"
       },
       {
+        "email": "poeche@amarcord.de",
+        "name": "Kontakt ~ amarcord",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://amarcord.de/kontakt/"
+      },
+      {
         "email": "pomoc@ticketclub.pl",
         "name": "Royal Chopin Hall przy Klasztorze O.O. Bernardynów: bilety na wydarzenia, koncerty, kalendarz imprez 2026/2027 - TicketClub.pl",
         "category": "concert hall",
@@ -21756,6 +23316,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://justiz.hamburg.de/gerichte/amtsgericht-hamburg/gerichte-und-segmente/amtsgericht-hamburg-mitte/kontakt-636758"
+      },
+      {
+        "email": "poststelle@bpb.de",
+        "name": "Kosovo | Kriege und Konflikte | bpb.de",
+        "category": "konzertsaal",
+        "region": "Katowice",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54633/kosovo/"
       },
       {
         "email": "poststelle@duesseldorf.de",
@@ -21888,6 +23458,16 @@
         "website": "https://netzwerk-kultur-dresden.de/kontakt/"
       },
       {
+        "email": "pressedesk@zdf.de",
+        "name": "Filme",
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.zdf.de/filme"
+      },
+      {
         "email": "pressereferat.oper@buehnen-frankfurt.de",
         "name": "Kontakt - Oper Frankfurt",
         "category": "sala koncertowa",
@@ -21988,6 +23568,16 @@
         "website": "https://goktychowo.pl/"
       },
       {
+        "email": "promocja@mokmiedzyrzecz.pl",
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/"
+      },
+      {
         "email": "promocja@nospr.org.pl",
         "name": "Kontakt - NOSPR",
         "category": "konzertsaal",
@@ -22078,6 +23668,16 @@
         "website": "https://radio.katowice.pl/player_transmisja/kontakt.html"
       },
       {
+        "email": "radiologia@onkologia.bielsko.pl",
+        "name": "Kontakt",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.onkologia.bielsko.pl/kontakt"
+      },
+      {
         "email": "radoslaw.pujanek@nfm.wroclaw.pl",
         "name": "NFM",
         "category": "concert hall",
@@ -22126,6 +23726,16 @@
         "country_name": "Szwajcaria",
         "language": "de",
         "website": "https://www.cash.ch/fonds/ubs-ch-property-fund-swiss-mixed-sima-1442087/swx/chf"
+      },
+      {
+        "email": "redaktion@derstandard.at",
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen"
       },
       {
         "email": "redaktion@focus.de",
@@ -22358,6 +23968,16 @@
         "website": "https://www.medienkulturzentrum.de/impressum/"
       },
       {
+        "email": "riebesell@konzertagentur-leipzig.de",
+        "name": "Team - eberhardt konzertagentur",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://konzertagentur-leipzig.de/vita/"
+      },
+      {
         "email": "robert.wieczorek@kck.com.pl",
         "name": "Kontakt - Kieleckie Centrum Kultury",
         "category": "ośrodek kultury",
@@ -22438,6 +24058,16 @@
         "website": "https://art-dus.de/de/contact/"
       },
       {
+        "email": "rosenthal@rmm-leipzig.de",
+        "name": "Kontakt ~ amarcord",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://amarcord.de/kontakt/"
+      },
+      {
         "email": "rqa@pansa.pl",
         "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
         "category": "agencja kulturalna",
@@ -22466,6 +24096,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.gov.pl/web/arimr/kontakt2"
+      },
+      {
+        "email": "rzecznik@filharmonia.szczecin.pl",
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt"
       },
       {
         "email": "rzecznik@pzu.pl",
@@ -22716,6 +24356,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.centrumzamenhofa.pl/p,96,kontakt"
+      },
+      {
+        "email": "sekretariat@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hannover",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://bok.waw.pl/kontakt"
       },
       {
         "email": "sekretariat@borussia.pl",
@@ -23088,6 +24738,16 @@
         "website": "https://mok.olsztyn.pl/kontakt/"
       },
       {
+        "email": "sekretariat@mokmiedzyrzecz.pl",
+        "name": "Kontakt - Międzyrzecki Ośrodek Kultury",
+        "category": "ośrodek kultury",
+        "region": "Hamburg",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mokmiedzyrzecz.pl/kontakt/"
+      },
+      {
         "email": "sekretariat@mopr.bialystok.pl",
         "name": "Kontakt - MOPR",
         "category": "kulturverein",
@@ -23096,6 +24756,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.mopr.bialystok.pl/kontakt"
+      },
+      {
+        "email": "sekretariat@mops.bielsko.pl",
+        "name": "Kontakt - Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej",
+        "category": "miejski ośrodek kultury",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://pokonajprzemoc.lk.pl/strona/kontakt"
       },
       {
         "email": "sekretariat@msamm.pl",
@@ -23218,6 +24888,16 @@
         "website": "https://potokgorny.com.pl/kultura/gminny-osrodek-kultury.html"
       },
       {
+        "email": "sekretariat@psmplock.pl",
+        "name": "Aktualności | OSM PLOCK",
+        "category": "sala muzyczna",
+        "region": "München",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.muzycznaplock.pl/"
+      },
+      {
         "email": "sekretariat@radio.katowice.pl",
         "name": "Polskie Radio Katowice Kontakt z nami",
         "category": "konzertsaal",
@@ -23276,6 +24956,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://strefakultury.pl/kontakt/"
+      },
+      {
+        "email": "sekretariat@szpital.bielsko.pl",
+        "name": "Kontakt",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.onkologia.bielsko.pl/kontakt"
       },
       {
         "email": "sekretariat@teatr-rzeszow.pl",
@@ -23456,6 +25146,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.kulturpalast-dresden.de/en/contact/"
+      },
+      {
+        "email": "shop@cbfranken.eu",
+        "name": "Der Konzertveranstalter in Nürnberg - Concertbüro Franken",
+        "category": "konzerthaus",
+        "region": "Nürnberg",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.concertbuero-franken.de/"
       },
       {
         "email": "skaminski@amuz.edu.pl",
@@ -23648,6 +25348,16 @@
         "website": "https://www.stuttgarter-musikschule.de/start/ueber+uns/kontakt.html"
       },
       {
+        "email": "styret@tempoklubben.com",
+        "name": "Velkommen Til Tempoklubben | Norsk Tempoklubb",
+        "category": "festiwal muzyczny",
+        "region": "Köln",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://www.tempoklubben.no/"
+      },
+      {
         "email": "swantje@puin.de",
         "name": "Impressum | Heinz von Heiden Arena",
         "category": "concert hall",
@@ -23778,6 +25488,16 @@
         "website": "https://btl.nowybip.pl/informacje-ogolne"
       },
       {
+        "email": "tempoposten@tempoklubben.com",
+        "name": "Velkommen Til Tempoklubben | Norsk Tempoklubb",
+        "category": "festiwal muzyczny",
+        "region": "Köln",
+        "country_code": "NO",
+        "country_name": "Norwegia",
+        "language": "en",
+        "website": "https://www.tempoklubben.no/"
+      },
+      {
         "email": "thomas.delissen@bkm.hamburg.de",
         "name": "Kontaktinformationen der Behörde für Kultur und Medien - hamburg.de",
         "category": "agencja kulturalna",
@@ -23786,6 +25506,16 @@
         "country_name": "Niemcy",
         "language": "de",
         "website": "https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-kultur-und-medien/wir-ueber-uns/kontaktinformationen"
+      },
+      {
+        "email": "tibg@derstandard.at",
+        "name": "40 Jahre Haft für Ex-CIA-Mann wegen Weitergabe von Hackerprogrammen - Web - derStandard.at › Web",
+        "category": "kulturzentrum",
+        "region": "Warszawa",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "language": "de",
+        "website": "https://www.derstandard.at/story/3000000205739/40-jahre-haft-fuer-ex-cia-mann-wegen-weitergabe-von-hacker-programmen"
       },
       {
         "email": "ticket@dresdnerphilharmonie.de",
@@ -23938,6 +25668,16 @@
         "website": "http://lomazy.pl/"
       },
       {
+        "email": "ulrich.hentze@agentur-buehnenreif.de",
+        "name": "Agentur Bühnenreif - Die Künstleragentur in Leipzig - Home",
+        "category": "musikagentur",
+        "region": "Leipzig",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.agentur-buehnenreif.de/"
+      },
+      {
         "email": "umboleslawiec@um.boleslawiec.pl",
         "name": "Urząd Miasta Bolesławiec - URZĄD MIASTA BOLESŁAWIEC - oficjalna witryna",
         "category": "miejski ośrodek kultury",
@@ -23946,6 +25686,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://xn--bolesawiec-e0b.pl/"
+      },
+      {
+        "email": "umt@um.torun.pl",
+        "name": "Festiwal Kontakt | www.torun.pl",
+        "category": "musikzentrum",
+        "region": "Toruń",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://torun.pl/pl/festiwal-kontakt"
       },
       {
         "email": "umwd@dolnyslask.pl",
@@ -23976,6 +25726,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://wzp.pl/"
+      },
+      {
+        "email": "unternehmensarchiv@zdf.de",
+        "name": "Filme",
+        "category": "sala koncertowa",
+        "region": "Kraków",
+        "country_code": "DE",
+        "country_name": "Niemcy",
+        "language": "de",
+        "website": "https://www.zdf.de/filme"
       },
       {
         "email": "ursula.storch@wienmuseum.at",
@@ -24116,6 +25876,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://www.gdynia.pl/kontakt-5,5170"
+      },
+      {
+        "email": "w.wiezowska@filharmonia.szczecin.pl",
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "category": "filharmonia",
+        "region": "Szczecin",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://mdf.filharmonia.szczecin.pl/pl/kontakt"
       },
       {
         "email": "warminsko_mazurski@arimr.gov.pl",
@@ -24358,6 +26128,16 @@
         "website": "https://dops.wroc.pl/dolnoslaskie-centrum-kultury-polskiej/kontakt/"
       },
       {
+        "email": "zakladradioterapii@onkologia.bielsko.pl",
+        "name": "Kontakt",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.onkologia.bielsko.pl/kontakt"
+      },
+      {
         "email": "zaplanuj@covaevents.pl",
         "name": "Organizacja wydarzeń | Cova Events Zróbmy to Dobrze!",
         "category": "organizacja wydarzeń",
@@ -24398,6 +26178,16 @@
         "website": "https://dzieciom.pl/kontakt/"
       },
       {
+        "email": "zdo_wyspianski@onkologia.bielsko.pl",
+        "name": "Kontakt",
+        "category": "veranstaltungsagentur",
+        "region": "Bielsko-Biała",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://www.onkologia.bielsko.pl/kontakt"
+      },
+      {
         "email": "zeas@opolelubelskie.pl",
         "name": "Jednostki organizacyjne gminy | Urząd Miejski w Opolu Lubelskim - oficjalny serwis",
         "category": "dom kultury",
@@ -24426,6 +26216,16 @@
         "country_name": "Polska",
         "language": "pl",
         "website": "https://zok.com.pl/"
+      },
+      {
+        "email": "zsp01@edu.bydgoszcz.pl",
+        "name": "Zespół Szkół i Placówek nr 1 - Kontakt",
+        "category": "dom kultury",
+        "region": "Bydgoszcz",
+        "country_code": "PL",
+        "country_name": "Polska",
+        "language": "pl",
+        "website": "https://zsp01.edu.bydgoszcz.pl/kontakt-m1,400.html"
       },
       {
         "email": "zuzanna.majeran@rmf.pl",
@@ -25144,6 +26944,156 @@
         "name": "Wir über uns – Leitung und Organisation - Berlin.de",
         "sent_at": "2026-04-11T11:02:47.626019+00:00",
         "status": "sent"
+      },
+      {
+        "email": "3pokoje@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "sent_at": "2026-04-12T11:05:35.770160+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "a.tuderek@filhamonia.szczecin.pl",
+        "name": "Kontakt - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "sent_at": "2026-04-12T11:05:39.772748+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "a.witos@mops.bielsko.pl",
+        "name": "Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "sent_at": "2026-04-12T11:05:43.371047+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "administracja@cityon.pl",
+        "name": "Filharmonia Krakowska Zwierzyniecka 1 - Kraków | CityOn.pl",
+        "sent_at": "2026-04-12T11:05:46.905857+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "barrierefreiheit@lea.berlin.de",
+        "name": "Wollen Sie Kontakt zu uns aufnehmen? - Berlin.de",
+        "sent_at": "2026-04-12T11:05:50.482067+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bartek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-04-12T11:05:54.158529+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bartosz.jaszczyk@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "sent_at": "2026-04-12T11:05:57.820699+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bas.dingemans@programmeerplaats.nl",
+        "name": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+        "sent_at": "2026-04-12T11:06:01.328432+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bcs@horno.pl",
+        "name": "Kontakt – Bydgoskie Centrum Sztuki",
+        "sent_at": "2026-04-12T11:06:04.760269+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bdpp@bn.org.pl",
+        "name": "Biblioteka Narodowa",
+        "sent_at": "2026-04-12T11:06:08.695810+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "beniaminow@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "sent_at": "2026-04-12T11:06:12.121872+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bestell@focus-money.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "sent_at": "2026-04-12T11:06:15.949756+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bestellung@semperoper.de",
+        "name": "Contact - Semperoper Dresden",
+        "sent_at": "2026-04-12T11:06:19.547932+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "besucherservice@konzerthaus.de",
+        "name": "Tickets and Service – Konzerthaus Berlin",
+        "sent_at": "2026-04-12T11:06:23.000468+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "besucherservice@musikfestspiele.com",
+        "name": "Ticketservice - Kulturpalast Dresden",
+        "sent_at": "2026-04-12T11:06:26.481795+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "kasa@ck.lublin.pl",
+        "name": "Kontakt - Centrum Kultury w Lublinie",
+        "sent_at": "2026-04-12T11:06:28.645447+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "marcin.sudzinski@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "sent_at": "2026-04-12T11:06:30.793984+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "klaudia.drozd@csklublin.pl",
+        "name": "Kontakt - Centrum Spotkania Kultur",
+        "sent_at": "2026-04-12T11:06:32.968325+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "kancelaria@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-12T11:06:35.106269+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "sylwester.krzywicki@csklublin.pl",
+        "name": "Centrum Spotkania Kultur w Lublinie - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "sent_at": "2026-04-12T11:06:37.270521+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "sekretariat@ck.lublin.pl",
+        "name": "Centrum Kultury w Lublinie - repertuar, bilety, adres i kontakt - Teatry Polskie",
+        "sent_at": "2026-04-12T11:06:39.418582+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "mok@lubawa.pl",
+        "name": "Miejski Ośrodek Kultury w Lubawie – Miejski Ośrodek Kultury w Lubawie",
+        "sent_at": "2026-04-12T11:06:41.591657+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "kamila.kowalczyk@lcas.lubawa.pl",
+        "name": "Strona główna | BIP - Miejski Ośrodek Kultury w Lubawie",
+        "sent_at": "2026-04-12T11:06:43.726094+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "urzad-miasta@lubawa.pl",
+        "name": "Miejskie Jednostki Organizacyjne - Miasto Lubawa - Portal gov.pl",
+        "sent_at": "2026-04-12T11:06:45.891101+00:00",
+        "status": "sent_followup"
+      },
+      {
+        "email": "kamila.stoinska@bobrowo.org",
+        "name": "BIP Urząd Gminy w Bobrowie",
+        "sent_at": "2026-04-12T11:06:48.041986+00:00",
+        "status": "sent_followup"
       }
     ]
   }
