@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-04-14T11:37:23.534990+00:00",
+  "generatedAt": "2026-04-15T11:35:34.882680+00:00",
   "sourceStats": {
     "baza": 1734,
-    "nowe": 349,
+    "nowe": 0,
     "engine": 1720,
-    "sent": 201
+    "sent": 266
   },
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-04-14T11:37:20.604766+00:00",
-    "engine_attempted": 15,
-    "engine_sent": 15
+    "engine_last_run": "2026-04-15T11:35:34.212919+00:00",
+    "engine_attempted": 40,
+    "engine_sent": 40
   },
   "dataHub": {
     "baza": [
@@ -44740,6 +44740,396 @@
         "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
         "sent_at": "2026-04-14T11:37:22.818238+00:00",
         "status": "sent_followup"
+      },
+      {
+        "email": "anagorka@opera.szczecin.pl",
+        "name": "Dyrekcja | Opera",
+        "sent_at": "2026-04-15T08:20:15.891621+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "andreas.schaefer@kulturbuero-dresden.de",
+        "name": "Verein - Kulturbüro Dresden neu Dresden",
+        "sent_at": "2026-04-15T08:20:19.072964+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "andzelika.mleczak@ckagora.pl",
+        "name": "Kontakt – Centrum Kultury Agora",
+        "sent_at": "2026-04-15T08:20:22.248551+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "aneta@creativeflow.pl",
+        "name": "Kontakt - Agencja Creative Flow",
+        "sent_at": "2026-04-15T08:20:25.438917+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anfrage@musikagent-hamburg.de",
+        "name": "Kontakt zu Musikagent JMS",
+        "sent_at": "2026-04-15T08:20:28.655575+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anika@oh-my-music.de",
+        "name": "Kontakt - Oh, my music",
+        "sent_at": "2026-04-15T08:20:31.888097+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.borowska@ckagora.pl",
+        "name": "Kontakt – Centrum Kultury Agora",
+        "sent_at": "2026-04-15T08:20:34.967073+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.heldmann@koelnischerkunstverein.de",
+        "name": "Institutionsinfos – Kölnischer Kunstverein",
+        "sent_at": "2026-04-15T08:20:38.171435+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anna.kaczmarczyk@pleciuga.pl",
+        "name": "Kontakt | Teatr Lalek Pleciuga w Szczecinie",
+        "sent_at": "2026-04-15T08:20:41.257722+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "antyradio@antyradio.pl",
+        "name": "Adres i numery telefonów do Antyradia - Antyradio",
+        "sent_at": "2026-04-15T08:20:44.400873+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "anzeigen@staatstheater-stuttgart.de",
+        "name": "Kontakt | Die Staatstheater Stuttgart",
+        "sent_at": "2026-04-15T08:20:47.426750+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "art@art.gdynia.pl",
+        "name": "Kontakt – ART Gdynia",
+        "sent_at": "2026-04-15T08:20:50.634125+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "art@neumann-luz.de",
+        "name": "Startseite – KAI10 | Arthena Foundation",
+        "sent_at": "2026-04-15T08:20:53.690391+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bdks@dksrodmiescie.pl",
+        "name": "Instytucje kultury, których organizatorem jest Miasto Białystok - Białystok - Oficjalny Portal Miasta",
+        "sent_at": "2026-04-15T08:20:56.968082+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "beratung@igkultur.at",
+        "name": "Kontakt | IG Kultur Wien",
+        "sent_at": "2026-04-15T08:20:59.962147+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "besucherservice@schauspiel-leipzig.de",
+        "name": "Contact | Schauspiel Leipzig",
+        "sent_at": "2026-04-15T08:21:03.097224+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bibliotekazsm@muzyczna.zgora.pl",
+        "name": "Dane kontaktowe - Zespół Szkół Muzycznych im. M. Karłowicza w Zielonej Górze - Portal Gov.pl",
+        "sent_at": "2026-04-15T08:21:06.270854+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bilety@filharmonia.olsztyn.pl",
+        "name": "Kontakt - Warmińsko-Mazurska Filharmonia im. F. Nowowiejskiego w Olsztynie",
+        "sent_at": "2026-04-15T08:21:09.385812+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "bilety@old3.old3.filharmonia.olsztyn.pl",
+        "name": "Sala koncertowa – Filharmonia Warmińsko-Mazurska",
+        "sent_at": "2026-04-15T08:21:12.420595+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@agencjaszpilka.pl",
+        "name": "Kontakt - Agencja Szpilka",
+        "sent_at": "2026-04-15T08:21:15.632056+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@armk.pl",
+        "name": "Kontakt - Centrum Muzyki w Krakowie",
+        "sent_at": "2026-04-15T08:21:18.715738+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@bazatel.pl",
+        "name": "Białostocki Ośrodek Kultury, Białystok - Kultura, sztuka - Bazatel.pl",
+        "sent_at": "2026-04-15T08:21:21.853247+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@centrum-empire.pl",
+        "name": "Kontakt - EMPIRE nauka śpiewu, gry na pianinie, gitarze i perkusji - szkoła muzyczna i studio nagrań Kielce",
+        "sent_at": "2026-04-15T08:21:24.983257+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@centrummuzyczne.pl",
+        "name": "Internetowy sklep muzyczny online - Centrum Muzyczne Lemański",
+        "sent_at": "2026-04-15T08:21:28.066297+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@convivo.pl",
+        "name": "Region Kultury - Serwis informacji kulturalnych wojewÃ³dztwa ÅÃ³dzkiego",
+        "sent_at": "2026-04-15T08:21:31.203172+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@dtm.org.pl",
+        "name": "DTM – Dolnośląskie Towarzystwo Muzyczne",
+        "sent_at": "2026-04-15T11:33:32.945841+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ec1lodz.pl",
+        "name": "Kontakt",
+        "sent_at": "2026-04-15T11:33:36.251559+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ecmwarsawfestival.pl",
+        "name": "Kontakt - ECM Warsaw Festiwal",
+        "sent_at": "2026-04-15T11:33:39.494872+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ecoshine.pl",
+        "name": "Kontakt - EcoShine",
+        "sent_at": "2026-04-15T11:33:42.655687+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@elite-music.pl",
+        "name": "Elite Music - masz pytania? Skontaktuj siÄ z nami.",
+        "sent_at": "2026-04-15T11:33:46.158662+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@eskander.com.pl",
+        "name": "Agencja Artystyczna ESKANDER – Encyklopedia Kabaretu",
+        "sent_at": "2026-04-15T11:33:49.138740+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@extraagencjapracy.pl",
+        "name": "Agencja pracy tymczasowej Warmińsko-mazurskie",
+        "sent_at": "2026-04-15T11:33:52.205959+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@fama.wroc.pl",
+        "name": "Kontakt - Centrum Biblioteczno-Kulturalne FAMA",
+        "sent_at": "2026-04-15T11:33:55.410580+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@fem.org.pl",
+        "name": "Contact – WIS Wrocław International School",
+        "sent_at": "2026-04-15T11:33:58.395520+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@filharmonia.rzeszow.pl",
+        "name": "Kontakt - Filharmonia Podkarpacka",
+        "sent_at": "2026-04-15T11:34:01.647817+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@fundacja-dobrydom.pl",
+        "name": "Organizacje pozarządowe",
+        "sent_at": "2026-04-15T11:34:05.151389+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@funfaktoria.pl",
+        "name": "Agencja eventowa, imprezy integracyjne, firmowe Poznań - Fun Faktoria",
+        "sent_at": "2026-04-15T11:34:08.250870+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@gokmniow.pl",
+        "name": "Kontakt - Gminny OÅrodek Kultury w Mniowie",
+        "sent_at": "2026-04-15T11:34:11.223589+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@gokosie.pl",
+        "name": "Kontakt | Gminny Ośrodek Kultury w Osiu",
+        "sent_at": "2026-04-15T11:34:14.341496+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@goksuchowola.pl",
+        "name": "Strona główna - GOKSiT Suchowola",
+        "sent_at": "2026-04-15T11:34:17.424418+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@grapitravel.pl",
+        "name": "Centrum Kulturalno-Kongresowe Jordanki Toruń 🔹 Grapi Travel",
+        "sent_at": "2026-04-15T11:34:20.401500+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ideaart.com.pl",
+        "name": "Idea Art - Agencja artystyczna - Teatr, Kabaret, Muzyka",
+        "sent_at": "2026-04-15T11:34:23.491482+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@impresariat.pl",
+        "name": "Impresariat.pl – Agencja Koncertowa Impresariat | Wyłączny Management Piękni i Młodzi, Playboys, Cliver, Ivan Komarenko – Agencja Koncertowa Impresariat, Management Artystyczny, Organizacja koncertów Disco Polo i Dance, Booking Koncertów: Piękni i Mł",
+        "sent_at": "2026-04-15T11:34:26.473040+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@kereza.pl",
+        "name": "Agencja Artystyczna Kereza +48 720 870 670 biuro@kereza.pl",
+        "sent_at": "2026-04-15T11:34:29.564231+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@klubdelta.pl",
+        "name": "Kontakt – Miejski Ośrodek Kultury w Szczecinie",
+        "sent_at": "2026-04-15T11:34:32.630245+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@krakownh.pl",
+        "name": "Serwis Ośrodka Kultury Kraków-Nowa Huta",
+        "sent_at": "2026-04-15T11:34:35.607402+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@kulturagk.pl",
+        "name": "Kontakt - Ośrodek Kultury w Górze Kalwarii",
+        "sent_at": "2026-04-15T11:34:38.652943+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@kulturalnaosowa.pl",
+        "name": "Kontakt – Fundacja Kulturalna Osowa",
+        "sent_at": "2026-04-15T11:34:41.808571+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@lcw.lodz.pl",
+        "name": "Kontakt – Łódzkie Centrum Wydarzeń",
+        "sent_at": "2026-04-15T11:34:44.887961+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@m-gp.mail.pl",
+        "name": "Agencja artystyczna: organizacja koncertów, spektakli, wydarzeń kulturalnych - M-GROUP POLSKA",
+        "sent_at": "2026-04-15T11:34:47.868585+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@mdk-dh.krakow.pl",
+        "name": "Kontakt - MDK Dom Harcerza",
+        "sent_at": "2026-04-15T11:34:51.038235+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@mdk.gdynia.pl",
+        "name": "Gdynia Open - Kontakt",
+        "sent_at": "2026-04-15T11:34:54.151926+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@mimello.pl",
+        "name": "Agencja artystyczna Opole - Mimello – Artyści do usług",
+        "sent_at": "2026-04-15T11:34:57.124012+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@mksport.com.pl",
+        "name": "Imprezy integracyjne i firmowe Poznań | Wielkopolska | MK Sport | MKsport",
+        "sent_at": "2026-04-15T11:35:00.089582+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@mok.pl",
+        "name": "Miejski Ośrodek Kultury im. A. Mickiewicza w Zawierciu",
+        "sent_at": "2026-04-15T11:35:03.071194+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ncpp.opole.pl",
+        "name": "Kontakt | Narodowe Centrum Polskiej Piosenki",
+        "sent_at": "2026-04-15T11:35:06.109486+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@ogrodymuzyczne.pl",
+        "name": "Kontakt - 25. Festiwal Ogrody Muzyczne",
+        "sent_at": "2026-04-15T11:35:09.402270+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@okfgora.pl",
+        "name": "Kontakt – Ośrodek Kultury Fizycznej w Górze",
+        "sent_at": "2026-04-15T11:35:12.381653+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@paczkaevents.pl",
+        "name": "Kontakt | Kompleksowa organizacja wydarzeń | Paczka Events",
+        "sent_at": "2026-04-15T11:35:15.439420+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@partyplanners.pl",
+        "name": "Kontakt - Organizacja Eventów - Party Planners Poznań",
+        "sent_at": "2026-04-15T11:35:18.432261+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@patigo.pl",
+        "name": "Agencja eventowa Kielce | Agencja artystyczna PATIGO",
+        "sent_at": "2026-04-15T11:35:21.480837+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@praca.pl",
+        "name": "Praca.pl - Oferty pracy - praca dla Ciebie od zaraz",
+        "sent_at": "2026-04-15T11:35:24.660927+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@proarte.org.pl",
+        "name": "KONTAKT / CONTACT – Fundacja PRO ARTE Wrocław",
+        "sent_at": "2026-04-15T11:35:27.780752+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@proartmusic.pl",
+        "name": "Kontakt | Pro Art Music | Agencja Koncertowo - Artystyczna",
+        "sent_at": "2026-04-15T11:35:30.956447+00:00",
+        "status": "sent"
+      },
+      {
+        "email": "biuro@proculture.pl",
+        "name": "Proculture – Agencja Artystyczna",
+        "sent_at": "2026-04-15T11:35:34.212589+00:00",
+        "status": "sent"
       }
     ]
   }
