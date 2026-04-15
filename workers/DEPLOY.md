@@ -35,6 +35,32 @@ https://dash.cloudflare.com/sign-up — bezpłatne, bez karty.
   ```
 - Podmień na swój URL jeśli inny, zapisz i pushuj
 
+---
+
+## Tracking Worker (otwarcia emaili) — opcjonalny
+
+### 1. Utwórz drugi Worker
+- Workers & Pages → Create Worker → nazwa: `track-handler`
+- Wklej zawartość `workers/track-handler.js`
+- Kliknij „Save and deploy"
+
+### 2. Utwórz KV Namespace
+- Workers & Pages → KV → Create namespace → nazwa: `OPENS_KV`
+- W ustawieniach Workera `track-handler` → Bindings → Add → KV Namespace
+  - Variable name: `OPENS_KV`
+  - KV namespace: wybierz `OPENS_KV`
+
+### 3. Dodaj sekrety do tracking Workera
+- `STATS_TOKEN` — dowolne hasło, np. 32-znakowy losowy string
+
+### 4. Ustaw zmienne w piumosso-engine (GitHub → Settings → Variables)
+- `TRACK_WORKER_URL` = `https://track-handler.piotr-piumosso.workers.dev`
+
+### 5. Dodaj sekret w piumosso-engine (GitHub → Settings → Secrets)
+- `TRACK_STATS_TOKEN` = ten sam token co w punkcie 3
+
+---
+
 ## Po wdrożeniu
 - Każde wypełnienie formularza → wpis w `piumosso-engine/data/inbound_leads.csv`
 - Commit w repo z imieniem i nazwiskiem klienta
