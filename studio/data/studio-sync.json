@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-04-15T11:35:34.882680+00:00",
+  "generatedAt": "2026-04-15T17:11:36.597623+02:00",
   "sourceStats": {
     "baza": 1734,
     "nowe": 0,
     "engine": 1720,
-    "sent": 266
+    "sent": 266,
+    "inbound": 1,
+    "replies": 0,
+    "opens": 0
   },
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
@@ -45131,6 +45134,23 @@
         "sent_at": "2026-04-15T11:35:34.212589+00:00",
         "status": "sent"
       }
-    ]
+    ],
+    "inboundLeads": [
+      {
+        "submitted_at": "2026-04-15T14:57:58.593Z",
+        "name": "test",
+        "phone": "+48781010229",
+        "email": null,
+        "event_type": "koncert",
+        "city": "test",
+        "event_date": null,
+        "scope": "test",
+        "message": null,
+        "source": "website-form",
+        "status": "new"
+      }
+    ],
+    "replyLog": [],
+    "openLog": []
   }
 }

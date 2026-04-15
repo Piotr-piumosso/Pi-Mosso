@@ -130,6 +130,26 @@ textarea{resize:vertical;min-height:54px}
 .lb p{color:var(--muted);font-size:.8rem;margin:4px 0 16px}
 .lb input{text-align:center;margin-bottom:7px}
 
+/* Inbound leads */
+.ib{padding:10px 12px;background:var(--panel2);border:1px solid var(--b2);border-radius:var(--r);margin-bottom:6px}
+.ib.ib-new{border-left:2px solid var(--gold)}
+.ib.ib-booked{border-left:2px solid var(--green)}
+.ib.ib-rejected{border-left:2px solid var(--red);opacity:.6}
+.ib-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:4px}
+.ib-name{font-weight:600;font-size:.86rem}
+.ib-meta{font-size:.71rem;color:var(--muted);display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
+.ib-msg{font-size:.75rem;color:var(--muted);font-style:italic;margin-bottom:7px;line-height:1.5}
+.ib-status{font-size:.64rem;padding:2px 8px;border-radius:999px;border:1px solid}
+.ib-status.new{color:var(--gold);border-color:rgba(212,176,106,.35);background:rgba(212,176,106,.08)}
+.ib-status.in-progress{color:var(--blue);border-color:rgba(122,168,212,.35);background:rgba(122,168,212,.08)}
+.ib-status.booked{color:var(--green);border-color:rgba(94,163,109,.35);background:rgba(94,163,109,.08)}
+.ib-status.rejected{color:var(--red);border-color:rgba(197,111,111,.35);background:rgba(197,111,111,.08)}
+.ibf{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+
+/* Replies / Opens */
+.rrow{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid rgba(255,255,255,.04);font-size:.76rem}
+.rrow:last-child{border-bottom:none}
+
 /* Responsive */
 @media(max-width:880px){.grid{grid-template-columns:1fr}.tgrid{grid-template-columns:1fr}}
 @media(max-width:640px){.hd{gap:10px}.kpis{gap:12px}.fr{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.sbar{grid-template-columns:1fr 1fr}}
@@ -170,6 +190,7 @@ textarea{resize:vertical;min-height:54px}
 <!-- Nav -->
 <div class="nav">
   <button class="ntab on" onclick="goTab('pipeline',this)">Pipeline</button>
+  <button class="ntab" onclick="goTab('zapytania',this)">Zapytania <span class="cnt" id="inbound-badge" style="display:none"></span></button>
   <button class="ntab" onclick="goTab('partners',this)">Partnerzy</button>
   <button class="ntab" onclick="goTab('templates',this)">Szablony</button>
   <button class="ntab" onclick="goTab('baza',this)">Baza</button>
@@ -239,6 +260,43 @@ textarea{resize:vertical;min-height:54px}
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ── Zapytania ── -->
+<div id="t-zapytania" class="h">
+  <div class="grid">
+    <!-- Left: filters -->
+    <div>
+      <div class="pn" style="margin-bottom:10px">
+        <div class="ph"><h2>Filtr statusu</h2></div>
+        <div class="pb">
+          <div class="stabs" id="ib-tabs">
+            <button class="stab on" onclick="setIbFilter('all',this)">Wszystkie</button>
+            <button class="stab" onclick="setIbFilter('new',this)">Nowe</button>
+            <button class="stab" onclick="setIbFilter('in-progress',this)">W toku</button>
+            <button class="stab" onclick="setIbFilter('booked',this)">Zarezerwowane</button>
+            <button class="stab" onclick="setIbFilter('rejected',this)">Odrzucone</button>
+          </div>
+        </div>
+      </div>
+      <div class="pn">
+        <div class="ph"><h2>Odpowiedzi e-mail</h2></div>
+        <div class="pb" id="reply-list">
+          <div class="empty">Brak danych. Odśwież sync.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: inbound list -->
+    <div class="pn">
+      <div class="ph">
+        <h2>Zapytania ze strony</h2>
+        <button class="btn btn-xs btn-s" onclick="syncData()">Odśwież</button>
+      </div>
+      <div class="pb" id="ib-list">
+        <div class="empty">Brak zapytań. Odśwież sync.</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -439,18 +497,21 @@ const STAGES = [
 
 let S  = ls(SK,  {leads:[]});
 let PS = ls(PK,  {partners:[]});
-let DH = ls(DHK, {baza:[],engine:[],sent:[],sync:{}});
-let curStage = "new";
-let editId   = null;
-let formOpen = false;
+let DH = ls(DHK, {baza:[],engine:[],sent:[],inbound:[],replies:[],opens:[],sync:{}});
+let IBS = ls("pm_inbound_status_v1", {}); // {submittedAt+email: status}
+let curStage   = "new";
+let ibFilter   = "all";
+let editId     = null;
+let formOpen   = false;
 
 function ls(k, def) {
   try { return JSON.parse(localStorage.getItem(k)) || def; }
   catch { return def; }
 }
-function save()   { localStorage.setItem(SK,  JSON.stringify(S));  }
-function saveP()  { localStorage.setItem(PK,  JSON.stringify(PS)); }
-function saveDH() { localStorage.setItem(DHK, JSON.stringify(DH)); }
+function save()    { localStorage.setItem(SK,  JSON.stringify(S));  }
+function saveP()   { localStorage.setItem(PK,  JSON.stringify(PS)); }
+function saveDH()  { localStorage.setItem(DHK, JSON.stringify(DH)); }
+function saveIBS() { localStorage.setItem("pm_inbound_status_v1", JSON.stringify(IBS)); }
 
 // Auth
 function _showApp() {
@@ -483,6 +544,8 @@ function init() {
   renderPipeline();
   renderPartners();
   renderHub("");
+  renderInbound();
+  renderReplies();
   syncData();
 }
 
@@ -495,13 +558,23 @@ function renderHeader() {
   const won   = leads.filter(l => l.stage === "won").length;
   const baza  = DH.sync?.sourceStats?.baza || (DH.baza||[]).length || 0;
   const sent  = DH.sync?.sourceStats?.sent || 0;
+  const inbound = (DH.inbound||[]).length;
+  const newIb = (DH.inbound||[]).filter(r => ibStatus(r) === "new").length;
 
   document.getElementById("kpis").innerHTML =
     `<div class="kpi"><b>${open}</b><s>Otwarte</s></div>` +
     `<div class="kpi${due > 0 ? " r" : ""}"><b>${due}</b><s>Zaległe</s></div>` +
     `<div class="kpi g"><b>${won}</b><s>Wygrane</s></div>` +
     `<div class="kpi w"><b>${baza}</b><s>Baza</s></div>` +
-    `<div class="kpi"><b>${sent}</b><s>Wysłane</s></div>`;
+    `<div class="kpi"><b>${sent}</b><s>Wysłane</s></div>` +
+    (inbound ? `<div class="kpi${newIb > 0 ? " w" : ""}"><b>${inbound}</b><s>Zapytania</s></div>` : "");
+
+  // Badge on tab
+  const badge = document.getElementById("inbound-badge");
+  if (badge) {
+    if (newIb > 0) { badge.textContent = newIb; badge.style.display = ""; }
+    else badge.style.display = "none";
+  }
 
   const d = new Date();
   const generatedAt = DH.sync?.generatedAt;
@@ -723,11 +796,14 @@ async function syncData() {
     const r = await fetch(SYNC + "?t=" + Date.now());
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    DH.baza   = d.dataHub?.baza    || [];
-    DH.engine = d.dataHub?.engine  || [];
-    DH.sent   = d.dataHub?.sentLog || [];
-    DH.sync   = { generatedAt: d.generatedAt, sourceStats: d.sourceStats||{}, sourceRuns: d.sourceRuns||{} };
-    saveDH(); renderHub(""); renderHeader();
+    DH.baza    = d.dataHub?.baza         || [];
+    DH.engine  = d.dataHub?.engine       || [];
+    DH.sent    = d.dataHub?.sentLog      || [];
+    DH.inbound = d.dataHub?.inboundLeads || [];
+    DH.replies = d.dataHub?.replyLog     || [];
+    DH.opens   = d.dataHub?.openLog      || [];
+    DH.sync    = { generatedAt: d.generatedAt, sourceStats: d.sourceStats||{}, sourceRuns: d.sourceRuns||{} };
+    saveDH(); renderHub(""); renderHeader(); renderInbound(); renderReplies();
     const note = document.getElementById("sync-note");
     if (note) note.textContent = "Sync OK · " + (DH.baza.length||0) + " rekordów.";
   } catch(err) {
@@ -767,10 +843,82 @@ function renderHub(q) {
 
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","partners","templates","baza"].forEach(t =>
+  ["pipeline","zapytania","partners","templates","baza"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
+}
+
+// Inbound leads
+function ibKey(r) { return (r.submitted_at||"") + "|" + (r.email||r.phone||""); }
+function ibStatus(r) { return IBS[ibKey(r)] || r.status || "new"; }
+
+function setIbStatus(key, status) {
+  IBS[key] = status; saveIBS(); renderInbound(); renderHeader();
+}
+
+function setIbFilter(f, btn) {
+  ibFilter = f;
+  document.querySelectorAll("#ib-tabs .stab").forEach(b => b.classList.remove("on"));
+  btn.classList.add("on");
+  renderInbound();
+}
+
+function renderInbound() {
+  const all = DH.inbound || [];
+  const fl = ibFilter === "all" ? all : all.filter(r => ibStatus(r) === ibFilter);
+  const sorted = [...fl].sort((a,b) => (b.submitted_at||"").localeCompare(a.submitted_at||""));
+
+  const STATUS_LABEL = {new:"Nowe","in-progress":"W toku",booked:"Zarezerwowane",rejected:"Odrzucone"};
+
+  document.getElementById("ib-list").innerHTML = sorted.length
+    ? sorted.map(r => {
+        const key = ibKey(r);
+        const st  = ibStatus(r);
+        const stLabel = STATUS_LABEL[st] || st;
+        return `<div class="ib ib-${st}">
+          <div class="ib-top">
+            <div class="ib-name">${x(r.name||"Anonimowy")}</div>
+            <span class="ib-status ${st}">${stLabel}</span>
+          </div>
+          <div class="ib-meta">
+            ${r.phone?`<span>📞 ${x(r.phone)}</span>`:""}
+            ${r.email?`<span>✉ ${x(r.email)}</span>`:""}
+            ${r.event_type?`<span>${x(r.event_type)}</span>`:""}
+            ${r.city?`<span>${x(r.city)}</span>`:""}
+            ${r.event_date?`<span>${fdate(r.event_date)}</span>`:""}
+            ${r.scope?`<span>${x(r.scope)}</span>`:""}
+            <span style="opacity:.5">${fdate(r.submitted_at)}</span>
+          </div>
+          ${r.message?`<div class="ib-msg">"${x(r.message)}"</div>`:""}
+          <div class="ibf">
+            ${st!=="in-progress"?`<button class="btn btn-s btn-xs" onclick="setIbStatus('${key}','in-progress')">W toku</button>`:""}
+            ${st!=="booked"?`<button class="btn btn-p btn-xs" onclick="setIbStatus('${key}','booked')">Zarezerwowane</button>`:""}
+            ${st!=="rejected"?`<button class="btn btn-d btn-xs" onclick="setIbStatus('${key}','rejected')">Odrzuć</button>`:""}
+            ${r.phone?`<a href="tel:${x(r.phone)}" class="btn btn-s btn-xs">Zadzwoń</a>`:""}
+            ${r.email?`<a href="mailto:${x(r.email)}" class="btn btn-s btn-xs">E-mail</a>`:""}
+          </div>
+        </div>`;
+      }).join("")
+    : `<div class="empty">Brak zapytań w tym filtrze.</div>`;
+}
+
+// Replies
+function renderReplies() {
+  const replies = DH.replies || [];
+  const el = document.getElementById("reply-list");
+  if (!el) return;
+  el.innerHTML = replies.length
+    ? replies.slice(0,20).map(r =>
+        `<div class="rrow">
+          <div style="flex:1;min-width:0">
+            <strong style="display:block;font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x(r.from_email||r.email||"")}</strong>
+            <span style="color:var(--muted)">${x((r.subject||"").slice(0,60))}${(r.subject||"").length>60?"…":""}</span>
+          </div>
+          <span style="color:var(--muted);font-size:.68rem;flex-shrink:0">${fdate(r.received_at||r.date||"")}</span>
+        </div>`
+      ).join("")
+    : `<div class="empty">Brak odpowiedzi.</div>`;
 }
 
 // Export / Import
@@ -810,7 +958,7 @@ function copy(id, btn) {
 }
 
 // Helpers
-function render() { renderHeader(); renderToday(); renderPipeline(); }
+function render() { renderHeader(); renderToday(); renderPipeline(); renderInbound(); renderReplies(); }
 function todayStr() { return new Date().toISOString().slice(0,10); }
 function stageName(id) { return STAGES.find(s => s.id === id)?.name || id; }
 function kindName(k)   { return {koncert:"Koncert",slub:"Ślub",instytucja:"Instytucja",partner:"Partner"}[k] || k; }
