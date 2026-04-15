@@ -778,6 +778,21 @@ button[type="submit"]{
   cursor:pointer;
   margin-top:4px;
 }
+.form-success{
+  padding:28px 20px;
+  text-align:center;
+  color:var(--ink);
+  font-size:1.05rem;
+  line-height:1.6;
+  border:1px solid var(--gold);
+  border-radius:var(--r);
+}
+.form-success strong{
+  display:block;
+  font-size:1.18rem;
+  color:var(--gold);
+  margin-bottom:8px;
+}
 .form-note{
   margin-top:12px;
   font-size:.8rem;
@@ -1300,37 +1315,72 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   // Contact form
+  const FORM_WORKER_URL = "https://form-handler.piotr-piumosso.workers.dev";
   const form = document.querySelector("#contact-form");
+  const formNote = document.querySelector(".form-note");
+
   if (form) {
-    form.addEventListener("submit", e => {
+    form.addEventListener("submit", async e => {
       e.preventDefault();
-      const fd       = new FormData(form);
-      const name     = fd.get("name")?.trim();
-      const phone    = fd.get("phone")?.trim();
-      const eventType= fd.get("eventType")?.trim();
-      if (!name||!phone) {
+      const fd        = new FormData(form);
+      const name      = fd.get("name")?.trim();
+      const phone     = fd.get("phone")?.trim();
+      const eventType = fd.get("eventType")?.trim();
+      if (!name || !phone) {
         alert("Podaj imię i numer telefonu.");
         return;
       }
-      const email    = fd.get("email")?.trim()||"";
-      const message  = fd.get("message")?.trim()||"";
-      const city     = fd.get("city")?.trim()||"";
-      const eventDate= fd.get("eventDate")?.trim()||"";
-      const budget   = fd.get("budget")?.trim()||"";
-      saveLead({name,phone,email,message,city,eventDate,budget,eventType});
-      const body = encodeURIComponent(
+      const email     = fd.get("email")?.trim()     || "";
+      const message   = fd.get("message")?.trim()   || "";
+      const city      = fd.get("city")?.trim()      || "";
+      const eventDate = fd.get("eventDate")?.trim() || "";
+      const scope     = fd.get("budget")?.trim()    || "";
+
+      saveLead({name, phone, email, message, city, eventDate, budget: scope, eventType});
+
+      const submitBtn = form.querySelector("button[type='submit']");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Wysyłanie…";
+
+      try {
+        const res = await fetch(FORM_WORKER_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, phone, email, eventType, city, eventDate, scope, message }),
+        });
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok && data.ok) {
+          form.innerHTML = `<div class="form-success">
+            <strong>Wiadomość wysłana.</strong><br>
+            Zazwyczaj odpowiadamy jeszcze tego samego dnia.
+          </div>`;
+          if (formNote) formNote.style.display = "none";
+        } else {
+          throw new Error(data.error || res.status);
+        }
+      } catch (err) {
+        console.error("Form submit error:", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Wyślij zapytanie";
+        // Fallback: open mailto so the message is never lost
+        const body = encodeURIComponent(
 `Imię i nazwisko: ${name}
 Typ wydarzenia: ${eventType||"–"}
 Miasto / miejsce: ${city||"–"}
 Data wydarzenia: ${eventDate||"–"}
-Skład / zakres: ${budget||"–"}
+Skład / zakres: ${scope||"–"}
 Telefon: ${phone}
 E-mail: ${email||"–"}
 
 Wiadomość:
 ${message||"–"}`
-      );
-      location.href = `mailto:kontakt@piumosso.pl?subject=Zapytanie%20z%20formularza&body=${body}`;
+        );
+        if (formNote) formNote.textContent = "Wystąpił problem z formularzem. Otwieram klienta pocztowego jako zapasowy sposób wysyłki.";
+        setTimeout(() => {
+          location.href = `mailto:kontakt@piumosso.pl?subject=Zapytanie%20z%20formularza&body=${body}`;
+        }, 1200);
+      }
     });
   }
 
