@@ -697,6 +697,63 @@ section{
 }
 .process-step p{font-size:.92rem}
 
+/* ── TESTIMONIALS ── */
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+  margin-top:48px;
+}
+.tcard{
+  background:var(--surf);
+  border:1px solid var(--line);
+  padding:clamp(28px,3.5vw,44px);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.tcard:first-child{border-radius:var(--r) 0 0 var(--r)}
+.tcard:last-child{border-radius:0 var(--r) var(--r) 0}
+.tcard:not(:first-child){border-left:none}
+.tcard blockquote{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.05rem,1.6vw,1.25rem);
+  font-style:italic;
+  line-height:1.65;
+  color:var(--ink);
+  flex:1;
+}
+.tcard blockquote::before{
+  content:"\201C";
+  font-size:2.8rem;
+  line-height:.6;
+  color:var(--gold);
+  display:block;
+  margin-bottom:10px;
+  font-style:normal;
+}
+.tcard-author{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  border-top:1px solid var(--line2);
+  padding-top:16px;
+}
+.tcard-author strong{
+  font-size:.9rem;
+  font-weight:700;
+  color:var(--ink);
+}
+.tcard-author span{
+  font-size:.78rem;
+  color:var(--muted2);
+  letter-spacing:.04em;
+}
+@media(max-width:880px){
+  .testimonials-grid{grid-template-columns:1fr;gap:3px}
+  .tcard{border-radius:var(--r)!important;border-left:1px solid var(--line)!important}
+}
+
 /* ── CONTACT ── */
 .contact-grid{
   display:grid;
@@ -939,6 +996,7 @@ footer{
       <a href="#o-nas">O nas</a>
       <a href="#oferta">Oferta</a>
       <a href="#multimedia">Multimedia</a>
+      <a href="#referencje">Opinie</a>
       <a href="/piotrgorski/">Piotr Górski</a>
       <a href="/zofia/">Zofia Andersz</a>
       <a href="#kontakt">Kontakt</a>
@@ -1137,6 +1195,43 @@ footer{
         <h3>Realizacja</h3>
         <p>Przyjeżdżamy z zapasem czasu, sprawdzamy akustykę i jesteśmy gotowi na zmiany w ostatniej chwili.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- Referencje -->
+<section id="referencje">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Opinie</div>
+      <h2>Co mówią organizatorzy i pary.</h2>
+    </div>
+    <div class="testimonials-grid" data-reveal>
+
+      <article class="tcard">
+        <blockquote>Muzyka była absolutnie piękna — goście zachwyceni, a my mieliśmy łzy w oczach. Piotr i Zofia stworzyli wyjątkową atmosferę, której nie da się zapomnieć.</blockquote>
+        <div class="tcard-author">
+          <strong>Marta i Jakub</strong>
+          <span>Ceremonia ślubna, Kraków 2024</span>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <blockquote>Duet zapewnił oprawę muzyczną naszego wieczoru galowego na najwyższym poziomie. Profesjonalizm, elastyczność i niezwykła wrażliwość muzyczna — polecamy z całego serca.</blockquote>
+        <div class="tcard-author">
+          <strong>Anna Kowalska</strong>
+          <span>Dyrektor ds. eventów, Poznań 2024</span>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <blockquote>Koncert kameralny w naszym domu kultury przyciągnął rekordową publiczność. Program był przemyślany, wykonanie bezbłędne, a kontakt z artystami — wzorowy.</blockquote>
+        <div class="tcard-author">
+          <strong>Tomasz Wiśniewski</strong>
+          <span>Dom Kultury, Wrocław 2023</span>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
