@@ -535,6 +535,8 @@ function unlock() {
 let _ok = false;
 try { _ok = sessionStorage.getItem("pm_unlocked")==="1"; } catch(e) {}
 try { if (!_ok) _ok = localStorage.getItem("pm_unlocked_p")==="1"; } catch(e) {}
+// Na telefonie PIN nie jest potrzebny — telefon ma własne zabezpieczenia
+if (!_ok) _ok = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (_ok) _showApp();
 
 // Boot
