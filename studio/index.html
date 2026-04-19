@@ -818,8 +818,8 @@ async function syncData() {
 function renderHub(q) {
   const ss = DH.sync?.sourceStats || {};
   const sr = DH.sync?.sourceRuns  || {};
-  document.getElementById("s-baza").textContent   = ss.baza   ?? (DH.baza||[]).length  || "—";
-  document.getElementById("s-engine").textContent = ss.engine ?? (DH.engine||[]).length || "—";
+  document.getElementById("s-baza").textContent   = ss.baza   ?? ((DH.baza||[]).length  || "—");
+  document.getElementById("s-engine").textContent = ss.engine ?? ((DH.engine||[]).length || "—");
   document.getElementById("s-sent").textContent   = ss.sent   ?? "—";
   document.getElementById("s-sync").textContent   = DH.sync?.generatedAt ? fdate(DH.sync.generatedAt) : "brak";
 
