@@ -150,6 +150,28 @@ textarea{resize:vertical;min-height:54px}
 .rrow{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid rgba(255,255,255,.04);font-size:.76rem}
 .rrow:last-child{border-bottom:none}
 
+/* Calendar */
+.ce{padding:10px 12px;background:var(--panel2);border:1px solid var(--b2);border-radius:var(--r);margin-bottom:6px;display:flex;align-items:flex-start;gap:10px;justify-content:space-between}
+.ce.up{border-left:2px solid var(--gold)}
+.ce-date{font-size:.72rem;color:var(--gold);font-weight:600;white-space:nowrap;padding-top:2px;min-width:82px}
+.ce-info{flex:1;min-width:0}
+.ce-info strong{display:block;font-size:.84rem;line-height:1.3}
+.ce-info span{font-size:.72rem;color:var(--muted)}
+.ce-acts{display:flex;flex-direction:column;gap:3px;flex-shrink:0}
+.cal-section{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--b2)}
+.cal-section:first-child{margin-top:0}
+
+/* Actions */
+.act-card{padding:14px 15px;background:var(--panel2);border:1px solid var(--b2);border-radius:var(--r);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.act-card strong{display:block;font-size:.86rem}
+.act-card span{font-size:.72rem;color:var(--muted)}
+.act-status{font-size:.7rem;padding:2px 8px;border-radius:999px;border:1px solid;white-space:nowrap}
+.act-status.ok{color:var(--green);border-color:rgba(94,163,109,.35);background:rgba(94,163,109,.08)}
+.act-status.running{color:var(--gold);border-color:rgba(212,176,106,.35);background:rgba(212,176,106,.08)}
+.act-status.fail{color:var(--red);border-color:rgba(197,111,111,.35);background:rgba(197,111,111,.08)}
+.pat-row{display:flex;gap:6px;align-items:center}
+.pat-row input{flex:1}
+
 /* Responsive */
 @media(max-width:880px){.grid{grid-template-columns:1fr}.tgrid{grid-template-columns:1fr}}
 @media(max-width:640px){.hd{gap:10px}.kpis{gap:12px}.fr{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.sbar{grid-template-columns:1fr 1fr}}
@@ -191,6 +213,8 @@ textarea{resize:vertical;min-height:54px}
 <div class="nav">
   <button class="ntab on" onclick="goTab('pipeline',this)">Pipeline</button>
   <button class="ntab" onclick="goTab('zapytania',this)">Zapytania <span class="cnt" id="inbound-badge" style="display:none"></span></button>
+  <button class="ntab" onclick="goTab('kalendarz',this)">Kalendarz</button>
+  <button class="ntab" onclick="goTab('akcje',this)">Akcje</button>
   <button class="ntab" onclick="goTab('partners',this)">Partnerzy</button>
   <button class="ntab" onclick="goTab('templates',this)">Szablony</button>
   <button class="ntab" onclick="goTab('baza',this)">Baza</button>
@@ -417,6 +441,107 @@ Più Mosso</div>
   </div>
 </div>
 
+<!-- ── Kalendarz ── -->
+<div id="t-kalendarz" class="h">
+  <div class="grid">
+    <!-- Left: add form -->
+    <div class="pn">
+      <div class="ph">
+        <h2>Nowe wydarzenie</h2>
+      </div>
+      <div class="pb">
+        <form id="cal-form" class="fs" onsubmit="addCalEvent(event)">
+          <label>Tytuł *<input name="title" required placeholder="Festiwal, ślub, koncert…"></label>
+          <div class="fr">
+            <label>Data *<input type="date" name="date" required></label>
+            <label>Typ
+              <select name="type">
+                <option value="upcoming">Nadchodzące</option>
+                <option value="done">Odbyło się</option>
+              </select>
+            </label>
+          </div>
+          <div class="fr">
+            <label>Miasto<input name="city" placeholder="Poznań"></label>
+            <label>Miejsce<input name="venue" placeholder="Dom Kultury…"></label>
+          </div>
+          <label>Notatka<textarea name="note" placeholder="Festiwal kameralny, z orkiestrą…"></textarea></label>
+          <div class="brow">
+            <button class="btn btn-p" type="submit">Dodaj</button>
+            <button class="btn btn-s" type="button" onclick="document.getElementById('cal-form').reset()">Wyczyść</button>
+          </div>
+        </form>
+        <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--b2)">
+          <button class="btn btn-p" style="width:100%" onclick="pushCalendar()">Opublikuj na stronie →</button>
+          <div id="cal-push-status" style="font-size:.72rem;color:var(--muted);margin-top:5px;text-align:center"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: list -->
+    <div class="pn">
+      <div class="ph">
+        <h2>Wszystkie wydarzenia</h2>
+        <span id="cal-count" style="font-size:.72rem;color:var(--muted)"></span>
+      </div>
+      <div class="pb" id="cal-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Akcje ── -->
+<div id="t-akcje" class="h">
+  <div class="grid">
+    <!-- Left: settings + quick actions -->
+    <div>
+      <div class="pn" style="margin-bottom:10px">
+        <div class="ph"><h2>GitHub PAT</h2></div>
+        <div class="pb">
+          <p style="font-size:.76rem;color:var(--muted);margin-bottom:8px">Token do publikowania kalendarza i uruchamiania mailera. Zakres: <code>repo</code> + <code>workflow</code>.</p>
+          <div class="pat-row">
+            <input id="gh-pat" type="password" placeholder="ghp_…" oninput="savePAT(this.value)">
+            <button class="btn btn-s btn-xs" onclick="togglePATvis()">Pokaż</button>
+          </div>
+          <div id="pat-status" style="font-size:.72rem;color:var(--muted);margin-top:5px"></div>
+        </div>
+      </div>
+
+      <div class="pn">
+        <div class="ph"><h2>Kampania mailingowa</h2></div>
+        <div class="pb">
+          <div class="act-card">
+            <div><strong>Wyślij dziś</strong><span>Daily batch — nowi + follow-upy</span></div>
+            <button class="btn btn-p btn-xs" onclick="triggerPipeline('daily')">Uruchom</button>
+          </div>
+          <div class="act-card">
+            <div><strong>Scraper + wysyłka</strong><span>Pełny tygodniowy run</span></div>
+            <button class="btn btn-s btn-xs" onclick="triggerPipeline('weekly')">Uruchom</button>
+          </div>
+          <div class="act-card">
+            <div><strong>Tylko scraper</strong><span>Zbierz nowe leady, nie wysyłaj</span></div>
+            <button class="btn btn-s btn-xs" onclick="triggerPipeline('scrape')">Uruchom</button>
+          </div>
+          <div class="act-card">
+            <div><strong>Tylko wysyłka</strong><span>Send batch bez scrapowania</span></div>
+            <button class="btn btn-s btn-xs" onclick="triggerPipeline('send')">Uruchom</button>
+          </div>
+          <div id="pipeline-status" style="font-size:.76rem;color:var(--muted);margin-top:6px;padding:8px;background:var(--panel);border-radius:7px;display:none"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: run history -->
+    <div class="pn">
+      <div class="ph">
+        <h2>Historia uruchomień</h2>
+        <button class="btn btn-xs btn-s" onclick="loadRuns()">Odśwież</button>
+      </div>
+      <div class="pb" id="runs-list">
+        <div class="empty">Kliknij Odśwież.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ── Baza ── -->
 <div id="t-baza" class="h">
   <div class="pn">
@@ -484,7 +609,13 @@ const PIN  = "2137";
 const SK   = "pm_studio_os_v1";
 const PK   = "pm_partner_machine_v1";
 const DHK  = "pm_lead_data_hub_v1";
+const CK   = "pm_calendar_v1";
+const PATK = "pm_gh_pat_v1";
 const SYNC = "./data/studio-sync.json";
+const CAL_JSON = "./data/calendar.json";
+const GH_OWNER = "Piotr-piumosso";
+const GH_REPO_WEB = "Pi-Mosso";
+const GH_REPO_ENG = "piumosso-engine";
 
 const STAGES = [
   {id:"new",       name:"Nowe"},
@@ -498,7 +629,8 @@ const STAGES = [
 let S  = ls(SK,  {leads:[]});
 let PS = ls(PK,  {partners:[]});
 let DH = ls(DHK, {baza:[],engine:[],sent:[],inbound:[],replies:[],opens:[],sync:{}});
-let IBS = ls("pm_inbound_status_v1", {}); // {submittedAt+email: status}
+let IBS = ls("pm_inbound_status_v1", {});
+let CAL = ls(CK, []); // {submittedAt+email: status}
 let curStage   = "new";
 let ibFilter   = "all";
 let editId     = null;
@@ -512,6 +644,7 @@ function save()    { localStorage.setItem(SK,  JSON.stringify(S));  }
 function saveP()   { localStorage.setItem(PK,  JSON.stringify(PS)); }
 function saveDH()  { localStorage.setItem(DHK, JSON.stringify(DH)); }
 function saveIBS() { localStorage.setItem("pm_inbound_status_v1", JSON.stringify(IBS)); }
+function saveCAL() { localStorage.setItem(CK,  JSON.stringify(CAL)); }
 
 // Auth
 function _showApp() {
@@ -549,7 +682,10 @@ function init() {
   renderHub("");
   renderInbound();
   renderReplies();
+  renderKalendarz();
+  loadPAT();
   syncData();
+  loadCalendarFromRemote();
 }
 
 // Header
@@ -846,10 +982,11 @@ function renderHub(q) {
 
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","zapytania","partners","templates","baza"].forEach(t =>
+  ["pipeline","zapytania","partners","templates","baza","kalendarz","akcje"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
+  if (name === "akcje") loadRuns();
 }
 
 // Inbound leads
@@ -973,6 +1110,241 @@ function fdate(v) {
 }
 function x(s) {
   return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// ═══════════════════════════════════════════════════════
+// KALENDARZ
+// ═══════════════════════════════════════════════════════
+
+async function loadCalendarFromRemote() {
+  try {
+    const r = await fetch(CAL_JSON + "?t=" + Date.now());
+    if (!r.ok) return;
+    const data = await r.json();
+    // Scalanie: zdalne wydarzenia są źródłem prawdy dla istniejących id; lokalnie dodane (bez pasującego id w remote) zostają
+    const remoteIds = new Set(data.map(e => e.id));
+    const localOnly = CAL.filter(e => !remoteIds.has(e.id));
+    CAL = [...data, ...localOnly];
+    saveCAL();
+    renderKalendarz();
+  } catch(e) {}
+}
+
+function renderKalendarz() {
+  const today = todayStr();
+  const sorted = [...CAL].sort((a,b) => b.date.localeCompare(a.date));
+  const upcoming = sorted.filter(e => e.date >= today);
+  const past     = sorted.filter(e => e.date <  today);
+
+  document.getElementById("cal-count").textContent = CAL.length + " wydarzeń";
+
+  let h = "";
+  if (upcoming.length) {
+    h += `<div class="cal-section">Nadchodzące (${upcoming.length})</div>`;
+    upcoming.forEach(e => { h += calCard(e, true); });
+  }
+  if (past.length) {
+    h += `<div class="cal-section">Archiwum (${past.length})</div>`;
+    past.forEach(e => { h += calCard(e, false); });
+  }
+  if (!CAL.length) h = `<div class="empty">Brak wydarzeń. Dodaj pierwsze.</div>`;
+  document.getElementById("cal-list").innerHTML = h;
+}
+
+function calCard(e, up) {
+  const place = [e.city, e.venue].filter(Boolean).join(" · ");
+  return `<div class="ce${up?" up":""}">
+    <div class="ce-date">${fdate(e.date)}</div>
+    <div class="ce-info">
+      <strong>${x(e.title)}</strong>
+      ${place ? `<span>${x(place)}</span>` : ""}
+      ${e.note ? `<span style="display:block;opacity:.65">${x(e.note)}</span>` : ""}
+    </div>
+    <div class="ce-acts">
+      <button class="btn btn-s btn-xs" onclick="editCalEvent('${e.id}')">Edit</button>
+      <button class="btn btn-d btn-xs" onclick="delCalEvent('${e.id}')">×</button>
+    </div>
+  </div>`;
+}
+
+function addCalEvent(ev) {
+  ev.preventDefault();
+  const fd = new FormData(ev.target);
+  const date = fd.get("date");
+  const today = todayStr();
+  CAL.unshift({
+    id: crypto.randomUUID(),
+    date,
+    title: fd.get("title").trim(),
+    city:  fd.get("city").trim(),
+    venue: fd.get("venue").trim(),
+    note:  fd.get("note").trim(),
+    type:  date >= today ? "upcoming" : (fd.get("type") || "done"),
+    photos: [],
+  });
+  saveCAL(); ev.target.reset(); renderKalendarz();
+}
+
+function delCalEvent(id) {
+  if (!confirm("Usunąć wydarzenie?")) return;
+  CAL = CAL.filter(e => e.id !== id);
+  saveCAL(); renderKalendarz();
+}
+
+function editCalEvent(id) {
+  const e = CAL.find(ev => ev.id === id);
+  if (!e) return;
+  const title = prompt("Tytuł:", e.title);
+  if (title === null) return;
+  const date  = prompt("Data (RRRR-MM-DD):", e.date);
+  if (date === null) return;
+  const city  = prompt("Miasto:", e.city || "");
+  const venue = prompt("Miejsce:", e.venue || "");
+  const note  = prompt("Notatka:", e.note || "");
+  Object.assign(e, {title: title.trim(), date, city: (city||"").trim(), venue: (venue||"").trim(), note: (note||"").trim()});
+  saveCAL(); renderKalendarz();
+}
+
+async function pushCalendar() {
+  const pat = localStorage.getItem(PATK) || "";
+  if (!pat) {
+    alert("Najpierw wprowadź GitHub PAT w zakładce Akcje.");
+    return;
+  }
+  const status = document.getElementById("cal-push-status");
+  status.textContent = "Publikowanie…";
+
+  try {
+    // Pobierz obecne SHA pliku
+    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO_WEB}/contents/data/calendar.json`, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: "application/vnd.github+json" }
+    });
+    const current = await getR.json();
+    const sha = current.sha;
+
+    // Zakoduj nową zawartość
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(CAL, null, 2))));
+
+    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO_WEB}/contents/data/calendar.json`, {
+      method: "PUT",
+      headers: { Authorization: `Bearer ${pat}`, "Content-Type": "application/json", Accept: "application/vnd.github+json" },
+      body: JSON.stringify({ message: "studio: update calendar", content, sha })
+    });
+
+    if (putR.ok) {
+      status.textContent = "Opublikowano! Strona zaktualizuje się za ~1 minutę.";
+      status.style.color = "var(--green)";
+    } else {
+      const err = await putR.json();
+      status.textContent = "Błąd: " + (err.message || putR.status);
+      status.style.color = "var(--red)";
+    }
+  } catch(e) {
+    status.textContent = "Błąd sieciowy: " + e.message;
+    status.style.color = "var(--red)";
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// AKCJE / GITHUB API
+// ═══════════════════════════════════════════════════════
+
+function loadPAT() {
+  const pat = localStorage.getItem(PATK) || "";
+  const inp = document.getElementById("gh-pat");
+  if (inp) inp.value = pat;
+  updatePATStatus(pat);
+}
+
+function savePAT(val) {
+  localStorage.setItem(PATK, val.trim());
+  updatePATStatus(val.trim());
+}
+
+function updatePATStatus(pat) {
+  const el = document.getElementById("pat-status");
+  if (!el) return;
+  if (pat.startsWith("ghp_") || pat.startsWith("github_pat_")) {
+    el.textContent = "Token zapisany.";
+    el.style.color = "var(--green)";
+  } else if (pat.length > 0) {
+    el.textContent = "Nieznany format tokenu.";
+    el.style.color = "var(--gold)";
+  } else {
+    el.textContent = "Brak tokenu.";
+    el.style.color = "";
+  }
+}
+
+function togglePATvis() {
+  const inp = document.getElementById("gh-pat");
+  if (!inp) return;
+  inp.type = inp.type === "password" ? "text" : "password";
+}
+
+async function triggerPipeline(mode) {
+  const pat = localStorage.getItem(PATK) || "";
+  if (!pat) { alert("Najpierw wprowadź GitHub PAT w tym panelu."); return; }
+
+  const statusEl = document.getElementById("pipeline-status");
+  statusEl.style.display = "";
+  statusEl.style.color = "var(--gold)";
+  statusEl.textContent = `Uruchamiam tryb "${mode}"…`;
+
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO_ENG}/actions/workflows/pipeline.yml/dispatches`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${pat}`, "Content-Type": "application/json", Accept: "application/vnd.github+json" },
+      body: JSON.stringify({ ref: "main", inputs: { mode } })
+    });
+
+    if (r.status === 204) {
+      statusEl.textContent = `Uruchomiono (${mode}). GitHub Actions startuje za ~10 sekund.`;
+      statusEl.style.color = "var(--green)";
+      setTimeout(loadRuns, 8000);
+    } else {
+      const err = await r.json().catch(() => ({}));
+      statusEl.textContent = "Błąd: " + (err.message || r.status);
+      statusEl.style.color = "var(--red)";
+    }
+  } catch(e) {
+    statusEl.textContent = "Błąd sieciowy: " + e.message;
+    statusEl.style.color = "var(--red)";
+  }
+}
+
+async function loadRuns() {
+  const pat = localStorage.getItem(PATK) || "";
+  const el = document.getElementById("runs-list");
+  if (!el) return;
+  if (!pat) { el.innerHTML = `<div class="empty">Wprowadź GitHub PAT żeby zobaczyć historię.</div>`; return; }
+
+  el.innerHTML = `<div class="empty">Ładowanie…</div>`;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO_ENG}/actions/runs?per_page=10`, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: "application/vnd.github+json" }
+    });
+    const data = await r.json();
+    const runs = data.workflow_runs || [];
+    if (!runs.length) { el.innerHTML = `<div class="empty">Brak uruchomień.</div>`; return; }
+
+    el.innerHTML = runs.map(run => {
+      const st = run.status === "completed"
+        ? (run.conclusion === "success" ? "ok" : "fail")
+        : "running";
+      const stLabel = {ok:"Sukces", fail:"Błąd", running:"W toku"}[st];
+      const input = run.inputs?.mode || "—";
+      return `<div class="act-card">
+        <div>
+          <strong>${x(run.name || "Pipeline")}</strong>
+          <span>${fdate(run.created_at)} · tryb: ${x(input)}</span>
+        </div>
+        <span class="act-status ${st}">${stLabel}</span>
+      </div>`;
+    }).join("");
+  } catch(e) {
+    el.innerHTML = `<div class="empty">Błąd: ${x(e.message)}</div>`;
+  }
 }
 </script>
 </body>
