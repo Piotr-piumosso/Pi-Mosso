@@ -1289,9 +1289,12 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   // Contact form
+  const FORM_WORKER_URL = "https://form-handler.pietrek517.workers.dev";
   const form = document.querySelector("#contact-form");
+  const formNote = document.querySelector(".form-note");
+
   if (form) {
-    form.addEventListener("submit", e => {
+    form.addEventListener("submit", async e => {
       e.preventDefault();
       const fd       = new FormData(form);
       const name     = fd.get("name")?.trim();
@@ -1305,21 +1308,47 @@ window.addEventListener("DOMContentLoaded", () => {
       const message  = fd.get("message")?.trim()||"";
       const city     = fd.get("city")?.trim()||"";
       const eventDate= fd.get("eventDate")?.trim()||"";
-      const budget   = fd.get("budget")?.trim()||"";
-      saveLead({name,phone,email,message,city,eventDate,budget,eventType});
-      const body = encodeURIComponent(
+      const scope    = fd.get("budget")?.trim()||"";
+      saveLead({name,phone,email,message,city,eventDate,budget:scope,eventType});
+
+      const submitBtn = form.querySelector("button[type='submit']");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Envoi en cours…";
+
+      try {
+        const res = await fetch(FORM_WORKER_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, phone, email, eventType, city, eventDate, scope, message }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.ok) {
+          form.innerHTML = `<div class="form-success">
+            <strong>Message envoyé.</strong><br>
+            Nous répondons généralement le jour même.
+          </div>`;
+          if (formNote) formNote.style.display = "none";
+        } else {
+          throw new Error(data.error || res.status);
+        }
+      } catch (err) {
+        console.error("Form submit error:", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Envoyer la demande";
+        const body = encodeURIComponent(
 `Nom : ${name}
 Type d'événement : ${eventType||"–"}
 Ville / Lieu : ${city||"–"}
 Date de l'événement : ${eventDate||"–"}
-Formation / Ampleur : ${budget||"–"}
+Formation / Ampleur : ${scope||"–"}
 Téléphone : ${phone}
 E-Mail : ${email||"–"}
 
 Message :
 ${message||"–"}`
-      );
-      location.href = `mailto:kontakt@piumosso.pl?subject=Demande%20depuis%20le%20site&body=${body}`;
+        );
+        location.href = `mailto:kontakt@piumosso.pl?subject=Demande%20depuis%20le%20site&body=${body}`;
+      }
     });
   }
 
