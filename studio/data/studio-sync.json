@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-23T11:45:30.490904+00:00",
+  "generatedAt": "2026-04-24T11:43:24.435566+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
-    "sent": 490,
+    "sent": 570,
     "inbound": 2,
     "replies": 0,
     "opens": 0
@@ -12,7 +12,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-04-23T11:44:24.818231+00:00",
+    "engine_last_run": "2026-04-24T11:42:45.657095+00:00",
     "engine_attempted": 40,
     "engine_sent": 40
   },
@@ -42470,7 +42470,7 @@
       {
         "email": "fk@filharmonia.krakow.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42480,7 +42480,7 @@
       {
         "email": "fprm@prm.art.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42490,7 +42490,7 @@
       {
         "email": "fundacja@arturrubinstein.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42500,7 +42500,7 @@
       {
         "email": "fundacja@arturubinstein.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42510,7 +42510,7 @@
       {
         "email": "fundacja@fundacjakultura.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42520,7 +42520,7 @@
       {
         "email": "fundacja@kultura-gora.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42530,7 +42530,7 @@
       {
         "email": "fundacja@morzekultury.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42540,7 +42540,7 @@
       {
         "email": "fundacja@muzykajest.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42550,7 +42550,7 @@
       {
         "email": "fundacja@pzu.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42560,7 +42560,7 @@
       {
         "email": "g.grynkiewicz@lubuskie.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42570,7 +42570,7 @@
       {
         "email": "gazeta@mgokosiek.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42580,7 +42580,7 @@
       {
         "email": "gdpr@krs-pobierz.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42590,7 +42590,7 @@
       {
         "email": "geschaeftsfuehrung@tup-online.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42600,7 +42600,7 @@
       {
         "email": "gf@saechsische-staatstheater.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42610,7 +42610,7 @@
       {
         "email": "gitary@musiccenter.com.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42620,7 +42620,7 @@
       {
         "email": "gmina@mogielnica.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42630,7 +42630,7 @@
       {
         "email": "gok.turystyka@janowpodlaski.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42640,7 +42640,7 @@
       {
         "email": "gok@gminaborki.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42650,7 +42650,7 @@
       {
         "email": "gok@gokmichalowo.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42660,7 +42660,7 @@
       {
         "email": "gok@loniow.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42670,7 +42670,7 @@
       {
         "email": "gok@malczyce.wroc.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42680,7 +42680,7 @@
       {
         "email": "gok@polajewo.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42690,7 +42690,7 @@
       {
         "email": "gokis@radzynpodlaski.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42700,7 +42700,7 @@
       {
         "email": "gops@gopsnaglowice.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42710,7 +42710,7 @@
       {
         "email": "gosia@agencjakulturalna.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42720,7 +42720,7 @@
       {
         "email": "gosw@durbaszka.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42730,7 +42730,7 @@
       {
         "email": "gruppen@die-hamburgische-staatsoper.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42740,7 +42740,7 @@
       {
         "email": "gruppen@proarte.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42750,7 +42750,7 @@
       {
         "email": "grzegorz.slacz@krakowculture.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42760,7 +42760,7 @@
       {
         "email": "haeringarchitect@t-online.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42770,7 +42770,7 @@
       {
         "email": "hallo@atelierhurra.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42780,7 +42780,7 @@
       {
         "email": "hallo@frauenkultur-leipzig.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42790,7 +42790,7 @@
       {
         "email": "hallo@visitberlin.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42800,7 +42800,7 @@
       {
         "email": "hansjacob.staemmler@hfmdk-frankfurt.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42810,7 +42810,7 @@
       {
         "email": "hello@yourdomain.tld",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42820,7 +42820,7 @@
       {
         "email": "hi@boffomedia.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42830,7 +42830,7 @@
       {
         "email": "hi@ddb.wien",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42840,7 +42840,7 @@
       {
         "email": "hi@music-duesseldorf.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42850,7 +42850,7 @@
       {
         "email": "hziarnik@mok.glowno.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42860,7 +42860,7 @@
       {
         "email": "i.dumin@dops.wroc.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42870,7 +42870,7 @@
       {
         "email": "if.astipsarap@paraspitsa.fi",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42880,7 +42880,7 @@
       {
         "email": "ihrname@mail.ch",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42890,7 +42890,7 @@
       {
         "email": "imie.nazwisko@redakcjaonet.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42900,7 +42900,7 @@
       {
         "email": "infnauk@bu.uni.wroc.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42910,7 +42910,7 @@
       {
         "email": "info-kulturportal@kulturportal-bayern.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42920,7 +42920,7 @@
       {
         "email": "info.fi@stadium.fi",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42930,7 +42930,7 @@
       {
         "email": "info@4-b.ch",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42940,7 +42940,7 @@
       {
         "email": "info@abk-stuttgart.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42950,7 +42950,7 @@
       {
         "email": "info@agencjabrussa.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42960,7 +42960,7 @@
       {
         "email": "info@agentur-amadeus.com",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42970,7 +42970,7 @@
       {
         "email": "info@agentur-wimmer.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42980,7 +42980,7 @@
       {
         "email": "info@alegria.com.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -42990,7 +42990,7 @@
       {
         "email": "info@alte-philharmonie.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43000,7 +43000,7 @@
       {
         "email": "info@alteoper.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43010,7 +43010,7 @@
       {
         "email": "info@aptusbr.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43020,7 +43020,7 @@
       {
         "email": "info@arka-frankfurt.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43030,7 +43030,7 @@
       {
         "email": "info@artagenturkoeln.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43040,7 +43040,7 @@
       {
         "email": "info@bawos.ch",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43050,7 +43050,7 @@
       {
         "email": "info@biblioteka-ostrow.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43060,7 +43060,7 @@
       {
         "email": "info@big-direkt.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43070,7 +43070,7 @@
       {
         "email": "info@biletyna.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43080,7 +43080,7 @@
       {
         "email": "info@bpb.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43090,7 +43090,7 @@
       {
         "email": "info@brusselschamberchoir.be",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43100,7 +43100,7 @@
       {
         "email": "info@btcbb.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43110,7 +43110,7 @@
       {
         "email": "info@california-promotion.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43120,7 +43120,7 @@
       {
         "email": "info@call-a-pizza.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43130,7 +43130,7 @@
       {
         "email": "info@capitalmusic.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43140,7 +43140,7 @@
       {
         "email": "info@cbfranken.eu",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43150,7 +43150,7 @@
       {
         "email": "info@cbos.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43160,7 +43160,17 @@
       {
         "email": "info@csw.torun.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dete.com.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43170,7 +43180,397 @@
       {
         "email": "info@dhaus.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dkrembertow.waw.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dominos.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dr-asch.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dresden.travel",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dresdeninformation.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dutchmachineshop.com",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dzialmuzyczny.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@dzwiekowa.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@ebkv.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@elbland.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@energieleser.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@flipvegan.fi",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@fmz-stuttgart.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@foerderverein-kunstakademie.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@forum-der-kulturen.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@frakk.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@freesjes.nl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@freies-musikzentrum.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@freunde-der-staatsgalerie.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@fundacjamuzyka.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@gelbe-liste.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@grupafuntime.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@hamburg-tourismus.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@hannover-concerts.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@hdkd.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@heilpraxisnet.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@hmm-dresden.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@immobilien-kube.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@jazz-frankfurt.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@johanna-ey-foundation.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kaistrasse10.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@koeln-event.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@konzert-verein.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@ksk-immobilien.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kuenstleragentur-herath.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kultur-hamburg.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kultur-nord.org",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturdienste-stuttgart.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturherzen-verein.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43180,7 +43580,57 @@
       {
         "email": "info@kulturliste-koeln.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturloge-dresden.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturraum-muenchen.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturserver.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturzentrum-faust.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kulturzentrum-trudering.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43190,7 +43640,337 @@
       {
         "email": "info@kunststiftungnrw.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@kyon-energy.com",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@lonemusicagency.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@luise-kultur.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@mak.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@martinimusic.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@mc-nuernberg.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@millermusic.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@mokklobuck.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@mpm-music.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@music-island.com.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@music4friends.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musica-network.com",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musikagentur-dresden.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musikbildung.org",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musikforum-koeln.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musikpodium.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@musikverein-duesseldorf.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@netzverb.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@nwd-philharmonie.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@oberueber-karger.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@oper-frankfurt.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@orderhero.se",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@ottomatik.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@oye-oye.net",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@pavillon-hannover.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@pekao.com.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@philharmonie-leipzig.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@planet-kultur.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@pointofyou.com.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@popkulturkoeln.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@portalmuenchen.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@prawodlapraktykow.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "info@praxisgrunewald.de",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43200,7 +43980,7 @@
       {
         "email": "info@stadtgarten.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43210,7 +43990,17 @@
       {
         "email": "info@topca.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "kontakt@e-muzyka.pl",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43220,7 +44010,7 @@
       {
         "email": "kontakt@kulturgutverluste.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43230,7 +44020,17 @@
       {
         "email": "musikvermittlung@koelnmusik.de",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "office@oek.or.at",
+        "name": null,
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43240,7 +44040,7 @@
       {
         "email": "sekretariat@bs.katowice.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43250,7 +44050,7 @@
       {
         "email": "sekretariat@makis.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43260,7 +44060,7 @@
       {
         "email": "sekretariat@mdkkorczak.pl",
         "name": null,
-        "sent_at": "2026-04-23T11:40:54.062508+00:00",
+        "sent_at": "2026-04-24T11:40:40.557032+00:00",
         "status": "sent",
         "null": [
           "",
@@ -43268,602 +44068,602 @@
         ]
       },
       {
-        "email": "info@dete.com.pl",
-        "name": "Dane publiczne wpisu | Ceidg.gov.pl - Centralna Ewidencja i Informacja o Działalności Gospodarczej",
-        "sent_at": "2026-04-23T11:41:00.078026+00:00",
+        "email": "info@rmm-leipzig.de",
+        "name": "Rosenthal Musikmanagement Leipzig",
+        "sent_at": "2026-04-24T11:40:43.932363+00:00",
         "status": "sent",
         "null": [
-          "<177694445412.2248.9547038511412032426@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703084060.2273.13780354735874473695@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@seidlvilla.de",
+        "name": "SEIDLVILLA e.V. / Kontakt",
+        "sent_at": "2026-04-24T11:40:47.363914+00:00",
+        "status": "sent",
+        "null": [
+          "<177703084393.2273.14270500502885982468@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@dkrembertow.waw.pl",
-        "name": "Kontakt - Dom Kultury \"Rembertów\"",
-        "sent_at": "2026-04-23T11:41:05.901227+00:00",
+        "email": "info@sirensmusic.pl",
+        "name": "Kontakt Sirens music konsultacje muzyczne & licencje autorskie",
+        "sent_at": "2026-04-24T11:40:50.605297+00:00",
         "status": "sent",
         "null": [
-          "<177694446007.2248.953498590586730597@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703084736.2273.4127012907872684047@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
         ]
       },
       {
-        "email": "info@dominos.de",
-        "name": "Domino's Pizza - Jetzt Pizza bestellen & genießen! 🍕😋 | Domino's Pizza",
-        "sent_at": "2026-04-23T11:41:11.881418+00:00",
+        "email": "info@skinatelier.ch",
+        "name": "Schönheitspraxis Zürich | Skin Atelier die Beauty Praxis",
+        "sent_at": "2026-04-24T11:40:53.886552+00:00",
         "status": "sent",
         "null": [
-          "<177694446590.2248.12473415734666847919@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703085060.2273.142027342508734855@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
         ]
       },
       {
-        "email": "info@dr-asch.de",
-        "name": "Fisch gegen Tinnitus | Stuttgart Hausarzt Allgemeinmediziner Experte Arzt Praxis",
-        "sent_at": "2026-04-23T11:41:17.471822+00:00",
+        "email": "info@solaranlage-ratgeber.de",
+        "name": "Wirtschaftlichkeit und Amortisation einer Photovoltaik-Anlage berechnen - mit Online-Rechner",
+        "sent_at": "2026-04-24T11:40:57.133432+00:00",
         "status": "sent",
         "null": [
-          "<177694447188.2248.341233716404317065@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703085388.2273.8568966156954607075@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@dresden.travel",
-        "name": "Tourism - Dresden Information GmbH | Landeshauptstadt Dresden",
-        "sent_at": "2026-04-23T11:41:23.053029+00:00",
+        "email": "info@stadtjugendring-dresden.de",
+        "name": "Impressum - kijubdd.de",
+        "sent_at": "2026-04-24T11:41:00.201731+00:00",
         "status": "sent",
         "null": [
-          "<177694447747.2248.7917920445081010589@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703085713.2273.9047194195160107715@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@dresdeninformation.de",
-        "name": "Contact",
-        "sent_at": "2026-04-23T11:41:27.960987+00:00",
+        "email": "info@stadtkultur-stuttgart.de",
+        "name": "Impressum",
+        "sent_at": "2026-04-24T11:41:03.266734+00:00",
         "status": "sent",
         "null": [
-          "<177694448305.2248.17584578381233367232@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703086020.2273.3318004330318466879@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@stadtmuseum-steyr.at",
+        "name": "Steyr - Zentrum - Freizeit - Veranstaltungskalender",
+        "sent_at": "2026-04-24T11:41:06.571908+00:00",
+        "status": "sent",
+        "null": [
+          "<177703086326.2273.8774381658416569014@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@dutchmachineshop.com",
-        "name": "≥ Spantangen voor Gereedschap en Freesmachines | Marktplaats",
-        "sent_at": "2026-04-23T11:41:33.692297+00:00",
+        "email": "info@stuttgart-tourist.de",
+        "name": "Musikzentrum Baden-Württemberg",
+        "sent_at": "2026-04-24T11:41:09.543577+00:00",
         "status": "sent",
         "null": [
-          "<177694448796.2248.5471592061758603371@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@dzialmuzyczny.pl",
-        "name": "Dział muzyczny",
-        "sent_at": "2026-04-23T11:41:38.985354+00:00",
-        "status": "sent",
-        "null": [
-          "<177694449369.2248.10130056712500793082@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@dzwiekowa.pl",
-        "name": "Sale Prób Dźwiękówa – Profesjonalne sale prób i studio nagrań we Wrocławiu.",
-        "sent_at": "2026-04-23T11:41:44.475746+00:00",
-        "status": "sent",
-        "null": [
-          "<177694449898.2248.1813495336474748060@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703086657.2273.9071161576059220230@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "kontakt@e-muzyka.pl",
-        "name": "Kontakt - e-muzyka S.A",
-        "sent_at": "2026-04-23T11:41:49.542507+00:00",
+        "email": "info@szkolamozart.pl",
+        "name": "Kontakt - Centrum Muzyki Kraków Muzykoterapia",
+        "sent_at": "2026-04-24T11:41:12.805311+00:00",
         "status": "sent",
         "null": [
-          "<177694450447.2248.6393619120927019537@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703086954.2273.14509132402248111273@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
         ]
       },
       {
-        "email": "info@ebkv.de",
-        "name": "Kontakt – Ehrenfelder Bildungs- und Kulturverein e.V.",
-        "sent_at": "2026-04-23T11:41:54.866550+00:00",
+        "email": "info@thalderma.de",
+        "name": "THALDERMA - Schönheitsmedizin und Ästhetische Medizin",
+        "sent_at": "2026-04-24T11:41:16.164555+00:00",
         "status": "sent",
         "null": [
-          "<177694450954.2248.1798119024365313645@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703087280.2273.17667309712179257041@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
         ]
       },
       {
-        "email": "info@elbland.de",
-        "name": "Kulturpalast Dresden • Konzerthaus » OAD Elbland Dresden",
-        "sent_at": "2026-04-23T11:42:00.165509+00:00",
+        "email": "info@theaterhaus-frankfurt.de",
+        "name": "KulturPortal Frankfurt: Das Kulturamt",
+        "sent_at": "2026-04-24T11:41:19.334856+00:00",
         "status": "sent",
         "null": [
-          "<177694451486.2248.16424389512322425136@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703087616.2273.634053403800316089@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@tomorrowland.pl",
+        "name": "SALA MUZYCZNA — Tomorrowland Kraków",
+        "sent_at": "2026-04-24T11:41:22.398769+00:00",
+        "status": "sent",
+        "null": [
+          "<177703087933.2273.14648285722181284790@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@tscherkessen-koeln.de",
+        "name": "Kontakt – Tscherkessischer Kulturverein e.V.",
+        "sent_at": "2026-04-24T11:41:25.663354+00:00",
+        "status": "sent",
+        "null": [
+          "<177703088239.2273.12360549383591176059@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@energieleser.de",
-        "name": "Stromzähler mit App ablesen – einfache Anleitung",
-        "sent_at": "2026-04-23T11:42:05.492592+00:00",
+        "email": "info@universal-music.de",
+        "name": "Impressum Rolf Zuckowski",
+        "sent_at": "2026-04-24T11:41:28.759995+00:00",
         "status": "sent",
         "null": [
-          "<177694452016.2248.13934772880641650384@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703088566.2273.9500942898069685196@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "oper@vbw.at",
+        "name": "Kontakt - Theater an der Wien",
+        "sent_at": "2026-04-24T11:41:32.139030+00:00",
+        "status": "sent",
+        "null": [
+          "<177703088876.2273.1734675723020488863@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@flipvegan.fi",
-        "name": "FLIP Vegan Pizza - 100 % vegaanista pizzaa",
-        "sent_at": "2026-04-23T11:42:10.309331+00:00",
+        "email": "info@vdwklang.pl",
+        "name": "Home",
+        "sent_at": "2026-04-24T11:41:35.281160+00:00",
         "status": "sent",
         "null": [
-          "<177694452549.2248.2150154192916645967@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703089213.2273.4316682678536135298@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@fmz-stuttgart.de",
-        "name": "Freies Musikzentrum - Kontakt / Impressum / Datenschutz",
-        "sent_at": "2026-04-23T11:42:15.633529+00:00",
+        "email": "info@vereinzurfoerderungderkunst-stuttgart.de",
+        "name": "Kontakt – Förderverein",
+        "sent_at": "2026-04-24T11:41:38.376800+00:00",
         "status": "sent",
         "null": [
-          "<177694453031.2248.7828687030539705853@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703089528.2273.18207313853928663815@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@visitbydgoszcz.pl",
+        "name": "Kujawsko Pomorskie Centrum Kultury - Instytucje kultury",
+        "sent_at": "2026-04-24T11:41:41.630982+00:00",
+        "status": "sent",
+        "null": [
+          "<177703089837.2273.6269278150956643977@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@foerderverein-kunstakademie.de",
-        "name": "Foerderverein Kunstakademie Düsseldorf Kontakt — Gesellschaft von Freunden und Förderern der Kunstakademie Düsseldorf e.V.",
-        "sent_at": "2026-04-23T11:42:20.451616+00:00",
+        "email": "info@visitezliege.be",
+        "name": "Accueil | La Maison du Tourisme de Liège",
+        "sent_at": "2026-04-24T11:41:44.968570+00:00",
         "status": "sent",
         "null": [
-          "<177694453563.2248.3662291299721737485@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703090163.2273.503521016848969148@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@forum-der-kulturen.de",
-        "name": "Kontakt – Forum der Kulturen Stuttgart e. V.",
-        "sent_at": "2026-04-23T11:42:27.825513+00:00",
+        "email": "info@weltkunstzimmer.de",
+        "name": "Kontakt - WELTKUNSTZIMMER",
+        "sent_at": "2026-04-24T11:41:48.041796+00:00",
         "status": "sent",
         "null": [
-          "<177694454045.2248.8001151956717090602@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703090496.2273.10897618861974039018@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@frakk.de",
-        "name": "Kontakt - Frankfurter Kultur Komitee",
-        "sent_at": "2026-04-23T11:42:32.641582+00:00",
+        "email": "info@werksviertel-service.de",
+        "name": "Konzerthaus München - Werksviertel",
+        "sent_at": "2026-04-24T11:41:51.296022+00:00",
         "status": "sent",
         "null": [
-          "<177694454782.2248.13284257685321172732@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@freesjes.nl",
-        "name": "Bovenfrees spantang 8,0 mm",
-        "sent_at": "2026-04-23T11:42:38.134704+00:00",
-        "status": "sent",
-        "null": [
-          "<177694455264.2248.2104723087763700492@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@freies-musikzentrum.de",
-        "name": "Impressum | Freies Musikzentrum München",
-        "sent_at": "2026-04-23T11:42:42.951127+00:00",
-        "status": "sent",
-        "null": [
-          "<177694455813.2248.10713471684924586842@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@freunde-der-staatsgalerie.de",
-        "name": "Kontakt - Freunde der Staatsgalerie - Stuttgart",
-        "sent_at": "2026-04-23T11:42:48.314968+00:00",
-        "status": "sent",
-        "null": [
-          "<177694456295.2248.14770096480973275367@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703090804.2273.294232612090704007@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@fundacjamuzyka.pl",
-        "name": "Fundacja \"MUZYKA\" - Kompozycje i Produkcja Muzyczna | Muzyka Klasyczna, Filmowa, EDM",
-        "sent_at": "2026-04-23T11:42:53.288558+00:00",
+        "email": "info@wiener-krakauer.at",
+        "name": "Wiener – Krakauer » Kontakt, Impressum",
+        "sent_at": "2026-04-24T11:41:54.438248+00:00",
         "status": "sent",
         "null": [
-          "<177694456831.2248.10754591782154424378@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@gelbe-liste.de",
-        "name": "Regelmäßiger Fischkonsum senkt Tinnitus-Risiko | Gelbe Liste",
-        "sent_at": "2026-04-23T11:42:58.613647+00:00",
-        "status": "sent",
-        "null": [
-          "<177694457328.2248.236112985680849805@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@grupafuntime.pl",
-        "name": "Grupa Funtime",
-        "sent_at": "2026-04-23T11:43:03.923773+00:00",
-        "status": "sent",
-        "null": [
-          "<177694457861.2248.7606535145203122993@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703091129.2273.1292911752785108078@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@hamburg-tourismus.de",
-        "name": "Internationales Musikfest Hamburg - Vielfältige Konzerte auf Hamburgs Bühnen",
-        "sent_at": "2026-04-23T11:43:09.247784+00:00",
+        "email": "info@win-tipps.de",
+        "name": "PC herunterfahren | So geht’s einfach und schnell",
+        "sent_at": "2026-04-24T11:41:57.415163+00:00",
         "status": "sent",
         "null": [
-          "<177694458392.2248.4020249986291702916@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703091443.2273.6947529316316495538@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@yoga-sala.de",
+        "name": "Kontakt - YogaSala",
+        "sent_at": "2026-04-24T11:42:00.479936+00:00",
+        "status": "sent",
+        "null": [
+          "<177703091741.2273.1524938256507752501@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@zaczarowane-eventy.pl",
+        "name": "Kontakt - Zaczarowane Eventy",
+        "sent_at": "2026-04-24T11:42:03.835516+00:00",
+        "status": "sent",
+        "null": [
+          "<177703092048.2273.11393256284735532755@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "info@zdf.de",
+        "name": "Filme",
+        "sent_at": "2026-04-24T11:42:06.807078+00:00",
+        "status": "sent",
+        "null": [
+          "<177703092383.2273.63477818285547589@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "sekretariat@milleniumhall.pl",
+        "name": "Kontakt - Pasaż, Galeria, Centrum Kulturalno - Handlowe Millenium Hall Rzeszów",
+        "sent_at": "2026-04-24T11:42:09.779373+00:00",
+        "status": "sent",
+        "null": [
+          "<177703092680.2273.16393563196408050253@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "informacje@info.myorlen.pl",
+        "name": "Kontakt | myORLEN sp. z o.o. (dawniej PGNiG Obrót Detaliczny sp. z o.o.",
+        "sent_at": "2026-04-24T11:42:12.747375+00:00",
+        "status": "sent",
+        "null": [
+          "<177703092978.2273.9937096099750631323@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "informacje@myorlen.pl",
+        "name": "Kontakt | myORLEN sp. z o.o. (dawniej PGNiG Obrót Detaliczny sp. z o.o.",
+        "sent_at": "2026-04-24T11:42:15.730265+00:00",
+        "status": "sent",
+        "null": [
+          "<177703093274.2273.14836066786000937547@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "informacje@pkobp.pl",
+        "name": "Pomoc i kontakt dla klientów indywidualnych - PKO Bank Polski",
+        "sent_at": "2026-04-24T11:42:18.703234+00:00",
+        "status": "sent",
+        "null": [
+          "<177703093573.2273.2380415896410777256@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "inspektor2@mjo.krakow.pl",
+        "name": "MDK im. Janusza Korczaka - kontakt",
+        "sent_at": "2026-04-24T11:42:21.668755+00:00",
+        "status": "sent",
+        "null": [
+          "<177703093870.2273.16224826615502696160@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@hannover-concerts.de",
-        "name": "Datenschutz – Kulturhelfer Hannover",
-        "sent_at": "2026-04-23T11:43:14.067794+00:00",
+        "email": "inspektor@cbi24.pl",
+        "name": "Portal - MGOKSiR Gniewkowo",
+        "sent_at": "2026-04-24T11:42:24.732361+00:00",
         "status": "sent",
         "null": [
-          "<177694458924.2248.3522609682637668825@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@hdkd.de",
-        "name": "Impressum – Haus der Kulturen Düsseldorf e. V.",
-        "sent_at": "2026-04-23T11:43:19.391589+00:00",
-        "status": "sent",
-        "null": [
-          "<177694459406.2248.11484059360961554048@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@heilpraxisnet.de",
-        "name": "Tinnitus: Fisch und MeeresfrÃ¼chte senken Risiko – Heilpraxis",
-        "sent_at": "2026-04-23T11:43:24.220034+00:00",
-        "status": "sent",
-        "null": [
-          "<177694459939.2248.4406988208636222765@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@hmm-dresden.de",
-        "name": "Agentur | Hacker Musik Management",
-        "sent_at": "2026-04-23T11:43:29.722754+00:00",
-        "status": "sent",
-        "null": [
-          "<177694460422.2248.13669730421058096824@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@immobilien-kube.de",
-        "name": "3 Best Real Estate Agents in Nuremberg - Expert Recommendations",
-        "sent_at": "2026-04-23T11:43:34.551126+00:00",
-        "status": "sent",
-        "null": [
-          "<177694460972.2248.12943544197865170816@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@jazz-frankfurt.de",
-        "name": "Kontakt | Jazz-Initiative Frankfurt am Main e. V.",
-        "sent_at": "2026-04-23T11:43:40.045975+00:00",
-        "status": "sent",
-        "null": [
-          "<177694461455.2248.16082149809860594894@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703094166.2273.2697969360346744336@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@johanna-ey-foundation.de",
-        "name": "Johanna Ey Foundation – Eine Stiftung zur Förderung der Kunst in Düsseldorf",
-        "sent_at": "2026-04-23T11:43:45.199943+00:00",
+        "email": "inspektorochronydanych@krakowskieforum.pl",
+        "name": "Kontakt - Portal - Krakowskie Forum Kultury",
+        "sent_at": "2026-04-24T11:42:27.705206+00:00",
         "status": "sent",
         "null": [
-          "<177694462004.2248.8533899865398972555@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703094473.2273.3031815524672473518@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
         ]
       },
       {
-        "email": "info@kaistrasse10.de",
-        "name": "KAI 10 | ARTHENA FOUNDATION | ArtJunk",
-        "sent_at": "2026-04-23T11:43:50.351998+00:00",
+        "email": "sekretariat@zpsm.edu.pl",
+        "name": "Dane kontaktowe - Zespół Państwowych Szkół Muzycznych im. W. Kilara w Katowicach - Portal Gov.pl",
+        "sent_at": "2026-04-24T11:42:30.672156+00:00",
         "status": "sent",
         "null": [
-          "<177694462520.2248.17296962709742228935@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703094770.2273.10984103696189229490@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "iod-j@e-swidnik.pl",
+        "name": "Kontakt | Miejski Ośrodek Kultury w Świdniku",
+        "sent_at": "2026-04-24T11:42:33.663080+00:00",
+        "status": "sent",
+        "null": [
+          "<177703095067.2273.7019321445292241397@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "iodo@lck.lubelskie.pl",
+        "name": "Contact - Lublin Conference Centre",
+        "sent_at": "2026-04-24T11:42:36.630320+00:00",
+        "status": "sent",
+        "null": [
+          "<177703095366.2273.18239758108343467491@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "irena.socichowska@cekis.pl",
+        "name": "Region Kultury - Serwis informacji kulturalnych wojewÃ³dztwa ÅÃ³dzkiego",
+        "sent_at": "2026-04-24T11:42:39.608753+00:00",
+        "status": "sent",
+        "null": [
+          "<177703095663.2273.5553267042084050388@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "iwona.stankiewicz@amuz.krakow.pl",
+        "name": "AMKP - Oficjalna strona Akademii Muzycznej im. Krzysztofa Pendereckiego w Krakowie (AMKP).",
+        "sent_at": "2026-04-24T11:42:42.674439+00:00",
+        "status": "sent",
+        "null": [
+          "<177703095960.2273.11257592060981500227@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "A"
         ]
       },
       {
-        "email": "info@koeln-event.de",
-        "name": "Palladium Köln - Palladium",
-        "sent_at": "2026-04-23T11:43:55.173012+00:00",
+        "email": "j.piatek@gdynia.pl",
+        "name": "Kontakt – ART Gdynia",
+        "sent_at": "2026-04-24T11:42:45.656488+00:00",
         "status": "sent",
         "null": [
-          "<177694463035.2248.16056914921239434107@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703096267.2273.4643038921972946962@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           "B"
-        ]
-      },
-      {
-        "email": "info@konzert-verein.de",
-        "name": "Konzert Verein: Kontakt",
-        "sent_at": "2026-04-23T11:44:00.235198+00:00",
-        "status": "sent",
-        "null": [
-          "<177694463517.2248.5153266448136548758@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "A"
-        ]
-      },
-      {
-        "email": "info@ksk-immobilien.de",
-        "name": "Wohnung kaufen in Köln mit KSK-Immobilien",
-        "sent_at": "2026-04-23T11:44:05.060521+00:00",
-        "status": "sent",
-        "null": [
-          "<177694464023.2248.3959244025309387593@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@kuenstleragentur-herath.de",
-        "name": "Künstleragentur Nürnberg seit 1975 | Künstleragentur Herath",
-        "sent_at": "2026-04-23T11:44:10.124944+00:00",
-        "status": "sent",
-        "null": [
-          "<177694464506.2248.13863272552603575033@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "A"
-        ]
-      },
-      {
-        "email": "info@kultur-hamburg.de",
-        "name": "Kontakt - Stadtkultur-HH",
-        "sent_at": "2026-04-23T11:44:14.950386+00:00",
-        "status": "sent",
-        "null": [
-          "<177694465012.2248.10234741251678727705@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@kultur-nord.org",
-        "name": "Kulturzentrum KUNO - AKN AKN",
-        "sent_at": "2026-04-23T11:44:20.007179+00:00",
-        "status": "sent",
-        "null": [
-          "<177694465495.2248.1665208552843609101@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "B"
-        ]
-      },
-      {
-        "email": "info@kulturdienste-stuttgart.de",
-        "name": "Kontakt | Kulturdienste Stuttgart",
-        "sent_at": "2026-04-23T11:44:24.817822+00:00",
-        "status": "sent",
-        "null": [
-          "<177694466000.2248.4330281733090177703@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
-          "A"
         ]
       },
       {
         "email": "a.adamek@agencjaperspektywy.pl",
         "name": "Kontakt | Agencja Perspektywy",
-        "sent_at": "2026-04-23T11:44:27.992983+00:00",
+        "sent_at": "2026-04-24T11:42:47.517830+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694466482.2248.7048243476765925282@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703096566.2273.6505376747364747003@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.barej@stoczek-lukowski.pl",
         "name": "Kontakt - Miejski Ośrodek Kultury w Stoczku Łukowskim",
-        "sent_at": "2026-04-23T11:44:31.085602+00:00",
+        "sent_at": "2026-04-24T11:42:49.421966+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694466799.2248.789414793394310525@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703096751.2273.2181236233559313372@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.nowakowska@zsm.torun.pl",
         "name": "Zespół Szkół Muzycznych im. Karola Szymanowskiego w Toruniu | Szkoła Muzyczna w Toruniu",
-        "sent_at": "2026-04-23T11:44:34.103808+00:00",
+        "sent_at": "2026-04-24T11:42:51.276646+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694467108.2248.9053495453560718697@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703096942.2273.2992362057680046839@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.rutkowska@pikpodlaskie.pl",
         "name": "Kontakt – Strona Array – Podlaski Instytut Kultury",
-        "sent_at": "2026-04-23T11:44:37.273208+00:00",
+        "sent_at": "2026-04-24T11:42:53.133290+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694467410.2248.4359240848991640969@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703097127.2273.1892002286503836287@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.sczerniak@cbk.gminakg.pl",
         "name": "Kontakt – Centrum Biblioteczno Kulturalne",
-        "sent_at": "2026-04-23T11:44:40.368595+00:00",
+        "sent_at": "2026-04-24T11:42:54.977988+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694467727.2248.7801458891096011442@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703097313.2273.12093870912151778988@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.swietochowska@teatrkamienica.pl",
         "name": "Kontakt",
-        "sent_at": "2026-04-23T11:44:43.386036+00:00",
+        "sent_at": "2026-04-24T11:42:56.822463+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694468036.2248.1397687199719367695@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703097497.2273.12816665987720571613@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.szydelska@teatrkamienica.pl",
         "name": "Kontakt",
-        "sent_at": "2026-04-23T11:44:46.558061+00:00",
+        "sent_at": "2026-04-24T11:42:59.123527+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694468338.2248.16471195680381738267@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703097682.2273.16431800159843676107@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.urbanowicz@teatrkamienica.pl",
         "name": "Kontakt",
-        "sent_at": "2026-04-23T11:44:49.653942+00:00",
+        "sent_at": "2026-04-24T11:43:00.970632+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694468655.2248.7729165999307901683@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703097912.2273.18052814357110383820@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "a.wislinska@filharmonia.rzeszow.pl",
         "name": "Kontakt - Filharmonia Podkarpacka - English",
-        "sent_at": "2026-04-23T11:44:52.671340+00:00",
+        "sent_at": "2026-04-24T11:43:02.885834+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694468965.2248.13177225124578679132@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703098097.2273.5932962308086502781@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "aboservice.oper@buehnen-frankfurt.de",
         "name": "Kontakt | Städtische Bühnen Frankfurt am Main",
-        "sent_at": "2026-04-23T11:44:55.841653+00:00",
+        "sent_at": "2026-04-24T11:43:04.732522+00:00",
         "status": "sent_followup",
         "null": [
-          "<177694469267.2248.15347715705772181655@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703098288.2273.17659760557195223501@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "marcin.sudzinski@csklublin.pl",
         "name": "Kontakt - Centrum Spotkania Kultur",
-        "sent_at": "2026-04-23T11:44:59.346814+00:00",
+        "sent_at": "2026-04-24T11:43:06.687551+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694469584.2248.7116606982285784018@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703098473.2273.15855477401681338277@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "klaudia.drozd@csklublin.pl",
         "name": "Kontakt - Centrum Spotkania Kultur",
-        "sent_at": "2026-04-23T11:45:02.761389+00:00",
+        "sent_at": "2026-04-24T11:43:08.535774+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694469934.2248.7628602009003550375@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703098668.2273.5229146651755452293@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "kancelaria@csklublin.pl",
         "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
-        "sent_at": "2026-04-23T11:45:06.415957+00:00",
+        "sent_at": "2026-04-24T11:43:10.383158+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694470276.2248.7326345728265536663@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703098853.2273.12818389834698015620@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "sekretariat@ck.lublin.pl",
         "name": "Centrum Kultury w Lublinie - repertuar, bilety, adres i kontakt - Teatry Polskie",
-        "sent_at": "2026-04-23T11:45:09.737425+00:00",
+        "sent_at": "2026-04-24T11:43:12.286534+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694470641.2248.920481148409508211@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099038.2273.13858163186074070616@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "kamila.kowalczyk@lcas.lubawa.pl",
         "name": "Strona główna | BIP - Miejski Ośrodek Kultury w Lubawie",
-        "sent_at": "2026-04-23T11:45:12.985767+00:00",
+        "sent_at": "2026-04-24T11:43:14.134899+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694470973.2248.17284301898745325081@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099228.2273.13451013870666939344@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "kamila.stoinska@bobrowo.org",
         "name": "BIP Urząd Gminy w Bobrowie",
-        "sent_at": "2026-04-23T11:45:16.660575+00:00",
+        "sent_at": "2026-04-24T11:43:15.982379+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694471298.2248.16789510308284331835@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099413.2273.15759050872364405429@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "natalia.motylicka@bobrowo.org",
         "name": "BIP Urząd Gminy w Bobrowie",
-        "sent_at": "2026-04-23T11:45:19.941218+00:00",
+        "sent_at": "2026-04-24T11:43:17.832507+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694471666.2248.15220799732542372475@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099598.2273.10946969600231594103@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "kontakt@goksliwice.pl",
         "name": "GOK Śliwice - Kontakt",
-        "sent_at": "2026-04-23T11:45:23.159932+00:00",
+        "sent_at": "2026-04-24T11:43:19.726552+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694471994.2248.7186332130974360974@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099783.2273.6921860638331032053@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "gok@gok-osieciny.pl",
         "name": "Strona główna - Gminny Ośrodek Kultury",
-        "sent_at": "2026-04-23T11:45:26.242446+00:00",
+        "sent_at": "2026-04-24T11:43:21.639810+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694472316.2248.1133045703198540506@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703099972.2273.14220917040382366294@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       },
       {
         "email": "sekretariat@bobrowo.org",
         "name": "Kontakt - Oficjalna strona internetowa Gminy Bobrowo",
-        "sent_at": "2026-04-23T11:45:29.390329+00:00",
+        "sent_at": "2026-04-24T11:43:23.483887+00:00",
         "status": "sent_followup_2",
         "null": [
-          "<177694472624.2248.16585521216348719280@runnervmeorf1.jlritpxf4sdutfcgm12ssn1vih.xx.internal.cloudapp.net>",
+          "<177703100164.2273.8033213805688549974@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
           ""
         ]
       }
