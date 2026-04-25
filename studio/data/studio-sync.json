@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-24T11:43:24.435566+00:00",
+  "generatedAt": "2026-04-25T11:15:30.510845+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
-    "sent": 570,
+    "sent": 610,
     "inbound": 2,
     "replies": 0,
     "opens": 0
@@ -12,7 +12,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-04-24T11:42:45.657095+00:00",
+    "engine_last_run": "2026-04-25T11:14:52.175879+00:00",
     "engine_attempted": 40,
     "engine_sent": 40
   },
@@ -44664,6 +44664,606 @@
         "status": "sent_followup_2",
         "null": [
           "<177703100164.2273.8033213805688549974@runnervmeorf1.x5d1n0cxpzaenaqbjvsq3ltcmf.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "j.piotrowski@gminagostynin.pl",
+        "name": "Zapytanie ofertowe na oprawę muzyczną - Archiwalne przetargi - Biuletyn Informacji Publicznej Urząd Gminy Gostynin",
+        "sent_at": "2026-04-25T11:12:50.655586+00:00",
+        "status": "sent",
+        "null": [
+          "<177711556722.2326.1964874438352818072@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "jacek@agenart.pl",
+        "name": "Kontakt – AgenArt",
+        "sent_at": "2026-04-25T11:12:53.936800+00:00",
+        "status": "sent",
+        "null": [
+          "<177711557065.2326.13088057343189261323@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "jack@kulturperlen-agentur.de",
+        "name": "Agentur Kulturperlen",
+        "sent_at": "2026-04-25T11:12:57.298585+00:00",
+        "status": "sent",
+        "null": [
+          "<177711557393.2326.8323301142447396766@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "janna@artemon-music.com",
+        "name": "Artemon Music Künstleragentur",
+        "sent_at": "2026-04-25T11:13:00.682954+00:00",
+        "status": "sent",
+        "null": [
+          "<177711557729.2326.5504112955625166668@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "jedrzej.borowiecki@sejmik.kielce.pl",
+        "name": "Kontakt - Świętokrzyskie szlaki turystyczne",
+        "sent_at": "2026-04-25T11:13:03.845679+00:00",
+        "status": "sent",
+        "null": [
+          "<177711558068.2326.8863360984163435139@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "sekretariat@pruszczgdanski.pl",
+        "name": "Zapytanie ofertowe: usługa animacyjna, wynajem atrakcji i urządzeń do organizacji imprezy oraz oprawa muzyczna i techniczna festynu w Cieplewie - OnePlace",
+        "sent_at": "2026-04-25T11:13:06.894801+00:00",
+        "status": "sent",
+        "null": [
+          "<177711558384.2326.5954468910210675148@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "office@nfm.wroclaw.pl",
+        "name": "NFM",
+        "sent_at": "2026-04-25T11:13:10.045599+00:00",
+        "status": "sent",
+        "null": [
+          "<177711558689.2326.11713177356984841888@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "jok.mr.ksiegowosc@onet.com.pl",
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "sent_at": "2026-04-25T11:13:13.324680+00:00",
+        "status": "sent",
+        "null": [
+          "<177711559004.2326.1397793067383504962@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "jok_andrzejw@onet.eu",
+        "name": "Kontakt - Janowski Ośrodek Kultury",
+        "sent_at": "2026-04-25T11:13:16.601566+00:00",
+        "status": "sent",
+        "null": [
+          "<177711559332.2326.14174772636181080704@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "justyna@konferencje.pl",
+        "name": "Sala koncertowa w Bielskie Centrum Kultury im. M. Koterbskiej – konferencje.pl",
+        "sent_at": "2026-04-25T11:13:19.939809+00:00",
+        "status": "sent",
+        "null": [
+          "<177711559660.2326.16093879270852071341@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kaczmarek@kunstvereinnuernberg.de",
+        "name": "Kunstverein NÃ¼rnberg",
+        "sent_at": "2026-04-25T11:13:23.072321+00:00",
+        "status": "sent",
+        "null": [
+          "<177711559994.2326.6820978216398906436@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria.ciolka@up.warszawa.pl",
+        "name": "Praca Warszawa, Oferty pracy w Warszawie 2026 - JOBS.pl",
+        "sent_at": "2026-04-25T11:13:26.125596+00:00",
+        "status": "sent",
+        "null": [
+          "<177711560307.2326.5159421508497543640@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria.ogolna@amkl.edu.pl",
+        "name": "Akademia Muzyczna im. Karola Lipińskiego we Wrocławiu",
+        "sent_at": "2026-04-25T11:13:29.166522+00:00",
+        "status": "sent",
+        "null": [
+          "<177711560612.2326.11213076074193788617@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria@amuz.lodz.pl",
+        "name": "Akademia Muzyczna w Łodzi - SALA KONCERTOWA",
+        "sent_at": "2026-04-25T11:13:32.127550+00:00",
+        "status": "sent",
+        "null": [
+          "<177711560916.2326.4785693712287954193@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria@lodz.luteranie.pl",
+        "name": "Międzynarodowa Fundacja Muzyczna im. Artura Rubinsteina w Łodzi",
+        "sent_at": "2026-04-25T11:13:35.449528+00:00",
+        "status": "sent",
+        "null": [
+          "<177711561212.2326.12456615435350208605@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kancelaria@mok.piotrkow.pl",
+        "name": "Miejski Ośrodek Kultury | BIP - UM w Piotrkowie Trybunalskim",
+        "sent_at": "2026-04-25T11:13:38.599161+00:00",
+        "status": "sent",
+        "null": [
+          "<177711561545.2326.8600184848376285769@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria@teatrwkrakowie.pl",
+        "name": "Teatr w Krakowie im. J. Słowackiego - Kontakt",
+        "sent_at": "2026-04-25T11:13:41.549144+00:00",
+        "status": "sent",
+        "null": [
+          "<177711561859.2326.15441831240646172233@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria@ug.lubin.pl",
+        "name": "Gmina Lubin",
+        "sent_at": "2026-04-25T11:13:44.937974+00:00",
+        "status": "sent",
+        "null": [
+          "<177711562154.2326.12823046391013271325@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kancelaria@uz.zgora.pl",
+        "name": "Kontakt - Uniwersytet Zielonogórski",
+        "sent_at": "2026-04-25T11:13:47.977705+00:00",
+        "status": "sent",
+        "null": [
+          "<177711562493.2326.17654303075072733715@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "karg@smok.slubice.pl",
+        "name": "Kontakt - Słubicki Miejski Ośrodek Kultury",
+        "sent_at": "2026-04-25T11:13:51.185506+00:00",
+        "status": "sent",
+        "null": [
+          "<177711562797.2326.8291809052782697256@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "karianne@pf.no",
+        "name": "«Som leder for GDE Finnmark kan jeg bekrefte at 2023 var et år hvor det var få ledige stillinger i politiet. Og for et herlig år det var!»",
+        "sent_at": "2026-04-25T11:13:54.226041+00:00",
+        "status": "sent",
+        "null": [
+          "<177711563118.2326.2149663055579803287@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "karolina.czepkiewicz@38pr.pl",
+        "name": "Kontakt :: Grupa RMF",
+        "sent_at": "2026-04-25T11:13:57.280192+00:00",
+        "status": "sent",
+        "null": [
+          "<177711563422.2326.5875794674317878741@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kartenservice@staatstheater-hannover.de",
+        "name": "Kontakt - Staatstheater Hannover",
+        "sent_at": "2026-04-25T11:14:00.333997+00:00",
+        "status": "sent",
+        "null": [
+          "<177711563728.2326.5435849956257655168@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "sekretariat@filharmonia.bydgoszcz.pl",
+        "name": "Filharmonia Pomorska im. Ignacego Jana Paderewskiego w Bydgoszczy",
+        "sent_at": "2026-04-25T11:14:03.385803+00:00",
+        "status": "sent",
+        "null": [
+          "<177711564033.2326.9062297411510211860@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kasa.kinolot@mok.swidnik.pl",
+        "name": "Kontakt | Miejski Ośrodek Kultury w Świdniku",
+        "sent_at": "2026-04-25T11:14:06.666593+00:00",
+        "status": "sent",
+        "null": [
+          "<177711564338.2326.8452783123164069693@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "katarzyna.soltan-mlodozeniec@ceo.org.pl",
+        "name": "Dolnośląska Biblioteka Publiczna im. Tadeusza Mikulskiego we Wrocławiu - Noc Bibliotek",
+        "sent_at": "2026-04-25T11:14:09.621564+00:00",
+        "status": "sent",
+        "null": [
+          "<177711564666.2326.15185258079909585969@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@teatr-kultura.pl",
+        "name": "KONTAKT - Teatr Kultura",
+        "sent_at": "2026-04-25T11:14:12.664847+00:00",
+        "status": "sent",
+        "null": [
+          "<177711564962.2326.9863554133575069996@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "katowice@btl-group.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "sent_at": "2026-04-25T11:14:15.704762+00:00",
+        "status": "sent",
+        "null": [
+          "<177711565266.2326.12730701605433197158@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kielce@casioszkola.pl",
+        "name": "KONTAKT - Casio Szkoła Muzyczna Kielce",
+        "sent_at": "2026-04-25T11:14:18.654408+00:00",
+        "status": "sent",
+        "null": [
+          "<177711565570.2326.15719860773249470336@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kielce@yamahaszkola.pl",
+        "name": "YSM Kielce - Kontakt",
+        "sent_at": "2026-04-25T11:14:21.821971+00:00",
+        "status": "sent",
+        "null": [
+          "<177711565865.2326.13058230659003300503@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "sekretariat@goktychowo.pl",
+        "name": "Gminny Ośrodek Kultury w Tychowie",
+        "sent_at": "2026-04-25T11:14:24.863382+00:00",
+        "status": "sent",
+        "null": [
+          "<177711566182.2326.2763110928743912720@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "office@igkulturwien.net",
+        "name": "Kulturinfoservice",
+        "sent_at": "2026-04-25T11:14:27.810428+00:00",
+        "status": "sent",
+        "null": [
+          "<177711566486.2326.1408846684839248391@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kkabat@biblioteka.wroc.pl",
+        "name": "Kontakt - Centrum Biblioteczno-Kulturalne FAMA",
+        "sent_at": "2026-04-25T11:14:30.851462+00:00",
+        "status": "sent",
+        "null": [
+          "<177711566781.2326.3095845559869694080@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kommunikation@gasteig.de",
+        "name": "Isarphilharmonie - Gasteig München",
+        "sent_at": "2026-04-25T11:14:33.896467+00:00",
+        "status": "sent",
+        "null": [
+          "<177711567085.2326.6322478041278988320@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@gema.de",
+        "name": "Die GEMA bei Fragen erreichen",
+        "sent_at": "2026-04-25T11:14:36.846471+00:00",
+        "status": "sent",
+        "null": [
+          "<177711567389.2326.13015723268377197403@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "sekretariat@pfb.gda.pl",
+        "name": "Kontakt - Polska Filharmonia Bałtycka im. F. Chopina w Gdańsku",
+        "sent_at": "2026-04-25T11:14:39.888597+00:00",
+        "status": "sent",
+        "null": [
+          "<177711567684.2326.7028582392962009440@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@amadeusevent.pl",
+        "name": "Organizator imprez i wyjazdów firmowych - team building",
+        "sent_at": "2026-04-25T11:14:43.070881+00:00",
+        "status": "sent",
+        "null": [
+          "<177711567988.2326.1365269710492200710@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@beevents.pl",
+        "name": "Kontakt | Agencja eventowa Trójmiasto",
+        "sent_at": "2026-04-25T11:14:46.107833+00:00",
+        "status": "sent",
+        "null": [
+          "<177711568307.2326.13799794775356691355@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@blumevinimport.dk",
+        "name": "#post_titlefra Franken i Tyskland - Blume Vinimport",
+        "sent_at": "2026-04-25T11:14:49.106036+00:00",
+        "status": "sent",
+        "null": [
+          "<177711568610.2326.6127156312529890379@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@brzozaagency.pl",
+        "name": "Brzoza Agency Olsztyn - Strona główna",
+        "sent_at": "2026-04-25T11:14:52.175322+00:00",
+        "status": "sent",
+        "null": [
+          "<177711568910.2326.7316398613153640362@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "ack@uwm.edu.pl",
+        "name": "Kontakt - Akademickie Centrum Kultury",
+        "sent_at": "2026-04-25T11:14:54.011691+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711569217.2326.8775452382507335149@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "administracja@kpck.pl",
+        "name": "kontakt - Kujawsko-Pomorskie Centrum Kultury w Bydgoszczv",
+        "sent_at": "2026-04-25T11:14:56.105551+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711569401.2326.5252260193274164257@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "administracja@mok.miasteczko-slaskie.pl",
+        "name": "O Nas - Miejski Ośrodek Kultury im. Krzysztofa Respondka w Miasteczku Śląskim",
+        "sent_at": "2026-04-25T11:14:57.948656+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711569610.2326.8064681962513330696@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "a.miedzinska@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "sent_at": "2026-04-25T11:14:59.989555+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711569794.2326.3653227442579219689@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "administracja@stdt.pl",
+        "name": "Stowarzyszenie The Droshkoov Theatre",
+        "sent_at": "2026-04-25T11:15:01.826166+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711569999.2326.4069355965446072282@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "administracja@szkolamuzyczna.bydgoszcz.pl",
+        "name": "Administracja - Państwowy Zespół Szkół Muzycznych im. A. Rubinsteina w Bydgoszczy - Portal Gov.pl",
+        "sent_at": "2026-04-25T11:15:03.787523+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711570182.2326.3057212981920523494@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "agadzina@amuz.edu.pl",
+        "name": "Strona główna - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "sent_at": "2026-04-25T11:15:05.623382+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711570378.2326.7447869468766512708@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "agencja@agencjalaura.pl",
+        "name": "Agencja Artystyczna: usługi reklamowe, organizacja imprez, impresariat. Agencja Artystyczna świadczy usługi reklamowe, impresariat, organizacja imprez. Agencja artystyczna, organizacja imprez, impresariat, mistrz mowy polskiej, mistrz mowy polskiej.",
+        "sent_at": "2026-04-25T11:15:07.469288+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711570562.2326.9936094435687510340@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-25T11:15:09.305928+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711570746.2326.15679081693289376873@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "agnieszka.chodysz@okis.pl",
+        "name": "kontakt - Hide or sek",
+        "sent_at": "2026-04-25T11:15:11.149703+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177711570930.2326.13794051816622238938@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "centrum@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "sent_at": "2026-04-25T11:15:12.991108+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711571115.2326.13406989952038659328@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "kultura@baruchowo.pl",
+        "name": "Kontakt - Gminny Ośrodek Kultury, Sportu i Rekreacji w Baruchowie",
+        "sent_at": "2026-04-25T11:15:14.835303+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711571299.2326.4870159900915237994@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "info@lodzkie.pl",
+        "name": "Wojewódzka Biblioteka Publiczna im Marszałka Józefa Piłsudskiego w Łodzi - www.bip.lodzkie.pl",
+        "sent_at": "2026-04-25T11:15:16.668761+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711571483.2326.10718710542596639594@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@sbp.pl",
+        "name": "Okręg Łódzki",
+        "sent_at": "2026-04-25T11:15:18.510184+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711571666.2326.10347817456504408679@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "sekretariat@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "sent_at": "2026-04-25T11:15:20.349529+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711571851.2326.7942540582681950719@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "promocja@biblioteka.lodz.pl",
+        "name": "Kontakt » Biblioteka Miejska w Łodzi",
+        "sent_at": "2026-04-25T11:15:22.190656+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711572035.2326.3764879990171617616@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "sent_at": "2026-04-25T11:15:24.032965+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711572219.2326.1436743412505847990@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "martabrzezinska@emotionsevents.pl",
+        "name": "kontakt - Agencja eventowa Emotions Events",
+        "sent_at": "2026-04-25T11:15:25.876011+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711572403.2326.4790786802125396049@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "imprezy@hevent.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "sent_at": "2026-04-25T11:15:27.712874+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711572587.2326.15231516555926135367@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@oferteo.pl",
+        "name": "Agencja Eventowa Dolnośląskie 2026",
+        "sent_at": "2026-04-25T11:15:29.556715+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177711572771.2326.15730248095581942711@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
           ""
         ]
       }
