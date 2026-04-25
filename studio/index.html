@@ -213,6 +213,7 @@ textarea{resize:vertical;min-height:54px}
 <div class="nav">
   <button class="ntab on" onclick="goTab('pipeline',this)">Pipeline</button>
   <button class="ntab" onclick="goTab('zapytania',this)">Zapytania <span class="cnt" id="inbound-badge" style="display:none"></span></button>
+  <button class="ntab" onclick="goTab('mailing',this)">Mailing</button>
   <button class="ntab" onclick="goTab('kalendarz',this)">Kalendarz</button>
   <button class="ntab" onclick="goTab('akcje',this)">Akcje</button>
   <button class="ntab" onclick="goTab('partners',this)">Partnerzy</button>
@@ -484,6 +485,28 @@ Più Mosso</div>
         <span id="cal-count" style="font-size:.72rem;color:var(--muted)"></span>
       </div>
       <div class="pb" id="cal-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Mailing ── -->
+<div id="t-mailing" class="h">
+  <div class="pn" style="margin-bottom:10px">
+    <div class="ph"><h2>Mailing</h2><span id="mail-sync" style="font-size:.7rem;color:var(--muted)"></span></div>
+    <div class="pb">
+      <div class="sg" id="mail-kpis" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px">
+        <div class="pn" style="margin:0">
+          <div class="ph" style="padding:8px 10px"><h2 style="font-size:.78rem">Statusy</h2></div>
+          <div class="pb" id="mail-statuses" style="padding:8px 10px"></div>
+        </div>
+        <div class="pn" style="margin:0">
+          <div class="ph" style="padding:8px 10px"><h2 style="font-size:.78rem">Ostatni run silnika</h2></div>
+          <div class="pb" id="mail-run" style="padding:8px 10px;font-size:.76rem;color:var(--muted)"></div>
+        </div>
+      </div>
+      <div class="ph" style="padding:4px 0 8px"><h2 style="font-size:.78rem">Ostatnie wysyłki</h2></div>
+      <div id="mail-log" style="font-size:.74rem"></div>
     </div>
   </div>
 </div>
@@ -942,7 +965,7 @@ async function syncData() {
     DH.replies = d.dataHub?.replyLog     || [];
     DH.opens   = d.dataHub?.openLog      || [];
     DH.sync    = { generatedAt: d.generatedAt, sourceStats: d.sourceStats||{}, sourceRuns: d.sourceRuns||{} };
-    saveDH(); renderHub(""); renderHeader(); renderInbound(); renderReplies();
+    saveDH(); renderHub(""); renderHeader(); renderInbound(); renderReplies(); renderMailing();
     const note = document.getElementById("sync-note");
     if (note) note.textContent = "Sync OK · " + (DH.baza.length||0) + " rekordów.";
   } catch(err) {
@@ -980,13 +1003,87 @@ function renderHub(q) {
     : `<div class="empty">Brak danych. Odśwież sync.</div>`;
 }
 
+function renderMailing() {
+  const sent = DH.sent || [];
+  const sr   = DH.sync?.sourceRuns || {};
+  const ss   = DH.sync?.sourceStats || {};
+
+  const byStatus = {};
+  sent.forEach(r => { const s = r.status||"?"; byStatus[s] = (byStatus[s]||0)+1; });
+
+  const nSent   = (byStatus["sent"]||0);
+  const nFU1    = (byStatus["sent_followup"]||0);
+  const nFU2    = (byStatus["sent_followup_2"]||0);
+  const nBounce = (byStatus["bounced"]||0);
+  const nReply  = (DH.replies||[]).length;
+  const nOpen   = (DH.opens||[]).length;
+  const total   = nSent + nFU1 + nFU2;
+  const replyPct = total ? Math.round(nReply/total*100) : 0;
+
+  document.getElementById("mail-kpis").innerHTML =
+    `<div class="sbox"><b>${total}</b><s>Wysłanych</s></div>` +
+    `<div class="sbox"><b>${nSent}</b><s>Oferty</s></div>` +
+    `<div class="sbox"><b>${nFU1}</b><s>Followup</s></div>` +
+    `<div class="sbox"><b style="color:var(--green)">${nReply}</b><s>Odpowiedzi ${replyPct ? replyPct+"%" : ""}</s></div>` +
+    `<div class="sbox"><b style="color:var(--red)">${nBounce}</b><s>Bounced</s></div>`;
+
+  const STATUS_LABEL = {
+    sent:"Oferta", sent_followup:"FU1", sent_followup_2:"FU2",
+    bounced:"Bounce", skip:"Skip", imap_recovered:"IMAP"
+  };
+  const statusHtml = Object.entries(byStatus)
+    .sort((a,b)=>b[1]-a[1])
+    .map(([s,n]) => {
+      const label = STATUS_LABEL[s] || s;
+      const pct = total ? Math.round(n/total*100) : 0;
+      const bar = `<div style="height:4px;background:rgba(212,176,106,.25);border-radius:2px;margin-top:2px"><div style="height:4px;background:var(--gold);border-radius:2px;width:${Math.min(pct,100)}%"></div></div>`;
+      return `<div style="margin-bottom:6px"><span style="color:var(--text)">${label}</span><span style="float:right;color:var(--muted)">${n}</span>${bar}</div>`;
+    }).join("");
+  document.getElementById("mail-statuses").innerHTML = statusHtml || "—";
+
+  const runEl = document.getElementById("mail-run");
+  if (sr.engine_last_run) {
+    runEl.innerHTML =
+      `<div>Ostatni run: <strong>${fdate(sr.engine_last_run)}</strong></div>` +
+      `<div style="margin-top:4px">Próbowano: ${sr.engine_attempted||0} · Wysłano: ${sr.engine_sent||0}</div>`;
+  } else { runEl.textContent = "Brak danych o ostatnim runie."; }
+
+  const syncEl = document.getElementById("mail-sync");
+  if (DH.sync?.generatedAt) syncEl.textContent = "· sync " + fdate(DH.sync.generatedAt);
+
+  const recent = [...sent]
+    .filter(r => r.sent_at)
+    .sort((a,b) => b.sent_at.localeCompare(a.sent_at))
+    .slice(0, 30);
+
+  const STATUS_COLOR = {sent:"var(--gold)",sent_followup:"#6cb",sent_followup_2:"#89f",bounced:"var(--red)",skip:"var(--muted)"};
+  document.getElementById("mail-log").innerHTML = recent.length
+    ? `<table style="width:100%;border-collapse:collapse">
+        <thead><tr style="color:var(--muted);font-size:.68rem;text-align:left">
+          <th style="padding:3px 6px">Data</th><th style="padding:3px 6px">Email</th>
+          <th style="padding:3px 6px">Nazwa</th><th style="padding:3px 6px">Status</th>
+        </tr></thead><tbody>` +
+      recent.map(r => {
+        const col = STATUS_COLOR[r.status] || "var(--muted)";
+        const label = STATUS_LABEL[r.status] || r.status;
+        return `<tr style="border-top:1px solid rgba(255,255,255,.04)">
+          <td style="padding:3px 6px;color:var(--muted);white-space:nowrap">${fdate(r.sent_at)}</td>
+          <td style="padding:3px 6px">${x(r.email||"")}</td>
+          <td style="padding:3px 6px;color:var(--muted);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x(r.name||"")}</td>
+          <td style="padding:3px 6px;color:${col};font-weight:600">${label}</td>
+        </tr>`;
+      }).join("") + "</tbody></table>"
+    : `<div class="empty">Brak danych. Odśwież sync.</div>`;
+}
+
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","zapytania","partners","templates","baza","kalendarz","akcje"].forEach(t =>
+  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
   if (name === "akcje") loadRuns();
+  if (name === "mailing") renderMailing();
 }
 
 // Inbound leads
