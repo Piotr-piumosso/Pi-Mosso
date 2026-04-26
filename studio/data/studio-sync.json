@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-25T11:15:30.510845+00:00",
+  "generatedAt": "2026-04-26T11:16:48.326424+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
-    "sent": 610,
+    "sent": 650,
     "inbound": 2,
     "replies": 0,
     "opens": 0
@@ -12,7 +12,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-04-25T11:14:52.175879+00:00",
+    "engine_last_run": "2026-04-26T11:15:55.249482+00:00",
     "engine_attempted": 40,
     "engine_sent": 40
   },
@@ -45264,6 +45264,606 @@
         "status": "sent_followup_2",
         "null": [
           "<177711572771.2326.15730248095581942711@runnervmeorf1.sgkjpevnbxlejplnkguq2c5fce.bx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "kontakt@cantores.org.pl",
+        "name": "Region Kultury - Serwis informacji kulturalnych wojewÃ³dztwa ÅÃ³dzkiego",
+        "sent_at": "2026-04-26T11:13:12.643613+00:00",
+        "status": "sent",
+        "null": [
+          "<177720198807.2197.3107691156706495888@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@ckvictoria.pl",
+        "name": "Centrum Kultury Victoria w Gliwicach",
+        "sent_at": "2026-04-26T11:13:17.394711+00:00",
+        "status": "sent",
+        "null": [
+          "<177720199264.2197.13917632050126091686@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@decoartmedia.pl",
+        "name": "Decoart Media - Agencja Artystyczna",
+        "sent_at": "2026-04-26T11:13:21.628884+00:00",
+        "status": "sent",
+        "null": [
+          "<177720199739.2197.6061040553792857688@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@digitalk.pl",
+        "name": "Agencja marketingowa Trójmiasto | Gdańsk, Gdynia, Sopot",
+        "sent_at": "2026-04-26T11:13:25.777455+00:00",
+        "status": "sent",
+        "null": [
+          "<177720200162.2197.7348717878829888521@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@ecm.edu.pl",
+        "name": "Region Kultury - Serwis informacji kulturalnych wojewÃ³dztwa ÅÃ³dzkiego",
+        "sent_at": "2026-04-26T11:13:30.132893+00:00",
+        "status": "sent",
+        "null": [
+          "<177720200577.2197.5738921804117557946@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@eventme.pl",
+        "name": "Kontakt – EventMe",
+        "sent_at": "2026-04-26T11:13:34.279467+00:00",
+        "status": "sent",
+        "null": [
+          "<177720201013.2197.7093993281291652146@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@firmaeventowa.pl",
+        "name": "Firma eventowa: Białystok - Agencja eventowa - Konferencje i imprezy",
+        "sent_at": "2026-04-26T11:13:38.347586+00:00",
+        "status": "sent",
+        "null": [
+          "<177720201428.2197.12978937037023549621@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@fundacjaartandflow.pl",
+        "name": "Kontakt - Fundacja Art & Flow",
+        "sent_at": "2026-04-26T11:13:42.779538+00:00",
+        "status": "sent",
+        "null": [
+          "<177720201834.2197.8702465989601750308@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@gdziezdzieckiem.eu",
+        "name": "Centrum Muzyczne Riff w Toruniu Toruń - Atrakcje dla dzieci",
+        "sent_at": "2026-04-26T11:13:46.870346+00:00",
+        "status": "sent",
+        "null": [
+          "<177720202278.2197.10141896693111245985@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@goodculture.pl",
+        "name": "Fundacja Good Culture - Fundacja Good Culture",
+        "sent_at": "2026-04-26T11:13:51.007595+00:00",
+        "status": "sent",
+        "null": [
+          "<177720202687.2197.11293055455716008001@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "sekretariat@ikm.gda.pl",
+        "name": "Instytut Kultury Miejskiej - Instytucja kultury miasta Gdańska",
+        "sent_at": "2026-04-26T11:13:55.091408+00:00",
+        "status": "sent",
+        "null": [
+          "<177720203100.2197.17047316852622304887@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@immobilienmakler-nbg.de",
+        "name": "3 Best Real Estate Agents in Nuremberg - Expert Recommendations",
+        "sent_at": "2026-04-26T11:13:59.230537+00:00",
+        "status": "sent",
+        "null": [
+          "<177720203509.2197.12145726837099592008@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@inkubatorkultury.eu",
+        "name": "Kultura w Rzeszowie / Instytucje kultury / Instytucje Kultury Miasta Rzeszowa",
+        "sent_at": "2026-04-26T11:14:03.443431+00:00",
+        "status": "sent",
+        "null": [
+          "<177720203923.2197.11131256780729595268@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@intellect-group.pl",
+        "name": "Budowanie zespołu - Najważniejsze elementy - Intellect",
+        "sent_at": "2026-04-26T11:14:07.592126+00:00",
+        "status": "sent",
+        "null": [
+          "<177720204344.2197.13170917402427505050@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@johannstaedterkulturtreff.de",
+        "name": "Kulturverein Dresden - Johannstädter Kulturtreff e. V.",
+        "sent_at": "2026-04-26T11:14:11.672871+00:00",
+        "status": "sent",
+        "null": [
+          "<177720204759.2197.7421200232604206689@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@keypress.pl",
+        "name": "Kontakt – Opole Press",
+        "sent_at": "2026-04-26T11:14:15.913232+00:00",
+        "status": "sent",
+        "null": [
+          "<177720205167.2197.2869078660086514369@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@konzerthaus.at",
+        "name": "Konzerthaus Box Office: Our Ticket & Service Center",
+        "sent_at": "2026-04-26T11:14:19.991421+00:00",
+        "status": "sent",
+        "null": [
+          "<177720205591.2197.855687651686684241@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@konzertverein-dresden.de",
+        "name": "Kontakt | Konzertverein Dresden e.v.",
+        "sent_at": "2026-04-26T11:14:24.065646+00:00",
+        "status": "sent",
+        "null": [
+          "<177720205999.2197.15284603254030806677@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@kpca.com.pl",
+        "name": "Kontakt – Kujawsko-Pomorskie Centrum Aktywności",
+        "sent_at": "2026-04-26T11:14:28.287386+00:00",
+        "status": "sent",
+        "null": [
+          "<177720206406.2197.5716634918029508023@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@kulturalna.pl",
+        "name": "Kontakt : Kulturalna",
+        "sent_at": "2026-04-26T11:14:32.367250+00:00",
+        "status": "sent",
+        "null": [
+          "<177720206828.2197.1378972764546188931@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@kulturampavillon.de",
+        "name": "Kontakt | Kultur am Pavillon",
+        "sent_at": "2026-04-26T11:14:36.502091+00:00",
+        "status": "sent",
+        "null": [
+          "<177720207236.2197.5841486338211452833@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@kulturregion-stuttgart.de",
+        "name": "KulturRegion Stuttgart: Kontakt",
+        "sent_at": "2026-04-26T11:14:40.654577+00:00",
+        "status": "sent",
+        "null": [
+          "<177720207650.2197.14038888784003596332@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@livemusichall.de",
+        "name": "KONTAKT | Live Music Hall",
+        "sent_at": "2026-04-26T11:14:44.802591+00:00",
+        "status": "sent",
+        "null": [
+          "<177720208065.2197.10809983181449970367@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@mainphil.de",
+        "name": "Kontakt - Main-Philharmonie",
+        "sent_at": "2026-04-26T11:14:48.872472+00:00",
+        "status": "sent",
+        "null": [
+          "<177720208480.2197.18214145789069943270@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@manufakturawydarzen.pl",
+        "name": "Strona główna - Manufaktura Wydarzeń",
+        "sent_at": "2026-04-26T11:14:53.097884+00:00",
+        "status": "sent",
+        "null": [
+          "<177720208887.2197.15979671106310787404@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@maxgroupeventy.pl",
+        "name": "NagÅoÅnienie Olsztyn, Profesjonalna obsÅuga Techniczna EventÃ³w | MAX GROUP organizacja eventÃ³w, nagÅoÅnienie Olsztyn, oÅwietlenie, sceny",
+        "sent_at": "2026-04-26T11:14:57.178652+00:00",
+        "status": "sent",
+        "null": [
+          "<177720209309.2197.5151897876447305737@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@meine.seite",
+        "name": "Contact – West Music Foundation",
+        "sent_at": "2026-04-26T11:15:01.312590+00:00",
+        "status": "sent",
+        "null": [
+          "<177720209717.2197.9010239248453881791@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@mentalarts.pl",
+        "name": "Kontakt Mental Arts",
+        "sent_at": "2026-04-26T11:15:05.466307+00:00",
+        "status": "sent",
+        "null": [
+          "<177720210131.2197.1283410460213157337@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@mkez-dresden.de",
+        "name": "Kontakt Marwa Elsherbiny Kultur- und Bildungszentrum Dresden e.V. Marwa El Sherbiny",
+        "sent_at": "2026-04-26T11:15:09.684614+00:00",
+        "status": "sent",
+        "null": [
+          "<177720210546.2197.14313487317130354400@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@mok.art.pl",
+        "name": "KONTAKT",
+        "sent_at": "2026-04-26T11:15:13.871789+00:00",
+        "status": "sent",
+        "null": [
+          "<177720210968.2197.15704686799830760593@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@mux.de",
+        "name": "Kulturzentrum in München - Kulturzentrum mit Öffnungszeiten",
+        "sent_at": "2026-04-26T11:15:17.949063+00:00",
+        "status": "sent",
+        "null": [
+          "<177720211387.2197.16355095902089634805@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@nospr.org.pl",
+        "name": "Tickets - NOSPR",
+        "sent_at": "2026-04-26T11:15:22.198600+00:00",
+        "status": "sent",
+        "null": [
+          "<177720211794.2197.14181567690606524418@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@pracowniateatralna.pl",
+        "name": "Kontakt - Pracownia Teatralna",
+        "sent_at": "2026-04-26T11:15:26.270732+00:00",
+        "status": "sent",
+        "null": [
+          "<177720212219.2197.9533770615517242637@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@pro-musica-koeln.de",
+        "name": "Kontakt – ProMusica Köln",
+        "sent_at": "2026-04-26T11:15:30.491885+00:00",
+        "status": "sent",
+        "null": [
+          "<177720212627.2197.4586816378122215583@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@pttik-berlin.de",
+        "name": "Kontakt – PTTiK",
+        "sent_at": "2026-04-26T11:15:34.573841+00:00",
+        "status": "sent",
+        "null": [
+          "<177720213049.2197.7186038829620437243@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@septemberevents.pl",
+        "name": "Agencja eventowa Łódź, firma eventowa Łódź, organizacja imprez firmowych Łódź, organizacja imprez plenerowych Łódź, organizacja eventów Łódź",
+        "sent_at": "2026-04-26T11:15:38.645848+00:00",
+        "status": "sent",
+        "null": [
+          "<177720213457.2197.7556458323896349335@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@silverbird.com.pl",
+        "name": "Imprezy Firmowe i Integracyjne Łódź - Agencja Eventowa - organizacja imprez Łódź",
+        "sent_at": "2026-04-26T11:15:42.868732+00:00",
+        "status": "sent",
+        "null": [
+          "<177720213864.2197.16521209391601445333@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "kontakt@soundhike.pl",
+        "name": "Soundhike.pl | Agencja Artystyczna",
+        "sent_at": "2026-04-26T11:15:46.956886+00:00",
+        "status": "sent",
+        "null": [
+          "<177720214286.2197.13753824828636647157@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@soundtur.pl",
+        "name": "Agencja Eventowa",
+        "sent_at": "2026-04-26T11:15:51.093220+00:00",
+        "status": "sent",
+        "null": [
+          "<177720214695.2197.2373775980259286801@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "A"
+        ]
+      },
+      {
+        "email": "kontakt@synevo.pl",
+        "name": "Laboratorium Medyczne Synevo – Badania krwi i diagnostyka",
+        "sent_at": "2026-04-26T11:15:55.249042+00:00",
+        "status": "sent",
+        "null": [
+          "<177720215109.2197.4226392168926571743@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          "B"
+        ]
+      },
+      {
+        "email": "akademie@blasmusikverband-bw.de",
+        "name": "Musikzentrum Baden-Württemberg - Das Bildungs- und Tagungshaus für die Amateurmusik",
+        "sent_at": "2026-04-26T11:15:57.812172+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720215525.2197.17062062972614872898@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "alicja.balaban@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-26T11:16:00.417318+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720215781.2197.15874432720335753910@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "alicja@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "sent_at": "2026-04-26T11:16:03.024874+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720216041.2197.3554808394019941491@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "alina@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "sent_at": "2026-04-26T11:16:05.596642+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720216302.2197.13946242001222566176@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "amc.poland@pansa.pl",
+        "name": "Kontakt – Polska Agencja Żeglugi Powietrznej – PAŻP, odpowiada za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej.",
+        "sent_at": "2026-04-26T11:16:08.201533+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720216559.2197.353202594254354980@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "amuz@amuz.edu.pl",
+        "name": "Kontakt - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "sent_at": "2026-04-26T11:16:10.813676+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720216820.2197.7639999515424064469@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "ania@eskander.pl",
+        "name": "Kontakt - Agencja Artystyczna Eskander",
+        "sent_at": "2026-04-26T11:16:13.380006+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720217081.2197.13750130939686681008@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "ania@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-04-26T11:16:15.982598+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720217338.2197.14498169417840842514@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "anna.magiera@ckpodgorza.pl",
+        "name": "Centrum Kultury Podgórza - Kontakt",
+        "sent_at": "2026-04-26T11:16:18.643613+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720217598.2197.3264049920481661418@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "anna.prasek@spotkaniakultur.com",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-04-26T11:16:21.209165+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177720217864.2197.4477414279546250921@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@hananaevents.pl",
+        "name": "Hanana Events - organizacja imprez i eventów firmowych - Agencja Eventowa",
+        "sent_at": "2026-04-26T11:16:23.810684+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720218121.2197.15518147859656271421@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@dreamevents.pl",
+        "name": "Agencja eventowa Dream Events - kreatywna i profesjonalna organizacja imprez i eventów firmowych",
+        "sent_at": "2026-04-26T11:16:26.423988+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720218381.2197.206710673855275480@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "info@tokantis.pl",
+        "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
+        "sent_at": "2026-04-26T11:16:28.986361+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720218642.2197.17370104538047513532@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-04-26T11:16:31.589870+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720218898.2197.16359688039436986682@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "eventy@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-04-26T11:16:34.181838+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720219159.2197.14012978543414222975@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "kontakt@marciniakevents.pl",
+        "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
+        "sent_at": "2026-04-26T11:16:36.792344+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720219418.2197.11979637195176465100@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "lodz@secret-event.pl",
+        "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
+        "sent_at": "2026-04-26T11:16:39.397692+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720219679.2197.4780193416328938037@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-04-26T11:16:41.960094+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720219939.2197.6191632984128090071@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro_wawa@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-04-26T11:16:44.567428+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720220196.2197.5370608117396918578@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
+          ""
+        ]
+      },
+      {
+        "email": "biuro@topevent.pl",
+        "name": "Agencja eventowa ÅodÅº | Topevent.pl",
+        "sent_at": "2026-04-26T11:16:47.173074+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177720220456.2197.1713289145761450088@runnervmeorf1.wmxsh24nqxvevkwowtmtni00dg.yx.internal.cloudapp.net>",
           ""
         ]
       }
