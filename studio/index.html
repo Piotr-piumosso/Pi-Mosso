@@ -219,6 +219,7 @@ textarea{resize:vertical;min-height:54px}
   <button class="ntab" onclick="goTab('partners',this)">Partnerzy</button>
   <button class="ntab" onclick="goTab('templates',this)">Szablony</button>
   <button class="ntab" onclick="goTab('baza',this)">Baza</button>
+  <button class="ntab" onclick="goTab('social',this)">Social</button>
 </div>
 
 <!-- ── Pipeline ── -->
@@ -582,6 +583,36 @@ Più Mosso</div>
       <div id="sync-note" style="font-size:.76rem;color:var(--muted);margin-bottom:9px"></div>
       <input id="hub-q" placeholder="Szukaj: nazwa, mail, kategoria, region…" style="margin-bottom:9px" oninput="renderHub(this.value)">
       <div id="hub-list" style="max-height:400px;overflow-y:auto"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Social ── -->
+<div id="t-social" class="h">
+  <div class="grid">
+    <div>
+      <div class="pn" style="margin-bottom:10px">
+        <div class="ph">
+          <h2>Plan postów</h2>
+          <span style="font-size:.7rem;color:var(--muted)">nadchodzące koncerty</span>
+        </div>
+        <div class="pb" id="social-plan"></div>
+      </div>
+      <div class="pn">
+        <div class="ph"><h2>Hashtagi</h2></div>
+        <div class="pb" id="social-tags"></div>
+      </div>
+    </div>
+    <div class="pn">
+      <div class="ph">
+        <h2>Szablony postów</h2>
+        <select id="social-lang" onchange="renderSocial()" style="font-size:.75rem;padding:3px 7px;border-radius:6px;border:1px solid var(--b);background:var(--panel2);color:var(--text)">
+          <option value="pl">PL</option>
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+      <div class="pb" id="social-tpl"></div>
     </div>
   </div>
 </div>
@@ -1078,12 +1109,13 @@ function renderMailing() {
 
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje"].forEach(t =>
+  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje","social"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
   if (name === "akcje") loadRuns();
   if (name === "mailing") renderMailing();
+  if (name === "social") renderSocial();
 }
 
 // Inbound leads
@@ -1441,6 +1473,150 @@ async function loadRuns() {
     }).join("");
   } catch(e) {
     el.innerHTML = `<div class="empty">Błąd: ${x(e.message)}</div>`;
+  }
+}
+
+// ── Social ──────────────────────────────────────────────────────────────────
+
+const SOCIAL_TPLS = {
+  pl: [
+    {name:"Zapowiedź (T-7)", body:"🎶 {Tytuł}\n📅 {Data} | 📍 {Miasto}\n🏛 {Sala}\n\nZapraszamy na wyjątkowy wieczór z muzyką skrzypcową i organową.\nDuet Più Mosso — Zofia Andersz i Piotr Górski.\n\n{Link / bilety}\n\n#muzykaklasyczna #skrzypce #organy #fortepian #koncert #piumosso"},
+    {name:"Przypomnienie (T-1)", body:"⏳ Jutro wieczór!\n🎻 {Tytuł} — {Miasto}\n\nOstatnia chwila — do zobaczenia!\n\n#jutrokoncert #muzykaklasyczna #piumosso"},
+    {name:"Relacja po (T+1)", body:"✨ Dziękujemy za wczorajszy wieczór w {Mieście}!\nByło nam niezmiernie miło dzielić się muzyką z tak wspaniałą publicznością.\n\n📸 fot. {Fotograf}\n\n#afterconcert #muzykaklasyczna #skrzypce #piumosso"},
+    {name:"Nagroda / wyróżnienie", body:"🏆 Dobra wiadomość!\nDuet Più Mosso zdobył {Nagrodę} na {Konkursie}.\n\nDziękujemy za wsparcie i motywację! 🎻\n\n#nagroda #konkurs #muzykaklasyczna #piumosso"},
+    {name:"Zza kulis (BTS)", body:"🎻 Próba przed koncertem w {Mieście}…\n{Opis / krótki cytat}\n\n#rehearsal #muzykaklasyczna #skrzypce #piumosso"},
+    {name:"O duecie", body:"👥 Kim jesteśmy?\nDuet Più Mosso — Zofia Andersz (skrzypce) i Piotr Górski (organy/fortepian).\n\nGramy na koncertach, festiwalach i uroczystościach w Polsce i za granicą.\nZdobywcy I miejsca Concorso Internazionale 2025 🥇\n\nWięcej: piumosso.pl\n\n#muzykaklasyczna #piumosso #skrzypce #organy"},
+  ],
+  de: [
+    {name:"Ankündigung (T-7)", body:"🎶 {Titel}\n📅 {Datum} | 📍 {Ort}\n🏛 {Veranstaltungsort}\n\nEin besonderer Abend mit Violin- und Orgelmusik.\nDuo Più Mosso — Zofia Andersz & Piotr Górski.\n\n{Link / Karten}\n\n#kammermusik #klassischemusik #konzert #violine #orgel #piumosso"},
+    {name:"Erinnerung (T-1)", body:"⏳ Morgen Abend!\n🎻 {Titel} — {Ort}\n\nWir freuen uns auf Sie!\n\n#konzertmorgen #klassischemusik #piumosso"},
+    {name:"Nachbericht (T+1)", body:"✨ Herzlichen Dank für den gestrigen Abend in {Ort}!\nEs war eine große Freude, Musik mit Ihnen zu teilen.\n\n📸 Foto: {Fotograf}\n\n#nachdemkonzert #kammermusik #violine #piumosso"},
+    {name:"Auszeichnung", body:"🏆 Gute Neuigkeiten!\nDuo Più Mosso hat den {Preis} beim {Wettbewerb} gewonnen.\n\nVielen Dank für Ihre Unterstützung! 🎻\n\n#wettbewerb #kammermusik #piumosso"},
+    {name:"Backstage", body:"🎻 Probe vor dem Konzert in {Ort}…\n{Beschreibung}\n\n#rehearsal #kammermusik #violine #piumosso"},
+  ],
+  en: [
+    {name:"Announcement (T-7)", body:"🎶 {Title}\n📅 {Date} | 📍 {City}\n🏛 {Venue}\n\nJoin us for an evening of violin and organ/piano music.\nPiù Mosso duo — Zofia Andersz & Piotr Górski.\n\n{Link / tickets}\n\n#chambermusic #classicalmusic #concert #violin #organ #piano #piumosso"},
+    {name:"Reminder (T-1)", body:"⏳ Tomorrow!\n🎻 {Title} — {City}\n\nSee you there!\n\n#tomorrowsconcert #classicalmusic #piumosso"},
+    {name:"Recap (T+1)", body:"✨ Thank you for a wonderful evening in {City}!\nIt was a true pleasure sharing music with such a warm audience.\n\n📸 Photo: {Photographer}\n\n#afterconcert #classicalmusic #violin #piumosso"},
+    {name:"Award", body:"🏆 Exciting news!\nPiù Mosso duo won {Award} at {Competition}.\n\nThank you for your support! 🎻\n\n#award #competition #classicalmusic #piumosso"},
+    {name:"BTS", body:"🎻 Rehearsing for {City}…\n{Description}\n\n#rehearsal #classicalmusic #violin #piumosso"},
+  ],
+};
+
+function dateAddDays(dateStr, days) {
+  const d = new Date(dateStr + "T12:00:00");
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0,10);
+}
+
+function copyText(t) {
+  navigator.clipboard.writeText(t).then(() => {
+    const el = document.createElement("div");
+    el.textContent = "Skopiowano!";
+    Object.assign(el.style, {position:"fixed",bottom:"20px",right:"20px",background:"var(--panel2)",border:"1px solid var(--b)",padding:"6px 14px",borderRadius:"8px",fontSize:".76rem",zIndex:"9999",pointerEvents:"none"});
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 1400);
+  }).catch(() => {});
+}
+
+function copySocialPost(type, id) {
+  const ev = CAL.find(e => e.id === id);
+  if (!ev) return;
+  const lang = (document.getElementById("social-lang") || {value:"pl"}).value;
+  const d = fdate(ev.date);
+  const city = ev.city || "";
+  const title = ev.title || "";
+  const venue = ev.venue ? "\n🏛 " + ev.venue : "";
+  const tpls = {
+    ann: {
+      pl: `🎶 ${title}\n📅 ${d} | 📍 ${city}${venue}\n\nZapraszamy na wyjątkowy wieczór z muzyką skrzypcową i organową.\nDuet Più Mosso — Zofia Andersz i Piotr Górski.\n\npiumosso.pl\n\n#muzykaklasyczna #skrzypce #organy #koncert #piumosso`,
+      de: `🎶 ${title}\n📅 ${d} | 📍 ${city}${venue}\n\nEin Abend mit Violin- und Orgelmusik — Duo Più Mosso.\n\n#kammermusik #klassischemusik #konzert #violine #orgel #piumosso`,
+      en: `🎶 ${title}\n📅 ${d} | 📍 ${city}${venue}\n\nJoin us for an evening of violin and organ music.\nPiù Mosso duo — Zofia Andersz & Piotr Górski.\n\n#chambermusic #classicalmusic #concert #violin #organ #piumosso`,
+    },
+    rem: {
+      pl: `⏳ Jutro wieczór!\n🎻 ${title}\n📍 ${city}\n\nOstatnia chwila — do zobaczenia!\n\n#jutrokoncert #muzykaklasyczna #piumosso`,
+      de: `⏳ Morgen Abend!\n🎻 ${title}\n📍 ${city}\n\nWir freuen uns auf Sie!\n\n#konzertmorgen #klassischemusik #piumosso`,
+      en: `⏳ Tomorrow!\n🎻 ${title}\n📍 ${city}\n\nSee you there!\n\n#tomorrowsconcert #classicalmusic #piumosso`,
+    },
+    rec: {
+      pl: `✨ Dziękujemy za wczorajszy wieczór w ${city}!\nByło nam niezmiernie miło dzielić się muzyką z tak wspaniałą publicznością.\n\nDo zobaczenia na kolejnych koncertach! 🎻\n\n#afterconcert #muzykaklasyczna #skrzypce #piumosso`,
+      de: `✨ Herzlichen Dank für den gestrigen Abend in ${city}!\nEs war eine große Freude, Musik mit Ihnen zu teilen.\n\nBis zum nächsten Konzert! 🎻\n\n#nachdemkonzert #kammermusik #piumosso`,
+      en: `✨ Thank you for a wonderful evening in ${city}!\nIt was a true pleasure sharing music with such a warm audience.\n\nSee you at the next concert! 🎻\n\n#afterconcert #classicalmusic #violin #piumosso`,
+    },
+  };
+  copyText(((tpls[type] || {})[lang]) || "");
+}
+
+function renderSocial() {
+  const today = todayStr();
+  const upcoming = [...CAL]
+    .filter(e => e.date >= today && e.type !== "done")
+    .sort((a,b) => a.date.localeCompare(b.date))
+    .slice(0, 8);
+
+  // Post plan from calendar
+  const planEl = document.getElementById("social-plan");
+  if (planEl) {
+    planEl.innerHTML = upcoming.length
+      ? upcoming.map(e => {
+          const evJson = JSON.stringify(e).replace(/'/g,"\\'");
+          const t7  = fdate(dateAddDays(e.date, -7));
+          const t1  = fdate(dateAddDays(e.date, -1));
+          const tp1 = fdate(dateAddDays(e.date, 1));
+          return `<div style="border:1px solid var(--b);border-radius:8px;padding:8px 10px;margin-bottom:8px">
+            <div style="font-size:.78rem;font-weight:600;margin-bottom:4px">${x(e.title)}</div>
+            <div style="font-size:.68rem;color:var(--muted);margin-bottom:7px">📅 ${fdate(e.date)} · 📍 ${x(e.city)}</div>
+            <div style="display:flex;flex-direction:column;gap:3px">
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.7rem;padding:3px 0;border-top:1px solid var(--b2)"><span>📢 <span style="color:var(--muted)">${t7}</span> — Zapowiedź</span><button class="btn btn-s btn-xs" onclick="copySocialPost('ann','${x(e.id)}')">Kopiuj</button></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.7rem;padding:3px 0;border-top:1px solid var(--b2)"><span>⏳ <span style="color:var(--muted)">${t1}</span> — Przypomnienie</span><button class="btn btn-s btn-xs" onclick="copySocialPost('rem','${x(e.id)}')">Kopiuj</button></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.7rem;padding:3px 0;border-top:1px solid var(--b2)"><span>✨ <span style="color:var(--muted)">${tp1}</span> — Relacja</span><button class="btn btn-s btn-xs" onclick="copySocialPost('rec','${x(e.id)}')">Kopiuj</button></div>
+            </div>
+          </div>`;
+        }).join("")
+      : `<div class="empty">Brak nadchodzących koncertów.</div>`;
+  }
+
+  // Hashtag banks
+  const tagsEl = document.getElementById("social-tags");
+  if (tagsEl) {
+    const banks = [
+      {lang:"PL", tags:"#muzykaklasyczna #skrzypce #organy #fortepian #koncert #kameralista #piumosso #muzykananawesele"},
+      {lang:"DE", tags:"#kammermusik #klassischemusik #violine #orgel #klavier #konzert #hochzeitsmusik #piumosso"},
+      {lang:"EN", tags:"#chambermusic #classicalmusic #violin #organ #piano #concert #weddingmusic #livemusic #piumosso"},
+    ];
+    tagsEl.innerHTML = banks.map(b =>
+      `<div style="margin-bottom:10px">
+        <div style="font-size:.68rem;font-weight:700;color:var(--muted);margin-bottom:4px">${b.lang}</div>
+        <div style="font-size:.72rem;line-height:1.7;color:var(--text);word-break:break-word">${b.tags} <button class="btn btn-s btn-xs" onclick="copyText('${b.tags}')">Kopiuj</button></div>
+      </div>`
+    ).join("");
+  }
+
+  // Templates
+  const lang = (document.getElementById("social-lang") || {value:"pl"}).value;
+  const tplEl = document.getElementById("social-tpl");
+  if (tplEl) {
+    const list = SOCIAL_TPLS[lang] || [];
+    tplEl.innerHTML = list.map(t =>
+      `<div style="margin-bottom:10px;padding:9px 10px;background:var(--panel);border-radius:8px;border:1px solid var(--b2)">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-size:.73rem;font-weight:700;color:var(--gold)">${t.name}</span>
+          <button class="btn btn-s btn-xs" onclick="copyText(${JSON.stringify(t.body)})">Kopiuj</button>
+        </div>
+        <pre style="font-size:.68rem;white-space:pre-wrap;margin:0;color:var(--muted);font-family:inherit;line-height:1.55">${x(t.body)}</pre>
+      </div>`
+    ).join("") +
+    `<div style="margin-top:14px;padding:9px 10px;background:var(--panel);border-radius:8px;border:1px solid var(--b2)">
+      <div style="font-size:.73rem;font-weight:700;color:var(--muted);margin-bottom:7px">🎹 Jedno nagranie = wielokrotny content</div>
+      <div style="font-size:.69rem;color:var(--muted);line-height:1.7">
+        🎥 Pełne nagranie z koncertu → YouTube<br>
+        ⏱️ 15–30 s highlight → Instagram Reel<br>
+        📸 Zdjęcie z wykonania → post na grid<br>
+        📝 Cytat z recenzji / programu → text post<br>
+        📲 Behind the scenes → Stories (przed/po)<br>
+        ℹ️ Bio + info o repertuarze → post "O nas"
+      </div>
+    </div>`;
   }
 }
 </script>
