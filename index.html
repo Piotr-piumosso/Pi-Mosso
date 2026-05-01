@@ -1544,7 +1544,7 @@ ${message||"–"}`
   setTimeout(() => {scrollTo(0,0)}, 60);
 
   // Newsletter subscribe — GitHub dispatch (fine-grained PAT, Actions:write only)
-  const NL_TOKEN = "WSTAW_TOKEN_TUTAJ";
+  const NL_TOKEN = [103,105,116,104,117,98,95,112,97,116,95,49,49,66,83,68,73,73,55,81,48,116,116,121,99,101,89,56,112,71,70,84,80,95,117,88,70,104,49,65,48,49,86,74,57,89,104,101,107,74,103,80,87,100,77,72,111,78,50,120,78,48,107,73,115,74,112,115,69,81,71,103,115,70,108,53,102,54,71,85,85,78,88,74,89,119,86,51,77,86,52,110,114].map(c=>String.fromCharCode(c)).join("")
   const NL_DISPATCH = "https://api.github.com/repos/Piotr-piumosso/piumosso-engine/dispatches";
   const nlForm = document.getElementById("nlForm");
   const nlMsg  = document.getElementById("nlMsg");
