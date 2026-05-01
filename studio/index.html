@@ -220,6 +220,7 @@ textarea{resize:vertical;min-height:54px}
   <button class="ntab" onclick="goTab('templates',this)">Szablony</button>
   <button class="ntab" onclick="goTab('baza',this)">Baza</button>
   <button class="ntab" onclick="goTab('social',this)">Social</button>
+  <button class="ntab" onclick="goTab('newsletter',this)">Newsletter <span class="cnt" id="nl-badge" style="display:none"></span></button>
 </div>
 
 <!-- ── Pipeline ── -->
@@ -583,6 +584,72 @@ Più Mosso</div>
       <div id="sync-note" style="font-size:.76rem;color:var(--muted);margin-bottom:9px"></div>
       <input id="hub-q" placeholder="Szukaj: nazwa, mail, kategoria, region…" style="margin-bottom:9px" oninput="renderHub(this.value)">
       <div id="hub-list" style="max-height:400px;overflow-y:auto"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Newsletter ── -->
+<div id="t-newsletter" class="h">
+  <div class="grid">
+    <!-- Left: stats + list -->
+    <div>
+      <div class="pn" style="margin-bottom:10px">
+        <div class="ph">
+          <h2>Subskrybenci</h2>
+          <button class="btn btn-xs btn-s" onclick="syncData();renderNewsletter()">Odśwież</button>
+        </div>
+        <div class="pb">
+          <div class="sbar" id="nl-stats">
+            <div class="sbox"><b id="nl-total">—</b><s>Łącznie</s></div>
+            <div class="sbox"><b id="nl-pl">—</b><s>PL</s></div>
+            <div class="sbox"><b id="nl-de">—</b><s>DE</s></div>
+            <div class="sbox"><b id="nl-en">—</b><s>EN</s></div>
+          </div>
+          <div id="nl-list" style="max-height:340px;overflow-y:auto;margin-top:8px"></div>
+        </div>
+      </div>
+      <div class="pn">
+        <div class="ph"><h2>Historia wysyłek</h2></div>
+        <div class="pb" id="nl-log" style="max-height:220px;overflow-y:auto"></div>
+      </div>
+    </div>
+    <!-- Right: compose -->
+    <div class="pn">
+      <div class="ph">
+        <h2>Nowy newsletter</h2>
+        <button class="btn btn-xs btn-s" onclick="nlDryRun()">Dry run</button>
+      </div>
+      <div class="pb">
+        <div class="stabs" id="nl-compose-tabs">
+          <button class="stab on" onclick="setNlLang('pl',this)">PL</button>
+          <button class="stab" onclick="setNlLang('de',this)">DE</button>
+          <button class="stab" onclick="setNlLang('en',this)">EN</button>
+        </div>
+        <div class="fs" style="margin-top:10px">
+          <div id="nl-form-pl">
+            <label style="font-size:.72rem;color:var(--muted)">Temat (PL)<input id="nl-subj-pl" placeholder="Tytuł newslettera"></label>
+            <label style="font-size:.72rem;color:var(--muted)">Treść HTML (PL)<textarea id="nl-body-pl" rows="8" placeholder="&lt;p&gt;Treść...&lt;/p&gt;&lt;br&gt;&lt;a class=&quot;btn&quot; href=&quot;https://piumosso.pl&quot;&gt;Przejdź na stronę&lt;/a&gt;"></textarea></label>
+          </div>
+          <div id="nl-form-de" style="display:none">
+            <label style="font-size:.72rem;color:var(--muted)">Betreff (DE)<input id="nl-subj-de" placeholder="Newslettertitel"></label>
+            <label style="font-size:.72rem;color:var(--muted)">Inhalt HTML (DE)<textarea id="nl-body-de" rows="8" placeholder="&lt;p&gt;Inhalt...&lt;/p&gt;"></textarea></label>
+          </div>
+          <div id="nl-form-en" style="display:none">
+            <label style="font-size:.72rem;color:var(--muted)">Subject (EN)<input id="nl-subj-en" placeholder="Newsletter title"></label>
+            <label style="font-size:.72rem;color:var(--muted)">Content HTML (EN)<textarea id="nl-body-en" rows="8" placeholder="&lt;p&gt;Content...&lt;/p&gt;"></textarea></label>
+          </div>
+          <div class="brow" style="margin-top:10px">
+            <button class="btn btn-p" onclick="nlSend(false)">Wyślij newsletter</button>
+          </div>
+          <div id="nl-send-status" style="font-size:.76rem;color:var(--muted);margin-top:7px;display:none"></div>
+        </div>
+        <div style="margin-top:14px;padding:10px;background:var(--panel);border-radius:8px;border:1px solid var(--b2);font-size:.7rem;color:var(--muted);line-height:1.65">
+          <strong style="color:var(--text)">HTML body — wskazówki</strong><br>
+          Używaj znaczników: <code>&lt;p&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;a href="..."&gt;</code>, <code>&lt;strong&gt;</code><br>
+          Link CTA: <code>&lt;a class="btn" href="https://piumosso.pl"&gt;Tekst&lt;/a&gt;</code><br>
+          Puste treści w DE/EN = mail nie idzie do tych subskrybentów
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -989,12 +1056,14 @@ async function syncData() {
     const r = await fetch(SYNC + "?t=" + Date.now());
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    DH.baza    = d.dataHub?.baza         || [];
-    DH.engine  = d.dataHub?.engine       || [];
-    DH.sent    = d.dataHub?.sentLog      || [];
-    DH.inbound = d.dataHub?.inboundLeads || [];
-    DH.replies = d.dataHub?.replyLog     || [];
-    DH.opens   = d.dataHub?.openLog      || [];
+    DH.baza          = d.dataHub?.baza         || [];
+    DH.engine        = d.dataHub?.engine       || [];
+    DH.sent          = d.dataHub?.sentLog      || [];
+    DH.inbound       = d.dataHub?.inboundLeads || [];
+    DH.replies       = d.dataHub?.replyLog     || [];
+    DH.opens         = d.dataHub?.openLog      || [];
+    DH.subscribers   = d.dataHub?.subscribers  || [];
+    DH.newsletterLog = d.dataHub?.newsletterLog || [];
     DH.sync    = { generatedAt: d.generatedAt, sourceStats: d.sourceStats||{}, sourceRuns: d.sourceRuns||{} };
     saveDH(); renderHub(""); renderHeader(); renderInbound(); renderReplies(); renderMailing();
     const note = document.getElementById("sync-note");
@@ -1109,13 +1178,14 @@ function renderMailing() {
 
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje","social"].forEach(t =>
+  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje","social","newsletter"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
   if (name === "akcje") loadRuns();
   if (name === "mailing") renderMailing();
   if (name === "social") renderSocial();
+  if (name === "newsletter") renderNewsletter();
 }
 
 // Inbound leads
@@ -1475,6 +1545,121 @@ async function loadRuns() {
     el.innerHTML = `<div class="empty">Błąd: ${x(e.message)}</div>`;
   }
 }
+
+// ── Newsletter ───────────────────────────────────────────────────────────────
+
+const NL_WORKFLOW = "newsletter_send.yml";
+
+function renderNewsletter() {
+  const subs = DH.subscribers || [];
+  const active = subs.filter(s => s.status === "active");
+  const byLang = {pl:0, de:0, en:0};
+  active.forEach(s => { const l = (s.lang||"pl").slice(0,2); if (l in byLang) byLang[l]++; });
+  const total = active.length;
+
+  document.getElementById("nl-total").textContent = total;
+  document.getElementById("nl-pl").textContent = byLang.pl;
+  document.getElementById("nl-de").textContent = byLang.de;
+  document.getElementById("nl-en").textContent = byLang.en;
+
+  const badge = document.getElementById("nl-badge");
+  if (badge) {
+    badge.textContent = total;
+    badge.style.display = total > 0 ? "inline" : "none";
+  }
+
+  const listEl = document.getElementById("nl-list");
+  if (listEl) {
+    listEl.innerHTML = active.length
+      ? active.map(s =>
+          `<div style="display:flex;justify-content:space-between;font-size:.72rem;padding:4px 0;border-bottom:1px solid var(--b2)">
+            <span>${x(s.email||"")}</span>
+            <span style="color:var(--muted)">${x(s.lang||"")} · ${fdate(s.subscribed_at||"")}</span>
+          </div>`
+        ).join("")
+      : `<div class="empty">Brak subskrybentów. Odśwież sync po pierwszych zapisach.</div>`;
+  }
+
+  const logData = DH.newsletterLog || [];
+  const logEl = document.getElementById("nl-log");
+  if (logEl) {
+    logEl.innerHTML = logData.length
+      ? [...logData].reverse().slice(0,30).map(r =>
+          `<div style="display:flex;justify-content:space-between;font-size:.7rem;padding:3px 0;border-bottom:1px solid var(--b2)">
+            <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x(r.email||"")} — ${x((r.subject||"").slice(0,40))}</span>
+            <span style="color:var(--muted);flex-shrink:0;margin-left:8px">${fdate(r.sent_at||"")} · ${x(r.status||"")}</span>
+          </div>`
+        ).join("")
+      : `<div class="empty">Brak historii wysyłek.</div>`;
+  }
+}
+
+function setNlLang(lang, btn) {
+  ["pl","de","en"].forEach(l => {
+    document.getElementById("nl-form-"+l).style.display = l === lang ? "" : "none";
+  });
+  document.querySelectorAll("#nl-compose-tabs .stab").forEach(b => b.classList.remove("on"));
+  btn.classList.add("on");
+}
+
+async function nlSend(dryRun) {
+  const PAT = localStorage.getItem(PATK);
+  if (!PAT) { alert("Brak GitHub PAT — wejdź w Akcje i zapisz token."); return; }
+
+  const inputs = {
+    subject_pl: document.getElementById("nl-subj-pl").value.trim(),
+    subject_de: document.getElementById("nl-subj-de").value.trim(),
+    subject_en: document.getElementById("nl-subj-en").value.trim(),
+    body_pl:    document.getElementById("nl-body-pl").value.trim(),
+    body_de:    document.getElementById("nl-body-de").value.trim(),
+    body_en:    document.getElementById("nl-body-en").value.trim(),
+    dry_run:    dryRun ? "true" : "false",
+  };
+
+  if (!inputs.subject_pl || !inputs.body_pl) {
+    alert("Podaj co najmniej temat i treść PL."); return;
+  }
+  if (!inputs.subject_de) inputs.subject_de = inputs.subject_pl;
+  if (!inputs.subject_en) inputs.subject_en = inputs.subject_pl;
+  if (!inputs.body_de) inputs.body_de = inputs.body_pl;
+  if (!inputs.body_en) inputs.body_en = inputs.body_pl;
+
+  const confirmed = dryRun || confirm(
+    `Wysłać newsletter do aktywnych subskrybentów?\n\nTemat: ${inputs.subject_pl}`
+  );
+  if (!confirmed) return;
+
+  const statusEl = document.getElementById("nl-send-status");
+  statusEl.textContent = dryRun ? "Dry run w toku…" : "Wysyłanie…";
+  statusEl.style.display = "block";
+
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO_ENG}/actions/workflows/${NL_WORKFLOW}/dispatches`,
+      {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${PAT}`,
+          "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main", inputs }),
+      }
+    );
+    if (res.status === 204) {
+      statusEl.textContent = dryRun
+        ? "Dry run uruchomiony. Sprawdź GitHub Actions."
+        : "Newsletter uruchomiony. Sprawdź GitHub Actions.";
+    } else {
+      const err = await res.text().catch(() => res.status);
+      statusEl.textContent = `Błąd: ${err}`;
+    }
+  } catch(e) {
+    statusEl.textContent = `Błąd: ${e.message}`;
+  }
+}
+
+function nlDryRun() { nlSend(true); }
 
 // ── Social ──────────────────────────────────────────────────────────────────
 
