@@ -1543,8 +1543,9 @@ ${message||"–"}`
   history.scrollRestoration = "manual";
   setTimeout(() => {scrollTo(0,0)}, 60);
 
-  // Newsletter subscribe
-  const NL_URL = "https://form-handler.pietrek517.workers.dev/subscribe";
+  // Newsletter subscribe — GitHub dispatch (fine-grained PAT, Actions:write only)
+  const NL_TOKEN = "WSTAW_TOKEN_TUTAJ";
+  const NL_DISPATCH = "https://api.github.com/repos/Piotr-piumosso/piumosso-engine/dispatches";
   const nlForm = document.getElementById("nlForm");
   const nlMsg  = document.getElementById("nlMsg");
   if (nlForm) {
@@ -1556,12 +1557,19 @@ ${message||"–"}`
       btn.disabled = true;
       btn.textContent = "…";
       try {
-        const res = await fetch(NL_URL, {
+        const res = await fetch(NL_DISPATCH, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, lang: "pl" }),
+          headers: {
+            "Authorization": `Bearer ${NL_TOKEN}`,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            event_type: "newsletter-subscribe",
+            client_payload: { email, lang: "pl", source: "website" },
+          }),
         });
-        if (res.ok) {
+        if (res.status === 204) {
           nlForm.style.display = "none";
           nlMsg.textContent = "Zapisano! Dziękujemy.";
           nlMsg.className = "nl-msg ok";

@@ -1402,8 +1402,9 @@ ${message||"–"}`
     });
   }
 
-  // Newsletter subscribe
-  const NL_URL = "https://form-handler.pietrek517.workers.dev/subscribe";
+  // Newsletter subscribe — GitHub dispatch
+  const NL_TOKEN = "WSTAW_TOKEN_TUTAJ";
+  const NL_DISPATCH = "https://api.github.com/repos/Piotr-piumosso/piumosso-engine/dispatches";
   const nlForm = document.getElementById("nlForm");
   const nlMsg  = document.getElementById("nlMsg");
   if (nlForm) {
@@ -1414,11 +1415,19 @@ ${message||"–"}`
       const btn = nlForm.querySelector("button");
       btn.disabled = true; btn.textContent = "…";
       try {
-        const res = await fetch(NL_URL, {
-          method: "POST", headers: {"Content-Type":"application/json"},
-          body: JSON.stringify({email, lang:"de"}),
+        const res = await fetch(NL_DISPATCH, {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${NL_TOKEN}`,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            event_type: "newsletter-subscribe",
+            client_payload: {email, lang:"de", source:"website"},
+          }),
         });
-        if (res.ok) {
+        if (res.status === 204) {
           nlForm.style.display = "none";
           nlMsg.textContent = "Angemeldet! Vielen Dank.";
           nlMsg.className = "nl-msg ok"; nlMsg.style.display = "block";
