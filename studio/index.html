@@ -76,6 +76,7 @@ textarea{resize:vertical;min-height:54px}
 .btn-p{background:linear-gradient(180deg,#e2c385,#cb9f56);color:#1a120a}
 .btn-s{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.09);color:var(--text)}
 .btn-d{background:rgba(197,111,111,.1);border-color:rgba(197,111,111,.25);color:var(--red)}
+.btn-g{background:rgba(212,176,106,.12);border-color:rgba(212,176,106,.35);color:var(--gold)}
 .btn-xs{padding:3px 8px;font-size:.72rem}
 .brow{display:flex;gap:5px;flex-wrap:wrap}
 
@@ -1236,10 +1237,37 @@ function renderInbound() {
             ${st!=="rejected"?`<button class="btn btn-d btn-xs" onclick="setIbStatus('${key}','rejected')">Odrzuć</button>`:""}
             ${r.phone?`<a href="tel:${x(r.phone)}" class="btn btn-s btn-xs">Zadzwoń</a>`:""}
             ${r.email?`<a href="mailto:${x(r.email)}" class="btn btn-s btn-xs">E-mail</a>`:""}
+            ${st==="booked"&&r.email?`<button class="btn btn-g btn-xs" onclick="requestReview('${x(r.email)}','${x(r.name||'')}','${x(r.lang||'pl')}',this)" title="Wyślij prośbę o opinię Google">⭐ Opinia</button>`:""}
           </div>
         </div>`;
       }).join("")
     : `<div class="empty">Brak zapytań w tym filtrze.</div>`;
+}
+
+// Review request
+async function requestReview(email, name, lang, btn) {
+  const pat = localStorage.getItem(PATK) || "";
+  if (!pat) { alert("Brak GitHub PAT — wejdź w Akcje i zapisz token."); return; }
+  if (!confirm(`Wysłać prośbę o opinię Google do:\n${name || email} (${email})?`)) return;
+  btn.disabled = true;
+  btn.textContent = "Wysyłam…";
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO_ENG}/actions/workflows/review_request.yml/dispatches`,
+      { method:"POST", headers:{"Authorization":`Bearer ${pat}`,"Content-Type":"application/json","Accept":"application/vnd.github+json"},
+        body: JSON.stringify({ ref:"main", inputs:{ client_email:email, client_name:name||"Kliencie", client_lang:lang||"pl" } }) }
+    );
+    if (r.status === 204) {
+      btn.textContent = "✓ Wysłano";
+      btn.style.color = "var(--green)";
+    } else {
+      throw new Error(`HTTP ${r.status}`);
+    }
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = "⭐ Opinia";
+    alert("Błąd: " + e.message);
+  }
 }
 
 // Replies
