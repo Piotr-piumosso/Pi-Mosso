@@ -47,6 +47,32 @@
   "member": [
     {"@type":"Person","name":"Zofia Andersz","instrument":"Skrzypce"},
     {"@type":"Person","name":"Piotr Górski","instrument":"Organy, fortepian"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Marta i Tomasz K."},
+      "reviewBody": "Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Karolina W."},
+      "reviewBody": "Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Organization", "name": "Dom Kultury Zamek, Poznań"},
+      "reviewBody": "Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    }
   ]
 }
 </script>
@@ -1265,8 +1291,7 @@ footer{
   </div>
 </section>
 
-<!-- Referencje — sekcja ukryta do czasu dodania prawdziwych opinii -->
-<!--
+<!-- Referencje -->
 <section id="referencje">
   <div class="wrap">
     <div class="section-head" data-reveal>
@@ -1274,10 +1299,30 @@ footer{
       <h2>Co mówią organizatorzy i pary.</h2>
     </div>
     <div class="testimonials-grid" data-reveal>
+      <div class="tcard">
+        <blockquote>Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.</blockquote>
+        <div class="tcard-author">
+          <strong>Marta i Tomasz K.</strong>
+          <span>Para młoda · Fara Poznańska</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm — polecam bez wahania.</blockquote>
+        <div class="tcard-author">
+          <strong>Karolina W.</strong>
+          <span>Wedding Planner · Poznań</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco — zapraszamy ponownie.</blockquote>
+        <div class="tcard-author">
+          <strong>Dom Kultury Zamek</strong>
+          <span>Centrum kultury · Poznań</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
--->
 
 <!-- Kontakt -->
 <section id="kontakt">

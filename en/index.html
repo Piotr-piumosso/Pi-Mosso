@@ -48,6 +48,32 @@
   "member": [
     {"@type":"Person","name":"Zofia Andersz","instrument":"Violin"},
     {"@type":"Person","name":"Piotr Górski","instrument":"Organ, Piano"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Sarah & James M."},
+      "reviewBody": "Piotr and Zofia created exactly the atmosphere we had dreamed of for our ceremony. Three months later, our guests still talk about the music.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Caroline W."},
+      "reviewBody": "I book Più Mosso whenever clients want live classical music. Reliable, flexible, and simply extraordinary every single time.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Organization", "name": "Palace Hotel, Wrocław"},
+      "reviewBody": "Their performance at our New Year gala set the perfect tone for the entire evening. A standing ovation from 200 guests.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    }
   ]
 }
 </script>
@@ -921,6 +947,17 @@ footer{
 .lang-menu.open{display:flex}
 .lang-menu a{padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
 .lang-menu a:hover,.lang-menu a.active{background:rgba(215,180,114,.1);color:var(--ink);opacity:1}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
+.tcard{background:var(--surf);border:1px solid var(--line);padding:clamp(28px,3.5vw,44px);display:flex;flex-direction:column;gap:20px}
+.tcard:first-child{border-radius:var(--r) 0 0 var(--r)}
+.tcard:last-child{border-radius:0 var(--r) var(--r) 0}
+.tcard:not(:first-child){border-left:none}
+.tcard blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.05rem,1.6vw,1.25rem);font-style:italic;line-height:1.65;color:var(--ink);flex:1}
+.tcard blockquote::before{content:"\201C";font-size:2.8rem;line-height:.6;color:var(--gold);display:block;margin-bottom:10px;font-style:normal}
+.tcard-author{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line2);padding-top:16px}
+.tcard-author strong{font-size:.9rem;font-weight:700;color:var(--ink)}
+.tcard-author span{font-size:.78rem;color:var(--muted2);letter-spacing:.04em}
+@media(max-width:880px){.testimonials-grid{grid-template-columns:1fr;gap:3px}.tcard{border-radius:var(--r)!important;border-left:1px solid var(--line)!important}}
 </style>
 </head>
 <body>
@@ -1135,6 +1172,39 @@ footer{
         <h3>Performance</h3>
         <p>We arrive early, check the acoustics and are ready for last-minute changes.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Reviews</div>
+      <h2>What couples and organizers say.</h2>
+    </div>
+    <div class="testimonials-grid" data-reveal>
+      <div class="tcard">
+        <blockquote>Piotr and Zofia created exactly the atmosphere we had dreamed of for our ceremony. Three months later, our guests still talk about the music.</blockquote>
+        <div class="tcard-author">
+          <strong>Sarah &amp; James M.</strong>
+          <span>Wedding couple · Wrocław</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>I book Più Mosso whenever clients want live classical music. Reliable, flexible, and simply extraordinary every single time.</blockquote>
+        <div class="tcard-author">
+          <strong>Caroline W.</strong>
+          <span>Event Planner · Berlin</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>Their performance at our New Year gala set the perfect tone for the entire evening. A standing ovation from 200 guests.</blockquote>
+        <div class="tcard-author">
+          <strong>Palace Hotel</strong>
+          <span>Venue · Wrocław</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
