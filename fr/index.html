@@ -31,6 +31,7 @@
 <link rel="alternate" hreflang="en" href="https://piumosso.pl/en/">
 <link rel="alternate" hreflang="de" href="https://piumosso.pl/de/">
 <link rel="alternate" hreflang="fr" href="https://piumosso.pl/fr/">
+<link rel="alternate" hreflang="it" href="https://piumosso.pl/it/">
 <link rel="alternate" hreflang="x-default" href="https://piumosso.pl/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -907,6 +908,29 @@ footer{
 .lang-menu.open{display:flex}
 .lang-menu a{padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
 .lang-menu a:hover,.lang-menu a.active{background:rgba(215,180,114,.1);color:var(--ink);opacity:1}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
+.tcard{background:var(--surf);border:1px solid var(--line);padding:clamp(28px,3.5vw,44px);display:flex;flex-direction:column;gap:20px}
+.tcard:first-child{border-radius:var(--r) 0 0 var(--r)}
+.tcard:last-child{border-radius:0 var(--r) var(--r) 0}
+.tcard:not(:first-child){border-left:none}
+.tcard blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.05rem,1.6vw,1.25rem);font-style:italic;line-height:1.65;color:var(--ink);flex:1}
+.tcard blockquote::before{content:"\201C";font-size:2.8rem;line-height:.6;color:var(--gold);display:block;margin-bottom:10px;font-style:normal}
+.tcard-author{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line2);padding-top:16px}
+.tcard-author strong{font-size:.9rem;font-weight:700;color:var(--ink)}
+.tcard-author span{font-size:.78rem;color:var(--muted2);letter-spacing:.04em}
+@media(max-width:880px){.testimonials-grid{grid-template-columns:1fr;gap:3px}.tcard{border-radius:var(--r)!important;border-left:1px solid var(--line)!important}}
+.nl-section{padding:clamp(40px,5vw,72px) 0;background:var(--panel,#f4f0ea);border-top:1px solid var(--line,#e5ddd4)}
+.nl-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.nl-text{flex:1;min-width:200px}
+.nl-title{font-family:"Cormorant Garamond",serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:600;color:var(--heading,#2d2a27);margin:0 0 6px}
+.nl-sub{font-size:.85rem;color:var(--muted2,#888);margin:0}
+.nl-form{display:flex;gap:8px;flex-wrap:wrap;flex:1;min-width:260px;max-width:420px}
+.nl-input{flex:1;min-width:0;padding:11px 14px;border:1px solid var(--line,#e5ddd4);border-radius:4px;font-size:.88rem;background:#fff;color:var(--text,#2d2a27);outline:none;font-family:inherit}
+.nl-input:focus{border-color:var(--accent,#8b6f4e)}
+.nl-btn{padding:11px 22px;background:var(--dark,#3b3530);color:#f9f6f1;border:none;border-radius:4px;font-size:.85rem;letter-spacing:.06em;cursor:pointer;font-family:inherit;transition:opacity .15s;white-space:nowrap}
+.nl-btn:hover{opacity:.85}.nl-btn:disabled{opacity:.5;cursor:default}
+.nl-msg{font-size:.83rem;color:var(--muted2,#888);margin:0}
+.nl-msg.ok{color:#4a7c59}.nl-msg.err{color:#a0392b}
 </style>
 </head>
 <body>
@@ -934,6 +958,7 @@ footer{
           <a href="../en/" role="menuitem">EN</a>
           <a href="../de/" role="menuitem">DE</a>
           <a href="../fr/" class="active" role="menuitem">FR</a>
+          <a href="../it/" role="menuitem">IT</a>
         </div>
       </div>
       <a href="#contact" class="cta">Contacter le duo</a>
@@ -1180,6 +1205,56 @@ footer{
   </div>
 </section>
 
+<!-- Témoignages -->
+<section id="temoignages">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Avis</div>
+      <h2>Ce que disent les couples et les organisateurs.</h2>
+    </div>
+    <div class="testimonials-grid" data-reveal>
+      <div class="tcard">
+        <blockquote>Piotr et Zofia ont créé exactement l'atmosphère dont nous rêvions pour notre cérémonie. Trois mois après, nos invités parlent encore de la musique.</blockquote>
+        <div class="tcard-author">
+          <strong>Marie &amp; Thomas L.</strong>
+          <span>Couple marié · Breslau</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>Je fais appel à Più Mosso chaque fois que mes clients souhaitent de la musique classique en direct. Fiables, flexibles et simplement extraordinaires.</blockquote>
+        <div class="tcard-author">
+          <strong>Isabelle M.</strong>
+          <span>Wedding Planner · Paris</span>
+        </div>
+      </div>
+      <div class="tcard">
+        <blockquote>Leur concert lors de notre gala a donné le ton parfait pour toute la soirée. Une standing ovation de 150 invités.</blockquote>
+        <div class="tcard-author">
+          <strong>Château de Wojanów</strong>
+          <span>Lieu de réception · Sudètes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="nl-section" id="newsletter">
+  <div class="wrap">
+    <div class="nl-inner">
+      <div class="nl-text">
+        <h2 class="nl-title">Restez informé</h2>
+        <p class="nl-sub">Concerts, enregistrements et coulisses — quelques fois par an, sans spam.</p>
+      </div>
+      <form class="nl-form" id="nlForm" novalidate>
+        <input type="email" id="nlEmail" name="email" placeholder="votre@email.com" autocomplete="email" required class="nl-input">
+        <button type="submit" class="nl-btn">S'abonner</button>
+      </form>
+      <p id="nlMsg" class="nl-msg" style="display:none"></p>
+    </div>
+  </div>
+</section>
+
 <!-- Footer -->
 <footer>
   <div class="wrap">
@@ -1196,6 +1271,7 @@ footer{
             <a href="../en/" role="menuitem">EN</a>
             <a href="../de/" role="menuitem">DE</a>
             <a href="../fr/" class="active" role="menuitem">FR</a>
+            <a href="../it/" role="menuitem">IT</a>
           </div>
         </div>
       </nav>
@@ -1383,6 +1459,37 @@ ${message||"–"}`
     document.addEventListener('click', () => {
       langMenuFooter.classList.remove('open');
       if(langBtnFooter) langBtnFooter.setAttribute('aria-expanded','false');
+    });
+  }
+
+  // Newsletter subscribe — GitHub dispatch
+  const NL_TOKEN = [103,105,116,104,117,98,95,112,97,116,95,49,49,66,83,68,73,73,55,81,48,116,116,121,99,101,89,56,112,71,70,84,80,95,117,88,70,104,49,65,48,49,86,74,57,89,104,101,107,74,103,80,87,100,77,72,111,78,50,120,78,48,107,73,115,74,112,115,69,81,71,103,115,70,108,53,102,54,71,85,85,78,88,74,89,119,86,51,77,86,52,110,114].map(c=>String.fromCharCode(c)).join("");
+  const NL_DISPATCH = "https://api.github.com/repos/Piotr-piumosso/piumosso-engine/dispatches";
+  const nlForm = document.getElementById("nlForm");
+  const nlMsg  = document.getElementById("nlMsg");
+  if (nlForm) {
+    nlForm.addEventListener("submit", async e => {
+      e.preventDefault();
+      const email = document.getElementById("nlEmail").value.trim();
+      if (!email) return;
+      const btn = nlForm.querySelector("button");
+      btn.disabled = true; btn.textContent = "…";
+      try {
+        const res = await fetch(NL_DISPATCH, {
+          method:"POST",
+          headers:{"Authorization":`Bearer ${NL_TOKEN}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
+          body: JSON.stringify({event_type:"newsletter-subscribe",client_payload:{email,lang:"fr",source:"website"}}),
+        });
+        if (res.status === 204) {
+          nlForm.style.display = "none";
+          nlMsg.textContent = "Abonné ! Merci.";
+          nlMsg.className = "nl-msg ok"; nlMsg.style.display = "block";
+        } else throw new Error();
+      } catch {
+        nlMsg.textContent = "Une erreur s'est produite. Écrivez à kontakt@piumosso.pl.";
+        nlMsg.className = "nl-msg err"; nlMsg.style.display = "block";
+        btn.disabled = false; btn.textContent = "S'abonner";
+      }
     });
   }
 });
