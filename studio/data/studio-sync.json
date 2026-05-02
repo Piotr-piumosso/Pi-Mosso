@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-01T11:40:46.451900+00:00",
+  "generatedAt": "2026-05-02T11:17:33.306747+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
-    "sent": 848,
+    "sent": 849,
     "inbound": 2,
     "replies": 100,
     "opens": 0,
@@ -45870,6 +45870,17 @@
           "<177762629389.2411.12658112179904725456@runnervmeorf1.vj3mmm2sy2kehauyswpbe2uq1c.dx.internal.cloudapp.net>",
           "",
           "1"
+        ]
+      },
+      {
+        "email": "info@christianbischof.de",
+        "name": null,
+        "sent_at": "2026-05-02T11:17:32.080995+00:00",
+        "status": "sent",
+        "null": [
+          "",
+          "",
+          ""
         ]
       }
     ],
