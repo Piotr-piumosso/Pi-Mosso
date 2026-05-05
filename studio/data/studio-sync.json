@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-04T12:13:07.514726+00:00",
+  "generatedAt": "2026-05-05T11:51:35.235062+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
     "sent": 849,
     "inbound": 2,
-    "replies": 100,
+    "replies": 101,
     "opens": 0,
     "subscribers": 0
   },
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-01T09:05:20.292674+00:00",
+    "engine_last_run": "2026-05-05T09:13:56.251937+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -45882,6 +45882,50 @@
           "",
           ""
         ]
+      },
+      {
+        "email": "audycje@filharmonia.pl",
+        "name": "Kontakt Filharmonia Narodowa",
+        "sent_at": "2026-05-05T09:13:26.212904+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177797240300.2446.10010573983577685096@runnervmeorf1.n2uxqdsfspmehakds0m4kccnuc.phxx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.frankowska-patrzykont@mik.waw.pl",
+        "name": "Mazowieckie Obserwatorium Kultury - kontakt",
+        "sent_at": "2026-05-05T09:13:29.228507+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177797240622.2446.7747928218161493083@runnervmeorf1.n2uxqdsfspmehakds0m4kccnuc.phxx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.majchrzak@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-05-05T09:13:32.344530+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177797240923.2446.475760783538595300@runnervmeorf1.n2uxqdsfspmehakds0m4kccnuc.phxx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.morawiec@lustrobiblioteki.pl",
+        "name": "Biblioteki cyfrowe w Polsce - Lustro Biblioteki",
+        "sent_at": "2026-05-05T09:13:35.282182+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177797241235.2446.10801382444080837520@runnervmeorf1.n2uxqdsfspmehakds0m4kccnuc.phxx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
       }
     ],
     "inboundLeads": [
@@ -46612,6 +46656,13 @@
         "replied_at": "2026-05-01T08:59:51.963568+00:00",
         "subject": "Automatische Antwort: Konzertangebot – Duo Più Mosso",
         "message_id_ref": "sender:verein@hannover1896.de"
+      },
+      {
+        "email": "mcdis@polekultury.pl",
+        "name": null,
+        "replied_at": "2026-05-05T09:09:17.785330+00:00",
+        "subject": "Re: Koncert kameralny – mam propozycję",
+        "message_id_ref": "sender:mcdis@polekultury.pl"
       }
     ],
     "openLog": [],
