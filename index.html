@@ -1548,7 +1548,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const res = await fetch(FORM_WORKER_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, phone, email, eventType, city, eventDate, scope, message }),
+          body: JSON.stringify({ name, phone, email, eventType, city, eventDate, scope, message, lang:"pl" }),
         });
         const data = await res.json().catch(() => ({}));
 

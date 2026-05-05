@@ -124,6 +124,7 @@ export default {
             eventDate:   (payload.eventDate  || "").trim(),
             scope:       (payload.scope      || "").trim(),
             message:     (payload.message    || "").trim(),
+            lang:        (payload.lang       || "pl").trim().slice(0, 2),
             source:      "website-form",
             submittedAt: new Date().toISOString(),
           },
