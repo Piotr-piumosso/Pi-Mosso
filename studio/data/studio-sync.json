@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T11:51:35.235062+00:00",
+  "generatedAt": "2026-05-06T12:17:59.617332+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
@@ -13,7 +13,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-05T09:13:56.251937+00:00",
+    "engine_last_run": "2026-05-06T12:17:18.305685+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -45923,6 +45923,226 @@
         "status": "sent_followup",
         "null": [
           "<177797241235.2446.10801382444080837520@runnervmeorf1.n2uxqdsfspmehakds0m4kccnuc.phxx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "antonov@hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-05-06T12:17:20.551211+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806983834.2241.2760551968642463548@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "ape.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-05-06T12:17:22.522280+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806984055.2241.13951382637561884138@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "apm.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-05-06T12:17:24.627735+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806984253.2241.12133465265454925918@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "apt.office@steyr.gv.at",
+        "name": "Alten- und Pflegeheime Steyr (APS) - Steyr - Zentrum - Leben - SeniorInnen - Alten- und Pflegeheime",
+        "sent_at": "2026-05-06T12:17:26.622322+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806984463.2241.1856442625181446851@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "accueil@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "sent_at": "2026-05-06T12:17:28.747187+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806984663.2241.1988765377231082204@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "advies@kunsten.be",
+        "name": "The performing arts in Flanders | Flanders Arts Institute",
+        "sent_at": "2026-05-06T12:17:30.822769+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806984875.2241.3915842489558858970@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "assistenz@wkv-stuttgart.de",
+        "name": "Württ. Kunstverein Stuttgart: Info",
+        "sent_at": "2026-05-06T12:17:32.995229+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806985083.2241.2409918565482094826@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "astrid.bernicke@bkm.hamburg.de",
+        "name": "Kontaktinformationen der Behörde für Kultur und Medien - hamburg.de",
+        "sent_at": "2026-05-06T12:17:34.867210+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806985300.2241.15361011712155487822@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "astrid.kaulich@volkstheater.at",
+        "name": "Kontakt - Volkstheater Wien",
+        "sent_at": "2026-05-06T12:17:36.800678+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806985487.2241.16754298901002690762@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "aw@dommuseum.at",
+        "name": "Dom Museum Wien - Team",
+        "sent_at": "2026-05-06T12:17:38.657614+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177806985680.2241.11779961426330178559@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@hananaevents.pl",
+        "name": "Hanana Events - organizacja imprez i eventów firmowych - Agencja Eventowa",
+        "sent_at": "2026-05-06T12:17:40.676073+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806985866.2241.12175738340398738541@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@dreamevents.pl",
+        "name": "Agencja eventowa Dream Events - kreatywna i profesjonalna organizacja imprez i eventów firmowych",
+        "sent_at": "2026-05-06T12:17:42.802425+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806986067.2241.393722227116863779@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "info@tokantis.pl",
+        "name": "Tokantis Agencja Eventowa – Organizujemy eventy dla firm B2B od pomysłu poprzez realizacje i końcowy efekt. Zapraszamy",
+        "sent_at": "2026-05-06T12:17:44.801771+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806986280.2241.6002953138431446007@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-05-06T12:17:46.761700+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806986480.2241.14589416156562044250@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "eventy@creality.pl",
+        "name": "Kontakt - umów się na spotkanie | Agencja eventowa Creality",
+        "sent_at": "2026-05-06T12:17:48.624110+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806986676.2241.4581660781456700545@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "kontakt@marciniakevents.pl",
+        "name": "Marciniak Events â Profesjonalna Organizacja EventÃ³w",
+        "sent_at": "2026-05-06T12:17:50.604616+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806986862.2241.6435289742753200467@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "lodz@secret-event.pl",
+        "name": "Agencja Eventowa Łódź - Profesjonalne Usługi Eventowe",
+        "sent_at": "2026-05-06T12:17:52.560778+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806987060.2241.9456818441955947435@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-05-06T12:17:54.591033+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806987256.2241.3388551655095164311@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro_wawa@chillievent.pl",
+        "name": "Agencja eventowa. Łódź, Warszawa - Chilli Event",
+        "sent_at": "2026-05-06T12:17:56.587530+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806987459.2241.13192195388214186573@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@topevent.pl",
+        "name": "Agencja eventowa ÅodÅº | Topevent.pl",
+        "sent_at": "2026-05-06T12:17:58.500761+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177806987658.2241.1956994856783193566@runnervmeorf1.xkvt44av3tkufefvp2u5zcoljh.bx.internal.cloudapp.net>",
           "",
           "1"
         ]
