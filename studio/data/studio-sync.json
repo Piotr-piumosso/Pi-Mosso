@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-06T12:17:59.617332+00:00",
+  "generatedAt": "2026-05-07T12:21:43.460206+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
     "sent": 849,
     "inbound": 2,
-    "replies": 101,
+    "replies": 103,
     "opens": 0,
     "subscribers": 0
   },
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-06T12:17:18.305685+00:00",
+    "engine_last_run": "2026-05-07T12:20:38.001428+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -46146,6 +46146,314 @@
           "",
           "1"
         ]
+      },
+      {
+        "email": "3pokoje@bok.waw.pl",
+        "name": "Kontakt - Białołęcki Ośrodek Kultury",
+        "sent_at": "2026-05-07T09:34:11.308986+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814644822.2301.832747386957159613@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.witos@mops.bielsko.pl",
+        "name": "Miejski Ośrodek Pomocy Społecznej w Bielsku-Białej - Biuletyn Informacji Publicznej - Portal Gov.pl",
+        "sent_at": "2026-05-07T09:34:14.365365+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814645131.2301.5440776102921799912@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@cityon.pl",
+        "name": "Filharmonia Krakowska Zwierzyniecka 1 - Kraków | CityOn.pl",
+        "sent_at": "2026-05-07T09:34:17.343949+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814645437.2301.7182792751567338887@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bartek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-05-07T09:34:20.186588+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814645735.2301.12400882474231944411@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bartosz.jaszczyk@mck-bydgoszcz.pl",
+        "name": "Kontakt - Miejskie Centrum Kultury w Bydgoszczy",
+        "sent_at": "2026-05-07T09:34:22.946459+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814646019.2301.3373254545653268048@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bcs@horno.pl",
+        "name": "Kontakt – Bydgoskie Centrum Sztuki",
+        "sent_at": "2026-05-07T09:34:25.717989+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814646295.2301.15167975946795657274@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bdpp@bn.org.pl",
+        "name": "Biblioteka Narodowa",
+        "sent_at": "2026-05-07T09:34:28.549957+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814646572.2301.11669160238258432818@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "beniaminow@gok.nieporet.pl",
+        "name": "Strona główna - Gminny Ośrodek Kultury w Nieporęcie",
+        "sent_at": "2026-05-07T09:34:31.314494+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177814646855.2301.14106256258026031404@runnervmeorf1.ih3vt5ucf44e3lnx3lkpwbvkgh.yx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "awareness@hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-05-07T12:20:41.562543+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815643810.2269.2001695775347491473@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.peter@chs-hcc.de",
+        "name": "Kontakt | Hannover Congress Centrum",
+        "sent_at": "2026-05-07T12:20:44.849391+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815644157.2269.15222047024132432705@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bankingline@bankzweiplus.ch",
+        "name": "UBS (CH) Property Fund - Swiss Mixed 'Sima' Fonds (Valor 1442087): Aktueller Kurs in CHF an der SWX von heute | cash",
+        "sent_at": "2026-05-07T12:20:48.262105+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815644485.2269.15214284323109039902@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "barrierefrei@elbphilharmonie.de",
+        "name": "Ticketing Information - Elbphilharmonie",
+        "sent_at": "2026-05-07T12:20:52.018464+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815644827.2269.15335211403247317699@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "barrierefreiheit@kultur.berlin.de",
+        "name": "Wir über uns – Leitung und Organisation - Berlin.de",
+        "sent_at": "2026-05-07T12:20:55.136220+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815645202.2269.5325384216563819355@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "barrierefreiheit@lea.berlin.de",
+        "name": "Wollen Sie Kontakt zu uns aufnehmen? - Berlin.de",
+        "sent_at": "2026-05-07T12:20:58.185847+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815645514.2269.1608367850034060540@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bas.dingemans@programmeerplaats.nl",
+        "name": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+        "sent_at": "2026-05-07T12:21:01.638784+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815645819.2269.942585140724302342@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bestell@focus-money.de",
+        "name": "Fisch gegen Tinnitus: Neue Studie sorgt für Aufsehen - das steckt dahinter - FOCUS online",
+        "sent_at": "2026-05-07T12:21:05.090297+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815646164.2269.15263410595023302547@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bestellung@semperoper.de",
+        "name": "Contact - Semperoper Dresden",
+        "sent_at": "2026-05-07T12:21:08.130590+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815646509.2269.10422721304391006247@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "besucherservice@konzerthaus.de",
+        "name": "Tickets and Service – Konzerthaus Berlin",
+        "sent_at": "2026-05-07T12:21:11.233484+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177815646813.2269.12138754568259657105@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "katarzyna.grzegorczyk@okis.pl",
+        "name": "OKiS » Kontakt",
+        "sent_at": "2026-05-07T12:21:14.300155+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815647123.2269.1127476761080600456@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "sekretariat@okis.pl",
+        "name": "OKiS » Kontakt",
+        "sent_at": "2026-05-07T12:21:17.423466+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815647430.2269.7716665351867768976@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@gokiskwr.pl",
+        "name": "Gminny Ośrodek Kultury i Sportu w Kątach Wrocławskich",
+        "sent_at": "2026-05-07T12:21:20.445841+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815647742.2269.11365850722255887420@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "gokpawlowice@hoga.pl",
+        "name": "Gminny Ośrodek Kultury - Gminny Ośrodek Kultury",
+        "sent_at": "2026-05-07T12:21:23.542057+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815648044.2269.6634071311020518915@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "info@fanfaraevents.pl",
+        "name": "Organizujemy emocje, nie tylko imprezy. Agencja eventowa z Lublina.",
+        "sent_at": "2026-05-07T12:21:26.613684+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815648354.2269.10141939335359416711@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@meetingplanner.pl",
+        "name": "Yolo Events - Agencja eventowa",
+        "sent_at": "2026-05-07T12:21:29.835244+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815648661.2269.9830997031780803519@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@infinitum.org.pl",
+        "name": "Agencja Eventowa | Organizacja imprez firmowych i eventów",
+        "sent_at": "2026-05-07T12:21:32.948598+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815648983.2269.4400366900337737086@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "kontakt@miejski.pl",
+        "name": "Miejski.pl - Miejski słownik slangu i mowy potocznej",
+        "sent_at": "2026-05-07T12:21:36.054166+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815649294.2269.2028929906354469955@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "sekretariat@msk.lodz.pl",
+        "name": "O nas - MSK",
+        "sent_at": "2026-05-07T12:21:39.121784+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815649605.2269.17653350983081344282@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "osrodeksztuki@msk.lodz.pl",
+        "name": "MSK: Polesie | Kontakt - MSK",
+        "sent_at": "2026-05-07T12:21:42.142793+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177815649912.2269.12960797123477013894@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
       }
     ],
     "inboundLeads": [
@@ -46883,6 +47191,20 @@
         "replied_at": "2026-05-05T09:09:17.785330+00:00",
         "subject": "Re: Koncert kameralny – mam propozycję",
         "message_id_ref": "sender:mcdis@polekultury.pl"
+      },
+      {
+        "email": "assistenz@wkv-stuttgart.de",
+        "name": "Württ. Kunstverein Stuttgart: Info",
+        "replied_at": "2026-05-07T09:30:21.295599+00:00",
+        "subject": "Autoreply: Konzertangebot – Duo Più Mosso",
+        "message_id_ref": "sender:assistenz@wkv-stuttgart.de"
+      },
+      {
+        "email": "accueil@upupup.be",
+        "name": "Festival ⋆ UP – Circus & Performing Arts",
+        "replied_at": "2026-05-07T09:30:21.425556+00:00",
+        "subject": "Réponse automatique : Concert proposal – Più Mosso duo",
+        "message_id_ref": "sender:accueil@upupup.be"
       }
     ],
     "openLog": [],
