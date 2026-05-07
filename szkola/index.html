@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vivace — Szkoła Muzyczna Piotra Górskiego · Poznań</title>
+<meta name="description" content="Indywidualne lekcje fortepianu, organów i akordeonu. Korepetycje z przedmiotów szkoły muzycznej. Nauka improwizacji. Poznań." />
+<link rel="canonical" href="https://piumosso.pl/szkola/" />
+<meta property="og:title" content="Vivace — Szkoła Muzyczna · Poznań" />
+<meta property="og:description" content="Lekcje fortepianu, organów, akordeonu. Korepetycje PSM. Improwizacja." />
+<meta property="og:url" content="https://piumosso.pl/szkola/" />
+<meta property="og:image" content="https://piumosso.pl/kalendarium/IMG_0582.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicSchool",
+  "name": "Vivace — Szkoła Muzyczna Piotra Górskiego",
+  "url": "https://piumosso.pl/szkola/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Poznań", "addressCountry": "PL" },
+  "telephone": "+48781010229",
+  "email": "kontakt@piumosso.pl",
+  "description": "Indywidualne lekcje fortepianu, organów i akordeonu. Korepetycje z przedmiotów PSM. Nauka improwizacji.",
+  "founder": { "@type": "Person", "name": "Piotr Górski" }
+}
+</script>
+<style>
+:root{
+  --bg:#0f0b08;--bg-2:#18120d;
+  --surface:rgba(30,22,16,.88);--surface-2:rgba(25,19,14,.95);
+  --ink:#f8f1e5;--muted:rgba(248,241,229,.76);--muted-2:rgba(248,241,229,.52);
+  --gold:#d7b472;--gold-2:#c79c52;
+  --line:rgba(215,180,114,.18);
+  --shadow:0 24px 70px rgba(0,0,0,.34);
+  --radius:26px;--max:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:"Manrope",sans-serif;color:var(--ink);line-height:1.7;
+  background:radial-gradient(900px 460px at 8% -8%,rgba(215,180,114,.13),transparent 60%),
+    radial-gradient(740px 420px at 100% 8%,rgba(146,104,48,.16),transparent 60%),
+    linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.05;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(3rem,6vw,5.6rem)}
+h2{font-size:clamp(2rem,4vw,3.2rem)}
+h3{font-size:clamp(1.4rem,2.5vw,2rem)}
+
+.wrap{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+
+/* ── topbar ── */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:60;padding:20px 24px;
+  background:rgba(15,11,8,.72);backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(215,180,114,0);transition:.3s}
+.topbar.scrolled{background:rgba(15,11,8,.92);border-bottom:1px solid rgba(215,180,114,.12);padding:14px 24px}
+.topbar-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand strong{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;letter-spacing:.04em}
+.brand-kicker{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-2);font-weight:600}
+.top-links{display:flex;align-items:center;gap:24px}
+.top-links a{font-size:.85rem;font-weight:600;letter-spacing:.04em;color:var(--muted)}
+.top-links a.cta{padding:10px 20px;border:1px solid var(--line);border-radius:999px;color:var(--gold);background:rgba(215,180,114,.06)}
+.top-links a.cta:hover{background:rgba(215,180,114,.12)}
+
+/* ── hero ── */
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:saturate(.6) brightness(.35)}
+.hero-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(15,11,8,.95) 0%,rgba(15,11,8,.2) 55%,rgba(15,11,8,.5) 100%)}
+.hero-content{position:relative;z-index:1;padding:140px 0 80px}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:700;
+  display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.eyebrow::before{content:"";width:40px;height:1px;background:var(--gold)}
+.hero h1{margin-bottom:22px;max-width:14ch}
+.hero .lead{font-size:1.08rem;color:var(--muted);max-width:52ch;margin-bottom:36px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.hero-tags span{padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04);color:var(--muted);font-size:.88rem}
+.btn{display:inline-flex;align-items:center;min-height:50px;padding:13px 24px;
+  border-radius:999px;font-weight:800;border:1px solid transparent;transition:.18s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.btn-ghost{border:1px solid rgba(255,255,255,.18);color:var(--muted)}
+.btn-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* ── sections ── */
+.section{padding:clamp(72px,10vw,120px) 0}
+.section-head{margin-bottom:52px}
+.section-head .eyebrow{margin-bottom:14px}
+.section-head h2{margin-bottom:16px}
+.section-head p{font-size:1.05rem;color:var(--muted);max-width:58ch}
+
+/* ── cards grid ── */
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.card{
+  background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:34px;display:flex;flex-direction:column;gap:14px;
+}
+.card-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.card h3{font-size:1.55rem}
+.card p{color:var(--muted);font-size:.96rem}
+.card ul{padding-left:18px;color:var(--muted);font-size:.94rem;display:grid;gap:6px}
+.card ul li::marker{color:var(--gold)}
+
+/* ── jak działam ── */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.step{padding:30px;border-radius:var(--radius);background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line)}
+.step-num{font-family:"Cormorant Garamond",serif;font-size:3.5rem;color:rgba(215,180,114,.2);line-height:1;margin-bottom:12px}
+.step h3{font-size:1.25rem;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.93rem}
+
+/* ── o nauczycielu ── */
+.teacher-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.teacher-copy{display:flex;flex-direction:column;gap:18px}
+.teacher-copy h2{font-size:clamp(2rem,3.5vw,2.8rem)}
+.teacher-copy p{color:var(--muted)}
+.teacher-awards{display:grid;gap:12px;margin-top:8px}
+.award{display:flex;align-items:flex-start;gap:14px;padding:16px 20px;
+  border-radius:16px;background:rgba(215,180,114,.06);border:1px solid rgba(215,180,114,.12)}
+.award-icon{font-size:1.4rem;line-height:1;flex-shrink:0}
+.award-text{font-size:.9rem;color:var(--muted-2)}
+.award-text strong{display:block;color:var(--ink);font-size:.96rem}
+.teacher-photo{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.teacher-photo img{width:100%;height:100%;min-height:480px;object-fit:cover;object-position:center 15%}
+
+/* ── kontakt / formularz ── */
+.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:20px}
+.contact-info h2{font-size:clamp(1.8rem,3vw,2.6rem)}
+.contact-info p{color:var(--muted)}
+.contact-direct{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.contact-direct a{font-size:1rem;color:var(--gold);font-weight:600}
+.contact-direct a:hover{opacity:.8}
+form{background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:36px;
+  display:grid;gap:18px}
+label{display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--muted-2)}
+input,select,textarea{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:12px 16px;color:var(--ink);font-size:.98rem;
+  font-family:inherit;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(215,180,114,.4)}
+select option{background:#1a1208;color:var(--ink)}
+textarea{resize:vertical;min-height:100px}
+.submit-btn{
+  background:var(--gold);color:var(--bg);border:none;border-radius:999px;
+  padding:15px 28px;font-family:inherit;font-weight:800;font-size:1rem;
+  cursor:pointer;transition:.18s}
+.submit-btn:hover{background:var(--gold-2);transform:translateY(-1px)}
+.form-note{font-size:.82rem;color:var(--muted-2);text-align:center}
+.form-success{display:none;text-align:center;padding:20px;color:var(--gold);font-weight:600}
+
+/* ── footer ── */
+footer{padding:48px 0;border-top:1px solid var(--line);text-align:center}
+footer p{color:var(--muted-2);font-size:.88rem}
+footer a{color:var(--gold)}
+
+/* ── responsive ── */
+@media(max-width:760px){
+  .teacher-grid,.contact-wrap{grid-template-columns:1fr}
+  .teacher-photo{display:none}
+  .top-links a:not(.cta){display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-kicker">Szkoła muzyczna · Poznań</div>
+      <strong>Vivace</strong>
+    </div>
+    <div class="top-links">
+      <a href="#oferta">Oferta</a>
+      <a href="#nauczyciel">O mnie</a>
+      <a href="#kontakt" class="cta">Zapisz się</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="../kalendarium/IMG_0582.jpeg" alt="Piotr Górski przy fortepianie" />
+  </div>
+  <div class="hero-content wrap">
+    <div class="eyebrow">Vivace — Szkoła Muzyczna Piotra Górskiego</div>
+    <h1>Muzyka, która ma sens.</h1>
+    <p class="lead">Indywidualne lekcje, korepetycje i nauka improwizacji — bez szablonów, bez marnowania czasu.</p>
+    <div class="hero-tags">
+      <span>Fortepian</span>
+      <span>Organy</span>
+      <span>Akordeon</span>
+      <span>Korepetycje PSM</span>
+      <span>Improwizacja</span>
+    </div>
+    <div class="btn-actions">
+      <a href="#kontakt" class="btn btn-gold">Zapisz się na lekcję próbną</a>
+      <a href="#oferta" class="btn btn-ghost">Zobacz ofertę</a>
+    </div>
+  </div>
+</section>
+
+<!-- Oferta -->
+<section class="section" id="oferta">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Oferta</div>
+      <h2>Co możemy razem zrobić.</h2>
+      <p>Każde zajęcia są indywidualne — tempo, repertuar i cel ustalam z uczniem i rodzicem na pierwszej lekcji.</p>
+    </div>
+    <div class="grid-4">
+      <article class="card">
+        <div class="card-label">Instrumenty</div>
+        <h3>Fortepian · Organy · Akordeon</h3>
+        <p>Nauka od podstaw lub rozwijanie warsztatu. Program dopasowany do celów — konkurs, egzamin, własna przyjemność.</p>
+        <ul>
+          <li>technika i interpretacja</li>
+          <li>czytanie nut, rytm, słuch</li>
+          <li>przygotowanie do przesłuchań</li>
+          <li>repertuar klasyczny i współczesny</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-label">Korepetycje PSM</div>
+        <h3>Szkoła muzyczna — wszystkie przedmioty</h3>
+        <p>Pomoc w nadrabianiu zaległości i spokojne przygotowanie do egzaminów promocyjnych i dyplomowych.</p>
+        <ul>
+          <li>kształcenie słuchu i dyktando</li>
+          <li>zasady muzyki, harmonia</li>
+          <li>historia muzyki</li>
+          <li>analiza muzyczna, audycje</li>
+          <li>rytmika, akompaniament</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-label">Szkoły ogólne</div>
+        <h3>Muzyka w zwykłej szkole</h3>
+        <p>Korepetycje z muzyki dla uczniów, którzy chcą zaliczyć klasówkę — albo naprawdę to zrozumieć.</p>
+        <ul>
+          <li>muzyka kl. IV–VII</li>
+          <li>historia muzyki — matura rozszerzona</li>
+          <li>przygotowanie do konkursów muzycznych</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-label">Improwizacja</div>
+        <h3>Nauka improwizacji</h3>
+        <p>Tego nie uczą w szkole muzycznej. Umiejętność, która zmienia stosunek do instrumentu.</p>
+        <ul>
+          <li>improwizacja klasyczna i liturgiczna</li>
+          <li>improwizacja jazzowa na fortepianie</li>
+          <li>harmonizacja melodii ze słuchu</li>
+          <li>basso continuo i style historyczne</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Jak to wygląda -->
+<section class="section" style="background:rgba(0,0,0,.18)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Jak działam</div>
+      <h2>Cztery kroki do pierwszej lekcji.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Piszesz lub dzwonisz</h3>
+        <p>Powiedz czego szukasz — instrument, korepetycje, improwizacja, wiek ucznia. Odpisuję szybko.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Lekcja próbna</h3>
+        <p>Pierwsze spotkanie to ocena poziomu i ustalenie celów. Pełnopłatna, bez zobowiązań na dalej.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Ustalamy plan</h3>
+        <p>Harmonogram, częstotliwość, repertuar lub zakres materiału — wszystko dopasowane do konkretnej osoby.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Zaczynamy</h3>
+        <p>Stały termin, konkretny cel, bez owijania w bawełnę. Wyniki widać szybciej niż w grupie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O nauczycielu -->
+<section class="section" id="nauczyciel">
+  <div class="wrap">
+    <div class="teacher-grid">
+      <div class="teacher-copy">
+        <div class="eyebrow">Nauczyciel</div>
+        <h2>Piotr Górski</h2>
+        <p>Organista i pianista, magister Akademii Muzycznej w Poznaniu z wyróżnieniem. Laureat konkursów organowych w Polsce i za granicą. Prowadzi zajęcia z pasją do precyzji — i bez marnowania czasu ucznia.</p>
+        <p>Uczył się m.in. u <strong>Daniela Rotha</strong> (Paris / Haarlem). Regularnie koncertuje w Polsce i Europie.</p>
+        <div class="teacher-awards">
+          <div class="award">
+            <div class="award-icon">🥇</div>
+            <div class="award-text">
+              <strong>I miejsce — Concorso Internazionale, Castellana Grotte (2025)</strong>
+              <span>Konkurs organowy we Włoszech</span>
+            </div>
+          </div>
+          <div class="award">
+            <div class="award-icon">🥇</div>
+            <div class="award-text">
+              <strong>I miejsce — Konkurs Organowy, Giżycko (2022)</strong>
+            </div>
+          </div>
+          <div class="award">
+            <div class="award-icon">🥉</div>
+            <div class="award-text">
+              <strong>III miejsce — Konkurs Organowy, Rumia (2024)</strong>
+            </div>
+          </div>
+          <div class="award">
+            <div class="award-icon">🎓</div>
+            <div class="award-text">
+              <strong>Magister z wyróżnieniem — AM Poznań (2025)</strong>
+              <span>Klasa prof. Kamińskiego i dr. Pankowiaka</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:8px">
+          <a href="/piotrgorski/" class="btn btn-ghost" style="display:inline-flex">Oferta solowa →</a>
+        </div>
+      </div>
+      <figure class="teacher-photo">
+        <img src="../kalendarium/IMG_0582.jpeg" alt="Piotr Górski" loading="lazy" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section class="section" id="kontakt">
+  <div class="wrap">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="eyebrow">Zapisz się</div>
+        <h2>Pierwsza lekcja próbna bez zobowiązań.</h2>
+        <p>Napisz czego szukasz — instrument, wiek ucznia, czy to korepetycje, nauka od zera czy improwizacja. Ustalimy termin i szczegóły.</p>
+        <div class="contact-direct">
+          <a href="tel:+48781010229">+48 781 010 229</a>
+          <a href="https://wa.me/48781010229" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
+        </div>
+        <p style="margin-top:16px;font-size:.9rem;color:var(--muted-2)">Zajęcia prowadzone w Poznaniu.<br>Możliwe lekcje online dla korepetycji z przedmiotów teoretycznych.</p>
+      </div>
+
+      <form id="szkola-form" novalidate>
+        <label>Imię i nazwisko ucznia *
+          <input type="text" name="name" placeholder="np. Jan Kowalski" required />
+        </label>
+        <label>Wiek / klasa
+          <input type="text" name="age" placeholder="np. 12 lat, klasa VI PSM" />
+        </label>
+        <label>Czego szukasz? *
+          <select name="type" required>
+            <option value="" disabled selected>Wybierz...</option>
+            <option>Lekcje fortepianu</option>
+            <option>Lekcje organów</option>
+            <option>Lekcje akordeonu</option>
+            <option>Korepetycje PSM — kształcenie słuchu</option>
+            <option>Korepetycje PSM — harmonia</option>
+            <option>Korepetycje PSM — historia muzyki</option>
+            <option>Korepetycje PSM — inne</option>
+            <option>Muzyka w szkole ogólnokształcącej</option>
+            <option>Nauka improwizacji</option>
+            <option>Nie wiem jeszcze — chcę porozmawiać</option>
+          </select>
+        </label>
+        <label>Telefon rodzica *
+          <input type="tel" name="phone" placeholder="+48 ..." required />
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="email@..." />
+        </label>
+        <label>Coś jeszcze?
+          <textarea name="message" placeholder="Dodatkowe informacje, pytania, preferencje terminów..."></textarea>
+        </label>
+        <button type="submit" class="submit-btn">Wyślij zapytanie →</button>
+        <p class="form-note">Odpowiadam w ciągu 24 godzin.</p>
+        <p class="form-success" id="form-success">Dziękuję — odezwę się wkrótce!</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Vivace — Szkoła Muzyczna Piotra Górskiego · Poznań</p>
+    <p style="margin-top:8px">część projektu <a href="/">Più Mosso</a> · <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('topbar').addEventListener('scroll',()=>{},false);
+window.addEventListener('scroll',()=>{
+  document.getElementById('topbar').classList.toggle('scrolled',scrollY>40);
+});
+
+document.getElementById('szkola-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target;
+  const btn = f.querySelector('.submit-btn');
+  btn.textContent = 'Wysyłam...';
+  btn.disabled = true;
+
+  const payload = {
+    name:      f.name.value.trim(),
+    phone:     f.phone.value.trim(),
+    email:     f.email.value.trim(),
+    message:   [
+      f.type.value,
+      f.age.value ? 'Wiek/klasa: ' + f.age.value : '',
+      f.message.value
+    ].filter(Boolean).join(' | '),
+    eventType: 'szkola-' + f.type.value.slice(0,30),
+    city:      'Poznań',
+    lang:      'pl',
+    source:    'szkola-form',
+  };
+
+  try {
+    const res = await fetch('https://form.piumosso.pl/', {
+      method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)
+    });
+    if(res.ok){
+      f.style.display='none';
+      document.getElementById('form-success').style.display='block';
+    } else { throw new Error(); }
+  } catch {
+    btn.textContent = 'Wyślij zapytanie →';
+    btn.disabled = false;
+    alert('Coś poszło nie tak. Zadzwoń lub napisz na kontakt@piumosso.pl');
+  }
+});
+</script>
+</body>
+</html>
