@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T12:21:43.460206+00:00",
+  "generatedAt": "2026-05-08T11:56:07.354030+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
@@ -13,7 +13,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-07T12:20:38.001428+00:00",
+    "engine_last_run": "2026-05-08T11:55:26.684847+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -46451,6 +46451,357 @@
         "status": "sent_followup_2",
         "null": [
           "<177815649912.2269.12960797123477013894@runnervmeorf1.uk0y3m2hcqoulhnsten1kxzdpf.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bcs@horno.pl",
+        "name": "Kontakt – Bydgoskie Centrum Sztuki",
+        "sent_at": "2026-05-08T08:23:41.967407+00:00",
+        "status": "optout",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "abi@teatrpolonia.pl",
+        "name": "Teatr Polonia, Warszawa",
+        "sent_at": "2026-05-08T08:28:24.171539+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822890068.2407.6518528391371862873@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@filharmonia.kielce.pl",
+        "name": "FILHARMONIA ¦WIÊTOKRZYSKA W KIELCACH",
+        "sent_at": "2026-05-08T08:28:27.629284+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822890418.2407.15024688457131752960@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agencja@studio-a.pl",
+        "name": "Kontakt - STUDIO A",
+        "sent_at": "2026-05-08T08:28:31.088019+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822890763.2407.1095887817687576530@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "alarm@musi.rzeszow.pl",
+        "name": "Kontakt - MUSI Rzeszów",
+        "sent_at": "2026-05-08T08:28:34.516232+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822891109.2407.66508680911400962@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "andrychow@jasfbg.pl",
+        "name": "Dane kontaktowe - Transport międzynarodowy, spedycja krajowa, firma spedycyjna JAS-FBG - Logistyka",
+        "sent_at": "2026-05-08T08:28:38.067616+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822891452.2407.16306967499329152877@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "atea@atea.pl",
+        "name": "UBEZPIECZENIA KATOWICE Agencja Ubezpieczeń",
+        "sent_at": "2026-05-08T08:28:41.544965+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822891807.2407.10477707400172834030@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "augustow@jasfbg.pl",
+        "name": "Dane kontaktowe - Transport międzynarodowy, spedycja krajowa, firma spedycyjna JAS-FBG - Logistyka",
+        "sent_at": "2026-05-08T08:28:45.007424+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822892155.2407.7295056344801415771@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bartoszyce@jasfbg.pl",
+        "name": "Dane kontaktowe - Transport międzynarodowy, spedycja krajowa, firma spedycyjna JAS-FBG - Logistyka",
+        "sent_at": "2026-05-08T08:28:48.366695+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822892501.2407.16971355409611006237@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biala@jasfbg.pl",
+        "name": "Dane kontaktowe - Transport międzynarodowy, spedycja krajowa, firma spedycyjna JAS-FBG - Logistyka",
+        "sent_at": "2026-05-08T08:28:51.640632+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822892837.2407.16835807587171318828@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.tuderek@filharmonia.szczecin.pl",
+        "name": "Contact - MDF Festival 2024 MUSIC.DESIGN.FORM - Filharmonia w Szczecinie",
+        "sent_at": "2026-05-08T08:28:54.742469+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822893164.2407.876895282034248810@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@galeriaopole.pl",
+        "name": "Kontakt | Galeria Sztuki Współczesnej w Opolu",
+        "sent_at": "2026-05-08T08:28:58.271468+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177822893475.2407.4456074148000719566@runnervmeorf1.yizgoo0wxrde1freo0ereqkpvd.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "besucherservice@musikfestspiele.com",
+        "name": "Ticketservice - Kulturpalast Dresden",
+        "sent_at": "2026-05-08T11:55:28.917922+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824132676.2255.16464643698554747919@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bewerbungen@buehnen-frankfurt.de",
+        "name": "Kontakt | Städtische Bühnen Frankfurt am Main",
+        "sent_at": "2026-05-08T11:55:30.983962+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824132892.2255.15629219301416163228@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "athanasia.kalini@kulturgemeinschaft.de",
+        "name": "Kontakt zur Kulturgemeinschaft Stuttgart",
+        "sent_at": "2026-05-08T11:55:32.989931+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824133099.2255.17308822285579674279@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "billetterie@theatrenational.be",
+        "name": "Théâtre National",
+        "sent_at": "2026-05-08T11:55:35.048099+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824133299.2255.9541085631500743990@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@muzyczna.lodz.pl",
+        "name": "Zespół Szkół Muzycznych im. Stanisława Moniuszki w Łodzi :: Kontakt",
+        "sent_at": "2026-05-08T11:55:37.041929+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824133505.2255.14437181165574583060@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agentur-buchholz@web.de",
+        "name": "Veranstaltungsagentur Buchholz - Kontakt",
+        "sent_at": "2026-05-08T11:55:38.894240+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824133705.2255.5795263854106541638@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anna.schmid@bkm.hamburg.de",
+        "name": "Kontakt und Beratung - hamburg.de",
+        "sent_at": "2026-05-08T11:55:41.077834+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824133890.2255.10825542605148864680@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "awareness@wienmodern.at",
+        "name": "Kontakt – wienmodern",
+        "sent_at": "2026-05-08T11:55:43.252422+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824134108.2255.15907692730470781443@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.kursitza-graf@lebenshilfe-dresden.de",
+        "name": "Kontakt Ansprechpartner - Lebenshilfe Dresden e.V.",
+        "sent_at": "2026-05-08T11:55:45.111735+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824134326.2255.4436012847503136916@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "b.szydlik@mok.olsztyn.pl",
+        "name": "O nas - MOK Olsztyn",
+        "sent_at": "2026-05-08T11:55:47.078289+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177824134512.2255.9500440322004599608@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "coig@coig.com.pl",
+        "name": "Lista, wykaz, baza Domów Kultury 26-01-2026",
+        "sent_at": "2026-05-08T11:55:49.044459+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824134708.2255.13163428882504583316@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "dyrektor@muzyczna.kielce.pl",
+        "name": "Kontakt",
+        "sent_at": "2026-05-08T11:55:50.892525+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824134904.2255.11243796001477545760@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "dyrektor@saa.pl",
+        "name": "Dyrektor, pracownicy - BIP Szczecińskiej Agencji Artystycznej",
+        "sent_at": "2026-05-08T11:55:52.860594+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824135089.2255.2543034234839562689@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.barej@stoczek-lukowski.pl",
+        "name": "Kontakt - Miejski Ośrodek Kultury w Stoczku Łukowskim",
+        "sent_at": "2026-05-08T11:55:54.870562+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824135286.2255.10222634859650545971@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.nowakowska@zsm.torun.pl",
+        "name": "Zespół Szkół Muzycznych im. Karola Szymanowskiego w Toruniu | Szkoła Muzyczna w Toruniu",
+        "sent_at": "2026-05-08T11:55:56.816120+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824135487.2255.7801718223529106238@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.rutkowska@pikpodlaskie.pl",
+        "name": "Kontakt – Strona Array – Podlaski Instytut Kultury",
+        "sent_at": "2026-05-08T11:55:58.663245+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824135681.2255.4065802126167592851@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.sczerniak@cbk.gminakg.pl",
+        "name": "Kontakt – Centrum Biblioteczno Kulturalne",
+        "sent_at": "2026-05-08T11:56:00.512718+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824135866.2255.4792527754792456023@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.swietochowska@teatrkamienica.pl",
+        "name": "Kontakt",
+        "sent_at": "2026-05-08T11:56:02.492525+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824136051.2255.3531154770110466036@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.szydelska@teatrkamienica.pl",
+        "name": "Kontakt",
+        "sent_at": "2026-05-08T11:56:04.337941+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824136249.2255.13500927073656600848@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.urbanowicz@teatrkamienica.pl",
+        "name": "Kontakt",
+        "sent_at": "2026-05-08T11:56:06.302062+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177824136433.2255.3266550107950312568@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
           "",
           "1"
         ]
