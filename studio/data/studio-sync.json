@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T11:56:07.354030+00:00",
+  "generatedAt": "2026-05-09T11:29:23.125164+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
@@ -13,7 +13,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-08T11:55:26.684847+00:00",
+    "engine_last_run": "2026-05-09T11:28:29.544069+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -46802,6 +46802,226 @@
         "status": "sent_followup_2",
         "null": [
           "<177824136433.2255.3266550107950312568@runnervmeorf1.k20si4dw3xaepphm5xngfzbobb.bx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bip@um.wroc.pl",
+        "name": "Wydział Kultury - Departament Kultury i Sportu - Biuletyn Informacji Publicznej Urzędu Miejskiego Wrocławia",
+        "sent_at": "2026-05-09T11:28:32.420023+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832610958.2275.13588499913442329229@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bip@um.zielona-gora.pl",
+        "name": "Kontakt – Urząd Miasta Zielona Góra",
+        "sent_at": "2026-05-09T11:28:35.105834+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832611242.2275.16500253294113077064@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "bit.gok@rymanow.pl",
+        "name": "Twórz, inspiruj, bądź!",
+        "sent_at": "2026-05-09T11:28:37.900400+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832611511.2275.3237122837967053009@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@27katowice.pl",
+        "name": "Sklep | Klub Sportowy 27 Katowice",
+        "sent_at": "2026-05-09T11:28:40.697265+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832611790.2275.18196976806131496027@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@agencjamuza.pl",
+        "name": "Kontakt - Agencja Artystyczna MUZA | Spektakle, Koncerty, Kabarety",
+        "sent_at": "2026-05-09T11:28:43.386321+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832612070.2275.9413597765306147263@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@agencjaperspektywy.pl",
+        "name": "Kontakt | Agencja Perspektywy",
+        "sent_at": "2026-05-09T11:28:45.917714+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832612339.2275.4821962650275145716@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@agencjaproarte.pl",
+        "name": "Kontakt :: Agencja Koncertowa Pro Arte",
+        "sent_at": "2026-05-09T11:28:48.597845+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832612592.2275.338979292093577242@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@agendo.pl",
+        "name": "Kontakt z AGENDO - Rzeszów | Kraków | Warszawa",
+        "sent_at": "2026-05-09T11:28:51.212862+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832612860.2275.12825379745363472133@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@aplauz.media.pl",
+        "name": "Kontakt | Aplauz Agencja Reklamowa Toruń",
+        "sent_at": "2026-05-09T11:28:53.913250+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832613122.2275.11001733928668708683@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@artmann.pl",
+        "name": "ORGANIZATOR IMPREZ PODLASKIE | organizacja imprez",
+        "sent_at": "2026-05-09T11:28:56.466954+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177832613392.2275.11747923318689354547@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.wislinska@filharmonia.rzeszow.pl",
+        "name": "Kontakt - Filharmonia Podkarpacka - English",
+        "sent_at": "2026-05-09T11:28:58.934461+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832613647.2275.7371353631679957351@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "aboservice.oper@buehnen-frankfurt.de",
+        "name": "Kontakt | Städtische Bühnen Frankfurt am Main",
+        "sent_at": "2026-05-09T11:29:01.402899+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832613893.2275.8541150023244986258@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "ack@uwm.edu.pl",
+        "name": "Kontakt - Akademickie Centrum Kultury",
+        "sent_at": "2026-05-09T11:29:03.822639+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832614140.2275.1234371726669281725@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@kpck.pl",
+        "name": "kontakt - Kujawsko-Pomorskie Centrum Kultury w Bydgoszczv",
+        "sent_at": "2026-05-09T11:29:06.340403+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832614382.2275.8897741048065441363@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@mok.miasteczko-slaskie.pl",
+        "name": "O Nas - Miejski Ośrodek Kultury im. Krzysztofa Respondka w Miasteczku Śląskim",
+        "sent_at": "2026-05-09T11:29:09.038437+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832614634.2275.7389380225486302694@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.miedzinska@zok.com.pl",
+        "name": "Kontakt - Zielonogórski Ośrodek Kultury",
+        "sent_at": "2026-05-09T11:29:11.752339+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832614903.2275.14063975984829720626@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@stdt.pl",
+        "name": "Stowarzyszenie The Droshkoov Theatre",
+        "sent_at": "2026-05-09T11:29:14.177643+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832615175.2275.6989981801217585664@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@szkolamuzyczna.bydgoszcz.pl",
+        "name": "Administracja - Państwowy Zespół Szkół Muzycznych im. A. Rubinsteina w Bydgoszczy - Portal Gov.pl",
+        "sent_at": "2026-05-09T11:29:16.864482+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832615417.2275.15766948632853604741@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agencja@agencjalaura.pl",
+        "name": "Agencja Artystyczna: usługi reklamowe, organizacja imprez, impresariat. Agencja Artystyczna świadczy usługi reklamowe, impresariat, organizacja imprez. Agencja artystyczna, organizacja imprez, impresariat, mistrz mowy polskiej, mistrz mowy polskiej.",
+        "sent_at": "2026-05-09T11:29:19.329717+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832615686.2275.12060278411916620473@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-05-09T11:29:21.984560+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177832615933.2275.3155848954973199681@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
           "",
           "1"
         ]
