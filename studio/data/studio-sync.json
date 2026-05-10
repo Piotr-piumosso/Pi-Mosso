@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T11:29:23.125164+00:00",
+  "generatedAt": "2026-05-10T11:33:10.711429+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
@@ -13,7 +13,7 @@
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-09T11:28:29.544069+00:00",
+    "engine_last_run": "2026-05-10T11:32:06.261059+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -47022,6 +47022,226 @@
         "status": "sent_followup_2",
         "null": [
           "<177832615933.2275.3155848954973199681@runnervmeorf1.zcgjtivxx0bezdo1xtk5c3ssug.gx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@artmusic.gdynia.pl",
+        "name": "KONTAKT - Art Music Gdynia, Gdańsk, Trójmiasto",
+        "sent_at": "2026-05-10T11:32:09.500504+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841272632.2276.1191159613941765509@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@artstudioevent.pl",
+        "name": "Art Studio Event",
+        "sent_at": "2026-05-10T11:32:12.679626+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841272951.2276.9861378772131217943@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@borussia.pl",
+        "name": "KONTAKT – Borussia Olsztyn",
+        "sent_at": "2026-05-10T11:32:16.190097+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841273268.2276.524556730534512237@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@btl-event.pl",
+        "name": "Kompleksowa organizacja eventów, eventy Poznań | BTL",
+        "sent_at": "2026-05-10T11:32:19.491107+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841273619.2276.18033477308411099871@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "biuro@cknp.pl",
+        "name": "Kontakt Wrocław | Centrum Kultury Nowy Pafawag",
+        "sent_at": "2026-05-10T11:32:22.872339+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841273950.2276.10218081994818540451@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.gesicka@filharmonia.olsztyn.pl",
+        "name": "Kontakt - Warmińsko-Mazurska Filharmonia im. F. Nowowiejskiego w Olsztynie",
+        "sent_at": "2026-05-10T11:32:26.362056+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841274288.2276.2243957159808272611@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.pieper@kpp-event.de",
+        "name": "Die Eventagentur in Düsseldorf für Events und Firmenveranstaltungen - KPP Event",
+        "sent_at": "2026-05-10T11:32:29.511749+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841274637.2276.8743599370489094056@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.piorkowska@ecs.gda.pl",
+        "name": "INSTYTUCJE KULTURY - EDUKACJA DO KULTURY. GDAŃSK",
+        "sent_at": "2026-05-10T11:32:32.754244+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841274952.2276.6807370965286722737@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.ritter@musicartsvienna.at",
+        "name": "MusicArtsVienna | Wir verbinden Menschen mit den Fähigkeiten der Kunst › Music Arts Vienna",
+        "sent_at": "2026-05-10T11:32:36.038269+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841275276.2276.8172871073881961160@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "a.skibicka@gck.gdynia.pl",
+        "name": "Kontakt – ART Gdynia",
+        "sent_at": "2026-05-10T11:32:38.991603+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177841275604.2276.13323481759374876942@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agnieszka.chodysz@okis.pl",
+        "name": "kontakt - Hide or sek",
+        "sent_at": "2026-05-10T11:32:42.055866+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841275899.2276.1169056651214742162@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "alicja.balaban@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-05-10T11:32:45.139699+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841276205.2276.9581591770329061232@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "alina@promusica.pl",
+        "name": "Kontakt – Promusica",
+        "sent_at": "2026-05-10T11:32:48.081604+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841276514.2276.67058797701646682@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "amuz@amuz.edu.pl",
+        "name": "Kontakt - Akademia Muzyczna im. Ignacego Jana Paderewskiego w Poznaniu",
+        "sent_at": "2026-05-10T11:32:51.086609+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841276808.2276.10435969483463796147@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "ania@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-05-10T11:32:54.409619+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841277108.2276.9358889064700704180@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anna.magiera@ckpodgorza.pl",
+        "name": "Centrum Kultury Podgórza - Kontakt",
+        "sent_at": "2026-05-10T11:32:57.332250+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841277441.2276.5446088930613385454@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anna.prasek@spotkaniakultur.com",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-05-10T11:33:00.340058+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841277733.2276.11426294901916517467@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "arek@live.com.pl",
+        "name": "Agencja Eventowa LIVE - LIVE is Event",
+        "sent_at": "2026-05-10T11:33:03.432450+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841278034.2276.8369028776071832196@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "art@art.com.pl",
+        "name": "Kontakt | - Zakłady Artystyczne ART Sp z o.o.",
+        "sent_at": "2026-05-10T11:33:06.425795+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841278343.2276.2420465271190284093@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "art@jsoundart.pl",
+        "name": "Kontakt | J'Sound",
+        "sent_at": "2026-05-10T11:33:09.444494+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177841278642.2276.15774649965373640280@runnervmeorf1.c5dam0qjnfsefkc3bjzldlum2d.dx.internal.cloudapp.net>",
           "",
           "1"
         ]
