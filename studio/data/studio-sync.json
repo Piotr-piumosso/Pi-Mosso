@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-10T11:33:10.711429+00:00",
+  "generatedAt": "2026-05-11T13:25:47.015630+00:00",
   "sourceStats": {
     "baza": 1487,
     "nowe": 0,
     "engine": 1726,
     "sent": 849,
     "inbound": 2,
-    "replies": 103,
+    "replies": 106,
     "opens": 0,
     "subscribers": 0
   },
   "sourceRuns": {
     "lead_machine_last_run": "2026-04-14T11:33:55.298909+00:00",
     "lead_machine_added_rows": 349,
-    "engine_last_run": "2026-05-10T11:32:06.261059+00:00",
+    "engine_last_run": "2026-05-11T13:25:22.944607+00:00",
     "engine_attempted": 0,
     "engine_sent": 0
   },
@@ -47245,6 +47245,225 @@
           "",
           "1"
         ]
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "sent_at": "2026-05-11T09:50:55.545943+00:00",
+        "status": "optout",
+        "null": [
+          "",
+          ""
+        ]
+      },
+      {
+        "email": "abi@wzp.pl",
+        "name": "Opera na Zamku w Szczecinie",
+        "sent_at": "2026-05-11T09:53:46.016633+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849322394.2383.14944744152365748792@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@bwa.olsztyn.pl",
+        "name": "Biuro Wystaw Artystycznych w Olsztynie",
+        "sent_at": "2026-05-11T09:53:48.123456+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849322602.2383.14958078174303869228@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "administracja@ok.bedzin.pl",
+        "name": "Punkty kontaktowe",
+        "sent_at": "2026-05-11T09:53:50.378385+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849322813.2383.15215631001028690704@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agnieszka@creativeflow.pl",
+        "name": "Kontakt - Agencja Creative Flow",
+        "sent_at": "2026-05-11T09:53:52.343419+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849323038.2383.4410370703969587822@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anagorka@opera.szczecin.pl",
+        "name": "Dyrekcja | Opera",
+        "sent_at": "2026-05-11T09:53:54.462366+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849323235.2383.7199095070902899300@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "andzelika.mleczak@ckagora.pl",
+        "name": "Kontakt – Centrum Kultury Agora",
+        "sent_at": "2026-05-11T09:53:56.551892+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849323447.2383.4235638803184307227@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "aneta@creativeflow.pl",
+        "name": "Kontakt - Agencja Creative Flow",
+        "sent_at": "2026-05-11T09:53:58.620843+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849323656.2383.14825833247643384939@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anna.borowska@ckagora.pl",
+        "name": "Kontakt – Centrum Kultury Agora",
+        "sent_at": "2026-05-11T09:54:00.848942+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177849323863.2383.15010595025910389406@runnervmeorf1.lnldoa3rsdsudowmw3vampag1a.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agentur@hilbert.de",
+        "name": "Kontakt | Hilbert Artists Management GmbH",
+        "sent_at": "2026-05-11T13:25:25.273702+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850592305.2270.9862142521846732195@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "agentur@portal.muenchen.de",
+        "name": "Impressum – Kunstarkaden MünchenKunstarkaden München",
+        "sent_at": "2026-05-11T13:25:27.345322+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850592528.2270.17651487269944501262@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "aktuell@igkultur.at",
+        "name": "Kontakt | IG Kultur Wien",
+        "sent_at": "2026-05-11T13:25:29.307241+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850592735.2270.13447236949619691671@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "andreas.schaefer@kulturbuero-dresden.de",
+        "name": "Verein - Kulturbüro Dresden neu Dresden",
+        "sent_at": "2026-05-11T13:25:31.443537+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850592931.2270.15579322084778859211@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anfrage@musikagent-hamburg.de",
+        "name": "Kontakt zu Musikagent JMS",
+        "sent_at": "2026-05-11T13:25:33.818642+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850593145.2270.10814583515585478183@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anika@oh-my-music.de",
+        "name": "Kontakt - Oh, my music",
+        "sent_at": "2026-05-11T13:25:35.674126+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850593382.2270.2483023288008182380@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anna.heldmann@koelnischerkunstverein.de",
+        "name": "Institutionsinfos – Kölnischer Kunstverein",
+        "sent_at": "2026-05-11T13:25:37.653128+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850593568.2270.7804759452476300413@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "antyradio@antyradio.pl",
+        "name": "Adres i numery telefonów do Antyradia - Antyradio",
+        "sent_at": "2026-05-11T13:25:39.661834+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850593766.2270.3230943242818689391@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "anzeigen@staatstheater-stuttgart.de",
+        "name": "Kontakt | Die Staatstheater Stuttgart",
+        "sent_at": "2026-05-11T13:25:41.787522+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850593967.2270.12936519361519212053@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "art@art.gdynia.pl",
+        "name": "Kontakt – ART Gdynia",
+        "sent_at": "2026-05-11T13:25:43.790976+00:00",
+        "status": "sent_followup",
+        "null": [
+          "<177850594179.2270.17816166492033095896@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
+      },
+      {
+        "email": "artur.wijata@kck.com.pl",
+        "name": "Kontakt - Kieleckie Centrum Kultury",
+        "sent_at": "2026-05-11T13:25:45.808592+00:00",
+        "status": "sent_followup_2",
+        "null": [
+          "<177850594379.2270.9745943076584902193@runnervmeorf1.blvezttv0b3ejdl4gomqurzhhe.cx.internal.cloudapp.net>",
+          "",
+          "1"
+        ]
       }
     ],
     "inboundLeads": [
@@ -47996,6 +48215,27 @@
         "replied_at": "2026-05-07T09:30:21.425556+00:00",
         "subject": "Réponse automatique : Concert proposal – Più Mosso duo",
         "message_id_ref": "sender:accueil@upupup.be"
+      },
+      {
+        "email": "billetterie@theatrenational.be",
+        "name": "Théâtre National",
+        "replied_at": "2026-05-11T09:50:54.608566+00:00",
+        "subject": "RE: Concert proposal – Più Mosso duo",
+        "message_id_ref": "sender:billetterie@theatrenational.be"
+      },
+      {
+        "email": "agnieszka.chmiel@csklublin.pl",
+        "name": "Biuletyn Informacji Publicznej - Centrum Spotkania Kultur w Lublinie",
+        "replied_at": "2026-05-11T09:50:55.170855+00:00",
+        "subject": "RE: Propozycja koncertu – ostatni kontakt",
+        "message_id_ref": "sender:agnieszka.chmiel@csklublin.pl"
+      },
+      {
+        "email": "biuro@agencjamuza.pl",
+        "name": "Kontakt - Agencja Artystyczna MUZA | Spektakle, Koncerty, Kabarety",
+        "replied_at": "2026-05-11T09:50:55.265270+00:00",
+        "subject": "RE: Oferta współpracy – duet Più Mosso",
+        "message_id_ref": "sender:biuro@agencjamuza.pl"
       }
     ],
     "openLog": [],
