@@ -16,10 +16,16 @@ const GH_REPO  = "piumosso-engine";
 export default {
   async fetch(request, env) {
     const origin  = request.headers.get("Origin") || "";
-    const allowed = env.ALLOWED_ORIGIN || "https://piumosso.pl";
+    const allowedOrigins = [
+      "https://piumosso.pl",
+      "https://piumosso.com.pl",
+      "https://piumosso.net",
+      "https://www.piumosso.pl",
+    ];
+    const allowedOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
 
     const corsHeaders = {
-      "Access-Control-Allow-Origin": allowed,
+      "Access-Control-Allow-Origin": allowedOrigin,
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
     };
