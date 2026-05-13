@@ -1,0 +1,4 @@
+name = "form-handler"
+main = "workers/form-handler.js"
+compatibility_date = "2025-01-01"
+account_id = "28b241129a34184546774c0c96a09697"
