@@ -93,7 +93,63 @@ export default {
       });
     }
 
-    // ── Contact form (default) ────────────────────────────────────────────────
+    // ── Corporate form (piumosso.com.pl / piumosso.net) ──────────────────────
+    const source = (payload.source || "").toLowerCase();
+    const isCorporate = source.includes("piumosso.com.pl") || source.includes("piumosso.net");
+
+    if (isCorporate) {
+      const name = (payload.name || "").trim();
+      if (!name) {
+        return new Response(JSON.stringify({ ok: false, error: "name required" }), {
+          status: 422,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      const dispatchRes = await fetch(
+        `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/dispatches`,
+        {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${env.GH_PAT}`,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+            "User-Agent": "piumosso-form-worker/1.0",
+          },
+          body: JSON.stringify({
+            event_type: "corporate-inbound",
+            client_payload: {
+              name:        name,
+              company:     (payload.company     || "").trim(),
+              email:       (payload.email        || "").trim(),
+              phone:       (payload.phone        || "").trim(),
+              event_type:  (payload.event_type   || payload.product || "").trim(),
+              event_date:  (payload.event_date   || "").trim(),
+              guest_count: (payload.guest_count  || "").trim(),
+              budget_range:(payload.budget_range || "").trim(),
+              venue:       (payload.venue        || "").trim(),
+              message:     (payload.message      || "").trim(),
+              lang:        (payload.lang         || "en").trim().slice(0, 2),
+              source:      source,
+              submittedAt: new Date().toISOString(),
+            },
+          }),
+        }
+      );
+      if (dispatchRes.status === 204) {
+        return new Response(JSON.stringify({ ok: true }), {
+          status: 200,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      const errText = await dispatchRes.text().catch(() => "unknown");
+      console.error("Corporate dispatch failed:", dispatchRes.status, errText);
+      return new Response(JSON.stringify({ ok: false, error: "dispatch_failed" }), {
+        status: 502,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // ── Contact form (default — piumosso.pl) ──────────────────────────────────
     const name  = (payload.name  || "").trim();
     const phone = (payload.phone || "").trim();
     if (!name || !phone) {
