@@ -1276,16 +1276,54 @@ function renderReplies() {
   const el = document.getElementById("reply-list");
   if (!el) return;
   el.innerHTML = replies.length
-    ? replies.slice(0,20).map(r =>
-        `<div class="rrow">
+    ? replies.slice(0,20).map(r => {
+        const email = r.from_email || r.email || "";
+        const subj  = r.subject || "";
+        const inPipeline = (S.leads||[]).some(l => l.contact === email);
+        return `<div class="rrow">
           <div style="flex:1;min-width:0">
-            <strong style="display:block;font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x(r.from_email||r.email||"")}</strong>
-            <span style="color:var(--muted)">${x((r.subject||"").slice(0,60))}${(r.subject||"").length>60?"…":""}</span>
+            <strong style="display:block;font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x(email)}</strong>
+            <span style="color:var(--muted)">${x(subj.slice(0,60))}${subj.length>60?"…":""}</span>
           </div>
-          <span style="color:var(--muted);font-size:.68rem;flex-shrink:0">${fdate(r.received_at||r.date||"")}</span>
-        </div>`
-      ).join("")
+          <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
+            <span style="color:var(--muted);font-size:.68rem">${fdate(r.received_at||r.date||"")}</span>
+            ${inPipeline
+              ? `<span style="font-size:.68rem;color:var(--gold);opacity:.7">w Pipeline</span>`
+              : `<button class="btn btn-xs btn-p" onclick="importReply(${JSON.stringify(email)},${JSON.stringify(subj)})">→ Pipeline</button>`
+            }
+          </div>
+        </div>`;
+      }).join("")
     : `<div class="empty">Brak odpowiedzi.</div>`;
+}
+
+function importReply(email, subject) {
+  if (!email) return;
+  if ((S.leads||[]).some(l => l.contact === email)) {
+    alert("Ten email jest już w Pipeline.");
+    return;
+  }
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const l = {
+    id: crypto.randomUUID(),
+    title: email,
+    kind: "instytucja",
+    city: "",
+    eventDate: "", budget: "",
+    source: "reply_import",
+    contact: email,
+    nextAction: tomorrow.toISOString().slice(0,10),
+    notes: subject ? "Temat odpowiedzi: " + subject : "",
+    stage: "contacted",
+    createdAt: new Date().toISOString(),
+  };
+  S.leads.unshift(l);
+  save();
+  curStage = "contacted";
+  render();
+  const pTab = document.querySelector('.ntab[onclick*="pipeline"]');
+  if (pTab) goTab("pipeline", pTab);
 }
 
 // Export / Import
