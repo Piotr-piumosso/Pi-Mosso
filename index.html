@@ -40,39 +40,107 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MusicGroup",
-  "name": "Più Mosso",
-  "url": "https://piumosso.pl/",
-  "image": "https://piumosso.pl/DSCF3970.jpeg",
-  "genre": ["Classical", "Sacred"],
-  "member": [
-    {"@type":"Person","name":"Zofia Andersz","instrument":"Skrzypce"},
-    {"@type":"Person","name":"Piotr Górski","instrument":"Organy, fortepian"}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "3",
-    "bestRating": "5"
-  },
-  "review": [
+  "@graph": [
     {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Marta i Tomasz K."},
-      "reviewBody": "Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+      "@type": ["MusicGroup", "LocalBusiness"],
+      "@id": "https://piumosso.pl/#ensemble",
+      "name": "Più Mosso",
+      "url": "https://piumosso.pl/",
+      "image": "https://piumosso.pl/DSCF3970.jpeg",
+      "description": "Duet Più Mosso — skrzypce i organy/fortepian. Muzyka na śluby, koncerty kameralne i eventy kulturalne w całej Polsce i za granicą.",
+      "telephone": "+48781010229",
+      "email": "kontakt@piumosso.pl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Poznań",
+        "addressRegion": "Wielkopolska",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.4064,
+        "longitude": 16.9252
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Poznań"},
+        {"@type": "City", "name": "Wrocław"},
+        {"@type": "City", "name": "Warszawa"},
+        {"@type": "City", "name": "Kraków"},
+        {"@type": "City", "name": "Gdańsk"},
+        {"@type": "Country", "name": "Polska"},
+        {"@type": "Country", "name": "Niemcy"},
+        {"@type": "Country", "name": "Austria"},
+        {"@type": "Country", "name": "Szwajcaria"}
+      ],
+      "sameAs": [
+        "https://piumosso.com.pl/",
+        "https://piumosso.net/"
+      ],
+      "genre": ["Classical", "Sacred", "Chamber"],
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Zofia Andersz",
+          "jobTitle": "Skrzypaczka",
+          "instrument": "Skrzypce",
+          "url": "https://piumosso.pl/zofia/"
+        },
+        {
+          "@type": "Person",
+          "name": "Piotr Górski",
+          "jobTitle": "Pianista i organista",
+          "instrument": "Organy, fortepian",
+          "url": "https://piumosso.pl/piotrgorski/"
+        }
+      ],
+      "priceRange": "PLN 3000–5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "4",
+        "bestRating": "5"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Marta i Tomasz K."},
+          "reviewBody": "Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Karolina W."},
+          "reviewBody": "Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Organization", "name": "Dom Kultury Zamek, Poznań"},
+          "reviewBody": "Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Anna P., Event Manager"},
+          "reviewBody": "Profesjonalizm na każdym etapie — od pierwszego kontaktu po ostatni akord. Duet stworzył klimat, który goście wspominali przez tygodnie.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        }
+      ]
     },
     {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Karolina W."},
-      "reviewBody": "Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+      "@type": "Service",
+      "name": "Oprawa muzyczna ślubu — duet skrzypce i organy",
+      "provider": {"@id": "https://piumosso.pl/#ensemble"},
+      "serviceType": "Muzyka na ślub",
+      "areaServed": {"@type": "Country", "name": "Polska"},
+      "url": "https://piumosso.pl/"
     },
     {
-      "@type": "Review",
-      "author": {"@type": "Organization", "name": "Dom Kultury Zamek, Poznań"},
-      "reviewBody": "Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+      "@type": "Service",
+      "name": "Koncerty kameralne i eventy kulturalne",
+      "provider": {"@id": "https://piumosso.pl/#ensemble"},
+      "serviceType": "Koncert kameralny",
+      "areaServed": {"@type": "Country", "name": "Polska"}
     }
   ]
 }
