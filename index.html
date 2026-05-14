@@ -93,33 +93,7 @@
           "url": "https://piumosso.pl/piotrgorski/"
         }
       ],
-      "priceRange": "PLN 3000–5000",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "3",
-        "bestRating": "5"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {"@type": "Person", "name": "Marta i Tomasz K."},
-          "reviewBody": "Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.",
-          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-        },
-        {
-          "@type": "Review",
-          "author": {"@type": "Person", "name": "Karolina W."},
-          "reviewBody": "Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm.",
-          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-        },
-        {
-          "@type": "Review",
-          "author": {"@type": "Organization", "name": "Dom Kultury Zamek, Poznań"},
-          "reviewBody": "Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco.",
-          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-        },
-      ]
+      "priceRange": "PLN 3000–5000"
     },
     {
       "@type": "Service",
@@ -815,93 +789,72 @@ section{
 }
 .process-step p{font-size:.92rem}
 
-/* ── TESTIMONIALS ── */
-.testimonials-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:2px;
+/* ── OPINIE PLACEHOLDER ── */
+.opinions-placeholder{
   margin-top:48px;
-}
-.tcard{
   background:var(--surf);
   border:1px solid var(--line);
-  padding:clamp(28px,3.5vw,44px);
+  border-radius:var(--r);
+  padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);
   display:flex;
   flex-direction:column;
+  align-items:center;
+  text-align:center;
   gap:20px;
 }
-.tcard:nth-child(1){border-radius:var(--r) 0 0 0}
-.tcard:nth-child(2){border-radius:0 var(--r) 0 0;border-left:none}
-.tcard:nth-child(3){border-radius:0 0 0 var(--r);border-top:none}
-.tcard:nth-child(4){border-radius:0 0 var(--r) 0;border-left:none;border-top:none}
-.tcard-stars{
-  font-size:.85rem;
-  color:var(--gold);
-  letter-spacing:.12em;
-  line-height:1;
-}
-.tcard blockquote{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(1.05rem,1.6vw,1.22rem);
-  font-style:italic;
-  line-height:1.65;
-  color:var(--ink);
-  flex:1;
-}
-.tcard blockquote::before{
-  content:"\201C";
-  font-size:2.8rem;
-  line-height:.6;
-  color:var(--gold);
-  display:block;
-  margin-bottom:10px;
-  font-style:normal;
-}
-.tcard-author{
-  display:flex;
-  flex-direction:column;
-  gap:2px;
-  border-top:1px solid var(--line2);
-  padding-top:16px;
-}
-.tcard-author strong{
-  font-size:.9rem;
-  font-weight:700;
-  color:var(--ink);
-}
-.tcard-author span{
-  font-size:.78rem;
-  color:var(--muted2);
-  letter-spacing:.04em;
-}
-.testimonials-footer{
+.opinions-placeholder-icon{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  background:rgba(24,120,242,.12);
+  border:1px solid rgba(24,120,242,.22);
   display:flex;
   align-items:center;
   justify-content:center;
-  margin-top:32px;
-  gap:16px;
-  flex-wrap:wrap;
+  flex-shrink:0;
 }
-.google-badge{
+.opinions-placeholder p{
+  font-size:1rem;
+  color:var(--muted);
+  max-width:48ch;
+  line-height:1.7;
+}
+.opinions-placeholder .fb-link{
   display:inline-flex;
   align-items:center;
   gap:10px;
+  padding:12px 24px;
+  border:1px solid rgba(24,120,242,.35);
+  border-radius:999px;
+  font-size:.85rem;
+  font-weight:600;
+  color:rgba(145,190,255,.9);
+  letter-spacing:.04em;
+  transition:border-color .2s, color .2s;
+}
+.opinions-placeholder .fb-link:hover{
+  border-color:rgba(24,120,242,.7);
+  color:#fff;
+  opacity:1;
+}
+/* placeholder for future real quotes */
+.tcard-slot{
+  background:var(--surf);
   border:1px solid var(--line);
   border-radius:var(--r);
-  padding:12px 20px;
-  font-size:.82rem;
-  color:var(--muted2);
-  letter-spacing:.04em;
-  text-decoration:none;
-  transition:border-color .2s,color .2s;
+  padding:clamp(28px,3.5vw,44px);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  opacity:.42;
 }
-.google-badge:hover{border-color:var(--gold);color:var(--gold)}
-.google-badge .g-stars{color:var(--gold);font-size:.9rem;letter-spacing:.1em}
-.google-badge .g-count{font-size:.75rem;color:var(--muted2)}
-@media(max-width:880px){
-  .testimonials-grid{grid-template-columns:1fr;gap:3px}
-  .tcard{border-radius:var(--r)!important;border-left:1px solid var(--line)!important;border-top:1px solid var(--line)!important}
+.tcard-slot-line{
+  height:10px;
+  border-radius:4px;
+  background:var(--line);
 }
+.tcard-slot-line.short{width:55%}
+.tcard-slot-line.xs{width:35%}
 
 /* ── CONTACT ── */
 .contact-grid{
@@ -1316,7 +1269,7 @@ footer{
     <div class="wrap">
       <div class="hero-kicker" data-reveal>Skrzypce · Organy · Fortepian</div>
       <h1 data-reveal>Più Mosso.</h1>
-      <p class="hero-sub" data-reveal>Dobieramy kilka miejsc w sezonie. Program budujemy pod konkretną przestrzeń i publiczność — nie na odwrót.</p>
+      <p class="hero-sub" data-reveal>Dobieramy kilka miejsc w sezonie. Program budujemy pod konkretną przestrzeń i publiczność, zawsze dopasowany do miejsca i okazji.</p>
       <div class="hero-actions" data-reveal>
         <a class="btn btn-gold" href="#kontakt">Sprawdź termin</a>
         <a class="btn btn-ghost" href="concert-offer-pl.pdf" target="_blank" rel="noopener">Oferta PDF</a>
@@ -1331,15 +1284,15 @@ footer{
 <!-- Trust bar -->
 <div class="trust-bar" aria-hidden="true">
   <div class="wrap trust-inner">
-    <span class="trust-item"><span class="trust-star">★</span> 5.0 Google Reviews</span>
+    <span class="trust-item">Zofia Andersz &amp; Piotr Górski</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">aktywni od 2023</span>
+    <span class="trust-item">Duet kameralny od 2023</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">PL · DE · EN</span>
+    <span class="trust-item">Skrzypce · Organy · Fortepian</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">Ograniczona dostępność sezonowa</span>
+    <span class="trust-item">Występujemy w wybranych terminach</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">Repertuar pod miejsce, nie na odwrót</span>
+    <span class="trust-item">Repertuar zawsze dopasowany do miejsca</span>
   </div>
 </div>
 
@@ -1348,14 +1301,14 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">O duecie</div>
-      <h2>Skrzypce i organy. Gramy razem od 2023.</h2>
-      <p>Każdy utwór ma swój kształt i swoje miejsce w programie.</p>
+      <h2>Piotr Górski i Zofia Andersz. Più Mosso od 2023.</h2>
+      <p>Skrzypce, organy piszczałkowe i fortepian.</p>
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Zofia gra skrzypce. Piotr — organy piszczałkowe i fortepian. Razem od 2023. To jeden z nielicznych aktywnych duetów w tym składzie w Polsce.</p>
-        <p>Gramy na ślubach i na scenach. Kościoły, sale koncertowe, festiwale, domy kultury. W każdym miejscu inny program — budowany pod akustykę i charakter przestrzeni, nie z gotowej listy.</p>
-        <div class="pull">Wiemy kiedy wejść, kiedy zejść, kiedy milczeć.</div>
+        <p>Piotr Górski gra na organach piszczałkowych i fortepianie, Zofia Andersz na skrzypcach. Razem tworzą Più Mosso - duet kameralny aktywny od 2023 roku i jeden z nielicznych polskich zespołów łączących te instrumenty w trasie koncertowej.</p>
+        <p>Gramy na ślubach i na scenach: w kościołach, salach koncertowych, na festiwalach i w domach kultury. Program budujemy oddzielnie dla każdego miejsca, z uwzględnieniem akustyki, charakteru przestrzeni i oczekiwań publiczności.</p>
+        <div class="pull">Znamy liturgię, rozumiemy dramaturgię ceremonii i dbamy o płynny przebieg każdego momentu - od próby do ostatniego taktu.</div>
       </div>
       <figure class="about-photo-pair">
         <img class="main-photo" src="DSCF3970.jpeg" alt="Zofia Andersz i Piotr Górski — Più Mosso" width="1074" height="1554" loading="lazy">
@@ -1364,18 +1317,18 @@ footer{
     </div>
     <div class="about-uniqueness" data-reveal>
       <div class="uniqueness-item">
-        <strong>Organy + skrzypce</strong>
-        <span>Jeden z nielicznych aktywnych duetów w tym składzie w Polsce — rzadkie instrumentarium, niepowtarzalne brzmienie</span>
+        <strong>Organy i skrzypce</strong>
+        <span>Jeden z nielicznych aktywnych duetów w Polsce łączących organy piszczałkowe ze skrzypcami w trasie koncertowej.</span>
       </div>
       <div class="uniqueness-sep"></div>
       <div class="uniqueness-item">
         <strong>Program pod miejsce</strong>
-        <span>Repertuar układamy pod akustykę i charakter konkretnej przestrzeni — nie z gotowego katalogu</span>
+        <span>Repertuar układamy pod akustykę i charakter konkretnej przestrzeni, nie z gotowego katalogu.</span>
       </div>
       <div class="uniqueness-sep"></div>
       <div class="uniqueness-item">
-        <strong>Ograniczona dostępność</strong>
-        <span>Kilka terminów w sezonie. Piszecie — sprawdzamy dostępność i odpowiadamy tego samego dnia</span>
+        <strong>Wybrane terminy</strong>
+        <span>Występujemy w wybranych terminach, dbając o unikalność każdego wydarzenia. Piszcie do nas - odpowiadamy tego samego dnia.</span>
       </div>
     </div>
     <div class="artists-grid" data-reveal>
@@ -1523,46 +1476,24 @@ footer{
   </div>
 </section>
 
-<!-- Referencje -->
+<!-- Opinie -->
 <section id="referencje">
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Opinie</div>
-      <h2>Co mówią ci, którzy nam zaufali.</h2>
+      <h2>Co mówią nasi klienci.</h2>
+      <p>Opinie zbieramy bezpośrednio od par, organizatorów i instytucji kultury, z którymi współpracowaliśmy.</p>
     </div>
-    <div class="testimonials-grid" data-reveal>
-      <div class="tcard">
-        <div class="tcard-stars" aria-label="Ocena: 5 gwiazdek">★★★★★</div>
-        <blockquote>Muzyka na naszym ślubie była dokładnie taka, o jakiej marzyliśmy. Piotr i Zofia stworzyli niepowtarzalną atmosferę — każdy gość pytał nas potem, kim są ci cudowni muzycy.</blockquote>
-        <div class="tcard-author">
-          <strong>Marta i Tomasz K.</strong>
-          <span>Para młoda · Fara Poznańska</span>
-        </div>
+    <div class="opinions-placeholder" data-reveal>
+      <div class="opinions-placeholder-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="rgba(145,190,255,.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
       </div>
-      <div class="tcard">
-        <div class="tcard-stars" aria-label="Ocena: 5 gwiazdek">★★★★★</div>
-        <blockquote>Z Più Mosso współpracuję przy każdej ceremonii, gdy klientom zależy na żywej muzyce klasycznej. Punktualność, elastyczność i absolutny profesjonalizm — polecam bez wahania.</blockquote>
-        <div class="tcard-author">
-          <strong>Karolina W.</strong>
-          <span>Wedding Planner · Poznań</span>
-        </div>
-      </div>
-      <div class="tcard">
-        <div class="tcard-stars" aria-label="Ocena: 5 gwiazdek">★★★★★</div>
-        <blockquote>Koncert Più Mosso w naszym cyklu był jednym z najlepiej przyjętych przez publiczność w tym sezonie. Sala wypełniona, owacje na stojąco — zapraszamy ponownie.</blockquote>
-        <div class="tcard-author">
-          <strong>Dom Kultury Zamek</strong>
-          <span>Centrum kultury · Poznań</span>
-        </div>
-      </div>
-    </div>
-    <div class="testimonials-footer" data-reveal>
-      <a class="google-badge" href="https://g.co/kgs/piumosso" target="_blank" rel="noopener" aria-label="Zobacz opinie na Google">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-        <span>
-          <span class="g-stars">★★★★★</span><br>
-          <span class="g-count">5.0 · opinie Google</span>
-        </span>
+      <p>Opinie naszych klientów dostępne są na profilu Facebook Più Mosso. Zapraszamy do lektury przed podjęciem decyzji.</p>
+      <a class="fb-link" href="https://www.facebook.com/piumosso" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        Zobacz opinie na Facebooku
       </a>
     </div>
   </div>

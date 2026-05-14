@@ -815,6 +815,12 @@ footer{
 }
 
 /* ── STICKY CTA ── */
+/* ── OPINIONS PLACEHOLDER ── */
+.opinions-placeholder{margin-top:48px;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+.opinions-placeholder-icon{width:52px;height:52px;border-radius:12px;background:rgba(24,120,242,.12);border:1px solid rgba(24,120,242,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opinions-placeholder p{font-size:1rem;color:var(--muted);max-width:48ch;line-height:1.7}
+.opinions-placeholder .fb-link{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border:1px solid rgba(24,120,242,.35);border-radius:999px;font-size:.85rem;font-weight:600;color:rgba(145,190,255,.9);letter-spacing:.04em;transition:border-color .2s,color .2s}
+.opinions-placeholder .fb-link:hover{border-color:rgba(24,120,242,.7);color:#fff;opacity:1}
 .sticky-cta{
   position:fixed;
   right:24px;
@@ -992,14 +998,14 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">À propos</div>
-      <h2>Violon et orgue. Nous jouons ensemble depuis des années.</h2>
-      <p>Chaque pièce a sa forme et sa place dans le programme.</p>
+      <h2>Piotr Górski et Zofia Andersz. Più Mosso depuis 2023.</h2>
+      <p>Violon, orgue à tuyaux et piano.</p>
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Mariages, églises, salles de concert, festivals, centres culturels. Le programme suit l'acoustique et le caractère du lieu — pas une liste toute faite.</p>
-        <p>Nous prenons une cérémonie au sérieux. Nous savons quand commencer, quand s'arrêter, quand se taire.</p>
-        <p>Vous écrivez, nous répondons. Les détails se règlent sans longs échanges.</p>
+        <p>Piotr Górski joue de l'orgue à tuyaux et du piano, Zofia Andersz du violon. Ensemble, ils forment Più Mosso - un duo de musique de chambre actif depuis 2023 et l'un des rares ensembles polonais à combiner ces instruments en tournée.</p>
+        <p>Nous nous produisons lors de mariages et sur scène : dans des églises, des salles de concert, des festivals et des centres culturels. Nous construisons le programme séparément pour chaque lieu, en tenant compte de l'acoustique, du caractère de l'espace et des attentes du public.</p>
+        <p>Nous connaissons la liturgie, comprenons la dramaturgie d'une cérémonie et veillons à son bon déroulement - de la répétition jusqu'à la dernière note.</p>
       </div>
       <figure class="about-photo">
         <img src="../DSCF3970.jpeg" alt="Duo Più Mosso — Zofia Andersz et Piotr Górski" width="1074" height="1554" loading="lazy">
@@ -1014,8 +1020,8 @@ footer{
       </article>
       <article class="artist-card">
         <div class="artist-role">Piotr Górski · Orgue et Piano</div>
-        <h3>Lauréat. Diplômé avec mention.</h3>
-        <p>Lauréat de concours internationaux d'orgue, diplômé de l'Académie de Musique de Poznań avec mention. Il se produit régulièrement et recherche des projets où la préparation classique rencontre des lieux intéressants ou des programmes inhabituels.</p>
+        <h3>1er prix Concorso Internazionale 2025. Diplômé avec mention.</h3>
+        <p>1er prix au Concorso Internazionale Don Vincenzo Vitti à Castellana Grotte (2025), 3e prix à Rumia (2024) et 1er prix à Giżycko (2022). Diplômé de l'Académie de Musique de Poznań avec mention. Il recherche des projets où la formation classique rencontre des lieux intéressants ou des programmes inhabituels.</p>
         <a class="artist-link" href="../piotrgorski/">Programme solo →</a>
       </article>
     </div>
@@ -1211,30 +1217,18 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Avis</div>
-      <h2>Ce que disent les couples et les organisateurs.</h2>
+      <h2>Ce que disent nos clients.</h2>
+      <p>Nous collectons les avis directement auprès des couples, organisateurs et institutions culturelles avec lesquels nous avons travaillé.</p>
     </div>
-    <div class="testimonials-grid" data-reveal>
-      <div class="tcard">
-        <blockquote>Piotr et Zofia ont créé exactement l'atmosphère dont nous rêvions pour notre cérémonie. Trois mois après, nos invités parlent encore de la musique.</blockquote>
-        <div class="tcard-author">
-          <strong>Marie &amp; Thomas L.</strong>
-          <span>Couple marié · Breslau</span>
-        </div>
+    <div class="opinions-placeholder" data-reveal>
+      <div class="opinions-placeholder-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="rgba(145,190,255,.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
       </div>
-      <div class="tcard">
-        <blockquote>Je fais appel à Più Mosso chaque fois que mes clients souhaitent de la musique classique en direct. Fiables, flexibles et simplement extraordinaires.</blockquote>
-        <div class="tcard-author">
-          <strong>Isabelle M.</strong>
-          <span>Wedding Planner · Paris</span>
-        </div>
-      </div>
-      <div class="tcard">
-        <blockquote>Leur concert lors de notre gala a donné le ton parfait pour toute la soirée. Une standing ovation de 150 invités.</blockquote>
-        <div class="tcard-author">
-          <strong>Château de Wojanów</strong>
-          <span>Lieu de réception · Sudètes</span>
-        </div>
-      </div>
+      <p>Les avis de nos clients sont disponibles sur la page Facebook de Più Mosso. Nous vous invitons à les consulter avant de prendre votre décision.</p>
+      <a class="fb-link" href="https://www.facebook.com/piumosso" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        Voir les avis sur Facebook
+      </a>
     </div>
   </div>
 </section>

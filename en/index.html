@@ -48,32 +48,6 @@
   "member": [
     {"@type":"Person","name":"Zofia Andersz","instrument":"Violin"},
     {"@type":"Person","name":"Piotr Górski","instrument":"Organ, Piano"}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "3",
-    "bestRating": "5"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Sarah & James M."},
-      "reviewBody": "Piotr and Zofia created exactly the atmosphere we had dreamed of for our ceremony. Three months later, our guests still talk about the music.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Caroline W."},
-      "reviewBody": "I book Più Mosso whenever clients want live classical music. Reliable, flexible, and simply extraordinary every single time.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Organization", "name": "Palace Hotel, Wrocław"},
-      "reviewBody": "Their performance at our New Year gala set the perfect tone for the entire evening. A standing ovation from 200 guests.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    }
   ]
 }
 </script>
@@ -854,6 +828,12 @@ footer{
 }
 
 /* ── STICKY CTA ── */
+/* ── OPINIONS PLACEHOLDER ── */
+.opinions-placeholder{margin-top:48px;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+.opinions-placeholder-icon{width:52px;height:52px;border-radius:12px;background:rgba(24,120,242,.12);border:1px solid rgba(24,120,242,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opinions-placeholder p{font-size:1rem;color:var(--muted);max-width:48ch;line-height:1.7}
+.opinions-placeholder .fb-link{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border:1px solid rgba(24,120,242,.35);border-radius:999px;font-size:.85rem;font-weight:600;color:rgba(145,190,255,.9);letter-spacing:.04em;transition:border-color .2s,color .2s}
+.opinions-placeholder .fb-link:hover{border-color:rgba(24,120,242,.7);color:#fff;opacity:1}
 .sticky-cta{
   position:fixed;
   right:24px;
@@ -1019,14 +999,14 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">About us</div>
-      <h2>Violin and organ. We have played together for years.</h2>
-      <p>Every piece has its shape and its place in the programme.</p>
+      <h2>Piotr Górski and Zofia Andersz. Più Mosso since 2023.</h2>
+      <p>Violin, pipe organ and piano.</p>
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Weddings, churches, concert halls, festivals, cultural centres. The programme follows the acoustics and character of the space — not a ready-made list.</p>
-        <p>We take a ceremony seriously. We know when to start, when to stop, when to stay quiet.</p>
-        <p>You write, we answer. Details sorted without long back-and-forth.</p>
+        <p>Piotr Górski plays pipe organ and piano, Zofia Andersz plays violin. Together they form Più Mosso - a chamber duo active since 2023 and one of the few Polish ensembles combining these instruments on tour.</p>
+        <p>We perform at weddings and on stage: in churches, concert halls, at festivals and cultural centres. We build the programme separately for each venue, taking into account the acoustics, the character of the space and the expectations of the audience.</p>
+        <p>We know the liturgy, understand the dramaturgy of a ceremony and ensure a smooth flow from rehearsal to the final note.</p>
       </div>
       <figure class="about-photo">
         <img src="../DSCF3970.jpeg" alt="Duo Più Mosso — Zofia Andersz and Piotr Górski" width="1074" height="1554" loading="lazy">
@@ -1041,8 +1021,8 @@ footer{
       </article>
       <article class="artist-card">
         <div class="artist-role">Piotr Górski · Organ and Piano</div>
-        <h3>Prize-winner. Graduate with distinction.</h3>
-        <p>Prize-winner at international organ competitions, graduate of the Poznań Academy of Music with distinction. He performs regularly and looks for projects where classical preparation meets interesting spaces or unusual programmes.</p>
+        <h3>1st Prize Concorso Internazionale 2025. Graduate with distinction.</h3>
+        <p>1st Prize at the Concorso Internazionale Don Vincenzo Vitti in Castellana Grotte (2025), 3rd Prize in Rumia (2024) and 1st Prize in Giżycko (2022). Graduate of the Poznań Academy of Music with distinction. He looks for projects where classical training meets interesting spaces or unusual programmes.</p>
         <a class="artist-link" href="../piotrgorski/">Solo programme →</a>
       </article>
     </div>
@@ -1182,30 +1162,18 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Reviews</div>
-      <h2>What couples and organizers say.</h2>
+      <h2>What our clients say.</h2>
+      <p>We collect reviews directly from couples, organisers and cultural institutions we have worked with.</p>
     </div>
-    <div class="testimonials-grid" data-reveal>
-      <div class="tcard">
-        <blockquote>Piotr and Zofia created exactly the atmosphere we had dreamed of for our ceremony. Three months later, our guests still talk about the music.</blockquote>
-        <div class="tcard-author">
-          <strong>Sarah &amp; James M.</strong>
-          <span>Wedding couple · Wrocław</span>
-        </div>
+    <div class="opinions-placeholder" data-reveal>
+      <div class="opinions-placeholder-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="rgba(145,190,255,.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
       </div>
-      <div class="tcard">
-        <blockquote>I book Più Mosso whenever clients want live classical music. Reliable, flexible, and simply extraordinary every single time.</blockquote>
-        <div class="tcard-author">
-          <strong>Caroline W.</strong>
-          <span>Event Planner · Berlin</span>
-        </div>
-      </div>
-      <div class="tcard">
-        <blockquote>Their performance at our New Year gala set the perfect tone for the entire evening. A standing ovation from 200 guests.</blockquote>
-        <div class="tcard-author">
-          <strong>Palace Hotel</strong>
-          <span>Venue · Wrocław</span>
-        </div>
-      </div>
+      <p>Reviews from our clients are available on the Più Mosso Facebook profile. We invite you to read them before making a decision.</p>
+      <a class="fb-link" href="https://www.facebook.com/piumosso" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        See reviews on Facebook
+      </a>
     </div>
   </div>
 </section>

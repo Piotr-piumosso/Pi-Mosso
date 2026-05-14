@@ -48,32 +48,6 @@
   "member": [
     {"@type":"Person","name":"Zofia Andersz","instrument":"Violine"},
     {"@type":"Person","name":"Piotr Górski","instrument":"Orgel, Klavier"}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "3",
-    "bestRating": "5"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Anna & Michael S."},
-      "reviewBody": "Piotr und Zofia haben unserer Trauung eine Stimmung gegeben, die wir nie vergessen werden. Unsere Gäste schwärmen noch heute davon.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Sabine K."},
-      "reviewBody": "Più Mosso ist meine erste Wahl für klassische Livemusik. Professionell, flexibel und musikalisch auf höchstem Niveau.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Organization", "name": "Kongresszentrum, Breslau"},
-      "reviewBody": "Das Konzert zum Saisonauftakt war ein voller Erfolg. Die Kombination aus Violine und Klavier hat das Publikum von der ersten Note an bezaubert.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    }
   ]
 }
 </script>
@@ -854,6 +828,12 @@ footer{
 }
 
 /* ── STICKY CTA ── */
+/* ── OPINIONS PLACEHOLDER ── */
+.opinions-placeholder{margin-top:48px;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+.opinions-placeholder-icon{width:52px;height:52px;border-radius:12px;background:rgba(24,120,242,.12);border:1px solid rgba(24,120,242,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opinions-placeholder p{font-size:1rem;color:var(--muted);max-width:48ch;line-height:1.7}
+.opinions-placeholder .fb-link{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border:1px solid rgba(24,120,242,.35);border-radius:999px;font-size:.85rem;font-weight:600;color:rgba(145,190,255,.9);letter-spacing:.04em;transition:border-color .2s,color .2s}
+.opinions-placeholder .fb-link:hover{border-color:rgba(24,120,242,.7);color:#fff;opacity:1}
 .sticky-cta{
   position:fixed;
   right:24px;
@@ -1019,14 +999,14 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Über uns</div>
-      <h2>Violine und Orgel. Wir spielen seit Jahren zusammen.</h2>
-      <p>Jedes Stück hat seine Form und seinen Platz im Programm.</p>
+      <h2>Piotr Górski und Zofia Andersz. Più Mosso seit 2023.</h2>
+      <p>Violine, Pfeifenorgel und Klavier.</p>
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Hochzeiten, Kirchen, Konzertsäle, Festivals, Kulturzentren. Das Programm richtet sich nach der Akustik und dem Charakter des Ortes — nicht nach einer fertigen Liste.</p>
-        <p>Eine Zeremonie nehmen wir ernst. Wir wissen, wann wir einsetzen, wann wir aufhören, wann wir schweigen.</p>
-        <p>Ihr schreibt, wir antworten. Details klären wir ohne langes Hin und Her.</p>
+        <p>Piotr Górski spielt Pfeifenorgel und Klavier, Zofia Andersz Violine. Gemeinsam bilden sie Più Mosso - ein Kammermusikduo, das seit 2023 aktiv ist und zu den wenigen polnischen Ensembles gehört, die diese Instrumente auf Tournee kombinieren.</p>
+        <p>Wir spielen bei Hochzeiten und auf der Bühne: in Kirchen, Konzertsälen, auf Festivals und in Kulturzentren. Das Programm stellen wir für jeden Auftrittsort gesondert zusammen - abgestimmt auf die Akustik, den Charakter des Raums und die Erwartungen des Publikums.</p>
+        <p>Wir kennen die Liturgie, verstehen die Dramaturgie einer Zeremonie und sorgen für einen reibungslosen Ablauf - von der Probe bis zum letzten Takt.</p>
       </div>
       <figure class="about-photo">
         <img src="../DSCF3970.jpeg" alt="Duo Più Mosso — Zofia Andersz und Piotr Górski" width="1074" height="1554" loading="lazy">
@@ -1041,8 +1021,8 @@ footer{
       </article>
       <article class="artist-card">
         <div class="artist-role">Piotr Górski · Orgel und Klavier</div>
-        <h3>Preisträger. Absolvent mit Auszeichnung.</h3>
-        <p>Preisträger internationaler Orgelwettbewerbe, Absolvent der Musikakademie Poznań mit Auszeichnung. Er konzertiert regelmäßig und sucht Projekte, in denen klassische Vorbereitung auf interessante Orte oder ungewöhnliche Programme trifft.</p>
+        <h3>1. Preis Concorso Internazionale 2025. Absolvent mit Auszeichnung.</h3>
+        <p>1. Preis beim Concorso Internazionale Don Vincenzo Vitti in Castellana Grotte (2025), 3. Preis in Rumia (2024) und 1. Preis in Giżycko (2022). Absolvent der Musikakademie Poznań mit Auszeichnung. Er sucht Projekte, in denen klassische Ausbildung auf interessante Orte oder ungewöhnliche Programme trifft.</p>
         <a class="artist-link" href="../piotrgorski/">Soloprogramm →</a>
       </article>
     </div>
@@ -1182,30 +1162,18 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Bewertungen</div>
-      <h2>Was Paare und Veranstalter sagen.</h2>
+      <h2>Was unsere Kunden sagen.</h2>
+      <p>Wir sammeln Bewertungen direkt von Paaren, Veranstaltern und Kulturinstitutionen, mit denen wir zusammengearbeitet haben.</p>
     </div>
-    <div class="testimonials-grid" data-reveal>
-      <div class="tcard">
-        <blockquote>Piotr und Zofia haben unserer Trauung eine Stimmung gegeben, die wir nie vergessen werden. Unsere Gäste schwärmen noch heute davon.</blockquote>
-        <div class="tcard-author">
-          <strong>Anna &amp; Michael S.</strong>
-          <span>Hochzeitspaar · Breslau</span>
-        </div>
+    <div class="opinions-placeholder" data-reveal>
+      <div class="opinions-placeholder-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="rgba(145,190,255,.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
       </div>
-      <div class="tcard">
-        <blockquote>Più Mosso ist meine erste Wahl, wenn Kunden klassische Livemusik wünschen. Professionell, flexibel und musikalisch auf höchstem Niveau.</blockquote>
-        <div class="tcard-author">
-          <strong>Sabine K.</strong>
-          <span>Hochzeitsplanerin · Berlin</span>
-        </div>
-      </div>
-      <div class="tcard">
-        <blockquote>Das Konzert zum Saisonauftakt war ein voller Erfolg. Die Kombination aus Violine und Klavier hat das Publikum von der ersten Note an bezaubert.</blockquote>
-        <div class="tcard-author">
-          <strong>Kongresszentrum</strong>
-          <span>Veranstaltungshaus · Breslau</span>
-        </div>
-      </div>
+      <p>Bewertungen unserer Kunden sind auf dem Facebook-Profil von Più Mosso verfügbar. Wir laden Sie ein, diese vor Ihrer Entscheidung zu lesen.</p>
+      <a class="fb-link" href="https://www.facebook.com/piumosso" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        Bewertungen auf Facebook ansehen
+      </a>
     </div>
   </div>
 </section>

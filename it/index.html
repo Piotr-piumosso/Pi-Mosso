@@ -49,32 +49,6 @@
   "member": [
     {"@type":"Person","name":"Zofia Andersz","instrument":"Violino"},
     {"@type":"Person","name":"Piotr Górski","instrument":"Organo, Pianoforte"}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "3",
-    "bestRating": "5"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Giulia & Marco R."},
-      "reviewBody": "Piotr e Zofia hanno creato esattamente l'atmosfera che sognavamo per la nostra cerimonia. Tre mesi dopo, i nostri ospiti parlano ancora della musica.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Person", "name": "Francesca B."},
-      "reviewBody": "Scelgo Più Mosso ogni volta che i miei clienti desiderano musica classica dal vivo. Affidabili, flessibili e semplicemente straordinari.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    },
-    {
-      "@type": "Review",
-      "author": {"@type": "Organization", "name": "Villa Borromeo, Breslavia"},
-      "reviewBody": "Il loro concerto per il nostro gala ha dato il tono perfetto per tutta la serata. Una standing ovation da 180 ospiti.",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
-    }
   ]
 }
 </script>
@@ -236,6 +210,12 @@ footer{padding:clamp(28px,4vw,52px) 0;border-top:1px solid var(--line)}
 .footer-links{display:flex;gap:22px;flex-wrap:wrap}
 .footer-links a{font-size:.8rem;color:var(--muted2);letter-spacing:.06em}
 .footer-copy{font-size:.78rem;color:var(--muted2);opacity:.6}
+/* ── OPINIONS PLACEHOLDER ── */
+.opinions-placeholder{margin-top:48px;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:clamp(40px,6vw,72px) clamp(28px,4vw,52px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+.opinions-placeholder-icon{width:52px;height:52px;border-radius:12px;background:rgba(24,120,242,.12);border:1px solid rgba(24,120,242,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opinions-placeholder p{font-size:1rem;color:var(--muted);max-width:48ch;line-height:1.7}
+.opinions-placeholder .fb-link{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border:1px solid rgba(24,120,242,.35);border-radius:999px;font-size:.85rem;font-weight:600;color:rgba(145,190,255,.9);letter-spacing:.04em;transition:border-color .2s,color .2s}
+.opinions-placeholder .fb-link:hover{border-color:rgba(24,120,242,.7);color:#fff;opacity:1}
 .sticky-cta{position:fixed;right:24px;bottom:24px;z-index:55;padding:14px 22px;border-radius:999px;font-size:.84rem;font-weight:700;color:#1a130a;letter-spacing:.04em;background:linear-gradient(160deg,#e4c98a,var(--gold));box-shadow:0 16px 44px rgba(0,0,0,.36);transform:translateY(100px);opacity:0;transition:transform .35s ease,opacity .35s ease}
 .sticky-cta.show{transform:translateY(0);opacity:1}
 [data-reveal]{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
@@ -353,14 +333,14 @@ footer{padding:clamp(28px,4vw,52px) 0;border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Chi siamo</div>
-      <h2>Violino e organo. Suoniamo insieme da anni.</h2>
-      <p>Ogni brano ha la sua forma e il suo posto nel programma.</p>
+      <h2>Piotr Górski e Zofia Andersz. Più Mosso dal 2023.</h2>
+      <p>Violino, organo a canne e pianoforte.</p>
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Matrimoni, chiese, sale da concerto, festival, centri culturali. Il programma segue l'acustica e il carattere del luogo — mai una lista preconfezionata.</p>
-        <p>Prendiamo la cerimonia sul serio. Sappiamo quando iniziare, quando fermarsi, quando restare in silenzio.</p>
-        <p>Voi scrivete, noi rispondiamo. I dettagli si definiscono senza lunghi scambi di messaggi.</p>
+        <p>Piotr Górski suona l'organo a canne e il pianoforte, Zofia Andersz il violino. Insieme formano Più Mosso - un duo cameristico attivo dal 2023 e uno dei pochi ensemble polacchi a combinare questi strumenti in tournée.</p>
+        <p>Ci esibiamo ai matrimoni e sui palcoscenici: in chiese, sale da concerto, festival e centri culturali. Costruiamo il programma separatamente per ogni luogo, tenendo conto dell'acustica, del carattere dello spazio e delle aspettative del pubblico.</p>
+        <p>Conosciamo la liturgia, comprendiamo la drammaturgia di una cerimonia e ci prendiamo cura dello svolgimento fluido di ogni momento - dalla prova fino all'ultima nota.</p>
       </div>
       <figure class="about-photo">
         <img src="../DSCF3970.jpeg" alt="Duo Più Mosso — Zofia Andersz e Piotr Górski" width="1074" height="1554" loading="lazy">
@@ -375,8 +355,8 @@ footer{padding:clamp(28px,4vw,52px) 0;border-top:1px solid var(--line)}
       </article>
       <article class="artist-card">
         <div class="artist-role">Piotr Górski · Organo e Pianoforte</div>
-        <h3>Premiato in concorsi. Diplomato con lode.</h3>
-        <p>Vincitore di concorsi internazionali d'organo, diplomato con lode all'Accademia di Musica di Poznań. Si esibisce regolarmente e ricerca progetti in cui la preparazione classica incontra spazi interessanti o programmi insoliti.</p>
+        <h3>I Premio Concorso Internazionale 2025. Diplomato con lode.</h3>
+        <p>I Premio al Concorso Internazionale Don Vincenzo Vitti a Castellana Grotte (2025), III Premio a Rumia (2024) e I Premio a Giżycko (2022). Diplomato con lode all'Accademia di Musica di Poznań. Ricerca progetti in cui la formazione classica incontra spazi interessanti o programmi insoliti.</p>
         <a class="artist-link" href="../piotrgorski/">Programma solistico →</a>
       </article>
     </div>
@@ -498,30 +478,18 @@ footer{padding:clamp(28px,4vw,52px) 0;border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Recensioni</div>
-      <h2>Cosa dicono coppie e organizzatori.</h2>
+      <h2>Cosa dicono i nostri clienti.</h2>
+      <p>Raccogliamo le recensioni direttamente dalle coppie, dagli organizzatori e dalle istituzioni culturali con cui abbiamo lavorato.</p>
     </div>
-    <div class="testimonials-grid" data-reveal>
-      <div class="tcard">
-        <blockquote>Piotr e Zofia hanno creato esattamente l'atmosfera che sognavamo per la nostra cerimonia. Tre mesi dopo, i nostri ospiti parlano ancora della musica.</blockquote>
-        <div class="tcard-author">
-          <strong>Giulia &amp; Marco R.</strong>
-          <span>Coppia di sposi · Breslavia</span>
-        </div>
+    <div class="opinions-placeholder" data-reveal>
+      <div class="opinions-placeholder-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="rgba(145,190,255,.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
       </div>
-      <div class="tcard">
-        <blockquote>Scelgo Più Mosso ogni volta che i miei clienti desiderano musica classica dal vivo. Affidabili, flessibili e semplicemente straordinari.</blockquote>
-        <div class="tcard-author">
-          <strong>Francesca B.</strong>
-          <span>Wedding Planner · Milano</span>
-        </div>
-      </div>
-      <div class="tcard">
-        <blockquote>Il loro concerto per il nostro gala ha dato il tono perfetto per tutta la serata. Una standing ovation da 180 ospiti.</blockquote>
-        <div class="tcard-author">
-          <strong>Villa Borromeo</strong>
-          <span>Location · Breslavia</span>
-        </div>
-      </div>
+      <p>Le recensioni dei nostri clienti sono disponibili sulla pagina Facebook di Più Mosso. Vi invitiamo a leggerle prima di prendere una decisione.</p>
+      <a class="fb-link" href="https://www.facebook.com/piumosso" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        Leggi le recensioni su Facebook
+      </a>
     </div>
   </div>
 </section>
