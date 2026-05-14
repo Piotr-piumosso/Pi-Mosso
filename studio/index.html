@@ -214,6 +214,7 @@ textarea{resize:vertical;min-height:54px}
 <div class="nav">
   <button class="ntab on" onclick="goTab('pipeline',this)">Pipeline</button>
   <button class="ntab" onclick="goTab('zapytania',this)">Zapytania <span class="cnt" id="inbound-badge" style="display:none"></span></button>
+  <button class="ntab" onclick="goTab('przychody',this)">Przychody</button>
   <button class="ntab" onclick="goTab('mailing',this)">Mailing</button>
   <button class="ntab" onclick="goTab('kalendarz',this)">Kalendarz</button>
   <button class="ntab" onclick="goTab('akcje',this)">Akcje</button>
@@ -289,6 +290,11 @@ textarea{resize:vertical;min-height:54px}
     </div>
 
   </div>
+</div>
+
+<!-- ── Przychody ── -->
+<div id="t-przychody" class="h">
+  <div id="revenue-root"></div>
 </div>
 
 <!-- ── Zapytania ── -->
@@ -1179,7 +1185,7 @@ function renderMailing() {
 
 // Nav tabs
 function goTab(name, btn) {
-  ["pipeline","zapytania","mailing","partners","templates","baza","kalendarz","akcje","social","newsletter"].forEach(t =>
+  ["pipeline","zapytania","przychody","mailing","partners","templates","baza","kalendarz","akcje","social","newsletter"].forEach(t =>
     document.getElementById("t-"+t).classList.toggle("h", t !== name));
   document.querySelectorAll(".ntab").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
@@ -1187,6 +1193,7 @@ function goTab(name, btn) {
   if (name === "mailing") renderMailing();
   if (name === "social") renderSocial();
   if (name === "newsletter") renderNewsletter();
+  if (name === "przychody") renderRevenue();
 }
 
 // Inbound leads
@@ -1869,6 +1876,188 @@ function renderSocial() {
       </div>
     </div>`;
   }
+}
+
+// ── Revenue Dashboard ────────────────────────────────────────────────────────
+
+function renderRevenue() {
+  const el = document.getElementById("revenue-root");
+  if (!el) return;
+
+  const sent     = (DH.sentLog     || []);
+  const replies  = (DH.replyLog    || []);
+  const opens    = (DH.openLog     || []);
+  const inbound  = (DH.inboundLeads|| []);
+  const corp     = (DH.corporateLeads || []);
+  const pipeline = (S.leads        || []);
+  const subs     = (DH.subscribers || []);
+
+  // ── Pricing ──────────────────────────────────────────────────────────────
+  const PRICE_2026 = 3000;
+  const PRICE_2027 = 4000;
+
+  // ── Mailing funnel ────────────────────────────────────────────────────────
+  const totalSent     = sent.filter(r => r.status === "sent").length;
+  const totalFU1      = sent.filter(r => r.status === "sent_followup").length;
+  const totalFU2      = sent.filter(r => r.status === "sent_followup_2").length;
+  const totalBounced  = sent.filter(r => (r.status||"").startsWith("bounced")).length;
+  const totalReplies  = replies.length;
+  const totalOpens    = opens.length;
+  const replyRate     = totalSent > 0 ? ((totalReplies / totalSent) * 100).toFixed(1) : "0.0";
+  const openRate      = totalSent > 0 ? ((totalOpens  / totalSent) * 100).toFixed(1) : "0.0";
+
+  // ── Pipeline value ────────────────────────────────────────────────────────
+  const STAGE_PROB = { new:.05, contacted:.10, offer:.30, followup:.15, won:1, booked:1, lost:0 };
+  const wonLeads   = pipeline.filter(l => l.stage === "won" || l.stage === "booked");
+  const wonValue   = wonLeads.length * PRICE_2026;
+
+  let weightedValue = 0;
+  pipeline.forEach(l => {
+    const prob = STAGE_PROB[l.stage] || 0.05;
+    weightedValue += prob * PRICE_2026;
+  });
+  const weightedFmt = Math.round(weightedValue / 100) * 100;
+
+  // ── Stage breakdown ───────────────────────────────────────────────────────
+  const stageCount = {};
+  pipeline.forEach(l => { stageCount[l.stage] = (stageCount[l.stage]||0)+1; });
+
+  // ── Monthly sent ─────────────────────────────────────────────────────────
+  const byMonth = {};
+  sent.filter(r => r.status === "sent" && r.sent_at).forEach(r => {
+    const m = r.sent_at.slice(0,7);
+    byMonth[m] = (byMonth[m]||0)+1;
+  });
+  const months = Object.keys(byMonth).sort();
+  const maxM   = Math.max(1, ...Object.values(byMonth));
+
+  // ── Year-1 target ─────────────────────────────────────────────────────────
+  const TARGET_Y1 = 180000;
+  const progress   = Math.min(100, Math.round((wonValue / TARGET_Y1) * 100));
+
+  // ── Render ────────────────────────────────────────────────────────────────
+  const kpi = (val, label, sub="") => `
+    <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px;min-width:120px">
+      <div style="font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1">${val}</div>
+      <div style="font-size:.75rem;font-weight:600;color:var(--text);margin-top:5px">${label}</div>
+      ${sub ? `<div style="font-size:.68rem;color:var(--muted);margin-top:3px">${sub}</div>` : ""}
+    </div>`;
+
+  const bar = (pct, color="#c9a96e") => `
+    <div style="height:6px;background:var(--b2);border-radius:3px;margin-top:6px;overflow:hidden">
+      <div style="height:100%;width:${pct}%;background:${color};border-radius:3px;transition:width .4s"></div>
+    </div>`;
+
+  const fmtPLN = n => n.toLocaleString("pl-PL") + " zł";
+
+  el.innerHTML = `
+  <div style="padding:0 0 24px;display:flex;flex-direction:column;gap:20px">
+
+    <!-- KPI row -->
+    <div>
+      <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px">Kluczowe wskaźniki</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        ${kpi(fmtPLN(wonValue), "Potwierdzone przychody", wonLeads.length + " event" + (wonLeads.length===1?"":"ów"))}
+        ${kpi(fmtPLN(weightedFmt), "Ważona wartość pipeline", pipeline.length + " leadów")}
+        ${kpi(totalSent, "Maili wysłanych", "FU1: " + totalFU1 + " · FU2: " + totalFU2)}
+        ${kpi(replyRate + "%", "Reply rate", totalReplies + " odpowiedzi")}
+        ${kpi(openRate + "%", "Open rate", totalOpens + " otwarć")}
+        ${kpi(inbound.length + corp.length, "Zapytania ze stron", "PL: " + inbound.length + " · B2B: " + corp.length)}
+        ${kpi(subs.length, "Subskrybenci", "newsletter organowy")}
+      </div>
+    </div>
+
+    <!-- Progress toward Y1 target -->
+    <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div>
+          <div style="font-size:.75rem;font-weight:700;color:var(--text)">Cel Rok 1 — ${fmtPLN(TARGET_Y1)}</div>
+          <div style="font-size:.68rem;color:var(--muted)">Potwierdzone: ${fmtPLN(wonValue)} · Pozostało: ${fmtPLN(Math.max(0, TARGET_Y1 - wonValue))}</div>
+        </div>
+        <div style="font-size:1.3rem;font-weight:700;color:var(--gold)">${progress}%</div>
+      </div>
+      ${bar(progress)}
+    </div>
+
+    <!-- Mailing funnel + Stage breakdown -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+
+      <!-- Funnel -->
+      <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px">
+        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px">Lejek mailingowy</div>
+        ${[
+          ["Wysłane (pierwsze)", totalSent, totalSent, "#c9a96e"],
+          ["Follow-up 1", totalFU1, totalSent, "#b89660"],
+          ["Follow-up 2", totalFU2, totalSent, "#a07d50"],
+          ["Otwarte", totalOpens, totalSent, "#6aaa82"],
+          ["Odpowiedzi", totalReplies, totalSent, "#5a9a72"],
+          ["Bounce", totalBounced, totalSent, "#a05050"],
+        ].map(([label, val, base, color]) => `
+          <div style="margin-bottom:9px">
+            <div style="display:flex;justify-content:space-between;font-size:.78rem">
+              <span style="color:var(--text)">${label}</span>
+              <span style="color:var(--gold);font-weight:700">${val} <span style="color:var(--muted);font-weight:400">(${base>0?((val/base)*100).toFixed(1):0}%)</span></span>
+            </div>
+            ${bar(base>0?(val/base)*100:0, color)}
+          </div>`).join("")}
+      </div>
+
+      <!-- Stage breakdown -->
+      <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px">
+        <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px">Pipeline wg etapu</div>
+        ${Object.entries({new:"Nowe",contacted:"Kontakt",offer:"Oferta",followup:"Follow-up",won:"Wygrane",lost:"Utracone"}).map(([stage, label]) => {
+          const cnt = stageCount[stage] || 0;
+          const val = Math.round(cnt * (STAGE_PROB[stage]||0.05) * PRICE_2026);
+          return `<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--b2);font-size:.78rem">
+            <span style="color:var(--text)">${label}</span>
+            <span>
+              <span style="color:var(--gold);font-weight:700">${cnt}</span>
+              <span style="color:var(--muted);font-size:.7rem"> · ~${fmtPLN(val)}</span>
+            </span>
+          </div>`;
+        }).join("")}
+        <div style="margin-top:10px;font-size:.7rem;color:var(--muted)">Wartości ważone prawdopodobieństwem konwersji. Cena bazowa: ${fmtPLN(PRICE_2026)}.</div>
+      </div>
+    </div>
+
+    <!-- Monthly sent chart -->
+    ${months.length > 0 ? `
+    <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px">
+      <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px">Wysyłki miesięczne</div>
+      <div style="display:flex;align-items:flex-end;gap:6px;height:80px">
+        ${months.map(m => `
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
+            <div style="font-size:.6rem;color:var(--gold);font-weight:700">${byMonth[m]}</div>
+            <div style="width:100%;background:rgba(201,169,110,.25);border-radius:3px 3px 0 0;height:${Math.round((byMonth[m]/maxM)*60)+4}px"></div>
+            <div style="font-size:.58rem;color:var(--muted);white-space:nowrap">${m.slice(5)}</div>
+          </div>`).join("")}
+      </div>
+    </div>` : ""}
+
+    <!-- Corporate leads -->
+    ${corp.length > 0 ? `
+    <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px">
+      <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px">Zapytania B2B (piumosso.com.pl + piumosso.net)</div>
+      <div style="display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto">
+        ${corp.slice().reverse().map(r => `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--b2);font-size:.78rem">
+            <div>
+              <span style="color:var(--text);font-weight:600">${r.name||"—"}</span>
+              ${r.company ? `<span style="color:var(--muted)"> · ${r.company}</span>` : ""}
+              ${r.event_type ? `<span style="color:var(--muted);font-size:.7rem"> [${r.event_type}]</span>` : ""}
+            </div>
+            <div style="text-align:right">
+              <div style="color:var(--gold);font-size:.7rem">${(r.submitted_at||"").slice(0,10)}</div>
+              <div style="color:var(--muted);font-size:.65rem">${r.lang||""} · ${r.source||""}</div>
+            </div>
+          </div>`).join("")}
+      </div>
+    </div>` : `
+    <div style="background:var(--panel);border:1px solid var(--b);border-radius:10px;padding:16px 18px;color:var(--muted);font-size:.82rem">
+      Brak zapytań B2B. Pojawią się tu po wypełnieniu formularza na piumosso.com.pl lub piumosso.net.
+    </div>`}
+
+  </div>`;
 }
 </script>
 </body>
