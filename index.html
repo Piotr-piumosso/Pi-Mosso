@@ -1126,6 +1126,81 @@ footer{
 }
 .sticky-cta.show{transform:translateY(0);opacity:1}
 
+/* ── ABOUT UNIQUENESS STRIP ── */
+.about-uniqueness{
+  display:grid;
+  grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:center;
+  background:var(--surf);
+  border:1px solid var(--line);
+  border-radius:0 0 var(--r) var(--r);
+  border-top:none;
+  padding:28px 36px;
+}
+.uniqueness-item{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  padding:0 8px;
+}
+.uniqueness-item strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.12rem;
+  font-weight:600;
+  color:var(--ink);
+  letter-spacing:.01em;
+}
+.uniqueness-item span{
+  font-size:.8rem;
+  color:var(--muted2);
+  line-height:1.5;
+  max-width:28ch;
+}
+.uniqueness-sep{
+  width:1px;
+  height:44px;
+  background:var(--line);
+  flex-shrink:0;
+  margin:0 16px;
+}
+/* ── ABOUT PHOTO PAIR ── */
+.about-photo-pair{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-left:none;
+  border-radius:0 var(--r) 0 0;
+  display:grid;
+  grid-template-rows:1fr auto;
+}
+.about-photo-pair .main-photo{
+  width:100%;
+  height:100%;
+  min-height:460px;
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(.88);
+  transition:transform 6s ease;
+  display:block;
+}
+.about-photo-pair:hover .main-photo{transform:scale(1.03)}
+.about-photo-pair figcaption{
+  padding:10px 16px;
+  background:rgba(15,11,8,.82);
+  border-top:1px solid var(--line);
+  font-size:.7rem;
+  color:var(--muted2);
+  letter-spacing:.06em;
+}
+@media(max-width:1080px){
+  .about-uniqueness{grid-template-columns:1fr;padding:22px 24px;border-radius:0 0 var(--r) var(--r)}
+  .uniqueness-sep{width:100%;height:1px;margin:10px 0}
+}
+@media(max-width:760px){
+  .about-uniqueness{padding:20px}
+  .uniqueness-item span{max-width:none}
+}
+
 /* ── REVEAL ── */
 [data-reveal]{
   opacity:0;
@@ -1140,6 +1215,8 @@ footer{
   .about-copy{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
   .about-photo{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
   .about-photo img{min-height:360px}
+  .about-photo-pair{border-left:1px solid var(--line);border-radius:0;border-bottom:none}
+  .about-photo-pair .main-photo{min-height:320px}
   .video-wrap{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
   .media-copy{border-left:1px solid var(--line);border-radius:0 0 var(--r) var(--r)}
   .contact-copy{border-right:1px solid var(--line);border-radius:var(--r) var(--r) 0 0}
@@ -1276,14 +1353,30 @@ footer{
     </div>
     <div class="about-grid" data-reveal>
       <div class="about-copy">
-        <p>Śluby, kościoły, sale koncertowe, festiwale, domy kultury. Program zawsze pod konkretną akustykę i charakter miejsca, nie z gotowej listy.</p>
-        <p>Ceremonię traktujemy poważnie. Wiemy kiedy wejść, kiedy zejść, kiedy milczeć.</p>
-        <p>Piszecie, odpowiadamy. Szczegóły ustalamy bez przedłużania.</p>
+        <p>Zofia gra skrzypce. Piotr — organy piszczałkowe i fortepian. Razem od 2023. To jeden z nielicznych aktywnych duetów w tym składzie w Polsce.</p>
+        <p>Gramy na ślubach i na scenach. Kościoły, sale koncertowe, festiwale, domy kultury. W każdym miejscu inny program — budowany pod akustykę i charakter przestrzeni, nie z gotowej listy.</p>
+        <div class="pull">Wiemy kiedy wejść, kiedy zejść, kiedy milczeć.</div>
       </div>
-      <figure class="about-photo">
-        <img src="DSCF3970.jpeg" alt="Duet Più Mosso — Zofia Andersz i Piotr Górski" width="1074" height="1554" loading="lazy">
-        <figcaption>fot. N. Zhang</figcaption>
+      <figure class="about-photo-pair">
+        <img class="main-photo" src="DSCF3970.jpeg" alt="Zofia Andersz i Piotr Górski — Più Mosso" width="1074" height="1554" loading="lazy">
+        <figcaption>Zofia Andersz · skrzypce &nbsp;·&nbsp; Piotr Górski · organy i fortepian &nbsp;· fot. N. Zhang</figcaption>
       </figure>
+    </div>
+    <div class="about-uniqueness" data-reveal>
+      <div class="uniqueness-item">
+        <strong>Organy + skrzypce</strong>
+        <span>Jeden z nielicznych aktywnych duetów w tym składzie w Polsce — rzadkie instrumentarium, niepowtarzalne brzmienie</span>
+      </div>
+      <div class="uniqueness-sep"></div>
+      <div class="uniqueness-item">
+        <strong>Program pod miejsce</strong>
+        <span>Repertuar układamy pod akustykę i charakter konkretnej przestrzeni — nie z gotowego katalogu</span>
+      </div>
+      <div class="uniqueness-sep"></div>
+      <div class="uniqueness-item">
+        <strong>Ograniczona dostępność</strong>
+        <span>Kilka terminów w sezonie. Piszecie — sprawdzamy dostępność i odpowiadamy tego samego dnia</span>
+      </div>
     </div>
     <div class="artists-grid" data-reveal>
       <article class="artist-card">
@@ -1294,8 +1387,8 @@ footer{
       </article>
       <article class="artist-card">
         <div class="artist-role">Piotr Górski · organy i fortepian</div>
-        <h3>Laureat konkursów. Absolwent z wyróżnieniem.</h3>
-        <p>Laureat konkursów organowych w Polsce i za granicą, absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Regularnie koncertuje i szuka projektów, w których klasyczne przygotowanie spotyka się z ciekawym miejscem lub niestandardowym programem.</p>
+        <h3>I miejsce Concorso Internazionale 2025. Absolwent z wyróżnieniem.</h3>
+        <p>Zdobywca I miejsca na Concorso Internazionale Don Vincenzo Vitti w Castellana Grotte (2025), III miejsca w Rumi (2024) i I miejsca w Giżycku (2022). Absolwent Akademii Muzycznej w Poznaniu z dyplomem z wyróżnieniem. Szuka projektów, w których klasyczne przygotowanie spotyka się z ciekawym miejscem lub niestandardowym programem.</p>
         <a class="artist-link" href="/piotrgorski/">Oferta solowa →</a>
       </article>
     </div>
