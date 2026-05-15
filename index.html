@@ -678,6 +678,27 @@ section{
 }
 .offer-cta:hover{color:var(--gold);border-color:var(--gold);opacity:1}
 
+.b2b-brief{
+  margin-top:48px;
+  padding:36px 40px;
+  background:var(--bg2);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.b2b-brief p{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.25rem;
+  color:var(--muted);
+  margin:0;
+}
+@media(max-width:760px){
+  .b2b-brief{flex-direction:column;align-items:flex-start;padding:28px 24px}
+}
+
 /* ── MULTIMEDIA ── */
 .media-grid{
   display:grid;
@@ -1267,11 +1288,11 @@ footer{
   </div>
   <div class="hero-content">
     <div class="wrap">
-      <div class="hero-kicker" data-reveal>Skrzypce · Organy · Fortepian</div>
+      <div class="hero-kicker" data-reveal>Duet kameralny · Projekty premium</div>
       <h1 data-reveal>Più Mosso.</h1>
-      <p class="hero-sub" data-reveal>Dobieramy kilka miejsc w sezonie. Program budujemy pod konkretną przestrzeń i publiczność, zawsze dopasowany do miejsca i okazji.</p>
+      <p class="hero-sub" data-reveal>Projektujemy muzyczne doświadczenia dla firm, które rozumieją, że szczegóły decydują o tym, czy gość zapamięta wieczór. Każdy klient ma nasze pełne zaangażowanie od briefu do deliverables. Dlatego jesteśmy selektywni.</p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn-gold" href="#kontakt">Sprawdź termin</a>
+        <a class="btn btn-gold" href="#kontakt">Wyślij brief</a>
         <a class="btn btn-ghost" href="concert-offer-pl.pdf" target="_blank" rel="noopener">Oferta PDF</a>
       </div>
     </div>
@@ -1356,13 +1377,64 @@ footer{
   </div>
 </div>
 
-<!-- Oferta -->
+<!-- Projekty korporacyjne -->
 <section id="oferta">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <div class="eyebrow">Oferta</div>
-      <h2>Co gramy i dla kogo.</h2>
-      <p>Gramy na ślubach dla par i na koncertach dla instytucji kultury. W obu przypadkach: z pełnym przygotowaniem i bez szablonowych programów.</p>
+      <div class="eyebrow">Formaty współpracy</div>
+      <h2>Nie obsługujemy wydarzeń. Wybieramy projekty.</h2>
+      <p>Trzy formaty dla firm, deweloperów luksusowych i organizatorów gal. Każdy z pełnym pakietem deliverables.</p>
+    </div>
+    <div class="offer-grid" data-reveal>
+      <article class="offer-card">
+        <div class="offer-tag">Format I</div>
+        <h3>Corporate Artistic Opening</h3>
+        <p>Autorski program muzyczny zaprojektowany pod brand firmy. Nie z katalogu — z briefu.</p>
+        <ul class="offer-list">
+          <li>analiza brand booka i tożsamości firmy</li>
+          <li>minimum jedno autorskie opracowanie muzyczne</li>
+          <li>prawa do nagrania audio/video do użytku marketingowego</li>
+          <li>materiały prasowe w 3 językach</li>
+          <li>próba na miejscu, koordynacja z ekipą AV</li>
+        </ul>
+      </article>
+      <article class="offer-card">
+        <div class="offer-tag">Format II</div>
+        <h3>Luxury Partnership</h3>
+        <p>Oficjalny partner artystyczny inwestycji lub marki. Seria wydarzen ze spójnym motywem muzycznym.</p>
+        <ul class="offer-list">
+          <li>status "oficjalnego partnera artystycznego" w materiałach klienta</li>
+          <li>spójny motyw muzyczny na wszystkich wydarzeniach serii</li>
+          <li>content filmowy do kampanii marketingowej dewelopera</li>
+          <li>wzajemna ekspozycja marki w komunikacji obu stron</li>
+        </ul>
+      </article>
+      <article class="offer-card">
+        <div class="offer-tag">Format III</div>
+        <h3>Commissioned Composition</h3>
+        <p>Oryginalna kompozycja dla firmy. Prapremiera na flagowym wydarzeniu. Pełne przeniesienie praw.</p>
+        <ul class="offer-list">
+          <li>utwór 2-4 min, napisany pod tożsamość firmy</li>
+          <li>pełne przeniesienie praw autorskich majątkowych</li>
+          <li>prapremiera na wydarzeniu klienta</li>
+          <li>prawa do opracowania orkiestrowego w przyszłości</li>
+        </ul>
+      </article>
+    </div>
+    <div class="b2b-brief" data-reveal>
+      <p>Wycena na zapytanie. Napisz brief — odpowiadamy w ciągu 24 godzin.</p>
+      <a class="btn btn-gold" href="#kontakt">Wyślij brief</a>
+    </div>
+  </div>
+</section>
+
+<!-- Oferta standardowa -->
+<section id="oferta-standard" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Oferta standardowa</div>
+      <h2>Śluby i koncerty.</h2>
+      <p>Dla par i instytucji kultury: pełne przygotowanie, bez szablonowych programów.</p>
     </div>
     <div class="offer-grid" data-reveal>
       <article class="offer-card">
@@ -1448,29 +1520,29 @@ footer{
 <section>
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <div class="eyebrow">Współpraca</div>
-      <h2>Od pierwszego kontaktu do realizacji.</h2>
+      <div class="eyebrow">Jak pracujemy</div>
+      <h2>Od briefu do deliverables.</h2>
     </div>
     <div class="process-grid" data-reveal>
       <article class="process-step">
         <div class="step-num">01</div>
-        <h3>Pierwszy kontakt</h3>
-        <p>Napisz datę, miejscowość i typ uroczystości. Zazwyczaj odpowiadamy jeszcze tego samego dnia.</p>
+        <h3>Brief</h3>
+        <p>Przesyłacie brief: nazwa firmy, charakter wydarzenia, data, lokalizacja, cel. Odpowiadamy w 24 godziny.</p>
       </article>
       <article class="process-step">
         <div class="step-num">02</div>
-        <h3>Dobór formy</h3>
-        <p>Proponujemy skład i kierunek repertuaru. Możecie wybrać gotowy program albo ułożyć własny.</p>
+        <h3>Projekt programu</h3>
+        <p>W ciągu 7 dni dostarczamy autorski projekt programu muzycznego dopasowany do tożsamości firmy i przestrzeni.</p>
       </article>
       <article class="process-step">
         <div class="step-num">03</div>
-        <h3>Doprecyzowanie</h3>
-        <p>Ustalamy momenty wejść, długość poszczególnych części i życzenia. Dostajecie jasny scenariusz z wyprzedzeniem.</p>
+        <h3>Realizacja</h3>
+        <p>Próba na miejscu dzień przed. Pełna koordynacja z ekipą AV. Zero improwizacji w kwestiach logistycznych.</p>
       </article>
       <article class="process-step">
         <div class="step-num">04</div>
-        <h3>Realizacja</h3>
-        <p>Przyjeżdżamy z zapasem czasu, sprawdzamy akustykę i jesteśmy gotowi na zmiany w ostatniej chwili.</p>
+        <h3>Deliverables</h3>
+        <p>Po wydarzeniu: nagranie, materiały prasowe, prawa do użytku. Wszystko uzgodnione w umowie, dostarczone w terminie.</p>
       </article>
     </div>
   </div>
@@ -1505,8 +1577,8 @@ footer{
     <div class="contact-grid" data-reveal>
       <div class="contact-copy">
         <div class="eyebrow">Kontakt</div>
-        <h2>Napiszcie. Sprawdzimy termin i odpowiemy szybko.</h2>
-        <p>Rezerwujemy bezpośrednio. Wystarczy data, miejscowość i typ uroczystości.</p>
+        <h2>Wyślij brief. Odpowiemy w ciągu 24 godzin.</h2>
+        <p>Projekty korporacyjne, gale luksusowe i zlecenia specjalne: opisz wydarzenie, a przygotujemy wycenę.</p>
         <div class="contact-direct">
           <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
           <a href="tel:+48781010229">+48 781 010 229</a>
@@ -1523,6 +1595,9 @@ footer{
           <label>Typ wydarzenia *
             <select name="eventType" required>
               <option value="">Wybierz…</option>
+              <option value="korporacja">Projekt korporacyjny / gala</option>
+              <option value="luxury-re">Nieruchomości luksusowe / deweloper</option>
+              <option value="kompozycja">Zamówienie kompozycji</option>
               <option value="slub">Ślub / ceremonia</option>
               <option value="koncert">Koncert / recital</option>
               <option value="instytucja">Instytucja / wydarzenie kulturalne</option>
@@ -1536,7 +1611,7 @@ footer{
             <input type="date" name="eventDate">
           </label>
           <label>Skład / zakres
-            <input type="text" name="budget" placeholder="Np. duet / z wokalem / recital solowy">
+            <input type="text" name="budget" placeholder="Np. duet / projekt korporacyjny / zamówienie kompozycji">
           </label>
           <label>Telefon *
             <input type="tel" name="phone" required placeholder="+48 000 000 000">
@@ -1545,11 +1620,11 @@ footer{
             <input type="email" name="email" placeholder="opcjonalnie">
           </label>
           <label>Wiadomość
-            <textarea name="message" placeholder="Opisz termin, miejsce i charakter wydarzenia"></textarea>
+            <textarea name="message" placeholder="Opisz wydarzenie: termin, miejsce, cel, liczba gości, budżet (orientacyjnie)"></textarea>
           </label>
-          <button type="submit" class="btn btn-gold">Wyślij zapytanie</button>
+          <button type="submit" class="btn btn-gold">Wyślij brief</button>
         </form>
-        <p class="form-note">Zazwyczaj odpowiadamy jeszcze tego samego dnia.</p>
+        <p class="form-note">Odpowiadamy w ciągu 24 godzin.</p>
       </div>
     </div>
   </div>
@@ -1597,7 +1672,7 @@ footer{
 </footer>
 
 <!-- Sticky CTA -->
-<a href="#kontakt" class="sticky-cta" id="stickyCta">Zaproś duet</a>
+<a href="#kontakt" class="sticky-cta" id="stickyCta">Wyślij brief</a>
 
 <script>
 window.addEventListener("DOMContentLoaded", () => {
