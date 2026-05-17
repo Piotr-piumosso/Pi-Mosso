@@ -699,6 +699,98 @@ section{
   .b2b-brief{flex-direction:column;align-items:flex-start;padding:28px 24px}
 }
 
+/* ── KALKULATOR WYCENY ── */
+.calc-section{padding:80px 0}
+.calc-box{
+  background:var(--bg2);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  padding:48px 52px;
+  max-width:760px;
+  margin:0 auto;
+}
+.calc-eyebrow{
+  font-size:.72rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:12px;
+}
+.calc-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  font-weight:700;color:var(--ink);
+  line-height:1.1;margin-bottom:8px;
+}
+.calc-sub{font-size:.88rem;color:var(--muted);margin-bottom:36px}
+.calc-steps{display:flex;gap:6px;margin-bottom:32px}
+.calc-step-dot{
+  flex:1;height:3px;border-radius:2px;
+  background:var(--line2);transition:background .3s;
+}
+.calc-step-dot.active{background:var(--gold)}
+.calc-step-dot.done{background:rgba(215,180,114,.4)}
+.calc-field{margin-bottom:22px}
+.calc-field label{
+  display:block;font-size:.78rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:8px;
+}
+.calc-field select,
+.calc-field input{
+  width:100%;background:rgba(255,255,255,.04);
+  border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;color:var(--ink);
+  font-family:"Manrope",sans-serif;font-size:.95rem;
+  outline:none;transition:border-color .2s;
+  appearance:none;-webkit-appearance:none;
+}
+.calc-field select:focus,
+.calc-field input:focus{border-color:var(--gold)}
+.calc-field select option{background:#1a1208;color:var(--ink)}
+.calc-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.calc-btn{
+  width:100%;padding:16px;margin-top:8px;
+  background:var(--gold);color:#0f0b08;
+  font-family:"Manrope",sans-serif;font-size:.88rem;
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  border:none;border-radius:12px;cursor:pointer;
+  transition:opacity .2s;
+}
+.calc-btn:hover{opacity:.88}
+.calc-btn:disabled{opacity:.45;cursor:default}
+.calc-back{
+  background:transparent;color:var(--muted);
+  font-size:.8rem;border:none;cursor:pointer;
+  padding:0;margin-top:16px;text-decoration:underline;
+  text-underline-offset:3px;
+}
+.calc-price-box{
+  text-align:center;padding:32px 0 8px;
+}
+.calc-price-label{
+  font-size:.78rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:12px;
+}
+.calc-price-amount{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(2.2rem,5vw,3.4rem);
+  font-weight:700;color:var(--gold);line-height:1;
+  margin-bottom:8px;
+}
+.calc-price-note{font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:28px}
+.calc-price-cta{
+  display:inline-block;padding:14px 36px;
+  background:var(--gold);color:#0f0b08;
+  font-family:"Manrope",sans-serif;font-size:.82rem;
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  border-radius:12px;text-decoration:none;transition:opacity .2s;
+}
+.calc-price-cta:hover{opacity:.88}
+.calc-panel{display:none}
+.calc-panel.active{display:block}
+@media(max-width:640px){
+  .calc-box{padding:32px 24px}
+  .calc-two{grid-template-columns:1fr}
+}
+
 /* ── MULTIMEDIA ── */
 .media-grid{
   display:grid;
@@ -1261,6 +1353,7 @@ footer{
     <div class="nav-links" id="navLinks">
       <a href="#o-nas">O nas</a>
       <a href="#oferta">Oferta</a>
+      <a href="#wycena">Wycena</a>
       <a href="#multimedia">Multimedia</a>
       <!-- <a href="#referencje">Opinie</a> -->
       <a href="/piotrgorski/">Piotr Górski</a>
@@ -1567,6 +1660,120 @@ footer{
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
         Zobacz opinie na Facebooku
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- Kalkulator wyceny -->
+<section class="calc-section" id="wycena">
+  <div class="wrap">
+    <div class="calc-box" data-reveal>
+      <div class="calc-eyebrow">Bezpłatna wycena</div>
+      <h2 class="calc-title">Sprawdź koszt oprawy.</h2>
+      <p class="calc-sub">4 pytania. Cena po podaniu adresu email.</p>
+      <div class="calc-steps">
+        <div class="calc-step-dot active" id="cdot0"></div>
+        <div class="calc-step-dot" id="cdot1"></div>
+        <div class="calc-step-dot" id="cdot2"></div>
+        <div class="calc-step-dot" id="cdot3"></div>
+      </div>
+
+      <!-- KROK 1: typ eventu -->
+      <div class="calc-panel active" id="cpanel0">
+        <div class="calc-field">
+          <label>Typ wydarzenia</label>
+          <select id="c-type">
+            <option value="">Wybierz...</option>
+            <option value="slub">Ślub / ceremonia kościelna</option>
+            <option value="gala">Gala korporacyjna / bankiet</option>
+            <option value="hotel">Event hotelowy / kolacja VIP</option>
+            <option value="konferencja">Konferencja / otwarcie</option>
+            <option value="seria">Seria wydarzeń / partnership</option>
+            <option value="inne">Inne</option>
+          </select>
+        </div>
+        <button class="calc-btn" onclick="calcNext(0)">Dalej</button>
+      </div>
+
+      <!-- KROK 2: data i lokalizacja -->
+      <div class="calc-panel" id="cpanel1">
+        <div class="calc-two">
+          <div class="calc-field">
+            <label>Data wydarzenia</label>
+            <input type="date" id="c-date">
+          </div>
+          <div class="calc-field">
+            <label>Miasto / region</label>
+            <input type="text" id="c-city" placeholder="np. Warszawa">
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Odległość od Poznania</label>
+          <select id="c-dist">
+            <option value="0">Poznań (0 km)</option>
+            <option value="100">do 50 km (ok. 100 PLN)</option>
+            <option value="200">50-100 km (ok. 200 PLN)</option>
+            <option value="400">100-200 km (ok. 400 PLN)</option>
+            <option value="800">powyżej 200 km (ok. 800 PLN)</option>
+          </select>
+        </div>
+        <button class="calc-btn" onclick="calcNext(1)">Dalej</button>
+        <br><button class="calc-back" onclick="calcBack(1)">Wróć</button>
+      </div>
+
+      <!-- KROK 3: goście i skład -->
+      <div class="calc-panel" id="cpanel2">
+        <div class="calc-two">
+          <div class="calc-field">
+            <label>Liczba gości</label>
+            <select id="c-guests">
+              <option value="50">do 50</option>
+              <option value="100">50-100</option>
+              <option value="200" selected>100-200</option>
+              <option value="300">powyżej 200</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label>Skład</label>
+            <select id="c-ensemble">
+              <option value="organs">Organy + skrzypce</option>
+              <option value="piano">Fortepian + skrzypce</option>
+              <option value="accordion">Akordeon + skrzypce</option>
+              <option value="solo">Fortepian solo</option>
+            </select>
+          </div>
+        </div>
+        <button class="calc-btn" onclick="calcNext(2)">Dalej</button>
+        <br><button class="calc-back" onclick="calcBack(2)">Wróć</button>
+      </div>
+
+      <!-- KROK 4: bramka email -->
+      <div class="calc-panel" id="cpanel3">
+        <div class="calc-two">
+          <div class="calc-field">
+            <label>Imię</label>
+            <input type="text" id="c-name" placeholder="Jan">
+          </div>
+          <div class="calc-field">
+            <label>Email *</label>
+            <input type="email" id="c-email" placeholder="jan@firma.pl">
+          </div>
+        </div>
+        <p style="font-size:.78rem;color:var(--muted);margin-bottom:16px">Po kliknięciu zobaczysz szacunkowy koszt. Odpiszemy w ciągu 24 godzin.</p>
+        <button class="calc-btn" id="c-submit" onclick="calcSubmit()">Pokaż wycenę</button>
+        <br><button class="calc-back" onclick="calcBack(3)">Wróć</button>
+      </div>
+
+      <!-- WYNIK -->
+      <div class="calc-panel" id="cpanel4">
+        <div class="calc-price-box">
+          <div class="calc-price-label">Szacunkowy koszt</div>
+          <div class="calc-price-amount" id="c-price-amount">—</div>
+          <p class="calc-price-note" id="c-price-note"></p>
+          <a class="calc-price-cta" href="#kontakt">Zarezerwuj termin</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1879,6 +2086,115 @@ ${message||"–"}`
     });
   }
 });
+
+/* ── KALKULATOR WYCENY ──────────────────────────────────── */
+(function(){
+  const PANELS = 5;
+
+  function showPanel(n) {
+    for (let i = 0; i < PANELS; i++) {
+      const p = document.getElementById("cpanel" + i);
+      if (p) p.classList.toggle("active", i === n);
+    }
+    for (let i = 0; i < 4; i++) {
+      const d = document.getElementById("cdot" + i);
+      if (!d) continue;
+      d.classList.remove("active", "done");
+      if (i < n) d.classList.add("done");
+      else if (i === Math.min(n, 3)) d.classList.add("active");
+    }
+  }
+
+  function getPrice() {
+    const type  = document.getElementById("c-type")?.value || "";
+    const dist  = parseInt(document.getElementById("c-dist")?.value || "0");
+    const guests = parseInt(document.getElementById("c-guests")?.value || "100");
+
+    let lo, hi, note;
+
+    if (type === "slub") {
+      const base = 1600;
+      const travel = dist;
+      lo = base + travel;
+      hi = lo;
+      note = `Cena stała: 1 600 PLN + ${dist} PLN dojazd.\nPierwsza lekcja próbna bez zobowiązań.`;
+    } else if (type === "gala") {
+      lo = 3500; hi = 7000;
+      note = "Cena orientacyjna dla gali 2-3h. Wycena ostateczna po briefie.";
+    } else if (type === "hotel") {
+      lo = 4000; hi = 8000;
+      note = "Cena orientacyjna dla eventu hotelowego. Zależy od czasu trwania i programu.";
+    } else if (type === "konferencja") {
+      lo = 3000; hi = 5500;
+      note = "Cena orientacyjna. Obejmuje próbę i dojazd do 100 km od Poznania.";
+    } else if (type === "seria") {
+      lo = 10000; hi = 20000;
+      note = "Seria wydarzeń lub partnership sezonowy. Wycena indywidualna po briefie.";
+    } else {
+      lo = 2000; hi = 6000;
+      note = "Wycena orientacyjna. Skontaktuj się — doprecyzujemy zakres.";
+    }
+
+    if (type === "slub") {
+      return { label: lo === hi ? formatPLN(lo) : formatPLN(lo) + " - " + formatPLN(hi), note };
+    }
+    lo += dist;
+    hi += dist;
+    return { label: formatPLN(lo) + " - " + formatPLN(hi) + " PLN", note };
+  }
+
+  function formatPLN(n) {
+    return n.toLocaleString("pl-PL") + (n % 1600 === 0 && n < 2000 ? " PLN" : "");
+  }
+
+  window.calcNext = function(step) {
+    if (step === 0) {
+      const type = document.getElementById("c-type")?.value;
+      if (!type) { alert("Wybierz typ wydarzenia."); return; }
+    }
+    showPanel(step + 1);
+  };
+
+  window.calcBack = function(step) {
+    showPanel(step - 1);
+  };
+
+  window.calcSubmit = async function() {
+    const email = document.getElementById("c-email")?.value?.trim();
+    const name  = document.getElementById("c-name")?.value?.trim() || "";
+    if (!email || !email.includes("@")) { alert("Podaj adres email."); return; }
+
+    const btn = document.getElementById("c-submit");
+    btn.disabled = true;
+    btn.textContent = "Obliczam…";
+
+    const type     = document.getElementById("c-type")?.value || "";
+    const city     = document.getElementById("c-city")?.value?.trim() || "";
+    const date     = document.getElementById("c-date")?.value || "";
+    const dist     = document.getElementById("c-dist")?.value || "0";
+    const guests   = document.getElementById("c-guests")?.value || "";
+    const ensemble = document.getElementById("c-ensemble")?.value || "";
+
+    const { label, note } = getPrice();
+
+    document.getElementById("c-price-amount").textContent = label;
+    document.getElementById("c-price-note").textContent   = note;
+    showPanel(4);
+
+    try {
+      await fetch("https://form-handler.pietrek517.workers.dev", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name, email, phone: "", lang: "pl",
+          eventType: type, city, eventDate: date,
+          scope: `${ensemble} / ${guests} gości`,
+          message: `Kalkulator wyceny: ${type} | ${city} | ${guests} gości | ${ensemble} | dystans ${dist} PLN | szacunek: ${label}`,
+        }),
+      });
+    } catch(_) {}
+  };
+})();
 </script>
 </body>
 </html>
