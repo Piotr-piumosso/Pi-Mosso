@@ -791,6 +791,49 @@ section{
   .calc-two{grid-template-columns:1fr}
 }
 
+/* ── DOSTĘPNOŚĆ TERMINÓW ── */
+.avail-section{padding:clamp(48px,6vw,96px) 0;border-top:1px solid var(--line)}
+.avail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(32px,5vw,72px);
+  align-items:start;
+}
+.avail-copy .eyebrow{color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.avail-copy h2{font-family:"Cormorant Garamond",serif;font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:700;color:var(--ink);line-height:1.1;margin-bottom:16px}
+.avail-copy p{color:var(--muted);font-size:.92rem;line-height:1.7;margin-bottom:28px}
+.avail-months{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:32px;
+}
+.avail-month{
+  background:var(--bg2);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px 10px 12px;
+  text-align:center;
+}
+.avail-month-name{
+  font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:6px;
+}
+.avail-badge{
+  display:inline-block;padding:3px 10px;border-radius:99px;
+  font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+}
+.badge-free{background:rgba(90,190,100,.12);color:#6de07a}
+.badge-taken{background:rgba(255,255,255,.06);color:var(--muted)}
+.badge-last{background:rgba(215,180,114,.15);color:var(--gold)}
+.avail-cta-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.avail-note{font-size:.78rem;color:var(--muted);flex:1;min-width:160px}
+@media(max-width:760px){
+  .avail-grid{grid-template-columns:1fr}
+  .avail-months{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:480px){.avail-months{grid-template-columns:repeat(2,1fr)}}
+
 /* ── MULTIMEDIA ── */
 .media-grid{
   display:grid;
@@ -1353,6 +1396,7 @@ footer{
     <div class="nav-links" id="navLinks">
       <a href="#o-nas">O nas</a>
       <a href="#oferta">Oferta</a>
+      <a href="#dostepnosc">Dostępność</a>
       <a href="#wycena">Wycena</a>
       <a href="#multimedia">Multimedia</a>
       <!-- <a href="#referencje">Opinie</a> -->
@@ -1383,10 +1427,10 @@ footer{
     <div class="wrap">
       <div class="hero-kicker" data-reveal>Duet kameralny · Projekty premium</div>
       <h1 data-reveal>Più Mosso.</h1>
-      <p class="hero-sub" data-reveal>Projektujemy muzyczne doświadczenia dla firm, które rozumieją, że szczegóły decydują o tym, czy gość zapamięta wieczór. Każdy klient ma nasze pełne zaangażowanie od briefu do deliverables. Dlatego jesteśmy selektywni.</p>
+      <p class="hero-sub" data-reveal>Projektujemy muzyczne doświadczenia dla firm, które rozumieją, że szczegóły decydują o tym, czy gość zapamięta wieczór. Każdy klient ma nasze pełne zaangażowanie od briefu do deliverables. Dlatego jesteśmy selektywni — w 2026 mamy jeszcze kilka wolnych terminów.</p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn-gold" href="#kontakt">Wyślij brief</a>
-        <a class="btn btn-ghost" href="concert-offer-pl.pdf" target="_blank" rel="noopener">Oferta PDF</a>
+        <a class="btn btn-gold" href="#dostepnosc">Sprawdź dostępność</a>
+        <a class="btn btn-ghost" href="#kontakt">Wyślij brief</a>
       </div>
     </div>
   </div>
@@ -1404,11 +1448,72 @@ footer{
     <span class="trust-sep" aria-hidden="true">·</span>
     <span class="trust-item">Skrzypce · Organy · Fortepian</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">Występujemy w wybranych terminach</span>
+    <span class="trust-item">I miejsce — Concorso Internazionale 2025</span>
     <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">Repertuar zawsze dopasowany do miejsca</span>
+    <span class="trust-item">Wolne terminy: lipiec–sierpień &amp; listopad 2026</span>
   </div>
 </div>
+
+<!-- Dostępność terminów -->
+<section class="avail-section" id="dostepnosc">
+  <div class="wrap">
+    <div class="avail-grid">
+      <div class="avail-copy" data-reveal>
+        <div class="eyebrow">Kalendarz 2026</div>
+        <h2>Sprawdź dostępność<br>terminu.</h2>
+        <p>Gramy w wybranych terminach — nie przyjmujemy każdego zlecenia. Sprawdź, czy Twój termin jest jeszcze wolny, zanim zajmie go ktoś inny.</p>
+        <div class="avail-cta-row">
+          <a class="btn btn-gold" href="#kontakt">Zapytaj o termin</a>
+          <span class="avail-note">Odpowiadamy w ciągu 24 godzin. Rezerwacja po wpłacie zaliczki 20%.</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <div class="avail-months">
+          <div class="avail-month">
+            <div class="avail-month-name">Czerwiec</div>
+            <span class="avail-badge badge-last">ostatnie</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Lipiec</div>
+            <span class="avail-badge badge-free">dostępny</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Sierpień</div>
+            <span class="avail-badge badge-free">dostępny</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Wrzesień</div>
+            <span class="avail-badge badge-last">ostatnie</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Październik</div>
+            <span class="avail-badge badge-taken">zajęty</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Listopad</div>
+            <span class="avail-badge badge-free">dostępny</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Grudzień</div>
+            <span class="avail-badge badge-last">ostatnie</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Styczeń '27</div>
+            <span class="avail-badge badge-free">dostępny</span>
+          </div>
+          <div class="avail-month">
+            <div class="avail-month-name">Luty '27</div>
+            <span class="avail-badge badge-free">dostępny</span>
+          </div>
+        </div>
+        <p style="font-size:.76rem;color:var(--muted);line-height:1.5;margin:0">
+          Dostępność orientacyjna — ostatnia aktualizacja: maj 2026.<br>
+          Konkretny termin potwierdzamy indywidualnie.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- O duecie -->
 <section id="o-nas">
