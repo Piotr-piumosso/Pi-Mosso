@@ -678,119 +678,6 @@ section{
 }
 .offer-cta:hover{color:var(--gold);border-color:var(--gold);opacity:1}
 
-.b2b-brief{
-  margin-top:48px;
-  padding:36px 40px;
-  background:var(--bg2);
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-}
-.b2b-brief p{
-  font-family:"Cormorant Garamond",serif;
-  font-size:1.25rem;
-  color:var(--muted);
-  margin:0;
-}
-@media(max-width:760px){
-  .b2b-brief{flex-direction:column;align-items:flex-start;padding:28px 24px}
-}
-
-/* ── KALKULATOR WYCENY ── */
-.calc-section{padding:80px 0}
-.calc-box{
-  background:var(--bg2);
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  padding:48px 52px;
-  max-width:760px;
-  margin:0 auto;
-}
-.calc-eyebrow{
-  font-size:.72rem;font-weight:700;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:12px;
-}
-.calc-title{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(1.6rem,3vw,2.2rem);
-  font-weight:700;color:var(--ink);
-  line-height:1.1;margin-bottom:8px;
-}
-.calc-sub{font-size:.88rem;color:var(--muted);margin-bottom:36px}
-.calc-steps{display:flex;gap:6px;margin-bottom:32px}
-.calc-step-dot{
-  flex:1;height:3px;border-radius:2px;
-  background:var(--line2);transition:background .3s;
-}
-.calc-step-dot.active{background:var(--gold)}
-.calc-step-dot.done{background:rgba(215,180,114,.4)}
-.calc-field{margin-bottom:22px}
-.calc-field label{
-  display:block;font-size:.78rem;font-weight:700;
-  letter-spacing:.08em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:8px;
-}
-.calc-field select,
-.calc-field input{
-  width:100%;background:rgba(255,255,255,.04);
-  border:1px solid var(--line);border-radius:12px;
-  padding:14px 16px;color:var(--ink);
-  font-family:"Manrope",sans-serif;font-size:.95rem;
-  outline:none;transition:border-color .2s;
-  appearance:none;-webkit-appearance:none;
-}
-.calc-field select:focus,
-.calc-field input:focus{border-color:var(--gold)}
-.calc-field select option{background:#1a1208;color:var(--ink)}
-.calc-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.calc-btn{
-  width:100%;padding:16px;margin-top:8px;
-  background:var(--gold);color:#0f0b08;
-  font-family:"Manrope",sans-serif;font-size:.88rem;
-  font-weight:800;letter-spacing:.08em;text-transform:uppercase;
-  border:none;border-radius:12px;cursor:pointer;
-  transition:opacity .2s;
-}
-.calc-btn:hover{opacity:.88}
-.calc-btn:disabled{opacity:.45;cursor:default}
-.calc-back{
-  background:transparent;color:var(--muted);
-  font-size:.8rem;border:none;cursor:pointer;
-  padding:0;margin-top:16px;text-decoration:underline;
-  text-underline-offset:3px;
-}
-.calc-price-box{
-  text-align:center;padding:32px 0 8px;
-}
-.calc-price-label{
-  font-size:.78rem;font-weight:700;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--muted);margin-bottom:12px;
-}
-.calc-price-amount{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(2.2rem,5vw,3.4rem);
-  font-weight:700;color:var(--gold);line-height:1;
-  margin-bottom:8px;
-}
-.calc-price-note{font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:28px}
-.calc-price-cta{
-  display:inline-block;padding:14px 36px;
-  background:var(--gold);color:#0f0b08;
-  font-family:"Manrope",sans-serif;font-size:.82rem;
-  font-weight:800;letter-spacing:.08em;text-transform:uppercase;
-  border-radius:12px;text-decoration:none;transition:opacity .2s;
-}
-.calc-price-cta:hover{opacity:.88}
-.calc-panel{display:none}
-.calc-panel.active{display:block}
-@media(max-width:640px){
-  .calc-box{padding:32px 24px}
-  .calc-two{grid-template-columns:1fr}
-}
-
 /* ── MULTIMEDIA ── */
 .media-grid{
   display:grid;
@@ -1353,7 +1240,6 @@ footer{
     <div class="nav-links" id="navLinks">
       <a href="#o-nas">O nas</a>
       <a href="#oferta">Oferta</a>
-      <a href="#wycena">Wycena</a>
       <a href="#multimedia">Multimedia</a>
       <!-- <a href="#referencje">Opinie</a> -->
       <a href="/piotrgorski/">Piotr Górski</a>
@@ -1381,11 +1267,11 @@ footer{
   </div>
   <div class="hero-content">
     <div class="wrap">
-      <div class="hero-kicker" data-reveal>Duet kameralny · Projekty premium</div>
+      <div class="hero-kicker" data-reveal>Duet kameralny · Skrzypce, organy, fortepian</div>
       <h1 data-reveal>Più Mosso.</h1>
-      <p class="hero-sub" data-reveal>Projektujemy muzyczne doświadczenia dla firm, które rozumieją, że szczegóły decydują o tym, czy gość zapamięta wieczór. Każdy klient ma nasze pełne zaangażowanie od briefu do deliverables. Dlatego jesteśmy selektywni.</p>
+      <p class="hero-sub" data-reveal>Muzyka kameralna, która oddycha razem z miejscem, w którym gramy — kościołem, salą koncertową, ogrodem czy domem kultury. Zofia Andersz na skrzypcach i Piotr Górski na organach i fortepianie: duet, który każdy program buduje od nowa.</p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn-gold" href="#kontakt">Wyślij brief</a>
+        <a class="btn btn-gold" href="#kontakt">Napisz do nas</a>
         <a class="btn btn-ghost" href="concert-offer-pl.pdf" target="_blank" rel="noopener">Oferta PDF</a>
       </div>
     </div>
@@ -1403,8 +1289,6 @@ footer{
     <span class="trust-item">Duet kameralny od 2023</span>
     <span class="trust-sep" aria-hidden="true">·</span>
     <span class="trust-item">Skrzypce · Organy · Fortepian</span>
-    <span class="trust-sep" aria-hidden="true">·</span>
-    <span class="trust-item">Występujemy w wybranych terminach</span>
     <span class="trust-sep" aria-hidden="true">·</span>
     <span class="trust-item">Repertuar zawsze dopasowany do miejsca</span>
   </div>
@@ -1441,8 +1325,8 @@ footer{
       </div>
       <div class="uniqueness-sep"></div>
       <div class="uniqueness-item">
-        <strong>Wybrane terminy</strong>
-        <span>Występujemy w wybranych terminach, dbając o unikalność każdego wydarzenia. Piszcie do nas - odpowiadamy tego samego dnia.</span>
+        <strong>Osobiste zaangażowanie</strong>
+        <span>Każdy koncert i każdy ślub przygotowujemy sami, od pierwszej rozmowy po ostatni takt. Piszcie do nas - odpowiadamy tego samego dnia.</span>
       </div>
     </div>
     <div class="artists-grid" data-reveal>
@@ -1470,61 +1354,11 @@ footer{
   </div>
 </div>
 
-<!-- Projekty korporacyjne -->
+<!-- Oferta -->
 <section id="oferta">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <div class="eyebrow">Formaty współpracy</div>
-      <h2>Nie obsługujemy wydarzeń. Wybieramy projekty.</h2>
-      <p>Trzy formaty dla firm, deweloperów luksusowych i organizatorów gal. Każdy z pełnym pakietem deliverables.</p>
-    </div>
-    <div class="offer-grid" data-reveal>
-      <article class="offer-card">
-        <div class="offer-tag">Format I</div>
-        <h3>Corporate Artistic Opening</h3>
-        <p>Autorski program muzyczny zaprojektowany pod brand firmy. Nie z katalogu — z briefu.</p>
-        <ul class="offer-list">
-          <li>program ułożony pod to konkretne wydarzenie, nie z gotowej listy</li>
-          <li>konsultacja repertuarowa z zespołem organizacyjnym</li>
-          <li>minimum jedno autorskie opracowanie muzyczne</li>
-          <li>bio i zdjęcia do komunikacji klienta</li>
-        </ul>
-      </article>
-      <article class="offer-card">
-        <div class="offer-tag">Format II</div>
-        <h3>Luxury Partnership</h3>
-        <p>Oficjalny partner artystyczny inwestycji lub marki. Seria wydarzen ze spójnym motywem muzycznym.</p>
-        <ul class="offer-list">
-          <li>status "oficjalnego partnera artystycznego" w materiałach klienta</li>
-          <li>spójny motyw muzyczny na wszystkich wydarzeniach serii</li>
-          <li>content filmowy do kampanii marketingowej dewelopera</li>
-          <li>wzajemna ekspozycja marki w komunikacji obu stron</li>
-        </ul>
-      </article>
-      <article class="offer-card">
-        <div class="offer-tag">Format III</div>
-        <h3>Commissioned Composition</h3>
-        <p>Oryginalna kompozycja dla firmy. Prapremiera na flagowym wydarzeniu. Pełne przeniesienie praw.</p>
-        <ul class="offer-list">
-          <li>utwór 2-4 min, napisany pod tożsamość firmy</li>
-          <li>pełne przeniesienie praw autorskich majątkowych</li>
-          <li>prapremiera na wydarzeniu klienta</li>
-          <li>prawa do opracowania orkiestrowego w przyszłości</li>
-        </ul>
-      </article>
-    </div>
-    <div class="b2b-brief" data-reveal>
-      <p>Wycena na zapytanie. Napisz brief — odpowiadamy w ciągu 24 godzin.</p>
-      <a class="btn btn-gold" href="#kontakt">Wyślij brief</a>
-    </div>
-  </div>
-</section>
-
-<!-- Oferta standardowa -->
-<section id="oferta-standard" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head" data-reveal>
-      <div class="eyebrow">Oferta standardowa</div>
+      <div class="eyebrow">Oferta</div>
       <h2>Śluby i koncerty.</h2>
       <p>Dla par i instytucji kultury: pełne przygotowanie, bez szablonowych programów.</p>
     </div>
@@ -1613,7 +1447,7 @@ footer{
   <div class="wrap">
     <div class="section-head" data-reveal>
       <div class="eyebrow">Jak pracujemy</div>
-      <h2>Od briefu do deliverables.</h2>
+      <h2>Jak wygląda współpraca.</h2>
     </div>
     <div class="process-grid" data-reveal>
       <article class="process-step">
@@ -1634,7 +1468,7 @@ footer{
       <article class="process-step">
         <div class="step-num">04</div>
         <h3>Po wydarzeniu</h3>
-        <p>Bio i zdjęcia do użytku prasowego klienta. Jesteśmy dostępni na każde pytanie przed i po evencie.</p>
+        <p>Bio i zdjęcia, jeśli organizator ich potrzebuje do relacji czy prasy. Zostajemy w kontakcie na wypadek pytań.</p>
       </article>
     </div>
   </div>
@@ -1663,128 +1497,14 @@ footer{
   </div>
 </section>
 
-<!-- Kalkulator wyceny -->
-<section class="calc-section" id="wycena">
-  <div class="wrap">
-    <div class="calc-box" data-reveal>
-      <div class="calc-eyebrow">Bezpłatna wycena</div>
-      <h2 class="calc-title">Sprawdź koszt oprawy.</h2>
-      <p class="calc-sub">4 pytania. Cena po podaniu adresu email.</p>
-      <div class="calc-steps">
-        <div class="calc-step-dot active" id="cdot0"></div>
-        <div class="calc-step-dot" id="cdot1"></div>
-        <div class="calc-step-dot" id="cdot2"></div>
-        <div class="calc-step-dot" id="cdot3"></div>
-      </div>
-
-      <!-- KROK 1: typ eventu -->
-      <div class="calc-panel active" id="cpanel0">
-        <div class="calc-field">
-          <label>Typ wydarzenia</label>
-          <select id="c-type">
-            <option value="">Wybierz...</option>
-            <option value="slub">Ślub / ceremonia kościelna</option>
-            <option value="gala">Gala korporacyjna / bankiet</option>
-            <option value="hotel">Event hotelowy / kolacja VIP</option>
-            <option value="konferencja">Konferencja / otwarcie</option>
-            <option value="seria">Seria wydarzeń / partnership</option>
-            <option value="inne">Inne</option>
-          </select>
-        </div>
-        <button class="calc-btn" onclick="calcNext(0)">Dalej</button>
-      </div>
-
-      <!-- KROK 2: data i lokalizacja -->
-      <div class="calc-panel" id="cpanel1">
-        <div class="calc-two">
-          <div class="calc-field">
-            <label>Data wydarzenia</label>
-            <input type="date" id="c-date">
-          </div>
-          <div class="calc-field">
-            <label>Miasto / region</label>
-            <input type="text" id="c-city" placeholder="np. Warszawa">
-          </div>
-        </div>
-        <div class="calc-field">
-          <label>Odległość od Poznania</label>
-          <select id="c-dist">
-            <option value="0">Poznań (0 km)</option>
-            <option value="100">do 50 km (ok. 100 PLN)</option>
-            <option value="200">50-100 km (ok. 200 PLN)</option>
-            <option value="400">100-200 km (ok. 400 PLN)</option>
-            <option value="800">powyżej 200 km (ok. 800 PLN)</option>
-          </select>
-        </div>
-        <button class="calc-btn" onclick="calcNext(1)">Dalej</button>
-        <br><button class="calc-back" onclick="calcBack(1)">Wróć</button>
-      </div>
-
-      <!-- KROK 3: goście i skład -->
-      <div class="calc-panel" id="cpanel2">
-        <div class="calc-two">
-          <div class="calc-field">
-            <label>Liczba gości</label>
-            <select id="c-guests">
-              <option value="50">do 50</option>
-              <option value="100">50-100</option>
-              <option value="200" selected>100-200</option>
-              <option value="300">powyżej 200</option>
-            </select>
-          </div>
-          <div class="calc-field">
-            <label>Skład</label>
-            <select id="c-ensemble">
-              <option value="organs">Organy + skrzypce</option>
-              <option value="piano">Fortepian + skrzypce</option>
-              <option value="accordion">Akordeon + skrzypce</option>
-              <option value="solo">Fortepian solo</option>
-            </select>
-          </div>
-        </div>
-        <button class="calc-btn" onclick="calcNext(2)">Dalej</button>
-        <br><button class="calc-back" onclick="calcBack(2)">Wróć</button>
-      </div>
-
-      <!-- KROK 4: bramka email -->
-      <div class="calc-panel" id="cpanel3">
-        <div class="calc-two">
-          <div class="calc-field">
-            <label>Imię</label>
-            <input type="text" id="c-name" placeholder="Jan">
-          </div>
-          <div class="calc-field">
-            <label>Email *</label>
-            <input type="email" id="c-email" placeholder="jan@firma.pl">
-          </div>
-        </div>
-        <p style="font-size:.78rem;color:var(--muted);margin-bottom:16px">Po kliknięciu zobaczysz szacunkowy koszt. Odpiszemy w ciągu 24 godzin.</p>
-        <button class="calc-btn" id="c-submit" onclick="calcSubmit()">Pokaż wycenę</button>
-        <br><button class="calc-back" onclick="calcBack(3)">Wróć</button>
-      </div>
-
-      <!-- WYNIK -->
-      <div class="calc-panel" id="cpanel4">
-        <div class="calc-price-box">
-          <div class="calc-price-label">Szacunkowy koszt</div>
-          <div class="calc-price-amount" id="c-price-amount">—</div>
-          <p class="calc-price-note" id="c-price-note"></p>
-          <a class="calc-price-cta" href="#kontakt">Zarezerwuj termin</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- Kontakt -->
 <section id="kontakt">
   <div class="wrap">
     <div class="contact-grid" data-reveal>
       <div class="contact-copy">
         <div class="eyebrow">Kontakt</div>
-        <h2>Wyślij brief. Odpowiemy w ciągu 24 godzin.</h2>
-        <p>Projekty korporacyjne, gale luksusowe i zlecenia specjalne: opisz wydarzenie, a przygotujemy wycenę.</p>
+        <h2>Napisz do nas. Odpowiemy w ciągu 24 godzin.</h2>
+        <p>Ślub, koncert, wydarzenie kulturalne — opisz co planujesz, a przygotujemy propozycję programu i wycenę.</p>
         <div class="contact-direct">
           <a href="mailto:kontakt@piumosso.pl">kontakt@piumosso.pl</a>
           <a href="tel:+48781010229">+48 781 010 229</a>
@@ -1801,13 +1521,11 @@ footer{
           <label>Typ wydarzenia *
             <select name="eventType" required>
               <option value="">Wybierz…</option>
-              <option value="korporacja">Projekt korporacyjny / gala</option>
-              <option value="luxury-re">Nieruchomości luksusowe / deweloper</option>
-              <option value="kompozycja">Zamówienie kompozycji</option>
               <option value="slub">Ślub / ceremonia</option>
               <option value="koncert">Koncert / recital</option>
               <option value="instytucja">Instytucja / wydarzenie kulturalne</option>
-              <option value="event">Event prywatny</option>
+              <option value="event">Event firmowy / prywatny</option>
+              <option value="inne">Inne</option>
             </select>
           </label>
           <label>Miasto / miejsce
@@ -1817,7 +1535,7 @@ footer{
             <input type="date" name="eventDate">
           </label>
           <label>Skład / zakres
-            <input type="text" name="budget" placeholder="Np. duet / projekt korporacyjny / zamówienie kompozycji">
+            <input type="text" name="budget" placeholder="Np. duet / trio z wokalem / organy solo">
           </label>
           <label>Telefon *
             <input type="tel" name="phone" required placeholder="+48 000 000 000">
@@ -1828,7 +1546,7 @@ footer{
           <label>Wiadomość
             <textarea name="message" placeholder="Opisz wydarzenie: termin, miejsce, cel, liczba gości, budżet (orientacyjnie)"></textarea>
           </label>
-          <button type="submit" class="btn btn-gold">Wyślij brief</button>
+          <button type="submit" class="btn btn-gold">Wyślij zapytanie</button>
         </form>
         <p class="form-note">Odpowiadamy w ciągu 24 godzin.</p>
       </div>
@@ -1878,7 +1596,7 @@ footer{
 </footer>
 
 <!-- Sticky CTA -->
-<a href="#kontakt" class="sticky-cta" id="stickyCta">Wyślij brief</a>
+<a href="#kontakt" class="sticky-cta" id="stickyCta">Napisz do nas</a>
 
 <script>
 window.addEventListener("DOMContentLoaded", () => {
@@ -2085,115 +1803,6 @@ ${message||"–"}`
     });
   }
 });
-
-/* ── KALKULATOR WYCENY ──────────────────────────────────── */
-(function(){
-  const PANELS = 5;
-
-  function showPanel(n) {
-    for (let i = 0; i < PANELS; i++) {
-      const p = document.getElementById("cpanel" + i);
-      if (p) p.classList.toggle("active", i === n);
-    }
-    for (let i = 0; i < 4; i++) {
-      const d = document.getElementById("cdot" + i);
-      if (!d) continue;
-      d.classList.remove("active", "done");
-      if (i < n) d.classList.add("done");
-      else if (i === Math.min(n, 3)) d.classList.add("active");
-    }
-  }
-
-  function getPrice() {
-    const type  = document.getElementById("c-type")?.value || "";
-    const dist  = parseInt(document.getElementById("c-dist")?.value || "0");
-    const guests = parseInt(document.getElementById("c-guests")?.value || "100");
-
-    let lo, hi, note;
-
-    if (type === "slub") {
-      const base = 1600;
-      const travel = dist;
-      lo = base + travel;
-      hi = lo;
-      note = `Cena stała: 1 600 PLN + ${dist} PLN dojazd.\nPierwsza lekcja próbna bez zobowiązań.`;
-    } else if (type === "gala") {
-      lo = 3500; hi = 7000;
-      note = "Cena orientacyjna dla gali 2-3h. Wycena ostateczna po briefie.";
-    } else if (type === "hotel") {
-      lo = 4000; hi = 8000;
-      note = "Cena orientacyjna dla eventu hotelowego. Zależy od czasu trwania i programu.";
-    } else if (type === "konferencja") {
-      lo = 3000; hi = 5500;
-      note = "Cena orientacyjna. Obejmuje próbę i dojazd do 100 km od Poznania.";
-    } else if (type === "seria") {
-      lo = 10000; hi = 20000;
-      note = "Seria wydarzeń lub partnership sezonowy. Wycena indywidualna po briefie.";
-    } else {
-      lo = 2000; hi = 6000;
-      note = "Wycena orientacyjna. Skontaktuj się — doprecyzujemy zakres.";
-    }
-
-    if (type === "slub") {
-      return { label: lo === hi ? formatPLN(lo) : formatPLN(lo) + " - " + formatPLN(hi), note };
-    }
-    lo += dist;
-    hi += dist;
-    return { label: formatPLN(lo) + " - " + formatPLN(hi) + " PLN", note };
-  }
-
-  function formatPLN(n) {
-    return n.toLocaleString("pl-PL") + (n % 1600 === 0 && n < 2000 ? " PLN" : "");
-  }
-
-  window.calcNext = function(step) {
-    if (step === 0) {
-      const type = document.getElementById("c-type")?.value;
-      if (!type) { alert("Wybierz typ wydarzenia."); return; }
-    }
-    showPanel(step + 1);
-  };
-
-  window.calcBack = function(step) {
-    showPanel(step - 1);
-  };
-
-  window.calcSubmit = async function() {
-    const email = document.getElementById("c-email")?.value?.trim();
-    const name  = document.getElementById("c-name")?.value?.trim() || "";
-    if (!email || !email.includes("@")) { alert("Podaj adres email."); return; }
-
-    const btn = document.getElementById("c-submit");
-    btn.disabled = true;
-    btn.textContent = "Obliczam…";
-
-    const type     = document.getElementById("c-type")?.value || "";
-    const city     = document.getElementById("c-city")?.value?.trim() || "";
-    const date     = document.getElementById("c-date")?.value || "";
-    const dist     = document.getElementById("c-dist")?.value || "0";
-    const guests   = document.getElementById("c-guests")?.value || "";
-    const ensemble = document.getElementById("c-ensemble")?.value || "";
-
-    const { label, note } = getPrice();
-
-    document.getElementById("c-price-amount").textContent = label;
-    document.getElementById("c-price-note").textContent   = note;
-    showPanel(4);
-
-    try {
-      await fetch("https://form-handler.pietrek517.workers.dev", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name, email, phone: "", lang: "pl",
-          eventType: type, city, eventDate: date,
-          scope: `${ensemble} / ${guests} gości`,
-          message: `Kalkulator wyceny: ${type} | ${city} | ${guests} gości | ${ensemble} | dystans ${dist} PLN | szacunek: ${label}`,
-        }),
-      });
-    } catch(_) {}
-  };
-})();
 </script>
 </body>
 </html>
