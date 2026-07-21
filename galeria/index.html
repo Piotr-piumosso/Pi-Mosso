@@ -8,51 +8,55 @@
 <title>Galeria — Più Mosso</title>
 <meta name="description" content="Galeria zdjęć Più Mosso." />
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet" />
 
 <style>
 :root{
-  --bg:#0C0A08; --bg-2:#080605;
-  --ink:#F6F0E4; --muted:rgba(246,240,228,.68);
-  --gold:#C5A557;
-  --line:rgba(197,165,87,.22);
-  --shadow:0 18px 44px rgba(0,0,0,.55);
-  --radius:14px;
+  --paper:#ECE8DD;
+  --ink:#201F1A;
+  --ink-soft:rgba(32,31,26,.72);
+  --ink-faint:rgba(32,31,26,.5);
+  --rule:#B7AD96;
+  --rule-soft:rgba(183,173,150,.42);
+  --accent:#4B5A43;
   --max:1200px;
+  --r:2px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:"Inter",sans-serif;
+  font-family:"Source Serif 4",Charter,Georgia,serif;
   font-size:17px; line-height:1.7;
-  background:
-    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
-    linear-gradient(180deg, var(--bg), var(--bg-2));
+  background:var(--paper);
   color:var(--ink);
   -webkit-font-smoothing:antialiased;
 }
 
-a{color:var(--gold);text-decoration:none}
-a:hover{color:#e0c37a}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{color:var(--accent);border-color:var(--accent)}
 
 h1{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(2.3rem,4.5vw,3.3rem);
-  line-height:1.1;
+  font-family:"Bodoni Moda",Didot,Georgia,serif;
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(2.4rem,4.5vw,3.4rem);
+  line-height:1.05;
 }
 
 .container{
   max-width:var(--max);
   margin:0 auto;
-  padding:92px 20px 70px;
+  padding:88px 20px 70px;
 }
 
 .top{
   display:flex;
   justify-content:space-between;
   align-items:flex-end;
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--rule-soft);
   padding-bottom:18px;
   margin-bottom:28px;
   gap:18px;
@@ -60,11 +64,16 @@ h1{
 }
 
 .smallcaps{
-  font-size:.75rem;
-  letter-spacing:.18em;
+  font-family:"Archivo",Arial,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.16em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--accent);
+  font-weight:700;
 }
+
+.top a{border:1px solid var(--ink);border-radius:var(--r);padding:9px 16px;font-family:"Archivo",Arial,sans-serif;font-size:.8rem;font-weight:600}
+.top a:hover{background:var(--ink);color:var(--paper);opacity:1}
 
 /* ===== GALERIA (MASONRY, BEZ CIĘCIA) ===== */
 .gallery{
@@ -85,32 +94,34 @@ h1{
   width:100%;
   height:auto;               /* KLUCZ: pełny kadr, bez cropu */
   display:block;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  background:rgba(246,240,228,.03);
-  border:1px solid rgba(197,165,87,.14);
+  border:1px solid var(--rule);
+  filter:saturate(.92) contrast(1.02);
 }
 
 .caption{
   margin-top:10px;
-  font-size:.95rem;
-  color:var(--muted);
+  font-size:.9rem;
+  color:var(--ink-faint);
   display:flex;
-  justify-content:flex-end;  /* tylko autor, po prawej */
+  justify-content:flex-end;
 }
 
 .caption span{
-  font-style:italic;
-  color:rgba(246,240,228,.62);
+  font-family:"Archivo",Arial,sans-serif;
+  font-style:normal;
+  letter-spacing:.03em;
+  color:var(--ink-faint);
 }
 
 .footer{
   margin-top:54px;
   padding-top:18px;
-  border-top:1px solid var(--line);
-  font-size:.9rem;
-  color:var(--muted);
+  border-top:1px solid var(--rule-soft);
+  font-family:"Archivo",Arial,sans-serif;
+  font-size:.82rem;
+  color:var(--ink-faint);
 }
+.footer a{border:none}
 </style>
 </head>
 

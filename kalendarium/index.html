@@ -6,58 +6,63 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>Kalendarium — Più Mosso</title>
 <meta name="description" content="Kalendarium koncertów Più Mosso — wybrane wydarzenia i nadchodzące terminy." />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet" />
 
 <style>
 :root{
-  --bg:#0C0A08; --bg-2:#080605;
-  --ink:#F6F0E4; --muted:rgba(246,240,228,.74);
-  --gold:#C5A557; --gold-2:#B7903E;
-  --line:rgba(197,165,87,.22);
-  --shadow:0 18px 44px rgba(0,0,0,.55);
-  --radius:14px; --max:1100px;
+  --paper:#ECE8DD;
+  --paper2:#E3DECF;
+  --ink:#201F1A;
+  --ink-soft:rgba(32,31,26,.72);
+  --ink-faint:rgba(32,31,26,.5);
+  --rule:#B7AD96;
+  --rule-soft:rgba(183,173,150,.42);
+  --accent:#4B5A43;
+  --max:1100px;
+  --r:2px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:"Inter",sans-serif;
+  font-family:"Source Serif 4",Charter,Georgia,serif;
   font-size:17px; line-height:1.75;
-  background:
-    radial-gradient(1200px 650px at 50% -15%, rgba(197,165,87,.10), transparent 60%),
-    linear-gradient(180deg, var(--bg), var(--bg-2));
+  background:var(--paper);
   color:var(--ink);
   -webkit-font-smoothing:antialiased;
 }
-a{color:var(--gold);text-underline-offset:3px;text-decoration-color:rgba(197,165,87,.45)}
-a:hover{color:#e0c37a;text-decoration-color:rgba(224,195,122,.65)}
-h1,h2{font-family:"Playfair Display",serif}
-h1{font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.1}
-h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
-.container{max-width:var(--max);margin:0 auto;padding:92px 20px 60px}
+a{color:var(--ink);border-bottom:1px solid var(--rule)}
+a:hover{color:var(--accent);border-color:var(--accent)}
+h1{font-family:"Bodoni Moda",Didot,Georgia,serif;font-style:italic;font-weight:500}
+h1{font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.08}
+h2{font-family:"Bodoni Moda",Didot,Georgia,serif;font-style:normal;font-weight:600;font-size:1.3rem;color:var(--accent);margin-top:26px}
+.container{max-width:var(--max);margin:0 auto;padding:88px 20px 60px}
 .top{
   display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;
-  border-bottom:1px solid rgba(197,165,87,.18);
+  border-bottom:1px solid var(--rule-soft);
   padding-bottom:18px;margin-bottom:22px;
 }
-.smallcaps{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,240,228,.84)}
+.top a{border:1px solid var(--ink);border-radius:var(--r);padding:9px 16px;font-family:"Archivo",Arial,sans-serif;font-size:.8rem;font-weight:600}
+.top a:hover{background:var(--ink);color:var(--paper);opacity:1}
+.smallcaps{font-family:"Archivo",Arial,sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700}
 .card{
-  background:linear-gradient(180deg, rgba(26,20,16,.96), rgba(20,16,13,.92));
-  border:1px solid rgba(197,165,87,.18);
-  border-radius:var(--radius);
-  padding:20px 22px;
-  box-shadow:var(--shadow);
+  border:1px solid var(--rule);
+  padding:22px 24px;
 }
 .event{display:grid;gap:10px}
-.event .meta{display:flex;gap:10px;flex-wrap:wrap;color:rgba(246,240,228,.82);font-size:.95rem}
+.event .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--ink-soft);font-size:.95rem;font-family:"Archivo",Arial,sans-serif}
 .badge{
   display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(197,165,87,.22);
-  background:rgba(246,240,228,.05);
-  padding:4px 10px;border-radius:999px;
-  font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  border:1px solid var(--rule);
+  padding:4px 10px;border-radius:var(--r);
+  font-family:"Archivo",Arial,sans-serif;
+  font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;
 }
 .list{display:grid;gap:14px;margin-top:14px}
-.footer{margin-top:32px;color:rgba(246,240,228,.58);font-size:.9rem}
-.note{color:rgba(246,240,228,.82)}
+.footer{margin-top:32px;color:var(--ink-faint);font-family:"Archivo",Arial,sans-serif;font-size:.82rem}
+.footer a{border:none}
+.note{color:var(--ink-soft)}
 
 /* Galeria w kartach */
 .photos{
@@ -71,25 +76,16 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
 
 .photo{
   display:block;
-  border-radius:12px;
   overflow:hidden;
-  border:1px solid rgba(197,165,87,.16);
-  box-shadow:0 10px 26px rgba(0,0,0,.35);
-  background:rgba(246,240,228,.03);
-  transform:translateY(0);
-  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  border:1px solid var(--rule);
 }
-.photo:hover{
-  transform:translateY(-2px);
-  border-color:rgba(224,195,122,.45);
-  box-shadow:0 14px 34px rgba(0,0,0,.45);
-}
+.photo:hover{border-color:var(--accent)}
 .photo img{
   width:100%;
   height:160px;
   object-fit:cover;
   display:block;
-  filter:saturate(.96) contrast(1.06);
+  filter:saturate(.92) contrast(1.02);
 }
 @media(max-width:480px){ .photo img{height:140px;} }
 </style>
@@ -107,7 +103,7 @@ h2{font-size:1.35rem;color:var(--gold);margin-top:26px}
       </div>
     </div>
 
-    <p style="color:rgba(246,240,228,.84)">
+    <p style="color:var(--ink-soft)">
       Wybrane koncerty Più Mosso
     </p>
 
@@ -167,7 +163,7 @@ function makeCard(e){
       <span class="badge">${formatPL(e.date)}</span>
       <span>${esc(place)}</span>
     </div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.25">${esc(e.title)}</div>
+    <div style="font-family:'Bodoni Moda',Georgia,serif;font-size:1.25rem;line-height:1.25;color:var(--ink)">${esc(e.title)}</div>
     ${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}
     ${photosHTML(e.photos||[], `${e.title} (${formatPL(e.date)})`)}
   `;
@@ -178,7 +174,7 @@ const ts = Math.floor(Date.now()/3600000);
 fetch(`../data/calendar.json?t=${ts}`)
   .then(r => r.json())
   .then(renderEvents)
-  .catch(() => { document.getElementById("events").innerHTML = '<p style="color:rgba(246,240,228,.5)">Nie udało się załadować kalendarza.</p>'; });
+  .catch(() => { document.getElementById("events").innerHTML = '<p style="color:var(--ink-faint)">Nie udało się załadować kalendarza.</p>'; });
 </script>
 </body>
 </html>
