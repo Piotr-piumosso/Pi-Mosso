@@ -958,72 +958,6 @@ button[type="submit"]{
   color:var(--muted2);
 }
 
-/* ── NEWSLETTER ── */
-.nl-section{
-  padding:clamp(40px,5vw,72px) 0;
-  background:var(--panel,#f4f0ea);
-  border-top:1px solid var(--line,#e5ddd4);
-}
-.nl-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:24px;
-}
-.nl-text{flex:1;min-width:200px}
-.nl-title{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(1.2rem,2.5vw,1.6rem);
-  font-weight:600;
-  color:var(--heading,#2d2a27);
-  margin:0 0 6px;
-}
-.nl-sub{
-  font-size:.85rem;
-  color:var(--muted2,#888);
-  margin:0;
-}
-.nl-form{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  flex:1;
-  min-width:260px;
-  max-width:420px;
-}
-.nl-input{
-  flex:1;
-  min-width:0;
-  padding:11px 14px;
-  border:1px solid var(--line,#e5ddd4);
-  border-radius:4px;
-  font-size:.88rem;
-  background:#fff;
-  color:var(--text,#2d2a27);
-  outline:none;
-  font-family:inherit;
-}
-.nl-input:focus{border-color:var(--accent,#8b6f4e)}
-.nl-btn{
-  padding:11px 22px;
-  background:var(--dark,#3b3530);
-  color:#f9f6f1;
-  border:none;
-  border-radius:4px;
-  font-size:.85rem;
-  letter-spacing:.06em;
-  cursor:pointer;
-  font-family:inherit;
-  transition:opacity .15s;
-  white-space:nowrap;
-}
-.nl-btn:hover{opacity:.85}
-.nl-btn:disabled{opacity:.5;cursor:default}
-.nl-msg{font-size:.83rem;color:var(--muted2,#888);margin:0}
-.nl-msg.ok{color:#4a7c59}
-.nl-msg.err{color:#a0392b}
-
 /* ── FOOTER ── */
 footer{
   padding:clamp(28px,4vw,52px) 0;
@@ -1555,27 +1489,6 @@ footer{
   </div>
 </section>
 
-<!-- Newsletter -->
-<section class="nl-section" id="newsletter">
-  <div class="wrap">
-    <div class="nl-inner">
-      <div class="nl-text">
-        <div class="eyebrow" style="color:var(--gold);margin-bottom:10px">Newsletter organowy</div>
-        <h2 class="nl-title">Dla muzyków, którzy traktują instrument poważnie.</h2>
-        <p class="nl-sub">Nagrania, repertuar, polskie organy — kilka razy w roku, bez spamu. Po zapisie: nagrania i materiały prasowe Piotra Górskiego.</p>
-      </div>
-      <div class="nl-form-wrap">
-        <form class="nl-form" id="nlForm" novalidate>
-          <input type="text" id="nlName" name="name" placeholder="Imię (opcjonalnie)" autocomplete="given-name" class="nl-input" style="margin-bottom:8px">
-          <input type="email" id="nlEmail" name="email" placeholder="twój@email.pl" autocomplete="email" required class="nl-input">
-          <button type="submit" class="nl-btn">Dołącz do newslettera</button>
-        </form>
-        <p id="nlMsg" class="nl-msg" style="display:none"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
 <footer>
   <div class="wrap">
@@ -1768,41 +1681,6 @@ ${message||"–"}`
   // Scroll restore
   history.scrollRestoration = "manual";
   setTimeout(() => {scrollTo(0,0)}, 60);
-
-  // Newsletter subscribe — via Cloudflare Worker
-  const NL_WORKER = "https://form-handler.piotrgorski.workers.dev/subscribe";
-  const nlForm = document.getElementById("nlForm");
-  const nlMsg  = document.getElementById("nlMsg");
-  if (nlForm) {
-    nlForm.addEventListener("submit", async e => {
-      e.preventDefault();
-      const email = document.getElementById("nlEmail").value.trim();
-      const name  = (document.getElementById("nlName") || {value:""}).value.trim();
-      if (!email) return;
-      const btn = nlForm.querySelector("button");
-      btn.disabled = true;
-      btn.textContent = "…";
-      try {
-        const res = await fetch(NL_WORKER, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, name, lang: "pl", source: "newsletter_organy" }),
-        });
-        if (res.ok) {
-          nlForm.style.display = "none";
-          nlMsg.textContent = "Zapisano! Sprawdź skrzynkę — wysłałem nagrania.";
-          nlMsg.className = "nl-msg ok";
-          nlMsg.style.display = "block";
-        } else throw new Error();
-      } catch {
-        nlMsg.textContent = "Coś poszło nie tak. Napisz na kontakt@piumosso.pl.";
-        nlMsg.className = "nl-msg err";
-        nlMsg.style.display = "block";
-        btn.disabled = false;
-        btn.textContent = "Dołącz do newslettera";
-      }
-    });
-  }
 });
 </script>
 </body>
