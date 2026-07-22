@@ -343,6 +343,9 @@ h2,h3{
 }
 .offer-grid .card{border-right:1px solid var(--rule)}
 .offer-grid .card:last-child{border-right:none}
+@media(min-width:1041px){
+  .offer-grid.cols-2{grid-template-columns:repeat(2, minmax(0,1fr))}
+}
 
 .card h3{
   font-size:1.5rem;
@@ -644,14 +647,13 @@ h2,h3{
         <div class="section-head">
           <div class="eyebrow">O artystce</div>
           <h2>Skrzypaczka. Studentka AM w Poznaniu.</h2>
-          <p>Zofia Andersz studiuje na Akademii Muzycznej w Poznaniu pod kierunkiem prof. dr hab. Doroty Kwiecińskiej. Koncentruje się na muzyce kameralnej i solowych recitalach skrzypcowych. Koncertuje w kościołach, salach koncertowych i obiektach kultury — szuka projektów, gdzie skrzypce mogą wybrzmieć w nieoczywistym kontekście.</p>
+          <p>Zofia Andersz studiuje na Akademii Muzycznej w Poznaniu pod kierunkiem prof. dr hab. Doroty Kwiecińskiej. Koncentruje się na muzyce kameralnej i solowych recitalach skrzypcowych. Koncertuje w kościołach, salach koncertowych i obiektach kultury.</p>
         </div>
 
         <div class="story-grid">
           <article class="panel story-copy">
-            <p>Gra solowa na skrzypcach to jeden instrument i jedno skupienie. Sprawdza się na ceremoniach, festiwalach kameralnych i w recitalach instytucji kultury.</p>
-            <p>Program dobiera do konkretnego miejsca, akustyki i charakteru okazji. Nie wysyła gotowych list.</p>
-            <p class="highlight">To propozycja dla tych, którzy wiedzą, że dobra muzyka robi różnicę i nie chcą zostawiać tego przypadkowi.</p>
+            <p>Na co dzień gra w projektach orkiestrowych i kameralnych, obok zajęć na Akademii Muzycznej w Poznaniu. Solo występuje na ceremoniach i recitalach w instytucjach kultury.</p>
+            <p>Program ustala po rozmowie o miejscu i charakterze wydarzenia - nie ma gotowego cennika ani listy utworów do wyboru z automatu.</p>
           </article>
           <figure class="panel story-photo">
             <img src="photos/za-portret.jpg" alt="Zofia Andersz ze skrzypcami" loading="lazy" />
@@ -669,15 +671,15 @@ h2,h3{
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Oferta</div>
-          <h2>Trzy najczęstsze obszary współpracy.</h2>
+          <h2>Dwa najczęstsze obszary współpracy.</h2>
           <p>Zakres można dopasować do miejsca, charakteru wydarzenia i oczekiwanej długości programu.</p>
         </div>
 
-        <div class="offer-grid">
+        <div class="offer-grid cols-2">
           <article class="panel card">
             <div class="feature-line">Ceremonie</div>
             <h3>Oprawa muzyczna uroczystości</h3>
-            <p>Muzyka skrzypcowa przygotowana na kluczowe momenty ceremonii, z dbałością o nastrój i przebieg.</p>
+            <p>Skrzypce solo na wejściu, przysiędze i wyjściu z kościoła - dobrane pod akustykę konkretnego wnętrza.</p>
             <ul class="list">
               <li>ceremonie kościelne i cywilne,</li>
               <li>pomoc w wyborze utworów i kolejności momentów,</li>
@@ -688,22 +690,11 @@ h2,h3{
           <article class="panel card">
             <div class="feature-line">Koncerty</div>
             <h3>Recitale i kameralistyka</h3>
-            <p>Program budowany z myślą o akustyce miejsca, publiczności i dramaturgii całego wieczoru.</p>
+            <p>Solo albo w mniejszym składzie kameralnym - zależnie od sali i okazji.</p>
             <ul class="list">
               <li>kościoły, sale koncertowe, domy kultury i festiwale,</li>
               <li>formuły solowe i kameralne,</li>
               <li>program dopasowany do charakteru miejsca i okazji.</li>
-            </ul>
-          </article>
-
-          <article class="panel card">
-            <div class="feature-line">Instytucje</div>
-            <h3>Współpraca z jasnym procesem</h3>
-            <p>Dobra propozycja dla organizatorów, którzy cenią wysoki poziom wykonania i sprawną komunikację.</p>
-            <ul class="list">
-              <li>szybkie potwierdzenie dostępności i zakresu,</li>
-              <li>czytelna propozycja programu,</li>
-              <li>realizacja przygotowana z wyprzedzeniem.</li>
             </ul>
           </article>
         </div>
@@ -715,7 +706,7 @@ h2,h3{
         <article class="panel card">
           <div class="eyebrow">Repertuar</div>
           <h2>Repertuar dopasowany, nie gotowiec.</h2>
-          <p>Nie ma jednej listy, którą wysyła wszystkim. Każdy program buduje pod konkretne miejsce i charakter spotkania.</p>
+          <p>To, co gra na ślubie w kościele, różni się od programu na koncercie kameralnym - dobiera repertuar do sali i okazji.</p>
 
           <div class="program-points">
             <div class="program-item">
@@ -724,7 +715,7 @@ h2,h3{
             </div>
             <div class="program-item">
               <strong>Romantyzm i muzyka XX wieku</strong>
-              <p>Kreisler, Brahms, Franck, Bartók. Program solowy lub kameralny z dramaturgią i myślą o całości wieczoru.</p>
+              <p>Kreisler, Brahms, Franck, Bartók - głównie na recitale i wieczory kameralne.</p>
             </div>
             <div class="program-item">
               <strong>Życzenia i konkretne motywy</strong>
@@ -742,7 +733,7 @@ h2,h3{
             <li>dopasowanie długości i charakteru muzyki do przebiegu wydarzenia,</li>
             <li>finalne potwierdzenie szczegółów w czytelnym procesie.</li>
           </ul>
-          <p style="margin-top:16px">Jeśli nie macie jeszcze żadnych preferencji, wystarczy opis miejsca i nastroju. Resztą się zajmie.</p>
+          <p style="margin-top:16px">Bez pomysłu na program też można zacząć - wystarczy opisać miejsce i klimat wydarzenia, resztę dobierze sama.</p>
         </article>
       </div>
     </section>
@@ -791,22 +782,22 @@ h2,h3{
           <article class="panel step">
             <div class="step-number">01</div>
             <h3>Pierwszy kontakt</h3>
-            <p>Data, miejscowość, typ uroczystości. Zofia wraca zazwyczaj tego samego dnia.</p>
+            <p>Napisz datę, miejsce i typ wydarzenia. Zofia odpisuje zwykle jeszcze tego samego dnia.</p>
           </article>
           <article class="panel step">
             <div class="step-number">02</div>
             <h3>Propozycja</h3>
-            <p>Proponuje kierunek repertuaru i zakres, do wyboru i modyfikacji.</p>
+            <p>Proponuje kierunek repertuaru - możecie go przyjąć albo poprosić o zmiany.</p>
           </article>
           <article class="panel step">
             <div class="step-number">03</div>
             <h3>Doprecyzowanie</h3>
-            <p>Ustalamy detale programu, przebieg i warunki techniczne miejsca. Dostajecie jasny scenariusz z wyprzedzeniem.</p>
+            <p>Razem ustalacie szczegóły programu i warunki na miejscu; scenariusz dostajecie z wyprzedzeniem.</p>
           </article>
           <article class="panel step">
             <div class="step-number">04</div>
             <h3>Realizacja</h3>
-            <p>Przyjeżdża z wyprzedzeniem, sprawdza akustykę i jest gotowa na wszelkie zmiany w ostatniej chwili.</p>
+            <p>Na koncert przyjeżdża wcześniej, żeby sprawdzić akustykę sali i ustawienie.</p>
           </article>
         </div>
       </div>
